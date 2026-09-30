@@ -4,16 +4,16 @@ Manny / Quinn 传感器可动人偶的独立设计仓库。原来位于 `DollSim
 
 ## 当前状态
 
-本次审查同时评估用户新明确的“摆稳后采集、无需实时动捕”场景：[放宽实时指标后的优化任务](Hardware/PoseDoll44/docs/NEXT_REVIEW_STATIC_CAPTURE.zh-CN.md)。Rev O3 当前代码与封存证据保留原时序，低频/触发式架构尚待审查实施。
+**当前主方案为 O15 完整数字样机，等待统一实物验证。** 480 mm UE 参考、静态摆姿采集；整机无 1.2 kg 硬门槛，允许手托。采用 FDM 打印与现成金属小件，不需要定制机加工金属件。91 cm 方案继续保留为备用。
 
-- **当前推进为 Rev O 第三轮**：[本轮设计、验证与剩余问题](Hardware/PoseDoll44/docs/START_HERE_REVO3.zh-CN.md)。已实现一体板托、外耳钢背摩擦件和磨损状态检查；修正载荷/质量账、时序统计与节点恢复；生成顶入/侧入板件候选。**整机 1.2 kg 已改为非强制偏好**，尺寸、手感和精度要求保留。完整多轴总装与制造门槛尚未闭合。[第三轮审查入口](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO3.zh-CN.md)。
+- [本次提交与审查入口](Hardware/PoseDoll44/docs/REVIEW_HANDOFF_O15.zh-CN.md)：先读此页，再查详细设计、证据和未验证项。
+- [O15 详细审查请求](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO15.zh-CN.md)；[数字结果汇总](Hardware/PoseDoll44/generated/revO15/runs/o15_20260929_r1/FINAL_BATCH_SUMMARY.json)。
+- [Quinn 统一测试包](Hardware/PoseDoll44/bench/revO15/PoseDoll_O15_Quinn_Prototype.zip) / [Manny 备选包](Hardware/PoseDoll44/bench/revO15/PoseDoll_O15_Manny_Prototype.zip)：只选一套，每套 214 种文件、273 件打印件。
+- [中文装配与测试说明](Hardware/PoseDoll44/bench/revO15/guide.html)；[静态采集软件设置](Tools/PoseDollHardwareBridge/README_O15.zh-CN.md)。HTML 请下载打开或通过下方本地服务查看。
 
-- **历史检查点：Rev O 第二轮**：[本轮设计、验证与缺口](Hardware/PoseDoll44/docs/START_HERE_REVO2.zh-CN.md)。已重构 L6 承力/装配、生成 N3/N4 拆板候选并修复入网调度；完整板位、质量目标和物理门槛仍待闭合。**[给 GPT-6 Pro 的第二轮审查说明](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO2.zh-CN.md)** 已整理好源码、证据和重点问题。下列 Rev O 审查入口保留为第一轮历史。
+本次提交同时收录此前尚未提交的 O5—O14 迭代和 O15 使用的历史依赖。各轮已封存文件保留原字节，旧文档中的“当前”指该轮检查点。O15 的采样几何检查、切片、电路规则、固件构建和 UE 桥接已有数字证据；完整强度、保持力、耐久、带线运动和电子实测仍未完成。
 
-- **历史检查点：Rev O Desktop 初轮**：48 cm 为研究锚点，比较 42/45 cm 及较大后备档；已交付双角色布局、三档关节、原生电气布局和七角色固件。板位、预紧和质量预算仍未达标，完整总装尚未完成。
-- **约 91 cm 的 Rev M/N1 为备用**：原文件与旧输出保留，以哈希清单冻结。新旧源码、报告和导出分目录保存。
-- 第一轮历史入口：[Rev O 当前结果与失败清单](Hardware/PoseDoll44/docs/START_HERE_REVO.zh-CN.md)。
-- **第一轮历史独立审查入口：[给 GPT-6 Pro 的审查说明](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO.zh-CN.md)**，包含已知失败、证据链接与下一轮修改要求。
+历史入口：[O4](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO4.zh-CN.md)、[O3](Hardware/PoseDoll44/docs/START_HERE_REVO3.zh-CN.md)、[O2](Hardware/PoseDoll44/docs/START_HERE_REVO2.zh-CN.md)、[O 初轮](Hardware/PoseDoll44/docs/START_HERE_REVO.zh-CN.md)。不要把历史制造说明与 O15 混用。
 
 以下为备用版的历史基线：
 
@@ -25,7 +25,7 @@ Manny / Quinn 传感器可动人偶的独立设计仓库。原来位于 `DollSim
 
 ## 阅读入口
 
-0. [当前主方案 Rev O3](Hardware/PoseDoll44/docs/START_HERE_REVO3.zh-CN.md)；使用 `scripts/run_revo3.py --run-id <唯一编号>` 复跑，`scripts/Start-Viewer.ps1 -Revision revO3` 查看。以下 Rev M/N 文档用于备用版。
+0. [当前主方案 O15](Hardware/PoseDoll44/docs/REVIEW_HANDOFF_O15.zh-CN.md)。以下 Rev M/N 文档用于备用版。
 
 1. [最新 Rev N1 设计入口](Hardware/PoseDoll44/START_HERE_REVN.zh-CN.md)
 2. [胸部修订与设备外置方案](Hardware/PoseDoll44/docs/CHEST_AND_EXTERNAL_REVN.zh-CN.md)
@@ -70,6 +70,20 @@ py -3.13 -m venv .venv
 离线检查包括协议配置、Python 测试、C 核心测试和 C/Python 数据帧一致性；不连接硬件或操作 UE。C 测试需要 Visual Studio C 工具链，`-VcVars` 可指定 `vcvars64.bat`。本机迁移后结果为 **81 个 Python 测试、9 个 C 场景通过，数据帧逐字节一致**。
 
 ## 打开三维查看器
+
+O15 使用以下命令启动服务，然后访问 `http://127.0.0.1:8769/tutorials/full-doll-o15/index.html`（脚本原来的启动提示仍指向 O14，以此 URL 为准）：
+
+```powershell
+python scripts/serve_posedoll_tutorials.py --port 8769
+```
+
+提交资料可在新克隆中用 Python 标准库复核：
+
+```powershell
+python scripts/verify_o15_review.py
+```
+
+以下命令与说明保留为旧版查看器入口：
 
 ```powershell
 .\scripts\Start-Viewer.ps1

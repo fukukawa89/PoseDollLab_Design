@@ -1,0 +1,1 @@
+window.O13_RESULTS={"cases": 102, "adjacentFailures": 0, "nonadjacentContacts": 12, "shoulderOffsetPerSideMm": 0};

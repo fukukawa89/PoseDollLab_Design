@@ -1,0 +1,65 @@
+{
+  "schema": "o5-connector-wire-v1",
+  "interface": "J50 C_3V3_SH4",
+  "voltage_V": 3.3,
+  "pinout": [
+    "3V3_REMOTE_SWITCHED",
+    "GND",
+    "RS485_A",
+    "RS485_B"
+  ],
+  "terminal": "SSH-003T-P0.2-H",
+  "housing": "SHR-04V-S",
+  "terminal_allowed_AWG": [
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "terminal_insulation_OD_mm": [
+    0.4,
+    0.8
+  ],
+  "selected_wire_candidate": {
+    "manufacturer": "Alpha Wire",
+    "series": "2842/19",
+    "AWG": 28,
+    "strands": "19/40 silver plated copper",
+    "insulation": "PTFE",
+    "insulation_OD_mm_nominal": 0.6858,
+    "insulation_OD_mm_range": [
+      0.635,
+      0.7366
+    ],
+    "nominal_conductor_DCR_ohm_per_m": 0.19028871391076116,
+    "catalog_bend_radius_factor": 10,
+    "catalog_bend_radius_at_max_OD_mm": 7.3660000000000005,
+    "continuous_flex_or_torsion_rating": "NOT_QUALIFIED",
+    "catalog_nominal_area_note": "AWG and OD screen compatible; exact stranded bundle and crimp height require JST/assembler approval (catalog rounded conductor area is not a crimp specification)."
+  },
+  "catalog_AWG_OD_screen": "PASS",
+  "old_26_AWG_combination": "REJECTED",
+  "crimp_equipment": {
+    "production": "AP-K2N + MKS-L-10-3 + APLMK SSH/L003-02",
+    "manual_listed": "WC-SH2832 / YRS-859; obtain matching wire/terminal setup from JST",
+    "strip_length_mm": null,
+    "conductor_crimp_height_mm": null,
+    "pull_test_limit_N": null,
+    "status": "BLOCKED_PENDING_WIRE_SPECIFIC_PROCESS_SHEET"
+  },
+  "contacts_loop": {
+    "series_mated_contacts": 4,
+    "after_environment_each_max_ohm": 0.04,
+    "separate_crimp_resistance_allowance_ohm": null
+  },
+  "path_length": "Not frozen until shared arm route and service loops pass; sweep is conditional, not actual longest length",
+  "manufacturing_released": false,
+  "sources": {
+    "terminal": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+    "tool": "https://www.jst-mfg.com/product/pdf/eng/eCRIMPING_MACHINES_AND_TOOLS.pdf",
+    "wire": "https://www.alphawire.com/products/wire/hook-up-wire/premium/2842_19",
+    "switch": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+    "transceiver": "https://www.ti.com/lit/ds/symlink/thvd1400.pdf"
+  }
+}

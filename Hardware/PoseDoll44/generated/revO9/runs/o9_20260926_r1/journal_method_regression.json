@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "analytic_cylinder_clear_triangle",
+      "status": "CERTIFIED_JOURNAL_SUPERSET_SEPARATION",
+      "required_mm": 0.5,
+      "lower_bound_mm": 0.9727878476642877,
+      "plane_checks": 1,
+      "unknown": []
+    },
+    {
+      "case": "inside_cylinder_never_passes",
+      "status": "UNKNOWN_SUPERSET_TOO_LOOSE",
+      "required_mm": 0.01,
+      "lower_bound_mm": Infinity,
+      "plane_checks": 87381,
+      "unknown": [
+        {
+          "frustum": 0,
+          "source_triangles": 65536
+        }
+      ]
+    },
+    {
+      "case": "C01_exhaustive_triangle_partition_and_conical_coverage",
+      "total_triangles": 21210,
+      "journal_triangles": 1864,
+      "remaining_triangles": 19346,
+      "superset_vertex_coverage": true,
+      "frusta": 24
+    },
+    {
+      "case": "C02_exhaustive_triangle_partition_and_conical_coverage",
+      "total_triangles": 18070,
+      "journal_triangles": 1814,
+      "remaining_triangles": 16256,
+      "superset_vertex_coverage": true,
+      "frusta": 24
+    },
+    {
+      "case": "open_surface_unsigned_exclusion_bound",
+      "status": "CERTIFIED_CONTINUOUS_NOMINAL_CLEARANCE",
+      "lower_bound_mm": 3.6616671652842703,
+      "queries": 0
+    }
+  ],
+  "scope": "Independent analytic separating-plane cases and exhaustive partition checks; no physical qualification."
+}

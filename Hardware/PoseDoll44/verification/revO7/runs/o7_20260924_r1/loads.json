@@ -1,0 +1,4820 @@
+{
+  "schema": "o7-actual-com-gravity-inclusive-hand-force-v1",
+  "characters": [
+    {
+      "character": "manny",
+      "side": "l",
+      "modeled_nine_module_mass_g": 302.53833008538464,
+      "explicit_allocations": [
+        {
+          "owner": "clavicle_l.protract_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "clavicle_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l.abduct_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "elbow_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "forearm_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_l.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover, harness and remote-board allowance"
+        },
+        {
+          "owner": "forearm_l",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover/harness allowance"
+        },
+        {
+          "owner": "hand_l",
+          "mass_g": 40.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "hand cover/end mass allowance"
+        }
+      ],
+      "arm_mass_budget_g": 454.53833008538464,
+      "axes": [
+        {
+          "axis": "clavicle_l.protract",
+          "family": "M4",
+          "gravity_Nm": 0.1890977945010651,
+          "pose": "waist_pitch_-30_arm_side",
+          "required_hold_Nm": 0.30364669175159764,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 352.4873371930694,
+          "preload_required_at_mu_022_N": 128.17721352475252,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            10.121556391719922,
+            5.060778195859961
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            16.424816208422094,
+            8.212408104211047
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            12.333339816702168,
+            6.166669908351084
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            22.88597981670217,
+            11.442989908351086
+          ],
+          "mu_needed_at_catalog_force": 0.13428089035926452,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": false,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            14.812033743980372,
+            44.436101231941116
+          ]
+        },
+        {
+          "axis": "clavicle_l.elevate",
+          "family": "LP6",
+          "gravity_Nm": 0.29560145061918,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.46340217592877,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 274.9617341349505,
+          "preload_required_at_mu_022_N": 99.98608513998201,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            15.446739197625666,
+            7.723369598812833
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            25.300120884931665,
+            12.650060442465833
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            29.740315020639333,
+            14.870157510319666
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            64.54244835397266,
+            32.27122417698633
+          ],
+          "mu_needed_at_catalog_force": 0.06213824500224871,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            14.711180188214922,
+            44.13354056464476
+          ]
+        },
+        {
+          "axis": "upperarm_l.flex",
+          "family": "LP6",
+          "gravity_Nm": 0.269471223731933,
+          "pose": "upperarm_l.flex_90",
+          "required_hold_Nm": 0.4242068355978995,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 251.70500529938656,
+          "preload_required_at_mu_022_N": 91.52909283614056,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            14.140227853263317,
+            7.070113926631659
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            23.122601977661084,
+            11.561300988830542
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.8693074577311,
+            14.43465372886555
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.671440791064434,
+            31.835720395532217
+          ],
+          "mu_needed_at_catalog_force": 0.0568824870733077,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.466883669774587,
+            40.40065100932376
+          ]
+        },
+        {
+          "axis": "upperarm_l.abduct",
+          "family": "LP6",
+          "gravity_Nm": 0.22159648987015126,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.35239473480522693,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 209.09497713917736,
+          "preload_required_at_mu_022_N": 76.03453714151904,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            11.746491160174232,
+            5.873245580087116
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            19.13304082251261,
+            9.566520411256304
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            27.27348299567171,
+            13.636741497835855
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            62.075616329005044,
+            31.037808164502522
+          ],
+          "mu_needed_at_catalog_force": 0.04725310217834517,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            11.187134438261172,
+            33.56140331478352
+          ]
+        },
+        {
+          "axis": "upperarm_l.twist",
+          "family": "M4",
+          "gravity_Nm": 0.0948904760255718,
+          "pose": "arms_crossed_asymmetric_candidate",
+          "required_hold_Nm": 0.1623357140383577,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 188.4469191567117,
+          "preload_required_at_mu_022_N": 68.52615242062244,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            5.411190467945257,
+            2.7055952339726286
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            8.574206335464316,
+            4.287103167732158
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.19309586751906,
+            4.59654793375953
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            19.74573586751906,
+            9.87286793375953
+          ],
+          "mu_needed_at_catalog_force": 0.07178930253589016,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            7.918815318944277,
+            23.75644595683283
+          ]
+        },
+        {
+          "axis": "elbow_l.flex",
+          "family": "M4",
+          "gravity_Nm": 0.10710261042402,
+          "pose": "upperarm_l.flex_90",
+          "required_hold_Nm": 0.18065391563602998,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 209.7115476829843,
+          "preload_required_at_mu_022_N": 76.2587446119943,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            6.021797187867666,
+            3.010898593933833
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            9.591884202001665,
+            4.795942101000833
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.600167014133998,
+            4.800083507066999
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            20.152807014134,
+            10.076403507067
+          ],
+          "mu_needed_at_catalog_force": 0.07989011340304164,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            8.812386128586827,
+            26.437158385760483
+          ]
+        },
+        {
+          "axis": "forearm_l.twist",
+          "family": "M4",
+          "gravity_Nm": 0.012077988370388908,
+          "pose": "chest_pitch_-30_arm_side",
+          "required_hold_Nm": 0.038116982555583365,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 44.24798309294132,
+          "preload_required_at_mu_022_N": 16.09017567016048,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.2705660851861122,
+            0.6352830425930561
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.6731656975324092,
+            0.8365828487662046
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.432679612346296,
+            3.216339806173148
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.985319612346295,
+            8.492659806173148
+          ],
+          "mu_needed_at_catalog_force": 0.016856374511596692,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.8593650027113837,
+            5.5780950081341505
+          ]
+        },
+        {
+          "axis": "hand_l.flex",
+          "family": "M4",
+          "gravity_Nm": 0.01619025541669046,
+          "pose": "hand_l.flex_-60",
+          "required_hold_Nm": 0.04428538312503569,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 51.40855210465696,
+          "preload_required_at_mu_022_N": 18.69401894714799,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.4761794375011896,
+            0.7380897187505948
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            2.0158546180575385,
+            1.0079273090287693
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.569755180556347,
+            3.2848775902781737
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            17.12239518055635,
+            8.561197590278175
+          ],
+          "mu_needed_at_catalog_force": 0.019584210325583603,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            2.1602625914651554,
+            6.480787774395465
+          ]
+        },
+        {
+          "axis": "hand_l.deviate",
+          "family": "M4",
+          "gravity_Nm": 0.007845320000004045,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.031767980000006066,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 36.87776281575742,
+          "preload_required_at_mu_022_N": 13.410095569366336,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.0589326666668688,
+            0.5294663333334344
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.3204433333336703,
+            0.6602216666668351
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.2915906666668,
+            3.1457953333334
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.8442306666668,
+            8.4221153333334
+          ],
+          "mu_needed_at_catalog_force": 0.014048671548859968,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.5496575609759058,
+            4.648972682927716
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "pose": "neutral",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368862,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.protract_-20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806966,
+            "upperarm_l.flex": 0.010448015884187666,
+            "upperarm_l.abduct": 0.017684921531668008,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.00882594238936886,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 1.0842021724855044e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.protract_20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806966,
+            "upperarm_l.flex": 0.010448015884187666,
+            "upperarm_l.abduct": 0.017684921531668014,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.00882594238936886,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 3.2526065174565133e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_-10",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.03906179781464573,
+            "upperarm_l.flex": 0.010289287046342728,
+            "upperarm_l.abduct": 0.021063578807540964,
+            "upperarm_l.twist": 0.0015325714273852487,
+            "elbow_l.flex": 0.008691856492689547,
+            "forearm_l.twist": 0.0015353179229813565,
+            "hand_l.flex": 0.008707432643231419,
+            "hand_l.deviate": 0.001362325521214624
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.1870737711715785,
+            "upperarm_l.flex": 0.009817923428225123,
+            "upperarm_l.abduct": 0.09240885348834053,
+            "upperarm_l.twist": 0.0030185764474679583,
+            "elbow_l.flex": 0.008293672934771469,
+            "forearm_l.twist": 0.0030239859877812802,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_40",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.2598938023443511,
+            "upperarm_l.flex": 0.00800364450970079,
+            "upperarm_l.abduct": 0.15598691390489142,
+            "upperarm_l.twist": 0.0056730680259275655,
+            "elbow_l.flex": 0.006761064122664252,
+            "forearm_l.twist": 0.00568323463615611,
+            "hand_l.flex": 0.006773180216928629,
+            "hand_l.deviate": 0.005042874490028599
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_-45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.18315706675383314,
+            "upperarm_l.abduct": 0.012505127939794448,
+            "upperarm_l.twist": 0.012504439714663956,
+            "elbow_l.flex": 0.08197386582749006,
+            "forearm_l.twist": 0.006252219857331968,
+            "hand_l.flex": 0.015861722890487328,
+            "hand_l.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.1979327925171409,
+            "upperarm_l.abduct": 0.012505127939794448,
+            "upperarm_l.twist": 0.012504439714663956,
+            "elbow_l.flex": 0.06949209839972101,
+            "forearm_l.twist": 0.006252219857331968,
+            "hand_l.flex": 0.0033575876419141767,
+            "hand_l.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.269471223731933,
+            "upperarm_l.abduct": 1.9634207073147035e-18,
+            "upperarm_l.twist": 0.01768394823435452,
+            "elbow_l.flex": 0.10710261042402,
+            "forearm_l.twist": 0.008841974117177246,
+            "hand_l.flex": 0.013590104807191144,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_135",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.18315706675383314,
+            "upperarm_l.abduct": 0.012505127939794447,
+            "upperarm_l.twist": 0.012504439714663956,
+            "elbow_l.flex": 0.08197386582749006,
+            "forearm_l.twist": 0.006252219857331968,
+            "hand_l.flex": 0.01586172289048734,
+            "hand_l.deviate": 9.403401032003504e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_160",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.08234666313471398,
+            "upperarm_l.abduct": 0.016618390262486273,
+            "upperarm_l.twist": 0.006048266509677642,
+            "elbow_l.flex": 0.04492492310254807,
+            "forearm_l.twist": 0.0030241332548388163,
+            "hand_l.flex": 0.012956625118598328,
+            "hand_l.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_-20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.01483288778566068,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.05917207296336799,
+            "upperarm_l.twist": 0.0030185764474679583,
+            "elbow_l.flex": 0.008293672934771469,
+            "forearm_l.twist": 0.0030239859877812802,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.002683257470837119
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.20011879699446314,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.12611383624543457,
+            "upperarm_l.twist": 0.004412863549667738,
+            "elbow_l.flex": 0.0076434903215313625,
+            "forearm_l.twist": 0.004420771768553213,
+            "hand_l.flex": 0.007657187758438385,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.27475561113187463,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.2007506503828461,
+            "upperarm_l.twist": 0.007643303874893269,
+            "elbow_l.flex": 0.004412971194684432,
+            "forearm_l.twist": 0.007657001311800287,
+            "hand_l.flex": 0.004420879413569909,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.29560145061918,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.22159648987015126,
+            "upperarm_l.twist": 0.008825727099335478,
+            "elbow_l.flex": 9.798764454692479e-19,
+            "forearm_l.twist": 0.008841543537106427,
+            "hand_l.flex": 9.816324228073344e-19,
+            "hand_l.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_120",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.2570706896002066,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.183065728851178,
+            "upperarm_l.twist": 0.0076433038748932695,
+            "elbow_l.flex": 0.004412971194684429,
+            "forearm_l.twist": 0.007657001311800288,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_160",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.13317703371239667,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.059172072963368,
+            "upperarm_l.twist": 0.00301857644746796,
+            "elbow_l.flex": 0.008293672934771469,
+            "forearm_l.twist": 0.0030239859877812816,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.002683257470837118
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_-90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06518020694700677,
+            "upperarm_l.flex": 0.001589794749168641,
+            "upperarm_l.abduct": 0.008824753802021969,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368863,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.1715509333585053e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_-45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.08026964228016403,
+            "upperarm_l.flex": 0.0005285717880172292,
+            "upperarm_l.abduct": 0.006264681531135457,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368862,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 4.336808689942018e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.09275110524184804,
+            "upperarm_l.flex": 0.0255374512173451,
+            "upperarm_l.abduct": 0.018746144492819455,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368862,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 2.168404344971009e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.08283166114567764,
+            "upperarm_l.flex": 0.03695769121787768,
+            "upperarm_l.abduct": 0.008826700396648993,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368867,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 4.8863364325992284e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.06518177316403517,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.045907814890478627,
+            "forearm_l.twist": 0.004420987058588622,
+            "hand_l.flex": 0.0008621353548428096,
+            "hand_l.deviate": 1.151676718758467e-19
+          }
+        },
+        {
+          "pose": "elbow_l.flex_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.10761456851770143,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.08834061024414488,
+            "forearm_l.twist": 0.00765737420507998,
+            "hand_l.flex": 0.007348496589550639,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.12637656869757655,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.10710261042401997,
+            "forearm_l.twist": 0.008841974117177246,
+            "hand_l.flex": 0.013590104807191144,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "elbow_l.flex_120",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.1164405109070703,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.09716655263351376,
+            "forearm_l.twist": 0.0076573742050799806,
+            "hand_l.flex": 0.016190255416690457,
+            "hand_l.deviate": 6.649208635946255e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_140",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.0948792533418652,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.0756052950683087,
+            "forearm_l.twist": 0.005683511407690612,
+            "hand_l.flex": 0.015508731201332577,
+            "hand_l.deviate": 1.01871786534107e-19
+          }
+        },
+        {
+          "pose": "forearm_l.twist_-90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.07400636462641307,
+            "upperarm_l.flex": 0.010447585304116864,
+            "upperarm_l.abduct": 1.403877384343885e-06,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008826372969439679,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.1715509333585053e-19
+          }
+        },
+        {
+          "pose": "forearm_l.twist_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.09168945170062594,
+            "upperarm_l.flex": 0.02813153353847137,
+            "upperarm_l.abduct": 0.017684490951597208,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008857575264914812,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139813,
+            "hand_l.deviate": 4.886336432599238e-20
+          }
+        },
+        {
+          "pose": "hand_l.flex_-60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.0030995192946370355,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.016174438978919504,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.01619025541669046,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_l.flex_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.02663827130087814,
+            "upperarm_l.abduct": 0.01768492153166803,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.007364313027321597,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.00734849658955064,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_l.deviate_-30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.08776722228069465,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.013762261531666004,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368862,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "hand_l.deviate_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.09561254228069871,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.02160758153167005,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368862,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "arms_forward",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.269471223731933,
+            "upperarm_l.abduct": 1.9634207073147035e-18,
+            "upperarm_l.twist": 0.01768394823435452,
+            "elbow_l.flex": 0.10710261042402,
+            "forearm_l.twist": 0.008841974117177246,
+            "hand_l.flex": 0.013590104807191144,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "arms_overhead",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0916898822806967,
+            "upperarm_l.flex": 0.08234666313471398,
+            "upperarm_l.abduct": 0.016618390262486273,
+            "upperarm_l.twist": 0.006048266509677642,
+            "elbow_l.flex": 0.04492492310254807,
+            "forearm_l.twist": 0.0030241332548388163,
+            "hand_l.flex": 0.012956625118598328,
+            "hand_l.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "arms_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.29560145061918,
+            "upperarm_l.flex": 0.010448015884187681,
+            "upperarm_l.abduct": 0.22159648987015126,
+            "upperarm_l.twist": 0.008825727099335478,
+            "elbow_l.flex": 9.798764454692479e-19,
+            "forearm_l.twist": 0.008841543537106427,
+            "hand_l.flex": 9.816324228073344e-19,
+            "hand_l.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "hands_on_hips",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.18910226225021298,
+            "upperarm_l.flex": 0.08731672415732804,
+            "upperarm_l.abduct": 0.11509730150118438,
+            "upperarm_l.twist": 0.03902785066037232,
+            "elbow_l.flex": 0.07446736916790189,
+            "forearm_l.twist": 0.009576000439412261,
+            "hand_l.flex": 0.014287725025119026,
+            "hand_l.deviate": 0.003447116255906323
+          }
+        },
+        {
+          "pose": "arms_crossed",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.026128691077417193,
+            "upperarm_l.flex": 0.12076116999782079,
+            "upperarm_l.abduct": 0.042318309876640946,
+            "upperarm_l.twist": 0.06160292666820048,
+            "elbow_l.flex": 0.01847873515377535,
+            "forearm_l.twist": 0.007321933622728562,
+            "hand_l.flex": 0.007688122991733016,
+            "hand_l.deviate": 0.005590681634172572
+          }
+        },
+        {
+          "pose": "forehead",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.14218953982796081,
+            "upperarm_l.flex": 0.09965200888220722,
+            "upperarm_l.abduct": 0.023320499509176768,
+            "upperarm_l.twist": 0.06407163121156245,
+            "elbow_l.flex": 0.051785192798804724,
+            "forearm_l.twist": 0.008937607658084412,
+            "hand_l.flex": 0.0011846025980570606,
+            "hand_l.deviate": 0.003686094655853954
+          }
+        },
+        {
+          "pose": "palms_turn",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0924264357796703,
+            "upperarm_l.flex": 0.12637656869757655,
+            "upperarm_l.abduct": 0.018421475030641676,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.10710261042401997,
+            "forearm_l.twist": 0.009578527616150904,
+            "hand_l.flex": 0.0011844556784892624,
+            "hand_l.deviate": 0.007815466188837163
+          }
+        },
+        {
+          "pose": "back_reach_15",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.1622435081076541,
+            "upperarm_l.flex": 0.03538282379230038,
+            "upperarm_l.abduct": 0.08523189176792743,
+            "upperarm_l.twist": 0.022837564660711726,
+            "elbow_l.flex": 0.10183791790811424,
+            "forearm_l.twist": 0.010158805926784528,
+            "hand_l.flex": 0.011508879042806912,
+            "hand_l.deviate": 0.0014357932104098064
+          }
+        },
+        {
+          "pose": "back_reach_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.1622435081076541,
+            "upperarm_l.flex": 0.01414807099947074,
+            "upperarm_l.abduct": 0.07641682360560598,
+            "upperarm_l.twist": 0.044118787030656,
+            "elbow_l.flex": 0.0896331395818871,
+            "forearm_l.twist": 0.01078333190070201,
+            "hand_l.flex": 0.008643342190977264,
+            "hand_l.deviate": 0.0027737394862906526
+          }
+        },
+        {
+          "pose": "back_reach_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.1622435081076541,
+            "upperarm_l.flex": 0.06271479813342078,
+            "upperarm_l.abduct": 0.06239407519933443,
+            "upperarm_l.twist": 0.062393386974203935,
+            "elbow_l.flex": 0.07132001091892112,
+            "forearm_l.twist": 0.010672991625885187,
+            "hand_l.flex": 0.0051887758526308475,
+            "hand_l.deviate": 0.003922660000002024
+          }
+        },
+        {
+          "pose": "waist_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.1890977945010651,
+            "clavicle_l.elevate": 0.25599836563174116,
+            "upperarm_l.flex": 0.024143153339906652,
+            "upperarm_l.abduct": 0.19190818961701203,
+            "upperarm_l.twist": 0.0164852779920705,
+            "elbow_l.flex": 0.05355130521200997,
+            "forearm_l.twist": 0.012077988370388905,
+            "hand_l.flex": 0.00679505240359557,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.008251939380470743,
+            "clavicle_l.elevate": 0.2838832770047799,
+            "upperarm_l.flex": 0.009048247174849866,
+            "upperarm_l.abduct": 0.18306572885117806,
+            "upperarm_l.twist": 0.0076433038748932695,
+            "elbow_l.flex": 0.004412971194684429,
+            "forearm_l.twist": 0.007657001311800288,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.0067942464208216365
+          }
+        },
+        {
+          "pose": "chest_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.1890977945010651,
+            "clavicle_l.elevate": 0.25599836563174116,
+            "upperarm_l.flex": 0.024143153339906645,
+            "upperarm_l.abduct": 0.19190818961701203,
+            "upperarm_l.twist": 0.016485277992070512,
+            "elbow_l.flex": 0.05355130521200997,
+            "forearm_l.twist": 0.012077988370388908,
+            "hand_l.flex": 0.00679505240359557,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.008251939380470743,
+            "clavicle_l.elevate": 0.2838832770047799,
+            "upperarm_l.flex": 0.009048247174849866,
+            "upperarm_l.abduct": 0.18306572885117808,
+            "upperarm_l.twist": 0.0076433038748932695,
+            "elbow_l.flex": 0.004412971194684429,
+            "forearm_l.twist": 0.007657001311800288,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "waist_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.1890977945010651,
+            "clavicle_l.elevate": 0.25599836563174116,
+            "upperarm_l.flex": 0.006046658990206962,
+            "upperarm_l.abduct": 0.19190818961701203,
+            "upperarm_l.twist": 0.0011986702422839915,
+            "elbow_l.flex": 0.05355130521200997,
+            "forearm_l.twist": 0.003236014253211666,
+            "hand_l.flex": 0.006795052403595572,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.008251939380470743,
+            "clavicle_l.elevate": 0.2281134542587023,
+            "upperarm_l.flex": 0.009048247174849866,
+            "upperarm_l.abduct": 0.20075065038284604,
+            "upperarm_l.twist": 0.0076433038748932695,
+            "elbow_l.flex": 0.004412971194684431,
+            "forearm_l.twist": 0.007657001311800288,
+            "hand_l.flex": 0.004420879413569908,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "chest_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.1890977945010651,
+            "clavicle_l.elevate": 0.25599836563174116,
+            "upperarm_l.flex": 0.0060466589902069615,
+            "upperarm_l.abduct": 0.19190818961701203,
+            "upperarm_l.twist": 0.0011986702422839902,
+            "elbow_l.flex": 0.05355130521200997,
+            "forearm_l.twist": 0.0032360142532116653,
+            "hand_l.flex": 0.006795052403595572,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.008251939380470743,
+            "clavicle_l.elevate": 0.2281134542587023,
+            "upperarm_l.flex": 0.009048247174849866,
+            "upperarm_l.abduct": 0.20075065038284606,
+            "upperarm_l.twist": 0.0076433038748932695,
+            "elbow_l.flex": 0.004412971194684431,
+            "forearm_l.twist": 0.007657001311800288,
+            "hand_l.flex": 0.004420879413569908,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "arms_crossed_asymmetric_candidate",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.04715221113762767,
+            "upperarm_l.flex": 0.1481195597800884,
+            "upperarm_l.abduct": 0.05206537006867771,
+            "upperarm_l.twist": 0.0948904760255718,
+            "elbow_l.flex": 0.04550267957480361,
+            "forearm_l.twist": 0.011605691200983013,
+            "hand_l.flex": 0.006872634250019152,
+            "hand_l.deviate": 0.007056765690526727
+          }
+        }
+      ],
+      "support_case": "Unsupported arm, base held. Does not cover hands supporting body, falls or external props."
+    },
+    {
+      "character": "manny",
+      "side": "r",
+      "modeled_nine_module_mass_g": 302.53833008538464,
+      "explicit_allocations": [
+        {
+          "owner": "clavicle_r.protract_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "clavicle_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r.abduct_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "elbow_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "forearm_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_r.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover, harness and remote-board allowance"
+        },
+        {
+          "owner": "forearm_r",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover/harness allowance"
+        },
+        {
+          "owner": "hand_r",
+          "mass_g": 40.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "hand cover/end mass allowance"
+        }
+      ],
+      "arm_mass_budget_g": 454.53833008538464,
+      "axes": [
+        {
+          "axis": "clavicle_r.protract",
+          "family": "M4",
+          "gravity_Nm": 0.18912754686958405,
+          "pose": "waist_pitch_-30_arm_side",
+          "required_hold_Nm": 0.30369132030437607,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 352.5391441126209,
+          "preload_required_at_mu_022_N": 128.1960524045894,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            10.12304401014587,
+            5.061522005072935
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            16.427295572465336,
+            8.213647786232668
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            12.334331562319468,
+            6.167165781159734
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            22.88697156231947,
+            11.443485781159735
+          ],
+          "mu_needed_at_catalog_force": 0.13430062632861747,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": false,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            14.814210746554929,
+            44.44263223966478
+          ]
+        },
+        {
+          "axis": "clavicle_r.elevate",
+          "family": "LP6",
+          "gravity_Nm": 0.2956605893074483,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.4634908839611725,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 275.0143694389868,
+          "preload_required_at_mu_022_N": 100.00522525054066,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            15.449696132039083,
+            7.7248480660195415
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            25.30504910895403,
+            12.652524554477015
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            29.74228631024828,
+            14.87114315512414
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            64.54441964358162,
+            32.27220982179081
+          ],
+          "mu_needed_at_catalog_force": 0.06215013998621172,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            14.7139963162277,
+            44.1419889486831
+          ]
+        },
+        {
+          "axis": "upperarm_r.flex",
+          "family": "LP6",
+          "gravity_Nm": 0.2695318112456722,
+          "pose": "upperarm_r.flex_90",
+          "required_hold_Nm": 0.42429771686850837,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 251.75893010394088,
+          "preload_required_at_mu_022_N": 91.54870185597849,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            14.14325722895028,
+            7.07162861447514
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            23.127650937139354,
+            11.563825468569677
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.871327041522406,
+            14.435663520761203
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.673460374855736,
+            31.836730187427868
+          ],
+          "mu_needed_at_catalog_force": 0.05689467346981715,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.469768789476456,
+            40.40930636842936
+          ]
+        },
+        {
+          "axis": "upperarm_r.abduct",
+          "family": "LP6",
+          "gravity_Nm": 0.22165644942962678,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.3524846741444402,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 209.14834304456497,
+          "preload_required_at_mu_022_N": 76.05394292529635,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            11.749489138148006,
+            5.874744569074003
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            19.1380374524689,
+            9.56901872623445
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            27.275481647654228,
+            13.637740823827114
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            62.077614980987555,
+            31.038807490493777
+          ],
+          "mu_needed_at_catalog_force": 0.04726516226995819,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            11.189989655379053,
+            33.56996896613716
+          ]
+        },
+        {
+          "axis": "upperarm_r.twist",
+          "family": "M4",
+          "gravity_Nm": 0.06240845075941977,
+          "pose": "back_reach_45",
+          "required_hold_Nm": 0.11361267613912966,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 131.88692902480693,
+          "preload_required_at_mu_022_N": 47.95888328174798,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            3.7870892046376556,
+            1.8935446023188278
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            5.867370896618315,
+            2.9336854483091575
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            8.110361691980657,
+            4.0551808459903285
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            18.66300169198066,
+            9.33150084599033
+          ],
+          "mu_needed_at_catalog_force": 0.05024263962849788,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            5.542081762884374,
+            16.62624528865312
+          ]
+        },
+        {
+          "axis": "elbow_r.flex",
+          "family": "M4",
+          "gravity_Nm": 0.10713359915460133,
+          "pose": "elbow_r.flex_90",
+          "required_hold_Nm": 0.180700398731902,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 209.76550744323694,
+          "preload_required_at_mu_022_N": 76.27836634299526,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            6.0233466243967335,
+            3.0116733121983668
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            9.594466596216778,
+            4.797233298108389
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.601199971820044,
+            4.800599985910022
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            20.153839971820044,
+            10.076919985910022
+          ],
+          "mu_needed_at_catalog_force": 0.07991066950218549,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            8.814653596678145,
+            26.443960790034435
+          ]
+        },
+        {
+          "axis": "forearm_r.twist",
+          "family": "M4",
+          "gravity_Nm": 0.012253620825823751,
+          "pose": "arms_crossed_asymmetric_candidate",
+          "required_hold_Nm": 0.03838043123873563,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 44.55380669429749,
+          "preload_required_at_mu_022_N": 16.20138425247182,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.2793477079578544,
+            0.6396738539789272
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.6878017354853125,
+            0.8439008677426563
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.438534027527457,
+            3.2192670137637287
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.991174027527457,
+            8.495587013763728
+          ],
+          "mu_needed_at_catalog_force": 0.01697287874068476,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.8722161579871037,
+            5.616648473961311
+          ]
+        },
+        {
+          "axis": "hand_r.flex",
+          "family": "M4",
+          "gravity_Nm": 0.016190255416683456,
+          "pose": "hand_r.flex_-60",
+          "required_hold_Nm": 0.04428538312502518,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 51.40855210464477,
+          "preload_required_at_mu_022_N": 18.694018947143554,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.4761794375008395,
+            0.7380897187504197
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            2.0158546180569545,
+            1.0079273090284773
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.569755180556114,
+            3.284877590278057
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            17.122395180556115,
+            8.561197590278057
+          ],
+          "mu_needed_at_catalog_force": 0.019584210325578957,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            2.160262591464643,
+            6.480787774393928
+          ]
+        },
+        {
+          "axis": "hand_r.deviate",
+          "family": "M4",
+          "gravity_Nm": 0.007845320000004045,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.031767980000006066,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 36.87776281575742,
+          "preload_required_at_mu_022_N": 13.410095569366336,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.0589326666668688,
+            0.5294663333334344
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.3204433333336703,
+            0.6602216666668351
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.2915906666668,
+            3.1457953333334
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.8442306666668,
+            8.4221153333334
+          ],
+          "mu_needed_at_catalog_force": 0.014048671548859968,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.5496575609759058,
+            4.648972682927716
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "pose": "neutral",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368869,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "clavicle_r.protract_-20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.09168625365471272,
+            "upperarm_r.flex": 0.010448015884187662,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368865,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 0.0
+          }
+        },
+        {
+          "pose": "clavicle_r.protract_20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.09168625365471274,
+            "upperarm_r.flex": 0.010448015884187662,
+            "upperarm_r.abduct": 0.017682113776891266,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368863,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.0842021724855044e-19
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_-10",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.039047027502863735,
+            "upperarm_r.flex": 0.010289287046342722,
+            "upperarm_r.abduct": 0.021076755774450295,
+            "upperarm_r.twist": 0.00153257142738525,
+            "elbow_r.flex": 0.008691856492689554,
+            "forearm_r.twist": 0.0015353179229813574,
+            "hand_r.flex": 0.008707432643231419,
+            "hand_r.deviate": 0.0013623255212146237
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.18709241479458774,
+            "upperarm_r.flex": 0.009817923428225118,
+            "upperarm_r.abduct": 0.09242672243902134,
+            "upperarm_r.twist": 0.003018576447467961,
+            "elbow_r.flex": 0.008293672934771474,
+            "forearm_r.twist": 0.003023985987781282,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.002683257470837118
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_40",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.25993246952026816,
+            "upperarm_r.flex": 0.008003644509700784,
+            "upperarm_r.abduct": 0.15602330430186012,
+            "upperarm_r.twist": 0.00567306802592757,
+            "elbow_r.flex": 0.006761064122664257,
+            "forearm_r.twist": 0.005683234636156114,
+            "hand_r.flex": 0.006773180216928629,
+            "hand_r.deviate": 0.005042874490028599
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_-45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.18319990859565355,
+            "upperarm_r.abduct": 0.012503142557351889,
+            "upperarm_r.twist": 0.012503830782482381,
+            "elbow_r.flex": 0.08199577816902452,
+            "forearm_r.twist": 0.006251915391241182,
+            "hand_r.flex": 0.01586172289048162,
+            "hand_r.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.19797563435896126,
+            "upperarm_r.abduct": 0.012503142557351889,
+            "upperarm_r.twist": 0.012503830782482381,
+            "elbow_r.flex": 0.06951401074125546,
+            "forearm_r.twist": 0.006251915391241182,
+            "hand_r.flex": 0.0033575876419084556,
+            "hand_r.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.2695318112456722,
+            "upperarm_r.abduct": 1.9631089839146368e-18,
+            "upperarm_r.twist": 0.01768308707420477,
+            "elbow_r.flex": 0.1071335991546013,
+            "forearm_r.twist": 0.008841543537102373,
+            "hand_r.flex": 0.013590104807183053,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_135",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.18319990859565355,
+            "upperarm_r.abduct": 0.012503142557351887,
+            "upperarm_r.twist": 0.012503830782482381,
+            "elbow_r.flex": 0.08199577816902452,
+            "forearm_r.twist": 0.006251915391241182,
+            "hand_r.flex": 0.015861722890481617,
+            "hand_r.deviate": 9.403401032003504e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_160",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.08236738528484686,
+            "upperarm_r.abduct": 0.016615751836041567,
+            "upperarm_r.twist": 0.006047971975559799,
+            "elbow_r.flex": 0.04493552187262298,
+            "forearm_r.twist": 0.003023985987779895,
+            "hand_r.flex": 0.012956625118595563,
+            "hand_r.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_-20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.014808921110883284,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.059195218766938215,
+            "upperarm_r.twist": 0.003018576447467961,
+            "elbow_r.flex": 0.008293672934771474,
+            "forearm_r.twist": 0.003023985987781282,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2001455243160296,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.126141384438208,
+            "upperarm_r.twist": 0.004412863549667741,
+            "elbow_r.flex": 0.0076434903215313686,
+            "forearm_r.twist": 0.004420771768553215,
+            "hand_r.flex": 0.007657187758438385,
+            "hand_r.deviate": 0.003922660000002017
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.27480531288498466,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.20080117300716321,
+            "upperarm_r.twist": 0.007643303874893275,
+            "elbow_r.flex": 0.004412971194684435,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569909,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2956605893074483,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.22165644942962678,
+            "upperarm_r.twist": 0.008825727099335485,
+            "elbow_r.flex": 9.798764454692486e-19,
+            "forearm_r.twist": 0.008841543537106433,
+            "hand_r.flex": 9.816324228073344e-19,
+            "hand_r.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_120",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2571231991080934,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.18311905923027189,
+            "upperarm_r.twist": 0.007643303874893276,
+            "elbow_r.flex": 0.0044129711946844325,
+            "forearm_r.twist": 0.007657001311800293,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_160",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.13319935864475976,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.059195218766938236,
+            "upperarm_r.twist": 0.0030185764474679622,
+            "elbow_r.flex": 0.008293672934771474,
+            "forearm_r.twist": 0.0030239859877812833,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_-90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0651774394811725,
+            "upperarm_r.flex": 0.0015906559093183622,
+            "upperarm_r.abduct": 0.008826700396648991,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.00882594238936887,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 5.055743022050093e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_-45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.08026626588214837,
+            "upperarm_r.flex": 0.0005291807201987784,
+            "upperarm_r.abduct": 0.006262126004326883,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.00882594238936887,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 2.168404344971009e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.09274772884383238,
+            "upperarm_r.flex": 0.025536842285163546,
+            "upperarm_r.abduct": 0.01874358896601089,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368869,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.00884175882713982,
+            "hand_r.deviate": 4.336808689942018e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.08282889367984346,
+            "upperarm_r.flex": 0.03695683005772797,
+            "upperarm_r.abduct": 0.008824753802021983,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368872,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.1546102744134193e-19
+          }
+        },
+        {
+          "pose": "elbow_r.flex_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.06519726752932585,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.04592330925576928,
+            "forearm_r.twist": 0.004420771768551186,
+            "hand_r.flex": 0.0008621353548468559,
+            "hand_r.deviate": 1.151676718758467e-19
+          }
+        },
+        {
+          "pose": "elbow_r.flex_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.10764140554561585,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.08836744727205936,
+            "forearm_r.twist": 0.007657001311796776,
+            "hand_r.flex": 0.00734849658954363,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "elbow_r.flex_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.12640755742815787,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.10713359915460133,
+            "forearm_r.twist": 0.008841543537102373,
+            "hand_r.flex": 0.013590104807183052,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "elbow_r.flex_120",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.11646734793498476,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.09719338966142824,
+            "forearm_r.twist": 0.007657001311796778,
+            "hand_r.flex": 0.01619025541668345,
+            "hand_r.deviate": 6.649208635946255e-20
+          }
+        },
+        {
+          "pose": "elbow_r.flex_140",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.09489917251392282,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.0756252142403663,
+            "forearm_r.twist": 0.005683234636153506,
+            "hand_r.flex": 0.01550873120132737,
+            "hand_r.deviate": 1.01871786534107e-19
+          }
+        },
+        {
+          "pose": "forearm_r.twist_-90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.07400316658050393,
+            "upperarm_r.flex": 0.010448015884191728,
+            "upperarm_r.abduct": 9.732973175423111e-07,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389364816,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 5.3098529062263834e-20
+          }
+        },
+        {
+          "pose": "forearm_r.twist_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.09168625365471682,
+            "upperarm_r.flex": 0.0281311029583965,
+            "upperarm_r.abduct": 0.01768211377689534,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008857144684839943,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.1291992859957908e-19
+          }
+        },
+        {
+          "pose": "hand_r.flex_-60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.0030995192946440403,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.016174438978912506,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.016190255416683456,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_r.flex_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.02663827130087113,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.007364313027314584,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.007348496589543632,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_r.deviate_-30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.08776359365471076,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.01375945377688924,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368869,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "hand_r.deviate_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.09560891365471481,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.021604773776893287,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368869,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "arms_forward",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.2695318112456722,
+            "upperarm_r.abduct": 1.9631089839146368e-18,
+            "upperarm_r.twist": 0.01768308707420477,
+            "elbow_r.flex": 0.1071335991546013,
+            "forearm_r.twist": 0.008841543537102373,
+            "hand_r.flex": 0.013590104807183053,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "arms_overhead",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.08236738528484686,
+            "upperarm_r.abduct": 0.016615751836041567,
+            "upperarm_r.twist": 0.006047971975559799,
+            "elbow_r.flex": 0.04493552187262298,
+            "forearm_r.twist": 0.003023985987779895,
+            "hand_r.flex": 0.012956625118595563,
+            "hand_r.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "arms_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2956605893074483,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.22165644942962678,
+            "upperarm_r.twist": 0.008825727099335485,
+            "elbow_r.flex": 9.798764454692486e-19,
+            "forearm_r.twist": 0.008841543537106433,
+            "hand_r.flex": 9.816324228073344e-19,
+            "hand_r.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "hands_on_hips",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.18912517702337855,
+            "upperarm_r.flex": 0.08733958482377499,
+            "upperarm_r.abduct": 0.11512103714555706,
+            "upperarm_r.twist": 0.03904096299996558,
+            "elbow_r.flex": 0.07448731514082263,
+            "forearm_r.twist": 0.009575723295484376,
+            "hand_r.flex": 0.014287725025113818,
+            "hand_r.deviate": 0.0034471162559063257
+          }
+        },
+        {
+          "pose": "arms_crossed",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.026160030910088058,
+            "upperarm_r.flex": 0.12077260180820863,
+            "upperarm_r.abduct": 0.04233120774708489,
+            "upperarm_r.twist": 0.06162343869145716,
+            "elbow_r.flex": 0.01848231463796403,
+            "forearm_r.twist": 0.007321883886758713,
+            "hand_r.flex": 0.00768812299173208,
+            "hand_r.deviate": 0.005590681634172572
+          }
+        },
+        {
+          "pose": "forehead",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0916862536547128,
+            "upperarm_r.flex": 0.010448015884187676,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368869,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "palms_turn",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.07480740261700952,
+            "upperarm_r.flex": 0.12640755742815785,
+            "upperarm_r.abduct": 0.0008032627391880392,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.10713359915460133,
+            "forearm_r.twist": 0.00803730750060085,
+            "hand_r.flex": 0.0011844556784885575,
+            "hand_r.deviate": 0.007815466188837163
+          }
+        },
+        {
+          "pose": "back_reach_15",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.16226204405117278,
+            "upperarm_r.flex": 0.03539691694343042,
+            "upperarm_r.abduct": 0.08525058901518587,
+            "upperarm_r.twist": 0.022843078388777874,
+            "elbow_r.flex": 0.10186785072330666,
+            "forearm_r.twist": 0.010158390018369927,
+            "hand_r.flex": 0.011508879042799094,
+            "hand_r.deviate": 0.0014357932104098064
+          }
+        },
+        {
+          "pose": "back_reach_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.16226204405117278,
+            "upperarm_r.flex": 0.014143366395886118,
+            "upperarm_r.abduct": 0.07643358709889495,
+            "upperarm_r.twist": 0.04412943873533245,
+            "elbow_r.flex": 0.08965997660980157,
+            "forearm_r.twist": 0.01078295900741881,
+            "hand_r.flex": 0.008643342190970255,
+            "hand_r.deviate": 0.0027737394862906526
+          }
+        },
+        {
+          "pose": "back_reach_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.16226204405117278,
+            "upperarm_r.flex": 0.06271980268834115,
+            "upperarm_r.abduct": 0.06240776253428927,
+            "upperarm_r.twist": 0.06240845075941977,
+            "elbow_r.flex": 0.07134192326045555,
+            "forearm_r.twist": 0.010672687159794409,
+            "hand_r.flex": 0.0051887758526251255,
+            "hand_r.deviate": 0.003922660000002024
+          }
+        },
+        {
+          "pose": "waist_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.18912754686958405,
+            "clavicle_r.elevate": 0.25604958123812804,
+            "upperarm_r.flex": 0.02414487119442692,
+            "upperarm_r.abduct": 0.19196011611871755,
+            "upperarm_r.twist": 0.016484847411995653,
+            "elbow_r.flex": 0.05356679957730067,
+            "forearm_r.twist": 0.012077773080351479,
+            "hand_r.flex": 0.006795052403591525,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.008251941026148062,
+            "clavicle_r.elevate": 0.22816100582996646,
+            "upperarm_r.flex": 0.00904824717484986,
+            "upperarm_r.abduct": 0.20080117300716321,
+            "upperarm_r.twist": 0.007643303874893276,
+            "elbow_r.flex": 0.004412971194684434,
+            "forearm_r.twist": 0.007657001311800293,
+            "hand_r.flex": 0.004420879413569908,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "chest_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.18912754686958405,
+            "clavicle_r.elevate": 0.25604958123812804,
+            "upperarm_r.flex": 0.02414487119442692,
+            "upperarm_r.abduct": 0.19196011611871755,
+            "upperarm_r.twist": 0.01648484741199566,
+            "elbow_r.flex": 0.05356679957730067,
+            "forearm_r.twist": 0.01207777308035148,
+            "hand_r.flex": 0.006795052403591525,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.008251941026148062,
+            "clavicle_r.elevate": 0.2281610058299665,
+            "upperarm_r.flex": 0.00904824717484986,
+            "upperarm_r.abduct": 0.20080117300716324,
+            "upperarm_r.twist": 0.007643303874893276,
+            "elbow_r.flex": 0.004412971194684434,
+            "forearm_r.twist": 0.007657001311800293,
+            "hand_r.flex": 0.004420879413569908,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "waist_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.18912754686958405,
+            "clavicle_r.elevate": 0.25604958123812804,
+            "upperarm_r.flex": 0.0060483768447272546,
+            "upperarm_r.abduct": 0.19196011611871755,
+            "upperarm_r.twist": 0.0011982396622091242,
+            "elbow_r.flex": 0.05356679957730067,
+            "forearm_r.twist": 0.003236229543249106,
+            "hand_r.flex": 0.006795052403591527,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.008251941026148062,
+            "clavicle_r.elevate": 0.28393815664628935,
+            "upperarm_r.flex": 0.00904824717484986,
+            "upperarm_r.abduct": 0.18311905923027189,
+            "upperarm_r.twist": 0.007643303874893276,
+            "elbow_r.flex": 0.0044129711946844325,
+            "forearm_r.twist": 0.007657001311800293,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.0067942464208216365
+          }
+        },
+        {
+          "pose": "chest_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.18912754686958405,
+            "clavicle_r.elevate": 0.25604958123812804,
+            "upperarm_r.flex": 0.0060483768447272546,
+            "upperarm_r.abduct": 0.19196011611871755,
+            "upperarm_r.twist": 0.001198239662209115,
+            "elbow_r.flex": 0.05356679957730067,
+            "forearm_r.twist": 0.003236229543249105,
+            "hand_r.flex": 0.006795052403591527,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.008251941026148062,
+            "clavicle_r.elevate": 0.28393815664628935,
+            "upperarm_r.flex": 0.00904824717484986,
+            "upperarm_r.abduct": 0.18311905923027189,
+            "upperarm_r.twist": 0.007643303874893276,
+            "elbow_r.flex": 0.0044129711946844325,
+            "forearm_r.twist": 0.007657001311800293,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "arms_crossed_asymmetric_candidate",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.04092584715447408,
+            "upperarm_r.flex": 0.15872365251005197,
+            "upperarm_r.abduct": 0.08961984937203672,
+            "upperarm_r.twist": 0.055424799984953976,
+            "elbow_r.flex": 0.0874838735706627,
+            "forearm_r.twist": 0.012253620825823751,
+            "hand_r.flex": 0.011998791304786385,
+            "hand_r.deviate": 0.00454199129656652
+          }
+        }
+      ],
+      "support_case": "Unsupported arm, base held. Does not cover hands supporting body, falls or external props."
+    },
+    {
+      "character": "quinn",
+      "side": "l",
+      "modeled_nine_module_mass_g": 302.53833008538464,
+      "explicit_allocations": [
+        {
+          "owner": "clavicle_l.protract_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "clavicle_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l.abduct_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "elbow_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "forearm_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_l.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_l",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_l",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover, harness and remote-board allowance"
+        },
+        {
+          "owner": "forearm_l",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover/harness allowance"
+        },
+        {
+          "owner": "hand_l",
+          "mass_g": 40.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "hand cover/end mass allowance"
+        }
+      ],
+      "arm_mass_budget_g": 454.53833008538464,
+      "axes": [
+        {
+          "axis": "clavicle_l.protract",
+          "family": "M4",
+          "gravity_Nm": 0.17390584007847304,
+          "pose": "waist_pitch_-30_arm_side",
+          "required_hold_Nm": 0.2808587601177096,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 326.03403616933235,
+          "preload_required_at_mu_022_N": 118.55783133430268,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            9.36195867059032,
+            4.68097933529516
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            15.158820006539422,
+            7.579410003269711
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            11.826941335949101,
+            5.913470667974551
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            22.379581335949098,
+            11.189790667974549
+          ],
+          "mu_needed_at_catalog_force": 0.12420344235022183,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": false,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.700427322815102,
+            41.101281968445306
+          ]
+        },
+        {
+          "axis": "clavicle_l.elevate",
+          "family": "LP6",
+          "gravity_Nm": 0.26521754177399576,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.4178263126609937,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 247.9190937466339,
+          "preload_required_at_mu_022_N": 90.15239772604869,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            13.927543755366457,
+            6.963771877683229
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            22.76812848116632,
+            11.38406424058316
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.727518059133192,
+            14.363759029566596
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.52965139246652,
+            31.76482569623326
+          ],
+          "mu_needed_at_catalog_force": 0.05602691384104721,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.264327386063293,
+            39.79298215818988
+          ]
+        },
+        {
+          "axis": "upperarm_l.flex",
+          "family": "LP6",
+          "gravity_Nm": 0.2621880006261481,
+          "pose": "upperarm_l.flex_90",
+          "required_hold_Nm": 0.4132820009392222,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 245.22270625349418,
+          "preload_required_at_mu_022_N": 89.17189318308878,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            13.776066697974073,
+            6.888033348987037
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            22.515666718845676,
+            11.257833359422838
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.626533354204938,
+            14.313266677102469
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.42866668753827,
+            31.714333343769134
+          ],
+          "mu_needed_at_catalog_force": 0.05541756073525292,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.12006352188007,
+            39.36019056564021
+          ]
+        },
+        {
+          "axis": "upperarm_l.abduct",
+          "family": "LP6",
+          "gravity_Nm": 0.21431326676436638,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.3414699001465496,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 202.61267809328496,
+          "preload_required_at_mu_022_N": 73.67733748846726,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            11.382330004884986,
+            5.691165002442493
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            18.5261055636972,
+            9.2630527818486
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            27.030708892145547,
+            13.515354446072774
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            61.83284222547888,
+            30.91642111273944
+          ],
+          "mu_needed_at_catalog_force": 0.045788175840290386,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            10.840314290366655,
+            32.52094287109996
+          ]
+        },
+        {
+          "axis": "upperarm_l.twist",
+          "family": "M4",
+          "gravity_Nm": 0.09349740031034051,
+          "pose": "arms_crossed_asymmetric_candidate",
+          "required_hold_Nm": 0.16024610046551077,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 186.02119760576568,
+          "preload_required_at_mu_022_N": 67.64407185664207,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            5.341536682183692,
+            2.670768341091846
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            8.458116692528376,
+            4.229058346264188
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.146660010344684,
+            4.573330005172342
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            19.699300010344682,
+            9.849650005172341
+          ],
+          "mu_needed_at_catalog_force": 0.07086521813552979,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            7.81688294953711,
+            23.45064884861133
+          ]
+        },
+        {
+          "axis": "elbow_l.flex",
+          "family": "M4",
+          "gravity_Nm": 0.10320310863918326,
+          "pose": "upperarm_l.flex_90",
+          "required_hold_Nm": 0.1748046629587749,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 202.92146052978143,
+          "preload_required_at_mu_022_N": 73.78962201082962,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            5.82682209862583,
+            2.913411049312915
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            9.266925719931939,
+            4.633462859965969
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.470183621306107,
+            4.735091810653054
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            20.02282362130611,
+            10.011411810653055
+          ],
+          "mu_needed_at_catalog_force": 0.07730341353515482,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            8.527056729696335,
+            25.581170189089008
+          ]
+        },
+        {
+          "axis": "forearm_l.twist",
+          "family": "M4",
+          "gravity_Nm": 0.012077988370388917,
+          "pose": "waist_pitch_-30_arm_side",
+          "required_hold_Nm": 0.03811698255558338,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 44.24798309294133,
+          "preload_required_at_mu_022_N": 16.090175670160487,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.2705660851861127,
+            0.6352830425930563
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.67316569753241,
+            0.836582848766205
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.432679612346297,
+            3.2163398061731483
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.985319612346295,
+            8.492659806173148
+          ],
+          "mu_needed_at_catalog_force": 0.0168563745115967,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.8593650027113842,
+            5.578095008134152
+          ]
+        },
+        {
+          "axis": "hand_l.flex",
+          "family": "M4",
+          "gravity_Nm": 0.016190255416690457,
+          "pose": "elbow_l.flex_120",
+          "required_hold_Nm": 0.04428538312503569,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 51.40855210465696,
+          "preload_required_at_mu_022_N": 18.69401894714799,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.4761794375011896,
+            0.7380897187505948
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            2.0158546180575385,
+            1.0079273090287693
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.569755180556347,
+            3.2848775902781737
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            17.12239518055635,
+            8.561197590278175
+          ],
+          "mu_needed_at_catalog_force": 0.019584210325583603,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            2.1602625914651554,
+            6.480787774395465
+          ]
+        },
+        {
+          "axis": "hand_l.deviate",
+          "family": "M4",
+          "gravity_Nm": 0.007845320000004045,
+          "pose": "upperarm_l.abduct_90",
+          "required_hold_Nm": 0.031767980000006066,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 36.87776281575742,
+          "preload_required_at_mu_022_N": 13.410095569366336,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.0589326666668688,
+            0.5294663333334344
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.3204433333336703,
+            0.6602216666668351
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.2915906666668,
+            3.1457953333334
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.8442306666668,
+            8.4221153333334
+          ],
+          "mu_needed_at_catalog_force": 0.014048671548859968,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.5496575609759058,
+            4.648972682927716
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "pose": "neutral",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368888,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.protract_-20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.010448015884187645,
+            "upperarm_l.abduct": 0.01768492153166796,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368888,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.00884175882713982,
+            "hand_l.deviate": 1.0842021724855044e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.protract_20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.010448015884187629,
+            "upperarm_l.abduct": 0.01768492153166797,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368891,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.0842021724855044e-19
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_-10",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.01845505404673957,
+            "upperarm_l.flex": 0.010289287046342703,
+            "upperarm_l.abduct": 0.019798860387679813,
+            "upperarm_l.twist": 0.0015325714273852547,
+            "elbow_l.flex": 0.008691856492689573,
+            "forearm_l.twist": 0.0015353179229813582,
+            "hand_l.flex": 0.008707432643231419,
+            "hand_l.deviate": 0.0013623255212146246
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.16114535963730328,
+            "upperarm_l.flex": 0.009817923428225099,
+            "upperarm_l.abduct": 0.08991784447782718,
+            "upperarm_l.twist": 0.0030185764474679705,
+            "elbow_l.flex": 0.008293672934771493,
+            "forearm_l.twist": 0.0030239859877812837,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "clavicle_l.elevate_40",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.2342650141088331,
+            "upperarm_l.flex": 0.00800364450970077,
+            "upperarm_l.abduct": 0.15130534833391013,
+            "upperarm_l.twist": 0.005673068025927587,
+            "elbow_l.flex": 0.006761064122664272,
+            "forearm_l.twist": 0.005683234636156116,
+            "hand_l.flex": 0.006773180216928629,
+            "hand_l.deviate": 0.005042874490028599
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_-45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.17800705030683825,
+            "upperarm_l.abduct": 0.012505127939794396,
+            "upperarm_l.twist": 0.012504439714663904,
+            "elbow_l.flex": 0.07921650167218301,
+            "forearm_l.twist": 0.006252219857331956,
+            "hand_l.flex": 0.01586172289048734,
+            "hand_l.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.19278277607014582,
+            "upperarm_l.abduct": 0.012505127939794396,
+            "upperarm_l.twist": 0.012504439714663904,
+            "elbow_l.flex": 0.06673473424441394,
+            "forearm_l.twist": 0.006252219857331956,
+            "hand_l.flex": 0.0033575876419141767,
+            "hand_l.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.2621880006261481,
+            "upperarm_l.abduct": 1.9634207073146954e-18,
+            "upperarm_l.twist": 0.017683948234354447,
+            "elbow_l.flex": 0.10320310863918326,
+            "forearm_l.twist": 0.008841974117177229,
+            "hand_l.flex": 0.013590104807191144,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_135",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.17800705030683828,
+            "upperarm_l.abduct": 0.012505127939794395,
+            "upperarm_l.twist": 0.012504439714663904,
+            "elbow_l.flex": 0.07921650167218301,
+            "forearm_l.twist": 0.006252219857331956,
+            "hand_l.flex": 0.01586172289048734,
+            "hand_l.deviate": 9.403401032003504e-20
+          }
+        },
+        {
+          "pose": "upperarm_l.flex_160",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.07985565412420065,
+            "upperarm_l.abduct": 0.016618390262486203,
+            "upperarm_l.twist": 0.006048266509677617,
+            "elbow_l.flex": 0.04359121494319955,
+            "forearm_l.twist": 0.0030241332548388102,
+            "hand_l.flex": 0.012956625118598328,
+            "hand_l.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_-20",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.005776788943225338,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.05668106395285469,
+            "upperarm_l.twist": 0.0030185764474679705,
+            "elbow_l.flex": 0.008293672934771493,
+            "forearm_l.twist": 0.0030239859877812837,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.002683257470837119
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.17337649970217145,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.12247222469254207,
+            "upperarm_l.twist": 0.004412863549667755,
+            "elbow_l.flex": 0.007643490321531385,
+            "forearm_l.twist": 0.004420771768553218,
+            "hand_l.flex": 0.007657187758438385,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.24534746916143585,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.19444319415180653,
+            "upperarm_l.twist": 0.007643303874893299,
+            "elbow_l.flex": 0.004412971194684445,
+            "forearm_l.twist": 0.007657001311800297,
+            "hand_l.flex": 0.004420879413569909,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.26521754177399576,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.21431326676436638,
+            "upperarm_l.twist": 0.008825727099335512,
+            "elbow_l.flex": 9.798764454692507e-19,
+            "forearm_l.twist": 0.008841543537106438,
+            "hand_l.flex": 9.816324228073344e-19,
+            "hand_l.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_120",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.22766254762976804,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.17675827262013855,
+            "upperarm_l.twist": 0.0076433038748933,
+            "elbow_l.flex": 0.004412971194684442,
+            "forearm_l.twist": 0.0076570013118002975,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_l.abduct_160",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.107585338962484,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.05668106395285471,
+            "upperarm_l.twist": 0.0030185764474679718,
+            "elbow_l.flex": 0.008293672934771493,
+            "forearm_l.twist": 0.003023985987781285,
+            "hand_l.flex": 0.008308535524631955,
+            "hand_l.deviate": 0.002683257470837118
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_-90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.04207952120760737,
+            "upperarm_l.flex": 0.0015897947491686896,
+            "upperarm_l.abduct": 0.008824753802021993,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368888,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.1291992859957903e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_-45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.05716895654076477,
+            "upperarm_l.flex": 0.0005285717880172356,
+            "upperarm_l.abduct": 0.006264681531135396,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368886,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 4.336808689942018e-19
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06965041950244885,
+            "upperarm_l.flex": 0.025537451217345034,
+            "upperarm_l.abduct": 0.018746144492819444,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368886,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 0.0
+          }
+        },
+        {
+          "pose": "upperarm_l.twist_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.05973097540627834,
+            "upperarm_l.flex": 0.03695769121787766,
+            "upperarm_l.abduct": 0.008826700396649016,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.00882594238936889,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 5.3098529062263834e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.06323202227161677,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.043958063998060244,
+            "forearm_l.twist": 0.0044209870585886135,
+            "hand_l.flex": 0.0008621353548428096,
+            "hand_l.deviate": 1.151676718758467e-19
+          }
+        },
+        {
+          "pose": "elbow_l.flex_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.10423750090993009,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.08496354263637354,
+            "forearm_l.twist": 0.007657374205079964,
+            "hand_l.flex": 0.007348496589550639,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.12247706691273975,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.10320310863918326,
+            "forearm_l.twist": 0.008841974117177229,
+            "hand_l.flex": 0.01359010480719115,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "elbow_l.flex_120",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.11306344329929896,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.0937894850257424,
+            "forearm_l.twist": 0.007657374205079966,
+            "hand_l.flex": 0.016190255416690457,
+            "hand_l.deviate": 6.649208635946255e-20
+          }
+        },
+        {
+          "pose": "elbow_l.flex_140",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.09237270191062166,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.07309874363706513,
+            "forearm_l.twist": 0.0056835114076906005,
+            "hand_l.flex": 0.01550873120133257,
+            "hand_l.deviate": 1.01871786534107e-19
+          }
+        },
+        {
+          "pose": "forearm_l.twist_-90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.050905678887013604,
+            "upperarm_l.flex": 0.010447585304116857,
+            "upperarm_l.abduct": 1.4038773842916058e-06,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008826372969439687,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 1.1546102744134193e-19
+          }
+        },
+        {
+          "pose": "forearm_l.twist_90",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858876596122647,
+            "upperarm_l.flex": 0.028131533538471327,
+            "upperarm_l.abduct": 0.017684490951597187,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008857575264914782,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139818,
+            "hand_l.deviate": 5.0557430220500884e-20
+          }
+        },
+        {
+          "pose": "hand_l.flex_-60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.0030995192946370147,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.01617443897891953,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.016190255416690457,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_l.flex_60",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.026638271300878123,
+            "upperarm_l.abduct": 0.017684921531667955,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.007364313027321566,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.00734849658955064,
+            "hand_l.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_l.deviate_-30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06466653654129526,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.013762261531665931,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368888,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "hand_l.deviate_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.0725118565412993,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.021607581531669976,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.008825942389368888,
+            "forearm_l.twist": 0.0,
+            "hand_l.flex": 0.008841758827139817,
+            "hand_l.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "arms_forward",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.2621880006261481,
+            "upperarm_l.abduct": 1.9634207073146954e-18,
+            "upperarm_l.twist": 0.017683948234354447,
+            "elbow_l.flex": 0.10320310863918326,
+            "forearm_l.twist": 0.008841974117177229,
+            "hand_l.flex": 0.013590104807191144,
+            "hand_l.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "arms_overhead",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06858919654129728,
+            "upperarm_l.flex": 0.07985565412420065,
+            "upperarm_l.abduct": 0.016618390262486203,
+            "upperarm_l.twist": 0.006048266509677617,
+            "elbow_l.flex": 0.04359121494319955,
+            "forearm_l.twist": 0.0030241332548388102,
+            "hand_l.flex": 0.012956625118598328,
+            "hand_l.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "arms_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.26521754177399576,
+            "upperarm_l.flex": 0.010448015884187657,
+            "upperarm_l.abduct": 0.21431326676436638,
+            "upperarm_l.twist": 0.008825727099335512,
+            "elbow_l.flex": 9.798764454692507e-19,
+            "forearm_l.twist": 0.008841543537106438,
+            "hand_l.flex": 9.816324228073344e-19,
+            "hand_l.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "hands_on_hips",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.16289631646719901,
+            "upperarm_l.flex": 0.08450968218514268,
+            "upperarm_l.abduct": 0.11199204145756977,
+            "upperarm_l.twist": 0.03741779752927842,
+            "elbow_l.flex": 0.07195744521988763,
+            "forearm_l.twist": 0.009576000439412261,
+            "hand_l.flex": 0.014287725025119028,
+            "hand_l.deviate": 0.003447116255906323
+          }
+        },
+        {
+          "pose": "arms_crossed",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.045759643263655156,
+            "upperarm_l.flex": 0.11948487480026686,
+            "upperarm_l.abduct": 0.040851937113700526,
+            "upperarm_l.twist": 0.05908444418769313,
+            "elbow_l.flex": 0.018028306732841497,
+            "forearm_l.twist": 0.007321933622728567,
+            "hand_l.flex": 0.007688122991733016,
+            "hand_l.deviate": 0.005590681634172572
+          }
+        },
+        {
+          "pose": "forehead",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.11720553934674446,
+            "upperarm_l.flex": 0.09853641872728354,
+            "upperarm_l.abduct": 0.02267636793125314,
+            "upperarm_l.twist": 0.062301894246059614,
+            "elbow_l.flex": 0.04967559185889864,
+            "forearm_l.twist": 0.008937607658084407,
+            "hand_l.flex": 0.0011846025980570597,
+            "hand_l.deviate": 0.0036860946558539493
+          }
+        },
+        {
+          "pose": "palms_turn",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.06932575004027097,
+            "upperarm_l.flex": 0.12247706691273975,
+            "upperarm_l.abduct": 0.018421475030641656,
+            "upperarm_l.twist": 0.0,
+            "elbow_l.flex": 0.10320310863918326,
+            "forearm_l.twist": 0.009578527616150918,
+            "hand_l.flex": 0.0011844556784892629,
+            "hand_l.deviate": 0.007815466188837163
+          }
+        },
+        {
+          "pose": "back_reach_15",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.13638545821294787,
+            "upperarm_l.flex": 0.03359518606338639,
+            "upperarm_l.abduct": 0.08256848251783258,
+            "upperarm_l.twist": 0.022123906303035228,
+            "elbow_l.flex": 0.09807128842448015,
+            "forearm_l.twist": 0.01015880592678451,
+            "hand_l.flex": 0.011508879042806912,
+            "hand_l.deviate": 0.0014357932104098064
+          }
+        },
+        {
+          "pose": "back_reach_30",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.13638545821294787,
+            "upperarm_l.flex": 0.014844157744977231,
+            "upperarm_l.abduct": 0.07402887619962542,
+            "upperarm_l.twist": 0.042740104953002456,
+            "elbow_l.flex": 0.08625607197411575,
+            "forearm_l.twist": 0.010783331900701996,
+            "hand_l.flex": 0.008643342190977264,
+            "hand_l.deviate": 0.0027737394862906526
+          }
+        },
+        {
+          "pose": "back_reach_45",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.13638545821294787,
+            "upperarm_l.flex": 0.062271896734151164,
+            "upperarm_l.abduct": 0.06044432430691608,
+            "upperarm_l.twist": 0.06044363608178558,
+            "elbow_l.flex": 0.06856264676361404,
+            "forearm_l.twist": 0.010672991625885175,
+            "hand_l.flex": 0.005188775852630848,
+            "hand_l.deviate": 0.003922660000002024
+          }
+        },
+        {
+          "pose": "waist_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.17390584007847304,
+            "clavicle_l.elevate": 0.22968512870554092,
+            "upperarm_l.flex": 0.024143153339906638,
+            "upperarm_l.abduct": 0.18560073338597252,
+            "upperarm_l.twist": 0.01648527799207053,
+            "elbow_l.flex": 0.05160155431959162,
+            "forearm_l.twist": 0.012077988370388917,
+            "hand_l.flex": 0.00679505240359557,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.006394931821950763,
+            "clavicle_l.elevate": 0.2550411559863542,
+            "upperarm_l.flex": 0.009048247174849845,
+            "upperarm_l.abduct": 0.1767582726201386,
+            "upperarm_l.twist": 0.0076433038748933,
+            "elbow_l.flex": 0.004412971194684442,
+            "forearm_l.twist": 0.0076570013118002975,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.0067942464208216365
+          }
+        },
+        {
+          "pose": "chest_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.17390584007847304,
+            "clavicle_l.elevate": 0.22968512870554092,
+            "upperarm_l.flex": 0.024143153339906638,
+            "upperarm_l.abduct": 0.18560073338597252,
+            "upperarm_l.twist": 0.01648527799207052,
+            "elbow_l.flex": 0.05160155431959162,
+            "forearm_l.twist": 0.012077988370388912,
+            "hand_l.flex": 0.00679505240359557,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.006394931821950763,
+            "clavicle_l.elevate": 0.25504115598635413,
+            "upperarm_l.flex": 0.009048247174849845,
+            "upperarm_l.abduct": 0.1767582726201386,
+            "upperarm_l.twist": 0.0076433038748933,
+            "elbow_l.flex": 0.004412971194684442,
+            "forearm_l.twist": 0.0076570013118002975,
+            "hand_l.flex": 0.004420879413569907,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "waist_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.17390584007847304,
+            "clavicle_l.elevate": 0.22968512870554092,
+            "upperarm_l.flex": 0.0060466589902070066,
+            "upperarm_l.abduct": 0.18560073338597252,
+            "upperarm_l.twist": 0.0011986702422839288,
+            "elbow_l.flex": 0.05160155431959162,
+            "forearm_l.twist": 0.0032360142532116857,
+            "hand_l.flex": 0.006795052403595572,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.006394931821950763,
+            "clavicle_l.elevate": 0.20432910142472785,
+            "upperarm_l.flex": 0.009048247174849845,
+            "upperarm_l.abduct": 0.19444319415180658,
+            "upperarm_l.twist": 0.0076433038748933,
+            "elbow_l.flex": 0.004412971194684444,
+            "forearm_l.twist": 0.0076570013118002975,
+            "hand_l.flex": 0.004420879413569908,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "chest_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.17390584007847304,
+            "clavicle_l.elevate": 0.22968512870554092,
+            "upperarm_l.flex": 0.006046658990207008,
+            "upperarm_l.abduct": 0.18560073338597252,
+            "upperarm_l.twist": 0.0011986702422839251,
+            "elbow_l.flex": 0.05160155431959162,
+            "forearm_l.twist": 0.003236014253211685,
+            "hand_l.flex": 0.006795052403595572,
+            "hand_l.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.006394931821950763,
+            "clavicle_l.elevate": 0.20432910142472785,
+            "upperarm_l.flex": 0.009048247174849845,
+            "upperarm_l.abduct": 0.19444319415180658,
+            "upperarm_l.twist": 0.0076433038748933,
+            "elbow_l.flex": 0.004412971194684444,
+            "forearm_l.twist": 0.0076570013118002975,
+            "hand_l.flex": 0.004420879413569908,
+            "hand_l.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "arms_crossed_asymmetric_candidate",
+          "gravity_Nm": {
+            "clavicle_l.protract": 0.0,
+            "clavicle_l.elevate": 0.05893489712472523,
+            "upperarm_l.flex": 0.14713466619634524,
+            "upperarm_l.abduct": 0.04245150409461785,
+            "upperarm_l.twist": 0.09349740031034051,
+            "elbow_l.flex": 0.03906606440536082,
+            "forearm_l.twist": 0.011368190679017648,
+            "hand_l.flex": 0.006242315982053826,
+            "hand_l.deviate": 0.007213328655955767
+          }
+        }
+      ],
+      "support_case": "Unsupported arm, base held. Does not cover hands supporting body, falls or external props."
+    },
+    {
+      "character": "quinn",
+      "side": "r",
+      "modeled_nine_module_mass_g": 302.53833008538464,
+      "explicit_allocations": [
+        {
+          "owner": "clavicle_r.protract_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "clavicle_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r.abduct_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "elbow_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "forearm_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_r.flex_frame",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "hand_r",
+          "mass_g": 8.0,
+          "local_mm": [
+            0,
+            0,
+            0
+          ],
+          "basis": "8 g provisional yoke/attachment allowance per axis, not an actual COM"
+        },
+        {
+          "owner": "upperarm_r",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover, harness and remote-board allowance"
+        },
+        {
+          "owner": "forearm_r",
+          "mass_g": 20.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "cover/harness allowance"
+        },
+        {
+          "owner": "hand_r",
+          "mass_g": 40.0,
+          "local_mm": [
+            0,
+            0,
+            -20
+          ],
+          "basis": "hand cover/end mass allowance"
+        }
+      ],
+      "arm_mass_budget_g": 454.53833008538464,
+      "axes": [
+        {
+          "axis": "clavicle_r.protract",
+          "family": "M4",
+          "gravity_Nm": 0.1739359227013968,
+          "pose": "waist_pitch_-30_arm_side",
+          "required_hold_Nm": 0.2809038840520952,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 326.08641815111355,
+          "preload_required_at_mu_022_N": 118.57687932767766,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            9.363462801736507,
+            4.681731400868253
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            15.161326891783068,
+            7.580663445891534
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            11.827944090046559,
+            5.9139720450232796
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            22.38058409004656,
+            11.19029204502328
+          ],
+          "mu_needed_at_catalog_force": 0.1242233973909004,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": false,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.702628490346108,
+            41.10788547103832
+          ]
+        },
+        {
+          "axis": "clavicle_r.elevate",
+          "family": "LP6",
+          "gravity_Nm": 0.2652773409710733,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.41791601145660995,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 247.97231692441255,
+          "preload_required_at_mu_022_N": 90.17175160887729,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            13.930533715220331,
+            6.965266857610166
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            22.77311174758944,
+            11.38655587379472
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.729511365702447,
+            14.364755682851223
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.53164469903578,
+            31.76582234951789
+          ],
+          "mu_needed_at_catalog_force": 0.05603894167783334,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.267174966876507,
+            39.801524900629516
+          ]
+        },
+        {
+          "axis": "upperarm_r.flex",
+          "family": "LP6",
+          "gravity_Nm": 0.2622500170758013,
+          "pose": "upperarm_r.flex_90",
+          "required_hold_Nm": 0.413375025613702,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 245.27790285623138,
+          "preload_required_at_mu_022_N": 89.19196467499323,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            13.779167520456733,
+            6.8895837602283665
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            22.520834756316777,
+            11.260417378158389
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            28.628600569193377,
+            14.314300284596689
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            63.43073390252671,
+            31.715366951263356
+          ],
+          "mu_needed_at_catalog_force": 0.055430034543781107,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            13.123016686149269,
+            39.369050058447804
+          ]
+        },
+        {
+          "axis": "upperarm_r.abduct",
+          "family": "LP6",
+          "gravity_Nm": 0.21437465525975585,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.3415619828896338,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.010533333333333334,
+          "catalog_point_force_N": 354,
+          "preload_required_at_mu_008_N": 202.6673157968555,
+          "preload_required_at_mu_022_N": 73.69720574431108,
+          "catalog_point_torque_at_mu_008_Nm": 0.596608,
+          "catalog_point_torque_at_mu_022_Nm": 1.640672,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            11.385399429654461,
+            5.6926997148272305
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            18.531221271646324,
+            9.265610635823162
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            27.032755175325196,
+            13.516377587662598
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            61.83488850865853,
+            30.917444254329265
+          ],
+          "mu_needed_at_catalog_force": 0.045800523343922143,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            10.843237552051866,
+            32.5297126561556
+          ]
+        },
+        {
+          "axis": "upperarm_r.twist",
+          "family": "M4",
+          "gravity_Nm": 0.0700698425106354,
+          "pose": "arms_crossed_asymmetric_candidate",
+          "required_hold_Nm": 0.1251047637659531,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 145.2274839407888,
+          "preload_required_at_mu_022_N": 52.80999416028684,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            4.170158792198436,
+            2.085079396099218
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            6.505820209219617,
+            3.2529101046098083
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            8.36574141702118,
+            4.18287070851059
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            18.91838141702118,
+            9.45919070851059
+          ],
+          "mu_needed_at_catalog_force": 0.05532475578696716,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            6.102671403217224,
+            18.308014209651667
+          ]
+        },
+        {
+          "axis": "elbow_r.flex",
+          "family": "M4",
+          "gravity_Nm": 0.10323545023719258,
+          "pose": "upperarm_r.flex_90",
+          "required_hold_Nm": 0.17485317535578884,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 202.97777599808327,
+          "preload_required_at_mu_022_N": 73.81010036293938,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            5.828439178526295,
+            2.9142195892631473
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            9.269620853099381,
+            4.6348104265496906
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            9.471261674573084,
+            4.735630837286542
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            20.023901674573086,
+            10.011950837286543
+          ],
+          "mu_needed_at_catalog_force": 0.07732486704688887,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            8.529423188087259,
+            25.58826956426178
+          ]
+        },
+        {
+          "axis": "forearm_r.twist",
+          "family": "M4",
+          "gravity_Nm": 0.012478254771306905,
+          "pose": "arms_crossed_asymmetric_candidate",
+          "required_hold_Nm": 0.038717382156960356,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 44.94495514134515,
+          "preload_required_at_mu_022_N": 16.343620051398236,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.2905794052320119,
+            0.6452897026160059
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.706521230942242,
+            0.853260615471121
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.446021825710229,
+            3.2230109128551145
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.99866182571023,
+            8.499330912855115
+          ],
+          "mu_needed_at_catalog_force": 0.01712188767289339,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.8886527881444075,
+            5.665958364433222
+          ]
+        },
+        {
+          "axis": "hand_r.flex",
+          "family": "M4",
+          "gravity_Nm": 0.016190255416683456,
+          "pose": "hand_r.flex_-60",
+          "required_hold_Nm": 0.04428538312502518,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 51.40855210464477,
+          "preload_required_at_mu_022_N": 18.694018947143554,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.4761794375008395,
+            0.7380897187504197
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            2.0158546180569545,
+            1.0079273090284773
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.569755180556114,
+            3.284877590278057
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            17.122395180556115,
+            8.561197590278057
+          ],
+          "mu_needed_at_catalog_force": 0.019584210325578957,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            2.160262591464643,
+            6.480787774393928
+          ]
+        },
+        {
+          "axis": "hand_r.deviate",
+          "family": "M4",
+          "gravity_Nm": 0.007845320000004045,
+          "pose": "upperarm_r.abduct_90",
+          "required_hold_Nm": 0.031767980000006066,
+          "margin_factor": 1.5,
+          "cable_torque_assumption_Nm": 0.02,
+          "effective_radius_m": 0.005383999999999999,
+          "catalog_point_force_N": 210,
+          "preload_required_at_mu_008_N": 36.87776281575742,
+          "preload_required_at_mu_022_N": 13.410095569366336,
+          "catalog_point_torque_at_mu_008_Nm": 0.18090239999999996,
+          "catalog_point_torque_at_mu_022_Nm": 0.49748159999999997,
+          "friction_only_hand_force_at_30mm_60mm_N": [
+            1.0589326666668688,
+            0.5294663333334344
+          ],
+          "minimum_budget_raising_hand_force_at_30mm_60mm_N": [
+            1.3204433333336703,
+            0.6602216666668351
+          ],
+          "raising_force_at_catalog_mu_008_at_30mm_60mm_N": [
+            6.2915906666668,
+            3.1457953333334
+          ],
+          "raising_force_at_catalog_mu_022_at_30mm_60mm_N": [
+            16.8442306666668,
+            8.4221153333334
+          ],
+          "mu_needed_at_catalog_force": 0.014048671548859968,
+          "decision": "CONDITIONAL_NOT_RATING",
+          "low_mu_catalog_point_meets_budget": true,
+          "high_mu_catalog_point_meets_budget": true,
+          "key_loaded_sliding_parasitic_force_at_required_hold_N": [
+            1.5496575609759058,
+            4.648972682927716
+          ]
+        }
+      ],
+      "cases": [
+        {
+          "pose": "neutral",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368858,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "clavicle_r.protract_-20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820881,
+            "upperarm_r.flex": 0.010448015884187669,
+            "upperarm_r.abduct": 0.017682113776891245,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368863,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.00884175882713982,
+            "hand_r.deviate": 2.168404344971009e-19
+          }
+        },
+        {
+          "pose": "clavicle_r.protract_20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820882,
+            "upperarm_r.flex": 0.010448015884187666,
+            "upperarm_r.abduct": 0.017682113776891262,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368856,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.0842021724855044e-19
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_-10",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.018440686926989025,
+            "upperarm_r.flex": 0.01028928704634273,
+            "upperarm_r.abduct": 0.019812285486706552,
+            "upperarm_r.twist": 0.0015325714273852484,
+            "elbow_r.flex": 0.008691856492689543,
+            "forearm_r.twist": 0.0015353179229813572,
+            "hand_r.flex": 0.008707432643231419,
+            "hand_r.deviate": 0.0013623255212146246
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.16116099652937155,
+            "upperarm_r.flex": 0.009817923428225125,
+            "upperarm_r.abduct": 0.08993620215337407,
+            "upperarm_r.twist": 0.003018576447467958,
+            "elbow_r.flex": 0.008293672934771465,
+            "forearm_r.twist": 0.0030239859877812816,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.002683257470837118
+          }
+        },
+        {
+          "pose": "clavicle_r.elevate_40",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2342987989060985,
+            "upperarm_r.flex": 0.008003644509700791,
+            "upperarm_r.abduct": 0.15134265723317947,
+            "upperarm_r.twist": 0.005673068025927564,
+            "elbow_r.flex": 0.006761064122664249,
+            "forearm_r.twist": 0.005683234636156112,
+            "hand_r.flex": 0.006773180216928629,
+            "hand_r.deviate": 0.005042874490028599
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_-45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.1780509025589332,
+            "upperarm_r.abduct": 0.012503142557351896,
+            "upperarm_r.twist": 0.012503830782482388,
+            "elbow_r.flex": 0.07923937063544977,
+            "forearm_r.twist": 0.0062519153912411925,
+            "hand_r.flex": 0.01586172289048162,
+            "hand_r.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.19282662832224085,
+            "upperarm_r.abduct": 0.012503142557351896,
+            "upperarm_r.twist": 0.012503830782482388,
+            "elbow_r.flex": 0.06675760320768069,
+            "forearm_r.twist": 0.0062519153912411925,
+            "hand_r.flex": 0.0033575876419084556,
+            "hand_r.deviate": 9.403401032003505e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.2622500170758013,
+            "upperarm_r.abduct": 1.963108983914638e-18,
+            "upperarm_r.twist": 0.01768308707420478,
+            "elbow_r.flex": 0.10323545023719258,
+            "forearm_r.twist": 0.008841543537102389,
+            "hand_r.flex": 0.013590104807183062,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_135",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.1780509025589332,
+            "upperarm_r.abduct": 0.012503142557351894,
+            "upperarm_r.twist": 0.012503830782482388,
+            "elbow_r.flex": 0.07923937063544977,
+            "forearm_r.twist": 0.0062519153912411925,
+            "hand_r.flex": 0.015861722890481614,
+            "hand_r.deviate": 9.403401032003504e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.flex_160",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.07987686499919955,
+            "upperarm_r.abduct": 0.016615751836041578,
+            "upperarm_r.twist": 0.006047971975559802,
+            "elbow_r.flex": 0.04360227642118603,
+            "forearm_r.twist": 0.0030239859877799003,
+            "hand_r.flex": 0.012956625118595563,
+            "hand_r.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_-20",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.005802012769973362,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.05670469848129096,
+            "upperarm_r.twist": 0.003018576447467958,
+            "elbow_r.flex": 0.008293672934771465,
+            "forearm_r.twist": 0.0030239859877812816,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.17340317306459016,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.12250048735327257,
+            "upperarm_r.twist": 0.004412863549667737,
+            "elbow_r.flex": 0.007643490321531359,
+            "forearm_r.twist": 0.0044207717685532145,
+            "hand_r.flex": 0.007657187758438385,
+            "hand_r.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2453976399822432,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.19449495427092547,
+            "upperarm_r.twist": 0.007643303874893268,
+            "elbow_r.flex": 0.00441297119468443,
+            "forearm_r.twist": 0.0076570013118002905,
+            "hand_r.flex": 0.004420879413569909,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2652773409710733,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.21437465525975585,
+            "upperarm_r.twist": 0.008825727099335476,
+            "elbow_r.flex": 9.798764454692475e-19,
+            "forearm_r.twist": 0.00884154353710643,
+            "hand_r.flex": 9.816324228073344e-19,
+            "hand_r.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_120",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.22771552620535196,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.17681284049403426,
+            "upperarm_r.twist": 0.007643303874893269,
+            "elbow_r.flex": 0.004412971194684427,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "upperarm_r.abduct_160",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.10760738419260857,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.056704698481291005,
+            "upperarm_r.twist": 0.003018576447467959,
+            "elbow_r.flex": 0.008293672934771465,
+            "forearm_r.twist": 0.003023985987781283,
+            "hand_r.flex": 0.008308535524631955,
+            "hand_r.deviate": 0.0026832574708371185
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_-90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0420759853146686,
+            "upperarm_r.flex": 0.0015906559093183854,
+            "upperarm_r.abduct": 0.00882670039664897,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.00882594238936885,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 5.055743022050093e-20
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_-45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.05716481171564454,
+            "upperarm_r.flex": 0.0005291807201987934,
+            "upperarm_r.abduct": 0.006262126004326876,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368855,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 2.168404344971009e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.0696462746773285,
+            "upperarm_r.flex": 0.025536842285163536,
+            "upperarm_r.abduct": 0.018743588966010857,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368851,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 2.168404344971009e-19
+          }
+        },
+        {
+          "pose": "upperarm_r.twist_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.059727439513339586,
+            "upperarm_r.flex": 0.036956830057727964,
+            "upperarm_r.abduct": 0.008824753802021964,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368851,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.1546102744134193e-19
+          }
+        },
+        {
+          "pose": "elbow_r.flex_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.06324819307062143,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.04397423479706493,
+            "forearm_r.twist": 0.004420771768551194,
+            "hand_r.flex": 0.000862135354846855,
+            "hand_r.deviate": 1.151676718758467e-19
+          }
+        },
+        {
+          "pose": "elbow_r.flex_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.1042655095554051,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.08499155128184857,
+            "forearm_r.twist": 0.00765700131179679,
+            "hand_r.flex": 0.007348496589543636,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "elbow_r.flex_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.12250940851074915,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.10323545023719256,
+            "forearm_r.twist": 0.008841543537102389,
+            "hand_r.flex": 0.013590104807183048,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "elbow_r.flex_120",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.11309145194477398,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.09381749367121744,
+            "forearm_r.twist": 0.007657001311796791,
+            "hand_r.flex": 0.01619025541668345,
+            "hand_r.deviate": 6.649208635946255e-20
+          }
+        },
+        {
+          "pose": "elbow_r.flex_140",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.09239349068909951,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.07311953241554295,
+            "forearm_r.twist": 0.005683234636153516,
+            "hand_r.flex": 0.015508731201327374,
+            "hand_r.deviate": 1.01871786534107e-19
+          }
+        },
+        {
+          "pose": "forearm_r.twist_-90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.05090171241400007,
+            "upperarm_r.flex": 0.010448015884191727,
+            "upperarm_r.abduct": 9.732973175571945e-07,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389364816,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 5.055743022050093e-20
+          }
+        },
+        {
+          "pose": "forearm_r.twist_90",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948821293,
+            "upperarm_r.flex": 0.028131102958396513,
+            "upperarm_r.abduct": 0.017682113776895304,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008857144684839956,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139818,
+            "hand_r.deviate": 1.1546102744134193e-19
+          }
+        },
+        {
+          "pose": "hand_r.flex_-60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.0030995192946440472,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.016174438978912492,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.016190255416683456,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_r.flex_60",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.026638271300871135,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.007364313027314592,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.007348496589543632,
+            "hand_r.deviate": 6.649208635946259e-20
+          }
+        },
+        {
+          "pose": "hand_r.deviate_-30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06466213948820687,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.01375945377688925,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368858,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "hand_r.deviate_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.07250745948821091,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.021604773776893297,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368858,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 0.003922660000002022
+          }
+        },
+        {
+          "pose": "arms_forward",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.2622500170758013,
+            "upperarm_r.abduct": 1.963108983914638e-18,
+            "upperarm_r.twist": 0.01768308707420478,
+            "elbow_r.flex": 0.10323545023719258,
+            "forearm_r.twist": 0.008841543537102389,
+            "hand_r.flex": 0.013590104807183062,
+            "hand_r.deviate": 1.476420904632793e-35
+          }
+        },
+        {
+          "pose": "arms_overhead",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.07987686499919955,
+            "upperarm_r.abduct": 0.016615751836041578,
+            "upperarm_r.twist": 0.006047971975559802,
+            "elbow_r.flex": 0.04360227642118603,
+            "forearm_r.twist": 0.0030239859877799003,
+            "hand_r.flex": 0.012956625118595563,
+            "hand_r.deviate": 1.2496424578529268e-19
+          }
+        },
+        {
+          "pose": "arms_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.2652773409710733,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.21437465525975585,
+            "upperarm_r.twist": 0.008825727099335476,
+            "elbow_r.flex": 9.798764454692475e-19,
+            "forearm_r.twist": 0.00884154353710643,
+            "hand_r.flex": 9.816324228073344e-19,
+            "hand_r.deviate": 0.007845320000004045
+          }
+        },
+        {
+          "pose": "hands_on_hips",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.16291891042652173,
+            "upperarm_r.flex": 0.08453351670821604,
+            "upperarm_r.abduct": 0.11201622471520425,
+            "upperarm_r.twist": 0.03743146845008497,
+            "elbow_r.flex": 0.0719782619692673,
+            "forearm_r.twist": 0.009575723295484392,
+            "hand_r.flex": 0.014287725025113818,
+            "hand_r.deviate": 0.0034471162559063257
+          }
+        },
+        {
+          "pose": "arms_crossed",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.04579257980053383,
+            "upperarm_r.flex": 0.11949581440896567,
+            "upperarm_r.abduct": 0.04086518502917405,
+            "upperarm_r.twist": 0.05910582995664952,
+            "elbow_r.flex": 0.018032042485695454,
+            "forearm_r.twist": 0.007321883886758708,
+            "hand_r.flex": 0.0076881229917320805,
+            "hand_r.deviate": 0.005590681634172572
+          }
+        },
+        {
+          "pose": "forehead",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.06858479948820889,
+            "upperarm_r.flex": 0.010448015884187683,
+            "upperarm_r.abduct": 0.017682113776891273,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.008825942389368858,
+            "forearm_r.twist": 0.0,
+            "hand_r.flex": 0.008841758827139817,
+            "hand_r.deviate": 1.3298417271892515e-19
+          }
+        },
+        {
+          "pose": "palms_turn",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.05170594845050561,
+            "upperarm_r.flex": 0.12250940851074915,
+            "upperarm_r.abduct": 0.0008032627391880259,
+            "upperarm_r.twist": 0.0,
+            "elbow_r.flex": 0.10323545023719256,
+            "forearm_r.twist": 0.008037307500600843,
+            "hand_r.flex": 0.001184455678488557,
+            "hand_r.deviate": 0.007815466188837163
+          }
+        },
+        {
+          "pose": "back_reach_15",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.13640418235109422,
+            "upperarm_r.flex": 0.033610183552180824,
+            "upperarm_r.abduct": 0.08258810379072828,
+            "upperarm_r.twist": 0.022129667623024662,
+            "elbow_r.flex": 0.09810252800926078,
+            "forearm_r.twist": 0.010158390018369923,
+            "hand_r.flex": 0.011508879042799096,
+            "hand_r.deviate": 0.0014357932104098064
+          }
+        },
+        {
+          "pose": "back_reach_30",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.13640418235109422,
+            "upperarm_r.flex": 0.014838662716913528,
+            "upperarm_r.abduct": 0.07404646815163642,
+            "upperarm_r.twist": 0.04275123496854508,
+            "elbow_r.flex": 0.08628408061959078,
+            "forearm_r.twist": 0.010782959007418807,
+            "hand_r.flex": 0.008643342190970255,
+            "hand_r.deviate": 0.0027737394862906526
+          }
+        },
+        {
+          "pose": "back_reach_45",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.13640418235109422,
+            "upperarm_r.flex": 0.062276278643899806,
+            "upperarm_r.abduct": 0.060458688075584896,
+            "upperarm_r.twist": 0.06045937630071538,
+            "elbow_r.flex": 0.06858551572688083,
+            "forearm_r.twist": 0.010672687159794397,
+            "hand_r.flex": 0.005188775852625126,
+            "hand_r.deviate": 0.003922660000002024
+          }
+        },
+        {
+          "pose": "waist_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.1739359227013968,
+            "clavicle_r.elevate": 0.229736916329336,
+            "upperarm_r.flex": 0.024144871194426928,
+            "upperarm_r.abduct": 0.18565389738247992,
+            "upperarm_r.twist": 0.016484847411995636,
+            "elbow_r.flex": 0.05161772511859627,
+            "forearm_r.twist": 0.012077773080351482,
+            "hand_r.flex": 0.006795052403591525,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0063949494818667605,
+            "clavicle_r.elevate": 0.20438127940987585,
+            "upperarm_r.flex": 0.009048247174849868,
+            "upperarm_r.abduct": 0.19449495427092547,
+            "upperarm_r.twist": 0.007643303874893269,
+            "elbow_r.flex": 0.004412971194684429,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569908,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "chest_pitch_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.1739359227013968,
+            "clavicle_r.elevate": 0.229736916329336,
+            "upperarm_r.flex": 0.024144871194426928,
+            "upperarm_r.abduct": 0.18565389738247992,
+            "upperarm_r.twist": 0.01648484741199564,
+            "elbow_r.flex": 0.05161772511859627,
+            "forearm_r.twist": 0.01207777308035148,
+            "hand_r.flex": 0.006795052403591525,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_-30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0063949494818667605,
+            "clavicle_r.elevate": 0.20438127940987588,
+            "upperarm_r.flex": 0.009048247174849868,
+            "upperarm_r.abduct": 0.19449495427092553,
+            "upperarm_r.twist": 0.007643303874893269,
+            "elbow_r.flex": 0.004412971194684429,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569908,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "waist_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.1739359227013968,
+            "clavicle_r.elevate": 0.229736916329336,
+            "upperarm_r.flex": 0.006048376844727251,
+            "upperarm_r.abduct": 0.18565389738247992,
+            "upperarm_r.twist": 0.0011982396622091248,
+            "elbow_r.flex": 0.05161772511859627,
+            "forearm_r.twist": 0.003236229543249093,
+            "hand_r.flex": 0.006795052403591527,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "waist_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0063949494818667605,
+            "clavicle_r.elevate": 0.2550925532487962,
+            "upperarm_r.flex": 0.009048247174849868,
+            "upperarm_r.abduct": 0.17681284049403426,
+            "upperarm_r.twist": 0.007643303874893269,
+            "elbow_r.flex": 0.004412971194684427,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.0067942464208216365
+          }
+        },
+        {
+          "pose": "chest_pitch_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.1739359227013968,
+            "clavicle_r.elevate": 0.229736916329336,
+            "upperarm_r.flex": 0.006048376844727256,
+            "upperarm_r.abduct": 0.18565389738247992,
+            "upperarm_r.twist": 0.0011982396622091203,
+            "elbow_r.flex": 0.05161772511859627,
+            "forearm_r.twist": 0.003236229543249094,
+            "hand_r.flex": 0.006795052403591527,
+            "hand_r.deviate": 0.006794246420821636
+          }
+        },
+        {
+          "pose": "chest_roll_30_arm_side",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0063949494818667605,
+            "clavicle_r.elevate": 0.2550925532487962,
+            "upperarm_r.flex": 0.009048247174849868,
+            "upperarm_r.abduct": 0.17681284049403423,
+            "upperarm_r.twist": 0.007643303874893269,
+            "elbow_r.flex": 0.004412971194684427,
+            "forearm_r.twist": 0.007657001311800291,
+            "hand_r.flex": 0.004420879413569907,
+            "hand_r.deviate": 0.006794246420821631
+          }
+        },
+        {
+          "pose": "arms_crossed_asymmetric_candidate",
+          "gravity_Nm": {
+            "clavicle_r.protract": 0.0,
+            "clavicle_r.elevate": 0.05438395461415661,
+            "upperarm_r.flex": 0.16034282862076094,
+            "upperarm_r.abduct": 0.07259693818788844,
+            "upperarm_r.twist": 0.0700698425106354,
+            "elbow_r.flex": 0.07271715518621626,
+            "forearm_r.twist": 0.012478254771306905,
+            "hand_r.flex": 0.010058179781406761,
+            "hand_r.deviate": 0.005588570663389059
+          }
+        }
+      ],
+      "support_case": "Unsupported arm, base held. Does not cover hands supporting body, falls or external props."
+    }
+  ],
+  "input_sha256": {
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/LP6_current/manifest.json": "06a17cb14ed6c1aef9908ac06f6e129bccfaf3ee790e08f51e3c9f4749d7a9b7",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/manifest.json": "28491a4cf749e312ca2ba1b3af029d737a3f2533f13d4922d021fb14315378ae",
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/bilateral_current/layout_search.json": "9748e061cf5107a5724d320ddff14080f659b5b7f9839857d3026ec01262e3ae",
+    "scripts/analyze_revo7_loads.py": "23f1e868cf2c0f9f58db2e92264e41574a2a6f627b353fb8263ce3e9e1719beb",
+    "Hardware/PoseDoll44/cad/model.py": "022f0bf7157c10d062c55667e3813cd4015412576c6091a5b4ae69151c08002b",
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/bilateral_current/manny_l_profile.json": "8c80c2e20f77ad251086673d6ff9ccfa5792f373a6ff441766ff7a9ceee8b0aa",
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/bilateral_current/manny_r_profile.json": "e9c18828e20fe9fc6cfd0fdef8f9c0f2d2dd96d9edb1076aca60713fda3fbade",
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/bilateral_current/quinn_l_profile.json": "44502209a0f1a68f10a2da586c00edf5659be44a8fea70dee86e22a61d4fdc86",
+    "Hardware/PoseDoll44/generated/revO7/runs/o7_20260924_r1/bilateral_current/quinn_r_profile.json": "698a95f9781bc955531790cd0e606db2d91ab620772f9dcb2bb7297198f9d767"
+  },
+  "physical_tested": false,
+  "complete_body_mass_g": null,
+  "mass_hard_limit_kg": null,
+  "force_curve_maximum_known": false,
+  "mechanical_qualification": false,
+  "open": [
+    "Actual yoke CAD/COM replaces allowances",
+    "Spring force and friction distributions",
+    "Operating force acceptance and reversal stability",
+    "Full body contact loads and support reactions",
+    "Shaft, bolts, bond, fatigue and tolerance proof"
+  ]
+}

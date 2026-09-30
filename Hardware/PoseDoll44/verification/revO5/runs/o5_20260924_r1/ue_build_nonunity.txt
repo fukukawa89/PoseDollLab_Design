@@ -1,0 +1,86 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" DollSimulationEditor Win64 Development -Project=E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/DollSimulation.uproject -WaitMutex -NoHotReloadFromIDE -NoLiveCoding -NoUBTMakefiles -DisableUnity
+Log file: C:\Users\Ding\AppData\Local\UnrealBuildTool\Log.txt
+Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
+  Executing up to 16 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Creating makefile for DollSimulationEditor (no existing makefile)
+UHT compiled-in object format Default
+Building DollSimulationEditor...
+===== Toolchain Information =====
+Using ISPC compiler (E:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.44.35229 toolchain (D:\ProgramFiles\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+=================================
+Using Unreal Build Accelerator local executor to run 41 action(s)
+  CPU 16 physical cores, 32 logical cores
+  Memory 63.89 GB physical, 38.04 GB/85.89 GB committed
+  UBA Storage capacity 40 GB
+[1/41] Compile Resource [x64] Default.rc2
+[2/41] Compile Resource [x64] Default.rc2
+[3/41] Compile Resource [x64] Default.rc2
+[4/41] Compile Resource [x64] Default.rc2
+[5/41] Compile Resource [x64] Default.rc2
+[6/41] Compile [x64] SharedPCH.Core.Project.ValApi.ValExpApi.Cpp20.cpp
+[7/41] Compile [x64] PoseDollCoreModule.cpp
+[8/41] Compile [x64] PoseDollTransportModule.cpp
+[9/41] Compile [x64] PerModuleInline.gen.cpp
+[10/41] Compile [x64] PerModuleInline.gen.cpp
+[11/41] Compile [x64] PoseDollStaticRouterTests.cpp
+[12/41] Compile [x64] PoseDollCoreTests.cpp
+[13/41] Compile [x64] PoseDollStaticTests.cpp
+[14/41] Compile [x64] PoseDollStatic.cpp
+[15/41] Compile [x64] PoseDollTransport.cpp
+[16/41] Link [x64] UnrealEditor-PoseDollTransport.lib
+  正在创建库 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollTransport/UnrealEditor-PoseDollTransport.lib 和对象 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollTransport/UnrealEditor-PoseDollTransport.exp
+[17/41] Compile [x64] PoseDollCore.cpp
+[18/41] Link [x64] UnrealEditor-PoseDollCore.lib
+  正在创建库 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollCore/UnrealEditor-PoseDollCore.lib 和对象 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollCore/UnrealEditor-PoseDollCore.exp
+[19/41] Link [x64] UnrealEditor-PoseDollTransport.dll
+[20/41] Link [x64] UnrealEditor-PoseDollCore.dll
+[21/41] Compile [x64] SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp
+[22/41] Compile [x64] PoseDollRigModule.cpp
+[23/41] Compile [x64] PerModuleInline.gen.cpp
+[24/41] Compile [x64] DollSimulation.cpp
+[25/41] Compile [x64] PerModuleInline.gen.cpp
+[26/41] Compile [x64] PerModuleInline.gen.cpp
+[27/41] Compile [x64] Module.PoseDollEditor.gen.cpp
+[28/41] Link [x64] UnrealEditor-DollSimulation.lib
+  正在创建库 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Intermediate/Build/Win64/x64/UnrealEditor/Development/DollSimulation/UnrealEditor-DollSimulation.lib 和对象 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Intermediate/Build/Win64/x64/UnrealEditor/Development/DollSimulation/UnrealEditor-DollSimulation.exp
+[29/41] Link [x64] UnrealEditor-DollSimulation.dll
+[30/41] Compile [x64] PoseDollContacts.cpp
+[31/41] Compile [x64] PoseDollRigAdapter.cpp
+[32/41] Link [x64] UnrealEditor-PoseDollRig.lib
+  正在创建库 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollRig/UnrealEditor-PoseDollRig.lib 和对象 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollRig/UnrealEditor-PoseDollRig.exp
+[33/41] Link [x64] UnrealEditor-PoseDollRig.dll
+[34/41] Compile [x64] PoseDollEngineBridge.cpp
+[35/41] Compile [x64] PoseDollStaticSession.cpp
+[36/41] Compile [x64] PoseDollSessionLibrary.cpp
+[37/41] Compile [x64] PoseDollEditorModule.cpp
+[38/41] Compile [x64] PoseDollSession.cpp
+E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\.local\o5_ue_project\Plugins\PoseDoll\Source\PoseDollEditor\Private\PoseDollSession.cpp(170,34): warning C4996: 'ULevelSequence::FindBindingFromObject': Use the version that takes a SharedPlaybackState - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    const FGuid Actual=Sequence->FindBindingFromObject(Component.Get(),Component->GetWorld());
+                                 ^
+E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\.local\o5_ue_project\Plugins\PoseDoll\Source\PoseDollEditor\Private\PoseDollSession.cpp(171,40): warning C4996: 'ULevelSequence::FindBindingFromObject': Use the version that takes a SharedPlaybackState - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    const FGuid ActorBinding=Sequence->FindBindingFromObject(Component->GetOwner(),Component->GetWorld());
+                                       ^
+E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\.local\o5_ue_project\Plugins\PoseDoll\Source\PoseDollEditor\Private\PoseDollSession.cpp(183,25): warning C4996: 'ULevelSequence::FindBindingFromObject': Use the version that takes a SharedPlaybackState - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    Binding=InSequence->FindBindingFromObject(InComponent,InComponent->GetWorld());
+                        ^
+E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\.local\o5_ue_project\Plugins\PoseDoll\Source\PoseDollEditor\Private\PoseDollSession.cpp(184,49): warning C4996: 'ULevelSequence::FindBindingFromObject': Use the version that takes a SharedPlaybackState - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    if (!Binding.IsValid()) Binding=InSequence->FindBindingFromObject(InComponent->GetOwner(),InComponent->GetWorld());
+                                                ^
+E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\.local\o5_ue_project\Plugins\PoseDoll\Source\PoseDollEditor\Private\PoseDollSession.cpp(237,46): warning C4996: 'ULevelSequence::FindBindingFromObject': Use the version that takes a SharedPlaybackState - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    if (WritePlacement && Binding!=Sequence->FindBindingFromObject(Component->GetOwner(),Component->GetWorld())) {Error=TEXT("Placement capture requires an actor binding");return false;}
+                                             ^
+[39/41] Link [x64] UnrealEditor-PoseDollEditor.lib
+  正在创建库 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollEditor/UnrealEditor-PoseDollEditor.lib 和对象 E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/.local/o5_ue_project/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollEditor/UnrealEditor-PoseDollEditor.exp
+[40/41] Link [x64] UnrealEditor-PoseDollEditor.dll
+[41/41] WriteMetadata DollSimulationEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 57.27 seconds
+Output binary: E:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 65.36 seconds
+Trace written to file C:\Users\Ding\AppData\Local\UnrealBuildTool\Trace.uba with size 20.7kb

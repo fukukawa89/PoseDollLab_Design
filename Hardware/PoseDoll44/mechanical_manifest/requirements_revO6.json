@@ -1,0 +1,48 @@
+{
+  "schema": "o6-design-authority-v1",
+  "date": "2026-09-24",
+  "status": "DIGITAL_RESEARCH_NOT_MANUFACTURING_RELEASE",
+  "user_authority": {
+    "continue_autonomously": true,
+    "change_plan_when_demonstrated_blocker": true,
+    "hardware_available": false,
+    "digital_work_first": true,
+    "back_concentration_permitted_if_motion_limited": true,
+    "mass_1p2kg_hard_limit_removed": true
+  },
+  "anatomy_reference_mm": 480,
+  "assembled_height_preference_mm": 500,
+  "assembled_height_hard_limit_mm": 600,
+  "backup_910mm_preserved": true,
+  "complete_assembled_height_mm": null,
+  "mass_hard_limit_kg": null,
+  "full_mass_COM_loads_and_operating_force_still_required": true,
+  "capture_use": "Set pose, let it settle, then capture a static pose. No realtime motion capture requirement.",
+  "production_baseline": "Preserve O5 AS5048 A, G0 external, 41 measured + 3 fixed slots; no new physical hardware accepted.",
+  "production_protocol_unchanged": true,
+  "UE_calibration_unchanged": true,
+  "motion_acceptance": "Do not remove motions or presume a back pod clears reaching/lying/bending. Check both characters and arms, actual links, electronics and harness.",
+  "back_fallback": {
+    "sensor_heads_stay_at_joints": true,
+    "centralizable": "Acquisition, communication and distribution modules",
+    "older_no_backpack_absolute_rule_overridden": true,
+    "no_qualified_compact_central_PCB": true,
+    "reused_six_board_box_rejected_as_current_motion_solution": true,
+    "anatomical_box_target_requires_real_module_audit": true
+  },
+  "supplier_policy": "Keep current parts unless a specific digital/mechanical/electrical blocker or supported improvement warrants change. Local supplier is a candidate criterion, not proof of superiority.",
+  "trial_adoptions": {
+    "M4_spring": "Raleigh A 8 x 4.2 x 0.4, 210 N catalog point; guide redesigned, no drop-in claim, no physical qualification",
+    "MT6701_CJT": "O5CN trial preserved isolated",
+    "AS5048_DC1": "Host digital experiment only; capture_eligible=False"
+  },
+  "gates": {
+    "single_joint_nominal": "Only scoped geometry checks pass; force, precision, bond and production fits remain open",
+    "bilateral_complete_mechanism": "FAIL, module collisions and missing actual yokes/skin/harness",
+    "back_reservation": "FAIL against current modules",
+    "electronics_capture_qualification": "UNCHANGED, new experiments not integrated",
+    "physical_tested": false,
+    "manufacturing_released": false
+  },
+  "no_commit_push_or_order_in_this_iteration": true
+}

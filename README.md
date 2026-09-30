@@ -4,6 +4,22 @@
 
 ## 当前状态
 
+**O21 已生成约 1500 元的降本工程候选。** 保留 O20 骨架和46路测量；改用 MT6701CT、单面传感板、中央三组16路选择和预制五芯线。单套目标分配1482.50元，尚无正式报价。传感板 ERC/DRC 与固件/主机测试通过；中央板布线、装配集成、实物标定和UE端到端仍未完成，不是整机制造放行。
+
+- [O21设计与成本依据](Hardware/PoseDoll44/docs/DESIGN_REVO21.zh-CN.md)
+- [O21预算与通道预览](Hardware/PoseDoll44/tutorials/full-doll-o21/index.html)
+- [O21工程设计包](Hardware/PoseDoll44/bench/revO21/PoseDoll_O21_CostDown_Design.zip)
+- [加工询价要求](Hardware/PoseDoll44/bench/revO21/RFQ.zh-CN.md)
+
+### O20已保存机械基线
+
+O20为900f572 / posedoll-o20-lightweight-20260930，原ZIP和文件保持不变。保留用户已接受的双髋布局、非相邻姿势避碰及O11摩擦配合结论。
+
+- [O20设计说明](Hardware/PoseDoll44/docs/DESIGN_REVO20.zh-CN.md)
+- [O20机械设计包](Hardware/PoseDoll44/bench/revO20/PoseDoll_O20_Universal_Design.zip)
+
+### O19历史记录
+
 **O19 已生成腿杆对齐候选：替换4件腿部连接架，仍为188件/117种打印件。** O11独立小样的配合与可调摩擦已由用户报告通过，不增加摩擦冗余。左大腿及双小腿中间直段对齐参考骨线，右大腿中间段保留向前6mm偏移。双髋中心各外移16mm和既有整机干涉仍保留；24案例及43个中间样本无新增干涉，不能据此声称整机全域通过。
 
 - [O19设计与验证说明](Hardware/PoseDoll44/docs/DESIGN_REVO19.zh-CN.md)

@@ -4,11 +4,19 @@
 
 ## 当前状态
 
-**O17 已完成本轮简化小样候选：202件/124种打印件，46路测量保持，USB直连。** O16已保存为本地提交 `26255df`、标签 `posedoll-o16-saved-20260930`。O17仍有O16继承的整机干涉，不能制造放行；先做四件托夹/磁铁座小样。
+**O18 已生成结构简化候选：188件/117种打印件，保留46路测量与USB直连。** 相比O17少14件半壳、28枚螺钉和28枚螺母。O17已冻结为 `5a5ac22` / `posedoll-o17-prototype-20260930`。整机既有干涉仍未解决，先验证Q001/Q002关节小样，不能制造放行。
+
+- [O18设计与已知问题](Hardware/PoseDoll44/docs/DESIGN_REVO18.zh-CN.md)
+- [O18简化设计包](Hardware/PoseDoll44/bench/revO18/PoseDoll_O18_Universal_Design.zip)
+- [O18三维与外壳对照页](Hardware/PoseDoll44/tutorials/full-doll-o18/index.html)：本地服务 `/tutorials/full-doll-o18/index.html`。
+
+### O17已保存基线
+
+**O17简化候选已冻结：202件/124种打印件。** 保留设计包、三维页面、USB固件与验证报告的原始字节。
 
 - [O17设计与已知问题](Hardware/PoseDoll44/docs/DESIGN_REVO17.zh-CN.md)
-- [O17简化设计包](Hardware/PoseDoll44/bench/revO17/PoseDoll_O17_Universal_Design.zip)
-- [O17三维与零件对照页](Hardware/PoseDoll44/tutorials/full-doll-o17/index.html)：本地服务 `/tutorials/full-doll-o17/index.html`。
+- [O17设计包](Hardware/PoseDoll44/bench/revO17/PoseDoll_O17_Universal_Design.zip)
+- [O17三维页面](Hardware/PoseDoll44/tutorials/full-doll-o17/index.html)
 
 ### O16已保存基线
 

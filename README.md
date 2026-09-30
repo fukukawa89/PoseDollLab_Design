@@ -1,10 +1,19 @@
 # PoseDoll 人偶硬件设计
 
-Manny / Quinn 传感器可动人偶的独立设计仓库。原来位于 `DollSimulation` UE 工程中的硬件、固件与硬件诊断工具已经迁入本目录；UE 插件、角色资产与完整 Python 模拟器留在原项目。
+通用静态测姿人偶的独立设计仓库；Manny / Quinn 为软件适配目标。原来位于 `DollSimulation` UE 工程中的硬件、固件与硬件诊断工具已经迁入本目录；UE 插件、角色资产与完整 Python 模拟器留在原项目。
 
 ## 当前状态
 
-**当前主方案为 O15 完整数字样机，等待统一实物验证。** 480 mm UE 参考、静态摆姿采集；整机无 1.2 kg 硬门槛，允许手托。采用 FDM 打印与现成金属小件，不需要定制机加工金属件。91 cm 方案继续保留为备用。
+**当前新版为 O16 单一通用测姿人偶设计候选。** 实体型号收敛为一个，数字高度492.14 mm，46路原始测量；保留O15 Quinn机械几何，不再分别生成两种体型。相邻机构不干涉仍是硬要求，连续全域避碰、实物标定与O16双角色UE验收尚未完成。
+
+- [O16完整设计说明](Hardware/PoseDoll44/docs/DESIGN_REVO16.zh-CN.md)
+- [O16单人偶设计包](Hardware/PoseDoll44/bench/revO16/PoseDoll_O16_Universal_Design.zip)：一套打印、采购、线束、实体profile与离线测量参考。
+- [O16三维查看页](Hardware/PoseDoll44/tutorials/full-doll-o16/index.html)：先运行下方本地服务，再访问 `/tutorials/full-doll-o16/index.html`。
+- 复建与核验脚本：`Hardware/PoseDoll44/cad/revO16/`。本轮不含接触修正，不要求目标角色与实体几何重合。
+
+### O15历史基线
+
+**O15完整数字样机保留，等待实物验证。** 480 mm UE 参考、静态摆姿采集；整机无 1.2 kg 硬门槛，允许手托。采用 FDM 打印与现成金属小件，不需要定制机加工金属件。91 cm 方案继续保留为备用。
 
 - [本次提交与审查入口](Hardware/PoseDoll44/docs/REVIEW_HANDOFF_O15.zh-CN.md)：先读此页，再查详细设计、证据和未验证项。
 - [O15 详细审查请求](Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO15.zh-CN.md)；[数字结果汇总](Hardware/PoseDoll44/generated/revO15/runs/o15_20260929_r1/FINAL_BATCH_SUMMARY.json)。
@@ -25,7 +34,7 @@ Manny / Quinn 传感器可动人偶的独立设计仓库。原来位于 `DollSim
 
 ## 阅读入口
 
-0. [当前主方案 O15](Hardware/PoseDoll44/docs/REVIEW_HANDOFF_O15.zh-CN.md)。以下 Rev M/N 文档用于备用版。
+0. [O15历史方案](Hardware/PoseDoll44/docs/REVIEW_HANDOFF_O15.zh-CN.md)。以下 Rev M/N 文档用于备用版。
 
 1. [最新 Rev N1 设计入口](Hardware/PoseDoll44/START_HERE_REVN.zh-CN.md)
 2. [胸部修订与设备外置方案](Hardware/PoseDoll44/docs/CHEST_AND_EXTERNAL_REVN.zh-CN.md)

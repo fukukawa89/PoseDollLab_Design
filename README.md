@@ -4,7 +4,15 @@
 
 ## 当前状态
 
-**当前新版为 O16 单一通用测姿人偶设计候选。** 实体型号收敛为一个，数字高度492.14 mm，46路原始测量；保留O15 Quinn机械几何，不再分别生成两种体型。相邻机构不干涉仍是硬要求，连续全域避碰、实物标定与O16双角色UE验收尚未完成。
+**O17 已完成本轮简化小样候选：202件/124种打印件，46路测量保持，USB直连。** O16已保存为本地提交 `26255df`、标签 `posedoll-o16-saved-20260930`。O17仍有O16继承的整机干涉，不能制造放行；先做四件托夹/磁铁座小样。
+
+- [O17设计与已知问题](Hardware/PoseDoll44/docs/DESIGN_REVO17.zh-CN.md)
+- [O17简化设计包](Hardware/PoseDoll44/bench/revO17/PoseDoll_O17_Universal_Design.zip)
+- [O17三维与零件对照页](Hardware/PoseDoll44/tutorials/full-doll-o17/index.html)：本地服务 `/tutorials/full-doll-o17/index.html`。
+
+### O16已保存基线
+
+**O16 单一通用测姿人偶设计候选已冻结保存。** 实体型号收敛为一个，数字高度492.14 mm，46路原始测量；保留O15 Quinn机械几何，不再分别生成两种体型。相邻机构不干涉仍是硬要求，连续全域避碰、实物标定与O16双角色UE验收尚未完成。
 
 - [O16完整设计说明](Hardware/PoseDoll44/docs/DESIGN_REVO16.zh-CN.md)
 - [O16单人偶设计包](Hardware/PoseDoll44/bench/revO16/PoseDoll_O16_Universal_Design.zip)：一套打印、采购、线束、实体profile与离线测量参考。

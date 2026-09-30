@@ -1,0 +1,40 @@
+{
+  "schema": "POSEDOLL-O16-TARGET-CONTRACT/1",
+  "status": "DESIGN_CONTRACT_NOT_PRODUCTION_TARGET_PROFILE",
+  "targets": [
+    {
+      "target": "manny",
+      "device_profile_id": "o16_universal_v1",
+      "mesh": "/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple",
+      "rig_class": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Body.CR_Mannequin_Body_C",
+      "skeleton": "/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin",
+      "source": "Hardware/PoseDoll44/reference/ue58/manny_mesh_probe.json",
+      "source_sha256": "a19d3f0b764dd9c91a77eb99f5488f1bb31990ff5cd738f94bfd9463f74f9073",
+      "legacy_manny_profile": "Shared/Profiles/manny_body_ue582_v1.json",
+      "o16_live_adapter_implemented": false,
+      "o16_capture_save_reopen_test": "NOT_RUN",
+      "preserve_target_reference_translations": true,
+      "contact_correction": false,
+      "root_and_fingers": "AUTHORED_IN_UE",
+      "spine_neck_twist_helpers": "DERIVED_NOT_MEASURED"
+    },
+    {
+      "target": "quinn",
+      "device_profile_id": "o16_universal_v1",
+      "mesh": "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+      "rig_class": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Body.CR_Mannequin_Body_C",
+      "skeleton": "/Game/Characters/Mannequins/Meshes/SK_Mannequin.SK_Mannequin",
+      "source": "Hardware/PoseDoll44/reference/ue58/quinn_mesh_probe.json",
+      "source_sha256": "8205d08de98c098937f48e11cdfda366a8c34fdf616bbfb3d3242d5a96545ec4",
+      "legacy_manny_profile": null,
+      "o16_live_adapter_implemented": false,
+      "o16_capture_save_reopen_test": "NOT_RUN",
+      "preserve_target_reference_translations": true,
+      "contact_correction": false,
+      "root_and_fingers": "AUTHORED_IN_UE",
+      "spine_neck_twist_helpers": "DERIVED_NOT_MEASURED"
+    }
+  ],
+  "conversion_failure_policy": "preserve valid raw capture; reject/mark target application separately; never clip or fill zero",
+  "o17_note": "Same 41 semantic DOF and physical FK. P17R transport needs its own decoder; O16 firmware is not interchangeable."
+}

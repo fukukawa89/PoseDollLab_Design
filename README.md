@@ -4,6 +4,16 @@
 
 ## 当前状态
 
+**O19 已生成腿杆对齐候选：替换4件腿部连接架，仍为188件/117种打印件。** O11独立小样的配合与可调摩擦已由用户报告通过，不增加摩擦冗余。左大腿及双小腿中间直段对齐参考骨线，右大腿中间段保留向前6mm偏移。双髋中心各外移16mm和既有整机干涉仍保留；24案例及43个中间样本无新增干涉，不能据此声称整机全域通过。
+
+- [O19设计与验证说明](Hardware/PoseDoll44/docs/DESIGN_REVO19.zh-CN.md)
+- [O19单台设计包](Hardware/PoseDoll44/bench/revO19/PoseDoll_O19_Universal_Design.zip)
+- [O19腿部对照与干涉展示](Hardware/PoseDoll44/tutorials/full-doll-o19/index.html)：本地服务 `/tutorials/full-doll-o19/index.html`。
+
+### O18已保存基线
+
+O18已保存为 `08e8f8b` / `posedoll-o18-prototype-20260930`，342项文件和原ZIP校验通过。以下为O18发布时状态。
+
 **O18 已生成结构简化候选：188件/117种打印件，保留46路测量与USB直连。** 相比O17少14件半壳、28枚螺钉和28枚螺母。O17已冻结为 `5a5ac22` / `posedoll-o17-prototype-20260930`。整机既有干涉仍未解决，先验证Q001/Q002关节小样，不能制造放行。
 
 - [O18设计与已知问题](Hardware/PoseDoll44/docs/DESIGN_REVO18.zh-CN.md)

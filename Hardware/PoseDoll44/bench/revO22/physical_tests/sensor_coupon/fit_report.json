@@ -1,0 +1,166 @@
+{
+  "physical_test": false,
+  "retains_original_O11_parts": true,
+  "friction_modified": false,
+  "sampled_angles_deg": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60
+  ],
+  "overlaps": [],
+  "status": "PASS",
+  "mounting": "Fixed bridge on existing O11 (-20,-9) M4 through-hole with washer/nut; moving bridge at existing x=100 lever M3 hole. Replace fixture mounting bolts with suitable lengths, no extra joint preload.",
+  "additional_stock": "M3x25 + M3 nut + 2 washers at lever tip; existing M4 bench clamp length +3.0mm; one D6x2.5 diametric magnet; one O22 PCBA",
+  "range_is_fixture_only": [
+    0,
+    60
+  ],
+  "print_parts": [
+    {
+      "name": "sensor_bridge",
+      "bed": {
+        "status": "Error.NoError",
+        "components": 1,
+        "boundary_shells": 1,
+        "enclosed_void_shells": 0,
+        "volume_mm3": 1934.9222881027245,
+        "COM_mm": [
+          19.66780826028118,
+          14.530542728690476,
+          11.778982580671208
+        ],
+        "bounds_mm": [
+          8.0,
+          8.0,
+          0.0,
+          42.04999999999998,
+          32.05,
+          25.500000000000085
+        ],
+        "flat_contact_area_mm2": 222.10703959707521,
+        "contact_hull_mm": [
+          [
+            8.0,
+            8.0
+          ],
+          [
+            22.0,
+            8.0
+          ],
+          [
+            22.0,
+            25.0
+          ],
+          [
+            8.0,
+            25.0
+          ]
+        ],
+        "COM_over_model_contact_hull": true,
+        "downward_nonbed_area_mm2": 157.70045123598564,
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          35.0,
+          27.0,
+          -8.0
+        ],
+        "supports_required": true,
+        "orientation_scope": "Planar bed contact and geometric support diagnostic; not validated layer strength or adhesion."
+      }
+    },
+    {
+      "name": "magnet_bridge",
+      "bed": {
+        "status": "Error.NoError",
+        "components": 1,
+        "boundary_shells": 1,
+        "enclosed_void_shells": 0,
+        "volume_mm3": 2968.9147158969167,
+        "COM_mm": [
+          14.84933959155832,
+          13.999999999999968,
+          33.17405277158811
+        ],
+        "bounds_mm": [
+          8.0,
+          8.0,
+          0.0,
+          20.59999999999999,
+          20.0,
+          110.0
+        ],
+        "flat_contact_area_mm2": 118.79999999999995,
+        "contact_hull_mm": [
+          [
+            8.000000000000002,
+            8.0
+          ],
+          [
+            17.9,
+            8.0
+          ],
+          [
+            17.9,
+            20.0
+          ],
+          [
+            8.000000000000002,
+            20.0
+          ]
+        ],
+        "COM_over_model_contact_hull": true,
+        "downward_nonbed_area_mm2": 60.6729584213888,
+        "rotation": [
+          [
+            1.1102230246251565e-16,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -1.0,
+            0.0,
+            1.1102230246251565e-16
+          ]
+        ],
+        "translation_mm": [
+          -7.000000000000011,
+          14.0,
+          105.0
+        ],
+        "supports_required": true,
+        "orientation_scope": "Planar bed contact and geometric support diagnostic; not validated layer strength or adhesion."
+      }
+    }
+  ]
+}

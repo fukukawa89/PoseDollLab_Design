@@ -1,0 +1,43 @@
+### Result
+{"viewer":{"url":"http://127.0.0.1:8769/tutorials/full-doll-o14/index.html","contentType":"text/html; charset=utf-8","title":"PoseDoll O14 · 整机设计进展","sceneAudit":{"missing":[],"counts":{"manny":57,"quinn":57},"glError":0,"facts":{"cases":102,"adjacentFailures":0,"nonadjacentContacts":12,"shoulderOffsetPerSideMm":0}},"contactText":"橙色：非相邻部位接触，需调整姿势","core":{"parts":44,"alpha":20,"beta":-60,"enabled":true},"mobile":{"width":390,"scrollWidth":375}},"guide":{"url":"http://127.0.0.1:8769/tutorials/core-print/index.html","contentType":"text/html; charset=utf-8","title":"双轴核心：打印、零件数量与试装 | PoseDoll O14","mobile":{"width":390,"scrollWidth":375,"images":[true,true,true,true],"replacementCharacters":false,"parts":4,"bomRows":8},"links":[{"url":"http://127.0.0.1:8769/tutorials/full-doll-o14/index.html","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/O14_core_supplier_review.zip","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/print_beds/O14_core_flat_faces_supports_required.3mf","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/print_beds/C01_flat_face.stl","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/print_beds/C02_flat_face.stl","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/print_beds/C14_flat_face.stl","status":200},{"url":"http://127.0.0.1:8769/bench/revO14/print_beds/C15_flat_face.stl","status":200}]},"errors":[],"badResponses":[]}
+### Ran Playwright code
+```js
+await (async page => {
+ const errors=[],badResponses=[];
+ page.on('pageerror',e=>errors.push(String(e)));
+ page.on('response',r=>{if(r.status()>=400)badResponses.push({url:r.url(),status:r.status()});});
+ const root='http://127.0.0.1:8769';
+ const response=await page.goto(root+'/tutorials/full-doll/index.html');
+ await page.waitForFunction(()=>window.O13_READY===true);
+ const viewer={url:page.url(),contentType:response.headers()['content-type'],title:await page.title()};
+ viewer.sceneAudit=await page.evaluate(()=>{
+  const t=O13_TEST,missing=[],counts={};
+  for(const c of ['manny','quinn']){t.state.character=c;counts[c]=t.scenes().length;for(let i=0;i<t.scenes().length;i++){t.state.pose=i;for(const o of t.scenes()[i].objects)if(!O13_MODELS[o.key])missing.push(o.key);t.draw();}}
+  return {missing,counts,glError:document.querySelector('canvas').getContext('webgl').getError(),facts:O13_RESULTS};
+ });
+ await page.selectOption('#character','quinn');
+ const contactIndex=await page.evaluate(()=>O13_TEST.scenes().findIndex(s=>s.pose==='arms_crossed'));
+ await page.selectOption('#pose',String(contactIndex));
+ viewer.contactText=await page.locator('#coverage').innerText();
+ await page.locator('#shoulders').click();
+ await page.locator('.workbench').screenshot({path:'E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/output/playwright/o14-contact-view.png'});
+ await page.locator('#core').click();
+ await page.locator('#alpha').fill('20');await page.locator('#beta').fill('-60');
+ viewer.core=await page.evaluate(()=>({parts:O13_CORE.length,alpha:O13_TEST.state.alpha,beta:O13_TEST.state.beta,enabled:O13_TEST.state.core}));
+ await page.locator('.workbench').screenshot({path:'E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/output/playwright/o14-core-view.png'});
+ await page.setViewportSize({width:390,height:844});
+ viewer.mobile=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth}));
+ const gr=await page.goto(root+'/bench/revO13/README.zh-CN.md');
+ const guide={url:page.url(),contentType:gr.headers()['content-type'],title:await page.title()};
+ await page.locator('.part img').first().waitFor({state:'visible'});
+ await page.waitForFunction(()=>[...document.querySelectorAll('.part img')].every(x=>x.complete));
+ guide.mobile=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,images:[...document.querySelectorAll('.part img')].map(x=>x.complete&&x.naturalWidth>0),replacementCharacters:document.body.innerText.includes('\uFFFD'),parts:document.querySelectorAll('.part').length,bomRows:document.querySelectorAll('tbody tr').length}));
+ await page.screenshot({path:'E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/output/playwright/o14-guide-mobile.png'});
+ const hrefs=await page.locator('a').evaluateAll(xs=>xs.map(x=>x.href).filter(x=>x.startsWith(location.origin)));
+ guide.links=[];for(const url of [...new Set(hrefs)]){const r=await page.request.get(url);guide.links.push({url,status:r.status()});}
+ await page.setViewportSize({width:1440,height:1080});
+ await page.goto(root+'/tutorials/core-print/index.html');
+ return {viewer,guide,errors,badResponses};
+}
+)(page);
+```

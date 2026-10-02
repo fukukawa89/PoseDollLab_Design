@@ -1,0 +1,45 @@
+{
+  "status": "COMPILED_AND_NATIVE_TESTS_PASSED",
+  "platform": "ESP-IDF v6.1 / ESP32-S3",
+  "transport": "USB Serial/JTAG, P17R/1",
+  "radio_started": false,
+  "hardware_flashed": false,
+  "physical_tested": false,
+  "packet_bit_flips": 1536,
+  "packet_truncations": 192,
+  "sensor_response_bit_flips": 4400,
+  "sensor_chain_lengths_tested": 10,
+  "session_tests": [
+    "identity and reboot",
+    "fresh scans",
+    "idempotent ACK",
+    "retired capture replay",
+    "cancel and stale cancel",
+    "faulty axis",
+    "clock rollback",
+    "capture timeout",
+    "token overflow",
+    "forged completion",
+    "capture capacity"
+  ],
+  "source_sha256": {
+    "build.ps1": "39569bb61ed4127eddc649ca146d4f8931419cb258416ce2d59e810a960d9586",
+    "CMakeLists.txt": "73acf85b3c32dd0a4d4d424fb6cb23bc29da78b1496ef5b4dc760cccff26e88c",
+    "raw46.c": "ebd4dae73aec746809769c5d85b1c71d5f799223c6a909555a4ca327de11dbac",
+    "raw46.h": "d3dfef673240f3a477627cb72eeb55d469ceffd4b786ac3acbb26452d76d7d4e",
+    "sdkconfig.defaults": "5de87495d0b0181a03a54e32e94917d9f253d84de1a08da3481850db4170fae1",
+    "session.c": "9ba02a77c113aa5e0c0720dd8fa8b614cdc2ae2f6dcea79405c546be2e6be793",
+    "session.h": "57fc9da7bb32586a16be55f80f01c2e02eb728777ac514042ce27181dce4024a",
+    "test_raw46.c": "6b2ffc88594bd0a83de5b2d6c70eb10d7498493f9f4667dfb21f38a58875a4c5",
+    "test_session.c": "213e7f9f37a4a2c825948705f4f79deb9ada46d5c277851d627529825b5839b0",
+    "main/CMakeLists.txt": "33f8299cbf8a680869d9f1b2fda60318634e02c794afa48063be8f4e097be68e",
+    "main/main.c": "11195ebabee22cfb35b87629395107848bdb977b3d6cb310106638567bcf7ae5",
+    "main/scanner.inc": "6bf268de0d108b2171132d583c74194f5899aeae536cd313d490b61d8c62b17b"
+  },
+  "binary_sha256": {
+    "app.bin": "8332598d77eeee79ce28659839c8f24ac9173f385ccde0d820a366c43026f132",
+    "bootloader.bin": "41b509f3c802c5c076a93f7999ebd0c6473c6832649fccacdba4bc9dcb59f484",
+    "partition-table.bin": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+  },
+  "build_log_sha256": "f13322b29fa4cc169b21281dd43f3692c2f756c58929695b5837a89a360f0afe"
+}

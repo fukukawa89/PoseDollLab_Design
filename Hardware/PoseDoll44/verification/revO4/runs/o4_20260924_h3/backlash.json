@@ -1,0 +1,134 @@
+{
+  "run_id": "o4_20260924_h3",
+  "scope": "SCOPED_CAD_RECONSTRUCTION_NOT_FULL_ASSEMBLY_OR_PHYSICAL_TEST",
+  "source_commit": "b2c54e380004c90317463fa5ef26c780171a0ce6",
+  "nominal_track_width_mm": 4.16,
+  "nominal_ear_width_mm": 4.0,
+  "one_sided_positive_stop_gap_deg": 0.32521510097654194,
+  "full_stop_to_stop_clearance_deg": 0.6504302019530839,
+  "checks": [
+    {
+      "angle_deg": -0.4,
+      "intersection_mm3": 0.03583800658155689,
+      "overlap_above_1e_4": true
+    },
+    {
+      "angle_deg": -0.35,
+      "intersection_mm3": 0.004863862471032992,
+      "overlap_above_1e_4": true
+    },
+    {
+      "angle_deg": -0.33,
+      "intersection_mm3": 0.00019227722530769495,
+      "overlap_above_1e_4": true
+    },
+    {
+      "angle_deg": -0.32,
+      "intersection_mm3": 0.0,
+      "overlap_above_1e_4": false
+    },
+    {
+      "angle_deg": -0.3,
+      "intersection_mm3": 0.0,
+      "overlap_above_1e_4": false
+    },
+    {
+      "angle_deg": 0,
+      "intersection_mm3": 0.0,
+      "overlap_above_1e_4": false
+    },
+    {
+      "angle_deg": 0.3,
+      "intersection_mm3": 0.0,
+      "overlap_above_1e_4": false
+    },
+    {
+      "angle_deg": 0.32,
+      "intersection_mm3": 0.0,
+      "overlap_above_1e_4": false
+    },
+    {
+      "angle_deg": 0.33,
+      "intersection_mm3": 0.00019227722530769424,
+      "overlap_above_1e_4": true
+    },
+    {
+      "angle_deg": 0.35,
+      "intersection_mm3": 0.004863862471032025,
+      "overlap_above_1e_4": true
+    },
+    {
+      "angle_deg": 0.4,
+      "intersection_mm3": 0.03583800658154787,
+      "overlap_above_1e_4": true
+    }
+  ],
+  "interpretation": "Positive torque ear geometry allows nominal clearance. Back-face friction may restrain motion but is unqualified; this is not a measured output drift or sensor error.",
+  "excluded": [
+    "Complete cup geometry outside front carrier slice",
+    "Preload friction at all contacts",
+    "Elasticity, wear, tolerance extrema",
+    "Combined shaft-key clearance"
+  ],
+  "source_file_sha256": "dc019285b4b8ada35e4035594d6695ccfa498377f9a12d2eae5b34f06044eed4",
+  "tolerance_study": [
+    {
+      "ear_width_mm": 4.0,
+      "slot_width_mm": 4.16,
+      "full_clearance_deg": 0.6504302019530839,
+      "interference_mm": 0,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    },
+    {
+      "ear_width_mm": 4.02,
+      "slot_width_mm": 4.14,
+      "full_clearance_deg": 0.48777311739374485,
+      "interference_mm": 0,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    },
+    {
+      "ear_width_mm": 3.98,
+      "slot_width_mm": 4.18,
+      "full_clearance_deg": 0.8131200700349969,
+      "interference_mm": 0,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    },
+    {
+      "ear_width_mm": 4.0,
+      "slot_width_mm": 4.04,
+      "full_clearance_deg": 0.16255762770970802,
+      "interference_mm": 0,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    },
+    {
+      "ear_width_mm": 4.02,
+      "slot_width_mm": 4.02,
+      "full_clearance_deg": 8.470329472543003e-22,
+      "interference_mm": 0,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    },
+    {
+      "ear_width_mm": 4.04,
+      "slot_width_mm": 4.0,
+      "full_clearance_deg": null,
+      "interference_mm": 0.040000000000000036,
+      "qualification": "GEOMETRY_ONLY_NO_LOADED_SLIDING_CREDIT"
+    }
+  ],
+  "wall_candidate": {
+    "current_radius_mm": 15,
+    "thicker_radius_mm": 16,
+    "slot_corner_radius_mm": 14.351529535209826,
+    "current_radial_ligament_mm": 0.648470464790174,
+    "thicker_radial_ligament_mm": 1.648470464790174,
+    "strength": "NOT_QUALIFIED; thread interruptions remain; separate rail/load path still to design"
+  },
+  "required_next_tests": [
+    "fixed front backing positive retention",
+    "rear axial guide loaded slip and anti-backlash",
+    "bond coupon shear/peel/creep",
+    "output coupler and full reverse torque chain",
+    "actual maximum spring force and stop",
+    "complete chest/shoulder/arm with A/C harness"
+  ]
+}

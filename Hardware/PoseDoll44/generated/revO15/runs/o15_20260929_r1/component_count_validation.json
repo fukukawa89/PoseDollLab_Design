@@ -1,0 +1,90 @@
+{
+  "cases": [
+    {
+      "case": "closed_void",
+      "expected_material_components": 1,
+      "mesh": {
+        "status": "Error.NoError",
+        "components": 1,
+        "boundary_shells": 2,
+        "enclosed_void_shells": 1,
+        "volume_mm3": 991.9999999999999,
+        "COM_mm": [
+          4.999999999999999,
+          4.999999999999999,
+          4.999999999999999
+        ],
+        "bounds_mm": [
+          0.0,
+          0.0,
+          0.0,
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      "signed_boundary_volumes": [
+        1000.0,
+        -8.0
+      ]
+    },
+    {
+      "case": "disconnected_control",
+      "expected_material_components": 2,
+      "mesh": {
+        "status": "Error.NoError",
+        "components": 2,
+        "boundary_shells": 2,
+        "enclosed_void_shells": 0,
+        "volume_mm3": 1007.9999999999999,
+        "COM_mm": [
+          5.079365079365081,
+          5.000000000000001,
+          5.000000000000001
+        ],
+        "bounds_mm": [
+          0.0,
+          0.0,
+          0.0,
+          16.0,
+          10.0,
+          10.0
+        ]
+      },
+      "signed_boundary_volumes": [
+        1000.0,
+        7.999999999999999
+      ]
+    },
+    {
+      "case": "island_inside_void",
+      "expected_material_components": 2,
+      "mesh": {
+        "status": "Error.NoError",
+        "components": 2,
+        "boundary_shells": 3,
+        "enclosed_void_shells": 1,
+        "volume_mm3": 992.9999999999999,
+        "COM_mm": [
+          5.0,
+          5.0,
+          5.0
+        ],
+        "bounds_mm": [
+          0.0,
+          0.0,
+          0.0,
+          10.0,
+          10.0,
+          10.0
+        ]
+      },
+      "signed_boundary_volumes": [
+        1000.0,
+        -8.0,
+        0.9999999999999998
+      ]
+    }
+  ],
+  "source_sha256": "1ea6c9bbeee28ae24f269ab33804bccc694b370298a73569611bc954fd4d08df"
+}

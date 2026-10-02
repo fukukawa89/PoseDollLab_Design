@@ -1,0 +1,931 @@
+{
+  "run_id": "o4_20260924_h2",
+  "schema": "o4-hardware-comparison-v1",
+  "boards": [
+    {
+      "kind": "A_proximal5",
+      "pcb_mm": [
+        36,
+        48,
+        1.2
+      ],
+      "pcb_area_mm2": 1728,
+      "components": 98,
+      "placement": "PASS_XY_ONLY",
+      "checks": {
+        "erc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\proximal5\\erc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\proximal5\\PoseDoll_RevO3_proximal5.kicad_sch"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 0,
+          "violations_by_type": {}
+        },
+        "drc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\proximal5\\drc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\proximal5\\PoseDoll_RevO3_proximal5.kicad_pcb"
+          ],
+          "exit_code": 0,
+          "status": "FAIL",
+          "severity_counts": {
+            "error": 0,
+            "warning": 4
+          },
+          "unconnected_items": 271,
+          "violations_by_type": {
+            "lib_footprint_mismatch": 1,
+            "silk_overlap": 3
+          }
+        }
+      },
+      "physical_dimensions_mm": [
+        36.0,
+        53.95,
+        12.5
+      ],
+      "physical_bbox_mm3": 24277.5,
+      "R4_dimensions_mm": [
+        37.675000000000004,
+        53.95,
+        19.900000000000002
+      ],
+      "R12_dimensions_mm": [
+        45.675,
+        53.95,
+        27.9
+      ],
+      "with_service_dimensions_mm": [
+        36.0,
+        53.95,
+        24.5
+      ],
+      "J50_mating_width_mm": 15,
+      "unqualified_models": [
+        "J1",
+        "J1_mating_model",
+        "J2_mating_model",
+        "J3_mating_model",
+        "L1",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U2",
+        "U50",
+        "U51"
+      ]
+    },
+    {
+      "kind": "A_distal4",
+      "pcb_mm": [
+        26,
+        30,
+        1.2
+      ],
+      "pcb_area_mm2": 780,
+      "components": 47,
+      "placement": "PASS_XY_ONLY",
+      "checks": {
+        "erc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\distal4\\erc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\distal4\\PoseDoll_RevO3_distal4.kicad_sch"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 0,
+          "violations_by_type": {}
+        },
+        "drc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\distal4\\drc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO3\\runs\\o3_20260924_r3\\electronics\\distal4\\PoseDoll_RevO3_distal4.kicad_pcb"
+          ],
+          "exit_code": 0,
+          "status": "FAIL",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 136,
+          "violations_by_type": {}
+        }
+      },
+      "physical_dimensions_mm": [
+        26.0,
+        30.0,
+        8.385
+      ],
+      "physical_bbox_mm3": 6540.3,
+      "R4_dimensions_mm": [
+        27.675,
+        31.675,
+        15.785000000000004
+      ],
+      "R12_dimensions_mm": [
+        35.675,
+        39.675,
+        23.785
+      ],
+      "with_service_dimensions_mm": [
+        26.0,
+        30.0,
+        20.385
+      ],
+      "J50_mating_width_mm": 15,
+      "unqualified_models": [
+        "U16",
+        "U17",
+        "U18",
+        "U19"
+      ]
+    },
+    {
+      "kind": "proximal5_rs485",
+      "pcb_mm": [
+        36,
+        48,
+        1.2
+      ],
+      "pcb_area_mm2": 1728,
+      "components": 96,
+      "placement": "PASS_XY_ONLY",
+      "checks": {
+        "erc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\proximal5_rs485\\erc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\proximal5_rs485\\PoseDoll_RevO4_proximal5_rs485.kicad_sch"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 0,
+          "violations_by_type": {}
+        },
+        "drc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\proximal5_rs485\\drc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\proximal5_rs485\\PoseDoll_RevO4_proximal5_rs485.kicad_pcb"
+          ],
+          "exit_code": 0,
+          "status": "FAIL",
+          "severity_counts": {
+            "error": 0,
+            "warning": 5
+          },
+          "unconnected_items": 252,
+          "violations_by_type": {
+            "lib_footprint_mismatch": 1,
+            "silk_overlap": 4
+          }
+        }
+      },
+      "physical_dimensions_mm": [
+        36.0,
+        54.67000000000001,
+        12.5
+      ],
+      "physical_bbox_mm3": 24601.500000000004,
+      "R4_dimensions_mm": [
+        37.675000000000004,
+        62.07000000000001,
+        19.900000000000002
+      ],
+      "R12_dimensions_mm": [
+        45.675,
+        70.07000000000001,
+        27.9
+      ],
+      "with_service_dimensions_mm": [
+        36.0,
+        66.67,
+        24.5
+      ],
+      "J50_mating_width_mm": 5,
+      "unqualified_models": [
+        "J1",
+        "J1_mating_model",
+        "J2_mating_model",
+        "J3_mating_model",
+        "L1",
+        "U11",
+        "U12",
+        "U13",
+        "U14",
+        "U15",
+        "U2"
+      ]
+    },
+    {
+      "kind": "distal4_rs485",
+      "pcb_mm": [
+        26,
+        30,
+        1.2
+      ],
+      "pcb_area_mm2": 780,
+      "components": 66,
+      "placement": "PASS_XY_ONLY",
+      "checks": {
+        "erc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485\\erc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485\\PoseDoll_RevO4_distal4_rs485.kicad_sch"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 0,
+          "violations_by_type": {}
+        },
+        "drc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485\\drc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485\\PoseDoll_RevO4_distal4_rs485.kicad_pcb"
+          ],
+          "exit_code": 0,
+          "status": "FAIL",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 171,
+          "violations_by_type": {}
+        }
+      },
+      "physical_dimensions_mm": [
+        26.0,
+        30.72,
+        12.5
+      ],
+      "physical_bbox_mm3": 9984.0,
+      "R4_dimensions_mm": [
+        27.675,
+        39.795,
+        19.900000000000002
+      ],
+      "R12_dimensions_mm": [
+        35.675,
+        55.795,
+        27.9
+      ],
+      "with_service_dimensions_mm": [
+        26.0,
+        42.72,
+        24.5
+      ],
+      "J50_mating_width_mm": 5,
+      "unqualified_models": [
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U60"
+      ]
+    },
+    {
+      "kind": "distal4_rs485_stretch",
+      "pcb_mm": [
+        20,
+        30,
+        1.2
+      ],
+      "pcb_area_mm2": 600,
+      "components": 66,
+      "placement": "PASS_XY_ONLY",
+      "checks": {
+        "erc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "sch",
+            "erc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485_stretch\\erc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485_stretch\\PoseDoll_RevO4_distal4_rs485_stretch.kicad_sch"
+          ],
+          "exit_code": 0,
+          "status": "PASS",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 0,
+          "violations_by_type": {}
+        },
+        "drc": {
+          "command": [
+            "D:\\ProgramFiles\\KiCad\\10.0\\bin\\kicad-cli.exe",
+            "pcb",
+            "drc",
+            "--format",
+            "json",
+            "--severity-all",
+            "-o",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485_stretch\\drc.json",
+            "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO4\\runs\\o4_20260924_h2\\electronics\\distal4_rs485_stretch\\PoseDoll_RevO4_distal4_rs485_stretch.kicad_pcb"
+          ],
+          "exit_code": 0,
+          "status": "FAIL",
+          "severity_counts": {
+            "error": 0,
+            "warning": 0
+          },
+          "unconnected_items": 171,
+          "violations_by_type": {}
+        }
+      },
+      "physical_dimensions_mm": [
+        20.0,
+        30.72,
+        12.5
+      ],
+      "physical_bbox_mm3": 7680.0,
+      "R4_dimensions_mm": [
+        21.675,
+        38.12,
+        19.900000000000002
+      ],
+      "R12_dimensions_mm": [
+        29.675,
+        46.12,
+        27.9
+      ],
+      "with_service_dimensions_mm": [
+        20.0,
+        42.72,
+        24.5
+      ],
+      "J50_mating_width_mm": 5,
+      "unqualified_models": [
+        "U16",
+        "U17",
+        "U18",
+        "U19",
+        "U60"
+      ]
+    }
+  ],
+  "timing": {
+    "scope": "SERIALIZATION_AND_SCHEDULING_ASSUMPTION_NOT_MEASURED_FIRMWARE",
+    "request_bytes": 68,
+    "response_bytes": 80,
+    "baud": 115200,
+    "framing": "8N1",
+    "link_serial_us": 12847.22222222222,
+    "per_axis_wire_and_CS_us": 670.0,
+    "diagnostic_register_reads_per_axis": 5,
+    "remote_read_wire_CS_us": 2680.0,
+    "remote_attempt_with_assumed_2ms_turnaround_scheduler_us": 17527.22222222222,
+    "one_arm_sequential_five_local_plus_remote_us": 20877.22222222222,
+    "all41_serial_SPI_base_us": 27470.0,
+    "two_remote_links_serial_extra_us": 29694.44444444444,
+    "conservative_all41_plus_two_links_us": 57164.44444444444,
+    "two_retry_one_link_sensitivity_us": 92218.88888888888,
+    "CAN_gateway_USB_and_OS_us": "NOT_MEASURED_NOT_INCLUDED",
+    "max_extra_retries_per_node_per_transaction": 2,
+    "no_per_scan_retry_reset": true,
+    "qualification": "No schedulability proof; retire incomplete scans, never reuse previous angles"
+  },
+  "power": {
+    "scope": "PARAMETRIC_DC_DROP_SENSITIVITY_NOT_SUPPLY_QUALIFICATION",
+    "source_min_V": 3.135,
+    "AS5048_3V_min_V": 3.0,
+    "sensor_four_max_mA": 60,
+    "additional_load_budget": "MCU, transceiver, buffers, terminations, wiring and inrush unresolved; sweep 100/200/250mA",
+    "TPS2553_DBV_Ron_max_ohm": 0.135,
+    "per_contact_ohm_assumed": 0.02,
+    "four_series_mated_contacts": true,
+    "PCB_path_ohm_assumed": 0.05,
+    "wire_material": "copper, rho20=.017241 ohm mm2/m, alpha=.00393/K; actual stranded cable must be measured",
+    "current_limit": {
+      "resistor_kohm": 100,
+      "tolerance_fraction": 0.01,
+      "min_mA": 232.02070109058533,
+      "typ_mA": 266.2597486839411,
+      "max_mA": 305.81088630108087,
+      "formula_source": "TI TPS2553 SLVS841F section 9.2.1 equations 1",
+      "warning": "Current-limit protection cannot compensate voltage drop; startup/inrush and thermal cycling untested"
+    },
+    "cases": [
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.08034256600946742,
+        "remote_V": 3.1004657433990532,
+        "margin_to_3V_V": 0.10046574339905323,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.08034256600946742,
+        "remote_V": 3.0659314867981062,
+        "margin_to_3V_V": 0.06593148679810623,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.08034256600946742,
+        "remote_V": 3.048664358497633,
+        "margin_to_3V_V": 0.048664358497632954,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.09297241738615569,
+        "remote_V": 3.0992027582613844,
+        "margin_to_3V_V": 0.09920275826138436,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.09297241738615569,
+        "remote_V": 3.0634055165227685,
+        "margin_to_3V_V": 0.06340551652276849,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.09297241738615569,
+        "remote_V": 3.0455068956534608,
+        "margin_to_3V_V": 0.04550689565346078,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.16068513201893483,
+        "remote_V": 3.092431486798106,
+        "margin_to_3V_V": 0.0924314867981062,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.16068513201893483,
+        "remote_V": 3.0498629735962126,
+        "margin_to_3V_V": 0.04986297359621261,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.16068513201893483,
+        "remote_V": 3.0285787169952663,
+        "margin_to_3V_V": 0.028578716995266262,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.18594483477231138,
+        "remote_V": 3.0899055165227685,
+        "margin_to_3V_V": 0.08990551652276846,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.18594483477231138,
+        "remote_V": 3.0448110330455376,
+        "margin_to_3V_V": 0.044811033045537574,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 26,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.18594483477231138,
+        "remote_V": 3.022263791306922,
+        "margin_to_3V_V": 0.02226379130692191,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.1277496839600378,
+        "remote_V": 3.095725031603996,
+        "margin_to_3V_V": 0.09572503160399615,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.1277496839600378,
+        "remote_V": 3.056450063207992,
+        "margin_to_3V_V": 0.05645006320799206,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.1277496839600378,
+        "remote_V": 3.0368125790099905,
+        "margin_to_3V_V": 0.036812579009990465,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.14783193427855573,
+        "remote_V": 3.0937168065721443,
+        "margin_to_3V_V": 0.09371680657214432,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.14783193427855573,
+        "remote_V": 3.052433613144289,
+        "margin_to_3V_V": 0.05243361314428885,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.14783193427855573,
+        "remote_V": 3.031792016430361,
+        "margin_to_3V_V": 0.03179201643036089,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.2554993679200756,
+        "remote_V": 3.082950063207992,
+        "margin_to_3V_V": 0.08295006320799203,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.2554993679200756,
+        "remote_V": 3.0309001264159847,
+        "margin_to_3V_V": 0.03090012641598472,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.2554993679200756,
+        "remote_V": 3.004875158019981,
+        "margin_to_3V_V": 0.004875158019980841,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.29566386855711146,
+        "remote_V": 3.078933613144289,
+        "margin_to_3V_V": 0.07893361314428882,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.29566386855711146,
+        "remote_V": 3.0228672262885774,
+        "margin_to_3V_V": 0.022867226288577402,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 28,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.29566386855711146,
+        "remote_V": 2.994834032860722,
+        "margin_to_3V_V": -0.0051659671392778606,
+        "passes_voltage_only": false
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.20312995417605192,
+        "remote_V": 3.0881870045823945,
+        "margin_to_3V_V": 0.08818700458239448,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.20312995417605192,
+        "remote_V": 3.041374009164789,
+        "margin_to_3V_V": 0.04137400916478917,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.20312995417605192,
+        "remote_V": 3.017967511455987,
+        "margin_to_3V_V": 0.017967511455986962,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.23506198297252728,
+        "remote_V": 3.084993801702747,
+        "margin_to_3V_V": 0.08499380170274717,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.23506198297252728,
+        "remote_V": 3.034987603405494,
+        "margin_to_3V_V": 0.034987603405494117,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.3,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.23506198297252728,
+        "remote_V": 3.009984504256868,
+        "margin_to_3V_V": 0.009984504256868032,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.1,
+        "loop_ohm": 0.40625990835210385,
+        "remote_V": 3.0678740091647896,
+        "margin_to_3V_V": 0.06787400916478958,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.2,
+        "loop_ohm": 0.40625990835210385,
+        "remote_V": 3.000748018329579,
+        "margin_to_3V_V": 0.0007480183295789367,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 20,
+        "load_A": 0.25,
+        "loop_ohm": 0.40625990835210385,
+        "remote_V": 2.967185022911974,
+        "margin_to_3V_V": -0.032814977088026165,
+        "passes_voltage_only": false
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.1,
+        "loop_ohm": 0.47012396594505457,
+        "remote_V": 3.0614876034054945,
+        "margin_to_3V_V": 0.06148760340549453,
+        "passes_voltage_only": true
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.2,
+        "loop_ohm": 0.47012396594505457,
+        "remote_V": 2.987975206810989,
+        "margin_to_3V_V": -0.012024793189011174,
+        "passes_voltage_only": false
+      },
+      {
+        "AWG": 30,
+        "one_way_length_m": 0.6,
+        "copper_C": 60,
+        "load_A": 0.25,
+        "loop_ohm": 0.47012396594505457,
+        "remote_V": 2.951219008513736,
+        "margin_to_3V_V": -0.048780991486264025,
+        "passes_voltage_only": false
+      }
+    ],
+    "failed_voltage_cases": 4,
+    "recommendation": "Qualify short 26 AWG 3V3 path first. If transient/margin fails, study 5V plus local regulator as a separate sized/power-qualified variant; do not silently change J50 pinout"
+  },
+  "harness": {
+    "J50_A_conductors": 14,
+    "J50_C_conductors": 4,
+    "J50_reduction_percent": 71.42857142857143,
+    "other_shoulders_conductors": "UNCHANGED; actual multi-axis route is not yet frozen",
+    "same_OD_assumption_mm": 0.8,
+    "packing_fraction_assumed": 0.7,
+    "A_equivalent_bundle_mm": 3.577708763999664,
+    "C_equivalent_bundle_mm": 1.9123657749350298,
+    "qualification": "AREA_PROXY_ONLY_NOT_MIN_BEND_RADIUS_OR_TORQUE",
+    "electrical_nodes": {
+      "processors": 9,
+      "CAN_nodes": 7,
+      "logical_regions": 6,
+      "measured_axes": 41
+    }
+  },
+  "C_host_codec_python_crosscheck": "PASS",
+  "native_duration_us": 300000,
+  "packaging_screen_failures": {
+    "manny": 20,
+    "quinn": 20
+  },
+  "full_arm_assembled": false,
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "conclusion": "C reduces J50 and fits two remote placement candidates, but routing, net 3D packaging, power transient and loaded motion remain blockers. Retain A as fallback.",
+  "sources": {
+    "STM32": "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf",
+    "THVD1400": "https://www.ti.com/lit/ds/symlink/thvd1400.pdf",
+    "JST": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+    "TPS2553": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+    "AS5048": "https://look.ams-osram.com/m/287d7ad97d1ca22e/original/AS5048-DS000298.pdf"
+  },
+  "consumed_inputs": [
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/artifacts/electronics.json",
+        "sha256": "4ee30e939c85da71c89acc06e400b59e6cc2f620187fe98a6ed1f5edcd504559",
+        "merkle_root": "baea324db4547198b61fd5ae10e614b3b52f4a0fae7c5570cd86b4c93954dfc2",
+        "file_count": 131
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/electronics.json": "79bd30097992f171fc382fa66555332f75dcf863554e10fe8079c2ab7fa4f811"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/artifacts/pcba_geometry.json",
+        "sha256": "8cfb5e919e9ee39c1ea777aa19e812dfd91583326534f6c175bc47e9cc51d46f",
+        "merkle_root": "8a49aeb26c970f9f78d7b4b4c6fb7951e7c21a2da4b4b17213fbeda3fc6eed64",
+        "file_count": 128
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/pcba_geometry.json": "c8f7f3244a776af661de516105dfec699a5f3d8b592b88ae19d9a250492eda1a"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/artifacts/remote_link.json",
+        "sha256": "5cd9692a30dbafbd2a4d04b9af3959f8b74137caa735f1c47bd3e4ba11c32b2a",
+        "merkle_root": "dc597d19a5a6b5bdf449ce591ec17b438934e526e68564c1d56e1bed104d31da",
+        "file_count": 5
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/generated/revO4/runs/o4_20260924_h2/remote_link/pdr4_golden.bin": "db03752a08d4ae55e45671751a7717f653667c0a09ebd2b89535b76b3eeebbf0"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/artifacts/packaging.json",
+        "sha256": "1556aa8ffa57b0b2c5f0ce9940b0e7e652069395a40d63c12a7fd77b1898d501",
+        "merkle_root": "60823a4ac38d0bc3af1f40809ac12fd02ad07ddf170603a8c33040ee606af8a8",
+        "file_count": 3
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO4/runs/o4_20260924_h2/packaging.json": "ab07ad895b2a9dbe46d3708749d5e1deeea0f76494b73d9ff0934ac3b2690b38"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1422 @@
+{
+  "run_id": "o3_20260924_r1",
+  "schema": "revo3-joint-v1",
+  "name": "L6-R3",
+  "cad_valid": true,
+  "part_count": 47,
+  "solid_intersections": [],
+  "nominal_solid_status": "PASS_NOMINAL_GEOMETRY_ONLY",
+  "tool_solid_intersections": [],
+  "mass_policy": "No hard mass ceiling; existing pockets retained without additional mass-driven redesign",
+  "modeled_mass_g": 45.28873463236995,
+  "bounds_mm": [
+    -17.031015678203605,
+    -17.031015678203605,
+    -18.008833071191358,
+    20.303224441147027,
+    17.031015678203605,
+    31.640000100000044
+  ],
+  "dimensions_mm": [
+    37.33424011935063,
+    34.06203135640721,
+    49.6488331711914
+  ],
+  "parts": [
+    {
+      "part_id": "one_piece_brake_cup",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 8.822926178738305,
+      "local_com_mm": [
+        0.2720620544382756,
+        0.003935984373515338,
+        -4.0131039927551875
+      ],
+      "volume_mm3": 3267.7504365697423,
+      "bounds_mm": [
+        -15.0000001,
+        -15.0000001,
+        -14.800000101750138,
+        18.7,
+        15.0000001,
+        2.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "one_piece_brake_cup.step",
+      "step_sha256": "e3e2f968b4c88d26d529e0845d619ed4ce48341fdcfa55ed8ff01b1f5386d9ee",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "one_piece_brake_cup",
+      "note": ""
+    },
+    {
+      "part_id": "housing_L",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 3.511380918964232,
+      "local_com_mm": [
+        -5.7166684348236885,
+        -4.214911602183482e-16,
+        7.902919870454278
+      ],
+      "volume_mm3": 1300.511451468234,
+      "bounds_mm": [
+        -17.0,
+        -17.0,
+        1.5,
+        4.579129098882145e-15,
+        17.0,
+        27.685
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "housing_L.step",
+      "step_sha256": "50460c8b41345aa2ad717034b4b782e6ac7e90c35631fa5f7c18826fad87b972",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "housing_L",
+      "note": ""
+    },
+    {
+      "part_id": "housing_R",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 3.576798792878374,
+      "local_com_mm": [
+        5.681613520844706,
+        -7.249655987135675e-16,
+        7.986998183410139
+      ],
+      "volume_mm3": 1324.740293658657,
+      "bounds_mm": [
+        -3.1228493378257506e-15,
+        -17.0,
+        1.5,
+        17.0,
+        17.0,
+        27.685
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "housing_R.step",
+      "step_sha256": "c65ad164c17e8237d515021bfeb587bedc51298f23271d02855e72916a1b4cdf",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "housing_R",
+      "note": ""
+    },
+    {
+      "part_id": "cup_mount_0",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.23556667026265427,
+      "local_com_mm": [
+        -12.299999999999999,
+        -7.1000000000000005,
+        2.906532663316583
+      ],
+      "volume_mm3": 30.008493027089717,
+      "bounds_mm": [
+        -14.100000000000001,
+        -8.9,
+        -1.8,
+        -10.5,
+        -5.3,
+        5.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "cup_mount_0.step",
+      "step_sha256": "6dad50b61e3770a91654160c7ea2ed438b7214ee923efa39b936e0cf0b321f9c",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "cup_mount_0",
+      "note": "M2 axial mounting core; 3.3 mm nominal cup engagement. Precision cup register locates the matched split cartridge."
+    },
+    {
+      "part_id": "cup_mount_1",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.2355666702626542,
+      "local_com_mm": [
+        -12.3,
+        7.1000000000000005,
+        2.9065326633165833
+      ],
+      "volume_mm3": 30.00849302708971,
+      "bounds_mm": [
+        -14.100000000000001,
+        5.3,
+        -1.8,
+        -10.5,
+        8.9,
+        5.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "cup_mount_1.step",
+      "step_sha256": "7efa4bdce747ea71ecd56ef7f4c5a574c06f026eee3540e5418c4ae6133d0f20",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "cup_mount_1",
+      "note": "M2 axial mounting core; 3.3 mm nominal cup engagement. Precision cup register locates the matched split cartridge."
+    },
+    {
+      "part_id": "cup_mount_2",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.23556667026265427,
+      "local_com_mm": [
+        12.299999999999999,
+        -7.1000000000000005,
+        2.906532663316583
+      ],
+      "volume_mm3": 30.008493027089717,
+      "bounds_mm": [
+        10.5,
+        -8.9,
+        -1.8,
+        14.100000000000001,
+        -5.3,
+        5.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "cup_mount_2.step",
+      "step_sha256": "fa3a0298f66798ad13e8034874c43651e24f48d3e495572cf653aeb97453276b",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "cup_mount_2",
+      "note": "M2 axial mounting core; 3.3 mm nominal cup engagement. Precision cup register locates the matched split cartridge."
+    },
+    {
+      "part_id": "cup_mount_3",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.2355666702626542,
+      "local_com_mm": [
+        12.300000000000002,
+        7.1000000000000005,
+        2.9065326633165833
+      ],
+      "volume_mm3": 30.00849302708971,
+      "bounds_mm": [
+        10.5,
+        5.3,
+        -1.8,
+        14.100000000000001,
+        8.9,
+        5.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "cup_mount_3.step",
+      "step_sha256": "f9b0970bdb14d862b1f16902aaca0dc5bfeb812d52ca4ab3c6f2cbcf33066058",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "cup_mount_3",
+      "note": "M2 axial mounting core; 3.3 mm nominal cup engagement. Precision cup register locates the matched split cartridge."
+    },
+    {
+      "part_id": "rear_bush_L",
+      "owner": "parent",
+      "material": "bronze",
+      "density_g_mm3": 0.0088,
+      "mass_g": 0.5216803096845072,
+      "local_com_mm": [
+        -2.4183119674760727,
+        -8.884774903041631e-17,
+        3.500000000000001
+      ],
+      "volume_mm3": 59.28185337323945,
+      "bounds_mm": [
+        -4.49,
+        -4.490000000000002,
+        1.7999999999999985,
+        2.749332064085808e-16,
+        4.490000000000002,
+        5.200000000000001
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "rear_bush_L.step",
+      "step_sha256": "41f23bc64eddc370d1f98c5867d1772cbf58d6eb72728929836208de9c0af62c",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "rear_bush_L",
+      "note": ""
+    },
+    {
+      "part_id": "rear_bush_R",
+      "owner": "parent",
+      "material": "bronze",
+      "density_g_mm3": 0.0088,
+      "mass_g": 0.5216803096845072,
+      "local_com_mm": [
+        2.4183119674760722,
+        4.19504356502283e-16,
+        3.5000000000000004
+      ],
+      "volume_mm3": 59.28185337323944,
+      "bounds_mm": [
+        -8.247996192257424e-16,
+        -4.490000000000002,
+        1.7999999999999985,
+        4.49,
+        4.490000000000002,
+        5.200000000000001
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "rear_bush_R.step",
+      "step_sha256": "b37dce9f6accfc2330a7b0c5684bcb9229a75d601ae8ac2138efcb464a47b7bc",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "rear_bush_R",
+      "note": ""
+    },
+    {
+      "part_id": "front_bush_L",
+      "owner": "parent",
+      "material": "bronze",
+      "density_g_mm3": 0.0088,
+      "mass_g": 0.521680309684507,
+      "local_com_mm": [
+        -2.4183119674760727,
+        7.776182017024713e-17,
+        17.5
+      ],
+      "volume_mm3": 59.28185337323943,
+      "bounds_mm": [
+        -4.49,
+        -4.490000000000002,
+        15.799999999999999,
+        2.749332064085808e-16,
+        4.490000000000002,
+        19.200000000000003
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "front_bush_L.step",
+      "step_sha256": "24a94006b9b69c625fe3a5a909463b2c06e326085c4b35840e4d67df72e6a0e3",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "front_bush_L",
+      "note": ""
+    },
+    {
+      "part_id": "front_bush_R",
+      "owner": "parent",
+      "material": "bronze",
+      "density_g_mm3": 0.0088,
+      "mass_g": 0.521680309684507,
+      "local_com_mm": [
+        2.4183119674760714,
+        5.393627440743641e-16,
+        17.500000000000004
+      ],
+      "volume_mm3": 59.28185337323942,
+      "bounds_mm": [
+        -8.247996192257424e-16,
+        -4.490000000000002,
+        15.799999999999999,
+        4.49,
+        4.490000000000002,
+        19.200000000000003
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "front_bush_R.step",
+      "step_sha256": "b6ef3f0ff40af7caf60f8525db06ad463646380835f300fb7940602cf0943fc6",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "front_bush_R",
+      "note": ""
+    },
+    {
+      "part_id": "thrust_rear_L",
+      "owner": "parent",
+      "material": "POM",
+      "density_g_mm3": 0.00141,
+      "mass_g": 0.012358512005903025,
+      "local_com_mm": [
+        -2.5308507461141243,
+        -7.384259743948692e-16,
+        7.800000000000001
+      ],
+      "volume_mm3": 8.764902131846117,
+      "bounds_mm": [
+        -4.8,
+        -4.800000000000001,
+        7.599999999999997,
+        2.9391523179536476e-16,
+        4.8,
+        8.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "thrust_rear_L.step",
+      "step_sha256": "ba9e65372cc2a814bb18eafb69d878c226b023f7a8b5b12d25dc1d40b9b65692",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "thrust_rear_L",
+      "note": ""
+    },
+    {
+      "part_id": "thrust_rear_R",
+      "owner": "parent",
+      "material": "POM",
+      "density_g_mm3": 0.00141,
+      "mass_g": 0.012358512005903035,
+      "local_com_mm": [
+        2.5308507461141203,
+        0.0,
+        7.799999999999999
+      ],
+      "volume_mm3": 8.764902131846124,
+      "bounds_mm": [
+        -8.817456953860942e-16,
+        -4.800000000000001,
+        7.599999999999997,
+        4.8,
+        4.8,
+        8.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "thrust_rear_R.step",
+      "step_sha256": "89465eb1ae8d98ae2a5757969a0b5f937bcfce11f8b81af24063cc695e4b0f3f",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "thrust_rear_R",
+      "note": ""
+    },
+    {
+      "part_id": "thrust_front_L",
+      "owner": "parent",
+      "material": "POM",
+      "density_g_mm3": 0.00141,
+      "mass_g": 0.01235851200590302,
+      "local_com_mm": [
+        -2.5308507461141247,
+        -7.086196489775639e-16,
+        9.200000000000003
+      ],
+      "volume_mm3": 8.764902131846114,
+      "bounds_mm": [
+        -4.8,
+        -4.800000000000001,
+        9.0,
+        2.9391523179536476e-16,
+        4.8,
+        9.400000000000002
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "thrust_front_L.step",
+      "step_sha256": "d0c35f90335ac66190652a20e07754cdec70f4dfc6998768040517b75346fd5e",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "thrust_front_L",
+      "note": ""
+    },
+    {
+      "part_id": "thrust_front_R",
+      "owner": "parent",
+      "material": "POM",
+      "density_g_mm3": 0.00141,
+      "mass_g": 0.01235851200590303,
+      "local_com_mm": [
+        2.530850746114121,
+        5.0666761952369416e-17,
+        9.200000000000005
+      ],
+      "volume_mm3": 8.76490213184612,
+      "bounds_mm": [
+        -8.817456953860942e-16,
+        -4.800000000000001,
+        9.0,
+        4.8,
+        4.8,
+        9.400000000000002
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "thrust_front_R.step",
+      "step_sha256": "3cd1a4f94764a3c753e63e53009173b6e8c697dc78ddf89c1cfa69b5018d7ae7",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "thrust_front_R",
+      "note": ""
+    },
+    {
+      "part_id": "measurement_shaft",
+      "owner": "child",
+      "material": "al7075",
+      "density_g_mm3": 0.00281,
+      "mass_g": 4.188259656731226,
+      "local_com_mm": [
+        -0.010198833631801674,
+        6.584900411350319e-17,
+        6.542219510570504
+      ],
+      "volume_mm3": 1490.4838636054187,
+      "bounds_mm": [
+        -5.5,
+        -5.5,
+        -18.0,
+        5.5,
+        5.5,
+        25.1
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "measurement_shaft.step",
+      "step_sha256": "07c5a41975bee52db03f8ea04b21a316263bfc7f69d54286db9c7b986cd984c0",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "measurement_shaft",
+      "note": ""
+    },
+    {
+      "part_id": "floating_brake_disc",
+      "owner": "child",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 5.356213504860067,
+      "local_com_mm": [
+        -1.9232665705432085e-16,
+        2.0827252202159956e-17,
+        -2.1262458600681606
+      ],
+      "volume_mm3": 682.3201917019194,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -4.1,
+        12.0,
+        12.0,
+        0.20000000000000018
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "floating_brake_disc.step",
+      "step_sha256": "f5949d1f6f7c0edf428985f5631893c789c29efff8aee4d4770164a760b40eef",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "floating_brake_disc",
+      "note": "Axial motion tied to individual front lining wear/compression, checked in lifecycle report."
+    },
+    {
+      "part_id": "front_lining_backing",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 2.6270190024350204,
+      "local_com_mm": [
+        5.095747358245996e-15,
+        3.1137268685706187e-16,
+        -0.3999999999999999
+      ],
+      "volume_mm3": 334.6521022210217,
+      "bounds_mm": [
+        -14.1,
+        -12.1,
+        -0.8,
+        14.100000000000001,
+        12.1,
+        0.0
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "front_lining_backing.step",
+      "step_sha256": "836049b7575d7b8b8b4ea6c080a701a3667ae1e0cff78116cf3e9a63ec6f3f5d",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "front_lining_backing",
+      "note": "Two external torque ears; friction-layer bond unqualified, no free strength credit."
+    },
+    {
+      "part_id": "rear_lining_backing",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 2.62701900243502,
+      "local_com_mm": [
+        5.387691217312174e-15,
+        9.751094260894182e-16,
+        -3.9000000000000004
+      ],
+      "volume_mm3": 334.65210222102166,
+      "bounds_mm": [
+        -14.1,
+        -12.1,
+        -4.3,
+        14.100000000000001,
+        12.1,
+        -3.5
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "rear_lining_backing.step",
+      "step_sha256": "2f1b27189e3b2863801e4138c38e19e5e1e38e4687ce4844ef2501e09b79c878",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "rear_lining_backing",
+      "note": "Slides axially in cup tracks. No retention feature projects into wear face."
+    },
+    {
+      "part_id": "front_friction_lining",
+      "owner": "parent",
+      "material": "lining",
+      "density_g_mm3": 0.0018,
+      "mass_g": 0.4287293795242146,
+      "local_com_mm": [
+        -3.2814980358152436e-16,
+        -3.197501260895647e-16,
+        -1.0999999999999999
+      ],
+      "volume_mm3": 238.18298862456368,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -1.4,
+        12.0,
+        12.0,
+        -0.8
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "front_friction_lining.step",
+      "step_sha256": "05ba02091f42df3f010df75c5d1f8df41ca8c54cd20de5e7470c80022c55c64c",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "front_friction_lining",
+      "note": ""
+    },
+    {
+      "part_id": "rear_friction_lining",
+      "owner": "parent",
+      "material": "lining",
+      "density_g_mm3": 0.0018,
+      "mass_g": 0.42872937952421447,
+      "local_com_mm": [
+        -1.208187913186522e-15,
+        -1.740458012106434e-16,
+        -3.2000000000000006
+      ],
+      "volume_mm3": 238.1829886245636,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -3.5,
+        12.0,
+        12.0,
+        -2.9000000000000004
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "rear_friction_lining.step",
+      "step_sha256": "f8bfa9dd86a861aad467ef663b801919bbeb77544016b48e06eafb67d8e9c2e1",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "rear_friction_lining",
+      "note": ""
+    },
+    {
+      "part_id": "keyed_pressure_plate",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 2.155945983231351,
+      "local_com_mm": [
+        -1.1418981395829443e-14,
+        7.408484870463805e-16,
+        -5.431285355496625
+      ],
+      "volume_mm3": 798.4985123079077,
+      "bounds_mm": [
+        -14.1,
+        -12.0,
+        -10.700000000000001,
+        14.100000000000001,
+        12.0,
+        -4.299999999999999
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "keyed_pressure_plate.step",
+      "step_sha256": "c7dd730a82bf452194fe14ee85feca96d2eb1e82ddd98cebe9fe78b753a54831",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "keyed_pressure_plate",
+      "note": ""
+    },
+    {
+      "part_id": "spring_front_washer",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.32600533160972345,
+      "local_com_mm": [
+        6.416030584732341e-17,
+        -4.989263968274586e-16,
+        -6.349999999999998
+      ],
+      "volume_mm3": 41.5293416063342,
+      "bounds_mm": [
+        -6.03,
+        -6.03,
+        -6.6,
+        6.03,
+        6.03,
+        -6.1
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "spring_front_washer.step",
+      "step_sha256": "045e2de5e3ba4435eb76f4f90a9b12289e223fd70ec1f6d8e34615f20232eca6",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "spring_front_washer",
+      "note": ""
+    },
+    {
+      "part_id": "disc_spring_1",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.32540852325332087,
+      "local_com_mm": [
+        4.927978286297732e-16,
+        2.16788826387056e-17,
+        -8.660897435897436
+      ],
+      "volume_mm3": 41.45331506411731,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -8.95,
+        6.0,
+        6.0,
+        -8.362499999999999
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "disc_spring_1.step",
+      "step_sha256": "226491821c55a445069aedb2f6cb2875724b93ccd80a3fb54b6775356d97ebc2",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "disc_spring_1",
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_2",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.3254085232533208,
+      "local_com_mm": [
+        -5.785017988262556e-16,
+        1.037227223652488e-17,
+        -8.064102564102564
+      ],
+      "volume_mm3": 41.453315064117305,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -8.3625,
+        6.0,
+        6.0,
+        -7.775
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "disc_spring_2.step",
+      "step_sha256": "e90bf87b1bea6c767654bda65e86bd60bc5db7470d6a06cbbb9b37fec4aa75d6",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "disc_spring_2",
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_3",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.32540852325332087,
+      "local_com_mm": [
+        2.356859180403263e-16,
+        9.803850036033093e-18,
+        -7.485897435897436
+      ],
+      "volume_mm3": 41.45331506411731,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -7.7749999999999995,
+        6.0,
+        6.0,
+        -7.187499999999999
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "disc_spring_3.step",
+      "step_sha256": "7afc03de9643effa5e2845f14cedd04b6d81a912a45cc128e6927797c575caef",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "disc_spring_3",
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_4",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.32540852325332087,
+      "local_com_mm": [
+        -1.2855595529472344e-16,
+        -3.6517098193927806e-19,
+        -6.889102564102561
+      ],
+      "volume_mm3": 41.45331506411731,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -7.187499999999999,
+        6.0,
+        6.0,
+        -6.599999999999999
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "disc_spring_4.step",
+      "step_sha256": "4801a2123635269f7245c006042d0fbafb3bd091b0e76e9338bd7f18cdf89870",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "disc_spring_4",
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "spring_rear_washer",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.32600533160972456,
+      "local_com_mm": [
+        -1.3045928855622384e-15,
+        -4.304256059732551e-16,
+        -9.200000000000001
+      ],
+      "volume_mm3": 41.52934160633434,
+      "bounds_mm": [
+        -6.03,
+        -6.03,
+        -9.450000000000001,
+        6.03,
+        6.03,
+        -8.95
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "spring_rear_washer.step",
+      "step_sha256": "a83e3af41bbd66b0ab089005f7405ad63b7ef5ff6b5d9967c771ea8844f05082",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "spring_rear_washer",
+      "note": ""
+    },
+    {
+      "part_id": "threaded_adjuster_cap",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 4.459852579676652,
+      "local_com_mm": [
+        -0.0009595355491646639,
+        0.012535759292320208,
+        -11.221087192679702
+      ],
+      "volume_mm3": 1651.7972517320934,
+      "bounds_mm": [
+        -13.929145969080222,
+        -13.92914585474324,
+        -13.4500001,
+        13.929145931459303,
+        13.929145949423198,
+        -9.449999900000002
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "threaded_adjuster_cap.step",
+      "step_sha256": "01670388b62907b5621b46972e936d674b2b553a31a4952e21201ffe82766d7c",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "threaded_adjuster_cap",
+      "note": "Diameter 28 x 0.75 custom 60-degree reference 60-degree thread; 4.0 mm axial overlap, production tolerance class pending supplier."
+    },
+    {
+      "part_id": "cap_lock_dog_screw",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.18001678423181183,
+      "local_com_mm": [
+        18.39594588729703,
+        5.998433074622165e-17,
+        -10.9
+      ],
+      "volume_mm3": 22.93207442443463,
+      "bounds_mm": [
+        13.41,
+        -1.7,
+        -12.6,
+        20.3,
+        1.7,
+        -9.2
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "cap_lock_dog_screw.step",
+      "step_sha256": "3e3b826af457abf49d0cf9991e987cae4eabb4eabdcf140939879b8d9ec093e6",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "cap_lock_dog_screw",
+      "note": "Positive slot dog, not friction-only cap lock. Small fastener threads represented by root core plus reference engagement."
+    },
+    {
+      "part_id": "bearing_clamp_-6",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.3649902344940622,
+      "local_com_mm": [
+        -4.283783783783783,
+        -6.0,
+        12.5
+      ],
+      "volume_mm3": 46.495571273128945,
+      "bounds_mm": [
+        -9.5,
+        -7.8,
+        10.7,
+        5.5,
+        -4.2,
+        14.3
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "bearing_clamp_-6.step",
+      "step_sha256": "062b82a7e651dd8022d12762724935411b1132a7a15c190a9b79d900547e9235",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "bearing_clamp_-6",
+      "note": ""
+    },
+    {
+      "part_id": "bearing_clamp_6",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.3649902344940622,
+      "local_com_mm": [
+        -4.283783783783783,
+        6.0,
+        12.5
+      ],
+      "volume_mm3": 46.495571273128945,
+      "bounds_mm": [
+        -9.5,
+        4.2,
+        10.7,
+        5.5,
+        7.8,
+        14.3
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "bearing_clamp_6.step",
+      "step_sha256": "89dc22d53ec3704113ae3ae013b3dff94e2f0ea04a9c5d0962acd9019487e563",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "bearing_clamp_6",
+      "note": ""
+    },
+    {
+      "part_id": "diametric_magnet",
+      "owner": "child",
+      "material": "magnet",
+      "density_g_mm3": 0.0075,
+      "mass_g": 0.5301437602932775,
+      "local_com_mm": [
+        -3.7695462891419464e-16,
+        1.178477836594775e-16,
+        23.850000000000005
+      ],
+      "volume_mm3": 70.68583470577033,
+      "bounds_mm": [
+        -3.0,
+        -3.0,
+        22.6,
+        3.0,
+        3.0,
+        25.1
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "diametric_magnet.step",
+      "step_sha256": "860512e0a973a195d0082752ccdf7748e180864508a9f8630dec514b4e17f0df",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "diametric_magnet",
+      "note": ""
+    },
+    {
+      "part_id": "magnet_keeper",
+      "owner": "child",
+      "material": "nylon",
+      "density_g_mm3": 0.00114,
+      "mass_g": 0.04247827537531405,
+      "local_com_mm": [
+        -4.886434179588787e-16,
+        -8.742407293402687e-17,
+        25.374999999999996
+      ],
+      "volume_mm3": 37.26164506606496,
+      "bounds_mm": [
+        -5.5,
+        -5.5,
+        25.1,
+        5.5,
+        5.5,
+        25.65
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "magnet_keeper.step",
+      "step_sha256": "5b13390a797f884c342cb74779127e95a2c80c7a69aab174ec23187c161dce7c",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "magnet_keeper",
+      "note": ""
+    },
+    {
+      "part_id": "keeper_screw_-4.25",
+      "owner": "child",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.02628422918403861,
+      "local_com_mm": [
+        -4.250000000000001,
+        -1.865158927752976e-17,
+        25.35956089322575
+      ],
+      "volume_mm3": 3.3483094501960013,
+      "bounds_mm": [
+        -5.35,
+        -1.1,
+        23.65,
+        -3.15,
+        1.1,
+        26.15
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "keeper_screw_-4.25.step",
+      "step_sha256": "afbf8f6974176383c62d2a3c126f73d1f75ed2c6bd8e71c0eb17697b468a4193",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "keeper_screw_-4.25",
+      "note": ""
+    },
+    {
+      "part_id": "keeper_screw_4.25",
+      "owner": "child",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.026284229184038613,
+      "local_com_mm": [
+        4.25,
+        -2.595047329665482e-17,
+        25.35956089322574
+      ],
+      "volume_mm3": 3.348309450196002,
+      "bounds_mm": [
+        3.15,
+        -1.1,
+        23.65,
+        5.35,
+        1.1,
+        26.15
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "keeper_screw_4.25.step",
+      "step_sha256": "47ea65a3a45de59fe119139cc28eda47c0b5a37540053c47063446e12c538e67",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "keeper_screw_4.25",
+      "note": ""
+    },
+    {
+      "part_id": "sensor_pcba_0",
+      "owner": "parent",
+      "material": "ceramic",
+      "density_g_mm3": 0.0035,
+      "mass_g": 0.010114765837720177,
+      "local_com_mm": [
+        2.299999999999997,
+        3.749999999999986,
+        26.974999999999998
+      ],
+      "volume_mm3": 2.8899330964914793,
+      "bounds_mm": [
+        1.299999999999983,
+        3.125,
+        26.349999999999998,
+        3.299999999999983,
+        4.375,
+        27.599999999999998
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_0.step",
+      "step_sha256": "3314822e04b66cff6f9e3eb6be344e86756825a9e470f8282218c8d705f407ed",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_1",
+      "owner": "parent",
+      "material": "ceramic",
+      "density_g_mm3": 0.0035,
+      "mass_g": 0.003256273626974099,
+      "local_com_mm": [
+        2.2999999999999687,
+        -3.7000000000000313,
+        27.200000000000003
+      ],
+      "volume_mm3": 0.9303638934211711,
+      "bounds_mm": [
+        1.4999999999999858,
+        -4.100000000000023,
+        26.8,
+        3.0999999999999828,
+        -3.3000000000000114,
+        27.6
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_1.step",
+      "step_sha256": "b2198e3bc9a498b06d3b93031528ec0d8773e409baea938dbb669209fc76d0ad",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_2",
+      "owner": "parent",
+      "material": "ceramic",
+      "density_g_mm3": 0.0035,
+      "mass_g": 0.0018802656606917044,
+      "local_com_mm": [
+        -2.30000000000004,
+        -3.6999999999999744,
+        27.361430109035435
+      ],
+      "volume_mm3": 0.5372187601976298,
+      "bounds_mm": [
+        -3.1000000000000085,
+        -4.099999999999994,
+        27.15,
+        -1.5000000000000142,
+        -3.299999999999983,
+        27.6
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_2.step",
+      "step_sha256": "9ed898da975f48a2f68fdd266125019108fa3a5ac86ce29e0d27d2f2ca6978e0",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_3",
+      "owner": "parent",
+      "material": "ceramic",
+      "density_g_mm3": 0.0035,
+      "mass_g": 0.0018802656606917141,
+      "local_com_mm": [
+        -2.299999999999983,
+        3.700000000000003,
+        27.361430109035442
+      ],
+      "volume_mm3": 0.5372187601976326,
+      "bounds_mm": [
+        -3.09999999999998,
+        3.3000000000000114,
+        27.15,
+        -1.4999999999999858,
+        4.100000000000023,
+        27.6
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_3.step",
+      "step_sha256": "4a6238aa80d4cc6691120423f56fcc81e3fcc1e94bfc646f6b097324d112a4da",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_4",
+      "owner": "parent",
+      "material": "package",
+      "density_g_mm3": 0.0017,
+      "mass_g": 0.0332507419611911,
+      "local_com_mm": [
+        5.684341886080802e-14,
+        -2.5579538487363607e-13,
+        27.064658231687172
+      ],
+      "volume_mm3": 19.559259977171237,
+      "bounds_mm": [
+        -3.200000000000003,
+        -2.5000001000000003,
+        26.599999899999997,
+        3.200000000000003,
+        2.5000001000000003,
+        27.6
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_4.step",
+      "step_sha256": "9e6781170583d1326dc1ba6770ffe49d603a05c3faa9e3a79fada014a43e1a5b",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_5",
+      "owner": "parent",
+      "material": "connector",
+      "density_g_mm3": 0.0016,
+      "mass_g": 0.09029832000000006,
+      "local_com_mm": [
+        -1.2789769243681803e-13,
+        -0.1038836396217988,
+        30.180369223554447
+      ],
+      "volume_mm3": 56.436450000000036,
+      "bounds_mm": [
+        -4.000000000000001,
+        -2.475000000000006,
+        28.679999999999996,
+        4.0,
+        2.474999999999995,
+        31.64
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_5.step",
+      "step_sha256": "b1d0d10a5decc3426544d3fa314612b6d775e01ffa390dfa8be8fb9e89b559d7",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.25,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_6",
+      "owner": "parent",
+      "material": "FR4",
+      "density_g_mm3": 0.00185,
+      "mass_g": 0.198653,
+      "local_com_mm": [
+        1.0856157346399837e-17,
+        4.1356789891046994e-17,
+        28.139999999999997
+      ],
+      "volume_mm3": 107.38,
+      "bounds_mm": [
+        -6.0,
+        -5.0,
+        27.685,
+        6.0,
+        5.0,
+        28.595
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "sensor_pcba_6.step",
+      "step_sha256": "4d8f45af26b5c4c3724029592a021c196944d783f5606fdad380231a16a68ee6",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "sensor_pcba",
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "pcb_edge_clamp_-7.7",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 0.013192576691706858,
+      "local_com_mm": [
+        -7.037411469777927,
+        -6.263218534308371e-17,
+        28.945000000000004
+      ],
+      "volume_mm3": 4.886139515446984,
+      "bounds_mm": [
+        -9.05,
+        -1.25,
+        28.595,
+        -5.35,
+        1.25,
+        29.295
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "pcb_edge_clamp_-7.7.step",
+      "step_sha256": "be62659960ef6a92868e6a90b2c99c325d0f67039d71268c0e1fc9d902f2e538",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "pcb_edge_clamp_-7.7",
+      "note": ""
+    },
+    {
+      "part_id": "pcb_clamp_screw_-7.7",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.08644349796949906,
+      "local_com_mm": [
+        -7.699999999999999,
+        1.3060924405719793e-17,
+        29.204106470386847
+      ],
+      "volume_mm3": 11.011910569362938,
+      "bounds_mm": [
+        -9.1,
+        -1.4,
+        26.294999999999998,
+        -6.300000000000001,
+        1.4,
+        30.494999999999997
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "pcb_clamp_screw_-7.7.step",
+      "step_sha256": "28e420ac7b510de1cb35d4d96f6105385a765e4f3148ea1fd5ee67f76fc93bd0",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "pcb_clamp_screw_-7.7",
+      "note": ""
+    },
+    {
+      "part_id": "pcb_edge_clamp_7.7",
+      "owner": "parent",
+      "material": "al6061",
+      "density_g_mm3": 0.0027,
+      "mass_g": 0.013192576691706858,
+      "local_com_mm": [
+        7.0374114697779255,
+        -5.848338423075099e-17,
+        28.944999999999997
+      ],
+      "volume_mm3": 4.886139515446984,
+      "bounds_mm": [
+        5.35,
+        -1.25,
+        28.595,
+        9.05,
+        1.25,
+        29.295
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "pcb_edge_clamp_7.7.step",
+      "step_sha256": "5933c90a280b7c03382b1a84a25d3c33eb792e2259c0d9dfc9db7f3d6a901543",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "pcb_edge_clamp_7.7",
+      "note": ""
+    },
+    {
+      "part_id": "pcb_clamp_screw_7.7",
+      "owner": "parent",
+      "material": "steel",
+      "density_g_mm3": 0.00785,
+      "mass_g": 0.08644349796949906,
+      "local_com_mm": [
+        7.699999999999999,
+        -9.831293666188338e-18,
+        29.204106470386847
+      ],
+      "volume_mm3": 11.011910569362938,
+      "bounds_mm": [
+        6.300000000000001,
+        -1.4,
+        26.294999999999998,
+        9.1,
+        1.4,
+        30.494999999999997
+      ],
+      "coordinate_system": "joint_local_right_handed_mm_Z_axis",
+      "step_file": "pcb_clamp_screw_7.7.step",
+      "step_sha256": "f4b75522b3a01f3f98a9302c314fc2634918a75a9be8bc78c49ae234ee7cf26e",
+      "mass_source": "CAD volume times material-class density estimate",
+      "uncertainty_fraction": 0.05,
+      "group": "pcb_clamp_screw_7.7",
+      "note": ""
+    }
+  ],
+  "single_connected_solid_per_part": true,
+  "bearing_span_mm": 14,
+  "nominal_diametral_clearance_mm": 0.02,
+  "study_worst_diametral_clearance_mm": 0.03,
+  "clearance_tilt_scale_deg": 0.12277648246221907,
+  "nominal_shaft_endplay_mm": 0.05,
+  "sensor_magnet_face_gap_mm": 1.5,
+  "thread": {
+    "pitch_mm": 0.75,
+    "major_diameter_nominal_mm": 28,
+    "modeled_cap_engagement_length_mm": 4.0,
+    "helical_length_mm": 3.5,
+    "female_axial_range_mm": [
+      -14.8,
+      -6.1
+    ],
+    "cap_working_range_mm": [
+      -13.45,
+      -9.45
+    ],
+    "cap_free_range_mm": [
+      -14.5,
+      -10.5
+    ],
+    "radial_root_wall_mm": 0.97,
+    "geometry": "Matched explicit 60-degree reference helices with radial/flank clearances, not production thread gauging"
+  },
+  "brake_faces": 2,
+  "spring": {
+    "candidate": "SCHNORR 002100",
+    "count": 4,
+    "arrangement": "series",
+    "catalog_force_N": 326,
+    "free_stack_mm": 3.4,
+    "catalog_stack_mm": 2.35,
+    "washer_total_mm": 1.0,
+    "free_cavity_required_mm": 4.4,
+    "catalog_point_not_qualification": true
+  },
+  "nominal_force_path": [
+    "one_piece_brake_cup",
+    "front_lining_backing",
+    "front_friction_lining",
+    "floating_brake_disc",
+    "rear_friction_lining",
+    "rear_lining_backing",
+    "keyed_pressure_plate",
+    "spring_front_washer",
+    "disc_spring_4..1",
+    "spring_rear_washer",
+    "threaded_adjuster_cap",
+    "one_piece_brake_cup"
+  ],
+  "shaft_axial_locator_path": [
+    "housing_R/L",
+    "thrust_rear_L/R or thrust_front_L/R",
+    "measurement_shaft integral collar"
+  ],
+  "total_wear_budget_mm": 0.6,
+  "max_single_face_wear_mm": 0.45,
+  "minimum_remaining_lining_mm": 0.15,
+  "lining_carrier_bond": "UNQUALIFIED_NO_STRENGTH_CREDIT",
+  "sensor_tower_base": "INTEGRAL_WITH_EACH_HOUSING_HALF",
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "unresolved": [
+    "Supplier production tolerances, split-seat distortion and matched-bore finishing",
+    "Lining coefficient/pressure/wear and full spring curve/tolerance",
+    "Shaft-key backlash, sliding under torque and parasitic axial forces",
+    "Dynamic assembly and tool sweeps follow in separate report",
+    "Exact mating plug/wire interface and complete multi-axis embedding"
+  ],
+  "tools": [
+    {
+      "tool_id": "hollow_pin_spanner",
+      "step_file": "hollow_pin_spanner.step",
+      "step_sha256": "a78f5d516a1e98c3b0f1c86204459aba6ed23107f4c8978575906d728d4e1794"
+    }
+  ]
+}

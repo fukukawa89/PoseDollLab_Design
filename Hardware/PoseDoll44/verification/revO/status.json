@@ -1,0 +1,52 @@
+{
+  "revision": "RevO-Desktop-iteration1",
+  "as_of_utc": "2026-09-23T09:30:48.073367+00:00",
+  "mainline": "Rev O desktop redesign",
+  "fallback": "Rev N1 ~91cm preserved in place with SHA-256 inventory",
+  "anchor_reference_height_mm": 480,
+  "selected_final_height_mm": null,
+  "complete_body_CAD_delivered": false,
+  "new_joint_CAD_delivered": true,
+  "new_size_layout_CAD_delivered": true,
+  "new_pcb_native_placement_delivered": true,
+  "new_pcb_routed": false,
+  "new_firmware_delivered": true,
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "gates": {
+    "baseline": "PASS",
+    "firmware_compile": "PASS",
+    "native_schematic_ERC": "PASS",
+    "PCB_DRC": "FAIL",
+    "node_in_upperarm_layout": "FAIL",
+    "body_mass_budget": "FAIL",
+    "joint_solid_intersections": "PASS",
+    "joint_axial_insertion": "FAIL",
+    "joint_service_reservations": "FAIL",
+    "preload_and_operating_force": "NOT_RUN_PHYSICAL",
+    "multi_axis_assembly": "NOT_RUN",
+    "full_body_motion_paths": "NOT_RUN",
+    "final_physical_height_and_mass": "NOT_RUN",
+    "power_protection_and_tether": "NOT_RUN",
+    "magnetic_crosstalk": "NOT_RUN",
+    "60Hz_hardware_soak": "NOT_RUN",
+    "UE_editor_capture_undo_clutch": "NOT_RUN"
+  },
+  "next_work": [
+    "Redesign N3/N4 as split controller/fanout or prove a rigid torso placement; do not jump to 550 mm.",
+    "Redesign the one-piece bearing eye / integral rotor collar to permit insertion and removal before prototype B.",
+    "Resolve actual 0.2 mm thermal-via process vs 0.3 mm rules; route and re-run DRC.",
+    "Choose catalog spring stacks / measured lining and revise L6 plus clavicle force range from load budget.",
+    "Reduce modeled hardware and allocated mass by at least 187 g before the 1.2 kg target can be claimed.",
+    "Resolve tool around shaft and exact mating plug reservations; add retained keeper/PCB fasteners.",
+    "Finish nested shoulder/hip/wrist geometry, real mechanical profiles and path checks, then full assemblies.",
+    "Print only A01/A02 fit coupons; record measurements before releasing B–F samples."
+  ],
+  "raw_report_paths": [
+    "verification/revO/size_tradeoff.json",
+    "verification/revO/joint_study.json",
+    "verification/revO/electronics_placement.json",
+    "verification/revO/firmware/builds.json",
+    "verification/revO/offline/results.json"
+  ]
+}

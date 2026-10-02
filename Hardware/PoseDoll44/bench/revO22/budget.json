@@ -1,0 +1,144 @@
+{
+  "schema": "POSEDOLL-O22-BUDGET/1",
+  "date": "2026-10-01",
+  "currency": "CNY",
+  "target_cny": 1500,
+  "scope": "单套；已有打印机；用户打印及机械总装；电子板和线束委托加工；计入必要备件/最小订单/工程费/运费",
+  "confirmed_supplier_quote_count": 0,
+  "prices_are_target_allocations": true,
+  "excluded": [
+    "打印机购买",
+    "自己的打印、总装与标定工时",
+    "多个失败开发迭代",
+    "外包精密计量或购置计量仪器"
+  ],
+  "rows": [
+    {
+      "id": "sensor",
+      "item": "MT6701CT-STD-R 芯片，46 用＋2 备＋2 贴片损耗/余料",
+      "quantity": 50,
+      "target_unit_cny": 7.25,
+      "target_total_cny": 362.5,
+      "stress_total_cny": 430,
+      "evidence": "公开阶梯价参考；国内含税价待询",
+      "notes": "30+ 单价 $1.0355；50 件 $51.775；7.00 汇率仅预算假设，约 ¥362.43。不能自动视为国内含税到手价。"
+    },
+    {
+      "id": "sensor_pcba",
+      "item": "48 块传感 PCB、无源器件、单面 SMT、工程/钢网/分板/电测",
+      "quantity": 1,
+      "target_unit_cny": 180,
+      "target_total_cny": 180,
+      "stress_total_cny": 320,
+      "evidence": "待询价预算",
+      "notes": "不含上一项芯片，不含线束焊接；最小起订及所有工程费计入"
+    },
+    {
+      "id": "carrier",
+      "item": "四层中央采集载板及全部信号元件、46 个 SH5P 插座、加工、电测、PCB 最小订单",
+      "quantity": 1,
+      "target_unit_cny": 150,
+      "target_total_cny": 150,
+      "stress_total_cny": 260,
+      "evidence": "待询价预算",
+      "notes": "载板 80×94mm，外层 35µm、内层 17.5µm；4 层相对原预算增加 20 元属询价目标。报价计入 5 张裸板最小订单、只装 1 张、钢网工程费；不含 XIAO 和电源器件，避免重复计价。"
+    },
+    {
+      "id": "mcu",
+      "item": "XIAO ESP32-S3 普通版及排针装配",
+      "quantity": 1,
+      "target_unit_cny": 55,
+      "target_total_cny": 55,
+      "stress_total_cny": 75,
+      "evidence": "待询价预算",
+      "notes": "成熟 USB 主控；无须 Sense 摄像头配件"
+    },
+    {
+      "id": "power",
+      "item": "同一载板上的 5V→3.45V 电源、固定料号保护及加工",
+      "quantity": 1,
+      "target_unit_cny": 35,
+      "target_total_cny": 35,
+      "stress_total_cny": 65,
+      "evidence": "待询价预算",
+      "notes": "AP3429AW5-7、74438357022、1206L110THR、0467001.NR；不能与载板加工重复计费。"
+    },
+    {
+      "id": "fasteners",
+      "item": "O20 金属标准件，含原清单备件和袋装取整",
+      "quantity": 1,
+      "target_unit_cny": 215,
+      "target_total_cny": 215,
+      "stress_total_cny": 350,
+      "evidence": "待询价预算",
+      "notes": "保留肩轴、碟簧、垫片、螺钉螺母；不靠未验证材料代换压价"
+    },
+    {
+      "id": "magnets",
+      "item": "D6×2.5 径向充磁磁铁，46 用＋5 备",
+      "quantity": 51,
+      "target_unit_cny": 0.8823529411764706,
+      "target_total_cny": 45.0,
+      "stress_total_cny": 80,
+      "evidence": "待询价预算",
+      "notes": "不可买成轴向充磁"
+    },
+    {
+      "id": "harness",
+      "item": "48 套五芯尾线＋插头压接＋板端焊接＋标号/导通检查",
+      "quantity": 1,
+      "target_unit_cny": 180,
+      "target_total_cny": 180,
+      "stress_total_cny": 300,
+      "evidence": "待询价预算",
+      "notes": "48 套均含工厂焊接、SHR-05V-S 与 SSH-003T-P0.2-H 压接、板边柔性固线、拉力/导通；原厂连接器整盘 MOQ 不能直接当零售 MOQ，需供应商给出分装加工价。"
+    },
+    {
+      "id": "printing",
+      "item": "打印材料，按购买 1kg 计算",
+      "quantity": 1,
+      "target_unit_cny": 80,
+      "target_total_cny": 80,
+      "stress_total_cny": 100,
+      "evidence": "待询价预算",
+      "notes": "已有打印机；包含支撑、一般损耗及新控制器支架材料，非切片实测耗材"
+    },
+    {
+      "id": "logistics",
+      "item": "5V 2A 适配器、USB 数据/电源线、扎带胶、标定夹具耗材、合单运费",
+      "quantity": 1,
+      "target_unit_cny": 100,
+      "target_total_cny": 100,
+      "stress_total_cny": 160,
+      "evidence": "待询价预算",
+      "notes": "报含税到手价；额外进口税或拆单费用必须追加"
+    },
+    {
+      "id": "reserve",
+      "item": "一次装配杂费与差价预留",
+      "quantity": 1,
+      "target_unit_cny": 80,
+      "target_total_cny": 80,
+      "stress_total_cny": 80,
+      "evidence": "预算预留",
+      "notes": "20 元转入中央板四层预算；总额尚无供应商确认。"
+    }
+  ],
+  "sensor_reference": {
+    "mpn": "MT6701CT-STD-R",
+    "lcsc": "C3003196",
+    "quantity": 50,
+    "tier_min": 30,
+    "usd_each": 1.0355,
+    "usd_total": 51.775,
+    "cny_per_usd_assumption": 7.0,
+    "fx_is_live_quote": false,
+    "cny_reference_ex_tax_shipping": 362.425,
+    "url": "https://www.lcsc.com/product-detail/C3003196.html",
+    "checked_date": "2026-10-01"
+  },
+  "quote_rule": "取得每项含税到手加工报价后替换目标值。超 1500 时先查电子加工最低收费、线束、肩轴；不删除测量轴；估算不等于已实现成本。",
+  "target_total_cny": 1482.5,
+  "stress_total_cny": 2220,
+  "headroom_cny": 17.5
+}

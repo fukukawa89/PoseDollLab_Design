@@ -1,0 +1,126 @@
+{
+  "schema": "posedoll-o5-review-guidance-v1",
+  "status": "PROPOSED_NEXT_ITERATION_NOT_MANUFACTURING_RELEASE",
+  "reviewed_refs": {
+    "design": "451cbe0aa0c0b4016bee3da4d1dedc340a4c28f1",
+    "UE_latest": "90e5104c63ea2b807ee2ea6e4cb63d21d8773687",
+    "UE_O4_original_evidence": "608f3ea4c611ccc63a93d43c4f83ae961b62ee78",
+    "hardware_run": "o4_20260924_h3"
+  },
+  "requirements": {
+    "anatomy_reference_mm": 480,
+    "assembled_target_max_mm": 500,
+    "assembled_hard_max_mm": 600,
+    "mass_hard_max_g": null,
+    "measured_axes": 41,
+    "fixed_root_slots": 3,
+    "logical_regions": 6,
+    "CAN_nodes": 7,
+    "gateway_external": true,
+    "wireless_preserved": true,
+    "static_capture": true,
+    "legacy_60Hz_8ms_14ms_required": false,
+    "force_mass_driven_joint_families": false
+  },
+  "current_static_policy_preserve_until_evidence_based_revision": {
+    "scan_period_target_ms": 100,
+    "max_full_scan_ms": 100,
+    "min_stability_ms": 500,
+    "min_scans": 6,
+    "peak_to_peak_deg": 0.3,
+    "max_regression_drift_deg_per_s": 0.2,
+    "transaction_timeout_ms": 3000,
+    "final_age_max_ms": 200
+  },
+  "primary_path": "A physical static-acquisition reference; C bounded parallel comparison",
+  "blocking_findings": [
+    {
+      "id": "O5-01",
+      "type": "catalog_source_mismatch",
+      "part": "SSH-003T-P0.2-H",
+      "allowed_awg_numeric_min": 28,
+      "allowed_awg_numeric_max": 32,
+      "insulation_OD_mm": [
+        0.4,
+        0.8
+      ],
+      "26_AWG_prequalified": false,
+      "factory_crimp_qualification_required": true
+    },
+    {
+      "id": "O5-02",
+      "type": "missing_integration_recovery_path",
+      "prototype_same_request_retry_accepted": false,
+      "required": "bounded idempotent response handling preserving original measurement age, or explicit whole-capture abort"
+    },
+    {
+      "id": "O5-03",
+      "type": "safe_rejection_usability_bug",
+      "current_late_retired_capture_effect": "Faults active new window",
+      "old_pose_written_in_narrow_test": false,
+      "required": "bounded retired-ID demultiplexing before active stability window"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T0",
+      "title": "Freeze paired repositories and add latest build evidence",
+      "after": []
+    },
+    {
+      "id": "T1",
+      "title": "Protocol recovery and transaction message isolation",
+      "after": [
+        "T0"
+      ]
+    },
+    {
+      "id": "T2",
+      "title": "Terminal/wire/power contract",
+      "after": [
+        "T0"
+      ]
+    },
+    {
+      "id": "T3",
+      "title": "A real sensor-to-PDS1 bridge",
+      "after": [
+        "T1"
+      ]
+    },
+    {
+      "id": "T4",
+      "title": "Same mechanical arm A/C comparison",
+      "after": [
+        "T2"
+      ]
+    },
+    {
+      "id": "T5",
+      "title": "Qualified limited PCB/driver/joint specimens",
+      "after": [
+        "T2"
+      ]
+    },
+    {
+      "id": "T6",
+      "title": "Real nine-axis arm and full 41-axis static integration",
+      "after": [
+        "T3",
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "do_not_claim": [
+    "1000 simulated requests prove hardware reliability",
+    "host C codec tests prove STM32 drivers",
+    "ERC proves routed PCB",
+    "bbox sum proves complete arm fit",
+    "missing axes are valid hardware measurements",
+    "26AWG is valid for SH because insulation fits"
+  ],
+  "physical_tested_by_reviewer": false,
+  "manufacturing_released": false,
+  "user_decision_needed_now": false
+}

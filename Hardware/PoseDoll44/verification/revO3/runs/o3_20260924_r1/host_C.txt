@@ -1,0 +1,16 @@
+pd41_core.c
+core_test.c
+正在生成代码...
+PASS: 9 C cohort/serialization scenarios; golden PD41 frame emitted
+pd41_core.c
+pd41_gateway.c
+gateway_test.c
+正在生成代码...
+PASS: G0 dispatch, all 41 axes, absent N1, restart, stale/duplicate/late frames, fault/fixed/zero and legacy wire identity
+pd41_core.c
+pd41_session.c
+session_test.c
+正在生成代码...
+RECOVERY one_missing cohorts=107998 maintenance=366 healthy_opportunity=0.996611048 tail_opportunity=0.996666604 max_backoff_us=5000000
+RECOVERY six_missing cohorts=3600 maintenance=108 attempts=18,18,18,18,18,18
+PASS: session freshness/loss/replay/reset, timeout cleanup, 30-minute recovery model, backoff reset on data, six-node fairness

@@ -1,0 +1,95 @@
+{
+  "schema": "o7-material-bench-plan-v1",
+  "families": [
+    {
+      "family": "LP6",
+      "ri_mm": 6,
+      "ro_mm": 14,
+      "catalog_nominal_force_N": 354,
+      "worst_axis": "clavicle_r.elevate",
+      "hold_screen_Nm": 0.4634908839611725,
+      "gravity_Nm": 0.2956605893074483,
+      "friction_ceiling_from_provisional_20N_at_60mm_Nm": 0.9043394106925516,
+      "provisional_user_comfort_screen": true,
+      "required_mu_at_catalog_force_uniform_pressure": 0.06215013998621172,
+      "required_mu_at_catalog_force_uniform_wear": 0.06546481411880968,
+      "nominal_contact_pressure_MPa": 0.7042606231816368,
+      "effective_radius_uniform_pressure_m": 0.010533333333333334,
+      "effective_radius_uniform_wear_m": 0.01,
+      "conditional_windows": [
+        {
+          "mu_min": 0.08,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 289.6818024757328,
+          "preload_max_for_raising_force_N": 195.12501669143086,
+          "nonempty": false
+        },
+        {
+          "mu_min": 0.12,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 193.12120165048856,
+          "preload_max_for_raising_force_N": 195.12501669143086,
+          "nonempty": true
+        },
+        {
+          "mu_min": 0.16,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 144.8409012378664,
+          "preload_max_for_raising_force_N": 195.12501669143086,
+          "nonempty": true
+        }
+      ]
+    },
+    {
+      "family": "M4",
+      "ri_mm": 2.6,
+      "ro_mm": 7.4,
+      "catalog_nominal_force_N": 210,
+      "worst_axis": "clavicle_r.protract",
+      "hold_screen_Nm": 0.30369132030437607,
+      "gravity_Nm": 0.18912754686958405,
+      "friction_ceiling_from_provisional_20N_at_60mm_Nm": 1.0108724531304158,
+      "provisional_user_comfort_screen": true,
+      "required_mu_at_catalog_force_uniform_pressure": 0.13430062632861747,
+      "required_mu_at_catalog_force_uniform_wear": 0.14461491443065527,
+      "nominal_contact_pressure_MPa": 1.392605752054084,
+      "effective_radius_uniform_pressure_m": 0.005383999999999999,
+      "effective_radius_uniform_wear_m": 0.005,
+      "conditional_windows": [
+        {
+          "mu_min": 0.08,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 379.61415038047005,
+          "preload_max_for_raising_force_N": 426.71571201304204,
+          "nonempty": true
+        },
+        {
+          "mu_min": 0.12,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 253.07610025364676,
+          "preload_max_for_raising_force_N": 426.71571201304204,
+          "nonempty": true
+        },
+        {
+          "mu_min": 0.16,
+          "mu_max": 0.22,
+          "preload_min_for_hold_N": 189.80707519023503,
+          "preload_max_for_raising_force_N": 426.71571201304204,
+          "nonempty": true
+        }
+      ]
+    }
+  ],
+  "minimum_repeats_each_direction": 3,
+  "directions": [
+    "cw",
+    "ccw"
+  ],
+  "hold_seconds": 60,
+  "provisional_drift_screen_deg": 0.3,
+  "proof_scope": "Material/spring screening only. Not complete-joint force balance, production fit, body motion, UE accuracy or lifetime approval.",
+  "loads_sha256": "d18cd9028b9b07d3bc99357e8171dbd1000e77b01c8141b763298f539a914b96",
+  "source_sha256": "4411ae0d79ca00bee86046092c744603c6f60c94d93e4c0c23a22b4c21cfcb0d",
+  "physical_data_available": false,
+  "manufacturing_released": false
+}

@@ -1,0 +1,105 @@
+{
+  "run_id": "o3_20260924_r2",
+  "torque_chain": {
+    "status": "PARTIAL_NO_MANUFACTURING_RATING",
+    "assumed_preload_N": 407.5,
+    "catalog_point_N": 326,
+    "factor_1p25_is_assumed_not_supplier_tolerance": true,
+    "maximum_actual_spring_force_N": null,
+    "mu_assumed_max": 0.22,
+    "torque_each_face_Nm": 0.7822792592592593,
+    "torque_two_faces_Nm": 1.5645585185185187,
+    "stages": [
+      {
+        "stage": "output connection to shaft",
+        "status": "BLOCKED_OUTPUT_COUPLER_NOT_DETAILED",
+        "load_Nmm": 1564.5585185185187
+      },
+      {
+        "stage": "D-cut shaft tail to shaft ribs",
+        "status": "CONDITIONAL_SECTION_SCREEN",
+        "load_Nmm": 1564.5585185185187,
+        "solid_6mm_shaft_nominal_torsional_MPa": 36.8899588116674,
+        "D_cut_stress_concentration": "NOT_RUN"
+      },
+      {
+        "stage": "shaft integral rib to floating disc",
+        "status": "CONDITIONAL_ONE_RIB_LOAD",
+        "load_Nmm": 1564.5585185185187,
+        "force_N": 512.9700060716455,
+        "minimum_axial_overlap_mm": 3.65,
+        "rib_root_shear_MPa": 70.26986384543089,
+        "flank_bearing_MPa": 175.6746596135772,
+        "parasitic_axial_drag_N_for_slide_mu_010_030": [
+          51.297000607164556,
+          153.89100182149363
+        ]
+      },
+      {
+        "stage": "each lining to steel backing",
+        "status": "BLOCKED_BOND_UNQUALIFIED",
+        "load_Nmm": 782.2792592592593,
+        "required_elastic_bond_peak_shear_MPa": 0.29259353494999485,
+        "qualified_allowable_MPa": null,
+        "uncredited_back_face_friction": true
+      },
+      {
+        "stage": "each steel carrier ear to cup track",
+        "status": "CONDITIONAL_ONE_EAR_LOAD",
+        "load_Nmm": 782.2792592592593,
+        "ear_force_N": 60.641803043353434,
+        "ear_neck_shear_MPa": 18.950563451047948,
+        "cup_track_bearing_MPa": 45.940759881328354,
+        "ear_bending_and_fillet_FEA": "NOT_RUN",
+        "minimum_outer_cup_wall_at_track_mm": 0.648470464790174
+      },
+      {
+        "stage": "cup to mounting structure",
+        "status": "CONDITIONAL_ONE_M2_LOAD_NO_FRICTION_CREDIT",
+        "load_Nmm": 1564.5585185185187,
+        "single_mount_shear_force_N": 110.16378841066557,
+        "M2_core_diameter_mm": 1.6,
+        "single_mount_shear_MPa": 54.79097336027212,
+        "housing_register_and_external_mount_strength": "NOT_RUN"
+      },
+      {
+        "stage": "cap female thread preload reaction",
+        "status": "CONDITIONAL_INTERRUPTED_THREAD_SCREEN",
+        "load_N": 407.5,
+        "remaining_circumference_fraction": 0.9040778692117061,
+        "effective_shear_area_mm2": 81.71383116326628,
+        "mean_shear_MPa": 4.986915852541595,
+        "production_class_and_pullout": "NOT_RUN"
+      }
+    ],
+    "preload_path_status": "DESIGN_DECLARATION",
+    "preload_path": [
+      "one_piece_brake_cup",
+      "front_lining_backing",
+      "front_friction_lining",
+      "floating_brake_disc",
+      "rear_friction_lining",
+      "rear_lining_backing",
+      "keyed_pressure_plate",
+      "spring_front_washer",
+      "disc_spring_4..1",
+      "spring_rear_washer",
+      "threaded_adjuster_cap",
+      "one_piece_brake_cup"
+    ],
+    "physical_tested": false
+  },
+  "contact_counterexample": {
+    "unconstrained_airborne_max_N": 10.000000000000004,
+    "geometry_activated_airborne_max_N": 0.0,
+    "active_ids": [
+      "0",
+      "2",
+      "4",
+      "6"
+    ],
+    "status": "PASS_COUNTEREXAMPLE_REGRESSION"
+  },
+  "old_1290N_spring_selection": "RETRACTED_AS_MANUFACTURING_INPUT_UNVALIDATED_CONTACTS",
+  "physical_tested": false
+}

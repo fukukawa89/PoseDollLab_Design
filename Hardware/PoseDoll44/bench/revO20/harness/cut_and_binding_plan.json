@@ -1,0 +1,2236 @@
+{
+  "status": "INTERNAL_SENSOR_CHAIN_LENGTHS_RETAINED_USB_TETHER_REQUIRES_PHYSICAL_ROUTING",
+  "characters": [
+    {
+      "character": "universal",
+      "chains": [
+        {
+          "chain": 1,
+          "sensor_nodes": [
+            {
+              "raw_index": 0,
+              "raw_id": "waist/r0",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 0,
+              "part": "waist/P_sensor_PCB",
+              "label": "J1.01"
+            },
+            {
+              "raw_index": 1,
+              "raw_id": "waist/r1",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 1,
+              "part": "waist/C01_sensor_PCB",
+              "label": "J1.02"
+            },
+            {
+              "raw_index": 2,
+              "raw_id": "waist/r2",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 2,
+              "part": "waist/C02_sensor_PCB",
+              "label": "J1.03"
+            },
+            {
+              "raw_index": 3,
+              "raw_id": "chest/r0",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 3,
+              "part": "chest/P_sensor_PCB",
+              "label": "J1.04"
+            },
+            {
+              "raw_index": 4,
+              "raw_id": "chest/r1",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 4,
+              "part": "chest/C01_sensor_PCB",
+              "label": "J1.05"
+            },
+            {
+              "raw_index": 5,
+              "raw_id": "chest/r2",
+              "chain": 1,
+              "position_nearest_controller_zero_based": 5,
+              "part": "chest/C02_sensor_PCB",
+              "label": "J1.06"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J1-S00",
+              "from": "controller/J1",
+              "to": "J1.01",
+              "from_part": null,
+              "to_part": "waist/P_sensor_PCB",
+              "span_max_mm": 158.22370026543163,
+              "span_min_mm": 102.27174701392717,
+              "witness_pose": "chest.yaw.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 270,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  -45.0,
+                  365.3748525936461
+                ],
+                [
+                  -8.102910275613981,
+                  54.195000000000256,
+                  306.76369457072417
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.09,
+              "supply_return_drop_V": 0.00601515
+            },
+            {
+              "segment": "J1-S01",
+              "from": "J1.01",
+              "to": "J1.02",
+              "from_part": "waist/P_sensor_PCB",
+              "to_part": "waist/C01_sensor_PCB",
+              "span_max_mm": 67.58831353848065,
+              "span_min_mm": 65.30465128806873,
+              "witness_pose": "waist.pitch.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -8.102910275613981,
+                  54.195000000000256,
+                  306.76369457072417
+                ],
+                [
+                  -45.99791027561399,
+                  2.603236259922672e-13,
+                  313.247323956365
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.075,
+              "supply_return_drop_V": 0.00359175
+            },
+            {
+              "segment": "J1-S02",
+              "from": "J1.02",
+              "to": "J1.03",
+              "from_part": "waist/C01_sensor_PCB",
+              "to_part": "waist/C02_sensor_PCB",
+              "span_max_mm": 53.78736631408141,
+              "span_min_mm": 53.78736631408127,
+              "witness_pose": "crouch/010",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  -45.99791027561399,
+                  2.603236259922672e-13,
+                  313.247323956365
+                ],
+                [
+                  -11.34472496843441,
+                  2.539579391222625e-13,
+                  272.1105092635446
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.0027470999999999997
+            },
+            {
+              "segment": "J1-S03",
+              "from": "J1.03",
+              "to": "J1.04",
+              "from_part": "waist/C02_sensor_PCB",
+              "to_part": "chest/P_sensor_PCB",
+              "span_max_mm": 74.87171331975357,
+              "span_min_mm": 73.51350819885356,
+              "witness_pose": "trunk_bend_twist",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  -11.34472496843441,
+                  2.539579391222625e-13,
+                  272.1105092635446
+                ],
+                [
+                  49.5695500556004,
+                  -26.16166870721778,
+                  306.3766658935857
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.002249775
+            },
+            {
+              "segment": "J1-S04",
+              "from": "J1.04",
+              "to": "J1.05",
+              "from_part": "chest/P_sensor_PCB",
+              "to_part": "chest/C01_sensor_PCB",
+              "span_max_mm": 68.00507753661788,
+              "span_min_mm": 64.65864172187288,
+              "witness_pose": "chest.yaw.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  49.5695500556004,
+                  -26.16166870721778,
+                  306.3766658935857
+                ],
+                [
+                  16.857062298912147,
+                  -31.876969227036692,
+                  363.93007573824235
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0014367
+            },
+            {
+              "segment": "J1-S05",
+              "from": "J1.05",
+              "to": "J1.06",
+              "from_part": "chest/C01_sensor_PCB",
+              "to_part": "chest/C02_sensor_PCB",
+              "span_max_mm": 53.787366314081375,
+              "span_min_mm": 53.78736631408129,
+              "witness_pose": "trunk_bend_twist",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  16.857062298912147,
+                  -31.876969227036692,
+                  363.93007573824235
+                ],
+                [
+                  52.48258885366757,
+                  8.292413612782155,
+                  360.71708414633696
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.0006867749999999999
+            }
+          ],
+          "power_result": {
+            "chain": 1,
+            "boards": 6,
+            "allocated_current_A": 0.09,
+            "wire_and_splice_drop_V": 0.02783325,
+            "switch_max_drop_V": 0.012150000000000001,
+            "actual_copper_drop_V": 0.0056620976312047235,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.0862961523687953,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.08629615236879529,
+            "conditional_budget_ok": true
+          }
+        },
+        {
+          "chain": 2,
+          "sensor_nodes": [
+            {
+              "raw_index": 6,
+              "raw_id": "head/r0",
+              "chain": 2,
+              "position_nearest_controller_zero_based": 0,
+              "part": "head/P_sensor_PCB",
+              "label": "J2.01"
+            },
+            {
+              "raw_index": 7,
+              "raw_id": "head/r1",
+              "chain": 2,
+              "position_nearest_controller_zero_based": 1,
+              "part": "head/C01_sensor_PCB",
+              "label": "J2.02"
+            },
+            {
+              "raw_index": 8,
+              "raw_id": "head/r2",
+              "chain": 2,
+              "position_nearest_controller_zero_based": 2,
+              "part": "head/C02_sensor_PCB",
+              "label": "J2.03"
+            },
+            {
+              "raw_index": 9,
+              "raw_id": "head/r3",
+              "chain": 2,
+              "position_nearest_controller_zero_based": 3,
+              "part": "head/D_sensor_PCB",
+              "label": "J2.04"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J2-S00",
+              "from": "controller/J2",
+              "to": "J2.01",
+              "from_part": null,
+              "to_part": "head/P_sensor_PCB",
+              "span_max_mm": 88.72733437181124,
+              "span_min_mm": 88.72733437181117,
+              "witness_pose": "trunk_bend_twist/006",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 200,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  -45.0,
+                  346.3748525936461
+                ],
+                [
+                  -9.237153453852235,
+                  3.241813454083438,
+                  382.23608737554633
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.003126
+            },
+            {
+              "segment": "J2-S01",
+              "from": "J2.01",
+              "to": "J2.02",
+              "from_part": "head/P_sensor_PCB",
+              "to_part": "head/C01_sensor_PCB",
+              "span_max_mm": 64.47547361134683,
+              "span_min_mm": 58.967338063890175,
+              "witness_pose": "head_tilt",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -9.237153453852235,
+                  3.241813454083438,
+                  382.23608737554633
+                ],
+                [
+                  28.65784654614776,
+                  -3.2418159315573885,
+                  430.4310873755463
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.00215505
+            },
+            {
+              "segment": "J2-S02",
+              "from": "J2.02",
+              "to": "J2.03",
+              "from_part": "head/C01_sensor_PCB",
+              "to_part": "head/C02_sensor_PCB",
+              "span_max_mm": 53.78736631408136,
+              "span_min_mm": 53.787366314081304,
+              "witness_pose": "trunk_bend_twist",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  28.65784654614776,
+                  -3.2418159315573885,
+                  430.4310873755463
+                ],
+                [
+                  -5.995338761031822,
+                  37.89499876126302,
+                  430.4310873755463
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0013735499999999999
+            },
+            {
+              "segment": "J2-S03",
+              "from": "J2.03",
+              "to": "J2.04",
+              "from_part": "head/C02_sensor_PCB",
+              "to_part": "head/D_sensor_PCB",
+              "span_max_mm": 69.51309941641513,
+              "span_min_mm": 66.27530104115732,
+              "witness_pose": "head.pitch.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -5.995338761031822,
+                  37.89499876126302,
+                  430.4310873755463
+                ],
+                [
+                  -9.237153453852235,
+                  -3.2418159315573885,
+                  484.1260873755463
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.00071835
+            }
+          ],
+          "power_result": {
+            "chain": 2,
+            "boards": 4,
+            "allocated_current_A": 0.06,
+            "wire_and_splice_drop_V": 0.014776949999999999,
+            "switch_max_drop_V": 0.0081,
+            "actual_copper_drop_V": 0.0034441649473687815,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.105620385052631,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.10562038505263116,
+            "conditional_budget_ok": true
+          }
+        },
+        {
+          "chain": 3,
+          "sensor_nodes": [
+            {
+              "raw_index": 10,
+              "raw_id": "clavicle_l.protract/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 0,
+              "part": "clavicle_l.protract/sensor_PCB",
+              "label": "J3.01"
+            },
+            {
+              "raw_index": 11,
+              "raw_id": "clavicle_l.elevate/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 1,
+              "part": "clavicle_l.elevate/sensor_PCB",
+              "label": "J3.02"
+            },
+            {
+              "raw_index": 12,
+              "raw_id": "upperarm_l/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 2,
+              "part": "upperarm_l/P_sensor_PCB",
+              "label": "J3.03"
+            },
+            {
+              "raw_index": 13,
+              "raw_id": "upperarm_l/r1",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 3,
+              "part": "upperarm_l/C01_sensor_PCB",
+              "label": "J3.04"
+            },
+            {
+              "raw_index": 14,
+              "raw_id": "upperarm_l/r2",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 4,
+              "part": "upperarm_l/C02_sensor_PCB",
+              "label": "J3.05"
+            },
+            {
+              "raw_index": 15,
+              "raw_id": "upperarm_l/r3",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 5,
+              "part": "upperarm_l/D_sensor_PCB",
+              "label": "J3.06"
+            },
+            {
+              "raw_index": 16,
+              "raw_id": "elbow_l.flex/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 6,
+              "part": "elbow_l.flex/sensor_PCB",
+              "label": "J3.07"
+            },
+            {
+              "raw_index": 17,
+              "raw_id": "forearm_l.twist/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 7,
+              "part": "forearm_l.twist/sensor_PCB",
+              "label": "J3.08"
+            },
+            {
+              "raw_index": 18,
+              "raw_id": "hand_l.flex/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 8,
+              "part": "hand_l.flex/sensor_PCB",
+              "label": "J3.09"
+            },
+            {
+              "raw_index": 19,
+              "raw_id": "hand_l.deviate/r0",
+              "chain": 3,
+              "position_nearest_controller_zero_based": 9,
+              "part": "hand_l.deviate/sensor_PCB",
+              "label": "J3.10"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J3-S00",
+              "from": "controller/J3",
+              "to": "J3.01",
+              "from_part": null,
+              "to_part": "clavicle_l.protract/sensor_PCB",
+              "span_max_mm": 81.54210105561393,
+              "span_min_mm": 81.54210105561387,
+              "witness_pose": "waist.yaw.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 200,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  -45.0,
+                  327.3748525936461
+                ],
+                [
+                  -49.51217374718316,
+                  22.754868637096337,
+                  365.24305244118057
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.15,
+              "supply_return_drop_V": 0.007814999999999999
+            },
+            {
+              "segment": "J3-S01",
+              "from": "J3.01",
+              "to": "J3.02",
+              "from_part": "clavicle_l.protract/sensor_PCB",
+              "to_part": "clavicle_l.elevate/sensor_PCB",
+              "span_max_mm": 101.42074387121082,
+              "span_min_mm": 99.30717234442935,
+              "witness_pose": "bilateral_clavicle_1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 220,
+              "assembly_endpoints_mm": [
+                [
+                  -49.51217374718316,
+                  22.754868637096337,
+                  365.24305244118057
+                ],
+                [
+                  46.090517100173344,
+                  16.692038093636455,
+                  393.85550967377753
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.135,
+              "supply_return_drop_V": 0.00760185
+            },
+            {
+              "segment": "J3-S02",
+              "from": "J3.02",
+              "to": "J3.03",
+              "from_part": "clavicle_l.elevate/sensor_PCB",
+              "to_part": "upperarm_l/P_sensor_PCB",
+              "span_max_mm": 119.97003804482445,
+              "span_min_mm": 119.65622255985517,
+              "witness_pose": "bilateral_clavicle_3",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 240,
+              "assembly_endpoints_mm": [
+                [
+                  46.090517100173344,
+                  16.692038093636455,
+                  393.85550967377753
+                ],
+                [
+                  -61.206940788096425,
+                  69.55598198172702,
+                  397.22414520122175
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.12,
+              "supply_return_drop_V": 0.0072624
+            },
+            {
+              "segment": "J3-S03",
+              "from": "J3.03",
+              "to": "J3.04",
+              "from_part": "upperarm_l/P_sensor_PCB",
+              "to_part": "upperarm_l/C01_sensor_PCB",
+              "span_max_mm": 67.94049950099742,
+              "span_min_mm": 63.38996568775787,
+              "witness_pose": "upperarm_l.twist.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -61.206940788096425,
+                  69.55598198172702,
+                  397.22414520122175
+                ],
+                [
+                  -9.65108704589044,
+                  34.1227351798652,
+                  415.5688145413807
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.105,
+              "supply_return_drop_V": 0.00502845
+            },
+            {
+              "segment": "J3-S04",
+              "from": "J3.04",
+              "to": "J3.05",
+              "from_part": "upperarm_l/C01_sensor_PCB",
+              "to_part": "upperarm_l/C02_sensor_PCB",
+              "span_max_mm": 53.78736631408143,
+              "span_min_mm": 53.787366314081254,
+              "witness_pose": "arms_crossed/006",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  -9.65108704589044,
+                  34.1227351798652,
+                  415.5688145413807
+                ],
+                [
+                  -16.11880644950905,
+                  16.133416739152825,
+                  365.2932359493856
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.09,
+              "supply_return_drop_V": 0.00412065
+            },
+            {
+              "segment": "J3-S05",
+              "from": "J3.05",
+              "to": "J3.06",
+              "from_part": "upperarm_l/C02_sensor_PCB",
+              "to_part": "upperarm_l/D_sensor_PCB",
+              "span_max_mm": 70.24077975938796,
+              "span_min_mm": 64.97241939376467,
+              "witness_pose": "arms_overhead/019",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  -16.11880644950905,
+                  16.133416739152825,
+                  365.2932359493856
+                ],
+                [
+                  -16.16406201657951,
+                  77.29859262385443,
+                  334.87365352262236
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.075,
+              "supply_return_drop_V": 0.0037496249999999995
+            },
+            {
+              "segment": "J3-S06",
+              "from": "J3.06",
+              "to": "J3.07",
+              "from_part": "upperarm_l/D_sensor_PCB",
+              "to_part": "elbow_l.flex/sensor_PCB",
+              "span_max_mm": 34.86129172158011,
+              "span_min_mm": 34.86129172157991,
+              "witness_pose": "hands_on_hips/006",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 150,
+              "assembly_endpoints_mm": [
+                [
+                  -16.16406201657951,
+                  77.29859262385443,
+                  334.87365352262236
+                ],
+                [
+                  -16.16406201657951,
+                  60.37534886427041,
+                  304.39557154309483
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.0024944999999999998
+            },
+            {
+              "segment": "J3-S07",
+              "from": "J3.07",
+              "to": "J3.08",
+              "from_part": "elbow_l.flex/sensor_PCB",
+              "to_part": "forearm_l.twist/sensor_PCB",
+              "span_max_mm": 60.04778118620765,
+              "span_min_mm": 56.85867361385781,
+              "witness_pose": "arms_crossed/019",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -16.16406201657951,
+                  60.37534886427041,
+                  304.39557154309483
+                ],
+                [
+                  -17.3013399773489,
+                  104.77602187790818,
+                  268.8963377499101
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.00215505
+            },
+            {
+              "segment": "J3-S08",
+              "from": "J3.08",
+              "to": "J3.09",
+              "from_part": "forearm_l.twist/sensor_PCB",
+              "to_part": "hand_l.flex/sensor_PCB",
+              "span_max_mm": 29.28922051552659,
+              "span_min_mm": 25.825988506842144,
+              "witness_pose": "palms_turn/008",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 140,
+              "assembly_endpoints_mm": [
+                [
+                  -17.3013399773489,
+                  104.77602187790818,
+                  268.8963377499101
+                ],
+                [
+                  -16.164062016579525,
+                  96.87376529382578,
+                  241.17845989129825
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0011841
+            },
+            {
+              "segment": "J3-S09",
+              "from": "J3.09",
+              "to": "J3.10",
+              "from_part": "hand_l.flex/sensor_PCB",
+              "to_part": "hand_l.deviate/sensor_PCB",
+              "span_max_mm": 46.12746917558811,
+              "span_min_mm": 42.312660339908014,
+              "witness_pose": "hand_l.flex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 160,
+              "assembly_endpoints_mm": [
+                [
+                  -16.164062016579525,
+                  96.87376529382578,
+                  241.17845989129825
+                ],
+                [
+                  8.972752676240892,
+                  132.17443489288118,
+                  228.41052490981926
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.0006552
+            }
+          ],
+          "power_result": {
+            "chain": 3,
+            "boards": 10,
+            "allocated_current_A": 0.15,
+            "wire_and_splice_drop_V": 0.060576825,
+            "switch_max_drop_V": 0.02025,
+            "actual_copper_drop_V": 0.009163629856497194,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.041951045143503,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.041951045143502785,
+            "conditional_budget_ok": true
+          }
+        },
+        {
+          "chain": 4,
+          "sensor_nodes": [
+            {
+              "raw_index": 20,
+              "raw_id": "clavicle_r.protract/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 0,
+              "part": "clavicle_r.protract/sensor_PCB",
+              "label": "J4.01"
+            },
+            {
+              "raw_index": 21,
+              "raw_id": "clavicle_r.elevate/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 1,
+              "part": "clavicle_r.elevate/sensor_PCB",
+              "label": "J4.02"
+            },
+            {
+              "raw_index": 22,
+              "raw_id": "upperarm_r/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 2,
+              "part": "upperarm_r/P_sensor_PCB",
+              "label": "J4.03"
+            },
+            {
+              "raw_index": 23,
+              "raw_id": "upperarm_r/r1",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 3,
+              "part": "upperarm_r/C01_sensor_PCB",
+              "label": "J4.04"
+            },
+            {
+              "raw_index": 24,
+              "raw_id": "upperarm_r/r2",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 4,
+              "part": "upperarm_r/C02_sensor_PCB",
+              "label": "J4.05"
+            },
+            {
+              "raw_index": 25,
+              "raw_id": "upperarm_r/r3",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 5,
+              "part": "upperarm_r/D_sensor_PCB",
+              "label": "J4.06"
+            },
+            {
+              "raw_index": 26,
+              "raw_id": "elbow_r.flex/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 6,
+              "part": "elbow_r.flex/sensor_PCB",
+              "label": "J4.07"
+            },
+            {
+              "raw_index": 27,
+              "raw_id": "forearm_r.twist/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 7,
+              "part": "forearm_r.twist/sensor_PCB",
+              "label": "J4.08"
+            },
+            {
+              "raw_index": 28,
+              "raw_id": "hand_r.flex/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 8,
+              "part": "hand_r.flex/sensor_PCB",
+              "label": "J4.09"
+            },
+            {
+              "raw_index": 29,
+              "raw_id": "hand_r.deviate/r0",
+              "chain": 4,
+              "position_nearest_controller_zero_based": 9,
+              "part": "hand_r.deviate/sensor_PCB",
+              "label": "J4.10"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J4-S00",
+              "from": "controller/J4",
+              "to": "J4.01",
+              "from_part": null,
+              "to_part": "clavicle_r.protract/sensor_PCB",
+              "span_max_mm": 72.21586831843813,
+              "span_min_mm": 72.2158683184381,
+              "witness_pose": "waist.yaw.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  45.0,
+                  365.3748525936461
+                ],
+                [
+                  -49.51216718674734,
+                  -22.754868154320306,
+                  365.24185006134326
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.15,
+              "supply_return_drop_V": 0.007499249999999999
+            },
+            {
+              "segment": "J4-S01",
+              "from": "J4.01",
+              "to": "J4.02",
+              "from_part": "clavicle_r.protract/sensor_PCB",
+              "to_part": "clavicle_r.elevate/sensor_PCB",
+              "span_max_mm": 101.42074387121082,
+              "span_min_mm": 99.30717234442935,
+              "witness_pose": "bilateral_clavicle_1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 220,
+              "assembly_endpoints_mm": [
+                [
+                  -49.51216718674734,
+                  -22.754868154320306,
+                  365.24185006134326
+                ],
+                [
+                  46.090523660609165,
+                  -16.692037610860424,
+                  393.8543072939402
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.135,
+              "supply_return_drop_V": 0.00760185
+            },
+            {
+              "segment": "J4-S02",
+              "from": "J4.02",
+              "to": "J4.03",
+              "from_part": "clavicle_r.elevate/sensor_PCB",
+              "to_part": "upperarm_r/P_sensor_PCB",
+              "span_max_mm": 119.97003694389953,
+              "span_min_mm": 119.65619992152187,
+              "witness_pose": "bilateral_clavicle_3",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 240,
+              "assembly_endpoints_mm": [
+                [
+                  46.090523660609165,
+                  -16.692037610860424,
+                  393.8543072939402
+                ],
+                [
+                  -61.206944146291356,
+                  -69.55585812415323,
+                  397.2240339021809
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.12,
+              "supply_return_drop_V": 0.0072624
+            },
+            {
+              "segment": "J4-S03",
+              "from": "J4.03",
+              "to": "J4.04",
+              "from_part": "upperarm_r/P_sensor_PCB",
+              "to_part": "upperarm_r/C01_sensor_PCB",
+              "span_max_mm": 67.94049950099742,
+              "span_min_mm": 63.38996568775787,
+              "witness_pose": "upperarm_r.twist.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -61.206944146291356,
+                  -69.55585812415323,
+                  397.2240339021809
+                ],
+                [
+                  -9.651090404085371,
+                  -34.12261132229142,
+                  415.56870324233984
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.105,
+              "supply_return_drop_V": 0.00502845
+            },
+            {
+              "segment": "J4-S04",
+              "from": "J4.04",
+              "to": "J4.05",
+              "from_part": "upperarm_r/C01_sensor_PCB",
+              "to_part": "upperarm_r/C02_sensor_PCB",
+              "span_max_mm": 53.787366314081424,
+              "span_min_mm": 53.787366314081254,
+              "witness_pose": "arms_overhead/004",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  -9.651090404085371,
+                  -34.12261132229142,
+                  415.56870324233984
+                ],
+                [
+                  -16.118809807703983,
+                  -16.13329288157904,
+                  365.29312465034474
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.09,
+              "supply_return_drop_V": 0.00412065
+            },
+            {
+              "segment": "J4-S05",
+              "from": "J4.05",
+              "to": "J4.06",
+              "from_part": "upperarm_r/C02_sensor_PCB",
+              "to_part": "upperarm_r/D_sensor_PCB",
+              "span_max_mm": 70.24077975938796,
+              "span_min_mm": 64.97241939376467,
+              "witness_pose": "arms_overhead/019",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  -16.118809807703983,
+                  -16.13329288157904,
+                  365.29312465034474
+                ],
+                [
+                  -16.16406537477444,
+                  -77.29846876628065,
+                  334.8735422235815
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.075,
+              "supply_return_drop_V": 0.0037496249999999995
+            },
+            {
+              "segment": "J4-S06",
+              "from": "J4.06",
+              "to": "J4.07",
+              "from_part": "upperarm_r/D_sensor_PCB",
+              "to_part": "elbow_r.flex/sensor_PCB",
+              "span_max_mm": 22.685435066925525,
+              "span_min_mm": 22.685435066925407,
+              "witness_pose": "bilateral_clavicle_4",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 140,
+              "assembly_endpoints_mm": [
+                [
+                  -16.16406537477444,
+                  -77.29846876628065,
+                  334.8735422235815
+                ],
+                [
+                  -16.164065374774438,
+                  -98.29791008744354,
+                  326.29144292476605
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.0023682
+            },
+            {
+              "segment": "J4-S07",
+              "from": "J4.07",
+              "to": "J4.08",
+              "from_part": "elbow_r.flex/sensor_PCB",
+              "to_part": "forearm_r.twist/sensor_PCB",
+              "span_max_mm": 65.5244614996112,
+              "span_min_mm": 62.60459757723395,
+              "witness_pose": "palms_turn",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -16.164065374774438,
+                  -98.29791008744354,
+                  326.29144292476605
+                ],
+                [
+                  -13.680435989133606,
+                  -104.34416935728815,
+                  264.02901467366087
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.00215505
+            },
+            {
+              "segment": "J4-S08",
+              "from": "J4.08",
+              "to": "J4.09",
+              "from_part": "forearm_r.twist/sensor_PCB",
+              "to_part": "hand_r.flex/sensor_PCB",
+              "span_max_mm": 33.275390064594724,
+              "span_min_mm": 27.77524829895479,
+              "witness_pose": "forearm_r.twist.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 150,
+              "assembly_endpoints_mm": [
+                [
+                  -13.680435989133606,
+                  -104.34416935728815,
+                  264.02901467366087
+                ],
+                [
+                  -16.164065374774427,
+                  -134.79677031153832,
+                  263.07356259827907
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0012472499999999999
+            },
+            {
+              "segment": "J4-S09",
+              "from": "J4.09",
+              "to": "J4.10",
+              "from_part": "hand_r.flex/sensor_PCB",
+              "to_part": "hand_r.deviate/sensor_PCB",
+              "span_max_mm": 42.929307171929615,
+              "span_min_mm": 38.94486008351474,
+              "witness_pose": "hand_r.flex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 160,
+              "assembly_endpoints_mm": [
+                [
+                  -16.164065374774427,
+                  -134.79677031153832,
+                  263.07356259827907
+                ],
+                [
+                  -34.817250681954015,
+                  -129.71423674926783,
+                  228.0867689593056
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.0006552
+            }
+          ],
+          "power_result": {
+            "chain": 4,
+            "boards": 10,
+            "allocated_current_A": 0.15,
+            "wire_and_splice_drop_V": 0.060197925,
+            "switch_max_drop_V": 0.02025,
+            "actual_copper_drop_V": 0.0049064029416567845,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.0465871720583433,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.046587172058343285,
+            "conditional_budget_ok": true
+          }
+        },
+        {
+          "chain": 5,
+          "sensor_nodes": [
+            {
+              "raw_index": 30,
+              "raw_id": "thigh_l/r0",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 0,
+              "part": "thigh_l/P_sensor_PCB",
+              "label": "J5.01"
+            },
+            {
+              "raw_index": 31,
+              "raw_id": "thigh_l/r1",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 1,
+              "part": "thigh_l/C01_sensor_PCB",
+              "label": "J5.02"
+            },
+            {
+              "raw_index": 32,
+              "raw_id": "thigh_l/r2",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 2,
+              "part": "thigh_l/C02_sensor_PCB",
+              "label": "J5.03"
+            },
+            {
+              "raw_index": 33,
+              "raw_id": "thigh_l/r3",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 3,
+              "part": "thigh_l/D_sensor_PCB",
+              "label": "J5.04"
+            },
+            {
+              "raw_index": 34,
+              "raw_id": "calf_l.flex/r0",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 4,
+              "part": "calf_l.flex/sensor_PCB",
+              "label": "J5.05"
+            },
+            {
+              "raw_index": 35,
+              "raw_id": "foot_l/r0",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 5,
+              "part": "foot_l/C01_sensor_PCB",
+              "label": "J5.06"
+            },
+            {
+              "raw_index": 36,
+              "raw_id": "foot_l/r1",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 6,
+              "part": "foot_l/C02_sensor_PCB",
+              "label": "J5.07"
+            },
+            {
+              "raw_index": 37,
+              "raw_id": "ball_l.flex/r0",
+              "chain": 5,
+              "position_nearest_controller_zero_based": 7,
+              "part": "ball_l.flex/sensor_PCB",
+              "label": "J5.08"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J5-S00",
+              "from": "controller/J5",
+              "to": "J5.01",
+              "from_part": null,
+              "to_part": "thigh_l/P_sensor_PCB",
+              "span_max_mm": 145.02072639279623,
+              "span_min_mm": 44.93289014471435,
+              "witness_pose": "trunk_bend_twist",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 260,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  45.0,
+                  346.3748525936461
+                ],
+                [
+                  -50.79281064944907,
+                  45.49325118305404,
+                  273.29807698319314
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.12,
+              "supply_return_drop_V": 0.0077675999999999995
+            },
+            {
+              "segment": "J5-S01",
+              "from": "J5.01",
+              "to": "J5.02",
+              "from_part": "thigh_l/P_sensor_PCB",
+              "to_part": "thigh_l/C01_sensor_PCB",
+              "span_max_mm": 69.11012518516428,
+              "span_min_mm": 63.2415699006339,
+              "witness_pose": "thigh_l.flex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -50.79281064944907,
+                  45.49325118305404,
+                  273.29807698319314
+                ],
+                [
+                  8.648103449766074,
+                  32.60935083417968,
+                  291.0346548892308
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.105,
+              "supply_return_drop_V": 0.00502845
+            },
+            {
+              "segment": "J5-S02",
+              "from": "J5.02",
+              "to": "J5.03",
+              "from_part": "thigh_l/C01_sensor_PCB",
+              "to_part": "thigh_l/C02_sensor_PCB",
+              "span_max_mm": 53.78736631408138,
+              "span_min_mm": 53.78736631408128,
+              "witness_pose": "forehead/033",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  8.648103449766074,
+                  32.60935083417968,
+                  291.0346548892308
+                ],
+                [
+                  19.35257707361945,
+                  77.74786185859087,
+                  263.81315893583934
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.09,
+              "supply_return_drop_V": 0.00412065
+            },
+            {
+              "segment": "J5-S03",
+              "from": "J5.03",
+              "to": "J5.04",
+              "from_part": "thigh_l/C02_sensor_PCB",
+              "to_part": "thigh_l/D_sensor_PCB",
+              "span_max_mm": 70.09738944065168,
+              "span_min_mm": 67.66963746517602,
+              "witness_pose": "thigh_l.twist.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  19.35257707361945,
+                  77.74786185859087,
+                  263.81315893583934
+                ],
+                [
+                  -2.5253185697285256,
+                  52.96615083910474,
+                  202.9675823469448
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.075,
+              "supply_return_drop_V": 0.0037496249999999995
+            },
+            {
+              "segment": "J5-S04",
+              "from": "J5.04",
+              "to": "J5.05",
+              "from_part": "thigh_l/D_sensor_PCB",
+              "to_part": "calf_l.flex/sensor_PCB",
+              "span_max_mm": 67.8438452765704,
+              "span_min_mm": 67.84384527657026,
+              "witness_pose": "kneeling/005",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -2.5253185697285256,
+                  52.96615083910474,
+                  202.9675823469448
+                ],
+                [
+                  3.9583108159122946,
+                  68.16672722959065,
+                  137.16718440515518
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.0028734
+            },
+            {
+              "segment": "J5-S05",
+              "from": "J5.05",
+              "to": "J5.06",
+              "from_part": "calf_l.flex/sensor_PCB",
+              "to_part": "foot_l/C01_sensor_PCB",
+              "span_max_mm": 135.44630288105785,
+              "span_min_mm": 90.65497450250503,
+              "witness_pose": "foot_l.dorsiflex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 250,
+              "assembly_endpoints_mm": [
+                [
+                  3.9583108159122946,
+                  68.16672722959065,
+                  137.16718440515518
+                ],
+                [
+                  -37.17850387690812,
+                  65.04184462260858,
+                  25.373211751030194
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.002818125
+            },
+            {
+              "segment": "J5-S06",
+              "from": "J5.06",
+              "to": "J5.07",
+              "from_part": "foot_l/C01_sensor_PCB",
+              "to_part": "foot_l/C02_sensor_PCB",
+              "span_max_mm": 58.17624125141545,
+              "span_min_mm": 58.176241251415405,
+              "witness_pose": "raw/arms_overhead/009",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  -37.17850387690812,
+                  65.04184462260858,
+                  25.373211751030194
+                ],
+                [
+                  3.9583108159122946,
+                  24.305370582569452,
+                  19.648073686610793
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0013735499999999999
+            },
+            {
+              "segment": "J5-S07",
+              "from": "J5.07",
+              "to": "J5.08",
+              "from_part": "foot_l/C02_sensor_PCB",
+              "to_part": "ball_l.flex/sensor_PCB",
+              "span_max_mm": 45.04266820896526,
+              "span_min_mm": 42.67843702742473,
+              "witness_pose": "foot_l.invert.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 160,
+              "assembly_endpoints_mm": [
+                [
+                  3.9583108159122946,
+                  24.305370582569452,
+                  19.648073686610793
+                ],
+                [
+                  43.490849900547545,
+                  40.375246384203436,
+                  20.269710514433182
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.0006552
+            }
+          ],
+          "power_result": {
+            "chain": 5,
+            "boards": 8,
+            "allocated_current_A": 0.12,
+            "wire_and_splice_drop_V": 0.04319459999999999,
+            "switch_max_drop_V": 0.0162,
+            "actual_copper_drop_V": 0.0037422342322489385,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.068804665767751,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.0688046657677508,
+            "conditional_budget_ok": true
+          }
+        },
+        {
+          "chain": 6,
+          "sensor_nodes": [
+            {
+              "raw_index": 38,
+              "raw_id": "thigh_r/r0",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 0,
+              "part": "thigh_r/P_sensor_PCB",
+              "label": "J6.01"
+            },
+            {
+              "raw_index": 39,
+              "raw_id": "thigh_r/r1",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 1,
+              "part": "thigh_r/C01_sensor_PCB",
+              "label": "J6.02"
+            },
+            {
+              "raw_index": 40,
+              "raw_id": "thigh_r/r2",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 2,
+              "part": "thigh_r/C02_sensor_PCB",
+              "label": "J6.03"
+            },
+            {
+              "raw_index": 41,
+              "raw_id": "thigh_r/r3",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 3,
+              "part": "thigh_r/D_sensor_PCB",
+              "label": "J6.04"
+            },
+            {
+              "raw_index": 42,
+              "raw_id": "calf_r.flex/r0",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 4,
+              "part": "calf_r.flex/sensor_PCB",
+              "label": "J6.05"
+            },
+            {
+              "raw_index": 43,
+              "raw_id": "foot_r/r0",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 5,
+              "part": "foot_r/C01_sensor_PCB",
+              "label": "J6.06"
+            },
+            {
+              "raw_index": 44,
+              "raw_id": "foot_r/r1",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 6,
+              "part": "foot_r/C02_sensor_PCB",
+              "label": "J6.07"
+            },
+            {
+              "raw_index": 45,
+              "raw_id": "ball_r.flex/r0",
+              "chain": 6,
+              "position_nearest_controller_zero_based": 7,
+              "part": "ball_r.flex/sensor_PCB",
+              "label": "J6.08"
+            }
+          ],
+          "segments": [
+            {
+              "segment": "J6-S00",
+              "from": "controller/J6",
+              "to": "J6.01",
+              "from_part": null,
+              "to_part": "thigh_r/P_sensor_PCB",
+              "span_max_mm": 147.93918164209177,
+              "span_min_mm": 69.16092973140388,
+              "witness_pose": "chest.yaw.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 260,
+              "assembly_endpoints_mm": [
+                [
+                  -74.5,
+                  45.0,
+                  327.3748525936461
+                ],
+                [
+                  -50.79290664866629,
+                  -45.493289006452294,
+                  273.29793324185107
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.12,
+              "supply_return_drop_V": 0.0077675999999999995
+            },
+            {
+              "segment": "J6-S01",
+              "from": "J6.01",
+              "to": "J6.02",
+              "from_part": "thigh_r/P_sensor_PCB",
+              "to_part": "thigh_r/C01_sensor_PCB",
+              "span_max_mm": 69.11012518516428,
+              "span_min_mm": 63.23972686936908,
+              "witness_pose": "thigh_r.flex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 180,
+              "assembly_endpoints_mm": [
+                [
+                  -50.79290664866629,
+                  -45.493289006452294,
+                  273.29793324185107
+                ],
+                [
+                  8.648007450548858,
+                  -32.60938865757793,
+                  291.03451114788874
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.105,
+              "supply_return_drop_V": 0.00502845
+            },
+            {
+              "segment": "J6-S02",
+              "from": "J6.02",
+              "to": "J6.03",
+              "from_part": "thigh_r/C01_sensor_PCB",
+              "to_part": "thigh_r/C02_sensor_PCB",
+              "span_max_mm": 53.78736631408139,
+              "span_min_mm": 53.78736631408128,
+              "witness_pose": "forehead/033",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  8.648007450548858,
+                  -32.60938865757793,
+                  291.03451114788874
+                ],
+                [
+                  19.352481074402235,
+                  -77.74789968198913,
+                  263.81301519449727
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.09,
+              "supply_return_drop_V": 0.00412065
+            },
+            {
+              "segment": "J6-S03",
+              "from": "J6.03",
+              "to": "J6.04",
+              "from_part": "thigh_r/C02_sensor_PCB",
+              "to_part": "thigh_r/D_sensor_PCB",
+              "span_max_mm": 70.0973894406517,
+              "span_min_mm": 67.66963746517602,
+              "witness_pose": "thigh_r.twist.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  19.352481074402235,
+                  -77.74789968198913,
+                  263.81301519449727
+                ],
+                [
+                  -2.52541456894574,
+                  -52.966188662502994,
+                  202.96743860560272
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.075,
+              "supply_return_drop_V": 0.0037496249999999995
+            },
+            {
+              "segment": "J6-S04",
+              "from": "J6.04",
+              "to": "J6.05",
+              "from_part": "thigh_r/D_sensor_PCB",
+              "to_part": "calf_r.flex/sensor_PCB",
+              "span_max_mm": 77.48568936908768,
+              "span_min_mm": 77.48568936908755,
+              "witness_pose": "arms_overhead/004",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 190,
+              "assembly_endpoints_mm": [
+                [
+                  -2.52541456894574,
+                  -52.966188662502994,
+                  202.96743860560272
+                ],
+                [
+                  3.9582148166950804,
+                  -24.802889825731487,
+                  131.07291026287632
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.06,
+              "supply_return_drop_V": 0.0029996999999999997
+            },
+            {
+              "segment": "J6-S05",
+              "from": "J6.05",
+              "to": "J6.06",
+              "from_part": "calf_r.flex/sensor_PCB",
+              "to_part": "foot_r/C01_sensor_PCB",
+              "span_max_mm": 135.44641835086077,
+              "span_min_mm": 90.65508595168309,
+              "witness_pose": "foot_r.dorsiflex.1",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 250,
+              "assembly_endpoints_mm": [
+                [
+                  3.9582148166950804,
+                  -24.802889825731487,
+                  131.07291026287632
+                ],
+                [
+                  -37.17859987612533,
+                  -58.621331643586956,
+                  24.470861035745802
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.045,
+              "supply_return_drop_V": 0.002818125
+            },
+            {
+              "segment": "J6-S06",
+              "from": "J6.06",
+              "to": "J6.07",
+              "from_part": "foot_r/C01_sensor_PCB",
+              "to_part": "foot_r/C02_sensor_PCB",
+              "span_max_mm": 58.17624125141545,
+              "span_min_mm": 58.17624125141539,
+              "witness_pose": "raw/head_tilt/005",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 170,
+              "assembly_endpoints_mm": [
+                [
+                  -37.17859987612533,
+                  -58.621331643586956,
+                  24.470861035745802
+                ],
+                [
+                  3.9582148166950804,
+                  -99.35780568362608,
+                  30.195999100165203
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.03,
+              "supply_return_drop_V": 0.0013735499999999999
+            },
+            {
+              "segment": "J6-S07",
+              "from": "J6.07",
+              "to": "J6.08",
+              "from_part": "foot_r/C02_sensor_PCB",
+              "to_part": "ball_r.flex/sensor_PCB",
+              "span_max_mm": 45.042671689959604,
+              "span_min_mm": 42.67844070125357,
+              "witness_pose": "foot_r.invert.0",
+              "loop_radius_target_mm": 12,
+              "detour_and_termination_reserve_mm": 35,
+              "cut_length_each_conductor_mm": 160,
+              "assembly_endpoints_mm": [
+                [
+                  3.9582148166950804,
+                  -99.35780568362608,
+                  30.195999100165203
+                ],
+                [
+                  43.49075786751302,
+                  -83.73910328552982,
+                  26.3640966972655
+                ]
+              ],
+              "conductors": [
+                "GND 24AWG black",
+                "VCC3V3 24AWG red",
+                "SCK 30AWG blue",
+                "CS_N 30AWG yellow",
+                "FORWARD 30AWG white",
+                "RETURN 30AWG green"
+              ],
+              "downstream_design_current_A": 0.015,
+              "supply_return_drop_V": 0.0006552
+            }
+          ],
+          "power_result": {
+            "chain": 6,
+            "boards": 8,
+            "allocated_current_A": 0.12,
+            "wire_and_splice_drop_V": 0.043320899999999996,
+            "switch_max_drop_V": 0.0162,
+            "actual_copper_drop_V": 0.005153047300802663,
+            "local_tail_drop_V": 0.0060585,
+            "common_rail_allowance_V": 0.03,
+            "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+            "conditional_far_end_min_V": 3.0672675526991973,
+            "AS5048A_min_V": 3.0,
+            "conditional_margin_V": 0.06726755269919726,
+            "conditional_budget_ok": true
+          }
+        }
+      ],
+      "power_results": [
+        {
+          "chain": 1,
+          "boards": 6,
+          "allocated_current_A": 0.09,
+          "wire_and_splice_drop_V": 0.02783325,
+          "switch_max_drop_V": 0.012150000000000001,
+          "actual_copper_drop_V": 0.0056620976312047235,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.0862961523687953,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.08629615236879529,
+          "conditional_budget_ok": true
+        },
+        {
+          "chain": 2,
+          "boards": 4,
+          "allocated_current_A": 0.06,
+          "wire_and_splice_drop_V": 0.014776949999999999,
+          "switch_max_drop_V": 0.0081,
+          "actual_copper_drop_V": 0.0034441649473687815,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.105620385052631,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.10562038505263116,
+          "conditional_budget_ok": true
+        },
+        {
+          "chain": 3,
+          "boards": 10,
+          "allocated_current_A": 0.15,
+          "wire_and_splice_drop_V": 0.060576825,
+          "switch_max_drop_V": 0.02025,
+          "actual_copper_drop_V": 0.009163629856497194,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.041951045143503,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.041951045143502785,
+          "conditional_budget_ok": true
+        },
+        {
+          "chain": 4,
+          "boards": 10,
+          "allocated_current_A": 0.15,
+          "wire_and_splice_drop_V": 0.060197925,
+          "switch_max_drop_V": 0.02025,
+          "actual_copper_drop_V": 0.0049064029416567845,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.0465871720583433,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.046587172058343285,
+          "conditional_budget_ok": true
+        },
+        {
+          "chain": 5,
+          "boards": 8,
+          "allocated_current_A": 0.12,
+          "wire_and_splice_drop_V": 0.04319459999999999,
+          "switch_max_drop_V": 0.0162,
+          "actual_copper_drop_V": 0.0037422342322489385,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.068804665767751,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.0688046657677508,
+          "conditional_budget_ok": true
+        },
+        {
+          "chain": 6,
+          "boards": 8,
+          "allocated_current_A": 0.12,
+          "wire_and_splice_drop_V": 0.043320899999999996,
+          "switch_max_drop_V": 0.0162,
+          "actual_copper_drop_V": 0.005153047300802663,
+          "local_tail_drop_V": 0.0060585,
+          "common_rail_allowance_V": 0.03,
+          "controller_GH_pigtail": "40mm AWG26, insulation OD.76..1.0mm, SSHL-002T-P0.2 terminals; splice to continuous24AWG rails outside connector; contact pair .10ohm after-test budget",
+          "conditional_far_end_min_V": 3.0672675526991973,
+          "AS5048A_min_V": 3.0,
+          "conditional_margin_V": 0.06726755269919726,
+          "conditional_budget_ok": true
+        }
+      ],
+      "tail_report_sha256": "43cb3e0947401a98d2075b50084a725921ddd29d66800d19489aaec4512ee747"
+    }
+  ],
+  "scope": "689 discrete poses bound terminal straight-line separation. External loose service loops add reserve. No computed elastic cable shape, bend force, fatigue or moving-wire collision proof. Adjust loop placement on complete assembled prototype.",
+  "no_automatic_hardware_pass": true,
+  "wire_specs": {
+    "power": "24 AWG multi-strand silicone, conductor DC resistance <=0.0842 ohm/m at20C; OD<=1.6mm",
+    "signal": "30 AWG multi-strand flexible insulated, OD<=.9mm",
+    "local_pigtail": "6x32 AWG, OD<=.55mm, <=40mm from FFC transition to splice; no moving bend at solder",
+    "static_FFC": "6P pitch.5mm width3.5mm thickness.2mm, nominal15mm; 2.15mm insertion, terminal stiffeners>=3.5mm; formed once radius2mm, supplier must accept bend geometry",
+    "controller_connector": "GHR-06V-S with SSHL-002T-P0.2, AWG26 power/30signal, insulation OD.76..1.0mm; 40mm power leads adapt to24AWG outside housing, never crimp24AWG in GH. PH PHR-2/3 uses SPH-002T-P0.5S, AWG24, insulation OD.8..1.5mm.",
+    "sources": [
+      "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    ],
+    "termination": "Continuous 24AWG supply and ground rails with soldered taps, not a series of removable connectors. Main GH contact pair after-test budget .10ohm; each through tap pair <=.01ohm at elevated temperature. Factory assemble and electrically test labeled harness. Individual heatshrink insulation; no exposed splices. Route RETURN bypass past intermediate boards; do not short pin4 to pin5."
+  },
+  "inputs_sha256": {
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\cad\\revO15\\harness_plan.py": "03715a135b6bf3202616e0de3c88727d4c2adb6203aae4ffae240f6520a34daa",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO15\\runs\\o15_20260929_r1\\raw46_wiring_candidate.json": "8f6f1f74aa93570ebe40f016fa1bce2ea36f14b8c06a5e5984263939fd38c390",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\electronics\\revO15\\central_c1\\power_trace_resistance.json": "6dab130a5bd397a6f9dc46382f7b0e19c339860981d9ccadf67040bebd26cef8"
+  },
+  "hardware_model": "universal",
+  "o17_note": "Old battery/radio power notes are superseded by POWER_AND_USB.zh-CN.md. USB tethers are external and not covered by old length calculations.",
+  "o19_note": "Electrical chain and connector endpoints are unchanged. Four beam midspans have moved: bind wires to the new actual rods and verify flex/slack on the assembled doll. Frozen wire cut estimates do not certify the new binding path.",
+  "o20_note": "Same electrical endpoints and outer beam paths as O19. Bind wires to retained beam outer surface. Enclosed lightening cores are not wire conduits. Wire flexibility/slack requires assembled review."
+}

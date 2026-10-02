@@ -1,0 +1,1 @@
+window.O13_RESULTS={"moduleCases": 204, "moduleFailures": 0, "bilateralCases": 102, "bilateralFailures": 0, "wholeArmCases": 102, "wholeArmFailures": 6, "baselineWholeArmFailures": 10, "unilateralCases": 136, "shoulderOffsetPerSideMm": 8, "physicalCoupon": "用户报告装配与初步手感通过", "springForceN": null, "torqueNm": null};

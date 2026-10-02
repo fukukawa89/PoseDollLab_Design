@@ -1,0 +1,119 @@
+{
+  "document_type": "design_requirements_not_runtime_configuration",
+  "revision": "RevO-Desktop-proposal",
+  "date": "2026-09-23",
+  "reviewed_hardware_tree_sha": "458f3b0646f724f3b74769defc98f5f6e9ec45a8",
+  "status": "PROPOSED_NOT_MANUFACTURING_RELEASE",
+  "new_cad_delivered": false,
+  "new_pcb_delivered": false,
+  "new_firmware_delivered": false,
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "characters": [
+    "manny",
+    "quinn"
+  ],
+  "hard_requirements": {
+    "complete_neutral_body_height_max_mm": 600,
+    "measured_axes": 41,
+    "protocol_slots": 44,
+    "fixed_pelvis_indices": [
+      0,
+      1,
+      2
+    ],
+    "preserve_axis_semantics_and_order": true,
+    "remove_large_backpack_enclosures": true,
+    "no_unapproved_axis_or_motion_reduction": true,
+    "no_global_scaling_of_hardware_solids": true,
+    "no_old_5V_boards_on_new_12V_supply": true,
+    "no_pc_usb_power_backfeed": true,
+    "keep_local_sensing_and_acquisition": true,
+    "gateway_external": true,
+    "report_not_run_as_not_run": true
+  },
+  "proposed_targets_not_verified": {
+    "reference_height_anchor_mm": 480,
+    "reference_height_candidates_mm": [
+      420,
+      450,
+      480,
+      520,
+      550
+    ],
+    "anchor_complete_neutral_body_height_goal_mm": 500,
+    "body_mass_goal_kg": 1.2,
+    "preferred_print_part_max_dimension_mm": 160,
+    "umbilical_length_mm": 1000,
+    "supply_candidate_v": 12,
+    "supply_alternative_for_comparison_v": 5,
+    "can_bitrate": 500000,
+    "cohort_hz": 60,
+    "retain_if_verified_cohort_deadline_us": 14000,
+    "retain_if_verified_node_sample_window_us": 8000,
+    "static_hold_test_s": 60,
+    "static_angle_drift_goal_deg": 0.5,
+    "calibrated_single_axis_max_error_goal_deg": 1.0,
+    "repeatability_goal_deg": 0.3,
+    "adjacent_axis_crosstalk_goal_deg": 0.3,
+    "electrical_soak_minutes": 30,
+    "complete_fresh_cohort_ratio_goal": 0.999,
+    "false_fresh_or_false_valid_samples_allowed": 0,
+    "initial_mechanical_cycle_screening_cycles": 1000,
+    "nominal_holding_margin_goal": 1.5
+  },
+  "architecture": {
+    "measurement_nodes": {
+      "N1": 3,
+      "N2": 6,
+      "N3": 9,
+      "N4": 9,
+      "N5": 7,
+      "N6": 7
+    },
+    "gateway": "G0_no_measurement_channels",
+    "physical_can_node_count": 7,
+    "logical_measurement_node_count": 6,
+    "candidate_electrical_linear_order": [
+      "G0",
+      "N1",
+      "N5",
+      "N6",
+      "N2",
+      "N3",
+      "N4"
+    ],
+    "candidate_termination_nodes": [
+      "G0",
+      "N4"
+    ],
+    "termination_ohm_per_end": 120,
+    "physical_route_status": "TO_BE_DESIGNED_AND_VALIDATED_NOT_A_WIRING_INSTRUCTION",
+    "external_cable_functional_conductors": [
+      "CAN_H",
+      "CAN_L",
+      "VPLUS",
+      "GND"
+    ],
+    "connector_pinout": "NOT_DESIGNED",
+    "internal_power_branch_protection": "REQUIRED",
+    "sensor_baseline": "AS5048A",
+    "magnet_baseline": "diametric_6x2.5_mm",
+    "node_controller_baseline": "ESP32-S3-WROOM-1-N8",
+    "new_board_envelopes": "NOT_YET_ESTABLISHED"
+  },
+  "execution_stages": [
+    "baseline_audit_and_regression",
+    "skeleton_and_bottleneck_size_study",
+    "compact_joint_and_real_pcba_codesign",
+    "full_body_cad_external_electronics",
+    "G0_firmware_bridge_profiles",
+    "staged_prototypes_and_physical_validation"
+  ],
+  "notes": [
+    "This JSON is a task specification. Do not load it as firmware, pin assignment, or manufacturing configuration.",
+    "Nominal anatomical height is not complete physical body height.",
+    "Choose the smallest tested feasible candidate; no global minimum has been proven.",
+    "All proposed targets require design review and actual measurement before release."
+  ]
+}

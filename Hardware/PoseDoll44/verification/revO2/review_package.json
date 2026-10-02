@@ -1,0 +1,1513 @@
+{
+  "schema": "revo2-review-package-v1",
+  "run_id": "o2_20260923_r1",
+  "prepared_utc": "2026-09-23T12:57:52.744249+00:00",
+  "branch": "design/revO-desktop-external",
+  "parent_commit": "f59e4d3a7ea3d0940b1810702cd5e1df181e0364",
+  "review_entry": "Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO2.zh-CN.md",
+  "snapshot_commit": "Read actual Git HEAD after this package is committed; manifest excludes itself to avoid a circular hash",
+  "run_json_sha256": "1275cdd37071a7270fd46eac7820d694eef69a5b98d14e47bae45dd23b4e46cc",
+  "tested_source_index_matches": 432,
+  "run_outputs_in_git": 194,
+  "run_outputs_local_only": [
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/placement.kicad_prl",
+      "sha256": "2493ca45c8ce97676727d00e8fd3721c724fb4ec4f07810ab43b85cb64c558a5",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/PoseDoll_RevO2_distal4.kicad_prl",
+      "sha256": "ab3b15c1917b9f9b03d27b882f7952cb4493286efe725fc0656f18d05e7d1a77",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/placement.kicad_prl",
+      "sha256": "2493ca45c8ce97676727d00e8fd3721c724fb4ec4f07810ab43b85cb64c558a5",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_prl",
+      "sha256": "4b040eb0b48334e7a4b79e12829cdecf0f3968d81b156abdfa099bc25b9adc37",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/placement.kicad_prl",
+      "sha256": "2493ca45c8ce97676727d00e8fd3721c724fb4ec4f07810ab43b85cb64c558a5",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/PoseDoll_RevO2_proximal5.kicad_prl",
+      "sha256": "e16ae32732638e2101a5c8e18ab9799c9d6c1fd809b420a25fd974fe2102261f",
+      "reason": "KiCad per-user UI state; not design input or engineering result"
+    }
+  ],
+  "native_delivery_files_verified": 36,
+  "files_except_this_manifest": [
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/CMakeLists.txt",
+      "bytes": 139,
+      "sha256": "3e518b3361bbd22348c7ddc267c9937f4912613bf99c5af24439aede57a1c925"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/build.ps1",
+      "bytes": 1264,
+      "sha256": "ee7a01203deabcec2281bc03fd1aafbafe0f6e66278a4b997d8460ef8970abe5"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/CMakeLists.txt",
+      "bytes": 236,
+      "sha256": "ab6267af8379a4446f17505cf80018ccdaeceb5b2bb587282fc287d758278d66"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/Kconfig.projbuild",
+      "bytes": 227,
+      "sha256": "587d4368cd8509b845340deae32af9b05d898ecbfe279b87c1d0135f37d82a2e"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/main.c",
+      "bytes": 12484,
+      "sha256": "64de7e0c2c268f980841dc5bd22c5a708705fe0fd0dc18b666f8d990f3f74b0f"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/pd41_gateway.c",
+      "bytes": 721,
+      "sha256": "405d0730bcb4d0bc6c3c45e6f2266b947428239745d89758cbd62ccaaf6d9501"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/pd41_gateway.h",
+      "bytes": 222,
+      "sha256": "a21c1db278ce2e06696db1cd7bb948943568e92e4929847d521b613fcd779e0f"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/pd41_session.c",
+      "bytes": 2434,
+      "sha256": "1193c4939539ab3711d0c5cb9a474fcc3bd049c0df0c0a05acffd004f7f65e73"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/main/pd41_session.h",
+      "bytes": 947,
+      "sha256": "bb8eb8f0bb6acffacb222e045c851bfc32ce2b851d4641fcc1e7cd332f3428f7"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.G0.defaults",
+      "bytes": 289,
+      "sha256": "8d45338992df4468eb5c4bd01d0744c6e0f799ff0625697ccfa9efd139251b0e"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N1.defaults",
+      "bytes": 300,
+      "sha256": "71e314807f53cd715c96ec2f31fad124d1429e11d91e732b673a2eefa87da927"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N2.defaults",
+      "bytes": 300,
+      "sha256": "11b7231995fd53e32bd12d96315f080ef5d675c999c24ea4b508c11658be3cde"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N3.defaults",
+      "bytes": 300,
+      "sha256": "a8fb6bdcc0b055d746cabc79d16aada746d64889c7cb8b8b98076e5b26f36a76"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N4.defaults",
+      "bytes": 300,
+      "sha256": "c4baff5868dd17caeb888acbf7cf04b44f970c095cd35ec71081e14cdd701569"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N5.defaults",
+      "bytes": 300,
+      "sha256": "ffafd37a963e90aafdd866ccb30abd91ea6a154b085e85ef591fe717a9befd3e"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.N6.defaults",
+      "bytes": 300,
+      "sha256": "d2b0547738ac0b439460d4acd4d7ea6d8ca9146f3d08538615e5a2dae1421083"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/sdkconfig.defaults",
+      "bytes": 289,
+      "sha256": "8d45338992df4468eb5c4bd01d0744c6e0f799ff0625697ccfa9efd139251b0e"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/tests/gateway_test.c",
+      "bytes": 3169,
+      "sha256": "7787b0ce1fafdb1ade60150f3d8861af468ee22beb589fa7f1098b655ff7061c"
+    },
+    {
+      "path": "Firmware/PoseDollFullBody/revO2/tests/session_test.c",
+      "bytes": 4095,
+      "sha256": "c5ed9a769a35febc704ef6dab719dc589bc1d72c29eb5c57de020e38f60e9d27"
+    },
+    {
+      "path": "Hardware/PoseDoll44/cad/revO2/audit_layout.py",
+      "bytes": 4480,
+      "sha256": "78d56bc7e1383d21e3cc766ff4df9159cd8e8f37873f5ffc54d788e41328d1b0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/cad/revO2/check_assembly.py",
+      "bytes": 6289,
+      "sha256": "7d9386b2eb9d9637d764b54f631636eac5eb82bad4b3a06576a1cdb7d1a5ffd8"
+    },
+    {
+      "path": "Hardware/PoseDoll44/cad/revO2/compact_joint.py",
+      "bytes": 10698,
+      "sha256": "798592fa492f6e408300e3072a2cc6d6dd3a1f5ff16cd9838c4298dcdce8ef3a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/cad/revO2/export_joint.py",
+      "bytes": 5474,
+      "sha256": "79b9c99cd6721cb1c0ff7a752018b91b87c7772257c4407a7885685b28e0dd1b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/cad/revO2/review.template.html",
+      "bytes": 15168,
+      "sha256": "508088444e1b72ac80f0b263e6e45eaa216db4379190e202da2f706d3c5bc2b9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/REVIEW_REQUEST_REVO2.zh-CN.md",
+      "bytes": 13638,
+      "sha256": "1ffdcc19ed907f1a747dbf14e153cf2713a0756065e2cccad9cd62a67c18c88b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/START_HERE_REVO2.zh-CN.md",
+      "bytes": 16353,
+      "sha256": "bb048bc0cf1baa1194561c5a5b0c4b78d987cff0176940a506e9b106d873612f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/SUPPLIER_REVIEW_REVO2.zh-CN.md",
+      "bytes": 5866,
+      "sha256": "ae14b160b92b9b9bc4ba3cd039861f8e2cfba2135f06186c893a91ee7fb0ceb0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/REVIEW_AND_ITERATION2_PLAN.zh-CN.md",
+      "bytes": 39325,
+      "sha256": "6b31aa64d92465fc8100ca4fe092cd832e2368df276b4df648efe46537de158a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/START_CODEX.txt",
+      "bytes": 2270,
+      "sha256": "ed553e364a225e56e1869a21e2a6c950dbb2dc334eaed216ed2fdc5f2e60e14c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/file_manifest.json",
+      "bytes": 850,
+      "sha256": "a9e54585dbab77d862a15c7cb9039ea7ef83227cdeae4becaf1fa61de6ffc1ec"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/iteration2_contract.json",
+      "bytes": 3301,
+      "sha256": "df7e9915261ccbc393a20990dc97cb38a418a0fc9fab8ea6d9994e538be849ce"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/review_calculations.json",
+      "bytes": 7030,
+      "sha256": "7319b7383a462a8b2e10d264cec9911bb2e3e81b86ec5d6bb14c8eedc9e22b8c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/docs/revO2_review_source/review_calculations.py",
+      "bytes": 9247,
+      "sha256": "909fb505fa09d7335d92075b00970cfd803c661b127837ef5bb37fa950d179e7"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/PoseDoll_RevO2_distal4.kicad_pcb",
+      "bytes": 228492,
+      "sha256": "086e2c52bc4d1d331ff26d4277bd958d614706c3c08705db8a66fe92bc899749"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/PoseDoll_RevO2_distal4.kicad_pro",
+      "bytes": 9616,
+      "sha256": "adfd174d102400b316e1d5f136b7a2940f00648dead05156cfb85a56cda91ab6"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/PoseDoll_RevO2_distal4.kicad_sch",
+      "bytes": 109728,
+      "sha256": "28d02fb21c6ba1b4e28690d3ede0875b4e32c037d76bfcb8b51bbd1dd136b951"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/layout.json",
+      "bytes": 43827,
+      "sha256": "dff20439030a4f4622aeeba77cde1e11ea1232fb88ff922fd578193093c8ebc6"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/sym-lib-table",
+      "bytes": 748,
+      "sha256": "3bbb7ec275f3ee6ed265b10fe352c73a9eb83fe4f33f2fb13e155e5450224c63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/symbols/Connector_Generic.kicad_sym",
+      "bytes": 12034,
+      "sha256": "cd76d07a02fd37f64de025987b7b548af92cf47532bfada49b29e2b5b91abcdd"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/symbols/Device.kicad_sym",
+      "bytes": 4602,
+      "sha256": "3d3517daac4e090dfb95cb31a5cee1bb8f9caf3316f039943c3748c17a1ece20"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/symbols/PoseDoll.kicad_sym",
+      "bytes": 2694,
+      "sha256": "78ddac2b66a9a7cc350c1a3290a2714f3bf1c3311b71442b7f7e43204054a94c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_pcb",
+      "bytes": 228435,
+      "sha256": "1ec4c92c8a559613664fc74a4a842543df7b7e99fcd4c19ec25a2785790cbe9f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_pro",
+      "bytes": 9623,
+      "sha256": "cc440319868a1643662caa8340553cf6cdd1d8b108a45e51b6149d9019e3ec29"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_sch",
+      "bytes": 110071,
+      "sha256": "06bada16819b0947e5994c14fa2d5ead74a26dbcfb913127533a4772b6dd42b0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/layout.json",
+      "bytes": 43890,
+      "sha256": "765d32e498bb6da26b78ebf69acafc3836e6751ebb6eb7c425616f2c5a297e5d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/sym-lib-table",
+      "bytes": 748,
+      "sha256": "3bbb7ec275f3ee6ed265b10fe352c73a9eb83fe4f33f2fb13e155e5450224c63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/symbols/Connector_Generic.kicad_sym",
+      "bytes": 12034,
+      "sha256": "cd76d07a02fd37f64de025987b7b548af92cf47532bfada49b29e2b5b91abcdd"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/symbols/Device.kicad_sym",
+      "bytes": 4602,
+      "sha256": "3d3517daac4e090dfb95cb31a5cee1bb8f9caf3316f039943c3748c17a1ece20"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/symbols/PoseDoll.kicad_sym",
+      "bytes": 2694,
+      "sha256": "78ddac2b66a9a7cc350c1a3290a2714f3bf1c3311b71442b7f7e43204054a94c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/distal4_narrow/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/PoseDoll_RevO2_proximal5.kicad_pcb",
+      "bytes": 468897,
+      "sha256": "e7f6f579d309dcea96383c2606fb874d5a0dc9f597fd172f6704f2e48b7a671b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/PoseDoll_RevO2_proximal5.kicad_pro",
+      "bytes": 9618,
+      "sha256": "df02c88b3cb09f23396427237271357947adde5846d1e1bc633ed6fb82c853a9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/PoseDoll_RevO2_proximal5.kicad_sch",
+      "bytes": 237531,
+      "sha256": "91fb63a8d8159f78880d2efcbeb5e9828f191cd2a50955c86ea077861cfa4e78"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/RevO2.pretty/ESP32-S3-WROOM-1_thermal030.kicad_mod",
+      "bytes": 16724,
+      "sha256": "81fc0986e6b044d2fa260e85abb5bbce9d27dd5b5e223dfdecf5c1a091fdc9b1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/layout.json",
+      "bytes": 92804,
+      "sha256": "26b539a227cad2ba7068b7f19083ff9e2f083625b15fdadeba6a6ad0dcbff603"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/sym-lib-table",
+      "bytes": 1693,
+      "sha256": "84276f003dea942141761278110c40a5cd18c440c7e8ee0453deef0e25f55eac"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Connector.kicad_sym",
+      "bytes": 1998,
+      "sha256": "dea9ee7fb90013c65b7b3596d9082b53eb33f6addef6337b08047aee54f8ba4f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Connector_Generic.kicad_sym",
+      "bytes": 17599,
+      "sha256": "7a2f20dfa200e8d344fb05563fcbbf5a9d577e7cd71ed839a44fe8205d043b63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Device.kicad_sym",
+      "bytes": 7322,
+      "sha256": "1b1dcb5b8407a501ec368601ef1e172b0348fc28236bfee5a7720f3f21ccf4b5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Interface_CAN_LIN.kicad_sym",
+      "bytes": 3988,
+      "sha256": "8f68dfbb429b3644288194458e5195c8835f3ed96094d3eb850eee77a9c3a9d1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Jumper.kicad_sym",
+      "bytes": 2667,
+      "sha256": "77c4be9c2003d0c349e132f66f48cfdb23662336b0c34c557526bb604272dac2"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/PoseDoll.kicad_sym",
+      "bytes": 3532,
+      "sha256": "fdb8b976c97ebf8d2629202cdf766975cf49e8b0701a039517334410d5fec526"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/RF_Module.kicad_sym",
+      "bytes": 13374,
+      "sha256": "558b703d698f642505d822435e554dc5ab4098928278ce8cc75211007cd9ffd3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/Regulator_Switching.kicad_sym",
+      "bytes": 4362,
+      "sha256": "4dfff661f72280234e4007aef4b88243c873a9afd1e688221f5a93d19ecf7b4d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/electronics/revO2/o2_20260923_r1/proximal5/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/PoseDoll_RevO2_distal4.kicad_pcb",
+      "bytes": 228492,
+      "sha256": "086e2c52bc4d1d331ff26d4277bd958d614706c3c08705db8a66fe92bc899749"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/PoseDoll_RevO2_distal4.kicad_pro",
+      "bytes": 9616,
+      "sha256": "adfd174d102400b316e1d5f136b7a2940f00648dead05156cfb85a56cda91ab6"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/PoseDoll_RevO2_distal4.kicad_sch",
+      "bytes": 109728,
+      "sha256": "28d02fb21c6ba1b4e28690d3ede0875b4e32c037d76bfcb8b51bbd1dd136b951"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/PoseDoll_RevO2_distal4.step",
+      "bytes": 668239,
+      "sha256": "90025d147ac9e79fad36c8afef4dcd2d29349c9037f67833f2efa9f34cb28dc4"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/connectivity.json",
+      "bytes": 20400,
+      "sha256": "859e5033590296a5821903a0e51e0ebd43b358cd153cb3d59c91b47561394adc"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/distal4_with_mating_study.step",
+      "bytes": 6693630,
+      "sha256": "4192ee968a9681aefb3fe9b4c05498068d5656e4632b1d73a22c2e68956c7623"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/drc.json",
+      "bytes": 112513,
+      "sha256": "303635cc13a9d2f778f5e8d4df955b3611631e44adbd534129913572021a6dde"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/drc.log",
+      "bytes": 232,
+      "sha256": "3c6f8cecef2ca0cdfc45c94794e385464a9c6372037c973d0c9d497f703c6661"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/erc.json",
+      "bytes": 1053,
+      "sha256": "1478d20efa51863f87853108949dbbf45842943b1dfe192943bfac4f75cafa31"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/erc.log",
+      "bytes": 210,
+      "sha256": "a17cfc2bfebe0eb16d0ef4283f9d8101de8ef0b46eefdcd1626f1a0e483b2a01"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/layout.json",
+      "bytes": 43827,
+      "sha256": "dff20439030a4f4622aeeba77cde1e11ea1232fb88ff922fd578193093c8ebc6"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/netlist.xml",
+      "bytes": 63052,
+      "sha256": "a835e1a2ead87513645570ab1e57e160e892b32a1554821459e22fb1b0c3e171"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/placement.kicad_pcb",
+      "bytes": 228188,
+      "sha256": "815160f3ef0de4354237856a0c81a266bf1bcd67737b2e76226d56b3c6c3d817"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/placement.kicad_pro",
+      "bytes": 9941,
+      "sha256": "d655a0d0cd1011d6b974b836886bbbc67ce8a354e1eff6e0b1244412d90d6e95"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/step_export.log",
+      "bytes": 785,
+      "sha256": "9bda21e24b867d19136982432fb55c6f2719db6c51c03fbff36e0d7ff837b043"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/sym-lib-table",
+      "bytes": 748,
+      "sha256": "3bbb7ec275f3ee6ed265b10fe352c73a9eb83fe4f33f2fb13e155e5450224c63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/symbols/Connector_Generic.kicad_sym",
+      "bytes": 12034,
+      "sha256": "cd76d07a02fd37f64de025987b7b548af92cf47532bfada49b29e2b5b91abcdd"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/symbols/Device.kicad_sym",
+      "bytes": 4602,
+      "sha256": "3d3517daac4e090dfb95cb31a5cee1bb8f9caf3316f039943c3748c17a1ece20"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/symbols/PoseDoll.kicad_sym",
+      "bytes": 2694,
+      "sha256": "78ddac2b66a9a7cc350c1a3290a2714f3bf1c3311b71442b7f7e43204054a94c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_pcb",
+      "bytes": 228435,
+      "sha256": "1ec4c92c8a559613664fc74a4a842543df7b7e99fcd4c19ec25a2785790cbe9f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_pro",
+      "bytes": 9623,
+      "sha256": "cc440319868a1643662caa8340553cf6cdd1d8b108a45e51b6149d9019e3ec29"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/PoseDoll_RevO2_distal4_narrow.kicad_sch",
+      "bytes": 110071,
+      "sha256": "06bada16819b0947e5994c14fa2d5ead74a26dbcfb913127533a4772b6dd42b0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/PoseDoll_RevO2_distal4_narrow.step",
+      "bytes": 668166,
+      "sha256": "b1cb1336801e1cb1141a50647f3a4bf4e9588c4afb81dd9bd1415f03b0994bf9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/connectivity.json",
+      "bytes": 20400,
+      "sha256": "859e5033590296a5821903a0e51e0ebd43b358cd153cb3d59c91b47561394adc"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/distal4_narrow_with_mating_study.step",
+      "bytes": 6677572,
+      "sha256": "414b45ab266dda3665a8666151c3cade69001f953aaca77116d914605ced34bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/drc.json",
+      "bytes": 112525,
+      "sha256": "0199656fd25eb6168ffeae7675e5f85e1f90781d5b2d61d0364ab62c5e33e44a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/drc.log",
+      "bytes": 239,
+      "sha256": "41946507e03b93fa8beca115a0f858db261bcc16e73f37cd7c3bf0b4aa1dc6de"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/erc.json",
+      "bytes": 1060,
+      "sha256": "45377cbe02eb884cb191ae2886be5867f4ad608b0f4960c6d15b242723264426"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/erc.log",
+      "bytes": 217,
+      "sha256": "0843b599e8a0925c23c398a6b92c2023f7c7021113b476ec4d84653e1a43f13b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/layout.json",
+      "bytes": 43890,
+      "sha256": "765d32e498bb6da26b78ebf69acafc3836e6751ebb6eb7c425616f2c5a297e5d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/netlist.xml",
+      "bytes": 63731,
+      "sha256": "62795b3b07da16a1d41c1c89987c4ff80978a2571135482261ae8a1b143151e9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/placement.kicad_pcb",
+      "bytes": 228188,
+      "sha256": "8b9a03d67aa9fc1a7b925ea3e87ae4aff63ba02c9cfc4b6e0969848dea9d92e5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/placement.kicad_pro",
+      "bytes": 9948,
+      "sha256": "2d8fce528aa257b1f5064059832b8dafa78c9ba1f8635159b53c5b12d87b53f8"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/step_export.log",
+      "bytes": 799,
+      "sha256": "875b2bc5b5d9e3f5895b4b2391a9a68ae253c4726b94870e37ad2da380437c32"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/sym-lib-table",
+      "bytes": 748,
+      "sha256": "3bbb7ec275f3ee6ed265b10fe352c73a9eb83fe4f33f2fb13e155e5450224c63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/symbols/Connector_Generic.kicad_sym",
+      "bytes": 12034,
+      "sha256": "cd76d07a02fd37f64de025987b7b548af92cf47532bfada49b29e2b5b91abcdd"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/symbols/Device.kicad_sym",
+      "bytes": 4602,
+      "sha256": "3d3517daac4e090dfb95cb31a5cee1bb8f9caf3316f039943c3748c17a1ece20"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/symbols/PoseDoll.kicad_sym",
+      "bytes": 2694,
+      "sha256": "78ddac2b66a9a7cc350c1a3290a2714f3bf1c3311b71442b7f7e43204054a94c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/distal4_narrow/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/PoseDoll_RevO2_proximal5.kicad_pcb",
+      "bytes": 468897,
+      "sha256": "e7f6f579d309dcea96383c2606fb874d5a0dc9f597fd172f6704f2e48b7a671b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/PoseDoll_RevO2_proximal5.kicad_pro",
+      "bytes": 9618,
+      "sha256": "df02c88b3cb09f23396427237271357947adde5846d1e1bc633ed6fb82c853a9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/PoseDoll_RevO2_proximal5.kicad_sch",
+      "bytes": 237531,
+      "sha256": "91fb63a8d8159f78880d2efcbeb5e9828f191cd2a50955c86ea077861cfa4e78"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/PoseDoll_RevO2_proximal5.step",
+      "bytes": 3381393,
+      "sha256": "166ebbe1e48886fddf7757bec207b42f323018533097966690041739601d734c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/RevO2.pretty/ESP32-S3-WROOM-1_thermal030.kicad_mod",
+      "bytes": 16724,
+      "sha256": "81fc0986e6b044d2fa260e85abb5bbce9d27dd5b5e223dfdecf5c1a091fdc9b1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/connectivity.json",
+      "bytes": 42250,
+      "sha256": "2cf2d922ad8e19dabcdc34e0bed1298caf56daa588903e0d5ae61dc3002a1eb1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/drc.json",
+      "bytes": 226079,
+      "sha256": "0165450bed3ceaa15ff2b052d511dc36b4aa1b9049d099ca513dbdf7c092f0ce"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/drc.log",
+      "bytes": 234,
+      "sha256": "35f3df87107b5abffd360b87be352f7a303fc1adb670db3d5eb6e03a9110a441"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/erc.json",
+      "bytes": 1055,
+      "sha256": "dc432ab617a4147ec3dbbfc19a80e79fbeedbe8cbd235e481b80e5fec13eb628"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/erc.log",
+      "bytes": 212,
+      "sha256": "91af9f267f53b8b588b64486c70601ed01ef596037637f5b254819ff8783cd64"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/fp-lib-table",
+      "bytes": 168,
+      "sha256": "f6060b1bd5efc35cfe04bc0177bac593a063b7e98721ecd40197ab9680bcd368"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/layout.json",
+      "bytes": 92804,
+      "sha256": "26b539a227cad2ba7068b7f19083ff9e2f083625b15fdadeba6a6ad0dcbff603"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/netlist.xml",
+      "bytes": 139181,
+      "sha256": "4ebf822e54711c685bad2d00aa62552149a009ae8b6af98d0ede736f11bec93e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/placement.kicad_pcb",
+      "bytes": 468248,
+      "sha256": "e0f7decd7d999cf7eda1c6c535b17c39940799a5f7d7c38634eb80698c230439"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/placement.kicad_pro",
+      "bytes": 9943,
+      "sha256": "cf69f1aa70ba73f8f8f359be4ff888f9bed1433606058c17556d89fe61c453d9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/proximal5_with_mating_study.step",
+      "bytes": 16726862,
+      "sha256": "bcf8fe0ffae5ea90114ad0be11a2e1412b266cf70dc6dd991cc76fc4ffd11f47"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/step_export.log",
+      "bytes": 1632,
+      "sha256": "720c6d85ae90802e2a8246dd330be74460d13b8089e3fd84b90a60eefffd6981"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/sym-lib-table",
+      "bytes": 1693,
+      "sha256": "84276f003dea942141761278110c40a5cd18c440c7e8ee0453deef0e25f55eac"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Connector.kicad_sym",
+      "bytes": 1998,
+      "sha256": "dea9ee7fb90013c65b7b3596d9082b53eb33f6addef6337b08047aee54f8ba4f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Connector_Generic.kicad_sym",
+      "bytes": 17599,
+      "sha256": "7a2f20dfa200e8d344fb05563fcbbf5a9d577e7cd71ed839a44fe8205d043b63"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Device.kicad_sym",
+      "bytes": 7322,
+      "sha256": "1b1dcb5b8407a501ec368601ef1e172b0348fc28236bfee5a7720f3f21ccf4b5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Interface_CAN_LIN.kicad_sym",
+      "bytes": 3988,
+      "sha256": "8f68dfbb429b3644288194458e5195c8835f3ed96094d3eb850eee77a9c3a9d1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Jumper.kicad_sym",
+      "bytes": 2667,
+      "sha256": "77c4be9c2003d0c349e132f66f48cfdb23662336b0c34c557526bb604272dac2"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/PoseDoll.kicad_sym",
+      "bytes": 3532,
+      "sha256": "fdb8b976c97ebf8d2629202cdf766975cf49e8b0701a039517334410d5fec526"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/RF_Module.kicad_sym",
+      "bytes": 13374,
+      "sha256": "558b703d698f642505d822435e554dc5ab4098928278ce8cc75211007cd9ffd3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/Regulator_Switching.kicad_sym",
+      "bytes": 4362,
+      "sha256": "4dfff661f72280234e4007aef4b88243c873a9afd1e688221f5a93d19ecf7b4d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/electronics/proximal5/symbols/power.kicad_sym",
+      "bytes": 1938,
+      "sha256": "5f0547992e82b8252f933645bc5e509514175804c121ac4795afd74f9ca277bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/L6_R2_assembly.step",
+      "bytes": 9839228,
+      "sha256": "4b8cb75ae299c9b1fec5884e31227f911f0912f9bf4f7281e886a81e132163ce"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/bearing_clamp_-6.step",
+      "bytes": 9496,
+      "sha256": "a723002ece95105f1acdfbc7187e9924c57785843635b523912034e7acaa9805"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/bearing_clamp_6.step",
+      "bytes": 9481,
+      "sha256": "124c3685b60cbdb2e1ae8e182001b99b67a2886159e9e9f03e228572a8f00304"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/cap_lock_dog_screw.step",
+      "bytes": 13489,
+      "sha256": "e7b78c224f3c45efbe738240e2cd3e322e24df3b47e7b31b72e8339c8630f950"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/cup_mount_0.step",
+      "bytes": 9507,
+      "sha256": "d74a222181afe2f5eceeedc0b3bcf231bd987ecfc2f22f06d26bc24cfa0d615a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/cup_mount_1.step",
+      "bytes": 9492,
+      "sha256": "51f84374d970ba1ccd002803cbf6801cefca496eb05cc167b5c344b1ae0e0c3a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/cup_mount_2.step",
+      "bytes": 9492,
+      "sha256": "324c0fd51c99105e2d4fdf798a324c0f0c422feaa9d61e50fe07c06d6933082e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/cup_mount_3.step",
+      "bytes": 9477,
+      "sha256": "08d35417222618b1b9622c12d3eb2c6b3304c6037395b0fa0543b6460217e093"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/diametric_magnet.step",
+      "bytes": 5671,
+      "sha256": "ad13fc1f252b2d7a155053adeb0acdba6eeb789e1befd6d668bdae3c598659cd"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/disc_spring_1.step",
+      "bytes": 11189,
+      "sha256": "edfc2c231480dac519e3a927b81c4d970ead8b58bd9f3643faf3ba55f1a676ea"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/disc_spring_2.step",
+      "bytes": 11175,
+      "sha256": "a9f75223da9be2e729f21da3f6c9f0bd0f27973854cac3ed0c5824e6174798d3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/disc_spring_3.step",
+      "bytes": 11197,
+      "sha256": "f08e689d93455f111a35afab7225981cdfa194fee23e2425331f02fd75799c79"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/disc_spring_4.step",
+      "bytes": 11159,
+      "sha256": "d0d120d335b7fe552380e249bbbf425bcbfef34100ec065b402f6c0295c32959"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/floating_brake_disc.step",
+      "bytes": 123834,
+      "sha256": "00c10a880f5bb535e9b333794ef198d0c3a1e94166949a140035c18b68b4b4a0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/front_bush_L.step",
+      "bytes": 17553,
+      "sha256": "c0ab4f5e0c31c888c30644d9efdd1f19b86840edfdcef01d9ed13b85249e0a6c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/front_bush_R.step",
+      "bytes": 24666,
+      "sha256": "00b2a57dd446c50b9a4d7a7896645b6f11234371e1365c9c0af31893eea3ba56"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/front_friction_lining.step",
+      "bytes": 16724,
+      "sha256": "e0cbed02b5594d4dde464f736026d2ba65344c78f295f4d3fcd7cf4c51bd5825"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/hollow_pin_spanner.step",
+      "bytes": 17205,
+      "sha256": "f3df5548ecb60b7a7bf8543a7e5ad7aff553b7d66d8236a56f08e1b40b90cf98"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/housing_L.step",
+      "bytes": 195131,
+      "sha256": "c2264ade41bd022e41bee058afa5bc86b836f14947992ea92adb1f83b726b15c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/housing_R.step",
+      "bytes": 254225,
+      "sha256": "329ef18a544e93d34e5ded7e375bdcf4fcf00f9ff4142ff8fd490328b345f362"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/keeper_screw_-4.25.step",
+      "bytes": 9621,
+      "sha256": "da0605bb8d2970e7a2270dc846780086a7cc84d409ccba08568625a77b9a5487"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/keeper_screw_4.25.step",
+      "bytes": 9606,
+      "sha256": "31f6daaafe006e1ddf82072b116f76c3af4e1b26e5fd7e33f929573a04a86247"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/keyed_pressure_plate.step",
+      "bytes": 72076,
+      "sha256": "14b6f9153d83d51cacc5749bd7e2add568f94d972cea0b891654bef537fc3f9b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/magnet_keeper.step",
+      "bytes": 16740,
+      "sha256": "13d00944f03cc14a71df9afbef22c579be9231b7e8ba1413c9c83080a6a65188"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/manifest.json",
+      "bytes": 36611,
+      "sha256": "efc051b3696f53017b8f5be46d112abfc5955a4ed2d796773f8ec783c2a1fec7"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/measurement_shaft.step",
+      "bytes": 69402,
+      "sha256": "d62cdd182eac1e4fb358e84f5e0ee5726fc787a0a46dc88f30cceb31c8810c23"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/mesh.json",
+      "bytes": 5265289,
+      "sha256": "f1658a2d0265bb34ebf8954283fe62260cdab1c39e23b9776bfa237e22984fc4"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/one_piece_brake_cup.step",
+      "bytes": 1128689,
+      "sha256": "3f99c58af72f120fb7414c25d97eeda46935efec14678513c4e61d8c1f277559"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/pcb_clamp_screw_-7.7.step",
+      "bytes": 9624,
+      "sha256": "b35b2ea06b668cd945301fd88bbffd0de5cae805b71f021652abc88a02fe5330"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/pcb_clamp_screw_7.7.step",
+      "bytes": 9609,
+      "sha256": "ffaee2f41ccbb7e073d2f6027520ba395d8380a694389f95898817649e98205c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/pcb_edge_clamp_-7.7.step",
+      "bytes": 19335,
+      "sha256": "8ed99a31d7e0cdf2438af302b4fe910d19730c1924ef57e18ed0c460375f1956"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/pcb_edge_clamp_7.7.step",
+      "bytes": 19303,
+      "sha256": "8f1cc6e82bc30d5daf6524317ef639752772127a3fb1722cf387b591595123d9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/rear_bush_L.step",
+      "bytes": 17527,
+      "sha256": "49e58b0a18d3212a64293e5c577ee9f954cf3bbc6ef6d726baaf26265e8cfa08"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/rear_bush_R.step",
+      "bytes": 24628,
+      "sha256": "6b8b01ce462ebb9172e9e0ba05746cceaede4ff042d5e1272b99f704d9647352"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/rear_friction_lining.step",
+      "bytes": 16742,
+      "sha256": "27331263dc6b566b8573f447e9c094b41ceb21729dfa31b9cc5fe1af0e9a10e9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_0.step",
+      "bytes": 96972,
+      "sha256": "064fc0c634e0964cce876dbc1a630ee4368e318b65428ec6804ce01b1d36a6e3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_1.step",
+      "bytes": 96600,
+      "sha256": "38afa2ddfe4f37b907c4a129f360cf28603278412da19574113ff85d107a5b90"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_2.step",
+      "bytes": 92024,
+      "sha256": "0e3b0f28f0f441f0b316fbaa74ba095b43a6530ab32d91836b18d13b6d0c9815"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_3.step",
+      "bytes": 88773,
+      "sha256": "b3507c46b45aa43ff95ced784f02685e798decd91f60a922547b34c9fba3bfa5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_4.step",
+      "bytes": 902690,
+      "sha256": "54ced3a28d38b54fabccff9d89e1994590408535f61f08fd458501a65f59eb69"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_5.step",
+      "bytes": 397702,
+      "sha256": "0069569d040649f67139152d6a9e0017bd0991260edce1d7b188eff3831492ec"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_pcba_6.step",
+      "bytes": 30442,
+      "sha256": "8f8c43635ef54dca2caa5f8e8e4a4f241d2f98b85783c321d01d61a20b78734c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_post_-7.7.step",
+      "bytes": 38710,
+      "sha256": "c6058bb7276cd1ef81d805352aaaf0548a72f41cb94584c32c218d5523a7832b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/sensor_post_7.7.step",
+      "bytes": 35065,
+      "sha256": "93511837cf7f46e8b5173106170d2926853432b5689839f5a4ae8b36bfb71926"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/spring_front_washer.step",
+      "bytes": 9366,
+      "sha256": "87ebd2c8ea77eb3b10d19d92ce75194c3c88bbe8843bbcc6f6ebae8ff3f9d507"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/spring_rear_washer.step",
+      "bytes": 9378,
+      "sha256": "43e04f01c22adcc0004612444503d0a4efab782c4ab1796d2acde50c8c96d6fa"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/threaded_adjuster_cap.step",
+      "bytes": 5451905,
+      "sha256": "985709891575616f940e20e95637a4ebd45271160e75f41cf2f440232f7bfc70"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/thrust_front_L.step",
+      "bytes": 17483,
+      "sha256": "99da557c71cf4455402b5293b43515a96360e5f1714ae78516d28653a30155ef"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/thrust_front_R.step",
+      "bytes": 24578,
+      "sha256": "796e8c637ab2e684dc9be0da2cdfa7deb658127ed04b3aa61cb21a9d722e5524"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/thrust_rear_L.step",
+      "bytes": 17486,
+      "sha256": "3383ef5ad320e680a5048b666258c7af0457a135dfa58d3a7a7c29c3fc86ec39"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/thrust_rear_R.step",
+      "bytes": 24583,
+      "sha256": "98f8f80fb8bd072d607dffbf194afecf1afe37404033a962b7a6a4a906820f84"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/joint/wear_sheet.step",
+      "bytes": 16742,
+      "sha256": "f8ab5e4af75240eb6403fc0a3ecd674f95500e826f4635df0026c7b650adcf6e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/layouts/manny/anatomy_profile.json",
+      "bytes": 53607,
+      "sha256": "790b6d26b4778254d9daae9e6d549523abbe30a17f7c5b1e81c98689a195b081"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/layouts/manny/scene.json",
+      "bytes": 1847678,
+      "sha256": "bd0f9a9b7418c39867922a1eb8f5b6fa28cf7fd6902f9bc22db57e93b3b7224d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/layouts/quinn/anatomy_profile.json",
+      "bytes": 53631,
+      "sha256": "db3e5ebc4cfb71cdf949a2b4646deda5343356d9ca3b50e99ff39ae28b70aeb9"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/layouts/quinn/scene.json",
+      "bytes": 1775930,
+      "sha256": "b68bb5fba378fb298228d04d3db3383c0dc8251a5b78d81280ce50e54d81db65"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/packaging_scene.json",
+      "bytes": 21130150,
+      "sha256": "06ef200ebfa04e1cec6afd4636a75ba1c88a66d17613e3a71344f68e8ea2227d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/generated/revO2/runs/o2_20260923_r1/review.html",
+      "bytes": 1223922,
+      "sha256": "e38d44c9d05004ffe2eefa5cc0ac34532f9473b04ee5314e32b74370fe888700"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/final_review.json",
+      "bytes": 1018,
+      "sha256": "46d750a86fc869f4d301f097a3912721d8c1ac0842f60c685a6b0fce953823af"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/latest.json",
+      "bytes": 166,
+      "sha256": "cb0149d361401b41fbaf6f86ce2fd60db6c6901a932715b0aeb3907ddc88909f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/board.png",
+      "bytes": 78515,
+      "sha256": "072004d4c4d1566e20ba8051a6f8b020620dbaa6bb07577c198e48c376abecf3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/evidence.png",
+      "bytes": 109389,
+      "sha256": "881dc1969f02fe8a835495ef4b605bde68c47957642aeef7c253290da3cb4cab"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/exploded.png",
+      "bytes": 173625,
+      "sha256": "90f9c3590741752184cbab706ce2722da24af8e7f1217db968f9feea44249568"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/final_display.json",
+      "bytes": 178,
+      "sha256": "d655b551bf6f598365103c9982f894d69d80ff48a7f55263146fdce1d6573e9b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/joint.png",
+      "bytes": 146993,
+      "sha256": "4c2546ea7ff66799017986eca4851cb77edb75805dcbe1ef2dc5d6ac0b9c310b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/mobile.png",
+      "bytes": 108135,
+      "sha256": "37b1ae4e0c525d0df0500f1a782c1371d07416e18b56e40bb4105d4c0e8cd17e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/review_browser/packaging.png",
+      "bytes": 168885,
+      "sha256": "ed8269be0f952356eecd6698e062fca6fe99d4237bca8fcb87d1532851a6d710"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/assembly.json",
+      "bytes": 20934,
+      "sha256": "80bb14167e6f0126f8f51f942347cd73228088c08a3b520d03b315d374d433f7"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/assembly.png",
+      "bytes": 147027,
+      "sha256": "fc11eca7d4e82644bf2a3e9b56d161e55b283906f7d39f1657521c06ff6005c5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/assembly.txt",
+      "bytes": 2553,
+      "sha256": "9383f5b9bb9bf655c9867d87265f24e525100d2d1948fd713df2bf5970efd691"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/assembly_execution.json",
+      "bytes": 739,
+      "sha256": "b6da9b4628d1c37680a469e6dc4e5da6743dc898cfd9cac27ca5989776c3c21f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/baseline.json",
+      "bytes": 486,
+      "sha256": "d4e94893c35bf06389aa666ae981f87373970b20952c828d7efce20ac744c23c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/baseline.txt",
+      "bytes": 39,
+      "sha256": "b595cc459e69009ad3b55fe23a6454caa2e6ce5e795ea0ae7f1297faf9160cff"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/baseline_execution.json",
+      "bytes": 635,
+      "sha256": "01ac80645ffa9d4fb2a087a888f92e467ec7a79c45ce264e00d655a32e99d609"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/board.png",
+      "bytes": 89847,
+      "sha256": "97166a511ba532bb037df5cab4e3aaff9a61767e98f5c5d6952fef386c8f6105"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/browser.json",
+      "bytes": 436,
+      "sha256": "10eb5abfc8b959f2e953182cbab7ae21dd33bcb29402d5c88a527d3ba3aab138"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/browser.txt",
+      "bytes": 59,
+      "sha256": "4d60f826eaaf2822af9b3d338a25b7af1eef3370a9a9ce7f00bb73ecace94d5e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/browser_execution.json",
+      "bytes": 862,
+      "sha256": "94d92340413b769abda0331508b163d45fbed444c38fab360355e525f4ddad57"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/compatibility.txt",
+      "bytes": 168,
+      "sha256": "a2596ef642968321ae265b23fc3a7b607df175b851771c46cb07aa3c10f2517d"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/compatibility_execution.json",
+      "bytes": 484,
+      "sha256": "31c6d971254dd565e5e57c36b63aee98c08c61af8730ed255ae2d1dde47fe17b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/electronics.json",
+      "bytes": 226834,
+      "sha256": "237f8e0b807e2cb8eb82f5f1d48280215c9c8d73deeb71a58235f894bf61d5a2"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/electronics.txt",
+      "bytes": 5526,
+      "sha256": "3dc212fa22f1e9a64dcffcd07083724bfaf03c6991df29c73bcd65288598dc4a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/electronics_execution.json",
+      "bytes": 611,
+      "sha256": "0b5da5d6f70ce9e7b00f89c8d1d57ac95d5a3dd0a5cdfdad688c423cb893c2cf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware.txt",
+      "bytes": 63,
+      "sha256": "3290e4eb43af23ac46ba5a5cff0a22162110893200f38f2a4ce38658eebb8b7e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/G0.txt",
+      "bytes": 96732,
+      "sha256": "50f3b9592cccee02608f9c7e165b0c856ed70df285e274dbffe6f07aa82c7419"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/G0_config.json",
+      "bytes": 409,
+      "sha256": "9839b8718a807e5a5a0fba4e96d252134487a4610a767e13b36b2edeb497404b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N1.txt",
+      "bytes": 96732,
+      "sha256": "fe942aeda06e762b9b5e4276af1a365cd525ec133c490e083f29c5f4d733d94e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N1_config.json",
+      "bytes": 372,
+      "sha256": "92c0263b827d1acf21e9c03ba0a42835882ffa796f040b2e6f47153e5de7e7bf"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N2.txt",
+      "bytes": 96727,
+      "sha256": "6ab06d6447d18f1ca328376076bf03df6c52c4560025fb1eae4b29a81acd26ac"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N2_config.json",
+      "bytes": 372,
+      "sha256": "67f31293f4f94c0ca652d2318df0e8ae28e94f26507c3fc689bf6b46a576802e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N3.txt",
+      "bytes": 96732,
+      "sha256": "fff0dd29acf657ae9c8dbe083281876da689713652a79cc420245d9ef6a3a487"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N3_config.json",
+      "bytes": 372,
+      "sha256": "8ff0f6f229c136838d7c05fdc99a1303526772d1750da3c34141cb02988a5dfb"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N4.txt",
+      "bytes": 96727,
+      "sha256": "1bd1108507693eb2d1f98bf324d2dfd50310473f9be49a4fc87ded764224c1da"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N4_config.json",
+      "bytes": 372,
+      "sha256": "6156af46dcb22f135b61215dd3390ad7e1fff070a99fddae0db195e578f04961"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N5.txt",
+      "bytes": 96727,
+      "sha256": "bcee6d2224a9ed18d5cbd47cac4db298e47e1e42d556df83f795987f56fcfb10"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N5_config.json",
+      "bytes": 372,
+      "sha256": "6846115483f25fb6a828868916220f7e8926a99e3d11419b62f2993cee630574"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N6.txt",
+      "bytes": 96732,
+      "sha256": "5c8b31f9d2549790a1bc838c9dda2779f42e6ff57474e57567fb6802e6016ed3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N6_config.json",
+      "bytes": 372,
+      "sha256": "8df23b58a48777ebb30e8c1a0aa689a59193cb0a32a649bb64f28baddf360470"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware_builds.json",
+      "bytes": 7001,
+      "sha256": "4d9b40582b540d804214d4a93022acf1e0c27f8f6866d47dbcc0dec5ee34be20"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware_execution.json",
+      "bytes": 661,
+      "sha256": "daa36272aa781ca9a0ced596dd607a7e8203dfccd73bf0f3d2ba6ee481e6f60f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/golden_crosscheck.txt",
+      "bytes": 167,
+      "sha256": "0ab9eb00461cd84df08e219ca75b9042d67b43806831cacb5d2f8dcfa9c254b3"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/golden_crosscheck_execution.json",
+      "bytes": 657,
+      "sha256": "811ea27539734de5eef754300815de48da110589f618f1d51b4389ccdea5686f"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/host_C.txt",
+      "bytes": 527,
+      "sha256": "d7ddf17ab48036c93a2f7f0d339ba395542c46b9fcb6e883f0542b85fcd85f9e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/host_C_execution.json",
+      "bytes": 719,
+      "sha256": "b96be94b9b8fdfb1290f55ff5d12d4ba7d3b49eae9028612304c8ee22c7fe668"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/inputs.json",
+      "bytes": 54299,
+      "sha256": "a5c501bf7e3edc93fa142d68b0cba7fb4421177e82db2b58a9201d479fa8c9df"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/joint.json",
+      "bytes": 36611,
+      "sha256": "efc051b3696f53017b8f5be46d112abfc5955a4ed2d796773f8ec783c2a1fec7"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/joint.png",
+      "bytes": 146993,
+      "sha256": "4c2546ea7ff66799017986eca4851cb77edb75805dcbe1ef2dc5d6ac0b9c310b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/joint.txt",
+      "bytes": 279,
+      "sha256": "ab39db404b99bdda59806970636762e6b0290ac34191370e0e8ac8ec8f271853"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/joint_execution.json",
+      "bytes": 871,
+      "sha256": "50b545bc943a484d641ffabe196ea906044ef02e6c285e21cb0392a16c15cbb2"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/legacy_config.txt",
+      "bytes": 66,
+      "sha256": "cba27f3bf25aa33e643ae8b644d92a67174f34e058d35edf841e5737a9680434"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/legacy_config_execution.json",
+      "bytes": 523,
+      "sha256": "f07af6605a7f5ad5c3328ad6b1ebf4fca4dd3b94a8dd3426ec4da76eb670dab0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/legacy_mass_reference.json",
+      "bytes": 18515,
+      "sha256": "24e5b26d1e687406862d28358f150228983c9239e535129a7a9b59040c2b7f1c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/mass_mechanics.txt",
+      "bytes": 539,
+      "sha256": "a070cdec021bf2efbdceb52ab5b10d94817010ca7b3a088ac7a06941e8e9d6f5"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/mass_mechanics_execution.json",
+      "bytes": 996,
+      "sha256": "21d874400761d890a8070cc54406e1893f2a56e38de969282cdbe7215e792990"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/mass_properties_revO2.json",
+      "bytes": 1532584,
+      "sha256": "4a10b93952ef91759c407d1e38841540122f50d6f6e6d6af1e9baa2c0baca556"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/mechanics_analysis.json",
+      "bytes": 4354,
+      "sha256": "d681c17be0872def48eb005f52f67b9cdb6430b5a69fba83cb55e542d4b7d22c"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/mobile.png",
+      "bytes": 108008,
+      "sha256": "93f662164ed2c50448c521e34f1c6fe66f152c01b004b7be159dd135791e0abb"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/native_delivery.json",
+      "bytes": 7643,
+      "sha256": "e848faca7e4db2f599f0c4bf41c26a3d41fb6694d3f78d103673590fdc981785"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/offline.json",
+      "bytes": 3588,
+      "sha256": "99bf33f22f9b459cda971ed6e7a7139075f379246c95a0ca50858e98f298d852"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/packaging.json",
+      "bytes": 28524,
+      "sha256": "2fc2d8a327856b27139e051a0fe9c6c78241aed112b79af010a013cad1bda90b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/packaging.png",
+      "bytes": 168885,
+      "sha256": "ed8269be0f952356eecd6698e062fca6fe99d4237bca8fcb87d1532851a6d710"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/packaging.txt",
+      "bytes": 517,
+      "sha256": "9975573963ec27e12c7028857a48e588a35f08b3c9c310cd04c2865f22f6b566"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/packaging_execution.json",
+      "bytes": 677,
+      "sha256": "a45dbe581646eb450f33a7c6527c8005bb0bc1e279f0bf955f5e2888935deaa1"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/pcba_geometry.json",
+      "bytes": 27540,
+      "sha256": "6052076986ae5f28e9c6e9e7a110efd6e4496e26d5b1608619004d64c224f242"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/pcba_geometry.txt",
+      "bytes": 80,
+      "sha256": "7275b6cc5aca3f06a5c6c4c4fbc039824a03055a24668bafb647a0e38b573d94"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/pcba_geometry_execution.json",
+      "bytes": 913,
+      "sha256": "76c8bdc879d012271af39cdb86e16ed8b27dbde425a62ceef8223e3323f8b07b"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/power_budget.json",
+      "bytes": 1699,
+      "sha256": "0d1cd58e11346577bc3aed78850ea06a74c14f087f0c1e40887856fabc78ece4"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/python_tests.txt",
+      "bytes": 183,
+      "sha256": "322eb6cf231219ef92a96282fb8ccb6ff2f4822f526234dc04d95d11d3d95fa0"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/python_tests_execution.json",
+      "bytes": 666,
+      "sha256": "f1a1ce320be3c42352ebda4aa12a9eca3e09c85f62b78598f1113838ff4b391a"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/report_hashes.json",
+      "bytes": 1213,
+      "sha256": "0bca30e17f20186649d93b120132f286e1757c5adebde5e376a7bd5bac9b407e"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/run.json",
+      "bytes": 99344,
+      "sha256": "1275cdd37071a7270fd46eac7820d694eef69a5b98d14e47bae45dd23b4e46cc"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/status.json",
+      "bytes": 1968,
+      "sha256": "c3329e1317c5c88bf3761b52c5ae2c6519da9daa4260099daecd438217f56131"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/toolchain.json",
+      "bytes": 2172,
+      "sha256": "ab006a0ce47249d5b0d7eeac1f2ce9690c0e9efc84f6e13adc0aac8faa96f5d4"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/viewer.txt",
+      "bytes": 44,
+      "sha256": "879468850f3444be01e5d3e611e2f09115b849cb677e2468f1410bcb35ca4a13"
+    },
+    {
+      "path": "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/viewer_execution.json",
+      "bytes": 684,
+      "sha256": "2108c976bfc28018bb92d8d86085d5388b295e877767c4c81446594ad15d6a74"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8375,
+      "sha256": "cb8d1d9cb9d1876e807209a9ef16016cda1483de44589d3bf5c6dfb46acd3b40"
+    },
+    {
+      "path": "scripts/Run-RevO2-CoreTests.cmd",
+      "bytes": 1463,
+      "sha256": "3e76bc916518df77a4487976708dac4f0c007110a44294c3e19148b3d7be2d59"
+    },
+    {
+      "path": "scripts/build_revo2_electronics.py",
+      "bytes": 15195,
+      "sha256": "34de8e11f680c86445068bdc542d2c0c1abf9494006ed79d6180f5e022a8b968"
+    },
+    {
+      "path": "scripts/build_revo2_firmware.py",
+      "bytes": 2120,
+      "sha256": "67f8d681938cb1cac69b7fec7569630878ea62fa2134a0042d341eb7c297df4e"
+    },
+    {
+      "path": "scripts/build_revo2_viewer.py",
+      "bytes": 1351,
+      "sha256": "f888e9c2484ffdc7910e6ba9494391e64ccd6eca4b7c48f35307bf122f3ee096"
+    },
+    {
+      "path": "scripts/capture_metrics_revo2.py",
+      "bytes": 1751,
+      "sha256": "9f9c9b6ac9181cdde2b95e0ba36e7f02437cd8351190d617a31d316939b42e98"
+    },
+    {
+      "path": "scripts/check_revo2_baseline.py",
+      "bytes": 1644,
+      "sha256": "1612185b6ee21a217b378f38e62903a148940c42cffbfc564d514ffbdefbb8ab"
+    },
+    {
+      "path": "scripts/check_viewer_revo2.cjs",
+      "bytes": 2882,
+      "sha256": "dbb53b0bb09aa894fe4e287e17408c8be43af5d74018af2166b41a3222013889"
+    },
+    {
+      "path": "scripts/packaging_revo2.py",
+      "bytes": 4888,
+      "sha256": "208117988f97082844c00c8d85872c3ec24e723b7720a7d18769d2ef8129518d"
+    },
+    {
+      "path": "scripts/report_revo2.py",
+      "bytes": 5585,
+      "sha256": "60816823effc889cae8cccbf0096c7ab551c16b34f4fd3d1927e43b440b26525"
+    },
+    {
+      "path": "scripts/revo2_evidence.py",
+      "bytes": 5778,
+      "sha256": "42a7ff5936e64c70f36012838caa67535deb8ac4eccc5be95da978348564df74"
+    },
+    {
+      "path": "scripts/run_revo2.py",
+      "bytes": 6333,
+      "sha256": "1f311e5a3d74b99bf3b8a28fb7910248e71daabade781bbd924cf54f99d1d982"
+    },
+    {
+      "path": "scripts/study_revo2.py",
+      "bytes": 15847,
+      "sha256": "5544d3c992492d643dd9dcb19f370928b9012bdcbc602a893a7fc094e54782e7"
+    },
+    {
+      "path": "scripts/tests/test_revo2.py",
+      "bytes": 4861,
+      "sha256": "62d67b22061b9a59ee366c818bafc7292e9f6ef7a4d943686ea5151384aee14c"
+    }
+  ],
+  "changed_files_except_manifest": 287,
+  "uncompressed_bytes_except_manifest": 95243362,
+  "scope": "Source and immutable iteration-2 review snapshot; no physical acceptance or manufacturing release",
+  "historical_audit_note": "final_review.json is the prior-turn audit; its document hashes predate the packaging edits. This manifest records the review documentation now staged. Original run outputs and tested inputs remain unchanged.",
+  "other_local_only": [
+    ".local/revo2-dev-history: failed/development attempts",
+    ".local/revo2/o2_20260923_r1: ESP-IDF build trees/binaries and host test executables",
+    "Legacy 91 cm generated exports not already tracked by Git",
+    "Installed tools, SDKs and Python environments"
+  ],
+  "validation": {
+    "tested_sources_match_run": true,
+    "indexed_source_and_artifact_bytes_match": true,
+    "native_delivery_hashes_match": true,
+    "physical_tested": false,
+    "manufacturing_released": false,
+    "authored_source_document_and_native_diff_check": "PASS",
+    "raw_log_whitespace_note": {
+      "files": [
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/G0.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N1.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N2.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N3.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N4.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N5.txt",
+        "Hardware/PoseDoll44/verification/revO2/runs/o2_20260923_r1/firmware/N6.txt"
+      ],
+      "findings": 119,
+      "reason": "Original ESP-IDF output contains repeated CR characters; preserved byte-for-byte to keep captured evidence hashes. No authored-source whitespace findings."
+    }
+  }
+}

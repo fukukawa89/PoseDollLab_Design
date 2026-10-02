@@ -1,0 +1,277 @@
+{
+  "pass": 19,
+  "cases": [
+    {
+      "name": "disjoint",
+      "order": "ab",
+      "expected": "CLEAR_NOMINAL_MESH",
+      "result": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          3.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "disjoint",
+      "order": "ba",
+      "expected": "CLEAR_NOMINAL_MESH",
+      "result": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          1.0,
+          3.0
+        ]
+      }
+    },
+    {
+      "name": "face_contact",
+      "order": "ab",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 58,
+        "representative_signed_distances_mm": [
+          2.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "name": "face_contact",
+      "order": "ba",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 58,
+        "representative_signed_distances_mm": [
+          -0.0,
+          2.0
+        ]
+      }
+    },
+    {
+      "name": "edge_contact",
+      "order": "ab",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 37,
+        "representative_signed_distances_mm": [
+          2.8284271247461903,
+          -0.0
+        ]
+      }
+    },
+    {
+      "name": "edge_contact",
+      "order": "ba",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 39,
+        "representative_signed_distances_mm": [
+          -0.0,
+          2.8284271247461903
+        ]
+      }
+    },
+    {
+      "name": "overlap",
+      "order": "ab",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 12,
+        "witness_from": 0,
+        "witness_mm": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "signed_distance_mm": -0.19999999999999996
+      }
+    },
+    {
+      "name": "overlap",
+      "order": "ba",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 12,
+        "witness_from": 0,
+        "witness_mm": [
+          0.5,
+          -0.8,
+          -0.7
+        ],
+        "signed_distance_mm": -0.19999999999999996
+      }
+    },
+    {
+      "name": "contained",
+      "order": "ab",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 0,
+        "witness_from": 1,
+        "witness_mm": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "signed_distance_mm": -0.75
+      }
+    },
+    {
+      "name": "contained",
+      "order": "ba",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 0,
+        "witness_from": 0,
+        "witness_mm": [
+          -0.25,
+          -0.25,
+          -0.25
+        ],
+        "signed_distance_mm": -0.75
+      }
+    },
+    {
+      "name": "contains",
+      "order": "ab",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 0,
+        "witness_from": 0,
+        "witness_mm": [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "signed_distance_mm": -2.0
+      }
+    },
+    {
+      "name": "contains",
+      "order": "ba",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 0,
+        "witness_from": 1,
+        "witness_mm": [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "signed_distance_mm": -2.0
+      }
+    },
+    {
+      "name": "rotated",
+      "order": "ab",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 14,
+        "witness_from": 0,
+        "witness_mm": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "signed_distance_mm": -0.0405020316966171
+      }
+    },
+    {
+      "name": "rotated",
+      "order": "ba",
+      "expected": "PENETRATION",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 14,
+        "witness_from": 0,
+        "witness_mm": [
+          -0.0004505331993411854,
+          0.29682048689524454,
+          -0.6
+        ],
+        "signed_distance_mm": -0.4
+      }
+    },
+    {
+      "name": "below_penetration_tolerance",
+      "order": "ab",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 52,
+        "representative_signed_distances_mm": [
+          1.99,
+          -0.0
+        ]
+      }
+    },
+    {
+      "name": "below_penetration_tolerance",
+      "order": "ba",
+      "expected": "CONTACT_REQUIRES_REVIEW",
+      "result": {
+        "status": "CONTACT_REQUIRES_REVIEW",
+        "surface_contacts": 52,
+        "representative_signed_distances_mm": [
+          -0.0,
+          1.99
+        ]
+      }
+    },
+    {
+      "name": "disconnected_hidden_containment",
+      "result": {
+        "status": "PENETRATION",
+        "surface_contacts": 0,
+        "witness_from": 0,
+        "witness_mm": [
+          -0.2,
+          -0.2,
+          -0.2
+        ],
+        "signed_distance_mm": -0.8
+      }
+    },
+    {
+      "name": "clearance_0.8",
+      "result": {
+        "status": "CERTIFIED_NOMINAL_CLEARANCE",
+        "required_mm": 0.6,
+        "conservative_lower_bound_mm": 0.6136610018750173,
+        "smallest_evaluated_distance_mm": 0.7999999999999998,
+        "queries": 292,
+        "max_subdivision_depth": 3,
+        "unresolved_triangles": 0
+      }
+    },
+    {
+      "name": "clearance_0.4",
+      "result": {
+        "status": "INSUFFICIENT_CLEARANCE",
+        "required_mm": 0.6,
+        "distance_at_witness_mm": 0.5666666666666665,
+        "witness_mm": [
+          0.8333333333333334,
+          0.9166666666666666,
+          1.0
+        ],
+        "queries": 22
+      }
+    }
+  ]
+}

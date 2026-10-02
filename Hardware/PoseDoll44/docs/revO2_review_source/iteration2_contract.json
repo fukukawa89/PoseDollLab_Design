@@ -1,0 +1,135 @@
+{
+  "schema": "review-task-contract-v1",
+  "reviewed_commit": "f59e4d3a7ea3d0940b1810702cd5e1df181e0364",
+  "branch": "design/revO-desktop-external",
+  "state": "RECOMMENDATIONS_NOT_IMPLEMENTED_OR_MANUFACTURING_RELEASED",
+  "scope": {
+    "measured_axes": 41,
+    "protocol_slots": 44,
+    "fixed_pelvis_slots": [
+      0,
+      1,
+      2
+    ],
+    "acquisition_ports": [
+      3,
+      6,
+      9,
+      9,
+      7,
+      7
+    ],
+    "gateway": "G0_external_no_sensors",
+    "CAN_nodes": 7,
+    "acquisition_records": 6
+  },
+  "invariants": {
+    "reference_height_anchor_mm": 480,
+    "anchor_complete_height_target_mm": 500,
+    "complete_height_hard_max_mm": 600,
+    "body_mass_target_g": 1200,
+    "CAN_bitrate": 500000,
+    "cohort_Hz": 60,
+    "node_window_us": 8000,
+    "cohort_deadline_us": 14000,
+    "sensor": "AS5048A",
+    "magnet_diameter_mm": 6,
+    "magnet_thickness_mm": 2.5
+  },
+  "recommended_architecture": {
+    "N3_N4": "torso_controller_proximal5_plus_upperarm_distal4",
+    "candidate_torso_board_mm": [
+      36,
+      48
+    ],
+    "candidate_distal_board_mm": [
+      26,
+      30
+    ],
+    "physical_board_sizes_proven": false,
+    "interboard_conductor_study": 14,
+    "controller": "retain_ESP32-S3-WROOM-1-N8_initially",
+    "per_port_buffer_candidate": "SN74LVC125ABQAR",
+    "mechanical": "radially_assemblable_precision_bearing_cartridge_and_preload_isolated_brake",
+    "first_high_load_candidate": "two_friction_faces_axially_floating_brake_disc_L6"
+  },
+  "safety_and_scope": {
+    "do_not_run_initialize": true,
+    "preserve_RevN1": true,
+    "no_12V_on_legacy_5V_PCB": true,
+    "no_axis_deletion": true,
+    "no_global_hardware_scaling": true,
+    "no_threshold_relaxation": true,
+    "no_automatic_manufacturing_release": true
+  },
+  "gates": [
+    {
+      "id": "V0",
+      "name": "evidence_freshness_and_dependency",
+      "requires": []
+    },
+    {
+      "id": "V1",
+      "name": "assembly_disassembly_load_paths",
+      "requires": [
+        "V0"
+      ]
+    },
+    {
+      "id": "V2",
+      "name": "actual_PCBA_harness_and_service_fit",
+      "requires": [
+        "V0"
+      ]
+    },
+    {
+      "id": "V3",
+      "name": "precision_hold_and_operating_force_physical",
+      "requires": [
+        "V1",
+        "V2"
+      ]
+    },
+    {
+      "id": "V4",
+      "name": "ERC_DRC_power_seven_node_timing",
+      "requires": [
+        "V2"
+      ]
+    },
+    {
+      "id": "V5",
+      "name": "multi_axis_full_body_actual_profiles_and_UE",
+      "requires": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ]
+    }
+  ],
+  "acceptance": {
+    "calibrated_error_deg_max": 1.0,
+    "repeatability_deg_max": 0.3,
+    "holding_drift_deg_max_60s": 0.5,
+    "neighbor_axis_parasitic_deg_max": 0.3,
+    "screen_cycles_min": 1000,
+    "healthy_soak_minutes_min": 30,
+    "fresh_complete_cohort_rate_min": 0.999,
+    "false_fresh_valid_from_stale_or_fault_max": 0,
+    "physical_results_in_this_package": "NOT_RUN"
+  },
+  "task_ids": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10"
+  ],
+  "important": "This contract is not a device profile, netlist, firmware configuration, CAD generator input, or validator output. New dimensions and parts require the checks in the report."
+}

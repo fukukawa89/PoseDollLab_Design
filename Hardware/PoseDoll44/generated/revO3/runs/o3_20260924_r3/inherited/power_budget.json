@@ -1,0 +1,57 @@
+{
+  "run_id": "o2_20260923_r1",
+  "status": "ALLOCATION_MODEL_NOT_POWER_QUALIFICATION",
+  "supply_baseline_V": 5,
+  "legacy_12V_allowed": false,
+  "internal_MCU_count": 6,
+  "internal_acquisition_PCBs": 8,
+  "sensor_count": 41,
+  "LVC125_packages": 45,
+  "current_allocations_A_3V3": {
+    "sensors": 0.615,
+    "MCUs": 1.08,
+    "CAN": 0.09,
+    "buffers": 0.045
+  },
+  "total_3V3_load_W": 6.039,
+  "tether_cases": [
+    {
+      "awg": 24,
+      "loop_length_m": 2,
+      "contact_allowance_ohm": 0.06,
+      "input_power_W": 7.104705882352941,
+      "load_voltage_V": 4.379472543206962,
+      "current_A": 1.6222743292164514,
+      "wire_loss_W": 0.6010971814252025
+    },
+    {
+      "awg": 26,
+      "loop_length_m": 2,
+      "contact_allowance_ohm": 0.06,
+      "input_power_W": 7.104705882352941,
+      "load_voltage_V": 4.194808344789282,
+      "current_A": 1.6936902233395916,
+      "wire_loss_W": 0.9403226785101187
+    },
+    {
+      "awg": 28,
+      "loop_length_m": 2,
+      "contact_allowance_ohm": 0.06,
+      "input_power_W": 7.104705882352941,
+      "load_voltage_V": 3.8541003823866964,
+      "current_A": 1.8434148510561807,
+      "wire_loss_W": 1.651514660163918
+    }
+  ],
+  "four_port_remote_branch_A": 0.064,
+  "interboard_power_pins": 2,
+  "interboard_ground_pins": 5,
+  "physical_tested": false,
+  "not_run": [
+    "Regulator startup/peak/short-circuit, protected six branches and TVS clamp verification",
+    "Mated contact ratings, heating and flex life",
+    "LVC125 power-off backfeed/tri-state behaviour",
+    "USB backfeed and G0 isolation",
+    "Actual cable length/resistance and radio/MCU peak current"
+  ]
+}

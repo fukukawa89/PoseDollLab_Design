@@ -1,0 +1,187 @@
+{
+  "status": "PARTIAL_REFERENCE_RECONSTRUCTION",
+  "original_component_ids": [
+    "C01",
+    "C02",
+    "C14",
+    "C15"
+  ],
+  "transforms_from_print_file": {
+    "C01": [
+      [
+        0.9961946980917455,
+        0.08715574274765817,
+        0.0,
+        -3.40520137770017
+      ],
+      [
+        -0.08715574274765817,
+        0.9961946980917455,
+        0.0,
+        -33.20660511020573
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        9.596508545297167
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "C02": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -3.5510884687132225e-15
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -33.33344881462881
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        14.597916048813286
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "C14": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.1102230246251565e-16,
+        -1.0,
+        -22.5998711586
+      ],
+      [
+        0.0,
+        1.0,
+        1.1102230246251565e-16,
+        -15.59110355377197
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "C15": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.1102230246251565e-16,
+        1.0,
+        1.3790488242999983
+      ],
+      [
+        0.0,
+        -1.0,
+        1.1102230246251565e-16,
+        15.603464126586914
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "feature_fits": {
+    "C01": {
+      "source_cylinder_center_xy": [
+        0.4980972258914554,
+        33.37702680769202
+      ],
+      "outer_radius_mm": 11.499999885078587,
+      "fit_max_radial_residual_mm": 1.516944664103903e-06,
+      "inferred_pivot_source_z_mm": -11.09650802612305,
+      "z_rotation_deg": -5,
+      "pin_center_adjustment_z_mm": 1.4999994808258825,
+      "final_pivot_source_z_mm": -9.596508545297167,
+      "journal_section_radius_mm": 2.256656816968613,
+      "journal_fit_max_error_mm": 1.5679559082215633e-06
+    },
+    "C02": {
+      "source_cylinder_center_xy": [
+        3.5510884687132225e-15,
+        33.33344881462881
+      ],
+      "outer_radius_mm": 11.500000031293691,
+      "fit_max_radial_residual_mm": 1.6173355081861018e-06,
+      "inferred_pivot_source_z_mm": -13.097915649414062,
+      "z_rotation_deg": 0,
+      "pin_center_adjustment_z_mm": -1.5000003993992221,
+      "final_pivot_source_z_mm": -14.597916048813286,
+      "journal_section_radius_mm": 2.2566571291059434,
+      "journal_fit_max_error_mm": 9.583508160382337e-07
+    }
+  },
+  "scope": "Two original yokes and both original intermediate ring halves. Connector housings, retaining rings, fasteners, electronics and harness not yet included.",
+  "input_sha256": {
+    "component_meshes.npz": "6d4bff358d9e30614b0ef960387a5eec1f17134effe9a8d547260fb49927a944"
+  },
+  "joint_axes": [
+    {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "parent": "C01",
+      "child": [
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "parent": [
+        "C14",
+        "C15"
+      ],
+      "child": "C02"
+    }
+  ],
+  "physical_tested": false,
+  "manufacturing_released": false
+}

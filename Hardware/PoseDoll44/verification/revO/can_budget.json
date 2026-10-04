@@ -1,0 +1,203 @@
+{
+  "status": "ANALYTICAL_ONLY_HARDWARE_TIMING_NOT_RUN",
+  "frames_per_cohort": 30,
+  "utilization_data_end_sync": 0.486,
+  "deadline_us": 14000,
+  "node_window_us": 8000,
+  "optimistic_nonoverlap_upper_sum_us": 14400.0,
+  "assumed_axis_read_us": 700,
+  "ideal_arbitration_completion_us": 11490,
+  "trace": [
+    {
+      "node": 1,
+      "id": "0x210",
+      "start_us": 2370,
+      "end_us": 2640
+    },
+    {
+      "node": 1,
+      "id": "0x211",
+      "start_us": 2640,
+      "end_us": 2910
+    },
+    {
+      "node": 1,
+      "id": "0x181",
+      "start_us": 2910,
+      "end_us": 3180
+    },
+    {
+      "node": 2,
+      "id": "0x220",
+      "start_us": 4470,
+      "end_us": 4740
+    },
+    {
+      "node": 2,
+      "id": "0x221",
+      "start_us": 4740,
+      "end_us": 5010
+    },
+    {
+      "node": 2,
+      "id": "0x222",
+      "start_us": 5010,
+      "end_us": 5280
+    },
+    {
+      "node": 2,
+      "id": "0x182",
+      "start_us": 5280,
+      "end_us": 5550
+    },
+    {
+      "node": 5,
+      "id": "0x250",
+      "start_us": 5550,
+      "end_us": 5820
+    },
+    {
+      "node": 5,
+      "id": "0x251",
+      "start_us": 5820,
+      "end_us": 6090
+    },
+    {
+      "node": 5,
+      "id": "0x252",
+      "start_us": 6090,
+      "end_us": 6360
+    },
+    {
+      "node": 5,
+      "id": "0x253",
+      "start_us": 6360,
+      "end_us": 6630
+    },
+    {
+      "node": 5,
+      "id": "0x185",
+      "start_us": 6630,
+      "end_us": 6900
+    },
+    {
+      "node": 3,
+      "id": "0x230",
+      "start_us": 6900,
+      "end_us": 7170
+    },
+    {
+      "node": 3,
+      "id": "0x231",
+      "start_us": 7170,
+      "end_us": 7440
+    },
+    {
+      "node": 3,
+      "id": "0x232",
+      "start_us": 7440,
+      "end_us": 7710
+    },
+    {
+      "node": 3,
+      "id": "0x233",
+      "start_us": 7710,
+      "end_us": 7980
+    },
+    {
+      "node": 3,
+      "id": "0x234",
+      "start_us": 7980,
+      "end_us": 8250
+    },
+    {
+      "node": 3,
+      "id": "0x183",
+      "start_us": 8250,
+      "end_us": 8520
+    },
+    {
+      "node": 4,
+      "id": "0x240",
+      "start_us": 8520,
+      "end_us": 8790
+    },
+    {
+      "node": 4,
+      "id": "0x241",
+      "start_us": 8790,
+      "end_us": 9060
+    },
+    {
+      "node": 4,
+      "id": "0x242",
+      "start_us": 9060,
+      "end_us": 9330
+    },
+    {
+      "node": 4,
+      "id": "0x243",
+      "start_us": 9330,
+      "end_us": 9600
+    },
+    {
+      "node": 4,
+      "id": "0x244",
+      "start_us": 9600,
+      "end_us": 9870
+    },
+    {
+      "node": 4,
+      "id": "0x184",
+      "start_us": 9870,
+      "end_us": 10140
+    },
+    {
+      "node": 6,
+      "id": "0x260",
+      "start_us": 10140,
+      "end_us": 10410
+    },
+    {
+      "node": 6,
+      "id": "0x261",
+      "start_us": 10410,
+      "end_us": 10680
+    },
+    {
+      "node": 6,
+      "id": "0x262",
+      "start_us": 10680,
+      "end_us": 10950
+    },
+    {
+      "node": 6,
+      "id": "0x263",
+      "start_us": 10950,
+      "end_us": 11220
+    },
+    {
+      "node": 6,
+      "id": "0x186",
+      "start_us": 11220,
+      "end_us": 11490
+    }
+  ],
+  "node_end_us": {
+    "1": 3180,
+    "2": 5550,
+    "5": 6900,
+    "3": 8520,
+    "4": 10140,
+    "6": 11490
+  },
+  "excluded": [
+    "SDK scheduling and driver overhead",
+    "TX callback wake latency",
+    "100 ms epoch BOOT/ACK bursts",
+    "250 ms BOOT traffic",
+    "CAN errors/retries and transceiver propagation"
+  ],
+  "timing_verified": false,
+  "explanation": "A nominal schedule is not a measured worst-case bound. Do not widen the 8/14 ms gates."
+}

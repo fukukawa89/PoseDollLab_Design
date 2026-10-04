@@ -1,0 +1,1544 @@
+{
+  "facts": {
+    "moduleCases": 204,
+    "moduleFailures": 0,
+    "bilateralCases": 102,
+    "bilateralFailures": 0,
+    "wholeArmCases": 102,
+    "wholeArmFailures": 6,
+    "baselineWholeArmFailures": 10,
+    "unilateralCases": 136,
+    "shoulderOffsetPerSideMm": 8,
+    "physicalCoupon": "用户报告装配与初步手感通过",
+    "springForceN": null,
+    "torqueNm": null
+  },
+  "feedback": {
+    "schema": "posedoll-physical-observation-v1",
+    "recorded_date": "2026-09-29",
+    "specimen": "O12 independent coupon; one user-assembled set",
+    "source": "User report in this conversation; no instrument measurements or video",
+    "assembly_and_initial_hand_feel_gate": "PASS_USER_REPORTED",
+    "physical_test_performed_by": "user",
+    "observations_zh": [
+      "打印件与所购金属件贴合良好，试用件已经装好。",
+      "当前紧度下摩擦大致足够维持长臂原角度；轻力拨动即可转动。",
+      "缺少3 mm内六角扳手，尚未进一步调紧。"
+    ],
+    "user_expectation_not_measurement_zh": "用户预计调紧后摩擦力会增大，尚未实际测量。",
+    "printed_material": null,
+    "printer_and_process": null,
+    "measured_dimensions_mm": null,
+    "washer_bores_mm": null,
+    "spring_pair_height_mm": null,
+    "measured_spring_force_N": null,
+    "measured_holding_torque_Nm": null,
+    "measured_adjustment_force_N": null,
+    "hold_duration_s": null,
+    "creep_or_wear_test": null,
+    "full_joint_tested": false,
+    "full_body_tested": false,
+    "authorized_next_step": "Proceed with digital full-doll design; preserve quantitative unknowns"
+  },
+  "body_registry": [
+    {
+      "character": "manny",
+      "axis_slots": [
+        {
+          "axis": "pelvis.yaw",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            256.2995761858516
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "pelvis.pitch",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            256.2995761858516
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "pelvis.roll",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            256.2995761858516
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "waist.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.9827387679175477,
+            4.3722509742344366e-16,
+            293.13003116580575
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "waist.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.9827387679175477,
+            4.3722509742344366e-16,
+            293.13003116580575
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "waist.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.9827387679175477,
+            4.3722509742344366e-16,
+            293.13003116580575
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.7987961048548144,
+            -5.141290029008929e-16,
+            325.1056058773363
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.7987961048548144,
+            -5.141290029008929e-16,
+            325.1056058773363
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.7987961048548144,
+            -5.141290029008929e-16,
+            325.1056058773363
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -7.132242402100534,
+            -9.028638865823259e-11,
+            419.7099907123624
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -7.132242402100534,
+            -9.028638865823259e-11,
+            419.7099907123624
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -7.132242402100534,
+            -9.028638865823259e-11,
+            419.7099907123624
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_l.protract",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -59.99999999999999,
+            38.0,
+            399.5369324508675
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_l.elevate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -59.99999999999999,
+            38.0,
+            399.5369324508675
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.788908529994458,
+            58.25022888249685,
+            382.35342858441726
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.abduct",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.788908529994458,
+            58.25022888249685,
+            382.35342858441726
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.788908529994458,
+            58.25022888249685,
+            382.35342858441726
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "elbow_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.788908529994458,
+            58.25022888249686,
+            308.94390870731735
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "forearm_l.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.788908529994455,
+            58.25022888249686,
+            276.52825207034556
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.78890852999445,
+            58.25022888249686,
+            236.90911618071328
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_l.deviate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.78890852999445,
+            58.25022888249686,
+            228.90911618071328
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881022,
+            26.352336561491192,
+            250.07711598404336
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.abduct",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881022,
+            26.352336561491192,
+            250.07711598404336
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.twist",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881022,
+            26.352336561491192,
+            250.07711598404336
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "calf_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881022,
+            26.352336561491192,
+            135.5098078836483
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_l.dorsiflex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881008,
+            26.352336561491192,
+            23.912050821709656
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_l.invert",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.6865665251881008,
+            26.352336561491192,
+            23.912050821709656
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "ball_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            45.04540782062308,
+            26.352336561491192,
+            23.912050821709656
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_r.protract",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -59.99999999999999,
+            -38.0,
+            399.5367848750623
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_r.elevate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -59.99999999999999,
+            -38.0,
+            399.5367848750623
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422527,
+            -58.250237794384034,
+            382.35209495165043
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.abduct",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422527,
+            -58.250237794384034,
+            382.35209495165043
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422527,
+            -58.250237794384034,
+            382.35209495165043
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "elbow_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422527,
+            -58.25023779438405,
+            308.9437498224918
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "forearm_r.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422527,
+            -58.25023779438404,
+            276.52816805679436
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422524,
+            -58.25023779438403,
+            236.90912367649742
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_r.deviate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.789004396422524,
+            -58.25023779438403,
+            228.90912367649742
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            250.07865826451945
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.abduct",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            250.07865826451945
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.twist",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            250.07865826451945
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "calf_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            135.51147116820414
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_r.dorsiflex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            23.913623353205637
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_r.invert",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7114829730495069,
+            -26.3520416140467,
+            23.913623353205637
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "ball_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            45.070342941154315,
+            -26.3520416140467,
+            23.913623353205637
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        }
+      ],
+      "measured_slots": 41,
+      "fixed_slots": 3,
+      "arm_slots_with_reference_geometry": 18,
+      "neutral_anchor_delta_from_anatomy_mm": {
+        "upperarm_l.flex_frame": [
+          3.552713678800501e-15,
+          8.0,
+          0.0
+        ],
+        "upperarm_r.flex_frame": [
+          1.4210854715202004e-14,
+          -8.0,
+          -5.684341886080802e-14
+        ],
+        "hand_tip_l": [
+          0.0,
+          8.0,
+          0.0
+        ],
+        "hand_tip_r": [
+          1.4210854715202004e-14,
+          -8.0,
+          -1.1368683772161603e-13
+        ],
+        "head_tip": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sole_l": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "waist_to_chest_center_distance_mm": 31.97610378135471,
+      "whole_shoulder_axial_envelope_mm": 73.5,
+      "spine_direct_reuse": "REQUIRES_DIFFERENT_PACKAGING; full shoulder axial envelope exceeds anatomical interval",
+      "full_body_mass_g": null,
+      "full_body_print_release": false
+    },
+    {
+      "character": "quinn",
+      "axis_slots": [
+        {
+          "axis": "pelvis.yaw",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            264.65737392427826
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "pelvis.pitch",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            264.65737392427826
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "pelvis.roll",
+          "status": "FIXED_PROTOCOL_SLOT",
+          "neutral_origin_mm": [
+            0.0,
+            0.0,
+            264.65737392427826
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": false
+        },
+        {
+          "axis": "waist.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.897089724386009,
+            2.533624274242138e-13,
+            294.0055092635446
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "waist.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.897089724386009,
+            2.533624274242138e-13,
+            294.0055092635446
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "waist.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.897089724386009,
+            2.533624274242138e-13,
+            294.0055092635446
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.6645561772562725,
+            8.557815583126668e-13,
+            327.3748525936461
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.6645561772562725,
+            8.557815583126668e-13,
+            327.3748525936461
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "chest.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            3.6645561772562725,
+            8.557815583126668e-13,
+            327.3748525936461
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.yaw",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -9.237153453852235,
+            -1.2387369754315092e-06,
+            418.4310873755464
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.pitch",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -9.237153453852235,
+            -1.2387369754315092e-06,
+            418.4310873755464
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "head.roll",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            -9.237153453852235,
+            -1.2387369754315092e-06,
+            418.4310873755464
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_l.protract",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -60.0,
+            38.0,
+            397.13805244118055
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_l.elevate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -60.0,
+            38.0,
+            397.13805244118055
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759088,
+            50.45109262385443,
+            381.3748875788278
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.abduct",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759088,
+            50.45109262385443,
+            381.3748875788278
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_l.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759088,
+            50.45109262385443,
+            381.3748875788278
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "elbow_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759091,
+            50.45109262385442,
+            309.7467162057242
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "forearm_l.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.9222473237591,
+            50.451092623854414,
+            278.6981414191244
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_l.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759105,
+            50.4510926238544,
+            240.74988334661344
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_l.deviate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922247323759105,
+            50.4510926238544,
+            232.74988334661344
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            256.14002629802343
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.abduct",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            256.14002629802343
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_l.twist",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            256.14002629802343
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "calf_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            135.16948195313634
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_l.dorsiflex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            24.898380158537933
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_l.invert",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164961230918814,
+            29.493251183054046,
+            24.898380158537933
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "ball_l.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            40.68335602220342,
+            29.493251183054046,
+            24.898380158537933
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_r.protract",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -60.0,
+            -38.0,
+            397.13685006134324
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "clavicle_r.elevate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -60.0,
+            -38.0,
+            397.13685006134324
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954019,
+            -50.450968766280646,
+            381.37477627978694
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.abduct",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954019,
+            -50.450968766280646,
+            381.37477627978694
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "upperarm_r.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954019,
+            -50.450968766280646,
+            381.37477627978694
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "elbow_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954019,
+            -50.45096876628064,
+            309.7477396086307
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "forearm_r.twist",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954013,
+            -50.45096876628064,
+            278.6987654069454
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_r.flex",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954008,
+            -50.45096876628064,
+            240.75001916044113
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "hand_r.deviate",
+          "status": "ACTUAL_NOMINAL_MODULES_PARTIAL_ASSEMBLY",
+          "neutral_origin_mm": [
+            -12.922250681954008,
+            -50.45096876628064,
+            232.75001916044113
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            256.13988255668136
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.abduct",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            256.13988255668136
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "thigh_r.twist",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            256.13988255668136
+          ],
+          "direction": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "calf_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            135.16960045402203
+          ],
+          "direction": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_r.dorsiflex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            24.898377624549198
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "foot_r.invert",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            0.7164001238746671,
+            -29.493289006452297,
+            24.898377624549198
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        },
+        {
+          "axis": "ball_r.flex",
+          "status": "MECHANISM_NOT_YET_DETAIL_DESIGNED",
+          "neutral_origin_mm": [
+            40.68326398916889,
+            -29.493289006452297,
+            24.898377624549198
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "self_hold_required": false,
+          "self_hold_preferred": true
+        }
+      ],
+      "measured_slots": 41,
+      "fixed_slots": 3,
+      "arm_slots_with_reference_geometry": 18,
+      "neutral_anchor_delta_from_anatomy_mm": {
+        "upperarm_l.flex_frame": [
+          3.552713678800501e-15,
+          7.999999999999993,
+          0.0
+        ],
+        "upperarm_r.flex_frame": [
+          0.0,
+          -7.999999999999993,
+          0.0
+        ],
+        "hand_tip_l": [
+          3.552713678800501e-15,
+          7.999999999999993,
+          0.0
+        ],
+        "hand_tip_r": [
+          0.0,
+          -7.999999999999993,
+          0.0
+        ],
+        "head_tip": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sole_l": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "waist_to_chest_center_distance_mm": 33.37015352276239,
+      "whole_shoulder_axial_envelope_mm": 73.5,
+      "spine_direct_reuse": "REQUIRES_DIFFERENT_PACKAGING; full shoulder axial envelope exceeds anatomical interval",
+      "full_body_mass_g": null,
+      "full_body_print_release": false
+    }
+  ],
+  "whole_body_released": false
+}

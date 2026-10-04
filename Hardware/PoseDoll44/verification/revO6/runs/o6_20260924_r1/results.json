@@ -1,0 +1,551 @@
+{
+  "schema": "o6-checked-digital-iteration-v1",
+  "baseline_design_commit": "451cbe0aa0c0b4016bee3da4d1dedc340a4c28f1",
+  "run": "o6_20260924_r1",
+  "overall_status": "RESEARCH_ITERATION_COMPLETE_FULL_MECHANISM_FAILED_NOT_RELEASED",
+  "joints": [
+    {
+      "family": "L6",
+      "parts": 58,
+      "modeled_mass_g": 63.66479517599632,
+      "outside_mm": [
+        37.3,
+        34.0,
+        49.239999999999995
+      ],
+      "assembly_status": "PASS_SAMPLED_NOMINAL",
+      "wear_compression_cases": 52,
+      "single_axis_rotation_step_deg": 5,
+      "reverse_guide_geometric_interval_deg": [
+        0.16259765625,
+        0.162841796875
+      ],
+      "guide_translation_stops": 24,
+      "support_span_mm": 8.2,
+      "force_precision_and_manufacturing_qualification": false
+    },
+    {
+      "family": "M4",
+      "parts": 58,
+      "modeled_mass_g": 25.424486890536212,
+      "outside_mm": [
+        27.5,
+        23.6,
+        40.989999999999995
+      ],
+      "assembly_status": "PASS_SAMPLED_NOMINAL",
+      "wear_compression_cases": 32,
+      "single_axis_rotation_step_deg": 5,
+      "reverse_guide_geometric_interval_deg": [
+        0.129150390625,
+        0.12939453125
+      ],
+      "guide_translation_stops": 24,
+      "support_span_mm": 8.2,
+      "force_precision_and_manufacturing_qualification": false
+    }
+  ],
+  "total_wear_compression_cases": 84,
+  "service": "Two single-joint axial-tool approaches only; whole-arm service not qualified",
+  "bilateral_motion": [
+    {
+      "character": "manny",
+      "cases": 50,
+      "clear_module_only_cases": 28,
+      "failed_cases": 22,
+      "frequent_colliding_pairs": [
+        {
+          "axes": [
+            "upperarm_l.flex",
+            "upperarm_l.twist"
+          ],
+          "cases": 12
+        },
+        {
+          "axes": [
+            "upperarm_r.flex",
+            "upperarm_r.twist"
+          ],
+          "cases": 12
+        },
+        {
+          "axes": [
+            "clavicle_l.elevate",
+            "upperarm_l.abduct"
+          ],
+          "cases": 3
+        },
+        {
+          "axes": [
+            "clavicle_r.elevate",
+            "upperarm_r.abduct"
+          ],
+          "cases": 3
+        },
+        {
+          "axes": [
+            "hand_l.deviate",
+            "hand_r.deviate"
+          ],
+          "cases": 3
+        },
+        {
+          "axes": [
+            "upperarm_r.flex",
+            "upperarm_r.abduct"
+          ],
+          "cases": 2
+        },
+        {
+          "axes": [
+            "clavicle_l.elevate",
+            "clavicle_r.elevate"
+          ],
+          "cases": 1
+        },
+        {
+          "axes": [
+            "forearm_l.twist",
+            "hand_l.deviate"
+          ],
+          "cases": 1
+        }
+      ],
+      "scope": "18 modules, all 153 pair combinations per case, discrete poses; no yokes, PCB assemblies, skin, neck/trunk or harness. Not full-arm qualification."
+    },
+    {
+      "character": "quinn",
+      "cases": 50,
+      "clear_module_only_cases": 26,
+      "failed_cases": 24,
+      "frequent_colliding_pairs": [
+        {
+          "axes": [
+            "upperarm_l.flex",
+            "upperarm_l.twist"
+          ],
+          "cases": 12
+        },
+        {
+          "axes": [
+            "upperarm_r.flex",
+            "upperarm_r.twist"
+          ],
+          "cases": 12
+        },
+        {
+          "axes": [
+            "upperarm_l.flex",
+            "elbow_l.flex"
+          ],
+          "cases": 10
+        },
+        {
+          "axes": [
+            "upperarm_r.flex",
+            "elbow_r.flex"
+          ],
+          "cases": 10
+        },
+        {
+          "axes": [
+            "clavicle_l.elevate",
+            "upperarm_l.abduct"
+          ],
+          "cases": 4
+        },
+        {
+          "axes": [
+            "hand_l.deviate",
+            "hand_r.deviate"
+          ],
+          "cases": 4
+        },
+        {
+          "axes": [
+            "clavicle_r.elevate",
+            "upperarm_r.abduct"
+          ],
+          "cases": 3
+        },
+        {
+          "axes": [
+            "upperarm_r.flex",
+            "upperarm_r.abduct"
+          ],
+          "cases": 2
+        }
+      ],
+      "scope": "18 modules, all 153 pair combinations per case, discrete poses; no yokes, PCB assemblies, skin, neck/trunk or harness. Not full-arm qualification."
+    }
+  ],
+  "arm_loads": [
+    {
+      "character": "manny",
+      "arm_mass_budget_g": 495.54130687120625,
+      "modeled_nine_module_mass_g": 343.54130687120625,
+      "low_mu_catalog_force_insufficient_axes": [
+        "clavicle_l.protract",
+        "clavicle_l.elevate",
+        "upperarm_l.flex",
+        "elbow_l.flex"
+      ],
+      "actual_maximum_spring_force_known": false
+    },
+    {
+      "character": "manny",
+      "arm_mass_budget_g": 495.54130687120625,
+      "modeled_nine_module_mass_g": 343.54130687120625,
+      "low_mu_catalog_force_insufficient_axes": [
+        "clavicle_r.protract",
+        "clavicle_r.elevate",
+        "upperarm_r.flex",
+        "elbow_r.flex"
+      ],
+      "actual_maximum_spring_force_known": false
+    },
+    {
+      "character": "quinn",
+      "arm_mass_budget_g": 495.54130687120625,
+      "modeled_nine_module_mass_g": 343.54130687120625,
+      "low_mu_catalog_force_insufficient_axes": [
+        "clavicle_l.protract",
+        "clavicle_l.elevate",
+        "elbow_l.flex"
+      ],
+      "actual_maximum_spring_force_known": false
+    },
+    {
+      "character": "quinn",
+      "arm_mass_budget_g": 495.54130687120625,
+      "modeled_nine_module_mass_g": 343.54130687120625,
+      "low_mu_catalog_force_insufficient_axes": [
+        "clavicle_r.protract",
+        "clavicle_r.elevate",
+        "elbow_r.flex"
+      ],
+      "actual_maximum_spring_force_known": false
+    }
+  ],
+  "back_reuse": {
+    "selected_outer_mm": [
+      83,
+      103,
+      83.19999999999999
+    ],
+    "nominal_box_volume_cm3": 711.2768,
+    "old_six_boxes_cm3": 950.4,
+    "nominal_box_reduction_fraction": 0.2516026936026936,
+    "complete_PCBA_qualified": false
+  },
+  "back_space_search": {
+    "candidates": 630,
+    "anatomy_only_clear_candidates": 20,
+    "goal_poses": 61,
+    "path_states_per_character": 837,
+    "maximum_path_step_deg": 5,
+    "selected_anatomy_only_target_mm": [
+      54,
+      48,
+      22
+    ],
+    "actual_module_audit": [
+      {
+        "name": "six-board reuse",
+        "outside_mm": [
+          83,
+          103,
+          83.2
+        ],
+        "cases": 100,
+        "failed_cases": 100
+      },
+      {
+        "name": "grid",
+        "outside_mm": [
+          54,
+          48,
+          22
+        ],
+        "cases": 100,
+        "failed_cases": 100
+      }
+    ],
+    "conclusion": "Both selected boxes conflict with current arm modules. No qualified motion-compatible central back PCB established."
+  },
+  "DC1": {
+    "single_bit_mutations_rejected": 2080,
+    "known_undetectable_counterexamples": [
+      "Whole valid replay without independent sample age/binding",
+      "Duplicated valid physical response column; physical sensor count not proven",
+      "Even-bit angle mutation can retain valid parity"
+    ],
+    "capture_eligible": false,
+    "physical_wire_count_per_segment_including_power": 6,
+    "new_central_PCB_exists": false
+  },
+  "peak_current_conditional_allocation_A": 0.14466666666666667,
+  "peak_current_verified": false,
+  "legacy_seal_verification": {
+    "seal_revo5.py": {
+      "verified": true,
+      "checked_hashes": 828,
+      "errors": [],
+      "physical_tested": false,
+      "manufacturing_released": false
+    },
+    "seal_revo5cn.py": {
+      "verified": true,
+      "checked_hashes": 226,
+      "errors": [],
+      "physical_tested": false,
+      "manufacturing_released": false
+    }
+  },
+  "UE_and_user_preserved_files": 109,
+  "user_configuration_preserved": true,
+  "new_python_sources_syntax_checked": 29,
+  "active_input_files_hash_checked": 203,
+  "evidence_sha256": {
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_L6_final/assembly.json": "9256edb875eb4f1dd7d72ecda56f662ae2594162e52ee7cb936d78c362cc2152",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_L6_final/drive_clearance.json": "ab739c82edd928e56e562d0b1832e313aba9679eb135e70fbd7917ac825d53c2",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_L6_final/lifecycle.json": "54aa75f013bb732fdc4187771c141e7c1845a55fcc21566abd26e5bfd61732fe",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_L6_final/retention_reverse.json": "ff25ac62c9105fcc128ade28f0fcd73eda9f4b46b4bdb8c1db9f0bbea5fdd98a",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_M4_validated/assembly.json": "012a191d00a22c67aa94089d43bce1c2a7a1f87b8f238ec735493c8cce8a1f3e",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_M4_validated/drive_clearance.json": "ae078a8ac349613966901846e5e313b538a929749e59a2049991b090412c9d89",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_M4_validated/lifecycle.json": "50e05f44cbd82f562f060bc7ab74551e68043490567868fccfb704cf3172be06",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/joint_M4_validated/retention_reverse.json": "254e8cbc397239d7fd924ab4bea609a4d24ab2e9c0c138e67eb5cad49454966c",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/service/service.json": "04de626fac155568665d4b4d6aed7b21cda2a03cee1dcda3a307903c12da7b59",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/bilateral_search/bilateral.json": "98af0e341669fc9d4643a7f8bc5bc41905be14193e9cd210fd6fff3773b5b9b5",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/bilateral_search/loads.json": "1b5aedb3735c5a96b122f458d037a31398b17c450bd5c395b22cdb937626c56c",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/backpack/backpack_study.json": "4f714b76ccaa6665d1e7da5eb43adb41fa6ea71f13529b4b790f5bbb87485887",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/backspace/back_modules.json": "8ff62e92aaf559c18e78ebdb9156bc914396df8c8de0bda96dbefee4f8e60f73",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/backspace/back_reservation.json": "982f836cdb28733c5fd5cdc1793af4c5bafab8cc5a3ce90521a4178b2ff5b255",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/daisy/results.json": "392a25f95b5da902a14f563d5846485e20dc42d2569b258aca954649d70454c6",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/power.json": "93dfc30359ef2c7e80e05863b52bbe133aed7c124c6726cb75cd42f56537ed3a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/manifest.json": "c6d64acd47915fd40ba68f5898de363272772e8e7b2895bd7c5b51d931d93ab2",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/manifest.json": "28491a4cf749e312ca2ba1b3af029d737a3f2533f13d4922d021fb14315378ae",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/layout_search.json": "f0a38d294324b1539d24089940ae728a332d7abc82be9c16efd55d892ed7c017"
+  },
+  "dependency_sha256": {
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/manifest.json": "c6d64acd47915fd40ba68f5898de363272772e8e7b2895bd7c5b51d931d93ab2",
+    "Hardware/PoseDoll44/cad/revO6/verify_family_v2.py": "07ba8e7b6cad42b75de33e6d77ea7ca3a576fc57014c8c60a76baad5de3bac5d",
+    "Hardware/PoseDoll44/cad/revO6/thread_geometry.py": "6e5e3e7732719c8edf5c3a6d2ad4fefb88c7427845e67a3c71a14491df57b527",
+    "Hardware/PoseDoll44/cad/revO6/small_joint.py": "929030b71690cd06802fe5c2ae1a1f79a7cb6a59fb29607029561fbe0c04279d",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/housing_L.step": "278e0b70c195d03d8a9e09ad533de0c2b60bf657af980e8ea8cf043444096237",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/housing_R.step": "92392b777e9d4e9775feee572a955cea435a30fa1a074a33b55932a3b4aa2070",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/rear_bush_L.step": "5bb16beeb4a537ae25e89b62328ca16cf2b4538d645eb038a756ff71b6feac08",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/rear_bush_R.step": "6dbe00fb08255962f546c040fdead8db5e1e1311cbaa0cb68464d7b2c177118a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/front_bush_L.step": "7a372e569fd4b4f48dbd11cfd9387c47b4a3e1f519ae00676807abd4f45acb43",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/front_bush_R.step": "2895d4419a65871691344d5d90576cfcdb0f2f0214dc5a5f999cac2a97799feb",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/thrust_rear_L.step": "59344f74201fedbe72a0b847b73447e9f5a5db06f427ca2c1bcdefc593f06024",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/thrust_rear_R.step": "34be499a0111295e045ebaaa1051953c2d48f1727765ee4c29887d25b056a7cb",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/thrust_front_L.step": "b59a150ede3a367e0f8377fca40b70fd25d13938bd2cc29201794af9e9695022",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/thrust_front_R.step": "738a93057ea63971b3f16173146b7ff54a3aeb603a54d5225528e52adf17b625",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/floating_brake_disc.step": "86dc9731a072690e4d1c6680ac60a43bea0111d67b8bc3073095471c58347042",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/front_friction_lining.step": "811f6321edc1990c843ab576fb142a0ee327a4bd60223840733be8897aec2710",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/rear_friction_lining.step": "7efa5e8696818b49961df0989b8ee2a78e14aed6c9d85ec5f0e2ab874e452744",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/spring_front_washer.step": "74bf11c7708ce69d9a0ab9b4a64cf299cd7206c6f477216071b33ae5d833062a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/disc_spring_1.step": "227a3629cfcf63cd3b30cc29f6a33fe3b953ed2aa84b9806abf696141b91703e",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/disc_spring_2.step": "de1f5f8d5fda2cf530a479948011699f8ac328881f1db6d907f85ba2b9491cc7",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/disc_spring_3.step": "3fcaab20a091a8873fb36849f57eb027bba81d2fa4bc20d555197fdb19d8660c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/disc_spring_4.step": "46a1464db897f206b19fe5cc4fe71f5b31b8aece7762d5141ce82d06364ea183",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/spring_rear_washer.step": "bb1e11951e8e7864a6840425435c0a68e1655951769b301509a0d26536a3febd",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/threaded_adjuster_cap.step": "2a395d9989d251b3379e1bdb8b374ba86ca591102940e2c7f929daf0ab79af46",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/cap_lock_dog_screw.step": "b58a24ed0064d9b835b01e9a25ccc29a2c55513d8b9b306b1f95b92288461e93",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/bearing_clamp_-6.step": "fed641f9d676c95ed99b2da1d7e0d7ee44df156cfa572edced77d8127149f3de",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/bearing_clamp_6.step": "7560ec8f39ccc6f6b41592de9becf2b4ca942c5bdbe504c26e1aa697eacd25a1",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/diametric_magnet.step": "a8239c1769214d5d0e8de14aec450a1ab91bb712c7215688936f83f0650715de",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/magnet_keeper.step": "3e4f9020c25b65cbc2f76dee0a9d1fabb6eacb601a70b071982d1c02e428862a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/keeper_screw_-4.25.step": "1e34db571b8c0a26e36f8e959464bebacafb21abe0c30eec9305f896a36b7d04",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/keeper_screw_4.25.step": "5dbb03a446dc1ee05e3b532a1df5d35917fbd304b9d9c6a02f0c37620998ad1a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_0.step": "e054c9eb457a314ff5ca085e491dc380c0e0c14ed637bd67de5619177b8b73ad",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_1.step": "d298b1ab3afa1f9c6087c4300ba08e75c8c03fcbb44d74057ecdf91b08b7df62",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_2.step": "9eb62df008467db4e1230eff82fe26bde8881f4e361c49ac5ab44219c6707cb8",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_3.step": "7b29bc8fa30cffca5891ddb7820b7426c9b3292da6bad288f0188a3bb167267d",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_4.step": "6bb5fdaa1e92150f1f5d419950b6b0229b26f956429937d517d1f299b79dd476",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_5.step": "7d72b752f19ca80fc5f98807f8e95c04fb49b5e0a7485236871ae2ea0525831a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/sensor_pcba_6.step": "6580afe1e1d79034b3421aae97c065c9d667aa3a5dcee1ab2ae188d86d5880dd",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/pcb_edge_clamp_-7.7.step": "6d5875587a69379c0fc52b2861f33869d5af0cf0e2bd4688e7afa57ead1c31ed",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/pcb_clamp_screw_-7.7.step": "3604d810496fcf280f85435404efc231ab6a43da744576182900a4547ed88b1c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/pcb_edge_clamp_7.7.step": "cec48a1f4ae77868901f39048638d8f6150f4a9f798208ea3af993336b6d8a17",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/pcb_clamp_screw_7.7.step": "94b0d13b94e85aecb7d000a890abb8140e90f40afa24655e7ada4d6cac943443",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/brake_cup_front_loading.step": "4832f677829eef5b762ca2c59513c84c4197effc09ddf7e41ca6ce3bc6401778",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/integral_steel_front_backing.step": "42e499751f9bf24d9dacdf3bbec862aa18616bb368844d9827fe1064fbe79da8",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/cup_mount_0.step": "befcb67c732de641c11c38d3de9a6b5dd0a33a976d3b044688d55c13f3032eae",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/cup_mount_1.step": "bfc86b779b158f731e7ef5f768dd808c1f8dbdec404080bbb2cd002cb01d56e8",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/cup_mount_2.step": "d9986e8a4f7d5cdabcb038257e6e337ce433a3597ef63575a55bd24bcc560494",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/cup_mount_3.step": "5791137c25a42a915ee086bc81db698632cf07cdb118088ad4a801955f59faa7",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/integral_rear_sliding_carrier.step": "36fa329fefd7c7a61503df9a0297cb2552d0a17a0aaa72b2e5ff7881ec8f2993",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/guide_shim_-12.9_-1.step": "b05c5c2aee3805d57c4e138d45f1fe5ac00d3e28aef176d15cd6a42627fd6b4d",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/guide_shim_-12.9_1.step": "8be617804375be756f9249c6d68476f4f029d49d264c575e909119b8c819bed4",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/guide_shim_12.9_-1.step": "80d0c0ff40b76154299b7cb100749dd076914c2ba93b04f2ab43bba4fc9778d1",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/guide_shim_12.9_1.step": "a462f9b3c0153880f7f95733864b40a0aebc3b7847067e3ea8784283b8286641",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/short_taper_measurement_shaft.step": "7977121b1f2e4ba331ef37519cd0af18b24fdeb53bbfd3cc3f1761fc6a9be345",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/taper_output_hub.step": "655569a9ba4b25e5affe3f7667e18202e1595a75e0b99c129c3da3aff21230db",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_retention_washer.step": "412dbf5696a381a70593c1c81765a6b75fe83bfc3666dcc285bd734c45c890fd",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_retention_screw.step": "8cfb303fb39c932d5bb7720b12be09802a1a313d094a63c2ea02b8d74b8734d4",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_yoke_interface.step": "e5be7fbc4dd89fdbbc38a736bb3d5d5dd7ff259a4966ed36697fa1402986f844",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_yoke_screw_0.step": "6a61a0f147265267653b13f1dd60842fafb293dd4e546133039cca0bd28f15d9",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_yoke_screw_1.step": "2f7a92133799fa8470d494c5ffcb153456ce7c51740eeece73d3ca0195457306",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_yoke_screw_2.step": "ef8bd91b24958ae4d855723f6d8c9e57299855482d910fb6f3037f892c09482c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_L6_validated/output_yoke_screw_3.step": "1101634f03f83b572d11149a1cdccead586a185d61850463545b0b205b20bf61",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/manifest.json": "28491a4cf749e312ca2ba1b3af029d737a3f2533f13d4922d021fb14315378ae",
+    "Hardware/PoseDoll44/cad/revO6/verify_family.py": "df75c6bda7a75158ad842718ee50d52e88f0944025e407d6579c2582fbd0a893",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/diametric_magnet.step": "b1e26c8d25e4496c8fb998561775e7a73a420d8906a4b974b2afb84d9525a7e0",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/magnet_keeper.step": "9afc6f1c7c82edf3702f02e25cbe20da0c7fd58af9d7908e306a0cd65730692c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/keeper_screw_-4.25.step": "9f864a68f7d4e4e88fe54b50fea6b1439a2dba35158d4046c6fd34983b329d2c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/keeper_screw_4.25.step": "a98fe7917ee90660cccf314b03aabd93983ff1dfc489353b6689248893b1d08b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_0.step": "028e29dab883db1b2c1b580e04eefc6d87446d1280e117f8be58b76192c0ae42",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_1.step": "286d46bd3d7505dce89bf8a2404f0019d8e10c67a1409fabb205613a8e2a1435",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_2.step": "0f79765a21b8aa47173d9d451e6fed4be89959da23725a97e1d01c0aa9d604e0",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_3.step": "7017d70665eaa078dd8c929a8ac854e80ae70e0efc080c835e93196ea959a694",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_4.step": "a986afa4f4aec89d5f3eb485003216a01462b69e6239821ce437dacb2d1c6eec",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_5.step": "01accf0d7fa1623ecb7a6f81bc316228e7b5e7480d9628c42c7028466ec0e2b2",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/sensor_pcba_6.step": "8fb8e7b8e5026b2d38dcaf3774d5dc989ac20db5bf2498e34ea36356edf2ead2",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/pcb_edge_clamp_-7.7.step": "cd2f40f2de6c7215adc65e9d7f54a53460e8e92c2c079a417909dd999418f54e",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/pcb_clamp_screw_-7.7.step": "4dd5c2395bddb0188e8f997f7f8fecf956f21b426d36fdcf455a22b938104eab",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/pcb_edge_clamp_7.7.step": "0f6ba1b0dc9aba25a38fa742facb6558bb877c0741321d26cd6140f0981c327e",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/pcb_clamp_screw_7.7.step": "00e57b6f9606d4c84a23c8ef62d508145b2bae3ebfbbcef0547e9d12c14c0783",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/brake_cup_front_loading.step": "6b4e752c8d3b18a99730ecc38c627a18c0439fe561ef6039916acd6b4d729d9b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/integral_steel_front_backing.step": "eb01b0070ce30ec4dcbd18dd728356b60cab6e658b8180b9cc86cd9c4b01cfc6",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/housing_L.step": "8e49ecbdc48bc4ef7213be9fc33412e07b1e93d6044eac687ccfa4d0bf8f426c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/housing_R.step": "89244aa0df7e284053b063585ae165f5e30219d009e414926c878e3310e055bc",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/cup_mount_0.step": "e6ccc3005b8ce0d92ceffa973bf01d24899ea75a466de1f6354df2c9f0a2c5e9",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/cup_mount_1.step": "8ddc8b7b2019f6ba6a0d171c46857e33aa3a6af55cc7aa931aa9d12e19857e18",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/cup_mount_2.step": "de55b30a4d5a3bd81e85bb1ed3869f39cdf6f2849aceb5f66c03dd52433123a6",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/cup_mount_3.step": "bbb9076ac6fb7f8978e85cac3588321793eeeaccb61aa38d1ac64344f441d6f4",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/bearing_clamp_-4.5.step": "99d40cbd484ffaf3ba69e8f1a01d7360dc55d5e724d25e7058747bdb18cc1cdc",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/bearing_clamp_4.5.step": "dbb0fd94649d0c9c31b9b1ebf8309e6ebce347fdd3d5e34d3732fcc058bab26b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/rear_bush_L.step": "07ecd31aa1aa4c13b9240c4e3709d1649a063079429e2a6f1c7ea187d5fb2791",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/rear_bush_R.step": "1664797937715d8858ff8a92dc059b192ab9452813275767369e06deb541056a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/front_bush_L.step": "6b6cd3e07da5a0f4c06744cc250b9c5faf9be9dc2bfb26b001146d7cc1c44747",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/front_bush_R.step": "fbab122218d1e7dfc1ac0a21ab163bb0bf73a6404a20a538cb582b376e4a1025",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/thrust_rear_L.step": "0b4c37b0e9a9c7952a35e7a8fc6382e257b63247b94748208c3b7207b3a6c305",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/thrust_rear_R.step": "0330a59708dfa9b79de3101529ec9d85b47777d466b6f8d0d25fc6c39933ee06",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/thrust_front_L.step": "910ec7e49a591187dff807ba71bd81236d5205110e2368eb8b0fc874789ebfd1",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/thrust_front_R.step": "c1eea590acf3dd0a807d24feb85125873125b76c31a526ac94e9ca23ff00e2fe",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/short_taper_measurement_shaft.step": "6fb9a4bfe464958e07a5d0a421d07e2a06a47068ce04e22be3e43a5c334048b1",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/floating_brake_disc.step": "a7303f0d0a1113fb89c10c317d3c9820dd99502b144ca725052241dffe11791c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/front_friction_lining.step": "03d4780c687f06462ec1857f52cbf66b521d1e1bfb46202fb78e7d8030611e5b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/rear_friction_lining.step": "501c54c5776d7c31463405ad03d5380e779c0d065093c1983f3da9e76773be06",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/integral_rear_sliding_carrier.step": "29ab0892e0f029dd957bf167b02f5fff372d0775b06ea880d5888395cac328bb",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/guide_shim_-8.4_-1.step": "d294ae27b2485b0aeddf463aafec01fda9063bc0724e742bb5769a8318f85c0f",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/guide_shim_-8.4_1.step": "faa71bab827e359b4439c15ba47f1a21d648fc941d6fd0500898e542c00b579e",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/guide_shim_8.4_-1.step": "abc9f2ac30e571aa3bcd77f527043d8297a96fd5ed9730d25efa671a84ecca00",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/guide_shim_8.4_1.step": "344f99de97aa72361a9cce8f751cccc9006bf1b4753d2cd47a3a46132b686ce8",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/spring_front_washer.step": "7b05cbe7eeac59c6e32011b506a146381044ca6b77e6cbc6685d9a633fb4542d",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/disc_spring_1.step": "e6d3261c7bbe227375d30336000aec574da6c75e8a8421b9b1ba0b84dfa2e2ac",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/disc_spring_2.step": "b60a6ed7f172a7f322317100e6b9993af8e3c255fb35e90a68038d25aae9c7e5",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/disc_spring_3.step": "94c8d6fc30466bd6f3bd820c7d7198d6af513ee6f6e25649940c7d73baeb245b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/disc_spring_4.step": "7c6782812ccd8acc69f232f6dc5366b16c3c49369498b81803a3ddb1724aa3fb",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/spring_rear_washer.step": "5459581efc36d75c87174687a21b2bea5a5ed6da1545e8ebf7b4b4741f403688",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/threaded_adjuster_cap.step": "ab5949fa129bf54bf945c3347857386bee715ec6501bf062891598a650c4569a",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/cap_lock_dog_screw.step": "44916eddaff1199aab1116c703c6a8851760a5a81c8b24fa1f6f4e5516d02b2c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/taper_output_hub.step": "aeeb0664dd254ceade549bade9badfef85e48a5c59593edb6f4d54b97ce02c88",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_retention_washer.step": "c2d104d3ccb17386e98c890686478a0839976adf4ba88535e024c3618432f92f",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_retention_screw.step": "8f0ce99210ee3a7b353fc9aff0dc663ed6044145c218fb96fd51f00eff023ffe",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_yoke_interface.step": "748732564e3833c93dba890ee56dbe3ec56e5eb54278ceceb71e361fe2df60d3",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_yoke_screw_0.step": "0600e7b95ec80a21ccc438c7b8cc4450047f7c0bf62d9fe0f8442bcb1aa08e88",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_yoke_screw_1.step": "d53cff7166e03e04c170585cdf8553472706c0dcebbc8e23840a6491a0010008",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_yoke_screw_2.step": "cb38c4f9cd07045f759317c1a630450f869109034dab3a16db0391cb87220814",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/joint_M4_validated/output_yoke_screw_3.step": "82005dc5691de944116bdccac2a528df833febc9858fd7cf070e8fe856585f99",
+    "Hardware/PoseDoll44/cad/revO6/check_service.py": "0f7c5f50470aba2c4c80d2c7ddf4c3b60b8bb5eee05a754d381a6ada4ef0bc86",
+    "Hardware/PoseDoll44/cad/revO3/compact_joint.py": "dc019285b4b8ada35e4035594d6695ccfa498377f9a12d2eae5b34f06044eed4",
+    "Hardware/PoseDoll44/cad/revO6/audit_bilateral.py": "f34fd99460d0aef872710715b9b333f424f997826f680df193ebce06d94bde62",
+    "Hardware/PoseDoll44/cad/revO6/audit_mixed.py": "2ad102bd4ff3da9ee9836cc0cb3237eeb8336cfc2c84be3efee19224756e4a66",
+    "Hardware/PoseDoll44/cad/model.py": "022f0bf7157c10d062c55667e3813cd4015412576c6091a5b4ae69151c08002b",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/layout_search.json": "f0a38d294324b1539d24089940ae728a332d7abc82be9c16efd55d892ed7c017",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/manny_l_profile.json": "c11557e98ce8d414224b003cadf5f4d76453ed2a6cb29bbfbff8aa25f4ea0df0",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/manny_r_profile.json": "844af98be37ef0d13f2d171d32953423149225643f2f699a08f76cf42667db0c",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/quinn_l_profile.json": "c87066618bbf6e8b6f5a008a4ee190ebcf0f8609d9cc92e6d5005d5fcf4ec4cc",
+    "Hardware/PoseDoll44/generated/revO6/runs/o6_20260924_r1/bilateral_search/quinn_r_profile.json": "e51643275b294e6983ef0b5103dbcc3df37a414a4c840ca6a26ad1eb06c4d7fe",
+    "scripts/analyze_revo6_loads.py": "41d852a14487b381c4d70a89ae9138017a22033c30a466cfb941a3c0c54922d7",
+    "scripts/study_revo6_backpack.py": "6f557871a740b9ff988c9ec4352c57a8d8fc465ee38be0afce6779d1d982e438",
+    "Hardware/PoseDoll44/docs/CHEST_AND_EXTERNAL_REVN.zh-CN.md": "4e64462d502997db9f6f0c9ea6c19c3e0bbcbff63c5d57a3fd75f698b057c8d3",
+    "Hardware/PoseDoll44/electronics/revO/node_9port/layout.json": "53411b1f653b991a1d8b2f69fe23315ce067aedbe6b5afeb8d54b59e8c46366b",
+    "scripts/study_revo.py": "677e8b6a158a67b475dc550ae35afe470fe38644c0ac00db838c090fa0d36693",
+    "Hardware/PoseDoll44/mechanical_manifest/physical_quinn_44_revG_humanform_trial.json": "e10426f26c128bb924b65b43ed780a95432656914bcc9333f38dc55f64f96a49",
+    "Hardware/PoseDoll44/electronics/revO/node_7port/layout.json": "76bb52f0bbd9e81b3f0a515ad5cc54e9320a851e42d68452c10829e33059a06c",
+    "Hardware/PoseDoll44/electronics/revO/node_6port/layout.json": "a9245c54f838108d1c89d90bcdd52f96bb2df97ed02923cfc48cccb3e40e72c7",
+    "Hardware/PoseDoll44/electronics/revO/node_3port/layout.json": "77d0181b11dae9ad12ee49a3bbca2f72d986b3e1df22c4885948f69106b76248",
+    "Hardware/PoseDoll44/mechanical_manifest/physical_manny_44_revG_humanform_trial.json": "c4da2d61d0c079b406ae46e6b8e80630c836cee9abccbee10ec67d89cee2ddfc",
+    "Hardware/PoseDoll44/cad/revO6/check_back_modules.py": "ce8dd8b2e71da1b98334461ce61edaba2ebf78242ebae8d0d27866bc8354facb",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/backspace/back_reservation.json": "982f836cdb28733c5fd5cdc1793af4c5bafab8cc5a3ce90521a4178b2ff5b255",
+    "scripts/search_revo6_backspace.py": "6474aa6abf9dfd7711e2bc099e56a9265fb78650083bc4fa89041995da3f1ce8",
+    "scripts/search_revo6_mixed.py": "0d6695c1d6dfc9260bc6698beaf3789b2dc4a81b6fb7aed8c3117781c23630c9",
+    "scripts/revo_common.py": "3f2f9b403206a2363fbfb909fbc20ed2d3dca68cfa253a277792b33ee12453c7",
+    "scripts/test_revo6_daisy.py": "232cedd3645d1d7d0c85ba6e675f6dbe3919de5b28d7828512e61ae47a77fb18",
+    "Firmware/PoseDollFullBody/revO6/daisy_chain_trial.py": "9f8a038cef5fdec807365256f18ad274a318f53a540b3a36bbc2729bdbb7a73f",
+    "Firmware/PoseDollFullBody/revO5/main/main.c": "8d3323e11dfa09b4a401a902caf57ce5157aba0805ae7f9ce2103234e8a7690c",
+    "Hardware/PoseDoll44/mechanical_manifest/connector_wire_contract_revO5.json": "ac3ae559e3da9dc326a958e3cfa1fd8646647f41808a2eb9140c01240a9454f2",
+    "scripts/analyze_revo6_power.py": "ef7dffa0ad12c240f0a74b3934f48d3c0e05573d2046ddf913df85e00057c355",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/manifest.json": "cc3ba8c40ead7d123cb2a34ae95235e749ebad9ee6f392f3de21c8fdc6cd082c",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/one_piece_brake_cup.step": "4371a83051809843efba7cd45e1b81c5ff819113a19e0fdd8a440703a8cbc0cd",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/housing_L.step": "7dd0548995524a94f3465b878d658c279ad203040a749c5694947c7e915bc103",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/housing_R.step": "a987f551b6306588c09b05365ca9171e9a9e24bd53e211a679c6e6761c848139",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_0.step": "86da49fec70c14d2f397ce83d626316ca2fccf89044a6e02744e97761f82d4eb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_1.step": "f4800a1bdd3aec2561a5b2d313ddb71b8ceab2453a654ea62cbe1d11347cb279",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_2.step": "96a7a45b373f1dcdcb4068fd9e759c761c8ce05afacbca9cdafa5df2cfa1848e",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_3.step": "2fceb2608ebe38e0b11121a4f8aa7faf676257ff100b660242c6545c2ff7d4f3",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_bush_L.step": "979fd47f468d2f9f211a93d3546054b0848175757feecc4e3fd58316573a5a22",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_bush_R.step": "899da28846173dcbf3dfd12500d08f880a4c7f38f5d1df7435f0de814f1047ca",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_bush_L.step": "15309c5044cf8391c41de186b17c87376e8f18c01532b3f4a5c3b13ef593af4b",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_bush_R.step": "c679fc5788fa648527925ab02b8adaeffc35613d1ba2e9814a5715ff8df0f15f",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_rear_L.step": "347327a35a7248603938a8f4311a3a7c11e8f22db119694d99d7a57caf9e1c5d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_rear_R.step": "761340d2a1e17b4e1b75940c77f852cbc2d6c760a0ee79f1e6a51bcfef33de76",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_front_L.step": "57f7d7e40fdb54bb9b2c500fac40c6c35d95e78c69fff15bb50de825f52b91a5",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_front_R.step": "ade67fb61e42570f730ed85792b8d4b3accb2c04cb415a43db773d743df4195f",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/measurement_shaft.step": "074139a0dcebd64ca9a36dd33bec9c8b7f82c868921bedfd966a9d507ba48790",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/floating_brake_disc.step": "ad12a4c24e286ef3057773e8c5f15733859114293ca0244d98248d43c720e8c6",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_lining_backing.step": "700a8c29bc719791d3cf2973215ba08ba2e159f496fd64447df0753ed7961b08",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_lining_backing.step": "0a91a4617f8b896359a840edc653d6c9b972420cfed88b75e467466a5164f468",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_friction_lining.step": "c3e855e04ad86c2de4a1b5a6f8f41d3bd53b2902e481ba143127c693993c6c07",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_friction_lining.step": "0fc9e6e2a4b36a62ef950b70e8e52f9ba2a727a9b6c06350a88514c1826f9342",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keyed_pressure_plate.step": "50c2cc0b26f87b2b13ff20f20625fcc862720437e494cc7c19bba8c913ccbc68",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/spring_front_washer.step": "03c3a962142e085856f7bdab9ab347d57e7d076e682e20e0eeb0dcc2a8bbed90",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_1.step": "9f4bd14f82de238ebf7d04d31106d4fcebb9842de60514a0c968b12108b0ad90",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_2.step": "70119c591779d1f43b5807d0d46130b58c7aec547127b7469f36ca52872923b4",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_3.step": "f6f6db065a024c017cff25500511499eb2c7b5563bb51b2b122a49ad0872f8cb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_4.step": "16ae25433f81bf5fc81412253466ddeb4cdec7e8f1917b1e096dbefd170f5922",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/spring_rear_washer.step": "377a9bfbb5cca8dbfb44a537527e40b1817da557102ef372ed7842cb665161c4",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/threaded_adjuster_cap.step": "05a3447d8de49208faa1b63508e152103cadb440089341c20d195392185ec6fc",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cap_lock_dog_screw.step": "fa3b6e7f8e86d972608b8df0b48a77722e1ca42288829ca214b0b492a61e83eb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/bearing_clamp_-6.step": "303f8aee3416cc731da3a2b146acb153fabfb5c7016c814af8979226cdc39601",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/bearing_clamp_6.step": "0d6cdc0292e9e858ad7642c5538da2cdfae4109a3539be9a802ae58d00a53019",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/diametric_magnet.step": "a0ab3c3172528d238aa00341ed8a294646711d4b3cd128d16905a705271a70b1",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/magnet_keeper.step": "47a8399ba2f50a8a528d974b61af0e4bb864d7df8c22ae16678e6880044fe5e5",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keeper_screw_-4.25.step": "03f5a4ded3a46b8795e0c917f3a501b2f41c0f025bbde2a0ebfce08ae206e567",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keeper_screw_4.25.step": "ff7ec630f3874d038fdf44775566257eabcaa8198ed52bdd9bb7a38bdec861a2",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_0.step": "43d48dd53ef34ac46d9b356646fc49ad23d078b227ea923f1c46be5f185d01f7",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_1.step": "613a2e7996684f2a8cfe13d315bdff4bc684db88ad70271334868e9bfbb0200d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_2.step": "49904138c532653f7f27f1a68cd8209fba2c8f0d054dc8a506ad91123e5b197d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_3.step": "e6d2580e14292b959a887c732370e00b5e25526ef897687ff8440cd464925afe",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_4.step": "8dc312d11d942105c931d43de7f8f78d1dc0ff996f953d37f99977fe90b41d08",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_5.step": "015e19220d11626eb8f9ae9b3169e29fad7585702572855eea0940d8f80b47ef",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_6.step": "edebb01fdfee68e82a876d5afc2792e96c050579a16a6be5a845e524f13bcc30",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_edge_clamp_-7.7.step": "6af1a7eff7c8f0594f8ec895b86c19c245a3f7db699e0282a89650bf44c58679",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_clamp_screw_-7.7.step": "74ad29f1f8f26f9c960fda07ff9429f31fdd560e979eae26f9943f95d71e8177",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_edge_clamp_7.7.step": "6b19af40ae92c0c70618d6c8703b829a5e07a9a67a690a88bd11848a60e0364b",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_clamp_screw_7.7.step": "83d04884871f111490df5e76e932920c6e4292ff33da77fb5f8c9660f07e600b",
+    "Hardware/PoseDoll44/mechanical_manifest/lifecycle_states_revO3.json": "e36f2a2a6d374abfa34af35c23238597902895a7665b779d070413b7766c7b39",
+    "scripts/search_revo6_bilateral.py": "ad9798634eabb512b4246f4a19c07c86ccdec3322a8508a6e6face0879c28a98",
+    "Hardware/PoseDoll44/cad/revO6/compact_interfaces.py": "a9a8f84d945fc3765fd263ffc3042a6f4f2f219c0199d8b5ea6e47a0b78a57f1"
+  },
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "full_body_height_mm": null,
+  "full_body_mass_g": null,
+  "mass_hard_limit_kg": null,
+  "commit_or_push_performed": false,
+  "next_digital_work": [
+    "Real shared multi-axis shoulder/clavicle support and output links; current 18-module layout fails motions",
+    "Coupled back electronics, neck/chest/skin and harness packaging after shoulder space is defined",
+    "Native central controller and fault-binding design only if DC1 or another backed topology is justified"
+  ],
+  "requires_hardware_or_missing_supplier_data": [
+    "Spring curves and max force; friction/bond/wear/torque reversal",
+    "Bearing/taper/shim fits and loaded sliding",
+    "Signal integrity, chain identity/order/count, failure isolation, peaks/protection and crimps"
+  ]
+}

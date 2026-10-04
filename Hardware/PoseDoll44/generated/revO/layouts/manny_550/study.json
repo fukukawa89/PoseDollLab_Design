@@ -1,0 +1,580 @@
+{
+  "character": "manny",
+  "reference_height_mm": 550,
+  "status": "LAYOUT_BLOCKED_CURRENT_COMPONENT_ARRANGEMENT",
+  "complete_body_height_mm": null,
+  "complete_body_mass_g": null,
+  "measurements": {
+    "upperarm_l_mm": 84.11507485917696,
+    "forearm_l_mm": 82.53986643673386,
+    "thigh_l_mm": 131.2750405317027,
+    "shin_l_mm": 127.87242996680473,
+    "upperarm_r_mm": 84.11372879382759,
+    "forearm_r_mm": 82.53967579228527,
+    "thigh_r_mm": 131.2749018811946,
+    "shin_r_mm": 127.87253395468579,
+    "shoulder_span_mm": 115.15678474411745,
+    "hip_span_mm": 60.39044010064518
+  },
+  "constraints": [
+    {
+      "check": "N3_upperarm_l_axial_service",
+      "status": "FAIL",
+      "segment_length_mm": 84.11507485917696,
+      "joint_end_reserve_mm": 32,
+      "available_mm": 52.11507485917696,
+      "required_mm": 66,
+      "deficit_mm": 13.884925140823043,
+      "part": "node_9port/PoseDoll_RevO_N9_placement",
+      "process": "Same rigid segment; 12 mm unplug travel is normal to PCB, evaluated separately, NOT added along the limb",
+      "not_proven": [
+        "Cross-section fit",
+        "Mating plug locks",
+        "Cable path",
+        "Joint sweep"
+      ]
+    },
+    {
+      "check": "N5_thigh_l_axial_service",
+      "status": "PASS_THIS_1D_CHECK_ONLY",
+      "segment_length_mm": 131.2750405317027,
+      "joint_end_reserve_mm": 32,
+      "available_mm": 99.2750405317027,
+      "required_mm": 66,
+      "deficit_mm": 0,
+      "part": "node_7port/PoseDoll_RevO_N7_placement",
+      "process": "Same rigid segment; 12 mm unplug travel is normal to PCB, evaluated separately, NOT added along the limb",
+      "not_proven": [
+        "Cross-section fit",
+        "Mating plug locks",
+        "Cable path",
+        "Joint sweep"
+      ]
+    },
+    {
+      "check": "N4_upperarm_r_axial_service",
+      "status": "FAIL",
+      "segment_length_mm": 84.11372879382759,
+      "joint_end_reserve_mm": 32,
+      "available_mm": 52.11372879382759,
+      "required_mm": 66,
+      "deficit_mm": 13.88627120617241,
+      "part": "node_9port/PoseDoll_RevO_N9_placement",
+      "process": "Same rigid segment; 12 mm unplug travel is normal to PCB, evaluated separately, NOT added along the limb",
+      "not_proven": [
+        "Cross-section fit",
+        "Mating plug locks",
+        "Cable path",
+        "Joint sweep"
+      ]
+    },
+    {
+      "check": "N6_thigh_r_axial_service",
+      "status": "PASS_THIS_1D_CHECK_ONLY",
+      "segment_length_mm": 131.2749018811946,
+      "joint_end_reserve_mm": 32,
+      "available_mm": 99.27490188119461,
+      "required_mm": 66,
+      "deficit_mm": 0,
+      "part": "node_7port/PoseDoll_RevO_N7_placement",
+      "process": "Same rigid segment; 12 mm unplug travel is normal to PCB, evaluated separately, NOT added along the limb",
+      "not_proven": [
+        "Cross-section fit",
+        "Mating plug locks",
+        "Cable path",
+        "Joint sweep"
+      ]
+    }
+  ],
+  "mass_budget": {
+    "joint_modeled_subset_g": 762.1388657751172,
+    "unmodeled_allocations_g": {
+      "springs_and_fasteners": 100,
+      "internal_harness_and_tether_supported_stub": 90,
+      "six_node_PCBAs": 120,
+      "frames_and_links": 150,
+      "printed_head_feet_guards": 130,
+      "power_distribution_protection_and_pelvis_connector": 35
+    },
+    "total_allocation_g": 1387.1388657751172,
+    "target_g": 1200,
+    "status": "DESIGN_BUDGET_NOT_FULL_CAD_MASS"
+  },
+  "load_scope": "Analytical allocation + joint solid subset on ideal anatomy. Not final CAD COM. Cable torque assumed. No load pass.",
+  "worst_budget_axis": {
+    "axis_id": "waist.pitch",
+    "max_gravity_Nm": 0.2731588179596282,
+    "pose": "trunk_bend_twist",
+    "family": "L6",
+    "cable_torque_assumed_Nm": 0.02,
+    "required_hold_with_1p5_margin_Nm": 0.4397382269394423,
+    "grip_distance_assumed_m": 0.06,
+    "breakaway_force_if_sized_to_low_mu_N": 20.15466873472444,
+    "required_preload_at_low_mu_N": 629.9306094739463
+  },
+  "loads": [
+    {
+      "axis_id": "waist.yaw",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 42.97538200339558
+    },
+    {
+      "axis_id": "waist.pitch",
+      "max_gravity_Nm": 0.2731588179596282,
+      "pose": "trunk_bend_twist",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.4397382269394423,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 20.15466873472444,
+      "required_preload_at_low_mu_N": 629.9306094739463
+    },
+    {
+      "axis_id": "waist.roll",
+      "max_gravity_Nm": 0.018022087174540218,
+      "pose": "one_hand_up_back",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.057033130761810324,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 2.6140184932496395,
+      "required_preload_at_low_mu_N": 81.70068604461368
+    },
+    {
+      "axis_id": "chest.yaw",
+      "max_gravity_Nm": 0.002076442228466077,
+      "pose": "trunk_bend_twist",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.033114663342699115,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.5177554032070428,
+      "required_preload_at_low_mu_N": 47.437176902211164
+    },
+    {
+      "axis_id": "chest.pitch",
+      "max_gravity_Nm": 0.12720873944930697,
+      "pose": "trunk_bend_twist",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.22081310917396044,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 10.120600837139854,
+      "required_preload_at_low_mu_N": 316.31759060361475
+    },
+    {
+      "axis_id": "chest.roll",
+      "max_gravity_Nm": 0.039979657892031825,
+      "pose": "trunk_bend_twist",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.08996948683804774,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 4.1236014800771885,
+      "required_preload_at_low_mu_N": 128.88243551715243
+    },
+    {
+      "axis_id": "head.yaw",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "head.pitch",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "head.roll",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "clavicle_l.protract",
+      "max_gravity_Nm": 0.07165346494088992,
+      "pose": "trunk_bend_twist",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.13748019741133488,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.301175714686182,
+      "required_preload_at_low_mu_N": 229.29154698551685
+    },
+    {
+      "axis_id": "clavicle_l.elevate",
+      "max_gravity_Nm": 0.15997797954964593,
+      "pose": "arms_side",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.2699669693244689,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 12.373486094038158,
+      "required_preload_at_low_mu_N": 450.2549836046093
+    },
+    {
+      "axis_id": "upperarm_l.flex",
+      "max_gravity_Nm": 0.07318367021714899,
+      "pose": "arms_forward",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.13977550532572347,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.406377327428992,
+      "required_preload_at_low_mu_N": 233.11969614741838
+    },
+    {
+      "axis_id": "upperarm_l.abduct",
+      "max_gravity_Nm": 0.073183670217149,
+      "pose": "arms_side",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.1397755053257235,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.406377327428993,
+      "required_preload_at_low_mu_N": 233.1196961474184
+    },
+    {
+      "axis_id": "upperarm_l.twist",
+      "max_gravity_Nm": 0.01676508002620291,
+      "pose": "arms_crossed",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.05514762003930436,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 2.52759925180145,
+      "required_preload_at_low_mu_N": 91.97603254488088
+    },
+    {
+      "axis_id": "elbow_l.flex",
+      "max_gravity_Nm": 0.025958274473260122,
+      "pose": "palms_turn",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.06893741170989018,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 3.159631370036633,
+      "required_preload_at_low_mu_N": 114.97485509745839
+    },
+    {
+      "axis_id": "forearm_l.twist",
+      "max_gravity_Nm": 1.8241736307006493e-18,
+      "pose": "arms_side",
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015000000000000003,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3750000000000004,
+      "required_preload_at_low_mu_N": 31.55048076923078
+    },
+    {
+      "axis_id": "hand_l.flex",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "hand_l.deviate",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "thigh_l.flex",
+      "max_gravity_Nm": 0.15155501330016544,
+      "pose": "sitting",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.25733251995024814,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 11.794407164386373,
+      "required_preload_at_low_mu_N": 368.6321115586109
+    },
+    {
+      "axis_id": "thigh_l.abduct",
+      "max_gravity_Nm": 0.22231200025434825,
+      "pose": "hip_abduction",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.3634680003815224,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 16.658950017486443,
+      "required_preload_at_low_mu_N": 520.6725387468751
+    },
+    {
+      "axis_id": "thigh_l.twist",
+      "max_gravity_Nm": 0.00565038774364048,
+      "pose": "hip_abduction",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03847558161546072,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.763464157375283,
+      "required_preload_at_low_mu_N": 55.11676059090828
+    },
+    {
+      "axis_id": "calf_l.flex",
+      "max_gravity_Nm": 0.11110967935416012,
+      "pose": "kneeling",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.1966645190312402,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 9.013790455598508,
+      "required_preload_at_low_mu_N": 281.7244277293869
+    },
+    {
+      "axis_id": "foot_l.dorsiflex",
+      "max_gravity_Nm": 0.0065245057696331895,
+      "pose": "sitting",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.039786758654449784,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.8235597716622818,
+      "required_preload_at_low_mu_N": 66.35695622492642
+    },
+    {
+      "axis_id": "foot_l.invert",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 50.034452518165864
+    },
+    {
+      "axis_id": "ball_l.flex",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "clavicle_r.protract",
+      "max_gravity_Nm": 0.0732368307923141,
+      "pose": "trunk_bend_twist",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.13985524618847117,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.410032116971595,
+      "required_preload_at_low_mu_N": 233.25268916111528
+    },
+    {
+      "axis_id": "clavicle_r.elevate",
+      "max_gravity_Nm": 0.15997733645220416,
+      "pose": "arms_side",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.2699660046783062,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 12.373441881089036,
+      "required_preload_at_low_mu_N": 450.25337475318855
+    },
+    {
+      "axis_id": "upperarm_r.flex",
+      "max_gravity_Nm": 0.07318285452847685,
+      "pose": "arms_forward",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.13977428179271528,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.406321248832784,
+      "required_preload_at_low_mu_N": 233.1176555206116
+    },
+    {
+      "axis_id": "upperarm_r.abduct",
+      "max_gravity_Nm": 0.07318285452847685,
+      "pose": "arms_side",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.13977428179271528,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 6.406321248832784,
+      "required_preload_at_low_mu_N": 233.1176555206116
+    },
+    {
+      "axis_id": "upperarm_r.twist",
+      "max_gravity_Nm": 0.016765041303467156,
+      "pose": "arms_crossed",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.05514756195520073,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 2.527596589613367,
+      "required_preload_at_low_mu_N": 91.97593567133671
+    },
+    {
+      "axis_id": "elbow_r.flex",
+      "max_gravity_Nm": 0.02595821451676713,
+      "pose": "palms_turn",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.06893732177515069,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 3.15962724802774,
+      "required_preload_at_low_mu_N": 114.9747051029433
+    },
+    {
+      "axis_id": "forearm_r.twist",
+      "max_gravity_Nm": 3.903127820947816e-18,
+      "pose": "hands_on_hips",
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015000000000000006,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3750000000000007,
+      "required_preload_at_low_mu_N": 31.550480769230788
+    },
+    {
+      "axis_id": "hand_r.flex",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "hand_r.deviate",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    },
+    {
+      "axis_id": "thigh_r.flex",
+      "max_gravity_Nm": 0.15155486286782616,
+      "pose": "sitting",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.2573322943017392,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 11.794396822163048,
+      "required_preload_at_low_mu_N": 368.6317883142486
+    },
+    {
+      "axis_id": "thigh_r.abduct",
+      "max_gravity_Nm": 0.2223119462452563,
+      "pose": "hip_abduction",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.3634679193678844,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 16.658946304361372,
+      "required_preload_at_low_mu_N": 520.6724226938072
+    },
+    {
+      "axis_id": "thigh_r.twist",
+      "max_gravity_Nm": 0.00565039012214771,
+      "pose": "hip_abduction",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03847558518322157,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.7634643208976553,
+      "required_preload_at_low_mu_N": 55.11676570177113
+    },
+    {
+      "axis_id": "calf_r.flex",
+      "max_gravity_Nm": 0.11110976926587793,
+      "pose": "kneeling",
+      "family": "L6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.19666465389881688,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 9.013796637029108,
+      "required_preload_at_low_mu_N": 281.7246209289078
+    },
+    {
+      "axis_id": "foot_r.dorsiflex",
+      "max_gravity_Nm": 0.006524508516096766,
+      "pose": "neutral",
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03978676277414515,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.8235599604816526,
+      "required_preload_at_low_mu_N": 66.35696309581648
+    },
+    {
+      "axis_id": "foot_r.invert",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "M6",
+      "cable_torque_assumed_Nm": 0.02,
+      "required_hold_with_1p5_margin_Nm": 0.03,
+      "grip_distance_assumed_m": 0.06,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 50.034452518165864
+    },
+    {
+      "axis_id": "ball_r.flex",
+      "max_gravity_Nm": 0,
+      "pose": null,
+      "family": "S4",
+      "cable_torque_assumed_Nm": 0.01,
+      "required_hold_with_1p5_margin_Nm": 0.015,
+      "grip_distance_assumed_m": 0.03,
+      "breakaway_force_if_sized_to_low_mu_N": 1.3749999999999998,
+      "required_preload_at_low_mu_N": 31.550480769230774
+    }
+  ],
+  "target_pose_limit_failures": [],
+  "unresolved": [
+    "Shoulder/hip/wrist concentric axes need noninterfering nested carriers",
+    "N3/N4 may need split controller/fanout or relocation within a rigid torso segment",
+    "N1/N2 rigid-segment volume and 6-branch power distribution not finalized",
+    "Final mating plug STEP, cable bend and maintenance paths",
+    "Final head/foot/cover/fastener geometry and measured total mass"
+  ],
+  "motion_path_check": "NOT_RUN",
+  "magnetic_interference_test": "NOT_RUN",
+  "physical_tested": false,
+  "manufacturing_released": false
+}

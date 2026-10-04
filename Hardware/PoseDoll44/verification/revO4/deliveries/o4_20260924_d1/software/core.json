@@ -1,0 +1,102 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "THREADRIPPER",
+			"instance": "B7707A754A7C7622E61221AAC31DC9E1",
+			"instanceName": "THREADRIPPER-63944",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 4070 SUPER",
+			"cPUModel": "AMD Ryzen 9 5950X 16-Core Processor            ",
+			"rAMInGB": 64,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.23-21.40.01",
+	"succeeded": 4,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.057689901441335678,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "ContinuousDecoder",
+			"fullTestPath": "PoseDoll.Core.ContinuousDecoder",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B7707A754A7C7622E61221AAC31DC9E1"
+			],
+			"duration": 0.007548801600933075,
+			"dateTime": "2026.09.23-21.40.00",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GoldenVectors",
+			"fullTestPath": "PoseDoll.Core.GoldenVectors",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B7707A754A7C7622E61221AAC31DC9E1"
+			],
+			"duration": 0.010293498635292053,
+			"dateTime": "2026.09.23-21.40.00",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Independent C++ 5 fixtures x 54 nodes: canonical max 2.22044604925e-16; Unreal bridge max 5.10702591328e-15",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.23-21.40.00"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "RejectionAndOffsets",
+			"fullTestPath": "PoseDoll.Core.RejectionAndOffsets",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B7707A754A7C7622E61221AAC31DC9E1"
+			],
+			"duration": 0.0082339011132717133,
+			"dateTime": "2026.09.23-21.40.00",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "CrossLanguageFaultMatrix",
+			"fullTestPath": "PoseDoll.Static.CrossLanguageFaultMatrix",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B7707A754A7C7622E61221AAC31DC9E1"
+			],
+			"duration": 0.031613700091838837,
+			"dateTime": "2026.09.23-21.40.00",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

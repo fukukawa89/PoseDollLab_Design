@@ -1,0 +1,1667 @@
+{
+  "geometry": {
+    "spring_ro_mm": 6,
+    "spring_ri_mm": 3.1,
+    "spring_t_mm": 0.5,
+    "spring_hfree_mm": 0.85,
+    "spring_hwork_mm": 0.5875,
+    "spring_stack_top_z_mm": -6.6,
+    "front_lining_z_mm": [
+      -1.4,
+      -0.8
+    ],
+    "rear_lining_z_mm": [
+      -3.5,
+      -2.9
+    ],
+    "lining_ro_mm": 12,
+    "lining_ri_mm": 4.2,
+    "thread_pitch_mm": 0.75,
+    "nominal_guide_gap_mm": 0.04,
+    "wear_pairs_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        0.15,
+        0
+      ],
+      [
+        0,
+        0.15
+      ],
+      [
+        0.3,
+        0
+      ],
+      [
+        0,
+        0.3
+      ],
+      [
+        0.45,
+        0
+      ],
+      [
+        0,
+        0.45
+      ],
+      [
+        0.15,
+        0.15
+      ],
+      [
+        0.3,
+        0.15
+      ],
+      [
+        0.15,
+        0.3
+      ],
+      [
+        0.3,
+        0.3
+      ],
+      [
+        0.45,
+        0.15
+      ],
+      [
+        0.15,
+        0.45
+      ]
+    ],
+    "compression_pairs_mm": [
+      [
+        0,
+        0
+      ],
+      [
+        0.02,
+        0.02
+      ],
+      [
+        0.02,
+        0
+      ],
+      [
+        0,
+        0.02
+      ]
+    ]
+  },
+  "schema": "o6-short-joint-candidate-v1",
+  "parts": [
+    {
+      "part_id": "housing_L",
+      "step_file": "housing_L.step",
+      "step_sha256": "278e0b70c195d03d8a9e09ad533de0c2b60bf657af980e8ea8cf043444096237",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 1091.702244137852,
+      "local_com_mm": [
+        -6.112722124698172,
+        -2.391321867416862e-07,
+        5.5159388022273355
+      ],
+      "mass_g": 2.9475960591722004,
+      "bounds_mm": [
+        -17.0,
+        -17.0,
+        1.5,
+        1.0000000133226763e-07,
+        17.0,
+        21.884999999999998
+      ],
+      "note": " O6 trial: 8.2 mm support span, clamp relocated to z=6.5; bore fit/strength not qualified."
+    },
+    {
+      "part_id": "housing_R",
+      "step_file": "housing_R.step",
+      "step_sha256": "92392b777e9d4e9775feee572a955cea435a30fa1a074a33b55932a3b4aa2070",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 1115.680294895391,
+      "local_com_mm": [
+        6.063748955346177,
+        1.0977712684688651e-11,
+        5.537090176380279
+      ],
+      "mass_g": 3.012336796217556,
+      "bounds_mm": [
+        -1.0000000093685479e-07,
+        -17.0,
+        1.5,
+        17.0,
+        17.0,
+        21.884999999999998
+      ],
+      "note": " O6 trial: 8.2 mm support span, clamp relocated to z=6.5; bore fit/strength not qualified."
+    },
+    {
+      "part_id": "rear_bush_L",
+      "step_file": "rear_bush_L.step",
+      "step_sha256": "5bb16beeb4a537ae25e89b62328ca16cf2b4538d645eb038a756ff71b6feac08",
+      "owner": "parent",
+      "material": "bronze",
+      "volume_mm3": 59.28185337324206,
+      "local_com_mm": [
+        -2.418311967475966,
+        -3.748461746365094e-13,
+        3.5000000000000004
+      ],
+      "mass_g": 0.5216803096845302,
+      "bounds_mm": [
+        -4.49,
+        -4.490000000000002,
+        1.8,
+        2.749332064085808e-16,
+        4.490000000000002,
+        5.2
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "rear_bush_R",
+      "step_file": "rear_bush_R.step",
+      "step_sha256": "6dbe00fb08255962f546c040fdead8db5e1e1311cbaa0cb68464d7b2c177118a",
+      "owner": "parent",
+      "material": "bronze",
+      "volume_mm3": 59.28185337324118,
+      "local_com_mm": [
+        2.418311967476304,
+        3.7503689471303004e-13,
+        3.5000000000000004
+      ],
+      "mass_g": 0.5216803096845224,
+      "bounds_mm": [
+        -8.247996192257424e-16,
+        -4.490000000000002,
+        1.8,
+        4.49,
+        4.490000000000002,
+        5.2
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "front_bush_L",
+      "step_file": "front_bush_L.step",
+      "step_sha256": "7a372e569fd4b4f48dbd11cfd9387c47b4a3e1f519ae00676807abd4f45acb43",
+      "owner": "parent",
+      "material": "bronze",
+      "volume_mm3": 59.281853373242036,
+      "local_com_mm": [
+        -2.418311967475966,
+        -3.7469616313287366e-13,
+        11.699999999999998
+      ],
+      "mass_g": 0.5216803096845299,
+      "bounds_mm": [
+        -4.49,
+        -4.490000000000002,
+        10.0,
+        2.749332064085808e-16,
+        4.490000000000002,
+        13.399999999999999
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "front_bush_R",
+      "step_file": "front_bush_R.step",
+      "step_sha256": "2895d4419a65871691344d5d90576cfcdb0f2f0214dc5a5f999cac2a97799feb",
+      "owner": "parent",
+      "material": "bronze",
+      "volume_mm3": 59.28185337324113,
+      "local_com_mm": [
+        2.418311967476306,
+        3.7491703632545825e-13,
+        11.700000000000003
+      ],
+      "mass_g": 0.521680309684522,
+      "bounds_mm": [
+        -8.247996192257424e-16,
+        -4.490000000000002,
+        10.0,
+        4.49,
+        4.490000000000002,
+        13.399999999999999
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "thrust_rear_L",
+      "step_file": "thrust_rear_L.step",
+      "step_sha256": "59344f74201fedbe72a0b847b73447e9f5a5db06f427ca2c1bcdefc593f06024",
+      "owner": "parent",
+      "material": "POM",
+      "volume_mm3": 8.764902131846501,
+      "local_com_mm": [
+        -2.5308507461140124,
+        -3.927556518070364e-13,
+        7.8
+      ],
+      "mass_g": 0.012358512005903566,
+      "bounds_mm": [
+        -4.8,
+        -4.800000000000001,
+        7.6,
+        2.9391523179536476e-16,
+        4.8,
+        8.0
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "thrust_rear_R",
+      "step_file": "thrust_rear_R.step",
+      "step_sha256": "34be499a0111295e045ebaaa1051953c2d48f1727765ee4c29887d25b056a7cb",
+      "owner": "parent",
+      "material": "POM",
+      "volume_mm3": 8.764902131846384,
+      "local_com_mm": [
+        2.530850746114363,
+        3.9180607017766095e-13,
+        7.799999999999998
+      ],
+      "mass_g": 0.012358512005903401,
+      "bounds_mm": [
+        -8.817456953860942e-16,
+        -4.800000000000001,
+        7.6,
+        4.8,
+        4.8,
+        8.0
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "thrust_front_L",
+      "step_file": "thrust_front_L.step",
+      "step_sha256": "b59a150ede3a367e0f8377fca40b70fd25d13938bd2cc29201794af9e9695022",
+      "owner": "parent",
+      "material": "POM",
+      "volume_mm3": 8.764902131846497,
+      "local_com_mm": [
+        -2.5308507461140137,
+        -3.9275067760931363e-13,
+        9.200000000000005
+      ],
+      "mass_g": 0.012358512005903561,
+      "bounds_mm": [
+        -4.8,
+        -4.800000000000001,
+        9.0,
+        2.9391523179536476e-16,
+        4.8,
+        9.4
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "thrust_front_R",
+      "step_file": "thrust_front_R.step",
+      "step_sha256": "738a93057ea63971b3f16173146b7ff54a3aeb603a54d5225528e52adf17b625",
+      "owner": "parent",
+      "material": "POM",
+      "volume_mm3": 8.764902131846384,
+      "local_com_mm": [
+        2.530850746114363,
+        3.919074037015657e-13,
+        9.199999999999998
+      ],
+      "mass_g": 0.012358512005903401,
+      "bounds_mm": [
+        -8.817456953860942e-16,
+        -4.800000000000001,
+        9.0,
+        4.8,
+        4.8,
+        9.4
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "floating_brake_disc",
+      "step_file": "floating_brake_disc.step",
+      "step_sha256": "86dc9731a072690e4d1c6680ac60a43bea0111d67b8bc3073095471c58347042",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 682.3201917019544,
+      "local_com_mm": [
+        3.857324261133463e-13,
+        3.2568615631125958e-15,
+        -2.126245860068157
+      ],
+      "mass_g": 5.356213504860341,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -4.1,
+        12.0,
+        12.0,
+        0.20000000000000018
+      ],
+      "note": "Axial motion tied to individual front lining wear/compression, checked in lifecycle report."
+    },
+    {
+      "part_id": "front_friction_lining",
+      "step_file": "front_friction_lining.step",
+      "step_sha256": "811f6321edc1990c843ab576fb142a0ee327a4bd60223840733be8897aec2710",
+      "owner": "parent",
+      "material": "lining",
+      "volume_mm3": 238.18298862456896,
+      "local_com_mm": [
+        2.0927007928403112e-13,
+        -9.49115930400356e-16,
+        -1.0999999999999999
+      ],
+      "mass_g": 0.42872937952422413,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -1.4,
+        12.0,
+        12.0,
+        -0.8
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "rear_friction_lining",
+      "step_file": "rear_friction_lining.step",
+      "step_sha256": "7efa5e8696818b49961df0989b8ee2a78e14aed6c9d85ec5f0e2ab874e452744",
+      "owner": "parent",
+      "material": "lining",
+      "volume_mm3": 238.18298862456908,
+      "local_com_mm": [
+        2.084795365754028e-13,
+        -9.033545218328565e-16,
+        -3.1999999999999993
+      ],
+      "mass_g": 0.42872937952422435,
+      "bounds_mm": [
+        -12.0,
+        -12.0,
+        -3.5,
+        12.0,
+        12.0,
+        -2.9
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "spring_front_washer",
+      "step_file": "spring_front_washer.step",
+      "step_sha256": "74bf11c7708ce69d9a0ab9b4a64cf299cd7206c6f477216071b33ae5d833062a",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.529341606335116,
+      "local_com_mm": [
+        1.0725464460810661e-13,
+        -3.5470729884140605e-16,
+        -6.349999999999999
+      ],
+      "mass_g": 0.3260053316097306,
+      "bounds_mm": [
+        -6.03,
+        -6.03,
+        -6.6,
+        6.03,
+        6.03,
+        -6.1
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "disc_spring_1",
+      "step_file": "disc_spring_1.step",
+      "step_sha256": "227a3629cfcf63cd3b30cc29f6a33fe3b953ed2aa84b9806abf696141b91703e",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.453315064092415,
+      "local_com_mm": [
+        -7.285051726630863e-13,
+        -4.214786304681686e-17,
+        -8.660897435897843
+      ],
+      "mass_g": 0.3254085232531254,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -8.95,
+        6.000000000000002,
+        6.0,
+        -8.3625
+      ],
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_2",
+      "step_file": "disc_spring_2.step",
+      "step_sha256": "de1f5f8d5fda2cf530a479948011699f8ac328881f1db6d907f85ba2b9491cc7",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.45331506409294,
+      "local_com_mm": [
+        -6.204967442228967e-13,
+        1.6237571870969083e-16,
+        -8.064102564102164
+      ],
+      "mass_g": 0.3254085232531296,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -8.3625,
+        6.000000000000002,
+        6.0,
+        -7.775
+      ],
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_3",
+      "step_file": "disc_spring_3.step",
+      "step_sha256": "3fcaab20a091a8873fb36849f57eb027bba81d2fa4bc20d555197fdb19d8660c",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.45331506409236,
+      "local_com_mm": [
+        -7.298764361862318e-13,
+        -3.5329031590585686e-17,
+        -7.485897435897841
+      ],
+      "mass_g": 0.32540852325312497,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -7.775,
+        6.000000000000002,
+        6.0,
+        -7.1875
+      ],
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "disc_spring_4",
+      "step_file": "disc_spring_4.step",
+      "step_sha256": "46a1464db897f206b19fe5cc4fe71f5b31b8aece7762d5141ce82d06364ea183",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.45331506409293,
+      "local_com_mm": [
+        -6.216108958354517e-13,
+        1.8954972681605054e-16,
+        -6.889102564102166
+      ],
+      "mass_g": 0.3254085232531295,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        -7.1875,
+        6.000000000000002,
+        6.0,
+        -6.6
+      ],
+      "note": "SCHNORR 002100 geometry at catalog 0.75 h0; force/tolerance curve not qualified."
+    },
+    {
+      "part_id": "spring_rear_washer",
+      "step_file": "spring_rear_washer.step",
+      "step_sha256": "bb1e11951e8e7864a6840425435c0a68e1655951769b301509a0d26536a3febd",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 41.529341606335116,
+      "local_com_mm": [
+        1.0676274892994381e-13,
+        -2.6022344938733373e-16,
+        -9.2
+      ],
+      "mass_g": 0.3260053316097306,
+      "bounds_mm": [
+        -6.03,
+        -6.03,
+        -9.45,
+        6.03,
+        6.03,
+        -8.95
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "threaded_adjuster_cap",
+      "step_file": "threaded_adjuster_cap.step",
+      "step_sha256": "2a395d9989d251b3379e1bdb8b374ba86ca591102940e2c7f929daf0ab79af46",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 1651.7914940115697,
+      "local_com_mm": [
+        -0.0009570297942641965,
+        0.012538036071797494,
+        -11.221086378956612
+      ],
+      "mass_g": 4.4598370338312385,
+      "bounds_mm": [
+        -13.929169866020121,
+        -13.929169862549568,
+        -13.4500001,
+        13.92919305179705,
+        13.929193001458314,
+        -9.449999900000002
+      ],
+      "note": "O6 checked pipe thread replaces invalid inherited ruled-face Boolean; manufacturing tolerance class unqualified."
+    },
+    {
+      "part_id": "cap_lock_dog_screw",
+      "step_file": "cap_lock_dog_screw.step",
+      "step_sha256": "b58a24ed0064d9b835b01e9a25ccc29a2c55513d8b9b306b1f95b92288461e93",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 22.932074424434767,
+      "local_com_mm": [
+        18.39594588729705,
+        7.44395804205696e-17,
+        -10.899999999999986
+      ],
+      "mass_g": 0.18001678423181292,
+      "bounds_mm": [
+        13.41,
+        -1.7,
+        -12.6,
+        20.3,
+        1.7,
+        -9.2
+      ],
+      "note": "Positive slot dog, not friction-only cap lock. Small fastener threads represented by root core plus reference engagement."
+    },
+    {
+      "part_id": "bearing_clamp_-6",
+      "step_file": "bearing_clamp_-6.step",
+      "step_sha256": "fed641f9d676c95ed99b2da1d7e0d7ee44df156cfa572edced77d8127149f3de",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 46.49557127312848,
+      "local_com_mm": [
+        -4.283783783783838,
+        -6.0,
+        6.499999999999995
+      ],
+      "mass_g": 0.36499023449405854,
+      "bounds_mm": [
+        -9.5,
+        -7.8,
+        4.7,
+        5.5,
+        -4.2,
+        8.3
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "bearing_clamp_6",
+      "step_file": "bearing_clamp_6.step",
+      "step_sha256": "7560ec8f39ccc6f6b41592de9becf2b4ca942c5bdbe504c26e1aa697eacd25a1",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 46.49557127312848,
+      "local_com_mm": [
+        -4.283783783783838,
+        6.0,
+        6.499999999999995
+      ],
+      "mass_g": 0.36499023449405854,
+      "bounds_mm": [
+        -9.5,
+        4.2,
+        4.7,
+        5.5,
+        7.8,
+        8.3
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "diametric_magnet",
+      "step_file": "diametric_magnet.step",
+      "step_sha256": "a8239c1769214d5d0e8de14aec450a1ab91bb712c7215688936f83f0650715de",
+      "owner": "child",
+      "material": "magnet",
+      "volume_mm3": 70.68583470577036,
+      "local_com_mm": [
+        1.2565154297139816e-16,
+        -8.530761008264993e-17,
+        18.05
+      ],
+      "mass_g": 0.5301437602932777,
+      "bounds_mm": [
+        -3.0,
+        -3.0,
+        16.8,
+        3.0,
+        3.0,
+        19.3
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "magnet_keeper",
+      "step_file": "magnet_keeper.step",
+      "step_sha256": "3e4f9020c25b65cbc2f76dee0a9d1fabb6eacb601a70b071982d1c02e428862a",
+      "owner": "child",
+      "material": "nylon",
+      "volume_mm3": 37.26164506606632,
+      "local_com_mm": [
+        1.2643946392989156e-13,
+        -1.0789794995148712e-16,
+        19.57500000000001
+      ],
+      "mass_g": 0.04247827537531561,
+      "bounds_mm": [
+        -5.5,
+        -5.5,
+        19.3,
+        5.5,
+        5.5,
+        19.849999999999998
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "keeper_screw_-4.25",
+      "step_file": "keeper_screw_-4.25.step",
+      "step_sha256": "1e34db571b8c0a26e36f8e959464bebacafb21abe0c30eec9305f896a36b7d04",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 3.348309450195984,
+      "local_com_mm": [
+        -4.249999999999999,
+        -2.2008567293253342e-17,
+        19.559560893225758
+      ],
+      "mass_g": 0.02628422918403847,
+      "bounds_mm": [
+        -5.35,
+        -1.1,
+        17.849999999999998,
+        -3.15,
+        1.1,
+        20.349999999999998
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "keeper_screw_4.25",
+      "step_file": "keeper_screw_4.25.step",
+      "step_sha256": "5dbb03a446dc1ee05e3b532a1df5d35917fbd304b9d9c6a02f0c37620998ad1a",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 3.348309450195984,
+      "local_com_mm": [
+        4.250000000000001,
+        -7.76684237788558e-18,
+        19.559560893225754
+      ],
+      "mass_g": 0.02628422918403847,
+      "bounds_mm": [
+        3.15,
+        -1.1,
+        17.849999999999998,
+        5.35,
+        1.1,
+        20.349999999999998
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "sensor_pcba_0",
+      "step_file": "sensor_pcba_0.step",
+      "step_sha256": "e054c9eb457a314ff5ca085e491dc380c0e0c14ed637bd67de5619177b8b73ad",
+      "owner": "parent",
+      "material": "ceramic",
+      "volume_mm3": 2.889933096491489,
+      "local_com_mm": [
+        2.3000000000000007,
+        3.75,
+        21.175
+      ],
+      "mass_g": 0.010114765837720212,
+      "bounds_mm": [
+        1.3,
+        3.125,
+        20.55,
+        3.3,
+        4.375,
+        21.8
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_1",
+      "step_file": "sensor_pcba_1.step",
+      "step_sha256": "d298b1ab3afa1f9c6087c4300ba08e75c8c03fcbb44d74057ecdf91b08b7df62",
+      "owner": "parent",
+      "material": "ceramic",
+      "volume_mm3": 0.9303638934211746,
+      "local_com_mm": [
+        2.299999999999999,
+        -3.6999999999999993,
+        21.399999999999995
+      ],
+      "mass_g": 0.003256273626974111,
+      "bounds_mm": [
+        1.5,
+        -4.1000000000000005,
+        20.999999999999996,
+        3.1,
+        -3.3,
+        21.8
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_2",
+      "step_file": "sensor_pcba_2.step",
+      "step_sha256": "9eb62df008467db4e1230eff82fe26bde8881f4e361c49ac5ab44219c6707cb8",
+      "owner": "parent",
+      "material": "ceramic",
+      "volume_mm3": 0.5372187601976338,
+      "local_com_mm": [
+        -2.3,
+        -3.6999999999999993,
+        21.561430109035435
+      ],
+      "mass_g": 0.0018802656606917185,
+      "bounds_mm": [
+        -3.1,
+        -4.1,
+        21.349999999999998,
+        -1.5,
+        -3.3,
+        21.8
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_3",
+      "step_file": "sensor_pcba_3.step",
+      "step_sha256": "7b29bc8fa30cffca5891ddb7820b7426c9b3292da6bad288f0188a3bb167267d",
+      "owner": "parent",
+      "material": "ceramic",
+      "volume_mm3": 0.5372187601976338,
+      "local_com_mm": [
+        -2.2999999999999994,
+        3.6999999999999993,
+        21.56143010903543
+      ],
+      "mass_g": 0.0018802656606917185,
+      "bounds_mm": [
+        -3.1,
+        3.3,
+        21.349999999999998,
+        -1.5,
+        4.1,
+        21.8
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_4",
+      "step_file": "sensor_pcba_4.step",
+      "step_sha256": "6bb5fdaa1e92150f1f5d419950b6b0229b26f956429937d517d1f299b79dd476",
+      "owner": "parent",
+      "material": "package",
+      "volume_mm3": 19.559259977171337,
+      "local_com_mm": [
+        -5.676201583909399e-17,
+        1.3729312581080858e-16,
+        21.264658231687232
+      ],
+      "mass_g": 0.03325074196119127,
+      "bounds_mm": [
+        -3.2,
+        -2.5000001000000003,
+        20.7999999,
+        3.2,
+        2.5000001000000003,
+        21.8
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_5",
+      "step_file": "sensor_pcba_5.step",
+      "step_sha256": "7d72b752f19ca80fc5f98807f8e95c04fb49b5e0a7485236871ae2ea0525831a",
+      "owner": "parent",
+      "material": "connector",
+      "volume_mm3": 56.436450000000235,
+      "local_com_mm": [
+        -1.7581932036099534e-16,
+        -0.10388363962179348,
+        24.38036922355442
+      ],
+      "mass_g": 0.09029832000000038,
+      "bounds_mm": [
+        -4.000000000000001,
+        -2.475,
+        22.88,
+        4.0,
+        2.475000000000001,
+        25.84
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "sensor_pcba_6",
+      "step_file": "sensor_pcba_6.step",
+      "step_sha256": "6580afe1e1d79034b3421aae97c065c9d667aa3a5dcee1ab2ae188d86d5880dd",
+      "owner": "parent",
+      "material": "FR4",
+      "volume_mm3": 107.38,
+      "local_com_mm": [
+        -1.2923996840952185e-17,
+        8.2713579782094e-18,
+        22.339999999999993
+      ],
+      "mass_g": 0.198653,
+      "bounds_mm": [
+        -6.0,
+        -5.0,
+        21.884999999999998,
+        6.0,
+        5.0,
+        22.794999999999998
+      ],
+      "note": "Unscaled reference STEP; material-class density estimate, not supplier mass or weighing."
+    },
+    {
+      "part_id": "pcb_edge_clamp_-7.7",
+      "step_file": "pcb_edge_clamp_-7.7.step",
+      "step_sha256": "6d5875587a69379c0fc52b2861f33869d5af0cf0e2bd4688e7afa57ead1c31ed",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 4.886139515446962,
+      "local_com_mm": [
+        -7.037411469777927,
+        -1.4208317393367306e-17,
+        23.144999999999996
+      ],
+      "mass_g": 0.013192576691706797,
+      "bounds_mm": [
+        -9.05,
+        -1.25,
+        22.794999999999998,
+        -5.35,
+        1.25,
+        23.495
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "pcb_clamp_screw_-7.7",
+      "step_file": "pcb_clamp_screw_-7.7.step",
+      "step_sha256": "3604d810496fcf280f85435404efc231ab6a43da744576182900a4547ed88b1c",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 11.011910569362927,
+      "local_com_mm": [
+        -7.699999999999997,
+        -2.8716368309915266e-17,
+        23.404106470386868
+      ],
+      "mass_g": 0.08644349796949898,
+      "bounds_mm": [
+        -9.1,
+        -1.4,
+        20.495,
+        -6.3,
+        1.4,
+        24.695
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "pcb_edge_clamp_7.7",
+      "step_file": "pcb_edge_clamp_7.7.step",
+      "step_sha256": "cec48a1f4ae77868901f39048638d8f6150f4a9f798208ea3af993336b6d8a17",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 4.886139515446894,
+      "local_com_mm": [
+        7.037411469777905,
+        -3.7451385446569974e-17,
+        23.145
+      ],
+      "mass_g": 0.013192576691706615,
+      "bounds_mm": [
+        5.35,
+        -1.25,
+        22.794999999999998,
+        9.05,
+        1.25,
+        23.495
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "pcb_clamp_screw_7.7",
+      "step_file": "pcb_clamp_screw_7.7.step",
+      "step_sha256": "94b0d13b94e85aecb7d000a890abb8140e90f40afa24655e7ada4d6cac943443",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 11.011910569362929,
+      "local_com_mm": [
+        7.700000000000005,
+        -3.418655985972911e-17,
+        23.40410647038687
+      ],
+      "mass_g": 0.08644349796949899,
+      "bounds_mm": [
+        6.300000000000001,
+        -1.4,
+        20.495,
+        9.1,
+        1.4,
+        24.695
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "brake_cup_front_loading",
+      "step_file": "brake_cup_front_loading.step",
+      "step_sha256": "4832f677829eef5b762ca2c59513c84c4197effc09ddf7e41ca6ce3bc6401778",
+      "owner": "parent",
+      "material": "al6061",
+      "volume_mm3": 3100.013617246575,
+      "local_com_mm": [
+        0.23251776658308293,
+        0.004208657008364868,
+        -6.602273726446919
+      ],
+      "mass_g": 8.370036766565754,
+      "bounds_mm": [
+        -15.600000099999999,
+        -15.600000099999999,
+        -14.800000100072557,
+        18.7000001,
+        15.600000099999999,
+        0.0
+      ],
+      "note": ""
+    },
+    {
+      "part_id": "integral_steel_front_backing",
+      "step_file": "integral_steel_front_backing.step",
+      "step_sha256": "42e499751f9bf24d9dacdf3bbec862aa18616bb368844d9827fe1064fbe79da8",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 1629.7516116117956,
+      "local_com_mm": [
+        -4.1418311487633174e-16,
+        -6.580727753379434e-16,
+        0.5576949137284523
+      ],
+      "mass_g": 12.793550151152594,
+      "bounds_mm": [
+        -17.0,
+        -17.0,
+        -0.8,
+        17.0,
+        17.0,
+        2.0
+      ],
+      "note": "One part: endplate and fixed backing. Four M2 bolts close the preload path. Lining bond remains unqualified."
+    },
+    {
+      "part_id": "cup_mount_0",
+      "step_file": "cup_mount_0.step",
+      "step_sha256": "befcb67c732de641c11c38d3de9a6b5dd0a33a976d3b044688d55c13f3032eae",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 32.42123618504668,
+      "local_com_mm": [
+        -12.3,
+        -7.099999999999998,
+        2.5116279069767438
+      ],
+      "mass_g": 0.25450670405261644,
+      "bounds_mm": [
+        -14.100000000000001,
+        -8.9,
+        -3.0,
+        -10.5,
+        -5.3,
+        5.0
+      ],
+      "note": "M2 x 6 root-core representation; 3 mm cup engagement, strength and preload pending."
+    },
+    {
+      "part_id": "cup_mount_1",
+      "step_file": "cup_mount_1.step",
+      "step_sha256": "bfc86b779b158f731e7ef5f768dd808c1f8dbdec404080bbb2cd002cb01d56e8",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 32.42123618504667,
+      "local_com_mm": [
+        -12.300000000000002,
+        7.1,
+        2.5116279069767438
+      ],
+      "mass_g": 0.2545067040526164,
+      "bounds_mm": [
+        -14.100000000000001,
+        5.3,
+        -3.0,
+        -10.5,
+        8.9,
+        5.0
+      ],
+      "note": "M2 x 6 root-core representation; 3 mm cup engagement, strength and preload pending."
+    },
+    {
+      "part_id": "cup_mount_2",
+      "step_file": "cup_mount_2.step",
+      "step_sha256": "d9986e8a4f7d5cdabcb038257e6e337ce433a3597ef63575a55bd24bcc560494",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 32.42123618504668,
+      "local_com_mm": [
+        12.3,
+        -7.099999999999998,
+        2.5116279069767438
+      ],
+      "mass_g": 0.25450670405261644,
+      "bounds_mm": [
+        10.5,
+        -8.9,
+        -3.0,
+        14.100000000000001,
+        -5.3,
+        5.0
+      ],
+      "note": "M2 x 6 root-core representation; 3 mm cup engagement, strength and preload pending."
+    },
+    {
+      "part_id": "cup_mount_3",
+      "step_file": "cup_mount_3.step",
+      "step_sha256": "5791137c25a42a915ee086bc81db698632cf07cdb118088ad4a801955f59faa7",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 32.42123618504667,
+      "local_com_mm": [
+        12.300000000000002,
+        7.1,
+        2.5116279069767438
+      ],
+      "mass_g": 0.2545067040526164,
+      "bounds_mm": [
+        10.5,
+        5.3,
+        -3.0,
+        14.100000000000001,
+        8.9,
+        5.0
+      ],
+      "note": "M2 x 6 root-core representation; 3 mm cup engagement, strength and preload pending."
+    },
+    {
+      "part_id": "integral_rear_sliding_carrier",
+      "step_file": "integral_rear_sliding_carrier.step",
+      "step_sha256": "36fa329fefd7c7a61503df9a0297cb2552d0a17a0aaa72b2e5ff7881ec8f2993",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 1132.1780721333957,
+      "local_com_mm": [
+        4.895195795909906e-16,
+        1.0650856728595233e-17,
+        -4.973053581286795
+      ],
+      "mass_g": 8.887597866247155,
+      "bounds_mm": [
+        -14.1,
+        -12.1,
+        -10.7,
+        14.100000000000001,
+        12.1,
+        -3.5
+      ],
+      "note": "Front-loaded sliding carrier; fitted captured guide shims, loaded sliding unqualified."
+    },
+    {
+      "part_id": "guide_shim_-12.9_-1",
+      "step_file": "guide_shim_-12.9_-1.step",
+      "step_sha256": "b05c5c2aee3805d57c4e138d45f1fe5ac00d3e28aef176d15cd6a42627fd6b4d",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 0.6803999999999982,
+      "local_com_mm": [
+        -13.275000000000002,
+        -2.128641975308643,
+        -2.338641975308643
+      ],
+      "mass_g": 0.0053411399999999856,
+      "bounds_mm": [
+        -14.15,
+        -3.06,
+        -5.5,
+        -12.4,
+        -2.0199999999999996,
+        0.0
+      ],
+      "note": "0.06 nominal; select shim after actual measurement for 0.02-0.04 mm total tangential clearance. Captured by front plate and pocket floor; burr/flatness and loaded sliding test required."
+    },
+    {
+      "part_id": "guide_shim_-12.9_1",
+      "step_file": "guide_shim_-12.9_1.step",
+      "step_sha256": "8be617804375be756f9249c6d68476f4f029d49d264c575e909119b8c819bed4",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 0.6803999999999983,
+      "local_com_mm": [
+        -13.274999999999995,
+        2.1286419753086423,
+        -2.338641975308642
+      ],
+      "mass_g": 0.005341139999999986,
+      "bounds_mm": [
+        -14.15,
+        2.02,
+        -5.5,
+        -12.4,
+        3.06,
+        0.0
+      ],
+      "note": "0.06 nominal; select shim after actual measurement for 0.02-0.04 mm total tangential clearance. Captured by front plate and pocket floor; burr/flatness and loaded sliding test required."
+    },
+    {
+      "part_id": "guide_shim_12.9_-1",
+      "step_file": "guide_shim_12.9_-1.step",
+      "step_sha256": "80d0c0ff40b76154299b7cb100749dd076914c2ba93b04f2ab43bba4fc9778d1",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 0.6803999999999982,
+      "local_com_mm": [
+        13.275000000000004,
+        -2.128641975308643,
+        -2.338641975308643
+      ],
+      "mass_g": 0.0053411399999999856,
+      "bounds_mm": [
+        12.4,
+        -3.06,
+        -5.5,
+        14.15,
+        -2.0199999999999996,
+        0.0
+      ],
+      "note": "0.06 nominal; select shim after actual measurement for 0.02-0.04 mm total tangential clearance. Captured by front plate and pocket floor; burr/flatness and loaded sliding test required."
+    },
+    {
+      "part_id": "guide_shim_12.9_1",
+      "step_file": "guide_shim_12.9_1.step",
+      "step_sha256": "a462f9b3c0153880f7f95733864b40a0aebc3b7847067e3ea8784283b8286641",
+      "owner": "parent",
+      "material": "steel",
+      "volume_mm3": 0.6803999999999983,
+      "local_com_mm": [
+        13.275,
+        2.1286419753086423,
+        -2.3386419753086427
+      ],
+      "mass_g": 0.005341139999999986,
+      "bounds_mm": [
+        12.4,
+        2.02,
+        -5.5,
+        14.15,
+        3.06,
+        0.0
+      ],
+      "note": "0.06 nominal; select shim after actual measurement for 0.02-0.04 mm total tangential clearance. Captured by front plate and pocket floor; burr/flatness and loaded sliding test required."
+    },
+    {
+      "part_id": "short_taper_measurement_shaft",
+      "step_file": "short_taper_measurement_shaft.step",
+      "step_sha256": "7977121b1f2e4ba331ef37519cd0af18b24fdeb53bbfd3cc3f1761fc6a9be345",
+      "owner": "child",
+      "material": "al7075",
+      "volume_mm3": 1299.8921149854252,
+      "local_com_mm": [
+        -0.00467766758301788,
+        4.2597041111046335e-15,
+        4.018928893002348
+      ],
+      "mass_g": 3.652696843109045,
+      "bounds_mm": [
+        -5.5,
+        -5.5,
+        -18.000000000001442,
+        5.5,
+        5.5,
+        19.3
+      ],
+      "note": "M2.5 x 0.45 blind tap represented by root bore; 2.86 degree double-D taper, not a resolved production thread."
+    },
+    {
+      "part_id": "taper_output_hub",
+      "step_file": "taper_output_hub.step",
+      "step_sha256": "655569a9ba4b25e5affe3f7667e18202e1595a75e0b99c129c3da3aff21230db",
+      "owner": "child",
+      "material": "al7075",
+      "volume_mm3": 843.5918745611518,
+      "local_com_mm": [
+        -3.3257001019447324e-16,
+        -6.232891049786408e-16,
+        -16.902380565634374
+      ],
+      "mass_g": 2.3704931675168366,
+      "bounds_mm": [
+        -10.0,
+        -10.0,
+        -18.4,
+        10.0,
+        10.0,
+        -15.399999999999999
+      ],
+      "note": "Double-D positive torque path; M2.5 seats taper. Tolerance take-up/contact and preload need qualification."
+    },
+    {
+      "part_id": "output_retention_washer",
+      "step_file": "output_retention_washer.step",
+      "step_sha256": "412dbf5696a381a70593c1c81765a6b75fe83bfc3666dcc285bd734c45c890fd",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 16.379478697653784,
+      "local_com_mm": [
+        3.456848371126335e-16,
+        -2.3906529143662035e-16,
+        -18.65
+      ],
+      "mass_g": 0.1285789077765822,
+      "bounds_mm": [
+        -3.5,
+        -3.5,
+        -18.9,
+        3.5,
+        3.5,
+        -18.4
+      ],
+      "note": "Custom OD7/ID2.7/t0.5 washer"
+    },
+    {
+      "part_id": "output_retention_screw",
+      "step_file": "output_retention_screw.step",
+      "step_sha256": "8cfb303fb39c932d5bb7720b12be09802a1a313d094a63c2ea02b8d74b8734d4",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 54.832292079392204,
+      "local_com_mm": [
+        -1.0693270564564371e-16,
+        -4.269179801037787e-17,
+        -18.610344588208918
+      ],
+      "mass_g": 0.43043349282322874,
+      "bounds_mm": [
+        -2.25,
+        -2.25,
+        -21.4,
+        2.25,
+        2.25,
+        -12.9
+      ],
+      "note": "M2.5 x 6 ISO4762 envelope; 5.1 mm nominal thread engagement and 0.7 mm tip clearance. Root-core model."
+    },
+    {
+      "part_id": "output_yoke_interface",
+      "step_file": "output_yoke_interface.step",
+      "step_sha256": "e5be7fbc4dd89fdbbc38a736bb3d5d5dd7ff259a4966ed36697fa1402986f844",
+      "owner": "child",
+      "material": "al7075",
+      "volume_mm3": 774.716748375243,
+      "local_com_mm": [
+        -3.6743904673661603e-16,
+        -4.860972100353361e-16,
+        -19.899999999999995
+      ],
+      "mass_g": 2.176954062934433,
+      "bounds_mm": [
+        -10.0,
+        -10.0,
+        -21.4,
+        10.0,
+        10.0,
+        -18.4
+      ],
+      "note": "Real annular flange with four M2 interfaces; radial load-bearing links generated separately."
+    },
+    {
+      "part_id": "output_yoke_screw_0",
+      "step_file": "output_yoke_screw_0.step",
+      "step_sha256": "6a61a0f147265267653b13f1dd60842fafb293dd4e546133039cca0bd28f15d9",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 32.42123618504666,
+      "local_com_mm": [
+        6.0,
+        -3.051677114439461e-17,
+        -20.911627906976744
+      ],
+      "mass_g": 0.2545067040526163,
+      "bounds_mm": [
+        4.2,
+        -1.8,
+        -23.4,
+        7.8,
+        1.8,
+        -15.4
+      ],
+      "note": "M2 x 6 envelope, 3 mm hub engagement; preload/strength and detailed threads pending."
+    },
+    {
+      "part_id": "output_yoke_screw_1",
+      "step_file": "output_yoke_screw_1.step",
+      "step_sha256": "2f7a92133799fa8470d494c5ffcb153456ce7c51740eeece73d3ca0195457306",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 32.42123618504666,
+      "local_com_mm": [
+        -6.000000000000001,
+        -3.833311238789477e-17,
+        -20.911627906976744
+      ],
+      "mass_g": 0.2545067040526163,
+      "bounds_mm": [
+        -7.8,
+        -1.8,
+        -23.4,
+        -4.2,
+        1.8,
+        -15.4
+      ],
+      "note": "M2 x 6 envelope, 3 mm hub engagement; preload/strength and detailed threads pending."
+    },
+    {
+      "part_id": "output_yoke_screw_2",
+      "step_file": "output_yoke_screw_2.step",
+      "step_sha256": "ef8bd91b24958ae4d855723f6d8c9e57299855482d910fb6f3037f892c09482c",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 32.42123618504666,
+      "local_com_mm": [
+        2.0546218872503343e-17,
+        6.000000000000001,
+        -20.911627906976747
+      ],
+      "mass_g": 0.2545067040526163,
+      "bounds_mm": [
+        -1.8,
+        4.2,
+        -23.4,
+        1.8,
+        7.8,
+        -15.4
+      ],
+      "note": "M2 x 6 envelope, 3 mm hub engagement; preload/strength and detailed threads pending."
+    },
+    {
+      "part_id": "output_yoke_screw_3",
+      "step_file": "output_yoke_screw_3.step",
+      "step_sha256": "1101634f03f83b572d11149a1cdccead586a185d61850463545b0b205b20bf61",
+      "owner": "child",
+      "material": "steel",
+      "volume_mm3": 32.42123618504666,
+      "local_com_mm": [
+        2.0546218872503343e-17,
+        -6.000000000000001,
+        -20.911627906976747
+      ],
+      "mass_g": 0.2545067040526163,
+      "bounds_mm": [
+        -1.8,
+        -7.8,
+        -23.4,
+        1.8,
+        -4.2,
+        -15.4
+      ],
+      "note": "M2 x 6 envelope, 3 mm hub engagement; preload/strength and detailed threads pending."
+    }
+  ],
+  "section_bounds_mm": [
+    [
+      -10.0,
+      -10.0,
+      -23.4,
+      10.0,
+      10.0,
+      -14.999999999999972
+    ],
+    [
+      -15.600000099999999,
+      -15.600000099999999,
+      -15.000000600000014,
+      20.3,
+      15.600000099999999,
+      0.0
+    ],
+    [
+      -17.0,
+      -17.0,
+      0.0,
+      17.0,
+      17.0,
+      5.0
+    ],
+    [
+      -9.5,
+      -8.0,
+      5.0,
+      9.4,
+      8.0,
+      20.0
+    ],
+    [
+      -9.2,
+      -5.0,
+      20.0,
+      9.2,
+      5.0,
+      25.84
+    ]
+  ],
+  "support_span_mm": 8.2,
+  "part_count": 58,
+  "bounds_mm": [
+    -17.0,
+    -17.0,
+    -23.4,
+    20.3,
+    17.0,
+    25.84
+  ],
+  "modeled_mass_g": 63.66479517599632,
+  "nominal_intersections": [],
+  "rear_insertion": [
+    {
+      "shift_z_mm": 0,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 0.1,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 0.5,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 1,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 2,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 4,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 6,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 10,
+      "cup_intersection_mm3": 0.0
+    },
+    {
+      "shift_z_mm": 15,
+      "cup_intersection_mm3": 0.0
+    }
+  ],
+  "rear_wear_slide": [
+    {
+      "wear_takeup_shift_mm": 0,
+      "guide_intersection_mm3": 0.0
+    },
+    {
+      "wear_takeup_shift_mm": 0.1,
+      "guide_intersection_mm3": 0.0
+    },
+    {
+      "wear_takeup_shift_mm": 0.3,
+      "guide_intersection_mm3": 0.0
+    },
+    {
+      "wear_takeup_shift_mm": 0.6,
+      "guide_intersection_mm3": 0.0
+    },
+    {
+      "wear_takeup_shift_mm": 0.9,
+      "guide_intersection_mm3": 0.0
+    }
+  ],
+  "female_thread_guide_pocket_intersection_mm3": 0.0,
+  "thread_envelope_min_wall_mm": 1.5700000000000003,
+  "guide_pocket_min_radial_wall_mm": 1.2484704647901737,
+  "shim_capture_recess_min_radial_wall_mm": 1.0655581462513677,
+  "front_backing_relative_interface": "REMOVED_BY_ONE_PIECE_STEEL_FRONT",
+  "guide_clearance_nominal_mm": 0.04,
+  "guide_clearance_assembly_acceptance_mm": [
+    0.02,
+    0.04
+  ],
+  "output_rear_extent_mm": 23.4,
+  "O5_output_rear_extent_mm": 34,
+  "output_axial_extent_saved_vs_O5_mm": 10.6,
+  "output_service_sequence": [
+    "Support/remove carried segment",
+    "Remove central M2.5 and hub/yoke",
+    "Remove cap locking dog",
+    "Use hollow pin spanner",
+    "Reassemble with qualified preload and recheck zero"
+  ],
+  "manufacturing_released": false,
+  "physical_tested": false,
+  "open": [
+    "Taper contact/preload/strength",
+    "Front plate bolt strength and preload",
+    "Shim retention/flatness and torque-loaded sliding",
+    "Actual maximum spring force and lining bond",
+    "Production fillets/threads/tolerances/DFM",
+    "Full yokes/harness/assembly"
+  ],
+  "input_sha256": {
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/manifest.json": "cc3ba8c40ead7d123cb2a34ae95235e749ebad9ee6f392f3de21c8fdc6cd082c",
+    "Hardware/PoseDoll44/cad/revO3/compact_joint.py": "dc019285b4b8ada35e4035594d6695ccfa498377f9a12d2eae5b34f06044eed4",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/one_piece_brake_cup.step": "4371a83051809843efba7cd45e1b81c5ff819113a19e0fdd8a440703a8cbc0cd",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/housing_L.step": "7dd0548995524a94f3465b878d658c279ad203040a749c5694947c7e915bc103",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/housing_R.step": "a987f551b6306588c09b05365ca9171e9a9e24bd53e211a679c6e6761c848139",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_0.step": "86da49fec70c14d2f397ce83d626316ca2fccf89044a6e02744e97761f82d4eb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_1.step": "f4800a1bdd3aec2561a5b2d313ddb71b8ceab2453a654ea62cbe1d11347cb279",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_2.step": "96a7a45b373f1dcdcb4068fd9e759c761c8ce05afacbca9cdafa5df2cfa1848e",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cup_mount_3.step": "2fceb2608ebe38e0b11121a4f8aa7faf676257ff100b660242c6545c2ff7d4f3",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_bush_L.step": "979fd47f468d2f9f211a93d3546054b0848175757feecc4e3fd58316573a5a22",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_bush_R.step": "899da28846173dcbf3dfd12500d08f880a4c7f38f5d1df7435f0de814f1047ca",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_bush_L.step": "15309c5044cf8391c41de186b17c87376e8f18c01532b3f4a5c3b13ef593af4b",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_bush_R.step": "c679fc5788fa648527925ab02b8adaeffc35613d1ba2e9814a5715ff8df0f15f",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_rear_L.step": "347327a35a7248603938a8f4311a3a7c11e8f22db119694d99d7a57caf9e1c5d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_rear_R.step": "761340d2a1e17b4e1b75940c77f852cbc2d6c760a0ee79f1e6a51bcfef33de76",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_front_L.step": "57f7d7e40fdb54bb9b2c500fac40c6c35d95e78c69fff15bb50de825f52b91a5",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/thrust_front_R.step": "ade67fb61e42570f730ed85792b8d4b3accb2c04cb415a43db773d743df4195f",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/measurement_shaft.step": "074139a0dcebd64ca9a36dd33bec9c8b7f82c868921bedfd966a9d507ba48790",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/floating_brake_disc.step": "ad12a4c24e286ef3057773e8c5f15733859114293ca0244d98248d43c720e8c6",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_lining_backing.step": "700a8c29bc719791d3cf2973215ba08ba2e159f496fd64447df0753ed7961b08",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_lining_backing.step": "0a91a4617f8b896359a840edc653d6c9b972420cfed88b75e467466a5164f468",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/front_friction_lining.step": "c3e855e04ad86c2de4a1b5a6f8f41d3bd53b2902e481ba143127c693993c6c07",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/rear_friction_lining.step": "0fc9e6e2a4b36a62ef950b70e8e52f9ba2a727a9b6c06350a88514c1826f9342",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keyed_pressure_plate.step": "50c2cc0b26f87b2b13ff20f20625fcc862720437e494cc7c19bba8c913ccbc68",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/spring_front_washer.step": "03c3a962142e085856f7bdab9ab347d57e7d076e682e20e0eeb0dcc2a8bbed90",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_1.step": "9f4bd14f82de238ebf7d04d31106d4fcebb9842de60514a0c968b12108b0ad90",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_2.step": "70119c591779d1f43b5807d0d46130b58c7aec547127b7469f36ca52872923b4",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_3.step": "f6f6db065a024c017cff25500511499eb2c7b5563bb51b2b122a49ad0872f8cb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/disc_spring_4.step": "16ae25433f81bf5fc81412253466ddeb4cdec7e8f1917b1e096dbefd170f5922",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/spring_rear_washer.step": "377a9bfbb5cca8dbfb44a537527e40b1817da557102ef372ed7842cb665161c4",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/threaded_adjuster_cap.step": "05a3447d8de49208faa1b63508e152103cadb440089341c20d195392185ec6fc",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/cap_lock_dog_screw.step": "fa3b6e7f8e86d972608b8df0b48a77722e1ca42288829ca214b0b492a61e83eb",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/bearing_clamp_-6.step": "303f8aee3416cc731da3a2b146acb153fabfb5c7016c814af8979226cdc39601",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/bearing_clamp_6.step": "0d6cdc0292e9e858ad7642c5538da2cdfae4109a3539be9a802ae58d00a53019",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/diametric_magnet.step": "a0ab3c3172528d238aa00341ed8a294646711d4b3cd128d16905a705271a70b1",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/magnet_keeper.step": "47a8399ba2f50a8a528d974b61af0e4bb864d7df8c22ae16678e6880044fe5e5",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keeper_screw_-4.25.step": "03f5a4ded3a46b8795e0c917f3a501b2f41c0f025bbde2a0ebfce08ae206e567",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/keeper_screw_4.25.step": "ff7ec630f3874d038fdf44775566257eabcaa8198ed52bdd9bb7a38bdec861a2",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_0.step": "43d48dd53ef34ac46d9b356646fc49ad23d078b227ea923f1c46be5f185d01f7",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_1.step": "613a2e7996684f2a8cfe13d315bdff4bc684db88ad70271334868e9bfbb0200d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_2.step": "49904138c532653f7f27f1a68cd8209fba2c8f0d054dc8a506ad91123e5b197d",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_3.step": "e6d2580e14292b959a887c732370e00b5e25526ef897687ff8440cd464925afe",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_4.step": "8dc312d11d942105c931d43de7f8f78d1dc0ff996f953d37f99977fe90b41d08",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_5.step": "015e19220d11626eb8f9ae9b3169e29fad7585702572855eea0940d8f80b47ef",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/sensor_pcba_6.step": "edebb01fdfee68e82a876d5afc2792e96c050579a16a6be5a845e524f13bcc30",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_edge_clamp_-7.7.step": "6af1a7eff7c8f0594f8ec895b86c19c245a3f7db699e0282a89650bf44c58679",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_clamp_screw_-7.7.step": "74ad29f1f8f26f9c960fda07ff9429f31fdd560e979eae26f9943f95d71e8177",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_edge_clamp_7.7.step": "6b19af40ae92c0c70618d6c8703b829a5e07a9a67a690a88bd11848a60e0364b",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/pcb_clamp_screw_7.7.step": "83d04884871f111490df5e76e932920c6e4292ff33da77fb5f8c9660f07e600b",
+    "Hardware/PoseDoll44/mechanical_manifest/lifecycle_states_revO3.json": "e36f2a2a6d374abfa34af35c23238597902895a7665b779d070413b7766c7b39",
+    "Hardware/PoseDoll44/cad/revO6/thread_geometry.py": "6e5e3e7732719c8edf5c3a6d2ad4fefb88c7427845e67a3c71a14491df57b527"
+  },
+  "boolean_volume_guards": [
+    {
+      "operation": "thread_tool",
+      "volume_mm3": 101.30593858276096,
+      "pappus_reference_mm3": 101.30609562696817,
+      "relative_difference": -1.5501950424434696e-06,
+      "allowed_relative_difference": 0.02
+    },
+    {
+      "operation": "cut",
+      "label": "L6 female thread",
+      "base_mm3": 3262.3484066103147,
+      "tool_mm3": 101.30593858276141,
+      "intersection_mm3": 85.51743374739945,
+      "result_mm3": 3176.8308155279087,
+      "conservation_error_mm3": -0.00015733500640635611,
+      "tolerance_mm3": 0.03363654345193076,
+      "pass": true
+    },
+    {
+      "operation": "thread_tool",
+      "volume_mm3": 35.41637277990896,
+      "pappus_reference_mm3": 35.41640926967397,
+      "relative_difference": -1.0303067352612771e-06,
+      "allowed_relative_difference": 0.02
+    },
+    {
+      "operation": "fuse",
+      "label": "L6 male thread",
+      "base_mm3": 2334.5413769867428,
+      "tool_mm3": 35.41637277990964,
+      "intersection_mm3": 5.243229045030984,
+      "result_mm3": 2364.7141741613527,
+      "conservation_error_mm3": -0.00034656026855373057,
+      "tolerance_mm3": 0.023699577497666525,
+      "pass": true
+    }
+  ],
+  "generator_sha256": "a9a8f84d945fc3765fd263ffc3042a6f4f2f219c0199d8b5ea6e47a0b78a57f1"
+}

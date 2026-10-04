@@ -1,0 +1,280 @@
+{
+  "schema": "posedoll-cn-sourcing-v1",
+  "date": "2026-09-24",
+  "scope": "Bounded primary-source comparison, not exhaustive global optimum or supplier audit",
+  "records": [
+    {
+      "id": "MT6701QT",
+      "supplier": "麦歌恩 MagnTek",
+      "part": "MT6701QT-STD",
+      "category": "magnetic_encoder",
+      "decision": "INDEPENDENT_DIGITAL_TRIAL",
+      "benefit": "3x3 mm package and 3-signal SSI allow five conductors per sensor; no MOSI commands",
+      "tradeoff": "Different interface, diagnostics, orientation and calibration; not pin/software compatible",
+      "facts": {
+        "resolution_bits": 14,
+        "package_nominal_mm": [
+          3,
+          3,
+          0.75
+        ],
+        "package_max_mm": [
+          3.1,
+          3.1,
+          0.8
+        ],
+        "supply_V": [
+          3,
+          5.5
+        ],
+        "supply_typ_mA": 10,
+        "supply_max_mA": 14,
+        "INL_typ_deg": 1,
+        "INL_max_deg": 1.5,
+        "SSI_bits": 24,
+        "CRC_bits": 6,
+        "air_gap_mm": [
+          0.5,
+          2
+        ],
+        "offaxis_max_mm": 0.3
+      },
+      "sources": [
+        "https://www.magntek.com.cn/upload/pdf/202407/MT6701_Rev.1.8.pdf",
+        "https://item.szlcsc.com/3200522.html"
+      ],
+      "open": [
+        "CRC init/xor and clock-mode ambiguity need manufacturer vector/waveform",
+        "EP electrical connection not specified in reviewed pin list",
+        "Power-off DO isolation and first-bit alignment",
+        "SSI repeatability/full angle calibration in actual magnet/metal",
+        "LCSC C2913974 currently labels brand NOVOSENSE: confirm exact manufacturer ordering identity"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "CJT_A1002",
+      "supplier": "长江连接器 CJT",
+      "part": "A1002WR-S-5P-LCP + A1002H-5P-2 + A1002-TP",
+      "category": "sensor_connector",
+      "decision": "INDEPENDENT_DIGITAL_TRIAL",
+      "benefit": "Domestic matching connector/terminal/harness route; published crimp process",
+      "tradeoff": "New PCB footprint and full mating pair; no mixed-brand compatibility assumed; not proven smaller or cheaper",
+      "facts": {
+        "pitch_mm": 1,
+        "AWG": [
+          28,
+          30,
+          32
+        ],
+        "insulation_OD_max_mm": 0.8,
+        "initial_contact_max_mohm": 20,
+        "after_environment_contact_max_mohm": 40,
+        "crimp_max_mohm": 10,
+        "strip_mm_ref": [
+          1.2,
+          1.7
+        ],
+        "crimp_height_28AWG_mm": [
+          0.46,
+          0.54
+        ],
+        "pull_28AWG_min_N": 9.80665
+      },
+      "sources": [
+        "https://cjt.com/upload/A1002.pdf",
+        "https://cjt.com/up/A1002WR-S-XP-LCP_dwg.pdf",
+        "https://cjt.com/up/A1002H-XP-2_dwg.pdf",
+        "https://cjt.com/ps/A1002-B_PS.pdf"
+      ],
+      "open": [
+        "Wire-specific applicator and approval",
+        "Exact drawing revision/mated envelope and disengagement path",
+        "Crimp aging and bend/torsion life",
+        "Full node-side five-pin board and power-off behavior"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "CJT_A1002_H",
+      "supplier": "长江连接器 CJT",
+      "part": "A1002-TP-H",
+      "category": "power_terminal_option",
+      "decision": "HOLD_NO_MATCHED_26AWG_WIRE",
+      "benefit": "Catalog allows 26-32 AWG at max OD .8 mm",
+      "tradeoff": "Do not reuse A1002-T 28AWG crimp table for 26AWG -H variant; no qualified wire below .8 mm found in bounded search",
+      "sources": [
+        "https://cjt.com/en/pd5716.html",
+        "https://cjt.com/up/A1002-T-H_dwg.pdf"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "CJT_A1001",
+      "supplier": "长江连接器 CJT",
+      "part": "A1001-T",
+      "category": "connector",
+      "decision": "REJECT_OD",
+      "facts": {
+        "insulation_OD_max_mm": 0.5
+      },
+      "tradeoff": "Current Alpha 2842/19 OD .635-.7366 mm exceeds limit",
+      "sources": [
+        "https://cjt.com/upload/A1001.pdf"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "SHENYUAN_1332",
+      "supplier": "上海申远特种线缆",
+      "part": "UL1332 28AWG 7/0.12",
+      "category": "wire",
+      "decision": "REJECT_OD",
+      "facts": {
+        "OD_nominal_mm": 1.02,
+        "DCR_max_ohm_per_m": 0.239
+      },
+      "tradeoff": "OD exceeds .8 mm terminal limit",
+      "sources": [
+        "https://www.shenyuan.com.cn/p_display_185.html"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "JUNHAO_1332",
+      "supplier": "骏豪电线",
+      "part": "UL1332 28AWG 7/0.12",
+      "category": "wire",
+      "decision": "REJECT_OD",
+      "facts": {
+        "OD_nominal_mm": 0.9,
+        "OD_tolerance_mm": 0.1,
+        "DCR_max_ohm_per_m": 0.227
+      },
+      "tradeoff": "Even nominal OD exceeds .8 mm; no flex proof",
+      "sources": [
+        "https://www.junhaodx.com/tfldx/ultflx/66.html"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "SORM_1571",
+      "supplier": "赛摩（东莞）电子科技",
+      "part": "UL1571 28AWG 7/0.127",
+      "category": "wire",
+      "decision": "HOLD_TOLERANCE_AND_FLEX",
+      "facts": {
+        "OD_nominal_mm": 0.8,
+        "DCR_max_ohm_per_m": 0.239
+      },
+      "tradeoff": "Nominal OD exactly at limit, upper tolerance unknown; higher catalog DCR than baseline nominal; not qualified for moving joints",
+      "sources": [
+        "https://www.sorm.com.cn/pd.jsp?id=23"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "RALEIGH_B12_5",
+      "supplier": "锐尔立弹性技术（宿迁）",
+      "part": "B series 12.5x6.2x0.5 H0=.85 (catalog row; ordering code unconfirmed)",
+      "category": "disc_spring",
+      "decision": "REJECT_DIRECT_SWAP_KEEP_RFQ_CANDIDATE",
+      "facts": {
+        "OD_mm": 12.5,
+        "ID_mm": 6.2,
+        "thickness_mm": 0.5,
+        "free_height_mm": 0.85,
+        "catalog_height_mm": 0.59,
+        "catalog_force_N": 294
+      },
+      "tradeoff": "Existing nominal spring OD is 12.0 mm and guide bore 12.16 mm; new OD interferes. Catalog force point differs from 326N reference",
+      "sources": [
+        "https://www.raleigh-spring.cn/discspring/"
+      ],
+      "open": [
+        "Exact 12.0x6.2 option or engineered guide redesign",
+        "Lot force curve, tolerance, material, relaxation, lifetime; no quote received"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "JLC_CNC",
+      "supplier": "嘉立创 CNC",
+      "part": "Custom machined carriers/cups/shaft",
+      "category": "manufacturing_service",
+      "decision": "DOMESTIC_RFQ_ROUTE_NOT_QUALIFIED",
+      "benefit": "Domestic custom manufacturing route",
+      "tradeoff": "No actual quote/DFM/sample; generic platform claims cannot certify current micrometre fit, interrupted internal thread or thin wall",
+      "sources": [
+        "https://www.jlc-cnc.com/companyProfile"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "LCSC",
+      "supplier": "立创商城",
+      "part": "Distribution channel including MT6701QT-STD C2913974",
+      "category": "distributor",
+      "decision": "DOMESTIC_PROCUREMENT_ROUTE",
+      "tradeoff": "Chinese purchase channel does not establish Chinese origin of every listed part; price/stock/leadtime not captured as verified quote",
+      "sources": [
+        "https://item.szlcsc.com/3200522.html",
+        "https://www.szlcsc.com/about.html"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    },
+    {
+      "id": "ESPRESSIF",
+      "supplier": "乐鑫 Espressif",
+      "part": "ESP32-S3-WROOM-1-N8",
+      "category": "controller",
+      "decision": "RETAIN_EXISTING_DOMESTIC",
+      "benefit": "Existing design already uses this Chinese supplier; preserve wireless architecture",
+      "sources": [
+        "https://www.espressif.com/zh-hans/products/modules"
+      ],
+      "price_verified": false,
+      "stock_verified": false,
+      "quote_received": false,
+      "physical_qualified": false
+    }
+  ],
+  "not_replaced": [
+    "AS5048A baseline",
+    "Alpha 2842/19 baseline wire",
+    "SCHNORR spring reference",
+    "TI power/protection/CAN/RS485",
+    "ST C satellite MCU"
+  ],
+  "not_replaced_reason": "No demonstrated system-level advantage sufficient for production replacement; domestic candidates can be used in independent trials."
+}

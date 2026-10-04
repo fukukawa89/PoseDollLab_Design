@@ -1,0 +1,2353 @@
+[
+  {
+    "ref": "J1",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x07",
+    "value": "XIAO_LEFT D0-D6",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical",
+    "nets": {
+      "1": "EN_MCU",
+      "2": "A0_MCU",
+      "3": null,
+      "4": "A1_MCU",
+      "5": "A2_MCU",
+      "6": "A3_MCU",
+      "7": "CS_MCU"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      54.61
+    ]
+  },
+  {
+    "ref": "J2",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x07",
+    "value": "XIAO_RIGHT D7-D10,3V3,GND,5V NC",
+    "fp": "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical",
+    "nets": {
+      "1": "DO_C_MCU",
+      "2": "CLK_MCU",
+      "3": "DO_A_MCU",
+      "4": "DO_B_MCU",
+      "5": "MCU_3V3",
+      "6": "GND",
+      "7": null
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      54.61
+    ]
+  },
+  {
+    "ref": "U1",
+    "lib": "PoseDoll",
+    "sym": "LVC244",
+    "value": "SN74LVC244APWR",
+    "fp": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "nets": {
+      "1": "ENABLE_N",
+      "19": "ENABLE_N",
+      "10": "GND",
+      "20": "SENSOR_3V3",
+      "2": "CLK_MCU",
+      "18": "CLK_A_DRV",
+      "4": "CLK_MCU",
+      "16": "CLK_B_DRV",
+      "6": "CLK_MCU",
+      "14": "CLK_C_DRV",
+      "8": "CS_MCU",
+      "12": "CS_A_DRV",
+      "11": "CS_MCU",
+      "9": "CS_B_DRV",
+      "13": "CS_MCU",
+      "7": "CS_C_DRV",
+      "15": "A0_MCU",
+      "5": "A0",
+      "17": "A1_MCU",
+      "3": "A1"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      54.61
+    ]
+  },
+  {
+    "ref": "C1",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "SENSOR_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      54.61
+    ]
+  },
+  {
+    "ref": "U2",
+    "lib": "PoseDoll",
+    "sym": "LVC244",
+    "value": "SN74LVC244APWR",
+    "fp": "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm",
+    "nets": {
+      "1": "ENABLE_N",
+      "19": "ENABLE_N",
+      "10": "GND",
+      "20": "SENSOR_3V3",
+      "2": "A2_MCU",
+      "18": "A2",
+      "4": "A3_MCU",
+      "16": "A3",
+      "6": "GND",
+      "14": null,
+      "8": "GND",
+      "12": null,
+      "11": "GND",
+      "9": null,
+      "13": "GND",
+      "7": null,
+      "15": "GND",
+      "5": null,
+      "17": "GND",
+      "3": null
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      54.61
+    ]
+  },
+  {
+    "ref": "C2",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "SENSOR_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      54.61
+    ]
+  },
+  {
+    "ref": "Q1",
+    "lib": "Transistor_FET",
+    "sym": "2N7002",
+    "value": "2N7002",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "EN_MCU",
+      "2": "GND",
+      "3": "ENABLE_N"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      54.61
+    ]
+  },
+  {
+    "ref": "R1",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "EN_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      54.61
+    ]
+  },
+  {
+    "ref": "R2",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "ENABLE_N",
+      "2": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      54.61
+    ]
+  },
+  {
+    "ref": "R10",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "A0_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      54.61
+    ]
+  },
+  {
+    "ref": "R11",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "A1_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      54.61
+    ]
+  },
+  {
+    "ref": "R12",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "A2_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      54.61
+    ]
+  },
+  {
+    "ref": "R13",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "A3_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      130.81
+    ]
+  },
+  {
+    "ref": "R14",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CLK_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      130.81
+    ]
+  },
+  {
+    "ref": "R15",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CS_MCU",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      130.81
+    ]
+  },
+  {
+    "ref": "R30",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CLK_A_DRV",
+      "2": "CLK_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      130.81
+    ]
+  },
+  {
+    "ref": "R31",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CS_A_DRV",
+      "2": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      130.81
+    ]
+  },
+  {
+    "ref": "R40",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DO_A",
+      "2": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      130.81
+    ]
+  },
+  {
+    "ref": "U3",
+    "lib": "PoseDoll",
+    "sym": "MUX4067",
+    "value": "CD74HC4067PW",
+    "fp": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+    "nets": {
+      "1": "DO_A",
+      "10": "A0",
+      "11": "A1",
+      "13": "A3",
+      "14": "A2",
+      "15": "ENABLE_N",
+      "12": "GND",
+      "24": "SENSOR_3V3",
+      "9": "A01_DO",
+      "8": "A02_DO",
+      "7": "A03_DO",
+      "6": "A04_DO",
+      "5": "A05_DO",
+      "4": "A06_DO",
+      "3": "A07_DO",
+      "2": "A08_DO",
+      "23": "A09_DO",
+      "22": "A10_DO",
+      "21": "A11_DO",
+      "20": "A12_DO",
+      "19": "A13_DO",
+      "18": "A14_DO",
+      "17": "GND",
+      "16": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      130.81
+    ]
+  },
+  {
+    "ref": "C3",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "SENSOR_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      130.81
+    ]
+  },
+  {
+    "ref": "J10",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A01 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A01_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      130.81
+    ]
+  },
+  {
+    "ref": "J11",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A02 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A02_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      130.81
+    ]
+  },
+  {
+    "ref": "J12",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A03 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A03_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      130.81
+    ]
+  },
+  {
+    "ref": "J13",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A04 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A04_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      130.81
+    ]
+  },
+  {
+    "ref": "J14",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A05 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A05_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      207.01
+    ]
+  },
+  {
+    "ref": "J15",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A06 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A06_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      207.01
+    ]
+  },
+  {
+    "ref": "J16",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A07 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A07_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      207.01
+    ]
+  },
+  {
+    "ref": "J17",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A08 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A08_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      207.01
+    ]
+  },
+  {
+    "ref": "J18",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A09 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A09_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      207.01
+    ]
+  },
+  {
+    "ref": "J19",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A10 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A10_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      207.01
+    ]
+  },
+  {
+    "ref": "J20",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A11 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A11_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      207.01
+    ]
+  },
+  {
+    "ref": "J21",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A12 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A12_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      207.01
+    ]
+  },
+  {
+    "ref": "J22",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A13 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A13_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      207.01
+    ]
+  },
+  {
+    "ref": "J23",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A14 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_A",
+      "4": "A14_DO",
+      "5": "CS_A"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      207.01
+    ]
+  },
+  {
+    "ref": "R32",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CLK_B_DRV",
+      "2": "CLK_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      207.01
+    ]
+  },
+  {
+    "ref": "R33",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CS_B_DRV",
+      "2": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      207.01
+    ]
+  },
+  {
+    "ref": "R41",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DO_B",
+      "2": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      283.21
+    ]
+  },
+  {
+    "ref": "U4",
+    "lib": "PoseDoll",
+    "sym": "MUX4067",
+    "value": "CD74HC4067PW",
+    "fp": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+    "nets": {
+      "1": "DO_B",
+      "10": "A0",
+      "11": "A1",
+      "13": "A3",
+      "14": "A2",
+      "15": "ENABLE_N",
+      "12": "GND",
+      "24": "SENSOR_3V3",
+      "9": "B01_DO",
+      "8": "B02_DO",
+      "7": "B03_DO",
+      "6": "B04_DO",
+      "5": "B05_DO",
+      "4": "B06_DO",
+      "3": "B07_DO",
+      "2": "B08_DO",
+      "23": "B09_DO",
+      "22": "B10_DO",
+      "21": "B11_DO",
+      "20": "B12_DO",
+      "19": "B13_DO",
+      "18": "B14_DO",
+      "17": "B15_DO",
+      "16": "B16_DO"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      283.21
+    ]
+  },
+  {
+    "ref": "C4",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "SENSOR_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      283.21
+    ]
+  },
+  {
+    "ref": "J26",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B01 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B01_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      283.21
+    ]
+  },
+  {
+    "ref": "J27",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B02 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B02_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      283.21
+    ]
+  },
+  {
+    "ref": "J28",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B03 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B03_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      283.21
+    ]
+  },
+  {
+    "ref": "J29",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B04 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B04_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      283.21
+    ]
+  },
+  {
+    "ref": "J30",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B05 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B05_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      283.21
+    ]
+  },
+  {
+    "ref": "J31",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B06 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B06_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      283.21
+    ]
+  },
+  {
+    "ref": "J32",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B07 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B07_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      283.21
+    ]
+  },
+  {
+    "ref": "J33",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B08 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B08_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      283.21
+    ]
+  },
+  {
+    "ref": "J34",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B09 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B09_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      283.21
+    ]
+  },
+  {
+    "ref": "J35",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B10 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B10_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      359.41
+    ]
+  },
+  {
+    "ref": "J36",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B11 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B11_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      359.41
+    ]
+  },
+  {
+    "ref": "J37",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B12 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B12_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      359.41
+    ]
+  },
+  {
+    "ref": "J38",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B13 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B13_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      359.41
+    ]
+  },
+  {
+    "ref": "J39",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B14 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B14_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      359.41
+    ]
+  },
+  {
+    "ref": "J40",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B15 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B15_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      359.41
+    ]
+  },
+  {
+    "ref": "J41",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "B16 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_B",
+      "4": "B16_DO",
+      "5": "CS_B"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      359.41
+    ]
+  },
+  {
+    "ref": "R34",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CLK_C_DRV",
+      "2": "CLK_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      359.41
+    ]
+  },
+  {
+    "ref": "R35",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CS_C_DRV",
+      "2": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      359.41
+    ]
+  },
+  {
+    "ref": "R42",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DO_C",
+      "2": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      359.41
+    ]
+  },
+  {
+    "ref": "U5",
+    "lib": "PoseDoll",
+    "sym": "MUX4067",
+    "value": "CD74HC4067PW",
+    "fp": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+    "nets": {
+      "1": "DO_C",
+      "10": "A0",
+      "11": "A1",
+      "13": "A3",
+      "14": "A2",
+      "15": "ENABLE_N",
+      "12": "GND",
+      "24": "SENSOR_3V3",
+      "9": "C01_DO",
+      "8": "C02_DO",
+      "7": "C03_DO",
+      "6": "C04_DO",
+      "5": "C05_DO",
+      "4": "C06_DO",
+      "3": "C07_DO",
+      "2": "C08_DO",
+      "23": "C09_DO",
+      "22": "C10_DO",
+      "21": "C11_DO",
+      "20": "C12_DO",
+      "19": "C13_DO",
+      "18": "C14_DO",
+      "17": "C15_DO",
+      "16": "C16_DO"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      359.41
+    ]
+  },
+  {
+    "ref": "C5",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "SENSOR_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      359.41
+    ]
+  },
+  {
+    "ref": "J42",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C01 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C01_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      435.61
+    ]
+  },
+  {
+    "ref": "J43",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C02 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C02_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      435.61
+    ]
+  },
+  {
+    "ref": "J44",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C03 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C03_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      435.61
+    ]
+  },
+  {
+    "ref": "J45",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C04 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C04_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      435.61
+    ]
+  },
+  {
+    "ref": "J46",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C05 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C05_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      435.61
+    ]
+  },
+  {
+    "ref": "J47",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C06 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C06_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      435.61
+    ]
+  },
+  {
+    "ref": "J48",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C07 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C07_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      435.61
+    ]
+  },
+  {
+    "ref": "J49",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C08 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C08_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      435.61
+    ]
+  },
+  {
+    "ref": "J50",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C09 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C09_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      435.61
+    ]
+  },
+  {
+    "ref": "J51",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C10 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C10_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      435.61
+    ]
+  },
+  {
+    "ref": "J52",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C11 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C11_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      435.61
+    ]
+  },
+  {
+    "ref": "J53",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C12 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C12_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      435.61
+    ]
+  },
+  {
+    "ref": "J54",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C13 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C13_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      510.54
+    ]
+  },
+  {
+    "ref": "J55",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C14 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C14_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      510.54
+    ]
+  },
+  {
+    "ref": "J56",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C15 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C15_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      510.54
+    ]
+  },
+  {
+    "ref": "J57",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "C16 matched SH 5P keyed",
+    "fp": "Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "SENSOR_3V3",
+      "3": "CLK_C",
+      "4": "C16_DO",
+      "5": "CS_C"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      510.54
+    ]
+  },
+  {
+    "ref": "U6",
+    "lib": "PoseDoll",
+    "sym": "LVC125",
+    "value": "SN74LVC125APWR",
+    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "nets": {
+      "1": "GND",
+      "2": "DO_A",
+      "3": "DO_A_MCU",
+      "4": "GND",
+      "5": "DO_B",
+      "6": "DO_B_MCU",
+      "7": "GND",
+      "8": "DO_C_MCU",
+      "9": "DO_C",
+      "10": "GND",
+      "11": null,
+      "12": "GND",
+      "13": "MCU_3V3",
+      "14": "MCU_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      510.54
+    ]
+  },
+  {
+    "ref": "C6",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "MCU_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      510.54
+    ]
+  },
+  {
+    "ref": "J3",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "EXTERNAL REGULATED 5V ONLY; NO USB VBUS TIE",
+    "fp": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical",
+    "nets": {
+      "1": "EXT5V",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      510.54
+    ]
+  },
+  {
+    "ref": "F4",
+    "lib": "Device",
+    "sym": "Polyfuse",
+    "value": "1.1A input; MPN qualification pending",
+    "fp": "Fuse:Fuse_1812_4532Metric",
+    "nets": {
+      "1": "EXT5V",
+      "2": "FUSED5V"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      510.54
+    ]
+  },
+  {
+    "ref": "D1",
+    "lib": "Device",
+    "sym": "D_Schottky",
+    "value": "SS14 input reverse protection",
+    "fp": "Diode_SMD:D_SMA",
+    "nets": {
+      "1": "VIN",
+      "2": "FUSED5V"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      510.54
+    ]
+  },
+  {
+    "ref": "U7",
+    "lib": "PoseDoll",
+    "sym": "AP3429A",
+    "value": "AP3429AW5-7",
+    "fp": "Package_TO_SOT_SMD:TSOT-23-5",
+    "nets": {
+      "1": "VIN",
+      "2": "GND",
+      "3": "LX",
+      "4": "VIN",
+      "5": "FB"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      510.54
+    ]
+  },
+  {
+    "ref": "L1",
+    "lib": "Device",
+    "sym": "L",
+    "value": "2.2uH Isat >=3.5A DCR <=100mOhm",
+    "fp": "Inductor_SMD:L_Taiyo-Yuden_NR-40xx",
+    "nets": {
+      "1": "LX",
+      "2": "REG_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      510.54
+    ]
+  },
+  {
+    "ref": "C7",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22u 10V X7R effective >=10u",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VIN",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      510.54
+    ]
+  },
+  {
+    "ref": "C8",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22u 10V X7R effective >=10u",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "REG_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      586.74
+    ]
+  },
+  {
+    "ref": "C9",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22u 10V X7R effective >=10u",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "REG_3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      586.74
+    ]
+  },
+  {
+    "ref": "R50",
+    "lib": "Device",
+    "sym": "R",
+    "value": "300k 1%",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "REG_3V3",
+      "2": "FB"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      586.74
+    ]
+  },
+  {
+    "ref": "R51",
+    "lib": "Device",
+    "sym": "R",
+    "value": "66.5k 1%",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "FB",
+      "2": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      586.74
+    ]
+  },
+  {
+    "ref": "C10",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22p C0G starting value",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "REG_3V3",
+      "2": "FB"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      586.74
+    ]
+  },
+  {
+    "ref": "F5",
+    "lib": "Device",
+    "sym": "Fuse",
+    "value": "1A fast Rmax<=0.15 ohm; exact MPN pending",
+    "fp": "Fuse:Fuse_1206_3216Metric",
+    "nets": {
+      "1": "REG_3V3",
+      "2": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      586.74
+    ]
+  },
+  {
+    "ref": "#FLG1",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      586.74
+    ]
+  },
+  {
+    "ref": "#FLG2",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "MCU_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      586.74
+    ]
+  },
+  {
+    "ref": "#FLG3",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "EXT5V"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      586.74
+    ]
+  },
+  {
+    "ref": "#FLG4",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "VIN"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      586.74
+    ]
+  },
+  {
+    "ref": "#FLG5",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "SENSOR_3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      586.74
+    ]
+  }
+]

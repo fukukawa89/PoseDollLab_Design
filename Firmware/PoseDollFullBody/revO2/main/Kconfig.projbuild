@@ -1,0 +1,9 @@
+menu "PoseDoll Rev O"
+config PD_EXTERNAL_GATEWAY
+    bool "External G0 gateway (no sensors)"
+    default y
+config PD_NODE_ID
+    int "Remote measurement node N1..N6 (ignored on G0)"
+    range 1 6
+    default 1
+endmenu

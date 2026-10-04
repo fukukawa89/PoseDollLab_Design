@@ -1,0 +1,1 @@
+window.O11_RESULTS={"targets": 204, "targetFailures": 0, "bodyTargets": 102, "bodyFailures": 1, "clearance": 0.6, "continuousCells": 80, "singleSiteTargetNm": 0.19609271997229633, "moduleSolidMassG": 50.68469834333849, "physicalTested": false, "manufacturingReleased": false};

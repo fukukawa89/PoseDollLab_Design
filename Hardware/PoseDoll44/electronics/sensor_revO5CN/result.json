@@ -1,0 +1,589 @@
+{
+  "schema": "cn1-sensor-pcb-v1",
+  "board_mm": [
+    12,
+    10,
+    1
+  ],
+  "baseline_board_area_reduction_percent": 0,
+  "signal_pins": 5,
+  "routing_complete": true,
+  "attempts": [
+    {
+      "order": "DO_IC,DO,CLK,CS_N,+3V3,GND",
+      "routed": true,
+      "connections": [
+        {
+          "net": 6,
+          "steps": 186
+        },
+        {
+          "net": 17,
+          "steps": 52
+        },
+        {
+          "net": 7,
+          "steps": 113
+        },
+        {
+          "net": 8,
+          "steps": 114
+        },
+        {
+          "net": 8,
+          "steps": 201
+        },
+        {
+          "net": 13,
+          "steps": 11
+        },
+        {
+          "net": 13,
+          "steps": 71
+        },
+        {
+          "net": 13,
+          "steps": 60
+        },
+        {
+          "net": 13,
+          "steps": 135
+        },
+        {
+          "net": 13,
+          "steps": 134
+        },
+        {
+          "net": 15,
+          "steps": 151
+        },
+        {
+          "net": 15,
+          "steps": 62
+        },
+        {
+          "net": 15,
+          "steps": 145
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "erc": {
+      "exit": 0,
+      "violations": 0,
+      "unconnected": 0,
+      "by_type": {},
+      "pass": true
+    },
+    "drc": {
+      "exit": 0,
+      "violations": 0,
+      "unconnected": 0,
+      "by_type": {},
+      "pass": true
+    }
+  },
+  "input_sha256": {
+    "scripts\\build_revo5cn_sensor.py": "0ebc4e8f79dd4f05653749fedab7b29ec68fd0c00df7517624cc2f7fe89666f2",
+    "Hardware\\PoseDoll44\\mechanical_manifest\\requirements_revO5CN.json": "9fed0857ed103518da6cfca5ce07f1272b68bd5e546bb685d10d45af3f9324a2",
+    "Hardware\\PoseDoll44\\references\\revO5CN\\downloaded_sources.json": "27748c6eb89ca36b8c63e2bdc72fdff91511592f1600dbd6c937248993740288",
+    "Hardware\\PoseDoll44\\tools\\build_regional_revM.py": "b06334e5418ff934640167678a4ee108bf56e80e072ab4d29b62b0083db6e018",
+    "Hardware\\PoseDoll44\\tools\\build_sensor_revC_mini.py": "bc9a26ebb1c3f9d257fa1c55ccb20115813e7a661e4bd9e47a9cd73e875d717c",
+    "scripts\\route_revo5cn_sensor.py": "6c5eb5def0aaf49d09d1189b8a46699ff27e438e0cf3e2fba61ab4c6e3945db4",
+    "Hardware\\PoseDoll44\\electronics\\sensor_revB\\PoseDoll_AS5048A_revB.kicad_pro": "fb5a45629a8451afe91c1829738395a19e68fa61196ce40fdc08ef559ddf8c7d",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\symbols\\Connector_Generic.kicad_sym": "1ae3b346fe1c4e874fecb72abc7df4e94a253780db183439dbfefc4e2ff3a0be",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\symbols\\Device.kicad_sym": "e03831d421787531315439a4af4229e5d5d88ee51c7f36ba3f658ddf2978cda9",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_SMD.pretty\\C_0603_1608Metric.kicad_mod": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\footprints\\Capacitor_SMD.pretty\\C_0805_2012Metric.kicad_mod": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\footprints\\Resistor_SMD.pretty\\R_0603_1608Metric.kicad_mod": "03fc7902b2661df01b4d828fdb6eab9eddf974e7130ed2b98892607387a50c4b",
+    "D:\\ProgramFiles\\KiCad\\10.0\\share\\kicad\\symbols\\power.kicad_sym": "9f49ee941555a5194f330db1363f24f339b88272a2a60c6e15da8ba11ec6d114"
+  },
+  "pad_map": [
+    {
+      "ref": "U1",
+      "pin": "1",
+      "net": "unconnected-(U1-NC-Pad1)",
+      "xy_mm": [
+        98.6,
+        99.25
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "2",
+      "net": "unconnected-(U1-NC-Pad2)",
+      "xy_mm": [
+        98.6,
+        99.75
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "3",
+      "net": "unconnected-(U1-NC-Pad3)",
+      "xy_mm": [
+        98.6,
+        100.25
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "4",
+      "net": "unconnected-(U1-NC-Pad4)",
+      "xy_mm": [
+        98.6,
+        100.75
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "net": "unconnected-(U1-PUSH-Pad5)",
+      "xy_mm": [
+        99.25,
+        101.4
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "net": "/DO_IC",
+      "xy_mm": [
+        99.75,
+        101.4
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "net": "/CLK",
+      "xy_mm": [
+        100.25,
+        101.4
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "net": "/CS_N",
+      "xy_mm": [
+        100.75,
+        101.4
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "net": "unconnected-(U1-W-Pad9)",
+      "xy_mm": [
+        101.4,
+        100.75
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "10",
+      "net": "unconnected-(U1-NC-Pad10)",
+      "xy_mm": [
+        101.4,
+        100.25
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "11",
+      "net": "unconnected-(U1-U-Pad11)",
+      "xy_mm": [
+        101.4,
+        99.75
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "12",
+      "net": "unconnected-(U1-V-Pad12)",
+      "xy_mm": [
+        101.4,
+        99.25
+      ],
+      "size_mm": [
+        0.65,
+        0.25
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "13",
+      "net": "/+3V3",
+      "xy_mm": [
+        100.75,
+        98.6
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "14",
+      "net": "/+3V3",
+      "xy_mm": [
+        100.25,
+        98.6
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "15",
+      "net": "unconnected-(U1-OUT-Pad15)",
+      "xy_mm": [
+        99.75,
+        98.6
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "16",
+      "net": "/GND",
+      "xy_mm": [
+        99.25,
+        98.6
+      ],
+      "size_mm": [
+        0.25,
+        0.65
+      ],
+      "back": false
+    },
+    {
+      "ref": "U1",
+      "pin": "17",
+      "net": "unconnected-(U1-EP_UNSPECIFIED-Pad17)",
+      "xy_mm": [
+        100.0,
+        100.0
+      ],
+      "size_mm": [
+        1.8,
+        1.8
+      ],
+      "back": false
+    },
+    {
+      "ref": "R2",
+      "pin": "1",
+      "net": "/+3V3",
+      "xy_mm": [
+        96.575,
+        103.6
+      ],
+      "size_mm": [
+        0.8,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "R2",
+      "pin": "2",
+      "net": "/CS_N",
+      "xy_mm": [
+        98.225,
+        103.6
+      ],
+      "size_mm": [
+        0.8,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "C2",
+      "pin": "1",
+      "net": "/+3V3",
+      "xy_mm": [
+        101.65,
+        103.6
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "back": false
+    },
+    {
+      "ref": "C2",
+      "pin": "2",
+      "net": "/GND",
+      "xy_mm": [
+        103.55,
+        103.6
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "back": false
+    },
+    {
+      "ref": "R1",
+      "pin": "1",
+      "net": "/DO_IC",
+      "xy_mm": [
+        96.575,
+        96.6
+      ],
+      "size_mm": [
+        0.8,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "R1",
+      "pin": "2",
+      "net": "/DO",
+      "xy_mm": [
+        98.225,
+        96.6
+      ],
+      "size_mm": [
+        0.8,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "C1",
+      "pin": "1",
+      "net": "/+3V3",
+      "xy_mm": [
+        102.025,
+        96.6
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "C1",
+      "pin": "2",
+      "net": "/GND",
+      "xy_mm": [
+        103.575,
+        96.6
+      ],
+      "size_mm": [
+        0.9,
+        0.95
+      ],
+      "back": false
+    },
+    {
+      "ref": "J1",
+      "pin": "",
+      "net": "",
+      "xy_mm": [
+        103.3,
+        101.875
+      ],
+      "size_mm": [
+        1.2,
+        1.8
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "",
+      "net": "",
+      "xy_mm": [
+        96.7,
+        101.875
+      ],
+      "size_mm": [
+        1.2,
+        1.8
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "net": "/GND",
+      "xy_mm": [
+        102.0,
+        98.0
+      ],
+      "size_mm": [
+        0.6,
+        1.55
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "net": "/+3V3",
+      "xy_mm": [
+        101.0,
+        98.0
+      ],
+      "size_mm": [
+        0.6,
+        1.55
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "net": "/CLK",
+      "xy_mm": [
+        100.0,
+        98.0
+      ],
+      "size_mm": [
+        0.6,
+        1.55
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "net": "/DO",
+      "xy_mm": [
+        99.0,
+        98.0
+      ],
+      "size_mm": [
+        0.6,
+        1.55
+      ],
+      "back": true
+    },
+    {
+      "ref": "J1",
+      "pin": "5",
+      "net": "/CS_N",
+      "xy_mm": [
+        98.0,
+        98.0
+      ],
+      "size_mm": [
+        0.6,
+        1.55
+      ],
+      "back": true
+    }
+  ],
+  "component_origins": {
+    "U1": [
+      100.0,
+      100.0
+    ],
+    "R2": [
+      97.4,
+      103.6
+    ],
+    "C2": [
+      102.6,
+      103.6
+    ],
+    "R1": [
+      97.4,
+      96.6
+    ],
+    "C1": [
+      102.8,
+      96.6
+    ],
+    "J1": [
+      100.0,
+      100.0
+    ]
+  },
+  "pin_map_source": "MT6701 Rev1.8 pp4,24,35; CJT WR A3 drawing",
+  "EP_status": "OPEN isolates pad17 pending manufacturer instructions; blocks fabrication",
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "regional_boards_converted": false,
+  "notes": [
+    "Mechanical board datum kept; no smaller whole joint claimed",
+    "No MISO buffer deletion; all-low CRC-valid frame cannot establish presence",
+    "No live ESP/UE capture enabled",
+    "0.3 mm vias, 0.15 mm clearance/track; supplier DFM still open"
+  ]
+}

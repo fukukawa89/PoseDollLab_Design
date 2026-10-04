@@ -1,0 +1,55 @@
+{
+  "status": "DIGITAL_PROTOTYPE_BATCH_READY_FOR_PHYSICAL_VALIDATION",
+  "run": "o15_20260929_r1",
+  "requirements": {
+    "height_reference_mm": 480,
+    "backup_910mm_preserved": true,
+    "capture": "static pose",
+    "mass_hard_cap": null,
+    "manual_support_allowed": true,
+    "custom_machined_metal_required": false
+  },
+  "characters": [
+    {
+      "character": "quinn",
+      "print": {
+        "types": 214,
+        "pieces": 273
+      },
+      "mass_budget_kg": 1.673180345160101,
+      "worst_sample_gravity_Nm": 0.38385281788216064,
+      "maximum_semantic_endpoint_deviation_mm": 15.999999999999996,
+      "maximum_axis_origin_deviation_mm": 52.59172929093685
+    },
+    {
+      "character": "manny",
+      "print": {
+        "types": 214,
+        "pieces": 273
+      },
+      "mass_budget_kg": 1.6531136328544485,
+      "worst_sample_gravity_Nm": 0.37929511032049434,
+      "maximum_semantic_endpoint_deviation_mm": 16.00000000000002,
+      "maximum_axis_origin_deviation_mm": 53.38664345298989
+    }
+  ],
+  "checks": {
+    "unique_STL_generic_slices": 242,
+    "equipment_and_rigid_tail_cases_each": 689,
+    "fine_raw_motion_steps_each": 416,
+    "electronic_native_ERC_DRC": "both boards zero violations/unconnected",
+    "firmware": "BODY and G0 build pass; no physical flash",
+    "bridge_tests": 64,
+    "real_UE_test": "synthetic raw46 -> production BridgeCore -> UE; normal capture1, missing/CRC/reboot capture0"
+  },
+  "deferred_to_one_physical_batch": [
+    "actual FDM strength, preload, creep, wear and retention",
+    "full-body hand/tool access and assembly tolerances",
+    "flexible moving-wire route, pull force, fatigue and service loops",
+    "supply transients, thermal rise, SPI/wireless waveforms and ESD robustness",
+    "all46 measured zeros, signs, magnet accuracy, discontinuity and lost-chain recovery"
+  ],
+  "continuous_collision_proof": false,
+  "hardware_tests_fabricated": false,
+  "numeric_proportion_acceptance_user_approved": false
+}

@@ -1,0 +1,483 @@
+{
+  "schema": "cn1-supplier-analysis-v1",
+  "input_sha256": {
+    "scripts/analyze_revo5cn_suppliers.py": "0adcc58e8c0ac36d65b23e85244c02cb41b94ccb7bb9c4a337b7586336a50464",
+    "Hardware/PoseDoll44/references/revO5CN/supplier_comparison.json": "75f4d4a524330ab155aab7d91e010f0c5cba2c1332ec9e7ebad2deece451dcf9",
+    "Hardware/PoseDoll44/mechanical_manifest/requirements_revO5CN.json": "9fed0857ed103518da6cfca5ce07f1272b68bd5e546bb685d10d45af3f9324a2",
+    "Hardware/PoseDoll44/mechanical_manifest/connector_wire_contract_revO5.json": "ac3ae559e3da9dc326a958e3cfa1fd8646647f41808a2eb9140c01240a9454f2",
+    "Hardware/PoseDoll44/generated/revO5/runs/o5_20260924_r1/arm/shared_arm_screen.json": "1bee35434dc20fb350e866279b2c86804d6b2f0cec47f97fc324544af975ea06",
+    "Hardware/PoseDoll44/electronics/sensor_revO5CN/result.json": "33d35520b5fbd04292f8e2d95e976ded4d0df212b0d58a00df1004af331e2a29",
+    "Hardware/PoseDoll44/generated/revO5CN/runs/cn_20260924_r1/cad_screen.json": "c30c3b49a9294ee75d09c3b0f5d60ae01a1002c70c5f27f53c0f61b50c705e0c"
+  },
+  "supplier_count": 11,
+  "wire_terminal_screens": [
+    {
+      "candidate": "CJT_A1002",
+      "wire_upper_OD_mm": 0.7366,
+      "terminal_max_OD_mm": 0.8,
+      "OD_only_result": "PASS_CATALOG_ONLY"
+    },
+    {
+      "candidate": "CJT_A1001",
+      "wire_upper_OD_mm": 0.7366,
+      "terminal_max_OD_mm": 0.5,
+      "OD_only_result": "REJECT"
+    },
+    {
+      "candidate": "SHENYUAN_1332",
+      "nominal_OD_mm": 1.02,
+      "upper_OD_mm": null,
+      "terminal_max_OD_mm": 0.8,
+      "result": "REJECT",
+      "no_flex_qualification": true
+    },
+    {
+      "candidate": "JUNHAO_1332",
+      "nominal_OD_mm": 0.9,
+      "upper_OD_mm": 1.0,
+      "terminal_max_OD_mm": 0.8,
+      "result": "REJECT",
+      "no_flex_qualification": true
+    },
+    {
+      "candidate": "SORM_1571",
+      "nominal_OD_mm": 0.8,
+      "upper_OD_mm": null,
+      "terminal_max_OD_mm": 0.8,
+      "result": "UNKNOWN_MAX_OD",
+      "no_flex_qualification": true
+    }
+  ],
+  "sensor_change": {
+    "axis_ports": 41,
+    "per_port_before": 6,
+    "per_port_after": 5,
+    "conductor_segments_before": 246,
+    "conductor_segments_after": 205,
+    "conductor_segments_saved": 41,
+    "cross_section_sum_reduction_fraction": 0.16666666666666663,
+    "assumes_equal_wire_OD_and_equal_route": true,
+    "does_not_count_shared_bus_or_CAN_trunks": true,
+    "J50_before": 4,
+    "J50_after": 4,
+    "wire_only_bits_per_axis_before": 160,
+    "wire_only_bits_per_axis_after": 24,
+    "clock_only_scan_41_at_250k_us_before": 26240.0,
+    "clock_only_scan_41_at_250k_us_after": 3936.0000000000005,
+    "not_actual_scan_latency": true,
+    "SSI_resolution_deg_per_count": 0.02197265625,
+    "resolution_is_not_accuracy": true,
+    "new_INL_typ_max_deg": [
+      1,
+      1.5
+    ],
+    "board_area_changed": false,
+    "must_not_claim_smaller_joint": true
+  },
+  "power_sensitivity": [
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0937336244933484,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0897336244933484,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0857336244933484,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0817336244933484,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.052467248986697,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.044467248986697,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.036467248986697,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.028467248986697,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0318340612333716,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0218340612333714,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0118340612333716,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "manny",
+      "one_way_draft_m": 0.3048103934821676,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0018340612333714,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.094251407967784,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.090251407967784,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.086251407967784,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.1,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.082251407967784,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.053502815935568,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": true,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.045502815935568,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.037502815935568,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.2,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.029502815935568,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": true,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0331285199194595,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.02,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0231285199194597,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.0,
+      "remote_V": 3.0131285199194595,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    },
+    {
+      "character": "quinn",
+      "one_way_draft_m": 0.2941222063566205,
+      "load_A": 0.25,
+      "temperature_C": 60,
+      "DCR_factor": 1.1,
+      "each_contact_ohm": 0.04,
+      "each_crimp_ohm": 0.01,
+      "remote_V": 3.0031285199194597,
+      "meets_3V_minimum": true,
+      "meets_3V05_reserve": false,
+      "current_limit_guaranteed_by_O5_min": false,
+      "scope": "Hypothetical CJT J50 pair; J50 has NOT been replaced or routed. 0 crimp case is optimistic only."
+    }
+  ],
+  "CJT_28AWG_crimp_reference": {
+    "strip_mm": [
+      1.2,
+      1.7
+    ],
+    "height_mm": [
+      0.46,
+      0.54
+    ],
+    "pull_min_N": 9.80665,
+    "qualification": "Reference only; requires exact wire/process validation"
+  },
+  "spring_substitute": {
+    "guide": "keyed_pressure_plate",
+    "nominal_guide_ID_mm": 12.16,
+    "candidate_OD_mm": 12.5,
+    "diametral_interference_mm": 0.33999999999999986,
+    "cases": [
+      {
+        "part": "Raleigh_B12_5_1",
+        "guide_intersection_mm3": 3.2925461805948073
+      },
+      {
+        "part": "Raleigh_B12_5_2",
+        "guide_intersection_mm3": 3.2925461805948144
+      },
+      {
+        "part": "Raleigh_B12_5_3",
+        "guide_intersection_mm3": 3.2925461805947416
+      },
+      {
+        "part": "Raleigh_B12_5_4",
+        "guide_intersection_mm3": 3.2925461805948117
+      }
+    ],
+    "status": "REJECT"
+  },
+  "PCB_checks": {
+    "erc": {
+      "exit": 0,
+      "violations": 0,
+      "unconnected": 0,
+      "by_type": {},
+      "pass": true
+    },
+    "drc": {
+      "exit": 0,
+      "violations": 0,
+      "unconnected": 0,
+      "by_type": {},
+      "pass": true
+    }
+  },
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "decisions": {
+    "MT6701": "Worth independent five-wire trial; production replacement not justified yet",
+    "CJT": "Worth domestic matched-pair sourcing trial; no power/size/cost superiority claimed",
+    "wire": "Keep Alpha comparison baseline; tested Chinese catalog wires fail OD or lack tolerance/flex evidence",
+    "spring": "Keep original reference; tested 12.5 mm domestic row interferes with guide",
+    "manufacturing": "Prepare domestic RFQ/DFM route; no quotations sent or supplier capability approved"
+  },
+  "unknown_commercial": [
+    "Unit prices at prototype/41-axis quantity",
+    "Available lot/leadtime/MOQ",
+    "Matched crimp tooling/setup cost",
+    "Yield and lifetime"
+  ]
+}

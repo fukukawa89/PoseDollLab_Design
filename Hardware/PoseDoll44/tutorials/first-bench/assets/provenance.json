@@ -1,0 +1,190 @@
+{
+  "models": {
+    "LP6_PEEK_coupon": {
+      "source_sha256": "4b59586b21f4c02ba105c7f67bfec0bceab201abc7ebc997f6f6b65e33ec2b5d",
+      "triangles": 640
+    },
+    "LP6_metal_counterface": {
+      "source_sha256": "79af5a8d06d868e30ab0bc328f8b18957167b6c78b5fc2e07e2598e18ca56e72",
+      "triangles": 1696
+    },
+    "M4_PEEK_coupon": {
+      "source_sha256": "22875ee11f9cc74c7d7343a28391096ba0a6e75124b8bdffd4b4bfe78ccdcc99",
+      "triangles": 636
+    },
+    "M4_metal_counterface": {
+      "source_sha256": "0e904bdaff7b7feee92fddbf2c81fa7b2fcb334c1c22d171ff19cef9f99d8f12",
+      "triangles": 1696
+    }
+  },
+  "plan": {
+    "schema": "o7-material-bench-plan-v1",
+    "families": [
+      {
+        "family": "LP6",
+        "ri_mm": 6,
+        "ro_mm": 14,
+        "catalog_nominal_force_N": 354,
+        "worst_axis": "clavicle_r.elevate",
+        "hold_screen_Nm": 0.4634908839611725,
+        "gravity_Nm": 0.2956605893074483,
+        "friction_ceiling_from_provisional_20N_at_60mm_Nm": 0.9043394106925516,
+        "provisional_user_comfort_screen": true,
+        "required_mu_at_catalog_force_uniform_pressure": 0.06215013998621172,
+        "required_mu_at_catalog_force_uniform_wear": 0.06546481411880968,
+        "nominal_contact_pressure_MPa": 0.7042606231816368,
+        "effective_radius_uniform_pressure_m": 0.010533333333333334,
+        "effective_radius_uniform_wear_m": 0.01,
+        "conditional_windows": [
+          {
+            "mu_min": 0.08,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 289.6818024757328,
+            "preload_max_for_raising_force_N": 195.12501669143086,
+            "nonempty": false
+          },
+          {
+            "mu_min": 0.12,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 193.12120165048856,
+            "preload_max_for_raising_force_N": 195.12501669143086,
+            "nonempty": true
+          },
+          {
+            "mu_min": 0.16,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 144.8409012378664,
+            "preload_max_for_raising_force_N": 195.12501669143086,
+            "nonempty": true
+          }
+        ]
+      },
+      {
+        "family": "M4",
+        "ri_mm": 2.6,
+        "ro_mm": 7.4,
+        "catalog_nominal_force_N": 210,
+        "worst_axis": "clavicle_r.protract",
+        "hold_screen_Nm": 0.30369132030437607,
+        "gravity_Nm": 0.18912754686958405,
+        "friction_ceiling_from_provisional_20N_at_60mm_Nm": 1.0108724531304158,
+        "provisional_user_comfort_screen": true,
+        "required_mu_at_catalog_force_uniform_pressure": 0.13430062632861747,
+        "required_mu_at_catalog_force_uniform_wear": 0.14461491443065527,
+        "nominal_contact_pressure_MPa": 1.392605752054084,
+        "effective_radius_uniform_pressure_m": 0.005383999999999999,
+        "effective_radius_uniform_wear_m": 0.005,
+        "conditional_windows": [
+          {
+            "mu_min": 0.08,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 379.61415038047005,
+            "preload_max_for_raising_force_N": 426.71571201304204,
+            "nonempty": true
+          },
+          {
+            "mu_min": 0.12,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 253.07610025364676,
+            "preload_max_for_raising_force_N": 426.71571201304204,
+            "nonempty": true
+          },
+          {
+            "mu_min": 0.16,
+            "mu_max": 0.22,
+            "preload_min_for_hold_N": 189.80707519023503,
+            "preload_max_for_raising_force_N": 426.71571201304204,
+            "nonempty": true
+          }
+        ]
+      }
+    ],
+    "minimum_repeats_each_direction": 3,
+    "directions": [
+      "cw",
+      "ccw"
+    ],
+    "hold_seconds": 60,
+    "provisional_drift_screen_deg": 0.3,
+    "proof_scope": "Material/spring screening only. Not complete-joint force balance, production fit, body motion, UE accuracy or lifetime approval.",
+    "loads_sha256": "d18cd9028b9b07d3bc99357e8171dbd1000e77b01c8141b763298f539a914b96",
+    "source_sha256": "4411ae0d79ca00bee86046092c744603c6f60c94d93e4c0c23a22b4c21cfcb0d",
+    "physical_data_available": false,
+    "manufacturing_released": false
+  },
+  "dimensions": {
+    "LP6": {
+      "family": "LP6",
+      "units": "mm",
+      "polymer": "Traceable unfilled PEEK first candidate; no catalog friction transfer guarantee",
+      "liner_contact_ID_OD_thickness_mm": [
+        12,
+        28,
+        0.6
+      ],
+      "external_ears": {
+        "count": 3,
+        "spacing_deg": 120,
+        "radial_size_mm": 1.6,
+        "tangential_size_mm": 2,
+        "center_radius_mm": 14.7
+      },
+      "counterface_OD_ID_thickness_mm": [
+        34,
+        6.1,
+        3
+      ],
+      "fixture_holes": {
+        "count": 4,
+        "radius_mm": 15.5,
+        "diameter_mm": 2.2,
+        "first_angle_deg": 45
+      },
+      "preparation": "Lab/shop to specify actual alloy, finish, flatness and measured thickness before cutting; record those values. Clamp ears outside contact annulus. Measure fixture drag separately. Not a complete fixture drawing.",
+      "nominal_geometry_only": true
+    },
+    "M4": {
+      "family": "M4",
+      "units": "mm",
+      "polymer": "Traceable unfilled PEEK first candidate; no catalog friction transfer guarantee",
+      "liner_contact_ID_OD_thickness_mm": [
+        5.2,
+        14.8,
+        0.4
+      ],
+      "external_ears": {
+        "count": 3,
+        "spacing_deg": 120,
+        "radial_size_mm": 1.6,
+        "tangential_size_mm": 2,
+        "center_radius_mm": 8.1
+      },
+      "counterface_OD_ID_thickness_mm": [
+        20,
+        3.1,
+        3
+      ],
+      "fixture_holes": {
+        "count": 4,
+        "radius_mm": 8.9,
+        "diameter_mm": 1.7,
+        "first_angle_deg": 45
+      },
+      "preparation": "Lab/shop to specify actual alloy, finish, flatness and measured thickness before cutting; record those values. Clamp ears outside contact annulus. Measure fixture drag separately. Not a complete fixture drawing.",
+      "nominal_geometry_only": true
+    }
+  },
+  "sources_sha256": {
+    "bench\\revO7\\coupons\\LP6_PEEK_coupon.step": "4b59586b21f4c02ba105c7f67bfec0bceab201abc7ebc997f6f6b65e33ec2b5d",
+    "bench\\revO7\\coupons\\LP6_metal_counterface.step": "79af5a8d06d868e30ab0bc328f8b18957167b6c78b5fc2e07e2598e18ca56e72",
+    "bench\\revO7\\coupons\\M4_PEEK_coupon.step": "22875ee11f9cc74c7d7343a28391096ba0a6e75124b8bdffd4b4bfe78ccdcc99",
+    "bench\\revO7\\coupons\\M4_metal_counterface.step": "0e904bdaff7b7feee92fddbf2c81fa7b2fcb334c1c22d171ff19cef9f99d8f12",
+    "bench/revO7/plan.json": "f02c6f4d0ef942ebfb6b8d962cc19503d252682ac666c39da4c0117f6ccac0ce",
+    "bench/revO7/coupons/LP6_dimensions.json": "acb99fc19dd281ed22d6eca32ef3e04953ceb67b8f27ee3a8282c7f5708d5876",
+    "bench/revO7/coupons/M4_dimensions.json": "722b7767ffa3da2ebbcc8006aca4c395f41e9925e7b1a457058192bad3834535",
+    "bench/revO7/measurement_template.json": "90e7841f018402b8d43179386385f27220950ff4416e6fc9c75d7c881fcef3dc",
+    "bench/revO7/spring_curve_template.json": "39b33e01bb7b9e87b3e1540a6777d01f9e401bf34325e11c8580de43be537eaa"
+  },
+  "view_only": true,
+  "physical_data_available": false
+}

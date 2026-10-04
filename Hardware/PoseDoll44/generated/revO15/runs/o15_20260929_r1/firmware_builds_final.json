@@ -1,0 +1,44 @@
+{
+  "physical_tested": false,
+  "default_peer_zero_disables_pairing": true,
+  "sources_sha256": {
+    "Firmware\\PoseDollFullBody\\revO15\\build.ps1": "39f9335db14dc66e8e2af39055fc434fe8626692cb592538960acfa9d3dbcafc",
+    "Firmware\\PoseDollFullBody\\revO15\\CMakeLists.txt": "ee060625fd9874b9626b4c363421dfdb616c0e7b8c441d168695f98be04f0023",
+    "Firmware\\PoseDollFullBody\\revO15\\raw46.c": "b664d42f76e05622ff90d943341447e43a929caf6df7279778d543739ae6eb57",
+    "Firmware\\PoseDollFullBody\\revO15\\raw46.h": "1437d3dec735d8b34a8b51af2c508de51fd2d05be62dc34e107fdcee0cc4bbb6",
+    "Firmware\\PoseDollFullBody\\revO15\\sdkconfig.BODY.defaults": "b7cd163c64768c7e7af0a234d53c53eb11ab8298be39d44ab1f2937fc390cecb",
+    "Firmware\\PoseDollFullBody\\revO15\\sdkconfig.G0.defaults": "9fc24569f5f15b0edc379728e47a8cdf35ff331499866e7f0d7ed389ce82b2c0",
+    "Firmware\\PoseDollFullBody\\revO15\\test_raw46.c": "3d0beb1b71d96a2512e367d1b0ab2f0c8c8965bb8d4483751f034ca74851c008",
+    "Firmware\\PoseDollFullBody\\revO15\\main\\CMakeLists.txt": "e32380950ed0f48b1f6c56dc64378e64e32f9e1ba3377041ad1e6c8010aa9f54",
+    "Firmware\\PoseDollFullBody\\revO15\\main\\Kconfig.projbuild": "292ab814097113d709d31a25eafacdd52819cf71791f02c7ecaa2d37a98b8e66",
+    "Firmware\\PoseDollFullBody\\revO15\\main\\main.c": "486849630c1d224a06ba3776660ae1d3e58d1222629fd10e29cc0b14f491113f"
+  },
+  "roles": [
+    {
+      "role": "G0",
+      "build_directory": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\.local\\build-o15-c1\\G0",
+      "artifact_sha256": {
+        "posedoll_o15_raw46.bin": "f0ac4cdb2802cfed524f37a23e4252a06657a3745e456b7cc19c53ab901cd078",
+        "bootloader\\bootloader.bin": "37f734020e9c40998d292fa532e03ed727b49b264637beee674d5d9f616f5a41",
+        "partition_table\\partition-table.bin": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+      },
+      "source_peer": "CONFIG_P15_PEER_MAC default zero; not paired firmware",
+      "build_log_sha256": "f282b3746b4ddca04313e2cd372fbd086a8c5e282c0e81004b828c3f4b10d822",
+      "build_log": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO15\\runs\\o15_20260929_r1\\build_wrapper_G0.log"
+    },
+    {
+      "role": "BODY",
+      "build_directory": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Firmware\\PoseDollFullBody\\revO15\\.local\\build-o15-c1\\BODY",
+      "artifact_sha256": {
+        "posedoll_o15_raw46.bin": "740a1278dd3204a98f83958cb2c10f0663d3a30a5719a4ca6d8b17536cd07f83",
+        "bootloader\\bootloader.bin": "8a7c20dae9517b3cec84cb756d46c31680e26cf7b81d9848e2ce4ef2d1c8941b",
+        "partition_table\\partition-table.bin": "7f00b6c042a89b15b0cac534f82ed988caf29278ff5700b0c511eb1b5bb7c820"
+      },
+      "source_peer": "CONFIG_P15_PEER_MAC default zero; not paired firmware",
+      "build_log_sha256": "4b580a98dd5980a1daa6ca73ddab5fdbbd28f299bdad8d98d72dfe319e941dbc",
+      "build_log": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\generated\\revO15\\runs\\o15_20260929_r1\\build_wrapper_BODY.log"
+    }
+  ],
+  "prior_report_sha256": "523963869e14007de1a3d87552011429712e6c43a65707ff7d0f1603d09ad110",
+  "build_wrapper_rechecked": true
+}

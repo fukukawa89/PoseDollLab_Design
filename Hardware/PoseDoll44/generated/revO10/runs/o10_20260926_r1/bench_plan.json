@@ -1,0 +1,189 @@
+{
+  "scope": "Isolated stack screening, not joint release. Actual M4 catalogue thread engagement and coupon process drawing must be confirmed before fabrication. No current hardware.",
+  "parts": {
+    "aluminium_base": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 6835.188381382264,
+      "bounds_mm": [
+        -15.0,
+        -15.0,
+        0.0,
+        15.0,
+        15.0,
+        8.0
+      ],
+      "triangles": 1752
+    },
+    "PA12_lever": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 6238.9518939986765,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        8.5,
+        105.0,
+        6.0,
+        14.5
+      ],
+      "triangles": 1838
+    },
+    "inner_plate": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 49.473178940783875,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        8.0,
+        6.0,
+        6.0,
+        8.5
+      ],
+      "triangles": 1152
+    },
+    "outer_plate": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 49.473178940783875,
+      "bounds_mm": [
+        -6.0,
+        -6.0,
+        11.5,
+        6.0,
+        6.0,
+        12.0
+      ],
+      "triangles": 1152
+    },
+    "spring_1": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 14.559802606868761,
+      "bounds_mm": [
+        -4.0,
+        -4.0,
+        12.0,
+        4.0,
+        4.0,
+        12.450000002980232
+      ],
+      "triangles": 1152
+    },
+    "spring_2": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 14.559802485348586,
+      "bounds_mm": [
+        -4.0,
+        -4.0,
+        12.450000002980232,
+        4.0,
+        4.0,
+        12.899999998509884
+      ],
+      "triangles": 1152
+    },
+    "front_load_washer": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 14.723898682718575,
+      "bounds_mm": [
+        -4.5,
+        -4.5,
+        12.9,
+        4.5,
+        4.5,
+        13.2
+      ],
+      "triangles": 1152
+    },
+    "rear_load_washer": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 39.26372982058301,
+      "bounds_mm": [
+        -4.5,
+        -4.5,
+        -0.8,
+        4.5,
+        4.5,
+        0.0
+      ],
+      "triangles": 1152
+    },
+    "M4_nut_envelope": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 94.78514347300363,
+      "bounds_mm": [
+        -4.041451886296272,
+        -3.5,
+        -4.0,
+        4.041451886296272,
+        3.5,
+        -0.7999999999999998
+      ],
+      "triangles": 600
+    },
+    "M4x20_screw_envelope": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 389.5484125926852,
+      "bounds_mm": [
+        -3.5,
+        -3.5,
+        -6.8,
+        3.5,
+        3.5,
+        17.2
+      ],
+      "triangles": 1172
+    }
+  },
+  "generator_sha256": "59b66b3089fe01075a44b0be6532a1d460fb5f68819571afbd9fd230d14d1567",
+  "source_load_sha256": "5cdb14a227ef5817cfcc757a1dddd9c3c2f988540e654f9bc9b50a53355fbee8",
+  "nominal_stack_volume_findings": [],
+  "force_not_measured": true,
+  "mounting": "Bolt the two base holes to a fixed backing so the central axis is horizontal. The lever moves in a vertical plane; grip the base, not the moving lever.",
+  "lever_finished_bore_mm": 4.3,
+  "lever_bore_note": "Finish the printed central hole to 4.3 mm if needed; this is assembly preparation, not the purpose of the experiment. The coupon annulus inner radius 2.15 mm differs from the planned 2.12 mm contact radius; no exact coefficient transfer is claimed.",
+  "spring_compressed_total_height_mm_trials": [
+    1.1,
+    1.0,
+    0.9
+  ],
+  "spring_catalogue_point_N": 210,
+  "catalogue_second_grade_conditional_force_range_at_test_height_N": [
+    189,
+    273
+  ],
+  "catalogue_point_is_not_measured_preload": true,
+  "required_single_site_min_hold_Nm": 0.19585936940874826,
+  "provisional_single_site_operating_ceiling_Nm": 0.4760937537275012,
+  "provisional_drift_screen_deg": 0.3,
+  "hold_durations_s": [
+    60,
+    600,
+    3600
+  ],
+  "example_hanging_mass_at_100mm_excluding_lever_weight_g": 199.72097444973386,
+  "limitations": [
+    "Two actual sites may not share load equally; coupon does not qualify the full joint",
+    "Through-bolt rear nut differs from custom M3 axle; it does not validate axle loosening",
+    "Record lever self-weight and its measured gravity lever arm",
+    "Use measured perpendicular moment arms, not nominal CAD length",
+    "If angular measurement uncertainty exceeds 0.3 degrees, drift classification is inconclusive",
+    "Do not infer 210 N from screw tightening torque or assume spring height is measured force"
+  ],
+  "material_candidates": {
+    "base": "6061 aluminium, flat load face, actual finish recorded",
+    "lever": "same PA12 process and orientation proposed for the forks",
+    "plates": "steel annuli OD12 ID4.24 thickness0.5; actual material/finish must match prototype",
+    "springs": "Raleigh A8 x 4.2 x 0.4, two opposite-facing discs in series"
+  },
+  "hardware_tested": false,
+  "full_joint_manufacturing_released": false,
+  "primary_spring_source": "https://www.raleigh-spring.cn/discspring/list_84_2/"
+}

@@ -1,0 +1,12 @@
+menu "PoseDoll O15 experimental central acquisition"
+config P15_GATEWAY
+    bool "External USB G0 (otherwise body central controller)"
+    default y
+config P15_PEER_MAC
+    string "Opposite device MAC, e.g. AA:BB:CC:DD:EE:FF; zero disables radio pairing"
+    default "00:00:00:00:00:00"
+config P15_CHANNEL
+    int "Fixed ESP-NOW Wi-Fi channel"
+    range 1 11
+    default 1
+endmenu

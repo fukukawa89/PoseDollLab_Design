@@ -1,0 +1,106 @@
+{
+  "run_id": "o2_20260923_r1",
+  "strength": {
+    "status": "CONDITIONAL_CALCULATIONS_NOT_QUALIFIED",
+    "preload_N": 326,
+    "preload_path_excludes_axial_locator": true,
+    "thread_shear_effective_area_mm2": 90.38362064377833,
+    "thread_shear_stress_MPa": 3.606848206323107,
+    "thread_allowable_assumed_MPa": 40,
+    "thread_margin_assumed": 11.090014802917587,
+    "thread_60deg_radial_force_N": 188.216187755818,
+    "female_thread_in_one_piece_cup": true,
+    "cup_mounts_carry_torque_not_brake_preload": true,
+    "four_M2_mount_shear_at_low_mu_torque_N_each": 8.011911884412044,
+    "housing_root_hoop_approx_MPa": 7.720499136920284,
+    "cap_conservative_four_strip_bending_MPa": 53.178749999999994,
+    "cap_allowable_assumed_MPa": 70,
+    "face_pressure_MPa": 0.821217338524183,
+    "two_face_holding_at_mu08_Nm": 0.4551442962962964,
+    "two_face_torque_at_mu22_Nm": 1.251646814814815,
+    "catalog_spring_mass_g": 1.24,
+    "modeled_spring_mass_g": 1.3016340930132835,
+    "materials_and_thread_load_share": "Conservative proposed allowables and load-share assumptions; no certified stock/material or thread standard fit qualification",
+    "required_followups": [
+      "Cartridge clamp preload, cup register fits, axial M2 mounts and matched-bore deformation",
+      "Actual cap/plate annular FEA and washer bearing stress",
+      "Lining compression/creep and friction coefficient measured in both directions",
+      "Positive drive-key bearing/shear/backlash and axial drag while carrying torque",
+      "Thread stripping/pullout and cap locking tests at worst tolerance/temperature"
+    ]
+  },
+  "tolerances": {
+    "status": "PROPOSED_TOLERANCE_BUDGET_SUPPLIER_NOT_QUALIFIED",
+    "bearing_span_mm": 14,
+    "shaft_diameter_mm": [
+      5.994,
+      6.0
+    ],
+    "finished_split_bush_bore_mm": [
+      6.02,
+      6.024
+    ],
+    "diametral_clearance_mm": [
+      0.02,
+      0.03
+    ],
+    "geometric_clearance_tilt_deg": 0.12277648246221907,
+    "coaxial_error_allowance_mm": 0.01,
+    "clearance_plus_coaxial_tilt_deg": 0.16370178173417976,
+    "readout_accuracy_claim": false,
+    "axial_endplay_nominal_mm": 0.05,
+    "paired_shelf_position_tolerance_mm": 0.005,
+    "each_ground_thrust_thickness_tolerance_mm": 0.003,
+    "collar_width_tolerance_mm": 0.003,
+    "axial_endplay_worst_mm": [
+      0.031,
+      0.069
+    ],
+    "loose_generic_machining_endplay_mm": [
+      -0.045,
+      0.145
+    ],
+    "generic_fit_status": "FAIL_BINDING_POSSIBLE",
+    "drive_key_nominal_tangential_lost_motion_mm": 0.008,
+    "drive_key_nominal_lost_motion_deg": 0.150284011837593,
+    "old_separate_keys_nominal_lost_motion_deg": 0.601136047350372,
+    "drive_key_status": "INTEGRAL_DRIVE_RIBS_NOMINAL_ONLY_MATCHED_SLOT_TOLERANCE_AND_WEAR_NOT_QUALIFIED",
+    "cap_guide_relief_axial_clearance_mm": 0.4,
+    "proposed_total_lining_wear_allowance_mm": 0.6,
+    "wear_adjustment_turns": 0.7999999999999999,
+    "min_thread_engagement_mm_over_free_to_worn": 3.5,
+    "cap_lock_increment_mm": 0.0625,
+    "manufacturing_requirements": [
+      "Register cartridge halves on the cup, clamp and line bore as one marked assembly",
+      "Ground thrust shims and collar inspection; do not rely on nominal POM print thickness",
+      "Inspect thread runout and bore roundness under bolt torque"
+    ],
+    "not_run": [
+      "Thermal expansion of actual material batches",
+      "Friction lining wear/load-height curve",
+      "Sensor gap variation under preload and reversing side load"
+    ]
+  },
+  "preload_path": [
+    "one_piece_brake_cup",
+    "front_friction_lining",
+    "floating_brake_disc",
+    "rear_friction_lining",
+    "wear_sheet",
+    "keyed_pressure_plate",
+    "spring_front_washer",
+    "disc_spring_4..1",
+    "spring_rear_washer",
+    "threaded_adjuster_cap",
+    "one_piece_brake_cup"
+  ],
+  "independent_axial_locator": [
+    "housing_R/L",
+    "thrust_rear_L/R or thrust_front_L/R",
+    "measurement_shaft integral collar"
+  ],
+  "load_path_note": "Topological nominal CAD paths; constraints alone do not establish stiffness or load capacity. Sliding key parasitic forces remain unmeasured.",
+  "physical_tested": false,
+  "V1": "PARTIAL_NOMINAL_PATHS_PROVEN_CONDITIONAL_STRENGTH",
+  "V3": "NOT_RUN_PHYSICAL"
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "POSEDOLL-O22-SUPPORT-CLEARANCE-CHECK/1",
+  "status": "CLEAR_FOR_DECLARED_CORES",
+  "plate_id": "A02",
+  "source": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\a1mini_supports\\projects\\A02_torso_1_PLA_supports.3mf",
+  "source_sha256": "e5d24bb8b9e08fc69f82201a539083e6e33fe2c302352dc2929edee90e393952",
+  "protected_volumes": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\a1mini_supports\\design\\all_protected_volumes.json",
+  "protected_volumes_sha256": "146015d966819299a83b20ec439b0a81513d91ef7bf13011cc434626d1ea0c5b",
+  "placement_manifest": null,
+  "placement_manifest_sha256": null,
+  "checked_objects": 7,
+  "checked_feature_volumes": 87,
+  "support_path_segments": 505982,
+  "roles_checked": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "line_width_mm": 0.5,
+  "requested_minimum_line_width_mm": 0.42,
+  "gcode_declared_role_line_width_ranges_mm": {
+    "Brim": [
+      0.5,
+      0.5
+    ],
+    "Support": [
+      0.42,
+      0.5
+    ],
+    "Support transition": [
+      0.42,
+      0.42
+    ],
+    "Support interface": [
+      0.42,
+      0.42
+    ]
+  },
+  "line_width_bound": "Maximum of requested bound and all declared support/brim widths, conservatively applied to every checked segment.",
+  "layer_heights_from_gcode": true,
+  "fallback_layer_height_mm": 0.2,
+  "arc_chord_tolerance_mm": 0.02,
+  "bead_midline_core_segment_count": 0,
+  "conservative_bead_envelope_segment_count": 0,
+  "finding_count": 0,
+  "findings": [],
+  "scope": "Finite segment intersections with oriented CAD clearance cores; checks all path segments, including between endpoints. Bead envelopes include XY half-width, downward layer thickness, and arc chord uncertainty. Conservative-only hits require review; midline hits are stronger evidence of support within the core.",
+  "limitations": [
+    "Not all screw head pockets, cable-tie slots, side reliefs, core-lightening cavities or all removal corridors are encoded.",
+    "Core cylinders inside hex nuts protect the inscribed region only, not all hex corners.",
+    "Volumes conservatively inset by0.05..0.125mm; passing a path test is not a full void-clearance proof.",
+    "Large open assembly spaces must remain eligible for tree support if removable through their broad opening. Do not globally forbid every face with model below.",
+    "Swept extrusion width must be considered, not only G-code centerlines.",
+    "Direct per-instance source coordinate mapping is tied to the current source3MF and current A1mini transforms; regenerate if orientation changes.",
+    "T001 coupon inner leaf-gap primitive omitted: source-mesh samples disagreed with a full borrowed cassette slit box. Its side slit and PCB bay are encoded; the full inner latch access remains a visual/first-article check.",
+    "Declared features are partial and inset; no full-part cavity or removal-path proof.",
+    "Filament swelling, actual extrusion widths differing from the supplied bound, adhesion, and physical breakaway forces are not measured."
+  ],
+  "audited_native_settings": {
+    "support_type": "normal(auto)",
+    "raft_first_layer_expansion": "0",
+    "normal_part_count": 13,
+    "support_style": "snug",
+    "support_object_first_layer_gap": "0.45"
+  }
+}

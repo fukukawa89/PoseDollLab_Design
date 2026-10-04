@@ -1,0 +1,127 @@
+{
+  "schema": "posedoll-o4-static-review-contract-v1",
+  "status": "PROPOSAL_NOT_IMPLEMENTED_OR_MANUFACTURING_RELEASE",
+  "reviewed_design_commit": "b2c54e380004c90317463fa5ef26c780171a0ce6",
+  "reviewed_run": "o3_20260924_r3",
+  "user_overrides": {
+    "real_time_motion_capture_required": false,
+    "mass_hard_limit_g": null
+  },
+  "preserve": {
+    "measured_axes": 41,
+    "fixed_pelvis_slots": 3,
+    "slot_count": 44,
+    "regional_channel_counts": [
+      3,
+      6,
+      9,
+      9,
+      7,
+      7
+    ],
+    "anatomy_reference_height_mm": 480,
+    "complete_height_target_mm": 500,
+    "complete_height_hard_max_mm": 600,
+    "external_g0": true,
+    "no_automatic_radio_feature_removal": true,
+    "direct_hand_posing_default": true,
+    "no_mass_driven_joint_family_mandate": true,
+    "legacy_versions_and_evidence_immutable": true
+  },
+  "mode": "STATIC_TRANSACTION_WITH_OPTIONAL_PREVIEW",
+  "initial_proposed_targets_not_user_frozen": {
+    "active_scans_per_s": 10,
+    "idle_preview_hz_range": [
+      2,
+      5
+    ],
+    "max_scan_span_us": 100000,
+    "stable_common_observation_us": 500000,
+    "min_full_scans": 6,
+    "peak_to_peak_deg": 0.3,
+    "max_abs_drift_deg_s": 0.2,
+    "max_final_sample_age_us": 200000,
+    "healthy_preposed_latency_p95_ms": 1000,
+    "wall_deadline_ms": 3000,
+    "max_extra_retries_per_node_per_transaction": 2,
+    "healthy_test_requests": 1000,
+    "within_deadline_success_target": 999,
+    "fault_test_set_false_full_pose_accepts_allowed": 0
+  },
+  "legacy_timing": {
+    "60Hz_8ms_14ms_required_for_static_product": false,
+    "preserve_original_results": true,
+    "sensor_electrical_timing_still_required": true,
+    "do_not_relabel_legacy_failure_as_pass": true
+  },
+  "protocol": {
+    "suggested_name": "PDS1",
+    "new_version_required": true,
+    "duration_type": "uint32_us",
+    "monotonic_time_type": "uint64_us",
+    "required_identity": [
+      "device_id",
+      "gateway_boot",
+      "capture_id",
+      "scan_id",
+      "source_boots",
+      "profile_hash",
+      "calibration_hash"
+    ],
+    "output": "final_complete_verified_scan",
+    "do_not_combine_cached_per_axis_best_values": true,
+    "unknown_multiturn_branch": "REJECT_AND_REQUIRE_REFERENCE",
+    "whole_pose_commit_atomic": true
+  },
+  "hardware_experiment": {
+    "baseline": "14wire_shared_SPI_O3",
+    "candidate": "local_remote4_MCU_point_to_point_RS485",
+    "preferred_candidate_mcu": "STM32C011F6U6",
+    "transceiver_candidate": "THVD1400DRLR",
+    "mcu_datasheet_package_mm": [
+      3,
+      3
+    ],
+    "first_baud": 115200,
+    "runtime_conductors_for_J50_candidate": [
+      "3V3",
+      "GND",
+      "A",
+      "B"
+    ],
+    "keep_other_shoulder_sensor_wires_in_full_harness": true,
+    "physical_CAN_nodes": 7,
+    "logical_measurement_regions": 6,
+    "processors_with_two_new_satellites": 9,
+    "remote_trial_board_mm": [
+      26,
+      30
+    ],
+    "remote_stretch_board_mm": [
+      20,
+      30
+    ],
+    "complete_PCBA_fit_proven": false,
+    "waveform_power_mechanics_qualification_required": true,
+    "RS485_satellites_have_no_new_PD41_axis_slots": true,
+    "fallback_when_candidate_fails": "retain baseline hardware and static transaction software"
+  },
+  "mechanical_open_items": [
+    "lining_bond",
+    "actual_max_spring_force",
+    "slot_root_and_interrupted_thread_strength",
+    "output_coupler_and_retention",
+    "loaded_axial_sliding",
+    "complete_reverse_torque_backlash",
+    "multiaxis_shared_assembly_and_harness",
+    "real_support_contacts"
+  ],
+  "next_deliverables": [
+    "static_transaction_end_to_end_with_simulated_faults",
+    "UE_snapshot_state_atomic_capture",
+    "4_vs_14_wire_actual_parts_layout_and_bench_comparison",
+    "mechanical_backlash_retention_and_material_test_plan",
+    "actual_chest_shoulder_single_arm_assembly",
+    "fresh_run_artifacts_and_scope_qualified_gates"
+  ]
+}

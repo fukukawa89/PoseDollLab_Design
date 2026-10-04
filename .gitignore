@@ -59,3 +59,33 @@ Thumbs.db
 !/Hardware/PoseDoll44/generated/revN/quinn/hands_behind.png
 /Hardware/PoseDoll44/verification/viewer_runtime/
 /Hardware/PoseDoll44/verification/firmware_revM/
+
+# O4 tessellated scenes: final h3 is archived in hardware_native_o4_h3.zip.
+/Hardware/PoseDoll44/generated/revO4/runs/*/packaging_scene.json
+
+# O12 reviewed coupon browser evidence (small, intentional artifacts).
+!/Hardware/PoseDoll44/generated/revO12/runs/o12_20260926_r1/page_verification/*.png
+!/Hardware/PoseDoll44/generated/revO12/runs/o12_20260926_r1/page_verification/*.js
+!/Hardware/PoseDoll44/generated/revO12/runs/o12_20260926_r1/page_verification/*.txt
+
+# O13 reviewed design evidence.
+!/Hardware/PoseDoll44/generated/revO13/runs/o13_20260929_r1/page_verification/*.png
+!/Hardware/PoseDoll44/generated/revO13/runs/o13_20260929_r1/page_verification/*.js
+!/Hardware/PoseDoll44/generated/revO13/runs/o13_20260929_r1/page_verification/*.txt
+!/Hardware/PoseDoll44/generated/revO13/runs/o13_20260929_r1/printed_core/*.stl
+
+# Local browser sessions and scratch work; reviewed evidence lives under generated/.
+/.playwright-cli/
+/output/
+# O15 superseded preview; final per-character scenes remain in Git.
+/Hardware/PoseDoll44/tutorials/full-doll-o15/geometry.bin
+/Hardware/PoseDoll44/tutorials/full-doll-o15/scene.json
+# Keep review logs and source snapshots, but never generic diagnostic G-code.
+!/Hardware/PoseDoll44/generated/revO15/**/*.log
+!/Hardware/PoseDoll44/generated/revO15/**/*.txt
+!/Hardware/PoseDoll44/generated/revO15/**/*.py
+!/Hardware/PoseDoll44/generated/revO15/**/*.ini
+!/Hardware/PoseDoll44/generated/revO15/**/page_verification/*.png
+
+# Rebuild actual G-code visualization buffers with publish_revo22_supports.py.
+/Hardware/PoseDoll44/bench/revO22/a1mini_supports/previews/*.bin

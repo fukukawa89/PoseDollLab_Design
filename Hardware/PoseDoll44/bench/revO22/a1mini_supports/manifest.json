@@ -1,0 +1,1886 @@
+{
+  "schema": "POSEDOLL-O22-A1MINI-SUPPORT-PROJECTS/1",
+  "title": "O22 · A1 mini 单材料 PLA 支撑工程",
+  "status": "DIGITAL_CHECKS_PASS_PHYSICAL_TRIAL_REQUIRED",
+  "generated_at": "2026-10-02T22:50:46+08:00",
+  "printer": "Bambu Lab A1 mini",
+  "nozzle_mm": 0.4,
+  "material": "Generic PLA",
+  "single_material": true,
+  "main_pieces": 186,
+  "on_doll_pieces": 185,
+  "assembly_gauge_pieces": 1,
+  "trial_pieces": 7,
+  "optional_coupon_pieces": 2,
+  "physical_print_tested": false,
+  "local_preview_url": "http://127.0.0.1:8770/bench/revO22/a1mini_supports/index.html",
+  "package": "../PoseDoll_O22_A1mini_PLA_Support_Projects.zip",
+  "readme": "README.zh-CN.md",
+  "notes": [
+    "先打印 S00 七件试盘，检查支撑拆除、悬空底面与五金配合，再打印 A01–A10。",
+    "所有工程均保存了机器、PLA 和逐零件支撑设置；请作为项目打开。",
+    "路径检查针对已经建模的孔槽保护核心，不等于所有空腔或实物拆除力已经验证。"
+  ],
+  "plates": [
+    {
+      "id": "S00",
+      "title": "先试印：支撑拆除与小孔配合",
+      "slug": "support_trial",
+      "file": "projects/S00_support_trial_PLA_supports.3mf",
+      "project_sha256": "c0f0dab210dd9ef22152ec45a94a4314699b4b6f0966a3fd26aafd608a894956",
+      "project_bytes": 3490429,
+      "preview": "previews/S00.json",
+      "preview_json_sha256": "56f6de75960a04639ce4fd5ea617234bc5d374f2d338ee1449b86c4f99fc3447",
+      "preview_binary_sha256": "fdfe3a62b3a132c04c6e7ca012e7def98714c82c6463c5c29d7d3028de993e2c",
+      "count": 7,
+      "normal_part_count": 7,
+      "optional": true,
+      "trial": true,
+      "slicer_estimated_print_seconds": 8738.069,
+      "slicer_estimated_filament_g": 33.6517,
+      "path_estimated_support_g": 9.8625,
+      "path_estimated_model_g": 23.6653,
+      "path_estimated_brim_g": 0.0531,
+      "layers": 677,
+      "gcode_sha256": "a152143d01cd5d9ad558a69cee7431de58f94f9e5b5b139e7593df059780b9d2",
+      "clearance_cores_checked": 81,
+      "items": [
+        {
+          "id": "H004",
+          "part": "frame/elbow_l",
+          "number": 1,
+          "object_name": "S00-01 H004 frame/elbow_l",
+          "source_3mf": "print_batch/H004.3mf",
+          "source_sha256": "5df63f846fe832dd6020e5d14db0d0024d24b080e50341e72a8cba5a42569b82"
+        },
+        {
+          "id": "P130",
+          "part": "foot_l/C14",
+          "number": 2,
+          "object_name": "S00-02 P130 foot_l/C14",
+          "source_3mf": "print_batch/P130.3mf",
+          "source_sha256": "079e34b17955a0eda63dcd334b000f4d3d06129e4eb38aec7114bd5c9a7b6b79"
+        },
+        {
+          "id": "P033",
+          "part": "head/C01",
+          "number": 3,
+          "object_name": "S00-03 P033 head/C01",
+          "source_3mf": "print_batch/P033.3mf",
+          "source_sha256": "4c30c76eb71f8c232092509b1cf615cabe5046d49c91e14a4fc85c51d645ba8d"
+        },
+        {
+          "id": "X045",
+          "part": "head/P_case_plus",
+          "number": 4,
+          "object_name": "S00-04 X045 head/P_case_plus",
+          "source_3mf": "print_batch/X045.3mf",
+          "source_sha256": "8c9d9af9ea2c0310f67fb2529f69918f8569ff298ffa19b72cbb6e710a02e155"
+        },
+        {
+          "id": "P036",
+          "part": "head/C15",
+          "number": 5,
+          "object_name": "S00-05 P036 head/C15",
+          "source_3mf": "print_batch/P036.3mf",
+          "source_sha256": "16172900a8dc9ec8db827751ab5a59688a4928bd7a796754f4919592ff7af71c"
+        },
+        {
+          "id": "X005",
+          "part": "head/C01_sensor_cassette",
+          "number": 6,
+          "object_name": "S00-06 X005 head/C01_sensor_cassette",
+          "source_3mf": "print_batch/X005.3mf",
+          "source_sha256": "396c5cd5d70e8d4d080d9a8c244eff3f2a96be37c157743dfaabd60fb7e9832d"
+        },
+        {
+          "id": "N003",
+          "part": "head/C01_magnet_cartridge",
+          "number": 7,
+          "object_name": "S00-07 N003 head/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        }
+      ]
+    },
+    {
+      "id": "A01",
+      "title": "头颈与背盒盖",
+      "slug": "head",
+      "file": "projects/A01_head_PLA_supports.3mf",
+      "project_sha256": "3241b4b2f47ad26915328abc7642805d6e64252c559e594122752e1b6c42fe05",
+      "project_bytes": 5485963,
+      "preview": "previews/A01.json",
+      "preview_json_sha256": "0bebc8ae308b832385ad1941176e951fda9985cffba55729f234703c700af5c7",
+      "preview_binary_sha256": "77b70dbee35fbfcf03fe2f5b4b00eb47be721c7e35ba458c5061267a695dff52",
+      "count": 20,
+      "normal_part_count": 20,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 15800.674,
+      "slicer_estimated_filament_g": 66.6372,
+      "path_estimated_support_g": 13.7618,
+      "path_estimated_model_g": 52.6578,
+      "path_estimated_brim_g": 0.1467,
+      "layers": 1013,
+      "gcode_sha256": "ab682b2846e71abe49c129956ad0dbed288239fa128840c8710c8abc803d1f5d",
+      "clearance_cores_checked": 111,
+      "items": [
+        {
+          "id": "X081",
+          "part": "o22/controller_lid",
+          "number": 1,
+          "object_name": "A01-01 X081 o22/controller_lid",
+          "source_3mf": "print_batch/X081.3mf",
+          "source_sha256": "f04137b5cae637f75a265542044fae12d2f32ffe6a69bc4a9ac2758b41e524ad"
+        },
+        {
+          "id": "X050",
+          "part": "frame/head",
+          "number": 2,
+          "object_name": "A01-02 X050 frame/head",
+          "source_3mf": "print_batch/X050.3mf",
+          "source_sha256": "b2cb8552e1a70237a83bce13e21c180051a268842aaa41c7d7e80dfe48028f34"
+        },
+        {
+          "id": "P035",
+          "part": "head/C14",
+          "number": 3,
+          "object_name": "A01-03 P035 head/C14",
+          "source_3mf": "print_batch/P035.3mf",
+          "source_sha256": "3fc061d0bb7bab1306200e82670fec903f38c91f44967934bfc88e8a1eceae93"
+        },
+        {
+          "id": "P033",
+          "part": "head/C01",
+          "number": 4,
+          "object_name": "A01-04 P033 head/C01",
+          "source_3mf": "print_batch/P033.3mf",
+          "source_sha256": "4c30c76eb71f8c232092509b1cf615cabe5046d49c91e14a4fc85c51d645ba8d"
+        },
+        {
+          "id": "P034",
+          "part": "head/C02",
+          "number": 5,
+          "object_name": "A01-05 P034 head/C02",
+          "source_3mf": "print_batch/P034.3mf",
+          "source_sha256": "0fdfd1cbd9cf58c07a369510f24932379544cd0653b6e22cc05c70190fb0f203"
+        },
+        {
+          "id": "X045",
+          "part": "head/P_case_plus",
+          "number": 6,
+          "object_name": "A01-06 X045 head/P_case_plus",
+          "source_3mf": "print_batch/X045.3mf",
+          "source_sha256": "8c9d9af9ea2c0310f67fb2529f69918f8569ff298ffa19b72cbb6e710a02e155"
+        },
+        {
+          "id": "X049",
+          "part": "head/D_case_plus",
+          "number": 7,
+          "object_name": "A01-07 X049 head/D_case_plus",
+          "source_3mf": "print_batch/X049.3mf",
+          "source_sha256": "dc38be6cab8b8204c16c7c25ab704c78c97a3e51f2c2164c1ca148ac3c5f1be4"
+        },
+        {
+          "id": "P036",
+          "part": "head/C15",
+          "number": 8,
+          "object_name": "A01-08 P036 head/C15",
+          "source_3mf": "print_batch/P036.3mf",
+          "source_sha256": "16172900a8dc9ec8db827751ab5a59688a4928bd7a796754f4919592ff7af71c"
+        },
+        {
+          "id": "X005",
+          "part": "head/C01_sensor_cassette",
+          "number": 9,
+          "object_name": "A01-09 X005 head/C01_sensor_cassette",
+          "source_3mf": "print_batch/X005.3mf",
+          "source_sha256": "396c5cd5d70e8d4d080d9a8c244eff3f2a96be37c157743dfaabd60fb7e9832d"
+        },
+        {
+          "id": "X006",
+          "part": "head/C02_sensor_cassette",
+          "number": 10,
+          "object_name": "A01-10 X006 head/C02_sensor_cassette",
+          "source_3mf": "print_batch/X006.3mf",
+          "source_sha256": "4aa3610708653a718025117b3b31c37a5dadc06bd4f08bb2b4ec9725f0dff517"
+        },
+        {
+          "id": "P040",
+          "part": "head/P_magnet_cap",
+          "number": 11,
+          "object_name": "A01-11 P040 head/P_magnet_cap",
+          "source_3mf": "print_batch/P040.3mf",
+          "source_sha256": "6f55fb57a999dd97a71aa449bf67adbf60d60a6df4dad297fcf8211f64f2034f"
+        },
+        {
+          "id": "P045",
+          "part": "head/D_magnet_cap",
+          "number": 12,
+          "object_name": "A01-12 P045 head/D_magnet_cap",
+          "source_3mf": "print_batch/P045.3mf",
+          "source_sha256": "b3fcd323fef1f23366a7fc7f3cb9277bc9e1f65f21b87eff9c2f867527c4213f"
+        },
+        {
+          "id": "N003",
+          "part": "head/C01_magnet_cartridge",
+          "number": 13,
+          "object_name": "A01-13 N003 head/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "head/C02_magnet_cartridge",
+          "number": 14,
+          "object_name": "A01-14 N003 head/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "X043",
+          "part": "head/P_pcb_clip_-14",
+          "number": 15,
+          "object_name": "A01-15 X043 head/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X043.3mf",
+          "source_sha256": "431bea4a37fb8e063264d27b84a21728e5674183b5bcd2f7df3a83a1568c6b1f"
+        },
+        {
+          "id": "X044",
+          "part": "head/P_pcb_clip_+14",
+          "number": 16,
+          "object_name": "A01-16 X044 head/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X044.3mf",
+          "source_sha256": "e21d17f7fdb133777d4b650e8bff265b22a9dd4356ed0fe2f9c5477dbaf3923a"
+        },
+        {
+          "id": "X047",
+          "part": "head/D_pcb_clip_-14",
+          "number": 17,
+          "object_name": "A01-17 X047 head/D_pcb_clip_-14",
+          "source_3mf": "print_batch/X047.3mf",
+          "source_sha256": "51780f3f6fc301dbe3dc5ee74a8cee55b089464f9bf4771b4c6b5c2f1d8640ae"
+        },
+        {
+          "id": "X048",
+          "part": "head/D_pcb_clip_+14",
+          "number": 18,
+          "object_name": "A01-18 X048 head/D_pcb_clip_+14",
+          "source_3mf": "print_batch/X048.3mf",
+          "source_sha256": "7f1ef6109a986672f2b5fd1ba71668f3d55ab8decd9d84b1b41128a2c228714f"
+        },
+        {
+          "id": "P039",
+          "part": "head/P_radial_pad",
+          "number": 19,
+          "object_name": "A01-19 P039 head/P_radial_pad",
+          "source_3mf": "print_batch/P039.3mf",
+          "source_sha256": "c8061db2535718e7713792e2b893f74ef3819a327de800ce5857fda13ed56ced"
+        },
+        {
+          "id": "P044",
+          "part": "head/D_radial_pad",
+          "number": 20,
+          "object_name": "A01-20 P044 head/D_radial_pad",
+          "source_3mf": "print_batch/P044.3mf",
+          "source_sha256": "8c65f86bda391acf44a865027db5063d071486f5799485d846f62cc3edb15551"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "躯干 1/2",
+      "slug": "torso_1",
+      "file": "projects/A02_torso_1_PLA_supports.3mf",
+      "project_sha256": "e5d24bb8b9e08fc69f82201a539083e6e33fe2c302352dc2929edee90e393952",
+      "project_bytes": 12631043,
+      "preview": "previews/A02.json",
+      "preview_json_sha256": "7ecab5dda66137b947173a380e6c11413328854726299f26c4d149e1d6432894",
+      "preview_binary_sha256": "c3fa956cdd20c19d668f75b0c54f55ade02ee95f0d2f01f4e2bc4658208b0602",
+      "count": 13,
+      "normal_part_count": 13,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 38239.262,
+      "slicer_estimated_filament_g": 206.2801,
+      "path_estimated_support_g": 99.956,
+      "path_estimated_model_g": 105.9542,
+      "path_estimated_brim_g": 0.2991,
+      "layers": 1472,
+      "gcode_sha256": "62300652039d7bd36351833e0a850e929e386e193f7bb1f4bc20b707ec832431",
+      "clearance_cores_checked": 87,
+      "items": [
+        {
+          "id": "X046",
+          "part": "frame/chest",
+          "number": 1,
+          "object_name": "A02-01 X046 frame/chest",
+          "source_3mf": "print_batch/X046.3mf",
+          "source_sha256": "cc6fca9816d102b40a4325b310161370845ad5ef6682ce536885040d1790c232"
+        },
+        {
+          "id": "X042",
+          "part": "frame/waist",
+          "number": 2,
+          "object_name": "A02-02 X042 frame/waist",
+          "source_3mf": "print_batch/X042.3mf",
+          "source_sha256": "0cd8b638b6e0717a0df17c6d4f6c253e4dfef82d618911db21065e729ff3d984"
+        },
+        {
+          "id": "P002",
+          "part": "waist/C14",
+          "number": 3,
+          "object_name": "A02-03 P002 waist/C14",
+          "source_3mf": "print_batch/P002.3mf",
+          "source_sha256": "f075c2c395de7236dd336561e2f6c321990b170512d30595026980eeeb2b1f15"
+        },
+        {
+          "id": "P018",
+          "part": "chest/C14",
+          "number": 4,
+          "object_name": "A02-04 P018 chest/C14",
+          "source_3mf": "print_batch/P018.3mf",
+          "source_sha256": "bac0967117983672fdd87f7ba5eb7e6b0431f862c42a282201979baa73bd21d3"
+        },
+        {
+          "id": "P001",
+          "part": "waist/C01",
+          "number": 5,
+          "object_name": "A02-05 P001 waist/C01",
+          "source_3mf": "print_batch/P001.3mf",
+          "source_sha256": "854d48915bf18fdebcd4986e39f914e3d2373b86446fb9649f6b982adfc2a836"
+        },
+        {
+          "id": "P017",
+          "part": "chest/C01",
+          "number": 6,
+          "object_name": "A02-06 P017 chest/C01",
+          "source_3mf": "print_batch/P017.3mf",
+          "source_sha256": "fd2b073a9f199b82a79b5908327deefd74c989acc5dc195b9339e3150b620cc5"
+        },
+        {
+          "id": "X041",
+          "part": "chest/P_case_plus",
+          "number": 7,
+          "object_name": "A02-07 X041 chest/P_case_plus",
+          "source_3mf": "print_batch/X041.3mf",
+          "source_sha256": "fa9ccb1d42e45c1760f97c204152db0479af45f5d2443e593ccfd5fe44c6c983"
+        },
+        {
+          "id": "X040",
+          "part": "chest/P_pcb_clip_+14",
+          "number": 8,
+          "object_name": "A02-08 X040 chest/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X040.3mf",
+          "source_sha256": "6b3f0dd4402b167bc48deb910e54a0c5f1c5419320997752432d95395e6fe3d4"
+        },
+        {
+          "id": "X039",
+          "part": "chest/P_pcb_clip_-14",
+          "number": 9,
+          "object_name": "A02-09 X039 chest/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X039.3mf",
+          "source_sha256": "4c257da372185e527c6a4dfef48ac82929be0652aa3fca8dda7e9902af2962f6"
+        },
+        {
+          "id": "X036",
+          "part": "waist/P_pcb_clip_+14",
+          "number": 10,
+          "object_name": "A02-10 X036 waist/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X036.3mf",
+          "source_sha256": "cb765a6ab26326481c372d7b051d5a8d660397b0505ec362863659e56095961c"
+        },
+        {
+          "id": "X035",
+          "part": "waist/P_pcb_clip_-14",
+          "number": 11,
+          "object_name": "A02-11 X035 waist/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X035.3mf",
+          "source_sha256": "70d01e6f0be235c08ec77c455711c06de0abfa4689d3f0f4abaa039ec1b371e1"
+        },
+        {
+          "id": "P012",
+          "part": "waist/P_radial_pad",
+          "number": 12,
+          "object_name": "A02-12 P012 waist/P_radial_pad",
+          "source_3mf": "print_batch/P012.3mf",
+          "source_sha256": "b78dbf59137efa57d6075f769ebc666006f9e785c99900dfd4366fcc77ac740d"
+        },
+        {
+          "id": "P028",
+          "part": "chest/P_radial_pad",
+          "number": 13,
+          "object_name": "A02-13 P028 chest/P_radial_pad",
+          "source_3mf": "print_batch/P028.3mf",
+          "source_sha256": "5d8d79d09946b4925938373509b38e806eda2b8864575f184426fa6d0bc9fba9"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "躯干 2/2",
+      "slug": "torso_2",
+      "file": "projects/A03_torso_2_PLA_supports.3mf",
+      "project_sha256": "c7f891567de499ac68f90f04aa4feb3818b81b3efa579db550370cbec9850af4",
+      "project_bytes": 4902589,
+      "preview": "previews/A03.json",
+      "preview_json_sha256": "d3e8d06756435e88a9d2361f289540329d5b28d3e85197b990fa45fc5ebc356b",
+      "preview_binary_sha256": "a93a69103023b6188e845922750e09364f07e9ef10c948e090068550f0f8254f",
+      "count": 15,
+      "normal_part_count": 15,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 11477.564,
+      "slicer_estimated_filament_g": 44.8513,
+      "path_estimated_support_g": 8.3477,
+      "path_estimated_model_g": 36.3901,
+      "path_estimated_brim_g": 0.0427,
+      "layers": 636,
+      "gcode_sha256": "a3573a954c27e458b019fbf5421550f308539c71cf389dfa9a26f417b969f879",
+      "clearance_cores_checked": 142,
+      "items": [
+        {
+          "id": "X038",
+          "part": "frame/pelvis",
+          "number": 1,
+          "object_name": "A03-01 X038 frame/pelvis",
+          "source_3mf": "print_batch/X038.3mf",
+          "source_sha256": "0205b596ff417caefc6dada86a9fbc93b2c7bf90ecb9b275de50f6abd23b954e"
+        },
+        {
+          "id": "X037",
+          "part": "waist/P_case_plus",
+          "number": 2,
+          "object_name": "A03-02 X037 waist/P_case_plus",
+          "source_3mf": "print_batch/X037.3mf",
+          "source_sha256": "a9a4531579513c60c29d9538b0dac604ce62e2b942bed9110909b8dba40c8875"
+        },
+        {
+          "id": "P003",
+          "part": "waist/C15",
+          "number": 3,
+          "object_name": "A03-03 P003 waist/C15",
+          "source_3mf": "print_batch/P003.3mf",
+          "source_sha256": "88ba0c2bc4cb6cf93fb3ed425f473f7e45a72468a7e5f6aae9d1548dac81ebdf"
+        },
+        {
+          "id": "P019",
+          "part": "chest/C15",
+          "number": 4,
+          "object_name": "A03-04 P019 chest/C15",
+          "source_3mf": "print_batch/P019.3mf",
+          "source_sha256": "7b938e71f8c42934959c84a0db56286825fedb3cdfc9b0ee2e29e60ce7c29e47"
+        },
+        {
+          "id": "X004",
+          "part": "chest/C02_sensor_cassette",
+          "number": 5,
+          "object_name": "A03-05 X004 chest/C02_sensor_cassette",
+          "source_3mf": "print_batch/X004.3mf",
+          "source_sha256": "75ff124bf0d0706f90996b221d2880355ce7818a97bf772fc2479d1594b11604"
+        },
+        {
+          "id": "X001",
+          "part": "waist/C01_sensor_cassette",
+          "number": 6,
+          "object_name": "A03-06 X001 waist/C01_sensor_cassette",
+          "source_3mf": "print_batch/X001.3mf",
+          "source_sha256": "65f4fce7aa81162b43516939924996bd3053043e927c9ac69ec62eca5f43b987"
+        },
+        {
+          "id": "X003",
+          "part": "chest/C01_sensor_cassette",
+          "number": 7,
+          "object_name": "A03-07 X003 chest/C01_sensor_cassette",
+          "source_3mf": "print_batch/X003.3mf",
+          "source_sha256": "83307e72985c7ffea4085591865267386e4c81139f0f38631728f99bcdfe5aac"
+        },
+        {
+          "id": "X002",
+          "part": "waist/C02_sensor_cassette",
+          "number": 8,
+          "object_name": "A03-08 X002 waist/C02_sensor_cassette",
+          "source_3mf": "print_batch/X002.3mf",
+          "source_sha256": "53b36bdd82c4ee52b87f074bc5b7aa3717c1521c410253967c51464f64e0afb6"
+        },
+        {
+          "id": "P242",
+          "part": "fixture/xiao_spacing_gauge",
+          "number": 9,
+          "object_name": "A03-09 P242 fixture/xiao_spacing_gauge",
+          "source_3mf": "print_batch/P242.3mf",
+          "source_sha256": "16d55df7691b26ee4d55a68e20a3078c47258bf15feab549f51492ddc6e36ae6"
+        },
+        {
+          "id": "P013",
+          "part": "waist/P_magnet_cap",
+          "number": 10,
+          "object_name": "A03-10 P013 waist/P_magnet_cap",
+          "source_3mf": "print_batch/P013.3mf",
+          "source_sha256": "393bd9125685aaeb80db080a3be3b175bb73c6deb1380b11b88f17bb6f9c7bbc"
+        },
+        {
+          "id": "P029",
+          "part": "chest/P_magnet_cap",
+          "number": 11,
+          "object_name": "A03-11 P029 chest/P_magnet_cap",
+          "source_3mf": "print_batch/P029.3mf",
+          "source_sha256": "ae1eadcac0d8bad771edee0d9b4e13bf4b902fb7767d1667391558a9ab101bc4"
+        },
+        {
+          "id": "N003",
+          "part": "waist/C01_magnet_cartridge",
+          "number": 12,
+          "object_name": "A03-12 N003 waist/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "waist/C02_magnet_cartridge",
+          "number": 13,
+          "object_name": "A03-13 N003 waist/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "chest/C01_magnet_cartridge",
+          "number": 14,
+          "object_name": "A03-14 N003 chest/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "chest/C02_magnet_cartridge",
+          "number": 15,
+          "object_name": "A03-15 N003 chest/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "左臂 1/2",
+      "slug": "left_arm_1",
+      "file": "projects/A04_left_arm_1_PLA_supports.3mf",
+      "project_sha256": "5936a33b7d004c4abeb028304482b9b7e858a6c55852b361f9ac47601e6fb3e6",
+      "project_bytes": 8226059,
+      "preview": "previews/A04.json",
+      "preview_json_sha256": "9401bbb10be27e29e46e94dee81a8511378a7e305ecdfacf8af05b9948dd19e1",
+      "preview_binary_sha256": "0955514889ceee8eda5d6c6558208812db2312830a4d943220b24daec3e8d727",
+      "count": 11,
+      "normal_part_count": 11,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 17547.457,
+      "slicer_estimated_filament_g": 74.1763,
+      "path_estimated_support_g": 16.9132,
+      "path_estimated_model_g": 56.9314,
+      "path_estimated_brim_g": 0.2609,
+      "layers": 1227,
+      "gcode_sha256": "fff63cb7bf8b3f76ca5441c715374dcbede6413e6da2fdcd0718bb6ee885fb7d",
+      "clearance_cores_checked": 53,
+      "items": [
+        {
+          "id": "X054",
+          "part": "frame/clavicle_l",
+          "number": 1,
+          "object_name": "A04-01 X054 frame/clavicle_l",
+          "source_3mf": "print_batch/X054.3mf",
+          "source_sha256": "54e122c8eaf920d87ded9a8f4cc8c7b05f22f94c0dac84587483e6fc4c461e56"
+        },
+        {
+          "id": "W005",
+          "part": "frame/clavicle_l.protract_frame",
+          "number": 2,
+          "object_name": "A04-02 W005 frame/clavicle_l.protract_frame",
+          "source_3mf": "print_batch/W005.3mf",
+          "source_sha256": "aea4ec37b43255731d22522c87460f0f82770f2a20c35d950c92652fe44c0e1a"
+        },
+        {
+          "id": "H004",
+          "part": "frame/elbow_l",
+          "number": 3,
+          "object_name": "A04-03 H004 frame/elbow_l",
+          "source_3mf": "print_batch/H004.3mf",
+          "source_sha256": "5df63f846fe832dd6020e5d14db0d0024d24b080e50341e72a8cba5a42569b82"
+        },
+        {
+          "id": "P051",
+          "part": "upperarm_l/C14",
+          "number": 4,
+          "object_name": "A04-04 P051 upperarm_l/C14",
+          "source_3mf": "print_batch/P051.3mf",
+          "source_sha256": "92dbdb5ff2f122dbbc14f0b1838f2a685244b5fbe722fdef3352fa97da6c5a63"
+        },
+        {
+          "id": "X058",
+          "part": "frame/upperarm_l",
+          "number": 5,
+          "object_name": "A04-05 X058 frame/upperarm_l",
+          "source_3mf": "print_batch/X058.3mf",
+          "source_sha256": "243a1b2e2f14be9ad3b64cc33c3c7d3792138be62227e0422e29e571a5e5a12f"
+        },
+        {
+          "id": "X051",
+          "part": "upperarm_l/P_pcb_clip_-14",
+          "number": 6,
+          "object_name": "A04-06 X051 upperarm_l/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X051.3mf",
+          "source_sha256": "7a2b0b9b2f102bd880e603d38ee64a3c66d0d3009fa7c90c5edb807f8c475a2a"
+        },
+        {
+          "id": "X056",
+          "part": "upperarm_l/D_pcb_clip_+14",
+          "number": 7,
+          "object_name": "A04-07 X056 upperarm_l/D_pcb_clip_+14",
+          "source_3mf": "print_batch/X056.3mf",
+          "source_sha256": "8f1684da2a06a0870701e3388af1cb2a043f6b27ac1d5a40aadfe5972ef1a846"
+        },
+        {
+          "id": "X055",
+          "part": "upperarm_l/D_pcb_clip_-14",
+          "number": 8,
+          "object_name": "A04-08 X055 upperarm_l/D_pcb_clip_-14",
+          "source_3mf": "print_batch/X055.3mf",
+          "source_sha256": "16955bd342cbe3b48ff429cdd3444ae7f4f730e437629ea47ed2f952a9fcaf9a"
+        },
+        {
+          "id": "X052",
+          "part": "upperarm_l/P_pcb_clip_+14",
+          "number": 9,
+          "object_name": "A04-09 X052 upperarm_l/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X052.3mf",
+          "source_sha256": "056f46ea81bc33a2e3395c2255eecc403c77eb7ba2ac8e58b42f0abcbd0100a8"
+        },
+        {
+          "id": "P061",
+          "part": "upperarm_l/P_radial_pad",
+          "number": 10,
+          "object_name": "A04-10 P061 upperarm_l/P_radial_pad",
+          "source_3mf": "print_batch/P061.3mf",
+          "source_sha256": "df951cdd564a5144036f0979350b2235cfc63da8451cde3335db5720d8ac96dc"
+        },
+        {
+          "id": "P066",
+          "part": "upperarm_l/D_radial_pad",
+          "number": 11,
+          "object_name": "A04-11 P066 upperarm_l/D_radial_pad",
+          "source_3mf": "print_batch/P066.3mf",
+          "source_sha256": "088056df45ce6ec612a997d4b9ef2334b1b54f7c3856b51edffe9e2eebfb1466"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "左臂 2/2",
+      "slug": "left_arm_2",
+      "file": "projects/A05_left_arm_2_PLA_supports.3mf",
+      "project_sha256": "e8b2c0791460f3de8919c086c415f91da62b0ec48cab7cf969fc966b3e9b7ddd",
+      "project_bytes": 8134053,
+      "preview": "previews/A05.json",
+      "preview_json_sha256": "1ea868b7887e54319a884b882086bdfa22173603889e1901a275105ed5bd2a0b",
+      "preview_binary_sha256": "e86fb3c487afffc13305daeaae2544bb946ec8559fe5b1d359a2c1832505c2aa",
+      "count": 26,
+      "normal_part_count": 26,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 18881.139,
+      "slicer_estimated_filament_g": 83.6558,
+      "path_estimated_support_g": 20.9636,
+      "path_estimated_model_g": 62.5538,
+      "path_estimated_brim_g": 0.0676,
+      "layers": 991,
+      "gcode_sha256": "17f8fff94ffeb220e47d8504b62d9f13962dc873ada962f5b608cc8851da1e8f",
+      "clearance_cores_checked": 190,
+      "items": [
+        {
+          "id": "H006",
+          "part": "frame/hand_l.flex_frame",
+          "number": 1,
+          "object_name": "A05-01 H006 frame/hand_l.flex_frame",
+          "source_3mf": "print_batch/H006.3mf",
+          "source_sha256": "125fa8dc498f5ec0cd2213d226bf400a0bf745a3d7f35669582282a71f9fe644"
+        },
+        {
+          "id": "P050",
+          "part": "upperarm_l/C02",
+          "number": 2,
+          "object_name": "A05-02 P050 upperarm_l/C02",
+          "source_3mf": "print_batch/P050.3mf",
+          "source_sha256": "e000f568cc71fda45020aa55a9c3b7a704ed2679a69c2d38231d92f8624e5030"
+        },
+        {
+          "id": "W004",
+          "part": "frame/forearm_l",
+          "number": 3,
+          "object_name": "A05-03 W004 frame/forearm_l",
+          "source_3mf": "print_batch/W004.3mf",
+          "source_sha256": "6bf26bffb1ccf0a16bf29051f9ff4123ef457375b563d40cd1a17da9140c9202"
+        },
+        {
+          "id": "P191",
+          "part": "frame/hand_l",
+          "number": 4,
+          "object_name": "A05-04 P191 frame/hand_l",
+          "source_3mf": "print_batch/P191.3mf",
+          "source_sha256": "10ce995e437d57cd7ad9b4b51403ec0845dbdcdaa39258f827997ffa6eb6f154"
+        },
+        {
+          "id": "N004",
+          "part": "clavicle_l.elevate/magnet_cartridge",
+          "number": 5,
+          "object_name": "A05-05 N004 clavicle_l.elevate/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "X008",
+          "part": "upperarm_l/C02_sensor_cassette",
+          "number": 6,
+          "object_name": "A05-06 X008 upperarm_l/C02_sensor_cassette",
+          "source_3mf": "print_batch/X008.3mf",
+          "source_sha256": "5c53ed4b2f934f992a59591ef27dd7b43fa6f23d269ca16cce9704176f3b64fd"
+        },
+        {
+          "id": "X007",
+          "part": "upperarm_l/C01_sensor_cassette",
+          "number": 7,
+          "object_name": "A05-07 X007 upperarm_l/C01_sensor_cassette",
+          "source_3mf": "print_batch/X007.3mf",
+          "source_sha256": "72e73673a0383d198618084a19353a9e157b4f0e4fd5f74fc0a7d137c876e511"
+        },
+        {
+          "id": "P052",
+          "part": "upperarm_l/C15",
+          "number": 8,
+          "object_name": "A05-08 P052 upperarm_l/C15",
+          "source_3mf": "print_batch/P052.3mf",
+          "source_sha256": "8deb82713b3a761f20e5392e90afe7a5484943a48dc31a0a45af4ff816e4a014"
+        },
+        {
+          "id": "X053",
+          "part": "upperarm_l/P_case_plus",
+          "number": 9,
+          "object_name": "A05-09 X053 upperarm_l/P_case_plus",
+          "source_3mf": "print_batch/X053.3mf",
+          "source_sha256": "90bf6f8e42b02930362f0db36a63325565f1e8413caac56f15d6449540ad3d57"
+        },
+        {
+          "id": "X020",
+          "part": "clavicle_l.elevate/sensor_cassette",
+          "number": 10,
+          "object_name": "A05-10 X020 clavicle_l.elevate/sensor_cassette",
+          "source_3mf": "print_batch/X020.3mf",
+          "source_sha256": "99a68e53c8eb797bc85d88b48b004bb3ec433241bcf65410142373ed72c18d12"
+        },
+        {
+          "id": "N004",
+          "part": "hand_l.deviate/magnet_cartridge",
+          "number": 11,
+          "object_name": "A05-11 N004 hand_l.deviate/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "forearm_l.twist/magnet_cartridge",
+          "number": 12,
+          "object_name": "A05-12 N004 forearm_l.twist/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "X022",
+          "part": "forearm_l.twist/sensor_cassette",
+          "number": 13,
+          "object_name": "A05-13 X022 forearm_l.twist/sensor_cassette",
+          "source_3mf": "print_batch/X022.3mf",
+          "source_sha256": "aa91945c8b4dabca4d10c61d9185a612f3f10ef5923db3b949c585c5aa627534"
+        },
+        {
+          "id": "P049",
+          "part": "upperarm_l/C01",
+          "number": 14,
+          "object_name": "A05-14 P049 upperarm_l/C01",
+          "source_3mf": "print_batch/P049.3mf",
+          "source_sha256": "5e5b709f286bea5486972e60b0d2b5dd1061cbf0317e866d6075cab60d265737"
+        },
+        {
+          "id": "X024",
+          "part": "hand_l.deviate/sensor_cassette",
+          "number": 15,
+          "object_name": "A05-15 X024 hand_l.deviate/sensor_cassette",
+          "source_3mf": "print_batch/X024.3mf",
+          "source_sha256": "9b3889dbaa3e30410ed8d98c82f071aec1e66447ed586364241aeda0e988f1bc"
+        },
+        {
+          "id": "X057",
+          "part": "upperarm_l/D_case_plus",
+          "number": 16,
+          "object_name": "A05-16 X057 upperarm_l/D_case_plus",
+          "source_3mf": "print_batch/X057.3mf",
+          "source_sha256": "645e6aeb73fd703f756422f1648026a0aa63e21273b763c94216d715e2fe8972"
+        },
+        {
+          "id": "N004",
+          "part": "hand_l.flex/magnet_cartridge",
+          "number": 17,
+          "object_name": "A05-17 N004 hand_l.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "X021",
+          "part": "elbow_l.flex/sensor_cassette",
+          "number": 18,
+          "object_name": "A05-18 X021 elbow_l.flex/sensor_cassette",
+          "source_3mf": "print_batch/X021.3mf",
+          "source_sha256": "ac5ccf55a0fbc339e074072c8dce55ae314ef6dfafdba0fe5c71b05d1ef00547"
+        },
+        {
+          "id": "N004",
+          "part": "clavicle_l.protract/magnet_cartridge",
+          "number": 19,
+          "object_name": "A05-19 N004 clavicle_l.protract/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "elbow_l.flex/magnet_cartridge",
+          "number": 20,
+          "object_name": "A05-20 N004 elbow_l.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "X023",
+          "part": "hand_l.flex/sensor_cassette",
+          "number": 21,
+          "object_name": "A05-21 X023 hand_l.flex/sensor_cassette",
+          "source_3mf": "print_batch/X023.3mf",
+          "source_sha256": "ff06151beedb4f1c1c9a74b208ff3a568f064a4992b18ff5b3c6296d77a04f3e"
+        },
+        {
+          "id": "X019",
+          "part": "clavicle_l.protract/sensor_cassette",
+          "number": 22,
+          "object_name": "A05-22 X019 clavicle_l.protract/sensor_cassette",
+          "source_3mf": "print_batch/X019.3mf",
+          "source_sha256": "4df5eda28df8b55eec764e1533a35a344d13fe190449b88b78a5b51556d2b66b"
+        },
+        {
+          "id": "P067",
+          "part": "upperarm_l/D_magnet_cap",
+          "number": 23,
+          "object_name": "A05-23 P067 upperarm_l/D_magnet_cap",
+          "source_3mf": "print_batch/P067.3mf",
+          "source_sha256": "3b9a95cb27cff00a4eb9160220b2579c7b8695b805e74e58c084a2fc6eddc981"
+        },
+        {
+          "id": "P062",
+          "part": "upperarm_l/P_magnet_cap",
+          "number": 24,
+          "object_name": "A05-24 P062 upperarm_l/P_magnet_cap",
+          "source_3mf": "print_batch/P062.3mf",
+          "source_sha256": "78272793b9383e8aeeb55a827a2d1d852ed0d5c32294695171e9ed485e9f7660"
+        },
+        {
+          "id": "N003",
+          "part": "upperarm_l/C01_magnet_cartridge",
+          "number": 25,
+          "object_name": "A05-25 N003 upperarm_l/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "upperarm_l/C02_magnet_cartridge",
+          "number": 26,
+          "object_name": "A05-26 N003 upperarm_l/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "右臂 1/2",
+      "slug": "right_arm_1",
+      "file": "projects/A06_right_arm_1_PLA_supports.3mf",
+      "project_sha256": "8a333063a73e3979eda23fe8013fe2df0b22218e1917e0b900b9d526576d94e0",
+      "project_bytes": 10169391,
+      "preview": "previews/A06.json",
+      "preview_json_sha256": "479db8937e17247a6cc2cb0433e1048b74a559cc2658494305e48128af96ed31",
+      "preview_binary_sha256": "2975a3f880f2115f7a384b6ae1795bfe573504dc6f91b3036d1be3c8b41f7dbf",
+      "count": 14,
+      "normal_part_count": 14,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 24672.855,
+      "slicer_estimated_filament_g": 112.9011,
+      "path_estimated_support_g": 35.9799,
+      "path_estimated_model_g": 76.6819,
+      "path_estimated_brim_g": 0.1686,
+      "layers": 1356,
+      "gcode_sha256": "adea2aa35fa5d98828172f0a55b627caaec529242a07cd5262c7832731b71dfc",
+      "clearance_cores_checked": 120,
+      "items": [
+        {
+          "id": "H008",
+          "part": "frame/clavicle_r.protract_frame",
+          "number": 1,
+          "object_name": "A06-01 H008 frame/clavicle_r.protract_frame",
+          "source_3mf": "print_batch/H008.3mf",
+          "source_sha256": "7fec520821225dda0411ec1598017dfd1bfa0bb70c6a6fe4885cbd7965c1320d"
+        },
+        {
+          "id": "W002",
+          "part": "frame/forearm_r",
+          "number": 2,
+          "object_name": "A06-02 W002 frame/forearm_r",
+          "source_3mf": "print_batch/W002.3mf",
+          "source_sha256": "adc063bce34ef2b52f0068bd7410699bd38bfb5d04b722e111c4e21b0739ddc5"
+        },
+        {
+          "id": "H010",
+          "part": "frame/elbow_r",
+          "number": 3,
+          "object_name": "A06-03 H010 frame/elbow_r",
+          "source_3mf": "print_batch/H010.3mf",
+          "source_sha256": "6272a24c43d5d26fb8a05be3c9db50dec6865f27075dfcb076a03905a2d7c2de"
+        },
+        {
+          "id": "X062",
+          "part": "frame/clavicle_r",
+          "number": 4,
+          "object_name": "A06-04 X062 frame/clavicle_r",
+          "source_3mf": "print_batch/X062.3mf",
+          "source_sha256": "104c741697f9a6b1fa0933091893fb6106a02496eac4c2748168559d28f610dc"
+        },
+        {
+          "id": "X066",
+          "part": "frame/upperarm_r",
+          "number": 5,
+          "object_name": "A06-05 X066 frame/upperarm_r",
+          "source_3mf": "print_batch/X066.3mf",
+          "source_sha256": "75edbec080d728abde9467a568cb5e3f2e3c436c076578878a27698cffec4eb6"
+        },
+        {
+          "id": "P071",
+          "part": "upperarm_r/C01",
+          "number": 6,
+          "object_name": "A06-06 P071 upperarm_r/C01",
+          "source_3mf": "print_batch/P071.3mf",
+          "source_sha256": "b4b1fbd44cc397b37094f693cc08654d8ab31eba8efe8d0d3c24af648c16a0b3"
+        },
+        {
+          "id": "X061",
+          "part": "upperarm_r/P_case_plus",
+          "number": 7,
+          "object_name": "A06-07 X061 upperarm_r/P_case_plus",
+          "source_3mf": "print_batch/X061.3mf",
+          "source_sha256": "e477e4267551553417a6522faff8be0380d77daafdad706de10146b5488eec73"
+        },
+        {
+          "id": "X065",
+          "part": "upperarm_r/D_case_plus",
+          "number": 8,
+          "object_name": "A06-08 X065 upperarm_r/D_case_plus",
+          "source_3mf": "print_batch/X065.3mf",
+          "source_sha256": "29e573e7ab2a817326cdf1ab8952aa671ed960b7d7944e916b1d2af82ba8cd83"
+        },
+        {
+          "id": "P073",
+          "part": "upperarm_r/C14",
+          "number": 9,
+          "object_name": "A06-09 P073 upperarm_r/C14",
+          "source_3mf": "print_batch/P073.3mf",
+          "source_sha256": "44b582f1cab03d16be42343251c0bf62d7ef8f395c5f648a9db71e32d7277b22"
+        },
+        {
+          "id": "X032",
+          "part": "hand_r.deviate/sensor_cassette",
+          "number": 10,
+          "object_name": "A06-10 X032 hand_r.deviate/sensor_cassette",
+          "source_3mf": "print_batch/X032.3mf",
+          "source_sha256": "967b96f645b77d5d18a84e39604a80e6031e65029bb1a1a8e36c73090edfd1dd"
+        },
+        {
+          "id": "X030",
+          "part": "forearm_r.twist/sensor_cassette",
+          "number": 11,
+          "object_name": "A06-11 X030 forearm_r.twist/sensor_cassette",
+          "source_3mf": "print_batch/X030.3mf",
+          "source_sha256": "895d5f0791cb721adde79a347cf774089c348158e3b2adb2f44c2f4ef193a472"
+        },
+        {
+          "id": "X028",
+          "part": "clavicle_r.elevate/sensor_cassette",
+          "number": 12,
+          "object_name": "A06-12 X028 clavicle_r.elevate/sensor_cassette",
+          "source_3mf": "print_batch/X028.3mf",
+          "source_sha256": "3e3a9b16c0cecd96c8da5129ac7721982eb10b323bec421f1c8294805e260031"
+        },
+        {
+          "id": "X009",
+          "part": "upperarm_r/C01_sensor_cassette",
+          "number": 13,
+          "object_name": "A06-13 X009 upperarm_r/C01_sensor_cassette",
+          "source_3mf": "print_batch/X009.3mf",
+          "source_sha256": "597a335d2219a9596526cbe2ab00f20373f3d72c83e34772717ed2b80d52cc8a"
+        },
+        {
+          "id": "X031",
+          "part": "hand_r.flex/sensor_cassette",
+          "number": 14,
+          "object_name": "A06-14 X031 hand_r.flex/sensor_cassette",
+          "source_3mf": "print_batch/X031.3mf",
+          "source_sha256": "471a432d4cf950a079c73066271e3d2e99c9093f54e067198d5df8f8b945e899"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "右臂 2/2",
+      "slug": "right_arm_2",
+      "file": "projects/A07_right_arm_2_PLA_supports.3mf",
+      "project_sha256": "eb569412bafc0c944163221e394c9c501848958181b4c5894b2d84120d8aed5f",
+      "project_bytes": 3569002,
+      "preview": "previews/A07.json",
+      "preview_json_sha256": "465c47db123a88981dc812f4eeb136b3d90da16b48fd0bb058e920fb4603fe26",
+      "preview_binary_sha256": "d957625bd4ca14017d3f7cf9c10ad9932ccade1e728d06f2219ce4e21b195f94",
+      "count": 23,
+      "normal_part_count": 23,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 9961.023,
+      "slicer_estimated_filament_g": 41.0526,
+      "path_estimated_support_g": 6.932,
+      "path_estimated_model_g": 33.8613,
+      "path_estimated_brim_g": 0.1884,
+      "layers": 699,
+      "gcode_sha256": "a38b3609b57e1550679887258418fa1abb7b94facd1db5b27c0e1d77c0f827c2",
+      "clearance_cores_checked": 123,
+      "items": [
+        {
+          "id": "H012",
+          "part": "frame/hand_r.flex_frame",
+          "number": 1,
+          "object_name": "A07-01 H012 frame/hand_r.flex_frame",
+          "source_3mf": "print_batch/H012.3mf",
+          "source_sha256": "136e3785b561581734486155d5227707a4b3ed4d62726795a94470b7c94a5b0b"
+        },
+        {
+          "id": "X027",
+          "part": "clavicle_r.protract/sensor_cassette",
+          "number": 2,
+          "object_name": "A07-02 X027 clavicle_r.protract/sensor_cassette",
+          "source_3mf": "print_batch/X027.3mf",
+          "source_sha256": "0a6ae17bf6037f4c0d814badebc5169bb38eaf9add2e0e0cbf9c221a73fcc061"
+        },
+        {
+          "id": "X029",
+          "part": "elbow_r.flex/sensor_cassette",
+          "number": 3,
+          "object_name": "A07-03 X029 elbow_r.flex/sensor_cassette",
+          "source_3mf": "print_batch/X029.3mf",
+          "source_sha256": "2ed8a4e11bc9cff07dd2bb9341a3395fb90a711f84ff265f2cff702218be249b"
+        },
+        {
+          "id": "N004",
+          "part": "forearm_r.twist/magnet_cartridge",
+          "number": 4,
+          "object_name": "A07-04 N004 forearm_r.twist/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "X010",
+          "part": "upperarm_r/C02_sensor_cassette",
+          "number": 5,
+          "object_name": "A07-05 X010 upperarm_r/C02_sensor_cassette",
+          "source_3mf": "print_batch/X010.3mf",
+          "source_sha256": "483d655b379a8dca36158549608eafc17ff21ecdbda5c155d74c63d8dbf49c44"
+        },
+        {
+          "id": "N004",
+          "part": "elbow_r.flex/magnet_cartridge",
+          "number": 6,
+          "object_name": "A07-06 N004 elbow_r.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "P074",
+          "part": "upperarm_r/C15",
+          "number": 7,
+          "object_name": "A07-07 P074 upperarm_r/C15",
+          "source_3mf": "print_batch/P074.3mf",
+          "source_sha256": "328942eecf29268b9a0301396bab050dbc3fbdc94b3e705ca106e2bfd498faf5"
+        },
+        {
+          "id": "N004",
+          "part": "clavicle_r.protract/magnet_cartridge",
+          "number": 8,
+          "object_name": "A07-08 N004 clavicle_r.protract/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "P072",
+          "part": "upperarm_r/C02",
+          "number": 9,
+          "object_name": "A07-09 P072 upperarm_r/C02",
+          "source_3mf": "print_batch/P072.3mf",
+          "source_sha256": "90d3d68f5522ba984ec670f240d87b17fdc957c9bddb614211760be404f67358"
+        },
+        {
+          "id": "N004",
+          "part": "hand_r.flex/magnet_cartridge",
+          "number": 10,
+          "object_name": "A07-10 N004 hand_r.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "clavicle_r.elevate/magnet_cartridge",
+          "number": 11,
+          "object_name": "A07-11 N004 clavicle_r.elevate/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "hand_r.deviate/magnet_cartridge",
+          "number": 12,
+          "object_name": "A07-12 N004 hand_r.deviate/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "P084",
+          "part": "upperarm_r/P_magnet_cap",
+          "number": 13,
+          "object_name": "A07-13 P084 upperarm_r/P_magnet_cap",
+          "source_3mf": "print_batch/P084.3mf",
+          "source_sha256": "c0af445446b8543ce7dace92d0e5c0d9acaccc5471987c564c7a5df85a0554f4"
+        },
+        {
+          "id": "P185",
+          "part": "frame/hand_r",
+          "number": 14,
+          "object_name": "A07-14 P185 frame/hand_r",
+          "source_3mf": "print_batch/P185.3mf",
+          "source_sha256": "14334ab86f07c1dfaa3b9c453ed0b4519066a6fdff73694d2111da478c6e3818"
+        },
+        {
+          "id": "P089",
+          "part": "upperarm_r/D_magnet_cap",
+          "number": 15,
+          "object_name": "A07-15 P089 upperarm_r/D_magnet_cap",
+          "source_3mf": "print_batch/P089.3mf",
+          "source_sha256": "5ee8b0fb0bbd761e692fd01de58da9fbff6b608273c0df555dffdc4d5bf6155a"
+        },
+        {
+          "id": "N003",
+          "part": "upperarm_r/C01_magnet_cartridge",
+          "number": 16,
+          "object_name": "A07-16 N003 upperarm_r/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "upperarm_r/C02_magnet_cartridge",
+          "number": 17,
+          "object_name": "A07-17 N003 upperarm_r/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "X063",
+          "part": "upperarm_r/D_pcb_clip_-14",
+          "number": 18,
+          "object_name": "A07-18 X063 upperarm_r/D_pcb_clip_-14",
+          "source_3mf": "print_batch/X063.3mf",
+          "source_sha256": "60e3fd5caab7a01d6e67ac60fb6cff367e35958d53610358afe1d2e705fb3768"
+        },
+        {
+          "id": "X059",
+          "part": "upperarm_r/P_pcb_clip_-14",
+          "number": 19,
+          "object_name": "A07-19 X059 upperarm_r/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X059.3mf",
+          "source_sha256": "d91426516b10a2a4ac57ae497442be841c169722d244aa1d60e94c943fdc4883"
+        },
+        {
+          "id": "X064",
+          "part": "upperarm_r/D_pcb_clip_+14",
+          "number": 20,
+          "object_name": "A07-20 X064 upperarm_r/D_pcb_clip_+14",
+          "source_3mf": "print_batch/X064.3mf",
+          "source_sha256": "45c7292d97e7f5279b291fe6146f9f91325ce0d2424d3860eba54ec3781d260e"
+        },
+        {
+          "id": "X060",
+          "part": "upperarm_r/P_pcb_clip_+14",
+          "number": 21,
+          "object_name": "A07-21 X060 upperarm_r/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X060.3mf",
+          "source_sha256": "868e709f433ab391ade4f37791ce69c5871c4f3556a21517939390e032277235"
+        },
+        {
+          "id": "P083",
+          "part": "upperarm_r/P_radial_pad",
+          "number": 22,
+          "object_name": "A07-22 P083 upperarm_r/P_radial_pad",
+          "source_3mf": "print_batch/P083.3mf",
+          "source_sha256": "6b4c282cf889f452c98d44a7ed357914cd3aba34a4c4c75b1ff988cffcbc3427"
+        },
+        {
+          "id": "P088",
+          "part": "upperarm_r/D_radial_pad",
+          "number": 23,
+          "object_name": "A07-23 P088 upperarm_r/D_radial_pad",
+          "source_3mf": "print_batch/P088.3mf",
+          "source_sha256": "7de8ba03df42c5f2b206a79bcd8e6fc82620af41d707d9171091a8565bbdf60c"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "左大腿与左腿关节小件",
+      "slug": "left_leg",
+      "file": "projects/A08_left_leg_PLA_supports.3mf",
+      "project_sha256": "a29eb6f08a9465a342d27d0ab3efce26ff91d1d37c6bcdb0ce4aea580190ed5f",
+      "project_bytes": 6430697,
+      "preview": "previews/A08.json",
+      "preview_json_sha256": "b2a682afc942480b7eeeb466a33c3ad4731091b28f69616f70564cb26589a99a",
+      "preview_binary_sha256": "73ec5977af9847c3c8519986e9699c7ef9a1649353a23833eb3a888f27de49da",
+      "count": 27,
+      "normal_part_count": 27,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 16880.936,
+      "slicer_estimated_filament_g": 67.472,
+      "path_estimated_support_g": 18.4469,
+      "path_estimated_model_g": 48.8184,
+      "path_estimated_brim_g": 0.1359,
+      "layers": 1303,
+      "gcode_sha256": "98353e825c98ed3edf74e5b7a720e04d5218bfa353cf9351a354425971d8f813",
+      "clearance_cores_checked": 183,
+      "items": [
+        {
+          "id": "X073",
+          "part": "frame/thigh_l",
+          "number": 1,
+          "object_name": "A08-01 X073 frame/thigh_l",
+          "source_3mf": "print_batch/X073.3mf",
+          "source_sha256": "8bdf880026f68800fd0da5b66b047fa8952da847f333290ed60ee631da937992"
+        },
+        {
+          "id": "P095",
+          "part": "thigh_l/C14",
+          "number": 2,
+          "object_name": "A08-02 P095 thigh_l/C14",
+          "source_3mf": "print_batch/P095.3mf",
+          "source_sha256": "afe75017d6e0c9222c58d95de5e2a027b94d07b869d0acdb369ca49c248beb0f"
+        },
+        {
+          "id": "P093",
+          "part": "thigh_l/C01",
+          "number": 3,
+          "object_name": "A08-03 P093 thigh_l/C01",
+          "source_3mf": "print_batch/P093.3mf",
+          "source_sha256": "03d149d96d61e7270edc2d3af6597e6d9e683d04ddb2924daaf0c194a1d48ada"
+        },
+        {
+          "id": "P094",
+          "part": "thigh_l/C02",
+          "number": 4,
+          "object_name": "A08-04 P094 thigh_l/C02",
+          "source_3mf": "print_batch/P094.3mf",
+          "source_sha256": "dd89528b536fad83bd23768c39f4df423584d75c5a3353564cf0adbb6c58435a"
+        },
+        {
+          "id": "X069",
+          "part": "thigh_l/P_case_plus",
+          "number": 5,
+          "object_name": "A08-05 X069 thigh_l/P_case_plus",
+          "source_3mf": "print_batch/X069.3mf",
+          "source_sha256": "631bb57d8db82d4ae6449e6b04433031744ed75d31c22581ca84c575c15770f8"
+        },
+        {
+          "id": "X072",
+          "part": "thigh_l/D_case_plus",
+          "number": 6,
+          "object_name": "A08-06 X072 thigh_l/D_case_plus",
+          "source_3mf": "print_batch/X072.3mf",
+          "source_sha256": "dbf9dcc7b45785e07733196099518663da2a7283dc33a86c619f39d9e0070841"
+        },
+        {
+          "id": "P096",
+          "part": "thigh_l/C15",
+          "number": 7,
+          "object_name": "A08-07 P096 thigh_l/C15",
+          "source_3mf": "print_batch/P096.3mf",
+          "source_sha256": "8fdb3969f8f46dcca1f0204251a59dfb81e31d05024700358a688d8a1e3e1d18"
+        },
+        {
+          "id": "X012",
+          "part": "thigh_l/C02_sensor_cassette",
+          "number": 8,
+          "object_name": "A08-08 X012 thigh_l/C02_sensor_cassette",
+          "source_3mf": "print_batch/X012.3mf",
+          "source_sha256": "eec948c433474fad27ff8c93f72444e214706f0c10f009d7568dbc34cc82c66f"
+        },
+        {
+          "id": "X016",
+          "part": "foot_l/C02_sensor_cassette",
+          "number": 9,
+          "object_name": "A08-09 X016 foot_l/C02_sensor_cassette",
+          "source_3mf": "print_batch/X016.3mf",
+          "source_sha256": "cf635faffc8ed11544cd01e77dc9521cf81ab228d3b8e0cff7231c0c609de346"
+        },
+        {
+          "id": "X025",
+          "part": "calf_l.flex/sensor_cassette",
+          "number": 10,
+          "object_name": "A08-10 X025 calf_l.flex/sensor_cassette",
+          "source_3mf": "print_batch/X025.3mf",
+          "source_sha256": "63edc7bb3b6414a4845e22720acbadc3e728ad609441ab7a958a28874e2e10a5"
+        },
+        {
+          "id": "X015",
+          "part": "foot_l/C01_sensor_cassette",
+          "number": 11,
+          "object_name": "A08-11 X015 foot_l/C01_sensor_cassette",
+          "source_3mf": "print_batch/X015.3mf",
+          "source_sha256": "d82bef2528d6dbb90185575ceb33d5617560f83d45f968668c5e90f90a51383a"
+        },
+        {
+          "id": "X011",
+          "part": "thigh_l/C01_sensor_cassette",
+          "number": 12,
+          "object_name": "A08-12 X011 thigh_l/C01_sensor_cassette",
+          "source_3mf": "print_batch/X011.3mf",
+          "source_sha256": "5034b306ec9fce9c48070366d0d02045807fbfe7d7fb60f54dbe2fab556a2c6a"
+        },
+        {
+          "id": "X026",
+          "part": "ball_l.flex/sensor_cassette",
+          "number": 13,
+          "object_name": "A08-13 X026 ball_l.flex/sensor_cassette",
+          "source_3mf": "print_batch/X026.3mf",
+          "source_sha256": "6a5ec838bed213683bf63d5b229ceb51b47cbb3b3f3a02e47587575cb92f6010"
+        },
+        {
+          "id": "N004",
+          "part": "calf_l.flex/magnet_cartridge",
+          "number": 14,
+          "object_name": "A08-14 N004 calf_l.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "ball_l.flex/magnet_cartridge",
+          "number": 15,
+          "object_name": "A08-15 N004 ball_l.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "P106",
+          "part": "thigh_l/P_magnet_cap",
+          "number": 16,
+          "object_name": "A08-16 P106 thigh_l/P_magnet_cap",
+          "source_3mf": "print_batch/P106.3mf",
+          "source_sha256": "74b867a32d7ad4906e7cd51a5b67a543031e70163f7b7ad526fa58b1148de243"
+        },
+        {
+          "id": "P111",
+          "part": "thigh_l/D_magnet_cap",
+          "number": 17,
+          "object_name": "A08-17 P111 thigh_l/D_magnet_cap",
+          "source_3mf": "print_batch/P111.3mf",
+          "source_sha256": "acd12b5b831a39c757b6b4ab7c17e6c85c390cbabed9e9b2c2d3d387fc71aa13"
+        },
+        {
+          "id": "N003",
+          "part": "thigh_l/C01_magnet_cartridge",
+          "number": 18,
+          "object_name": "A08-18 N003 thigh_l/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "thigh_l/C02_magnet_cartridge",
+          "number": 19,
+          "object_name": "A08-19 N003 thigh_l/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "foot_l/C01_magnet_cartridge",
+          "number": 20,
+          "object_name": "A08-20 N003 foot_l/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "foot_l/C02_magnet_cartridge",
+          "number": 21,
+          "object_name": "A08-21 N003 foot_l/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "X068",
+          "part": "thigh_l/P_pcb_clip_+14",
+          "number": 22,
+          "object_name": "A08-22 X068 thigh_l/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X068.3mf",
+          "source_sha256": "d164caa6adafb01de7b504fa62f0593f59985d0e8b822f7e8fa3441761999fbd"
+        },
+        {
+          "id": "X067",
+          "part": "thigh_l/P_pcb_clip_-14",
+          "number": 23,
+          "object_name": "A08-23 X067 thigh_l/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X067.3mf",
+          "source_sha256": "9db1cbb3b10a7b0d4d88e02954f7c858d72136b30e191d4958b361b6e9eb1d61"
+        },
+        {
+          "id": "X071",
+          "part": "thigh_l/D_pcb_clip_+14",
+          "number": 24,
+          "object_name": "A08-24 X071 thigh_l/D_pcb_clip_+14",
+          "source_3mf": "print_batch/X071.3mf",
+          "source_sha256": "8d14e259b3f7a42a11bf54c7dfd0c2c1069cadd0e1c6cc9e6a0ceb032568a52d"
+        },
+        {
+          "id": "X070",
+          "part": "thigh_l/D_pcb_clip_-14",
+          "number": 25,
+          "object_name": "A08-25 X070 thigh_l/D_pcb_clip_-14",
+          "source_3mf": "print_batch/X070.3mf",
+          "source_sha256": "70348e04b66cf9ec7cb29c2e1d85370fbda8866dc6af1ee9f2f77b816d6e2333"
+        },
+        {
+          "id": "P105",
+          "part": "thigh_l/P_radial_pad",
+          "number": 26,
+          "object_name": "A08-26 P105 thigh_l/P_radial_pad",
+          "source_3mf": "print_batch/P105.3mf",
+          "source_sha256": "66cd484d305fb68d68ea34614ec42b29ef131f845f38f3c50eb4fb3ea06c5e9d"
+        },
+        {
+          "id": "P110",
+          "part": "thigh_l/D_radial_pad",
+          "number": 27,
+          "object_name": "A08-27 P110 thigh_l/D_radial_pad",
+          "source_3mf": "print_batch/P110.3mf",
+          "source_sha256": "98169698ec45133446c4818008b7eeea9c793943894a99f6e36c9e6ba8a5f4e7"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "右大腿与右腿关节小件",
+      "slug": "right_leg",
+      "file": "projects/A09_right_leg_PLA_supports.3mf",
+      "project_sha256": "f058a6a957c663c5667e4b4c15de504f0d2cf6cdff8faaa24507a509fb6998c1",
+      "project_bytes": 6249058,
+      "preview": "previews/A09.json",
+      "preview_json_sha256": "607e656cbb4361116cb41668727686284edce39120ad98463c3f1be39f506340",
+      "preview_binary_sha256": "b2954d3fdb7df1c7ec554c5de96fdbe2eecb3b986aeb4938e5b33fce26b162c3",
+      "count": 27,
+      "normal_part_count": 27,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 16486.447,
+      "slicer_estimated_filament_g": 64.3797,
+      "path_estimated_support_g": 15.5538,
+      "path_estimated_model_g": 48.6193,
+      "path_estimated_brim_g": 0.1359,
+      "layers": 1288,
+      "gcode_sha256": "ef5bc6d54c29db8ad68cbf718e05962f25c8457d425dc0afe192ce1874251ec1",
+      "clearance_cores_checked": 183,
+      "items": [
+        {
+          "id": "X080",
+          "part": "frame/thigh_r",
+          "number": 1,
+          "object_name": "A09-01 X080 frame/thigh_r",
+          "source_3mf": "print_batch/X080.3mf",
+          "source_sha256": "c3645f273148f61a2d3a736faa7115a679717a0676cc87c850370ed806461c3f"
+        },
+        {
+          "id": "P117",
+          "part": "thigh_r/C14",
+          "number": 2,
+          "object_name": "A09-02 P117 thigh_r/C14",
+          "source_3mf": "print_batch/P117.3mf",
+          "source_sha256": "4320c38bc1e25af6dec92dee6ea7c91ff76a9dd3396601ff9fe67c2dcba5c155"
+        },
+        {
+          "id": "P115",
+          "part": "thigh_r/C01",
+          "number": 3,
+          "object_name": "A09-03 P115 thigh_r/C01",
+          "source_3mf": "print_batch/P115.3mf",
+          "source_sha256": "ff865ca1883fdcc38c78f836af65a7c44cbdfb7e97409cdf012ed473361b4feb"
+        },
+        {
+          "id": "P116",
+          "part": "thigh_r/C02",
+          "number": 4,
+          "object_name": "A09-04 P116 thigh_r/C02",
+          "source_3mf": "print_batch/P116.3mf",
+          "source_sha256": "55de953b3ae44ad15c5f177f6e12cacc6282e55d8c88ef71a43b270f0a6f5d2a"
+        },
+        {
+          "id": "X076",
+          "part": "thigh_r/P_case_plus",
+          "number": 5,
+          "object_name": "A09-05 X076 thigh_r/P_case_plus",
+          "source_3mf": "print_batch/X076.3mf",
+          "source_sha256": "c5e1d723719853cce9aeabf30b974447d872cc352f6fa92d2a52cfc3ba14d520"
+        },
+        {
+          "id": "X079",
+          "part": "thigh_r/D_case_plus",
+          "number": 6,
+          "object_name": "A09-06 X079 thigh_r/D_case_plus",
+          "source_3mf": "print_batch/X079.3mf",
+          "source_sha256": "da6b810ca110ae4fb33e1899bf47f2454effd6a6cc544faeea4155c76de08712"
+        },
+        {
+          "id": "P118",
+          "part": "thigh_r/C15",
+          "number": 7,
+          "object_name": "A09-07 P118 thigh_r/C15",
+          "source_3mf": "print_batch/P118.3mf",
+          "source_sha256": "0f7567bb6d65ee6e1389c9871e7e2b130cd9ffecd8db41854742e619d037cbca"
+        },
+        {
+          "id": "X013",
+          "part": "thigh_r/C01_sensor_cassette",
+          "number": 8,
+          "object_name": "A09-08 X013 thigh_r/C01_sensor_cassette",
+          "source_3mf": "print_batch/X013.3mf",
+          "source_sha256": "2f71f8a4564bc2d6efbf8651e5a8714b55d79432fd01ad83cde80c7fb8d9992b"
+        },
+        {
+          "id": "X014",
+          "part": "thigh_r/C02_sensor_cassette",
+          "number": 9,
+          "object_name": "A09-09 X014 thigh_r/C02_sensor_cassette",
+          "source_3mf": "print_batch/X014.3mf",
+          "source_sha256": "77541e353155c95b6158e3ff69c60e1a5b8ecc82fde495f5efc561344169af7d"
+        },
+        {
+          "id": "X017",
+          "part": "foot_r/C01_sensor_cassette",
+          "number": 10,
+          "object_name": "A09-10 X017 foot_r/C01_sensor_cassette",
+          "source_3mf": "print_batch/X017.3mf",
+          "source_sha256": "643cfea1ef2a6d6d24693e7a1337c02d075641d7b5e2af2f112f34495eafac45"
+        },
+        {
+          "id": "X018",
+          "part": "foot_r/C02_sensor_cassette",
+          "number": 11,
+          "object_name": "A09-11 X018 foot_r/C02_sensor_cassette",
+          "source_3mf": "print_batch/X018.3mf",
+          "source_sha256": "10cd49d27c3e19047d8d249b614be866304234566e4c39b471157403930e8273"
+        },
+        {
+          "id": "X033",
+          "part": "calf_r.flex/sensor_cassette",
+          "number": 12,
+          "object_name": "A09-12 X033 calf_r.flex/sensor_cassette",
+          "source_3mf": "print_batch/X033.3mf",
+          "source_sha256": "b287d0c077c1df4c0f386e0300e4076076b711c8873108040afe4d1b2518f641"
+        },
+        {
+          "id": "X034",
+          "part": "ball_r.flex/sensor_cassette",
+          "number": 13,
+          "object_name": "A09-13 X034 ball_r.flex/sensor_cassette",
+          "source_3mf": "print_batch/X034.3mf",
+          "source_sha256": "d24fb4f0bd7027b412e4abec76baa154f2373fb9d7cefae6a62b0bc9d4c1221f"
+        },
+        {
+          "id": "N004",
+          "part": "calf_r.flex/magnet_cartridge",
+          "number": 14,
+          "object_name": "A09-14 N004 calf_r.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "N004",
+          "part": "ball_r.flex/magnet_cartridge",
+          "number": 15,
+          "object_name": "A09-15 N004 ball_r.flex/magnet_cartridge",
+          "source_3mf": "print_batch/N004.3mf",
+          "source_sha256": "d6be30de58d904feade3b60b89a7025e74f7cc852ce592c105276d6454944eea"
+        },
+        {
+          "id": "P013",
+          "part": "thigh_r/P_magnet_cap",
+          "number": 16,
+          "object_name": "A09-16 P013 thigh_r/P_magnet_cap",
+          "source_3mf": "print_batch/P013.3mf",
+          "source_sha256": "393bd9125685aaeb80db080a3be3b175bb73c6deb1380b11b88f17bb6f9c7bbc"
+        },
+        {
+          "id": "P126",
+          "part": "thigh_r/D_magnet_cap",
+          "number": 17,
+          "object_name": "A09-17 P126 thigh_r/D_magnet_cap",
+          "source_3mf": "print_batch/P126.3mf",
+          "source_sha256": "700a92ee052091e01f3c2965656cc466272143277beab3d635c24f9e1c77dfcf"
+        },
+        {
+          "id": "N003",
+          "part": "thigh_r/C01_magnet_cartridge",
+          "number": 18,
+          "object_name": "A09-18 N003 thigh_r/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "thigh_r/C02_magnet_cartridge",
+          "number": 19,
+          "object_name": "A09-19 N003 thigh_r/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "foot_r/C01_magnet_cartridge",
+          "number": 20,
+          "object_name": "A09-20 N003 foot_r/C01_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "N003",
+          "part": "foot_r/C02_magnet_cartridge",
+          "number": 21,
+          "object_name": "A09-21 N003 foot_r/C02_magnet_cartridge",
+          "source_3mf": "print_batch/N003.3mf",
+          "source_sha256": "8fac02e6e3bbe1b3017903f5e254b90727b60ec37ba41a35ad6ef06884c4078c"
+        },
+        {
+          "id": "X074",
+          "part": "thigh_r/P_pcb_clip_-14",
+          "number": 22,
+          "object_name": "A09-22 X074 thigh_r/P_pcb_clip_-14",
+          "source_3mf": "print_batch/X074.3mf",
+          "source_sha256": "c8d25efda76ea25da17412b46cf78da666dcfa1cea77a261126f7bcc789a1233"
+        },
+        {
+          "id": "X075",
+          "part": "thigh_r/P_pcb_clip_+14",
+          "number": 23,
+          "object_name": "A09-23 X075 thigh_r/P_pcb_clip_+14",
+          "source_3mf": "print_batch/X075.3mf",
+          "source_sha256": "6bab073cf1d98025bcbcd9bcef2747dbd8d8ddf615796b72d3a8e919da7cffff"
+        },
+        {
+          "id": "X077",
+          "part": "thigh_r/D_pcb_clip_-14",
+          "number": 24,
+          "object_name": "A09-24 X077 thigh_r/D_pcb_clip_-14",
+          "source_3mf": "print_batch/X077.3mf",
+          "source_sha256": "bab14f5cfbfe5ec46a638804429089cc4af16dc29ba80337dfef5fe11c910aaa"
+        },
+        {
+          "id": "X078",
+          "part": "thigh_r/D_pcb_clip_+14",
+          "number": 25,
+          "object_name": "A09-25 X078 thigh_r/D_pcb_clip_+14",
+          "source_3mf": "print_batch/X078.3mf",
+          "source_sha256": "feef4ecdfe1ab8d43154480ed723a65e68e7418b9d84cb9bd57ad30b1faa3fd7"
+        },
+        {
+          "id": "P012",
+          "part": "thigh_r/P_radial_pad",
+          "number": 26,
+          "object_name": "A09-26 P012 thigh_r/P_radial_pad",
+          "source_3mf": "print_batch/P012.3mf",
+          "source_sha256": "b78dbf59137efa57d6075f769ebc666006f9e785c99900dfd4366fcc77ac740d"
+        },
+        {
+          "id": "P125",
+          "part": "thigh_r/D_radial_pad",
+          "number": 27,
+          "object_name": "A09-27 P125 thigh_r/D_radial_pad",
+          "source_3mf": "print_batch/P125.3mf",
+          "source_sha256": "9c700228b32936dbf948ae178ce28a6b2b620ff50af10b9c05645572bc62ecb7"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "title": "双侧小腿与脚掌骨架",
+      "slug": "lower_legs",
+      "file": "projects/A10_lower_legs_PLA_supports.3mf",
+      "project_sha256": "e34fdbbdaa1539a89ec22757188df20a271b81fe540576561ac779d32dd0b0dd",
+      "project_bytes": 11187448,
+      "preview": "previews/A10.json",
+      "preview_json_sha256": "8d3f22f894290af6a13469279036e27ee1dbeb39afdb70712bd22feaf9804138",
+      "preview_binary_sha256": "f0115f4a6cbabb72a5873d296894fc487d4dfaf1c64ab280960a195da08e351f",
+      "count": 10,
+      "normal_part_count": 10,
+      "optional": false,
+      "trial": false,
+      "slicer_estimated_print_seconds": 27834.146,
+      "slicer_estimated_filament_g": 123.434,
+      "path_estimated_support_g": 41.0564,
+      "path_estimated_model_g": 82.1622,
+      "path_estimated_brim_g": 0.1446,
+      "layers": 1080,
+      "gcode_sha256": "af011007551ff5a27e6c2fea74e00b57454621233c292a85b2d71c121fb7bdbd",
+      "clearance_cores_checked": 122,
+      "items": [
+        {
+          "id": "W006",
+          "part": "frame/calf_r",
+          "number": 1,
+          "object_name": "A10-01 W006 frame/calf_r",
+          "source_3mf": "print_batch/W006.3mf",
+          "source_sha256": "b0c1233130115045d13e5f572e92889ca4e62ddd0bd867d8a43efaa9a50a3964"
+        },
+        {
+          "id": "W007",
+          "part": "frame/calf_l",
+          "number": 2,
+          "object_name": "A10-02 W007 frame/calf_l",
+          "source_3mf": "print_batch/W007.3mf",
+          "source_sha256": "d4812b026e3a90064c94e99d080edecbe0134ad1cddbf048a1ea95aecdb796dc"
+        },
+        {
+          "id": "P130",
+          "part": "foot_l/C14",
+          "number": 3,
+          "object_name": "A10-03 P130 foot_l/C14",
+          "source_3mf": "print_batch/P130.3mf",
+          "source_sha256": "079e34b17955a0eda63dcd334b000f4d3d06129e4eb38aec7114bd5c9a7b6b79"
+        },
+        {
+          "id": "P130",
+          "part": "foot_r/C14",
+          "number": 4,
+          "object_name": "A10-04 P130 foot_r/C14",
+          "source_3mf": "print_batch/P130.3mf",
+          "source_sha256": "079e34b17955a0eda63dcd334b000f4d3d06129e4eb38aec7114bd5c9a7b6b79"
+        },
+        {
+          "id": "W003",
+          "part": "frame/ball_l",
+          "number": 5,
+          "object_name": "A10-05 W003 frame/ball_l",
+          "source_3mf": "print_batch/W003.3mf",
+          "source_sha256": "19f4ccc064c876ba6166f3e4721885e7148df354bf5a1ba24b6e4f60efb595ae"
+        },
+        {
+          "id": "W001",
+          "part": "frame/ball_r",
+          "number": 6,
+          "object_name": "A10-06 W001 frame/ball_r",
+          "source_3mf": "print_batch/W001.3mf",
+          "source_sha256": "4b0be09feff966ceb28f06cbfe93dfe1390f43c5e3c4c53f7af0a67518a7fd1c"
+        },
+        {
+          "id": "W016",
+          "part": "frame/foot_l",
+          "number": 7,
+          "object_name": "A10-07 W016 frame/foot_l",
+          "source_3mf": "print_batch/W016.3mf",
+          "source_sha256": "60cd35eb68738d3d3ea8c6a5daa7cf02481113b6487a15d57d608298539fb068"
+        },
+        {
+          "id": "W017",
+          "part": "frame/foot_r",
+          "number": 8,
+          "object_name": "A10-08 W017 frame/foot_r",
+          "source_3mf": "print_batch/W017.3mf",
+          "source_sha256": "259b0348451f9115455a018c226b9d50f19291a6be00d10ede29b39b988511c9"
+        },
+        {
+          "id": "P131",
+          "part": "foot_l/C15",
+          "number": 9,
+          "object_name": "A10-09 P131 foot_l/C15",
+          "source_3mf": "print_batch/P131.3mf",
+          "source_sha256": "c64d3e9038d06f803a916d1353a12966f299d96a3ab12615325aa6042f1dd151"
+        },
+        {
+          "id": "P131",
+          "part": "foot_r/C15",
+          "number": 10,
+          "object_name": "A10-10 P131 foot_r/C15",
+          "source_3mf": "print_batch/P131.3mf",
+          "source_sha256": "c64d3e9038d06f803a916d1353a12966f299d96a3ab12615325aa6042f1dd151"
+        }
+      ]
+    },
+    {
+      "id": "T01",
+      "title": "可选：O22 传感器安装小样",
+      "slug": "sensor_coupon",
+      "file": "projects/T01_sensor_coupon_PLA_supports.3mf",
+      "project_sha256": "e178b79724b205eb0f63f98020f1bb3e9881e1348220c9c30be0ac5e165171f9",
+      "project_bytes": 270361,
+      "preview": "previews/T01.json",
+      "preview_json_sha256": "25a224831ec9a89575d1202c50b904606a91e29ea92fc0b790b55af0e0481bfd",
+      "preview_binary_sha256": "8c588719503726e86ab3653415baab16811c5915160fd26d93fd81bcd25427c9",
+      "count": 2,
+      "normal_part_count": 2,
+      "optional": true,
+      "trial": false,
+      "slicer_estimated_print_seconds": 3679.02,
+      "slicer_estimated_filament_g": 7.0915,
+      "path_estimated_support_g": 1.8691,
+      "path_estimated_model_g": 5.1196,
+      "path_estimated_brim_g": 0.032,
+      "layers": 972,
+      "gcode_sha256": "f3a469d2bd7c01ab44f53cda147211a586ff4cc924604910d11d19f91d6630ac",
+      "clearance_cores_checked": 12,
+      "items": [
+        {
+          "id": "T001",
+          "part": "sensor_coupon/sensor_bridge",
+          "number": 1,
+          "object_name": "T01-01 T001 sensor_coupon/sensor_bridge",
+          "source_3mf": "physical_tests/sensor_coupon/sensor_bridge.3mf",
+          "source_sha256": "298bdcdaaf1d9d24c4f79b58c0b26969ac5dafc8dec7ccb6fb5882d07bad3eb3"
+        },
+        {
+          "id": "T002",
+          "part": "sensor_coupon/magnet_bridge",
+          "number": 2,
+          "object_name": "T01-02 T002 sensor_coupon/magnet_bridge",
+          "source_3mf": "physical_tests/sensor_coupon/magnet_bridge.3mf",
+          "source_sha256": "ada6a2c33b852c53c6ac046aefc00635507a077e1caeb9cadfd0f32a0cb74917"
+        }
+      ]
+    }
+  ]
+}

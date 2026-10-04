@@ -1,0 +1,25 @@
+{
+  "schema": "POSEDOLL-O22-SUPPORT-DESIGN-EVIDENCE/1",
+  "status": "CAD-derived process candidate; physical PLA breakaway test pending",
+  "files": {
+    "protected_volumes.json": "d36d306a4648e12935c8415768de72e30742053e81914ef0d6f18513aa9223dd",
+    "object_strategy.json": "0beecff694618ea41b15f7e540852865313b7c33c2c09dd0dc5c280fc3250848",
+    "additional_enforcers.json": "3ba9edbcfcde67b0847d4170e5ece14e270745636bdc4991a2aeb2d36894ba86",
+    "mesh_candidates.json": "da13f4d3c2230e67562bb7f9a355f8997b52ec8b3e90d881d178967abe6cb72a",
+    "volume_sample_validation.json": "5343680c6d2fa8782d8fdc99b6f5c4e56f4ec038f3eb4f0f52fc679ae56e6a33",
+    "t01_protected_volumes.json": "3cd541280622a9188f379965f51217f0c938f268d5181c7cb690408ea71eab13",
+    "all_protected_volumes.json": "146015d966819299a83b20ec439b0a81513d91ef7bf13011cc434626d1ea0c5b",
+    "t01_volume_sample_validation.json": "c07ca7d1ffdd6bc4d2c0bccdeeda06456ee09e07863380e0ce20716d6f8654b1",
+    "local_support_exclusion_impact.json": "5659fc4acd9b19aa919c4a8be2d9a58505f64eb9ba0575a2b51ef78a0fff43db"
+  },
+  "critical_corrections": [
+    "34 PCB cassettes have low floating rails atZ0.55mm; need selective exterior support.",
+    "Vertical-ray body occlusion does not classify a face as a precision cavity. Large removable openings require additional support candidates.",
+    "P073/P074/P095/P096 inherited P exports include a manufacturing-Y mirror; their asymmetric M1.6 head/nut patterns are transformed accordingly.",
+    "Finite-twist D ends have different original owner datum; actual sensor service_frame and source mesh radius6.12/9.82 circle fits locate the bearing clearances.",
+    "Actual brim extrusion entered eleven precision bearing/shoulder apertures. Those individual brims are disabled; actual paths are checked including brim/skirt class.",
+    "Support-blocker geometry alone did not stop normal/snug smoothing from refilling two critical cavities. Final localized 3.5 mm XY exclusions preserve the lower chest arc support and pass actual G-code checks."
+  ],
+  "deprecated_field_note": "mesh_candidates.json model_below_downward_exclusion_faces means only body below the face, not a sufficient support prohibition. See occluded_connected_patches and additional_enforcers.json.",
+  "verification_scope": "Protected volumes are conservatively inset partial clearance cores. Actual support and brim sweeps must be checked with scripts/verify_revo22_support_clearance.py, including line width and layer height. Passing all declared cores does not certify every unlisted hole, physical surface finish, layer strength, or support removal force."
+}

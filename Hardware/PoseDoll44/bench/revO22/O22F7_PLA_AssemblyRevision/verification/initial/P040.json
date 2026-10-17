@@ -1,0 +1,45 @@
+{
+  "id": "P040",
+  "part": "head/P_magnet_cap",
+  "source_npz_sha256": "c35b9ef6aeec37b343f416647c35a9b6ff10482ea6064c35d81c7cb300a0590e",
+  "guard_count": 4,
+  "analytic_feature_count": 2,
+  "assembly_fastener_count": 2,
+  "source_alignment_fraction": 0.9999999999999991,
+  "support_count": 0,
+  "support_in_fastener_clearance_mm3": 0.0,
+  "fin_intrusion_mm3": 0.0,
+  "tooth_intrusion_mm3": 0.0,
+  "features": [
+    {
+      "source": "analytic_cad",
+      "feature": "M2_cap_through_hole_[5.8, 0.0]",
+      "evidence": "revO15/twist.py cap: central aperture radius2.9, screw bores1.15 at +/-5.8. Actual current source mesh BBox center and circular vertex fit identify transformed source centers.",
+      "fin_mm3": 0.0,
+      "tooth_mm3": 0.0
+    },
+    {
+      "source": "analytic_cad",
+      "feature": "M2_cap_through_hole_[-5.8, 0.0]",
+      "evidence": "revO15/twist.py cap: central aperture radius2.9, screw bores1.15 at +/-5.8. Actual current source mesh BBox center and circular vertex fit identify transformed source centers.",
+      "fin_mm3": 0.0,
+      "tooth_mm3": 0.0
+    },
+    {
+      "source": "assembled_fastener",
+      "feature": "head/P_magnet_screw_-5.8",
+      "sku": "SCREW_M2_L4",
+      "margin_mm": 0.25,
+      "fin_mm3": 0.0,
+      "tooth_mm3": 0.0
+    },
+    {
+      "source": "assembled_fastener",
+      "feature": "head/P_magnet_screw_+5.8",
+      "sku": "SCREW_M2_L4",
+      "margin_mm": 0.25,
+      "fin_mm3": 0.0,
+      "tooth_mm3": 0.0
+    }
+  ]
+}

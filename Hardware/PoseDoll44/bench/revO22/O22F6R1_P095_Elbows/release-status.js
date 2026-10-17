@@ -1,0 +1,1 @@
+document.getElementById('status').classList.add('passed');document.getElementById('status').textContent='D01 完整原生路径检查通过：0 个外部孤岛、0 段超限悬空；网格与孔位复核通过。尚未实物打印或强度测试。';

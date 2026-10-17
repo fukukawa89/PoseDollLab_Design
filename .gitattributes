@@ -7,3 +7,7 @@
 *.pdf binary
 *.npz binary
 *.bin binary
+
+# Large released O22F7 archives and assembly buffers use Git LFS.
+Hardware/PoseDoll44/bench/revO22/O22F7_PLA_*.zip filter=lfs diff=lfs merge=lfs -text
+Hardware/PoseDoll44/bench/revO22/O22F7_PLA_*/assembly/tutorials/assembly-o22/geometry-o22f7*.bin filter=lfs diff=lfs merge=lfs -text

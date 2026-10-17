@@ -248,6 +248,10 @@ def intro():
         D.raw('</details></article>')
     D.raw('</div>')
     D.p('T01 为传感器安装小样：T001 传感桥 + T002 磁铁桥，单独在台面上核验板厚、封装间隙与磁场。**不装在人偶上、不计入 186 件。** [小样与首件要求](../../bench/revO22/physical_tests/ACCEPTANCE.zh-CN.md)。')
+    hardware_and_recipes()
+
+def hardware_and_recipes():
+    """Shared assembly instructions, independent of the print-plate release."""
     D.heading(2,'02 · 全部金属件与磁铁清单','hardware')
     D.p('下面是整机净用量。备件是采购损耗备份，**不是增加到关节里的冗余零件**；每步的五金清单已分配全部 958 件标准件（912 件金属紧固／摩擦件 + 46 颗磁铁）。电子连接器和排针另列，不混进这个总数。')
     D.table(['规格 / SKU','净用','可选备件','含备件采购数','装在哪里'],[[r['name_zh'].replace('，弹力待测',''),str(r['net_quantity']),str(r['optional_spares']),str(r['suggested_total']),USES[k]+f"；`{k}`"] for k,r in STOCK.items()])
@@ -303,7 +307,7 @@ def electronics():
     D.table(['要准备的东西','数量 / 规格','交付与装配要求'],[
 ['MT6701 传感成品板','46 使用 + 2 完整备件；12×10×1 mm；SOP8','裸板报价口径 50 张、装 48 张；芯片 50 颗含 2 颗加工损耗，不是多装 50 路。板端五线由工厂焊好并标号。'],
 ['中央采集成品板','1 块；80×94×1.6 mm、四层','裸板最小订单按 5 张核价，只装 1 张。使用最终 O22 PCB 与 BOM，不用 placement / route_input 中间板。'],
-['XIAO ESP32S3 普通版','1 块；两排各 7 针、中心距 15.24 mm','中央板顶面到 XIAO PCB 底面 4.0 mm，由工厂用盘 A03-09 P242 量规定位焊接后取出。'],
+['XIAO ESP32S3 普通版','1 块；两排各 7 针、中心距 15.24 mm',f"中央板顶面到 XIAO PCB 底面 4.0 mm，由工厂用 {part('fixture/xiao_spacing_gauge')} 定位焊接后取出。"],
 ['中央板传感插座','46 个 BM05B-SRSS-TB；SH 1.0 mm 5P 顶插','由工厂贴在中央板上；已经计入 PCBA，不再购买另一套。'],
 ['线端塑壳 / 压接端子','48 个 SHR-05V-S + 240 个 SSH-003T-P0.2-H','对应 46 套使用线 + 2 套完整备用线；可另留 2 塑壳 / 20 端子作为加工损耗。传感 PCB 端直接焊线，没有第二套插座。'],
 ['五色柔性线','单根 AWG30 铜线，外径 0.4–0.7 mm','每色 22.75 m 实装，加两套 750 mm 备件为 24.25 m；再加 10% 下料损耗约 26.68 m/色，五色约 133.38 m。下料表见下一节。'],
@@ -322,7 +326,7 @@ def electronics():
 '板端焊线、端子压接、套管 / 柔性胶应力释放、端口双端标签、逐芯导通和无短路检查均由供应方完成。器件加焊料总高度不超过 1.85 mm；胶不得进入板托夹导轨或芯片对磁铁的间隙。'],False)
     D.p('降压器依据 [AP3429 官方数据表](https://www.diodes.com/datasheet/download/AP3429.pdf)。完整逐位号 BOM 在网页附录可展开查看；器件采购和工厂焊接不是用户总装时额外重复购买的散件。')
     D.heading(3,'S26 · 安装中央板与 XIAO','S26')
-    D.p(f"本步连接 {part('frame/chest')}、{part('o22/controller_lid')}；{part('fixture/xiao_spacing_gauge')} 仅在焊接定位时使用。打印盘 A01 的盖要等 A02 的胸架装好、电路检查完成后再盖；A03 的量规不留在里面。",'connection')
+    D.p(f"本步连接 {part('frame/chest')}、{part('o22/controller_lid')}；{part('fixture/xiao_spacing_gauge')} 仅在焊接定位时使用。背盒盖要等胸架装好、电路检查完成后再盖；焊接量规不留在里面。",'connection')
     D.raw('<button class="view-step" data-step="S26">查看背盒与中央板 CAD ↗</button>')
     D.img('images/S26.png','S26 背盒与中央板 CAD，显示装配位置；接线完成前保留敞开状态','joint-image')
     D.listing([
@@ -342,7 +346,7 @@ def electronics():
     D.p('引脚命名依据 [Seeed XIAO ESP32S3 官方文档](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)。表中的 J1/J2 是中央板位号；不是传感小板的 J1 五线焊盘。两排针方向按最终原生 PCB 核对，不能按左右两排都从上往下编号来猜。')
     D.heading(2,'06 · 46 路逐根接线与跨关节走线','wiring')
     D.p('下面的长度是**每一根**线的下料候选长度，每路需要黑红蓝绿黄各一根。沿用当前 routing_plan 的运动余量；必须先试装确认，不能按旧 wiring.json 的短报价估计裁线。尽量先做 1 根完整的左臂代表线束，再让工厂定批量长度。')
-    D.listing(['线从传感器出口先随所属刚性骨段固定，再跨关节形成 U 环，然后沿表中路径依次走到胸部中央板。支点扎带落在骨架实体上，不能跨旋转接缝。','名义活动环半径 8 mm，装配最小弯曲半径 7 mm（可绕直径 14 mm 的光滑圆棒成形后取下）。线不绷直，也不让多余环卷进齿形止挡、叉耳或垫片。','每动一个关节，看近端和远端线都没有拉动 PCB、压住相邻件或抽紧插头；再调整局部扎带。远处肢体碰撞可以通过姿势规避，但不能借此忽略相邻关节的夹线。','线两端都标“电路端口 + raw_id”，例如“B05 / elbow_l.flex/r0”；打印件另外标“盘 A04-03”。在两个体系都叫 A01 的地方始终保留“盘”或“端口”前缀。'],True)
+    D.listing(['线从传感器出口先随所属刚性骨段固定，再跨关节形成 U 环，然后沿表中路径依次走到胸部中央板。支点扎带落在骨架实体上，不能跨旋转接缝。','名义活动环半径 8 mm，装配最小弯曲半径 7 mm（可绕直径 14 mm 的光滑圆棒成形后取下）。线不绷直，也不让多余环卷进齿形止挡、叉耳或垫片。','每动一个关节，看近端和远端线都没有拉动 PCB、压住相邻件或抽紧插头；再调整局部扎带。远处肢体碰撞可以通过姿势规避，但不能借此忽略相邻关节的夹线。',f"线两端都标‘电路端口 + raw_id’，例如‘B05 / elbow_l.flex/r0’；打印件另外标‘盘 {PARTS['frame/elbow_l']['address']} / H004’。线束使用端口号，打印件使用完整盘内编号。"],True)
     D.raw('<label class="search-label">筛选线束：<input id="wire-search" type="search" placeholder="例如 B05、左膝、S18、A08" aria-label="筛选线束"></label><div id="wire-table">')
     D.table(['端口 / 位号','步骤 / 测量轴','传感板固定件','磁铁固定件','五色各一根','沿骨架到背盒'],[[f"{r['connector']} / {r['carrier_reference']}",f"[{r['step']}](#{r['step']}) {zh(r['module'])} / `{r['raw_id']}`",' + '.join(part(k) for k in r['mounts']),part(r['magnet_mount']),f"{r['proposed_cut_each_wire_mm']} mm",' → '.join(zh(x) for x in r['anchor_chain'])] for r in ROUTES])
     D.raw('</div><p id="wire-filter-state" aria-live="polite"></p>')

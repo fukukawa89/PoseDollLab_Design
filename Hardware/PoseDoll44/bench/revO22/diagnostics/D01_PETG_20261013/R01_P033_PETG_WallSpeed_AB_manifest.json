@@ -1,0 +1,53 @@
+{
+  "purpose": "Diagnosis only, not a production release. Failed supports may recur. Stop once first failure is documented.",
+  "single_experimental_factor": "B outer/inner wall command speeds are half of A. Geometry, orientations, filament, fan, temperatures, acceleration and non-wall speeds unchanged.",
+  "limits": "One observation per condition is not statistical proof; positions and layer timing differ from D01. No drying control is available.",
+  "source_sha256": "6bb2fe3b595a879a68478b4871d37b3430b194cbc1fc11b77406591af416e9be",
+  "project_sha256": "3feaae9a7cdeb897057392212f311c03c1a6de0870ff4424a2f497fcb96a3aad",
+  "printer": "Bambu A1 mini, 0.4 mm",
+  "global_project_settings_identical": true,
+  "objects": [
+    {
+      "name": "R01-01 P033 A original 40-70",
+      "source_object": "D01-02 P033 head/C01",
+      "id": "4",
+      "delta_mm": [
+        -78.6676324,
+        56.0000024,
+        0.0
+      ],
+      "bounds_mm": [
+        15.0,
+        60.0,
+        0.0,
+        80.1942292,
+        111.3164596,
+        45.265152
+      ],
+      "outer_wall_speed_mm_s": 40,
+      "inner_wall_speed_mm_s": 70,
+      "maximum_geometric_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "name": "R01-02 P033 B walls 20-35",
+      "source_object": "D01-02 P033 head/C01",
+      "id": "6",
+      "delta_mm": [
+        4.332367599999998,
+        56.0000024,
+        0.0
+      ],
+      "bounds_mm": [
+        98.0,
+        60.0,
+        0.0,
+        163.1942292,
+        111.3164596,
+        45.265152
+      ],
+      "outer_wall_speed_mm_s": 20,
+      "inner_wall_speed_mm_s": 35,
+      "maximum_geometric_error_mm": 1.4210854715202004e-14
+    }
+  ]
+}

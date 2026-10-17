@@ -1,0 +1,61 @@
+{
+  "id": "P130",
+  "part": "foot_r/C14",
+  "body_sha256": "cb1ebde8c4038b7d976358ae0642235a2cff21038640e2ef1d24ce5e6b97ffa0",
+  "passed": true,
+  "groups": [
+    {
+      "owner": "ring",
+      "parts": 61,
+      "sensitive_raw_axes": [],
+      "limits_deg": [],
+      "query_centre_radius_bound_mm": 29.193321153989974,
+      "spherical_envelopes_radii_mm": [
+        1.3,
+        1.3
+      ],
+      "cells_tested": 1,
+      "certified_cells": 1,
+      "minimum_certified_gap_lower_bound_mm": 1.4290510405501984,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.3694307804107666
+    },
+    {
+      "owner": "C01",
+      "parts": 6,
+      "sensitive_raw_axes": [],
+      "limits_deg": [],
+      "query_centre_radius_bound_mm": 29.193321153989974,
+      "spherical_envelopes_radii_mm": [
+        1.3,
+        1.3
+      ],
+      "cells_tested": 1,
+      "certified_cells": 1,
+      "minimum_certified_gap_lower_bound_mm": 0.49882606971605425,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.030188322067260742
+    },
+    {
+      "owner": "C02",
+      "parts": 6,
+      "sensitive_raw_axes": [],
+      "limits_deg": [],
+      "query_centre_radius_bound_mm": 29.193321153989974,
+      "spherical_envelopes_radii_mm": [
+        1.3,
+        1.3
+      ],
+      "cells_tested": 1,
+      "certified_cells": 1,
+      "minimum_certified_gap_lower_bound_mm": 1.306276197416133,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.03583645820617676
+    }
+  ],
+  "scope": "Spheres containing the complete candidate elbow additions are checked by signed centre-to-surface distance. Conservative rigid-rotation interval bound over all combinations of the same joint raw-axis limits, against every modeled same-module owner part. No baseline-collision exclusions. Other body modules are covered by separate sampled whole-device checks, not this local continuous proof.",
+  "clearance_gate_mm": 0.05
+}

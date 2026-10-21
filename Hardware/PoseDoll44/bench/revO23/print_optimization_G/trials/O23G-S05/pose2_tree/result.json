@@ -1,0 +1,224 @@
+{
+  "id": "O23G-S05",
+  "key": "frame/foot_r",
+  "name": "pose2_tree",
+  "matrix": [
+    [
+      0.5932594622815153,
+      -0.6427876096865393,
+      0.48463109603791676,
+      84.5336092522584
+    ],
+    [
+      0.49780379599285085,
+      0.766044443118978,
+      0.4066537739424569,
+      81.91976194588196
+    ],
+    [
+      -0.6326409654049882,
+      0.0,
+      0.774445226527638,
+      57.800192809468896
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "metrics": {
+    "overhang_area_mm2": 2110.504170886837,
+    "overhang_projection_volume_proxy_mm3": 47748.81918734682,
+    "bed_contact_projection_mm2": 47.59601175398304,
+    "max_rod_angle_to_bed_deg": 32.914850177795735,
+    "rod_verticality": 0.1266192009572482,
+    "score": 52.742329829182836
+  },
+  "support": "tree",
+  "project": "print_optimization_G/trials/O23G-S05/pose2_tree/sliced.3mf",
+  "source_project": "print_optimization_G/trials/O23G-S05/pose2_tree/input.3mf",
+  "returncode": 0,
+  "command": [
+    "D:\\ProgramFiles\\OrcaSlicer\\orca-slicer.exe",
+    "--allow-newer-file",
+    "--arrange",
+    "0",
+    "--slice",
+    "0",
+    "--debug",
+    "3",
+    "--export-3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-S05\\pose2_tree\\sliced.3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-S05\\pose2_tree\\input.3mf"
+  ],
+  "elapsed_s": 19.08710026741028,
+  "passed": true,
+  "project_sha256": "e48de60343d550f2b63d5d5bfeb2c61ed5db52e15ac541be93044334258299e3",
+  "gcode_sha256": "e7bf162cb6a08864bbb2cdc54e76a152d7d7479dac8f6093995a7355c3cf7f80",
+  "support_g": 11.2364,
+  "model_g": 19.7373,
+  "brim_g": 0.0,
+  "total_deposited_g": 30.9737,
+  "estimated_s": 391.0,
+  "repairs": 0,
+  "bed_violations": 0,
+  "layers": 962,
+  "warnings": [],
+  "classes": [
+    {
+      "id": "model",
+      "segments": 248146,
+      "moves": 204073,
+      "filament_mm": 6617.57695,
+      "path_mm": 245599.25755,
+      "layers": 504,
+      "line_width_range_mm": [
+        0.280426,
+        0.804688
+      ],
+      "bounds_mm": {
+        "min": [
+          51.629,
+          51.984,
+          0.2
+        ],
+        "max": [
+          128.293,
+          127.941,
+          80.68
+        ]
+      },
+      "filament_volume_cm3": 15.91714,
+      "estimated_mass_g": 19.7373
+    },
+    {
+      "id": "support",
+      "segments": 261308,
+      "moves": 76002,
+      "filament_mm": 3220.87635,
+      "path_mm": 122458.96015,
+      "layers": 463,
+      "line_width_range_mm": [
+        0.42,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          57.02351194121071,
+          50.821,
+          0.2
+        ],
+        "max": [
+          129.221,
+          130.42619608516586,
+          78.72
+        ]
+      },
+      "filament_volume_cm3": 7.74712,
+      "estimated_mass_g": 9.6064
+    },
+    {
+      "id": "interface",
+      "segments": 36630,
+      "moves": 25545,
+      "filament_mm": 546.52353,
+      "path_mm": 21634.94807,
+      "layers": 417,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          57.236,
+          60.086,
+          0.32
+        ],
+        "max": [
+          129.3430278761702,
+          129.0085261189957,
+          79.2
+        ]
+      },
+      "filament_volume_cm3": 1.31454,
+      "estimated_mass_g": 1.63
+    },
+    {
+      "id": "transition",
+      "segments": 0,
+      "moves": 0,
+      "filament_mm": 0.0,
+      "path_mm": 0.0,
+      "layers": 0,
+      "line_width_range_mm": null,
+      "bounds_mm": null,
+      "filament_volume_cm3": 0.0,
+      "estimated_mass_g": 0.0
+    },
+    {
+      "id": "brim",
+      "segments": 0,
+      "moves": 0,
+      "filament_mm": 0.0,
+      "path_mm": 0.0,
+      "layers": 0,
+      "line_width_range_mm": null,
+      "bounds_mm": null,
+      "filament_volume_cm3": 0.0,
+      "estimated_mass_g": 0.0
+    }
+  ],
+  "settings": {
+    "print_settings_id": "O23G A1 mini PLA / removable supports",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "5",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "outer_wall_speed": "40",
+    "inner_wall_speed": "65",
+    "sparse_infill_speed": "90",
+    "internal_solid_infill_speed": "70",
+    "top_surface_speed": "35",
+    "bridge_speed": "20",
+    "initial_layer_speed": "20",
+    "initial_layer_infill_speed": "25",
+    "default_acceleration": "1500",
+    "outer_wall_acceleration": "700",
+    "inner_wall_acceleration": "1000",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "support_style": "tree_slim",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "40",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "0",
+    "support_top_z_distance": "0.2",
+    "support_bottom_z_distance": "0.2",
+    "support_object_xy_distance": "0.4",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0.35",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "3",
+    "support_expansion": "0",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "4",
+    "tree_support_wall_count": "1",
+    "tree_support_auto_brim": "1",
+    "independent_support_layer_height": "1",
+    "bridge_no_support": "1",
+    "max_bridge_length": "8",
+    "brim_type": "outer_only",
+    "brim_width": "4",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "elefant_foot_compensation": "0.15"
+  }
+}

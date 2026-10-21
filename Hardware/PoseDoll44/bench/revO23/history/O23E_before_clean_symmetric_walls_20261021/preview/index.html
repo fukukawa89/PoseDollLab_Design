@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>O23 · 人形承力骨架</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css?v=ef1a238c9379d05a"></head>
+<body><aside><div class="eyebrow">POSEDOLL LAB · O23E</div><h1>五指握拳，<br>连接与布线。</h1><p class="intro">四指弯曲、拇指前扣，用手型辨认朝向。内部连接加宽，并在实际打印件中加入扎带座和线槽。日常动作按相邻部位是否干涉评审。</p><div class="status">数字设计评审版 · 实物与切片尚待验证</div><div id="metrics" class="metrics">正在载入真实装配几何…</div>
+<label>检查姿态<select id="pose"><option value="A">A 站姿</option><option value="N">手臂自然下垂</option><option value="left_elbow">左肘动作</option><option value="asymmetric">非对称动作</option><option value="right_forearm">右前臂扭转</option><option value="daily_seated">坐姿</option><option value="daily_reach_front">双手向前伸</option><option value="daily_carry_front">屈肘托举</option><option value="daily_shallow_squat">浅蹲</option><option value="daily_step">迈步</option></select></label>
+<label>查看身体部位<select id="part"><option value="all">完整人偶</option></select></label>
+<a id="part-download" hidden>打开此部位的 3MF 评审几何 ↗</a>
+<a href="../CONTINUOUS_WALLS.zh-CN.md">连续外壁、髋关节与日常动作修订 ↗</a>
+<a href="../FINGERS_STRUCTURE_HARNESS.zh-CN.md">本次手型、连接与布线优化 ↗</a>
+<a href="../harness/布线与试装说明.zh-CN.md">线材规格、固定位置与活动余量 ↗</a>
+<a href="../electronics/carrier/index.html">64 × 60 mm 控制板布局 ↗</a>
+<div class="views"><button data-view="front">正面</button><button data-view="side">侧面</button><button data-view="back">背面</button><button data-view="three">立体</button></div>
+<label class="check"><input id="mechanisms" type="checkbox" checked>显示关节与五金</label><label class="check"><input id="contacts" type="checkbox" checked>标红相邻部位干涉</label><label class="check"><input id="advisories" type="checkbox">标黄非相邻部位接触</label><label class="check"><input id="harness" type="checkbox">标出固定座与内部线槽</label><p class="hint">青色：固定座 · 橙色：已开出的线槽<br>关节之间使用松弛线圈，详见布线说明。</p><label class="check"><input id="section" type="checkbox">剖开前半部，查看内部</label><label id="section-control" hidden>剖切位置<input id="cut" type="range" min="-140" max="100" value="0"></label>
+<button id="reset">重置视角</button><p class="hint">拖动旋转 · 滚轮缩放<br>所有画面直接使用交付的几何。</p><a href="../DESIGN.zh-CN.md">设计说明与待解决项 ↗</a><a href="../verification/geometry.json">尺寸与网格检查 ↗</a><a href="../verification/daily_motion.json">日常动作逐零件检查 ↗</a><a href="../profiles/daily_poses.json">本次检查的角度与姿态 ↗</a><p class="hint">非相邻接触按你的要求列为提示，可调整姿态避开。极限姿态不作为本次硬性条件。离散姿态检查不等于所有组合和连续运动均已验证。</p></aside>
+<main><canvas id="canvas" aria-label="可旋转的 O23 人偶三维模型"></canvas><div class="caption"><span id="selected">完整人偶</span><span id="message">正在准备模型</span></div><div id="error" hidden></div></main>
+<script src="data.js?v=86c6bc0ce599aea9"></script><script src="viewer.js?v=dbbb61113ef7c42a"></script></body></html>

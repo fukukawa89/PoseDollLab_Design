@@ -1,0 +1,47 @@
+{
+  "id": "O23I-S23",
+  "key": "frame/forearm_r",
+  "stl_sha256": "1f87796cb386122e9986f792d3018eb1a5810704f3a65c2146cfd863eec70a2b",
+  "features": [
+    {
+      "feature": "forearm_r:tie1/strap_tunnel",
+      "category": "tie_tunnel",
+      "volume_mm3": 59.36394317757255
+    },
+    {
+      "feature": "forearm_r:tie1/bundle_space",
+      "category": "wire_space",
+      "volume_mm3": 94.49992117161455
+    },
+    {
+      "feature": "forearm_r:tie2/strap_tunnel",
+      "category": "tie_tunnel",
+      "volume_mm3": 59.36394317757285
+    },
+    {
+      "feature": "forearm_r:tie2/bundle_space",
+      "category": "wire_space",
+      "volume_mm3": 94.49986877128985
+    },
+    {
+      "feature": "forearm_r:tie1 to forearm_r:tie2",
+      "category": "wire_channel",
+      "volume_mm3": -5.399082649635457e-15
+    },
+    {
+      "feature": "three_axis_small_closed_cavities",
+      "category": "section_screen",
+      "volume_mm3": 977.7936385649678
+    }
+  ],
+  "guard_revision": 5,
+  "related_joint_ids": [
+    "forearm_r.twist",
+    "wrist_r"
+  ],
+  "section_count": 125,
+  "mask_sha256": "68984c94efbd86fd9613082da2da7c569c12fb6b830ea00e9d91dedd957f2a7b",
+  "volume_mm3": 1120.1518635265766,
+  "minimum_comparable_section_span_mm": 1.5,
+  "scope": "Exact documented wiring voids; small closed apertures <=60 mm2 and <=9 mm span, identified by three comparable sections spanning1.5 mm, sampled in three axes every0.75 mm. This rejects the isolated tiny section at the pole of a large curved open recess. Larger/open recesses remain separately recorded for removal review. Not exhaustive manufacturing-tolerance proof."
+}

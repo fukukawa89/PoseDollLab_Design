@@ -1,0 +1,99 @@
+{
+  "id": "O23I-S18",
+  "key": "frame/forearm_l",
+  "stl_sha256": "f83390823165010f45cb379ff1d5944b487b2ceeebcaec874fec18a824ef419d",
+  "candidate": {
+    "name": "unified_caps_refined",
+    "support": "snug",
+    "matrix": [
+      [
+        0.20512617968952448,
+        0.9748472326021577,
+        -0.08715574274765818,
+        92.1140404673742
+      ],
+      [
+        0.017946215315215033,
+        0.08528808152230834,
+        0.9961946980917458,
+        116.20825434230429
+      ],
+      [
+        0.9785709906602796,
+        -0.20590972837182595,
+        0.0,
+        19.05749585275486
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "size_mm": [
+      68.40985150672887,
+      72.02146333151623,
+      31.065906207421293
+    ],
+    "metrics": {
+      "overhang_area_mm2": 1629.425701606268,
+      "overhang_projection_volume_proxy_mm3": 19153.510562267216,
+      "bed_contact_projection_mm2": 113.93179572453421,
+      "max_rod_angle_to_bed_deg": 36.49848765445376,
+      "rod_verticality": 0.058118124707665135
+    },
+    "protect_voids": true,
+    "guard_revision": 5,
+    "blocker_margin_mm": 2.2,
+    "settings": {
+      "support_threshold_angle": "45",
+      "bridge_no_support": "0",
+      "brim_width": "6",
+      "support_top_z_distance": ".24",
+      "support_bottom_z_distance": ".24",
+      "support_object_xy_distance": ".6",
+      "support_interface_spacing": "0",
+      "support_bottom_interface_spacing": "0",
+      "support_expansion": "0"
+    },
+    "shield_enforcers": true,
+    "score": 21.333476646794413,
+    "enforce_sources": [],
+    "manual_caps": "print/candidates/O23I-S18_unified_caps_refined.npz",
+    "cap_design": [
+      {
+        "previous_cap": 1,
+        "xy_scale": 0.68,
+        "reason": "Restore actual bead clearance without altering the structural model."
+      },
+      {
+        "previous_cap": 3,
+        "xy_scale": 0.68,
+        "reason": "Restore actual bead clearance without altering the structural model."
+      },
+      {
+        "target": {
+          "z_mm": 27.719999313354492,
+          "area_mm2": 0.15135563524198226,
+          "bounds_mm": [
+            80.68379999697208,
+            57.66279999911785,
+            81.14029999822378,
+            58.1102000027895
+          ],
+          "support_contact_mm2": 0.0011655473146858775,
+          "previous_solid_bbox_coverage": 0.228675649685411,
+          "tiny_path_core_coverage": 0.04742585751207424,
+          "tiny_path_interior_probe_mm": 0.025,
+          "small_internal_path_classified": false,
+          "inside_previous_solid_geometry": false,
+          "previous_solid_section_z_mm": 27.479999542236328
+        },
+        "patch_count": 1,
+        "volume_mm3": 0.4577311891535441
+      }
+    ]
+  },
+  "source_sha256": "78fdb2c6a8e909b46135a85841da521b6ea86fadeba31df723cc5a5c063677ee"
+}

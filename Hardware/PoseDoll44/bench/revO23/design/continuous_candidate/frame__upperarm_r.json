@@ -1,0 +1,3743 @@
+{
+  "key": "frame/upperarm_r",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 23.65,
+  "construction_profile_sha256": "6893bd818d0ef9fbf5d55303d2e740662ef1c0f1dacfbe32c92a32f4387c031d",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "f4a9758ff629096c5a0cef3004673ee42bdac6f0022bbc8652d21560b6c52f6b",
+  "construction_keeps_sha256": "0630ddb7ad938c282d9c42b2c3b516ee5a502ca1808185b2d29548c599d0ad38",
+  "mask_method": "Conservative swept intersections extended to nearest open end; circular dilation and smoothing",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 77,
+  "lower_boundary_mm": [
+    -41.900000000000006,
+    -41.90005018721718,
+    -41.900427636199744,
+    -41.90246705756175,
+    -41.911079707195846,
+    -41.93993932530542,
+    -42.01741908308571,
+    -42.1859667199554,
+    -42.48820314836812,
+    -42.946970101471756,
+    -43.559849989617504,
+    -44.32077908552569,
+    -45.25240085946643,
+    -46.42052811830518,
+    -47.90917477048223,
+    -49.74981193186396,
+    -51.83765929023486,
+    -53.92414500896626,
+    -55.74197308700892,
+    -57.167834583910626,
+    -58.26443291103464,
+    -59.18534857023791,
+    -60.06245670076999,
+    -60.95981872033118,
+    -61.88725121193807,
+    -62.838219375219914,
+    -63.81854763686969,
+    -64.84159718540747,
+    -65.90037744898257,
+    -66.96054261038891,
+    -67.99044246174697,
+    -68.99278003868604,
+    -69.99909422126966,
+    -71.03784270032932,
+    -72.11361274765424,
+    -73.21036294254904,
+    -74.3016869662904,
+    -75.35450139007608,
+    -76.3329575918049,
+    -77.21368818889059,
+    -78.00480189508326,
+    -78.75171709612769,
+    -79.53013978265358,
+    -80.4473859933928,
+    -81.64087942138067,
+    -83.21599495538221,
+    -85.11675824851694,
+    -87.06234402590361,
+    -88.68275903737307,
+    -89.75833539850032,
+    -90.32146449359888,
+    -90.5527937964632,
+    -90.6271387288182,
+    -90.64579787397469,
+    -90.64944794061103,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.65,
+    -90.64939775339386,
+    -90.6454706122093,
+    -90.62552694365593,
+    -90.54664820439086,
+    -90.30368458268518,
+    -89.72084515324262,
+    -88.63195774535447,
+    -87.04763591539137,
+    -85.25236408460867,
+    -83.66804225464556,
+    -82.57910465954023,
+    -81.9959379683323,
+    -81.7512119998128,
+    -81.6650553215277,
+    -81.62116329075741,
+    -81.55353050643029,
+    -81.41335813046328,
+    -81.1566664988971,
+    -80.75306096368004,
+    -80.20243387128833,
+    -79.540229810112,
+    -78.81798465710762,
+    -78.06742745584212,
+    -77.28157560144808,
+    -76.43022125018382,
+    -75.48813999440195,
+    -74.45129295218896,
+    -73.34077797655036,
+    -72.19778013670617,
+    -71.0661656843074,
+    -69.97072105007442,
+    -68.90828538786873,
+    -67.85841564258338,
+    -66.80469065798364,
+    -65.74815384856069,
+    -64.70228661562993,
+    -63.67923706709214,
+    -62.68594558758085,
+    -61.73107199776742,
+    -60.82612992878814,
+    -59.971388821680605,
+    -59.13672843056719,
+    -58.24418594255916,
+    -57.16126135563854,
+    -55.74031111462947,
+    -53.923817747200886,
+    -51.83760910301768,
+    -49.74981193186396,
+    -47.90917477048223,
+    -46.42052811830518,
+    -45.25240085946643,
+    -44.32077908552569,
+    -43.559849989617504,
+    -42.946970101471756,
+    -42.48820314836812,
+    -42.1859667199554,
+    -42.01741908308571,
+    -41.93993932530542,
+    -41.911079707195846,
+    -41.90246705756175,
+    -41.900427636199744,
+    -41.90005018721718,
+    -41.900000000000006
+  ],
+  "upper_boundary_mm": [
+    -65.25240482894645,
+    -66.81170917662718,
+    -68.29208384531393,
+    -69.72906116099084,
+    -71.08421427328321,
+    -72.29014913361003,
+    -73.27772241409126,
+    -73.99902198113062,
+    -74.4536652486479,
+    -74.69435375120551,
+    -74.79930822926411,
+    -74.8365034224596,
+    -74.84710530623852,
+    -74.8494719893659,
+    -74.8494719893659,
+    -74.84720568067287,
+    -74.8373085076419,
+    -74.80386489540506,
+    -74.71447374423518,
+    -74.52473050075591,
+    -74.20334017161069,
+    -73.76278568939168,
+    -73.25668403288907,
+    -72.73016128601196,
+    -72.17380346993262,
+    -71.54384814135545,
+    -70.83664688031445,
+    -70.13267389047257,
+    -69.55234545484038,
+    -69.16843130632091,
+    -68.9674778938003,
+    -68.88482804751894,
+    -68.8582078726652,
+    -68.85150979593024,
+    -68.85020074886872,
+    -68.85,
+    -68.84994981278282,
+    -68.84962255101743,
+    -68.84791039142081,
+    -68.84100990138334,
+    -68.81905077331123,
+    -68.76353014360305,
+    -68.65050313644156,
+    -68.46129371519032,
+    -68.19208749385818,
+    -67.8505540977507,
+    -67.44171004487562,
+    -66.95920410661114,
+    -66.39131228895619,
+    -65.73107112098404,
+    -64.97437304424909,
+    -64.1065846158716,
+    -63.09087094041137,
+    -61.8683948106484,
+    -60.37647686471838,
+    -58.58185144868499,
+    -56.49955528008391,
+    -54.16688225881294,
+    -51.597167282454464,
+    -48.766422762945815,
+    -45.649657497488334,
+    -42.29521914065617,
+    -38.95237217410183,
+    -36.19049783419186,
+    -34.776232503003506,
+    -35.177612576749794,
+    -37.082459362551425,
+    -39.536881478850724,
+    -41.6459081703697,
+    -43.087592736234775,
+    -44.009203397964164,
+    -44.639203229254655,
+    -45.083660390184946,
+    -45.365978784464254,
+    -45.51377245619155,
+    -45.577181642958195,
+    -45.61019710681004,
+    -45.66776885012509,
+    -45.830876944876564,
+    -46.22056891145261,
+    -46.95147976718305,
+    -48.02741400530806,
+    -49.28500279792295,
+    -50.486927208592334,
+    -51.48507399915646,
+    -52.26971407627561,
+    -52.88050778177507,
+    -53.32917406544257,
+    -53.61469169645018,
+    -53.76301964793386,
+    -53.824162051097716,
+    -53.84388173591398,
+    -53.848867653052324,
+    -53.849849438348464,
+    -53.84964868947975,
+    -53.84735785712209,
+    -53.835272365511344,
+    -53.786314411718294,
+    -53.62962788097495,
+    -53.230479159351326,
+    -52.41307212180397,
+    -51.05175481557691,
+    -49.18779717115372,
+    -47.0741876200788,
+    -45.085324003332786,
+    -43.522567328266014,
+    -42.434395650598766,
+    -41.57059507935101,
+    -40.511681907085155,
+    -38.9489234021895,
+    -37.00990033681563,
+    -35.369064122738735,
+    -34.91333161563369,
+    -36.14801162497141,
+    -38.848655457744954,
+    -42.22367421040295,
+    -45.38998246822785,
+    -47.80307213226464,
+    -49.402644229242135,
+    -50.45788595577911,
+    -51.301348265542394,
+    -52.180282804393535,
+    -53.28209113166522,
+    -54.78125902458235,
+    -56.75961504325194,
+    -59.07783400039643,
+    -61.41411936653217,
+    -63.491453985045645
+  ],
+  "canonical_frame_mm": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -18.091150954735674
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -59.43135627279288
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      555.9246867917017
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 0.00994742196214687,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 13849.2911390797,
+  "old_volume_mm3": 43097.30524275776,
+  "ribs": [
+    {
+      "length_mm": 7.503786137301681,
+      "radius_mm": 3.0,
+      "detour_mm": 4.999999999999999,
+      "volume_mm3": 242.71027631111676
+    },
+    {
+      "length_mm": 21.67142528590165,
+      "radius_mm": 3.0,
+      "detour_mm": 0.0,
+      "volume_mm3": 503.4670065758987
+    },
+    {
+      "length_mm": 11.079031537909765,
+      "radius_mm": 3.0,
+      "detour_mm": 0.0,
+      "volume_mm3": 206.88711824696935
+    }
+  ],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 26.43782487388471
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 144.32893953390217
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 89.95538457808989
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 40.38095359155885
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 8.606920129305337
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 2.5492692452216072
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 13.059152144116709
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_adjust_screw"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 46.56199940904525
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_case_screw_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 49.76134096031289
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_case_nut_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 8.30387299925615
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_case_screw_3"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 49.74631447499634
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_case_nut_3"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 7.758827645233489
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 15.923596930079116
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_pcb_clip_+14"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 13.046468036277542
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:D",
+      "members": [
+        "upperarm_r/D_case_plus"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 325.761257762993
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:parent",
+      "members": [
+        "elbow_r.flex/pcb_clip_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.3444323070666862
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cap_screw_-8"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 1.7086790943812653
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 43.67383552478661
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 29.449401955079317
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.020544106801218386
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 2.147591895595106
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 32.27286657478717
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 127.0837653986713
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 120.07072116974521
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 52.832694446433536
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 5.892008579552843
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 0.48552300706320495
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 16.97858178254573
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 15.933361841061766
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 35.47699184363515
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 786.5571533652978
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 26.43959160052272
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 144.31072605683732
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 89.95144744531082
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 40.39063349486138
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 8.604099495516877
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 2.5490968873331443
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 13.064534823744209
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 15.923584160610082
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 43.67525665059368
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 21.74702894011446
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 22.465676635394363
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 2.964155801985268
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 3.072622687272034
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 10.202994362545402
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 18.414748875945413
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 1.6920982500798372
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 8.582499742938962
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 81.96734022167857
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 121.5038156013321
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 72.82151896939132
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 57.04028026104708
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 1.064657868076675
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 2.9554986836624235
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 16.008882197521082
+    },
+    {
+      "obstacle_owner": "f:clavicle_r",
+      "members": [
+        "frame/clavicle_r"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 416.8902819974183
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_cassette"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 2.4533020379324117
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 14.81251396136382
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 549.1612899000593
+    },
+    {
+      "obstacle_owner": "f:clavicle_r.protract_frame",
+      "members": [
+        "frame/clavicle_r.protract_frame"
+      ],
+      "pose": "upperarm_r.forward_raise@-120",
+      "wall_overlap_mm3": 652.1795351304056
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 17.948420581795858
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 18.032337609120855
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 3.4975810927298108
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 3.5602245328304507
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 9.7328358942518
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 104.01580604589039
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 3.4506409413010597
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 6.106414742890012
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 61.139645610388925
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 121.35843369686505
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 12.156739364070992
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 68.71152733641323
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 0.04066787946016497
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 0.40380891463756796
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 16.007569562462894
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/pcb_clip_screw"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 71.98279832302117
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/pcb_clip_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 19.9254189640354
+    },
+    {
+      "obstacle_owner": "f:clavicle_r",
+      "members": [
+        "frame/clavicle_r"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 498.6555689130818
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_cassette"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 98.83858155961582
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 631.2374500420423
+    },
+    {
+      "obstacle_owner": "f:clavicle_r.protract_frame",
+      "members": [
+        "frame/clavicle_r.protract_frame"
+      ],
+      "pose": "upperarm_r.forward_raise@-105",
+      "wall_overlap_mm3": 682.311535241046
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 11.31350137915646
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 2.6226357633023683
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 358.743310368295
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 514.6674330773002
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 61.53152524080547
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01_magnet_screw_-6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 5.338906918130454
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_pcb_clip_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 0.0489614069217795
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 15.930153171561715
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cap_nut_-8"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 1.2369178244866443
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cap_screw_-8"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 2.9663497259339153
+    },
+    {
+      "obstacle_owner": "f:clavicle_r",
+      "members": [
+        "frame/clavicle_r"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 694.5308364253999
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_cassette"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 38.69774118057936
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 34.422832889376664
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 117.19580442946108
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 802.9742695319413
+    },
+    {
+      "obstacle_owner": "f:clavicle_r.protract_frame",
+      "members": [
+        "frame/clavicle_r.protract_frame"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 526.7225799994919
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_PCB/pcb"
+      ],
+      "pose": "upperarm_r.forward_raise@-90",
+      "wall_overlap_mm3": 2.414940718298497
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 0.014390352768173662
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 0.6733295637149044
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 3.310015135515363
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 240.96012160389262
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 222.61284356619134
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 99.56224020480317
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 1.9957243644082188
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 0.5367139015298389
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 15.923199208900447
+    },
+    {
+      "obstacle_owner": "f:clavicle_r",
+      "members": [
+        "frame/clavicle_r"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 22.222260990118127
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-75",
+      "wall_overlap_mm3": 775.8431995797985
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 0.18729405147348424
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 4.848383221734154
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 5.3797092756603
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 4.874774885522802
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 0.4361929065995926
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 180.19085101669972
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 186.5624178265187
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 142.88524568640617
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 0.6633588567799704
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 7.919714603027637
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 2.959834362874514
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 15.920584598191613
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-60",
+      "wall_overlap_mm3": 834.8287639132282
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 20.514193787398302
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 3.184340913416165
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 7.226042771132576
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 14.429781706584278
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 13.683021117528767
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 50.96371606586788
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 0.008471281114712598
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 181.07170484339778
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 100.93315895621744
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 127.18047667166287
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 10.31555015469778
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 6.489080742154352
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 15.918759349392902
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 1.2148105040501918
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-45",
+      "wall_overlap_mm3": 867.5822960364778
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 19.72848305097965
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 23.723119572791813
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 4.681838210621795
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 4.3570475677328
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 11.128722119266614
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 65.76789558428051
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 12.510497266424585
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 11.50596657068818
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 74.0124565506258
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 181.6123177241572
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 43.59185138535696
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 79.04421143716134
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 1.5001172357172705
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 9.28570245311458
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 7.719768642289646
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 15.920525553375537
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 4.606562605777824
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-30",
+      "wall_overlap_mm3": 737.0703768292825
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 23.786270061523023
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 23.213250967201947
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 4.7643778998720006
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 4.704221046825304
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 11.8716874072901
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 73.06848040934827
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 14.485971782864771
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 13.916623335358368
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 78.90018296991119
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 178.81938848944688
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 101.03628740655027
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 71.83434864598249
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 5.72209102087227
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 5.787309699244737
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 8.26203485203705
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 15.920816076738456
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 13.588715452136073
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.forward_raise@-15",
+      "wall_overlap_mm3": 680.9117754092548
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 1.879541966591581
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 82.03892556214433
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 131.4954829659587
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 49.913008098914254
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 115.35543344126665
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 2.8666197437035064
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 4.182690658565074
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 16.313510924949675
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:P",
+      "members": [
+        "upperarm_r/P_case_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 0.1625151971670714
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 15.926587891358857
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-90",
+      "wall_overlap_mm3": 40.881464633770186
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 34.29530135714402
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 134.1640292641569
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 48.81778091106174
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 71.98586612386082
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 5.76908479430763
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 4.0730449141171565
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 15.794276628165804
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 15.92768674300339
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-75",
+      "wall_overlap_mm3": 42.15122051710216
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 34.07419115777532
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 130.52142193564578
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 51.262292846200985
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 73.68988469736279
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 5.132313160125969
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 3.956156581187732
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 16.488049686490065
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 15.92849386370629
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-60",
+      "wall_overlap_mm3": 40.26871806336534
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 27.752236926236876
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 129.53442333095632
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 61.87461856228673
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 57.514596418511076
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 5.851521618978175
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 3.4903634828944745
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 16.649220439761184
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 15.929595788569998
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-45",
+      "wall_overlap_mm3": 39.539793085842234
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 25.700227535771642
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 129.31472546623772
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 84.95768909463266
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 49.7861955362255
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 6.296416420714108
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 2.513574540615957
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 16.68338333229369
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 15.929563778995675
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-30",
+      "wall_overlap_mm3": 39.35719842868695
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 27.622839024427364
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 127.88740236705465
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 110.24159650389358
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 50.350877673382115
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 6.1564693068463185
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 1.217153345615548
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 16.897681229161545
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 15.930160627034677
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 37.843622493372386
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.side_raise@-15",
+      "wall_overlap_mm3": 536.7862480064406
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 22.45128051832501
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 22.974667727042608
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 2.3803473714558185
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 2.50257812717122
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 8.949639264923977
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 16.884419245286086
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 3.576450263996963
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 9.576567123840773
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 80.04433447115022
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 0.566556774134378
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 180.6960805129783
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 162.12560995103306
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 48.51015768807852
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 12.338144291658308
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 7.272830841652526
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 2.4077499749936173
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 15.920791892749744
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@-45",
+      "wall_overlap_mm3": 810.7569732914525
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 18.918724476617886
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 18.00032161020533
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 0.44853549574002427
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 0.49091642239833916
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 3.475154603982137
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 2.1964659214629223
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 0.6095777818343067
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 6.0688975089347394
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 70.23996062925465
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 174.7702675605413
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 146.3976735182424
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 52.95828628428199
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 8.866504710953471
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 3.629138564156064
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 8.150252638855157
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 15.92175106652952
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 20.903951682598926
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@-30",
+      "wall_overlap_mm3": 801.9695644697003
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 10.605774986510777
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 7.537967489082254
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 2.3320722482798923
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 50.915953455617164
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 140.43316131160782
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 133.57870958578914
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 54.99271584885181
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 6.389325533018514
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 14.206472564696565
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 15.926033990881027
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 43.6695839073493
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@-15",
+      "wall_overlap_mm3": 785.348684502807
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 28.917972702374207
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 132.25229912470115
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 99.4879071774846
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 48.89297985196373
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 6.783822886366126
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 1.9196844565449918
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 16.00428079196915
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 15.93834164135068
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 32.30167217740749
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@15",
+      "wall_overlap_mm3": 819.0473713276338
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 27.963204887695248
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 144.92093522577105
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 70.60525921652838
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 43.557824098956004
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 9.212165537274313
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 3.333707448861596
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 12.266266696457667
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 15.94326485709395
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 28.965785939631743
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@30",
+      "wall_overlap_mm3": 895.0123009621934
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 27.679412586616433
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 164.38735569623606
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 39.797143921040224
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 39.00938410112181
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 13.413803580567121
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_1"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 4.483644675226963
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 1.3738713992896494
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 8.738760174349911
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 15.948960519609894
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_cartridge"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 21.650403534783106
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_r.axial_turn@45",
+      "wall_overlap_mm3": 880.1186322978381
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cap_screw_-8"
+      ],
+      "pose": "elbow_r.flex.flexion@10",
+      "wall_overlap_mm3": 1.3327584041035776
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@10",
+      "wall_overlap_mm3": 29.847061013596957
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@10",
+      "wall_overlap_mm3": 0.020952762624341845
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cap_screw_-8"
+      ],
+      "pose": "elbow_r.flex.flexion@20",
+      "wall_overlap_mm3": 0.23344981422710684
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@20",
+      "wall_overlap_mm3": 31.143242099376053
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@20",
+      "wall_overlap_mm3": 0.020978500013297884
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@30",
+      "wall_overlap_mm3": 31.88289882981572
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@30",
+      "wall_overlap_mm3": 0.020570180434825076
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@40",
+      "wall_overlap_mm3": 31.886191141955134
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@40",
+      "wall_overlap_mm3": 0.020975598874569464
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@50",
+      "wall_overlap_mm3": 31.887695292007404
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@50",
+      "wall_overlap_mm3": 0.020995920590819415
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@60",
+      "wall_overlap_mm3": 31.887423109106038
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@60",
+      "wall_overlap_mm3": 64.70385273898502
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@70",
+      "wall_overlap_mm3": 31.889474304684835
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@70",
+      "wall_overlap_mm3": 134.73029407111497
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@80",
+      "wall_overlap_mm3": 31.88961743533729
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@80",
+      "wall_overlap_mm3": 197.97094714585128
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@90",
+      "wall_overlap_mm3": 31.88791787916561
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@90",
+      "wall_overlap_mm3": 264.02590886058334
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@100",
+      "wall_overlap_mm3": 31.74733521791379
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@100",
+      "wall_overlap_mm3": 334.0563491207449
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@110",
+      "wall_overlap_mm3": 27.48533658709198
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@110",
+      "wall_overlap_mm3": 412.80963914349485
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@120",
+      "wall_overlap_mm3": 22.471081106735266
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@120",
+      "wall_overlap_mm3": 533.9380657143854
+    },
+    {
+      "obstacle_owner": "j:elbow_r.flex:child",
+      "members": [
+        "elbow_r.flex/magnet_cartridge"
+      ],
+      "pose": "elbow_r.flex.flexion@130",
+      "wall_overlap_mm3": 18.390667559234792
+    },
+    {
+      "obstacle_owner": "f:elbow_r",
+      "members": [
+        "frame/elbow_r"
+      ],
+      "pose": "elbow_r.flex.flexion@130",
+      "wall_overlap_mm3": 528.2666024418992
+    },
+    {
+      "obstacle_owner": "f:forearm_r",
+      "members": [
+        "frame/forearm_r"
+      ],
+      "pose": "elbow_r.flex.flexion@130",
+      "wall_overlap_mm3": 177.46471330566553
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@-15",
+      "wall_overlap_mm3": 507.9318952692128
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@-10",
+      "wall_overlap_mm3": 934.8893347640237
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@-5",
+      "wall_overlap_mm3": 852.7262249909923
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@5",
+      "wall_overlap_mm3": 638.241444231065
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@10",
+      "wall_overlap_mm3": 583.6097404832623
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.protract.protract@15",
+      "wall_overlap_mm3": 565.7326273461523
+    },
+    {
+      "obstacle_owner": "j:chest:C01",
+      "members": [
+        "chest/C01"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 65.4559771611207
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C14"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 76.89152775085066
+    },
+    {
+      "obstacle_owner": "j:chest:C01",
+      "members": [
+        "chest/C01_magnet"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 0.10852451602696468
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_pcb_clip_screw"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 0.05770567996750536
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_pcb_clip_nut"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 4.528106386329202
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_cassette"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 31.453360494868416
+    },
+    {
+      "obstacle_owner": "j:chest:C01",
+      "members": [
+        "chest/C01_magnet_cartridge"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 120.29070129690224
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 510.0168690315117
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_PCB/pcb"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 32.18111046389761
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_PCB/SOP8_max"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 10.536533709016256
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_PCB/C1"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 0.8617049625288462
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_PCB/R2"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-15",
+      "wall_overlap_mm3": 0.8959999160765998
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C14"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-10",
+      "wall_overlap_mm3": 3.7298185517983073
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_pcb_clip_screw"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-10",
+      "wall_overlap_mm3": 42.84014821037616
+    },
+    {
+      "obstacle_owner": "j:chest:ring",
+      "members": [
+        "chest/C01_sensor_cassette"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-10",
+      "wall_overlap_mm3": 166.3772614403639
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-10",
+      "wall_overlap_mm3": 524.1413917815338
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@-5",
+      "wall_overlap_mm3": 577.8091617945946
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@5",
+      "wall_overlap_mm3": 769.2280465138045
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@10",
+      "wall_overlap_mm3": 643.7808145823004
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_r.elevate.elevate@15",
+      "wall_overlap_mm3": 110.94091938689894
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 11.78251922587225
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_inner_M4_wide"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 2.6994933658946754
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 358.81763203695533
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 515.9960056994852
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 61.27119169958795
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01_magnet_screw_-6.1"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 5.84259289107115
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_pcb_clip_nut"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 0.05587487787225557
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 15.929589313011368
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cap_nut_-8"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 1.236929978465192
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cap_screw_-8"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 2.9663685889947287
+    },
+    {
+      "obstacle_owner": "f:clavicle_r",
+      "members": [
+        "frame/clavicle_r"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 694.530789353044
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_cassette"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 38.69773140048217
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01_magnet_cartridge"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 35.5411186108832
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:child",
+      "members": [
+        "clavicle_r.elevate/magnet_cartridge"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 117.19580386840954
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 802.9743503602665
+    },
+    {
+      "obstacle_owner": "f:clavicle_r.protract_frame",
+      "members": [
+        "frame/clavicle_r.protract_frame"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 526.7227653222545
+    },
+    {
+      "obstacle_owner": "j:clavicle_r.elevate:parent",
+      "members": [
+        "clavicle_r.elevate/sensor_PCB/pcb"
+      ],
+      "pose": "daily_reach_front",
+      "wall_overlap_mm3": 2.414945909755744
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 22.328441597324495
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 22.096858396907237
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_1"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 1.9308490858515035
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_spring_2"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 1.425579856894371
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_front_M4_washer"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 3.721189620291679
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 38.32277558200603
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 13.714839033469136
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 12.005543288066304
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 81.83210666672169
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 1.2310516163813312
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 185.99407305750876
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 38.859821187075894
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 103.01039088046105
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 2.2786280369412117
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 4.044286617036301
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 0.6402057726650234
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 15.920988163281661
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "daily_carry_front",
+      "wall_overlap_mm3": 737.0703839666089
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_inner_M4_wide"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 14.819056717570746
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_outer_M4_wide"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 0.007265570994760821
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 3.6601664057550045
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_nut"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 15.55876056460189
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 13.147638534071982
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C01",
+      "members": [
+        "upperarm_r/C01"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 33.44242148890092
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C02_+1_outer_M4_wide"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 1.7373289263765606
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 191.61593510832486
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C14"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 84.61219287144965
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/C15"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 155.25981602443406
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_1"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 0.012927064026717843
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_screw_2"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 0.02419914671312233
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:ring",
+      "members": [
+        "upperarm_r/ring_nut_2"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 0.0057164391547852925
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_nut_6.1"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 2.1725709885692734
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/C02_magnet_screw_6.1"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 0.12622559025552507
+    },
+    {
+      "obstacle_owner": "j:upperarm_r:C02",
+      "members": [
+        "upperarm_r/D_magnet_cap"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 15.91933888246851
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "daily_shallow_squat",
+      "wall_overlap_mm3": 867.5822326088382
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "joint_edge_reliefs": [],
+  "detached_fragments_removed": [
+    {
+      "key": "frame/upperarm_r",
+      "removed_fragments_mm3": [
+        0.009947421962007597
+      ]
+    }
+  ],
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "validated_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "validated_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "collar_clocking_reuse": {
+    "body_frame_maximum_error": 8.526512829121202e-14,
+    "own_keeper_unchanged": true,
+    "note": "Only two native collar modules and their three structural lands move. Unchanged carriers require final actual-solid collision checks with those neighbours."
+  },
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

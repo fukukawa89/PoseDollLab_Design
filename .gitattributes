@@ -11,3 +11,12 @@
 # Large released O22F7 archives and assembly buffers use Git LFS.
 Hardware/PoseDoll44/bench/revO22/O22F7_PLA_*.zip filter=lfs diff=lfs merge=lfs -text
 Hardware/PoseDoll44/bench/revO22/O22F7_PLA_*/assembly/tutorials/assembly-o22/geometry-o22f7*.bin filter=lfs diff=lfs merge=lfs -text
+
+# O23 CAD snapshots and selected native print artifacts preserve exact bytes.
+Hardware/PoseDoll44/bench/revO23/**/*.npz filter=lfs diff=lfs merge=lfs -text
+Hardware/PoseDoll44/bench/revO23/**/*.stl filter=lfs diff=lfs merge=lfs -text
+Hardware/PoseDoll44/bench/revO23/**/*.3mf filter=lfs diff=lfs merge=lfs -text
+Hardware/PoseDoll44/bench/revO23/**/*.zip filter=lfs diff=lfs merge=lfs -text
+Hardware/PoseDoll44/bench/revO23/preview/data.js filter=lfs diff=lfs merge=lfs -text
+# Preserve KiCad's generated SVG bytes, including its trailing spaces.
+Hardware/PoseDoll44/bench/revO23/electronics/carrier/svg/**/*.svg -whitespace

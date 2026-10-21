@@ -1,0 +1,32 @@
+# Rebuildable rendering and toolpath caches; retained on the working machine.
+*.blend
+*.bin
+**/render_meshes.npz
+**/detail_meshes.npz
+**/render.npz
+**/audit_paths.npz
+**/audit_paths.json
+**/paths/*.npz
+**/checkpoints/
+**/*.rows.jsonl
+**/*.partial.json
+**/*.progress.json
+
+# The current browser scene is versioned. Older embedded scenes are derived.
+**/preview/data.js
+!/preview/data.js
+
+# Redundant historical exports remain local; source snapshots and reports stay.
+/history/**/review_stl/
+/history/**/review_3mf/
+/exports/*.zip
+!/exports/O23H_A1mini_PLA_3MF.zip
+!/exports/O23I_STL_review.zip
+
+# Thousands of slicer trials are reproducible from their saved input settings.
+# Selected native/source projects listed in SOURCE_SNAPSHOT.json are explicitly
+# versioned despite these defaults, including the nine unfinished I candidates.
+/print_optimization_G/trials/**/*.3mf
+/print_optimization_G/bambu/**/*.3mf
+/design/*/print/trials/**/*.3mf
+/design/*/print/bambu/**/*.3mf

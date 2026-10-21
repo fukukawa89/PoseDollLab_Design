@@ -1,0 +1,65 @@
+{
+  "revision": "O23D-continuous-walls-20261020",
+  "scale": 1.4,
+  "compact_wrist": true,
+  "maximum_height_mm": 800,
+  "wall_mm": 2.4,
+  "rib_radius_mm": 3.0,
+  "interface_overlap_mm": 10.0,
+  "controller_front_corner_neutral_mm": [
+    -55.0,
+    32.0,
+    518.0
+  ],
+  "target_moving_clearance_mm": 2.0,
+  "printer_usable_box_mm": [
+    170,
+    170,
+    170
+  ],
+  "material_density_g_cm3_for_solid_volume_only": 1.24,
+  "notes": [
+    "UE-proportioned limb landmarks retained. Both physical hip pivots now coincide with the femur origins.",
+    "Chest and descendants raised 22 mm; waist pivot has an 8 mm axial offset. See device_profile.json for the actual transforms.",
+    "Forearm twist modules shift 8 mm toward the elbow; the right mount clocks 180 degrees. Coaxial inverse child transforms preserve body motion.",
+    "Both clavicle protraction modules clock 90 degrees to move their sensor boards away from the shoulder sweep; bone frames remain unchanged.",
+    "O22F7 metal, magnet, PCB and friction interface dimensions retained; anatomical walls and connector spans redesigned.",
+    "Wall setting is a radial offset. Slicing, minimum normal thickness, physical fit, strength and holding-pose tests remain required."
+  ],
+  "backpack_mount_revision": "compact_direct_v3",
+  "controller_board_mm": [
+    64,
+    60,
+    1.6
+  ],
+  "controller_board_layout_only": true,
+  "user_controller_pcb_not_manufactured": true,
+  "motion_acceptance_policy": "ordinary_adjacent",
+  "contour_adjustments": {
+    "chest": {
+      "ap_scale": 1.08,
+      "lateral_scale": 0.9
+    },
+    "waist": {
+      "ap_scale": 1.0,
+      "lateral_scale": 0.96,
+      "longitudinal_extension_mm": 22.0
+    },
+    "pelvis": {
+      "ap_scale": 1.08
+    },
+    "forearm_l": {
+      "ap_add_mm": 2.0,
+      "lateral_add_mm": 1.0
+    },
+    "forearm_r": {
+      "ap_add_mm": 2.0,
+      "lateral_add_mm": 1.0
+    },
+    "head": {
+      "ap_add_mm": 3.0,
+      "lateral_add_mm": 2.0
+    }
+  },
+  "upper_torso_raise_mm": 22.0
+}

@@ -1,0 +1,201 @@
+{
+  "input_sha256": "4080c72532c62132fda5c5cc35aefb2226b0207cb26f60a127786b2ceff76e82",
+  "output_sha256": "48e16d08face8d3872d7f87035889dc9ee4cbf43bc3b42bf8af7fb019986e771",
+  "rows": [
+    {
+      "key": "frame/clavicle_r",
+      "cutters": 2,
+      "removed_wall_mm3": 1317.5030226279832,
+      "inherited_interfaces_removed_mm3": 0.0,
+      "components": 8
+    },
+    {
+      "key": "frame/clavicle_l",
+      "cutters": 2,
+      "removed_wall_mm3": 1403.5806826261014,
+      "inherited_interfaces_removed_mm3": 0.0,
+      "components": 9
+    },
+    {
+      "key": "frame/chest",
+      "cutters": 18,
+      "removed_wall_mm3": 4385.841962422288,
+      "inherited_interfaces_removed_mm3": 9.913816342233217e-06,
+      "components": 26
+    },
+    {
+      "key": "frame/clavicle_l.protract_frame",
+      "cutters": 2,
+      "removed_wall_mm3": 1178.4439192014397,
+      "inherited_interfaces_removed_mm3": 2.5006976622781987e-13,
+      "components": 9
+    },
+    {
+      "key": "frame/clavicle_r.protract_frame",
+      "cutters": 2,
+      "removed_wall_mm3": 744.0815659202999,
+      "inherited_interfaces_removed_mm3": 1.3116810612875185e-13,
+      "components": 2
+    }
+  ],
+  "cutters": [
+    {
+      "key": "frame/clavicle_r",
+      "obstacle": "frame/chest",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/clavicle_r",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_r",
+      "obstacle": "frame/clavicle_r.protract_frame",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_r.protract_frame",
+      "obstacle": "frame/clavicle_r",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_l",
+      "obstacle": "frame/chest",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/clavicle_l",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_l",
+      "obstacle": "frame/clavicle_l.protract_frame",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_l.protract_frame",
+      "obstacle": "frame/clavicle_l",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_l/C02_sensor_cassette",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_cassette",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_magnet_cartridge",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/clavicle_l.protract_frame",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_l.protract_frame",
+      "obstacle": "frame/chest",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/clavicle_r.protract_frame",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/clavicle_r.protract_frame",
+      "obstacle": "frame/chest",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_l/C02_sensor_PCB/pcb",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_PCB/pcb",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_PCB/R2",
+      "pose": "A_STAND_35",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/upperarm_l",
+      "pose": "N_NEUTRAL",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "frame/upperarm_r",
+      "pose": "N_NEUTRAL",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_l/C02_sensor_cassette",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_cassette",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_magnet_cartridge",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_l/C02_sensor_PCB/pcb",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_PCB/pcb",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    },
+    {
+      "key": "frame/chest",
+      "obstacle": "upperarm_r/C02_sensor_PCB/R2",
+      "pose": "left_elbow",
+      "gap_mm": 0.3
+    }
+  ],
+  "purpose": "Named-pose opening construction, independent resampling required",
+  "continuous_proof": false
+}

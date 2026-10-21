@@ -1,0 +1,101 @@
+{
+  "schema": "o6-DC1-digital-experiment-v1",
+  "valid_chain_length_cases": 5,
+  "single_bit_faults_rejected": 2080,
+  "bad_shape_or_capture_enable_rejected": 16,
+  "all_zero_and_all_one_rejected": true,
+  "known_undetectable_counterexamples": [
+    "Whole valid replay without independent sample age/binding",
+    "Duplicated valid physical response column; physical sensor count not proven",
+    "Even-bit angle mutation can retain valid parity"
+  ],
+  "timing": [
+    {
+      "SPI_clock_Hz": 25000,
+      "region_lengths": [
+        3,
+        6,
+        9,
+        9,
+        7,
+        7
+      ],
+      "ideal_plus_CS_fullscan_ms": 157.54800000000003,
+      "max_region_ms": 34.578,
+      "fullscan_100ms_budget_met": false,
+      "region_20ms_budget_met": false,
+      "electrical_or_driver_timing_qualified": false
+    },
+    {
+      "SPI_clock_Hz": 50000,
+      "region_lengths": [
+        3,
+        6,
+        9,
+        9,
+        7,
+        7
+      ],
+      "ideal_plus_CS_fullscan_ms": 78.828,
+      "max_region_ms": 17.298000000000002,
+      "fullscan_100ms_budget_met": true,
+      "region_20ms_budget_met": true,
+      "electrical_or_driver_timing_qualified": false
+    },
+    {
+      "SPI_clock_Hz": 100000,
+      "region_lengths": [
+        3,
+        6,
+        9,
+        9,
+        7,
+        7
+      ],
+      "ideal_plus_CS_fullscan_ms": 39.468,
+      "max_region_ms": 8.658000000000001,
+      "fullscan_100ms_budget_met": true,
+      "region_20ms_budget_met": true,
+      "electrical_or_driver_timing_qualified": false
+    },
+    {
+      "SPI_clock_Hz": 250000,
+      "region_lengths": [
+        3,
+        6,
+        9,
+        9,
+        7,
+        7
+      ],
+      "ideal_plus_CS_fullscan_ms": 15.851999999999999,
+      "max_region_ms": 3.4739999999999998,
+      "fullscan_100ms_budget_met": true,
+      "region_20ms_budget_met": true,
+      "electrical_or_driver_timing_qualified": false
+    }
+  ],
+  "hypothetical_harness_conductors_per_serial_segment_including_power": 6,
+  "source": "https://look.ams-osram.com/m/d6b55afbdfe4b3d0/original/AS5048_UG000223_1-00.pdf",
+  "source_access": "Official indexed section 4.3 read; direct document fetch returned 404. No mirrored source used.",
+  "pipeline_basis": "n x 16-bit read command, next n x 16-bit transfer returns previous register; physical near/far mapping is a declared fixture hypothesis requiring bench verification",
+  "register_policy_inherited_from": "Firmware/PoseDollFullBody/revO5/main/main.c",
+  "capture_eligible": false,
+  "connected_to_production_firmware": false,
+  "physical_tested": false,
+  "new_central_PCB_exists": false,
+  "decision": "Worth investigating for a smaller back controller and loom; retain current A baseline. Do not qualify six physical regions merely by decoding six logical records.",
+  "open": [
+    "Actual chain order/count and fault isolation",
+    "Clock/data integrity on flexing harness and return conductor",
+    "Power drop/inrush and branch protection",
+    "Connector/splice envelopes; no free volume credit from wire count",
+    "Native central PCB/RF/thermal/protection layout",
+    "Reboot, stale-frame and host transaction integration"
+  ],
+  "input_sha256": {
+    "scripts/test_revo6_daisy.py": "232cedd3645d1d7d0c85ba6e675f6dbe3919de5b28d7828512e61ae47a77fb18",
+    "Firmware/PoseDollFullBody/revO6/daisy_chain_trial.py": "9f8a038cef5fdec807365256f18ad274a318f53a540b3a36bbc2729bdbb7a73f",
+    "Firmware/PoseDollFullBody/revO5/main/main.c": "8d3323e11dfa09b4a401a902caf57ce5157aba0805ae7f9ce2103234e8a7690c"
+  }
+}

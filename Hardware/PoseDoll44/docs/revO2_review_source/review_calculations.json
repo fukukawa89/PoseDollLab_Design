@@ -1,0 +1,202 @@
+{
+  "reviewed_commit": "f59e4d3a7ea3d0940b1810702cd5e1df181e0364",
+  "status": "ARITHMETIC_REPRODUCED_ONLY",
+  "not_executed": [
+    "CadQuery build or BRep recheck",
+    "KiCad ERC/DRC/routing",
+    "ESP-IDF build or firmware runtime",
+    "physical tests",
+    "full-body qualification"
+  ],
+  "rear_cap": {
+    "housing_material_z_min_mm_after_cut": -7.4,
+    "cap_z_min_mm": -10.0,
+    "cap_z_max_mm": -7.4,
+    "axial_thread_overlap_mm": 0.0,
+    "scope": "Derived from compact_joint.py intervals; not a stress calculation"
+  },
+  "friction": {
+    "source_hold_Nm": 0.38758972532896774,
+    "source_gravity_Nm": 0.2383931502193118,
+    "source_cable_assumption_Nm": 0.02,
+    "mu_low_assumed": 0.08,
+    "mu_high_assumed": 0.22,
+    "effective_radius_pressure_m": 0.008725925925925927,
+    "effective_radius_wear_m": 0.0081,
+    "one_face_pressure_required_N": 555.2272168867852,
+    "two_face_pressure_required_N": 277.6136084433926,
+    "two_face_wear_required_N": 299.06614608716643,
+    "two_face_wear_at_350N_torque_Nm": 0.4536,
+    "pressure_at_two_face_wear_force_MPa": 0.7533690323079365,
+    "friction_only_hand_force_at_60mm_N": 17.764529077577688,
+    "lifting_hand_force_with_gravity_and_cable_at_60mm_N": 22.071081581232885,
+    "scope": "Conditional on source load and friction interval, not measured friction/breakaway/actual hand force"
+  },
+  "journal_clearance_sensitivity": {
+    "source_diametral_clearance_mm": 0.06,
+    "source_bush_length_mm": 4.6,
+    "one_sided_tilt_scale_deg": 0.7472938768260555,
+    "proposal_diametral_clearance_mm": 0.03,
+    "proposal_support_span_mm": 14,
+    "proposal_tilt_scale_deg": 0.12277648246221907,
+    "scope": "Rigid shaft/bush geometric order estimate, not measured play or sensor angle error"
+  },
+  "mass": {
+    "source_budget_g": 1387.1388657751172,
+    "excess_over_1200g": 187.1388657751172,
+    "material_proposals": [
+      {
+        "aluminum_carrier_thickness_mm": 1.5,
+        "steel_wear_shim_thickness_mm": 0.2,
+        "old_annuli_g": 108.85074169513616,
+        "proposed_annuli_g": 64.94067604317041,
+        "annuli_only_saving_g": 43.91006565196575,
+        "scope": "Proposal only; excludes keys, ribs, fasteners, added clutch faces and stiffness checks"
+      },
+      {
+        "aluminum_carrier_thickness_mm": 1.7,
+        "steel_wear_shim_thickness_mm": 0.2,
+        "old_annuli_g": 108.85074169513616,
+        "proposed_annuli_g": 71.18052747792345,
+        "annuli_only_saving_g": 37.67021421721272,
+        "scope": "Proposal only; excludes keys, ribs, fasteners, added clutch faces and stiffness checks"
+      },
+      {
+        "aluminum_carrier_thickness_mm": 1.8,
+        "steel_wear_shim_thickness_mm": 0.2,
+        "old_annuli_g": 108.85074169513616,
+        "proposed_annuli_g": 74.30045319529997,
+        "annuli_only_saving_g": 34.5502884998362,
+        "scope": "Proposal only; excludes keys, ribs, fasteners, added clutch faces and stiffness checks"
+      }
+    ],
+    "board_material_only": {
+      "old_area_mm2": 2640,
+      "proposed_torso_board_mm": [
+        36,
+        48
+      ],
+      "proposed_distal_board_mm": [
+        26,
+        30
+      ],
+      "proposed_area_mm2": 2508,
+      "saving_g_per_arm_at_1p2mm_1p85density": 0.29304,
+      "scope": "Exploration dimensions, not completed layout; new connectors and harness may reverse saving"
+    }
+  },
+  "power_24AWG_1m_allocation": [
+    {
+      "nominal_V": 5,
+      "supply_minus_5pct_V": 4.75,
+      "body_3V3_allocated_W": 6.0258,
+      "input_allocated_W": 7.089176470588236,
+      "loop_ohm": 0.2284,
+      "tether_end_V": 4.38035709890225,
+      "current_A": 1.6184014934227249,
+      "tether_contact_loss_W": 0.5982306231697078,
+      "scope": "Original lumped allocation; excludes internal branches, protection, peak/inrush, real converter efficiency"
+    },
+    {
+      "nominal_V": 12,
+      "supply_minus_5pct_V": 11.399999999999999,
+      "body_3V3_allocated_W": 6.0258,
+      "input_allocated_W": 7.089176470588236,
+      "loop_ohm": 0.2284,
+      "tether_end_V": 11.256152634163108,
+      "current_A": 0.6298045789706292,
+      "tether_contact_loss_W": 0.09059572967693766,
+      "scope": "Original lumped allocation; excludes internal branches, protection, peak/inrush, real converter efficiency"
+    }
+  ],
+  "can_ordinary": {
+    "pairs": 23,
+    "frames_per_cohort": 30,
+    "utilization": 0.486
+  },
+  "epoch_counterexample": {
+    "scope": "CONDITIONAL_SCHEDULING_COUNTEREXAMPLE_NOT_HARDWARE_RESULT",
+    "frame_bits_allowance": 135,
+    "bitrate": 500000,
+    "assumed_axis_us": 700,
+    "rows": [
+      {
+        "node": "N1",
+        "ports": 3,
+        "delay_from_sync_rx_us": 1890.0,
+        "assumed_span_us": 2100,
+        "end_from_sync_rx_us": 3990.0,
+        "would_exceed_8000us_in_this_model": false
+      },
+      {
+        "node": "N2",
+        "ports": 6,
+        "delay_from_sync_rx_us": 2160.0,
+        "assumed_span_us": 4200,
+        "end_from_sync_rx_us": 6360.0,
+        "would_exceed_8000us_in_this_model": false
+      },
+      {
+        "node": "N3",
+        "ports": 9,
+        "delay_from_sync_rx_us": 2430.0,
+        "assumed_span_us": 6300,
+        "end_from_sync_rx_us": 8730.0,
+        "would_exceed_8000us_in_this_model": true
+      },
+      {
+        "node": "N4",
+        "ports": 9,
+        "delay_from_sync_rx_us": 2700.0,
+        "assumed_span_us": 6300,
+        "end_from_sync_rx_us": 9000.0,
+        "would_exceed_8000us_in_this_model": true
+      },
+      {
+        "node": "N5",
+        "ports": 7,
+        "delay_from_sync_rx_us": 2970.0,
+        "assumed_span_us": 4900,
+        "end_from_sync_rx_us": 7870.0,
+        "would_exceed_8000us_in_this_model": false
+      },
+      {
+        "node": "N6",
+        "ports": 7,
+        "delay_from_sync_rx_us": 3240.0,
+        "assumed_span_us": 4900,
+        "end_from_sync_rx_us": 8140.0,
+        "would_exceed_8000us_in_this_model": true
+      }
+    ],
+    "excluded": [
+      "actual per-frame stuffed bit counts",
+      "SDK and ISR overhead",
+      "other feasible scheduling orders",
+      "periodic 250ms BOOT and error traffic"
+    ]
+  },
+  "catalogue_spring_example_002100": {
+    "source": "SCHNORR 2024-02 catalogue printed p11",
+    "OD_mm": 12,
+    "ID_mm": 6.2,
+    "thickness_mm": 0.5,
+    "free_height_one_mm": 0.85,
+    "cone_height_mm": 0.35,
+    "catalogue_force_N_at_0p75_h0": 326,
+    "four_in_series_free_height_mm": 3.4,
+    "four_in_series_height_at_catalogue_point_mm": 2.35,
+    "four_in_series_mass_g": 1.24,
+    "scope": "Catalogue point and ideal series arithmetic; not spring selection approval"
+  },
+  "spi_possible_pipeline_arithmetic": {
+    "current_frames_per_axis": 10,
+    "candidate_frames_per_axis": 6,
+    "bits_per_frame": 16,
+    "SPI_hz": 250000,
+    "current_wire_time_us": 640.0,
+    "candidate_wire_time_us": 384.0,
+    "nine_axis_wire_saving_us": 2304.0,
+    "scope": "Conditional optimization hypothesis; requires authoritative SPI sequencing review and fault-equivalence tests before implementation"
+  }
+}

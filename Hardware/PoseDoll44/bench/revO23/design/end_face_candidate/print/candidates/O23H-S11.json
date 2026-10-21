@@ -1,0 +1,134 @@
+{
+  "id": "O23H-S11",
+  "key": "frame/head",
+  "stl_sha256": "b1d7398d8b4f6360b0869e7c36e5932a3dd5402758be01959a7eab4d2283f067",
+  "source": {
+    "key": "frame/head",
+    "export_version": "O23H-export-1",
+    "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+    "source_mesh_sha256": "fe5726d38317b3ef6123632c4d07e332ac8f3becc99ea885a159c557d16fa566",
+    "source": {
+      "vertices": 6560,
+      "triangles": 13128,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 3,
+      "duplicate_faces": 0,
+      "volume_mm3": 29628.250300324904
+    },
+    "attempts": [
+      {
+        "before_cleanup": {
+          "vertices": 6544,
+          "triangles": 13128,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 26,
+          "degenerate_faces": 32,
+          "duplicate_faces": 4,
+          "volume_mm3": 29628.250312983146
+        },
+        "removed_opposed_face_pairs": 0,
+        "quantization_max_vertex_displacement_mm": 3.185100397376713e-06,
+        "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+        "removed_closed_flat_membranes": [],
+        "after_membrane_cleanup": {
+          "vertices": 6544,
+          "triangles": 13096,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 29628.250312983142
+        },
+        "simplify_tolerance_mm": 0,
+        "after_cleanup": {
+          "vertices": 6544,
+          "triangles": 13096,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 29628.250312983142
+        }
+      }
+    ],
+    "case_rebuild": null,
+    "simplify_tolerance_mm": 0,
+    "surface_displacement_bound_mm": 3.185100397376713e-06,
+    "exported": {
+      "vertices": 6544,
+      "triangles": 13096,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 29628.250312983142
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "mesh_cache_sha256": "1f4274af36c981c6c48d57ac96d86f4a48b69a29349dce0d7065265fe746dec3",
+    "id": "O23H-S11",
+    "staged_stl": "export/stl/O23H-S11_head.stl",
+    "stl_sha256": "b1d7398d8b4f6360b0869e7c36e5932a3dd5402758be01959a7eab4d2283f067"
+  },
+  "candidates": [
+    {
+      "name": "revised_connections",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0.0,
+          92.46870478423007
+        ],
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0,
+          87.53129251837163
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          93.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        76.01778500656178,
+        76.0177850065618,
+        54.0
+      ],
+      "metrics": {
+        "overhang_area_mm2": 2969.6516024512075,
+        "overhang_projection_volume_proxy_mm3": 40825.84522725085,
+        "bed_contact_projection_mm2": 225.8314888754768,
+        "max_rod_angle_to_bed_deg": 27.782222062899443,
+        "rod_verticality": 0.21726053356229671
+      },
+      "protect_voids": true,
+      "guard_revision": 5
+    }
+  ],
+  "previous_G_source_sha256": "c467971c409f3cddfcb1592775025839a071ece2da900605d4857b3ab9921e68"
+}

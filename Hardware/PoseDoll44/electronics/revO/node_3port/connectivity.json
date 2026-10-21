@@ -1,0 +1,1482 @@
+[
+  {
+    "ref": "U1",
+    "lib": "RF_Module",
+    "sym": "ESP32-S3-WROOM-1",
+    "value": "ESP32-S3-WROOM-1-N8",
+    "fp": "RF_Module:ESP32-S3-WROOM-1",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "EN",
+      "4": "CS2_MCU",
+      "5": "CS3_MCU",
+      "6": null,
+      "7": null,
+      "8": null,
+      "9": null,
+      "10": "CAN_TX",
+      "11": "CAN_RX",
+      "12": null,
+      "13": null,
+      "14": null,
+      "15": null,
+      "16": null,
+      "17": null,
+      "18": null,
+      "19": "SPI_MOSI",
+      "20": "SPI_SCK",
+      "21": "SPI_MISO",
+      "22": null,
+      "23": null,
+      "24": null,
+      "25": null,
+      "26": null,
+      "27": "BOOT_N",
+      "28": null,
+      "29": null,
+      "30": null,
+      "31": null,
+      "32": null,
+      "33": null,
+      "34": null,
+      "35": null,
+      "36": "UART_RX",
+      "37": "UART_TX",
+      "38": "CS1_MCU",
+      "39": null,
+      "40": "GND",
+      "41": "GND"
+    },
+    "pcb": [
+      100,
+      94
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      54.61
+    ]
+  },
+  {
+    "ref": "U2",
+    "lib": "Regulator_Switching",
+    "sym": "TPS62162DSG",
+    "value": "TPS62162DSGR",
+    "fp": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+    "nets": {
+      "1": "GND",
+      "2": "+5V_IN",
+      "3": "+5V_IN",
+      "4": "GND",
+      "5": "GND",
+      "6": "+3V3",
+      "7": "SW_BUCK",
+      "8": "PG",
+      "9": "GND"
+    },
+    "pcb": [
+      90,
+      104
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      139.7,
+      54.61
+    ]
+  },
+  {
+    "ref": "L1",
+    "lib": "Device",
+    "sym": "L",
+    "value": "LSXND4040TKL2R2MDG / 2.2uH",
+    "fp": "Inductor_SMD:L_Taiyo-Yuden_NR-40xx",
+    "nets": {
+      "1": "SW_BUCK",
+      "2": "+3V3"
+    },
+    "pcb": [
+      85.5,
+      103.5
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      224.79,
+      54.61
+    ]
+  },
+  {
+    "ref": "C1",
+    "lib": "Device",
+    "sym": "C",
+    "value": "10u X5R 25V / CL21A106KAYNNNE",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+5V_IN",
+      "2": "GND"
+    },
+    "pcb": [
+      94.5,
+      101.5
+    ],
+    "angle": 180,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      309.88,
+      54.61
+    ]
+  },
+  {
+    "ref": "C2",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22u X5R 16V / CL21A226MOYNNNE",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      85.5,
+      108
+    ],
+    "angle": 180,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      394.97,
+      54.61
+    ]
+  },
+  {
+    "ref": "C3",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+5V_IN",
+      "2": "GND"
+    },
+    "pcb": [
+      93,
+      103.9
+    ],
+    "angle": 180,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      480.06,
+      54.61
+    ]
+  },
+  {
+    "ref": "C4",
+    "lib": "Device",
+    "sym": "C",
+    "value": "22u X5R 16V / CL21A226MOYNNNE",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      93,
+      97
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      565.15,
+      54.61
+    ]
+  },
+  {
+    "ref": "C5",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      94,
+      93
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      650.24,
+      54.61
+    ]
+  },
+  {
+    "ref": "R1",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "EN"
+    },
+    "pcb": [
+      94,
+      99.6
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "control",
+    "schematic_xy": [
+      735.33,
+      54.61
+    ]
+  },
+  {
+    "ref": "C6",
+    "lib": "Device",
+    "sym": "C",
+    "value": "1u X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "EN",
+      "2": "GND"
+    },
+    "pcb": [
+      101,
+      98
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      54.61
+    ]
+  },
+  {
+    "ref": "R2",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "BOOT_N"
+    },
+    "pcb": [
+      104,
+      98
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      54.61
+    ]
+  },
+  {
+    "ref": "R3",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "PG"
+    },
+    "pcb": [
+      116,
+      108
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "power",
+    "schematic_xy": [
+      990.6,
+      54.61
+    ]
+  },
+  {
+    "ref": "J1",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x02",
+    "value": "Fused 5V branch; NOT 12V qualified",
+    "fp": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical",
+    "nets": {
+      "1": "+5V_IN",
+      "2": "GND"
+    },
+    "pcb": [
+      85.8,
+      95
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "power",
+    "schematic_xy": [
+      54.61,
+      130.81
+    ]
+  },
+  {
+    "ref": "J2",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x03",
+    "value": "CAN IN / GND-L-H",
+    "fp": "Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "CAN_L",
+      "3": "CAN_H"
+    },
+    "pcb": [
+      100,
+      109
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      139.7,
+      130.81
+    ]
+  },
+  {
+    "ref": "J3",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x03",
+    "value": "CAN OUT / GND-L-H",
+    "fp": "Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "CAN_L",
+      "3": "CAN_H"
+    },
+    "pcb": [
+      112,
+      109
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      224.79,
+      130.81
+    ]
+  },
+  {
+    "ref": "U3",
+    "lib": "Interface_CAN_LIN",
+    "sym": "TCAN332",
+    "value": "TCAN332DR",
+    "fp": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "nets": {
+      "1": "CAN_TX",
+      "2": "GND",
+      "3": "+3V3",
+      "4": "CAN_RX",
+      "5": null,
+      "6": "CAN_L",
+      "7": "CAN_H",
+      "8": null
+    },
+    "pcb": [
+      109,
+      102
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      309.88,
+      130.81
+    ]
+  },
+  {
+    "ref": "C7",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      116,
+      104
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      394.97,
+      130.81
+    ]
+  },
+  {
+    "ref": "R4",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAN_TX"
+    },
+    "pcb": [
+      116,
+      102
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "can",
+    "schematic_xy": [
+      480.06,
+      130.81
+    ]
+  },
+  {
+    "ref": "R5",
+    "lib": "Device",
+    "sym": "R",
+    "value": "120R 1% 0.33W / CRCW0603120RFKEAHP",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CAN_H",
+      "2": "TERM_R"
+    },
+    "pcb": [
+      115.5,
+      90
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      565.15,
+      130.81
+    ]
+  },
+  {
+    "ref": "JP1",
+    "lib": "Jumper",
+    "sym": "Jumper_2_Open",
+    "value": "CAN TERM: close endpoints only",
+    "fp": "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+    "nets": {
+      "1": "TERM_R",
+      "2": "CAN_L"
+    },
+    "pcb": [
+      115.5,
+      93
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "can",
+    "schematic_xy": [
+      650.24,
+      130.81
+    ]
+  },
+  {
+    "ref": "D1",
+    "lib": "PoseDoll",
+    "sym": "PESD5V0S2BT",
+    "value": "PESD5V0S2BT,215",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "CAN_L",
+      "2": "CAN_H",
+      "3": "GND"
+    },
+    "pcb": [
+      106,
+      110
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "can",
+    "schematic_xy": [
+      735.33,
+      130.81
+    ]
+  },
+  {
+    "ref": "U11",
+    "lib": "PoseDoll",
+    "sym": "LVC125_QUAD",
+    "value": "SN74LVC125APWR",
+    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "nets": {
+      "1": "CS1_MCU",
+      "2": "SPI_SCK",
+      "3": "P1_SCK_DRV",
+      "4": "CS1_MCU",
+      "5": "SPI_MOSI",
+      "6": "P1_MOSI_DRV",
+      "7": "GND",
+      "8": "SPI_MISO",
+      "9": "P1_MISO",
+      "10": "CS1_MCU",
+      "11": "P1_CS_DRV",
+      "12": "CS1_MCU",
+      "13": "GND",
+      "14": "+3V3"
+    },
+    "pcb": [
+      88,
+      118
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      820.42,
+      130.81
+    ]
+  },
+  {
+    "ref": "J11",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x06",
+    "value": "P1 sensor / CS GPIO2",
+    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "P1_SCK",
+      "4": "P1_MOSI",
+      "5": "P1_MISO",
+      "6": "P1_CS"
+    },
+    "pcb": [
+      88,
+      118
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port1",
+    "schematic_xy": [
+      905.51,
+      130.81
+    ]
+  },
+  {
+    "ref": "R110",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_SCK_DRV",
+      "2": "P1_SCK"
+    },
+    "pcb": [
+      84,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      990.6,
+      130.81
+    ]
+  },
+  {
+    "ref": "R111",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_MOSI_DRV",
+      "2": "P1_MOSI"
+    },
+    "pcb": [
+      87,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      54.61,
+      207.01
+    ]
+  },
+  {
+    "ref": "R112",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_CS_DRV",
+      "2": "P1_CS"
+    },
+    "pcb": [
+      90,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      139.7,
+      207.01
+    ]
+  },
+  {
+    "ref": "R113",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CS1_MCU"
+    },
+    "pcb": [
+      83,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      224.79,
+      207.01
+    ]
+  },
+  {
+    "ref": "R114",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_SCK",
+      "2": "GND"
+    },
+    "pcb": [
+      84,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port1",
+    "schematic_xy": [
+      309.88,
+      207.01
+    ]
+  },
+  {
+    "ref": "R115",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_MOSI",
+      "2": "GND"
+    },
+    "pcb": [
+      88,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port1",
+    "schematic_xy": [
+      394.97,
+      207.01
+    ]
+  },
+  {
+    "ref": "R116",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P1_MISO",
+      "2": "GND"
+    },
+    "pcb": [
+      92,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port1",
+    "schematic_xy": [
+      480.06,
+      207.01
+    ]
+  },
+  {
+    "ref": "R117",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "P1_CS"
+    },
+    "pcb": [
+      90,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port1",
+    "schematic_xy": [
+      565.15,
+      207.01
+    ]
+  },
+  {
+    "ref": "C21",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      92,
+      122.3
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port1",
+    "schematic_xy": [
+      650.24,
+      207.01
+    ]
+  },
+  {
+    "ref": "U12",
+    "lib": "PoseDoll",
+    "sym": "LVC125_QUAD",
+    "value": "SN74LVC125APWR",
+    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "nets": {
+      "1": "CS2_MCU",
+      "2": "SPI_SCK",
+      "3": "P2_SCK_DRV",
+      "4": "CS2_MCU",
+      "5": "SPI_MOSI",
+      "6": "P2_MOSI_DRV",
+      "7": "GND",
+      "8": "SPI_MISO",
+      "9": "P2_MISO",
+      "10": "CS2_MCU",
+      "11": "P2_CS_DRV",
+      "12": "CS2_MCU",
+      "13": "GND",
+      "14": "+3V3"
+    },
+    "pcb": [
+      100,
+      118
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      735.33,
+      207.01
+    ]
+  },
+  {
+    "ref": "J12",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x06",
+    "value": "P2 sensor / CS GPIO4",
+    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "P2_SCK",
+      "4": "P2_MOSI",
+      "5": "P2_MISO",
+      "6": "P2_CS"
+    },
+    "pcb": [
+      100,
+      118
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port2",
+    "schematic_xy": [
+      820.42,
+      207.01
+    ]
+  },
+  {
+    "ref": "R120",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_SCK_DRV",
+      "2": "P2_SCK"
+    },
+    "pcb": [
+      96,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      905.51,
+      207.01
+    ]
+  },
+  {
+    "ref": "R121",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_MOSI_DRV",
+      "2": "P2_MOSI"
+    },
+    "pcb": [
+      99,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      990.6,
+      207.01
+    ]
+  },
+  {
+    "ref": "R122",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_CS_DRV",
+      "2": "P2_CS"
+    },
+    "pcb": [
+      102,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      54.61,
+      283.21
+    ]
+  },
+  {
+    "ref": "R123",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CS2_MCU"
+    },
+    "pcb": [
+      96,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      139.7,
+      283.21
+    ]
+  },
+  {
+    "ref": "R124",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_SCK",
+      "2": "GND"
+    },
+    "pcb": [
+      96,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port2",
+    "schematic_xy": [
+      224.79,
+      283.21
+    ]
+  },
+  {
+    "ref": "R125",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_MOSI",
+      "2": "GND"
+    },
+    "pcb": [
+      100,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port2",
+    "schematic_xy": [
+      309.88,
+      283.21
+    ]
+  },
+  {
+    "ref": "R126",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P2_MISO",
+      "2": "GND"
+    },
+    "pcb": [
+      104,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port2",
+    "schematic_xy": [
+      394.97,
+      283.21
+    ]
+  },
+  {
+    "ref": "R127",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "P2_CS"
+    },
+    "pcb": [
+      102,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port2",
+    "schematic_xy": [
+      480.06,
+      283.21
+    ]
+  },
+  {
+    "ref": "C22",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      104,
+      122.3
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port2",
+    "schematic_xy": [
+      565.15,
+      283.21
+    ]
+  },
+  {
+    "ref": "U13",
+    "lib": "PoseDoll",
+    "sym": "LVC125_QUAD",
+    "value": "SN74LVC125APWR",
+    "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "nets": {
+      "1": "CS3_MCU",
+      "2": "SPI_SCK",
+      "3": "P3_SCK_DRV",
+      "4": "CS3_MCU",
+      "5": "SPI_MOSI",
+      "6": "P3_MOSI_DRV",
+      "7": "GND",
+      "8": "SPI_MISO",
+      "9": "P3_MISO",
+      "10": "CS3_MCU",
+      "11": "P3_CS_DRV",
+      "12": "CS3_MCU",
+      "13": "GND",
+      "14": "+3V3"
+    },
+    "pcb": [
+      112,
+      118
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      650.24,
+      283.21
+    ]
+  },
+  {
+    "ref": "J13",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x06",
+    "value": "P3 sensor / CS GPIO5",
+    "fp": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "P3_SCK",
+      "4": "P3_MOSI",
+      "5": "P3_MISO",
+      "6": "P3_CS"
+    },
+    "pcb": [
+      112,
+      118
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port3",
+    "schematic_xy": [
+      735.33,
+      283.21
+    ]
+  },
+  {
+    "ref": "R130",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_SCK_DRV",
+      "2": "P3_SCK"
+    },
+    "pcb": [
+      108,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      820.42,
+      283.21
+    ]
+  },
+  {
+    "ref": "R131",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_MOSI_DRV",
+      "2": "P3_MOSI"
+    },
+    "pcb": [
+      111,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      905.51,
+      283.21
+    ]
+  },
+  {
+    "ref": "R132",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_CS_DRV",
+      "2": "P3_CS"
+    },
+    "pcb": [
+      114,
+      122.3
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      990.6,
+      283.21
+    ]
+  },
+  {
+    "ref": "R133",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CS3_MCU"
+    },
+    "pcb": [
+      108,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      54.61,
+      359.41
+    ]
+  },
+  {
+    "ref": "R134",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_SCK",
+      "2": "GND"
+    },
+    "pcb": [
+      108,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port3",
+    "schematic_xy": [
+      139.7,
+      359.41
+    ]
+  },
+  {
+    "ref": "R135",
+    "lib": "Device",
+    "sym": "R",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_MOSI",
+      "2": "GND"
+    },
+    "pcb": [
+      112,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port3",
+    "schematic_xy": [
+      224.79,
+      359.41
+    ]
+  },
+  {
+    "ref": "R136",
+    "lib": "Device",
+    "sym": "R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "P3_MISO",
+      "2": "GND"
+    },
+    "pcb": [
+      116,
+      113.7
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port3",
+    "schematic_xy": [
+      309.88,
+      359.41
+    ]
+  },
+  {
+    "ref": "R137",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "P3_CS"
+    },
+    "pcb": [
+      114,
+      113.7
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "port3",
+    "schematic_xy": [
+      394.97,
+      359.41
+    ]
+  },
+  {
+    "ref": "C23",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      116,
+      122.3
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "port3",
+    "schematic_xy": [
+      480.06,
+      359.41
+    ]
+  },
+  {
+    "ref": "#FLG01",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "+5V_IN"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "power",
+    "schematic_xy": [
+      565.15,
+      359.41
+    ]
+  },
+  {
+    "ref": "#FLG02",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "+3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "power",
+    "schematic_xy": [
+      650.24,
+      359.41
+    ]
+  },
+  {
+    "ref": "#FLG03",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "power",
+    "schematic_xy": [
+      735.33,
+      359.41
+    ]
+  },
+  {
+    "ref": "TP1",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "UART_TX",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "UART_TX"
+    },
+    "pcb": [
+      86,
+      101
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      820.42,
+      359.41
+    ]
+  },
+  {
+    "ref": "TP2",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "UART_RX",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "UART_RX"
+    },
+    "pcb": [
+      88.25,
+      101
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      905.51,
+      359.41
+    ]
+  },
+  {
+    "ref": "TP3",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "GND",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "GND"
+    },
+    "pcb": [
+      83,
+      104
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      990.6,
+      359.41
+    ]
+  },
+  {
+    "ref": "TP4",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "PG",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "PG"
+    },
+    "pcb": [
+      83,
+      101
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      435.61
+    ]
+  },
+  {
+    "ref": "TP5",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "EN",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "EN"
+    },
+    "pcb": [
+      115,
+      94
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      435.61
+    ]
+  },
+  {
+    "ref": "TP6",
+    "lib": "Connector",
+    "sym": "TestPoint",
+    "value": "BOOT_N",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "BOOT_N"
+    },
+    "pcb": [
+      115,
+      97
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      435.61
+    ]
+  }
+]

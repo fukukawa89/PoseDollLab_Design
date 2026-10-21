@@ -1,0 +1,95 @@
+{
+  "revision": "O22",
+  "review_conversation": "6abe4846-2d48-83ea-9048-49fe81abfece",
+  "baseline_commit": "5537190",
+  "items": [
+    {
+      "id": "R1",
+      "item": "Limit uncertainty without clamping",
+      "status": "DIGITAL_COMPLETE",
+      "evidence": "verification/host_tests.json",
+      "note": "460 limit-count subcases; original angle preserved."
+    },
+    {
+      "id": "R2",
+      "item": "Final oldest-sample total age",
+      "status": "DIGITAL_COMPLETE",
+      "evidence": "verification/host_tests.json",
+      "note": "Final oldest sample total age is tested at 120ms boundary."
+    },
+    {
+      "id": "R3",
+      "item": "A standing default pose, preserve mechanical coordinate system",
+      "status": "DIGITAL_COMPLETE",
+      "evidence": "profiles/default_pose.json",
+      "note": ">=3deg limit margin; mechanical reference unchanged."
+    },
+    {
+      "id": "R4",
+      "item": "Mounted bounded-range calibration",
+      "status": "IMPLEMENTED_AWAITING_MEASUREMENTS",
+      "evidence": "source/calibrate_axis.py",
+      "note": "Bounded installed calibration and evidence assembly provided; no real axis data."
+    },
+    {
+      "id": "R5",
+      "item": "MT6701 section, tolerances and strain relief",
+      "status": "CAD_FIT_PASS_FIRST_ARTICLE_PENDING",
+      "evidence": "mechanical/sensor_fit.json",
+      "note": "34 cassettes +12 end-axis positions fit maximum packages; magnetic field/accuracy not measured."
+    },
+    {
+      "id": "R6",
+      "item": "Representative limb wiring and service loops",
+      "status": "ROUTING_TEMPLATE_COMPLETE_PHYSICAL_PENDING",
+      "evidence": "harness/routing_plan.json",
+      "note": "Complete ten-channel left arm; 46 lengths, 234 endpoint samples; dynamic wire clearance remains unverified."
+    },
+    {
+      "id": "R7",
+      "item": "Routed carrier and enclosure",
+      "status": "DIGITAL_COMPLETE_FIRST_ARTICLE_PENDING",
+      "evidence": "manufacturing/electronic_bom.json",
+      "note": "Native routed 4-layer carrier, ERC/DRC/parity pass, physical enclosure."
+    },
+    {
+      "id": "R8",
+      "item": "Frozen protection parts and remote voltage budget",
+      "status": "ANALYSIS_PASS_PHYSICAL_PENDING",
+      "evidence": "verification/power_budget.json",
+      "note": "Exact protection parts; conservative 750mm remote DC minimum3.141V; hot fuse/thermal/waveform must be measured."
+    },
+    {
+      "id": "R9",
+      "item": "P21R calibrated capture to editable UE pose and reopen",
+      "status": "DIGITAL_CLOSED_LOOP_PASS_PHYSICAL_PENDING",
+      "evidence": "verification/o22_reopen.json",
+      "note": "Both targets, four actual P21R synthetic captures, fresh UE process, editable/undo; no hardware claim."
+    },
+    {
+      "id": "R10",
+      "item": "Quote-ready exact BOM, MOQ and cost sensitivity",
+      "status": "RFQ_READY_AWAITING_QUOTES",
+      "evidence": "manufacturing/RFQ.zh-CN.md",
+      "note": "Exact critical MPNs, passive AVL criteria, MOQ and all landed costs; 0 confirmed quotes."
+    },
+    {
+      "id": "R11",
+      "item": "O11 new sensor and 16-channel far branch physical tests",
+      "status": "TEST_PACKAGE_READY_NOT_RUN",
+      "evidence": "physical_tests/ACCEPTANCE.zh-CN.md",
+      "note": "O11 removable sensor fixture, 16-way 600/750mm and limb procedures, blank evidence templates."
+    },
+    {
+      "id": "R12",
+      "item": "Actual supplier prices and real 46-axis hardware-to-UE validation",
+      "status": "EXTERNAL_EVIDENCE_REQUIRED",
+      "evidence": "manufacturing/quote_response_EMPTY.json",
+      "note": "Needs actual supplier quotes, real 46-axis calibration, waveforms and UE hardware capture."
+    }
+  ],
+  "overall_status": "DIGITAL_ENGINEERING_PACKAGE_COMPLETE_PHYSICAL_AND_COST_RELEASE_PENDING",
+  "physical_measurements_performed": false,
+  "formal_supplier_quotes": 0,
+  "known_mechanical_limitation": "Inherited adjacent contacts at extreme poses recorded; no full-range manufacturing release."
+}

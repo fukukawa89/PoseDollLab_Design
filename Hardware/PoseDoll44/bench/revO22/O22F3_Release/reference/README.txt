@@ -1,0 +1,1 @@
+本目录用于复核设计，不是额外打印盘。parts/*.npz 包含保形原网格、旋转后零件、鳍和齿的数组；SHA-256 与 verification/geometry_final.json 一致。design 为最终尺寸与连接记录。最终没有永久本体改形；未采用的改形和朝向试验不混入本交付。verification_code 保存检查方法供审阅，脚本依赖原设计工程、Python 和几何库，不能在这里独立运行。打印入口在上级 projects 或 crosscheck_bambu；彩色识别请打开上级 index.html。

@@ -1,0 +1,131 @@
+{
+  "key": "frame/forearm_l",
+  "export_version": "O23I-export-2",
+  "source_geometry_sha256": "b9ef731234695c69dcfb250b7fc7a6bb65f9498bbaab62fd2b6939a2fc1fd818",
+  "source_mesh_sha256": "2bbb591e2bb0d06ca703c9ce187ac1bcc6b13a2c82204c3ffc1048e4e1421f63",
+  "source": {
+    "vertices": 110376,
+    "triangles": 250060,
+    "watertight": true,
+    "winding_consistent": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 4185,
+    "duplicate_faces": 0,
+    "volume_mm3": 28382.986455767412
+  },
+  "attempts": [
+    {
+      "before_cleanup": {
+        "vertices": 66977,
+        "triangles": 250060,
+        "watertight": false,
+        "winding_consistent": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 93821,
+        "degenerate_faces": 5081,
+        "duplicate_faces": 66661,
+        "volume_mm3": 28382.98637347971
+      },
+      "removed_opposed_face_pairs": 236,
+      "quantization_max_vertex_displacement_mm": 2.131028755607548e-06,
+      "simplify_tolerance_mm": 0,
+      "after_cleanup": {
+        "vertices": 66907,
+        "triangles": 244507,
+        "watertight": false,
+        "winding_consistent": false,
+        "boundary_edges": 620,
+        "nonmanifold_edges": 90074,
+        "degenerate_faces": 0,
+        "duplicate_faces": 65416,
+        "volume_mm3": 28382.986373494048
+      }
+    },
+    {
+      "before_cleanup": {
+        "vertices": 29412,
+        "triangles": 59284,
+        "watertight": false,
+        "winding_consistent": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 162,
+        "degenerate_faces": 154,
+        "duplicate_faces": 7,
+        "volume_mm3": 28382.985954095308
+      },
+      "removed_opposed_face_pairs": 5,
+      "quantization_max_vertex_displacement_mm": 2.2982937060965055e-05,
+      "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+      "removed_closed_flat_membranes": [
+        {
+          "faces": 6,
+          "absolute_volume_mm3": 0.0,
+          "thickness_mm": 0.0
+        },
+        {
+          "faces": 8,
+          "absolute_volume_mm3": 0.0,
+          "thickness_mm": 0.0
+        }
+      ],
+      "after_membrane_cleanup": {
+        "vertices": 29406,
+        "triangles": 59106,
+        "watertight": true,
+        "winding_consistent": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "volume_mm3": 28382.985954095308
+      },
+      "edge_sheet_separation": {
+        "vertices": 7,
+        "maximum_displacement_mm": 1e-05,
+        "direction": "inward source vertex normal",
+        "functional_holes_filled": false
+      },
+      "local_coincident_sheet_separation": {
+        "vertices": 27,
+        "maximum_displacement_mm": 1e-05
+      },
+      "decimal_grid_cleanup": {
+        "grid_mm": 1e-06,
+        "maximum_vertex_shift_mm": 8.525110939155e-07
+      },
+      "simplify_tolerance_mm": 1e-06,
+      "after_cleanup": {
+        "vertices": 29406,
+        "triangles": 59106,
+        "watertight": true,
+        "winding_consistent": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "volume_mm3": 28382.985954095308
+      }
+    }
+  ],
+  "case_rebuild": null,
+  "simplify_tolerance_mm": 1e-06,
+  "surface_displacement_bound_mm": 2.3982937060965056e-05,
+  "exported": {
+    "vertices": 29406,
+    "triangles": 59106,
+    "watertight": true,
+    "winding_consistent": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "volume_mm3": 28382.985954095308
+  },
+  "components": 1,
+  "passed": true,
+  "no_hole_filling": true,
+  "no_voxel_remeshing": true,
+  "nominal_geometry_edited": false,
+  "mesh_cache_sha256": "cd05f23487888565ad548092020f0aef07658fcbcb64fd73ef1964553db68c97"
+}

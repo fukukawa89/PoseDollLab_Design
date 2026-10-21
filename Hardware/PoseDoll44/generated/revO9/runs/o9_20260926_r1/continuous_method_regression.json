@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "5000_rotated_point_chord_bounds",
+      "pass": true,
+      "max_actual_to_bound_ratio": 0.9812777767992058
+    },
+    {
+      "case": "separated_boxes_over_interval",
+      "status": "CERTIFIED_CONTINUOUS_NOMINAL_CLEARANCE",
+      "lower_bound_mm": 7.76158684890884,
+      "queries": 1
+    },
+    {
+      "case": "clear_endpoints_but_middle_collision",
+      "status": "INSUFFICIENT_AT_CELL_CENTER",
+      "alpha_deg": 0.0,
+      "beta_deg": -90.0,
+      "witness_source_mm": [
+        0.5,
+        -0.16666666666666666,
+        5.166666666666667
+      ],
+      "signed_distance_mm": -5.551115123125783e-16,
+      "queries": 3
+    },
+    {
+      "case": "containment_rejected_by_mandatory_initial_check",
+      "status": "PENETRATION",
+      "surface_contacts": 0,
+      "witness_body": 1,
+      "witness_world_mm": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "witness_local_mm": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "signed_distance_mm": -3.0
+    },
+    {
+      "case": "existing_cup_gap_counterexample",
+      "status": "SUBDIVIDE_ANGLES",
+      "queries": 269,
+      "independent_signed_witness_mm": 0.5457788536306385
+    },
+    {
+      "case": "new_mesh_neutral",
+      "status": "CERTIFIED_CONTINUOUS_NOMINAL_CLEARANCE",
+      "lower_bound_mm": 0.6507182961663718,
+      "queries": 45
+    },
+    {
+      "case": "origin_exclusion_sphere_under_large_rotations",
+      "status": "CERTIFIED_CONTINUOUS_NOMINAL_CLEARANCE",
+      "lower_bound_mm": 3.6339745962155616,
+      "queries": 0
+    }
+  ],
+  "scope": "Mathematical bounds and selected independent analytic counterexamples. Not physical validation."
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "Narrow host execution; not full repository/UE/CAD/physical qualification",
+  "commands": [
+    {
+      "name": "compile_original",
+      "command": [
+        "/usr/bin/gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-include",
+        "fopen_compat.h",
+        "source/remote_link.c",
+        "source/test_remote_link.c",
+        "-o",
+        "/tmp/posedoll-o4-host-aib41gyo/original"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "pdr4_original",
+      "command": [
+        "/tmp/posedoll-o4-host-aib41gyo/original"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "compile_retry",
+      "command": [
+        "/usr/bin/gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-Wno-misleading-indentation",
+        "-Isource",
+        "source/remote_link.c",
+        "test_lost_response.c",
+        "-o",
+        "/tmp/posedoll-o4-host-aib41gyo/retry"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "pdr4_retry",
+      "command": [
+        "/tmp/posedoll-o4-host-aib41gyo/retry"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "static_window",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "check_static_window.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "tests_assert_current_deficiencies_not_fixes": true,
+  "physical_tested": false,
+  "UE_editor_rerun": false,
+  "CAD_rerun": false,
+  "KiCad_rerun": false,
+  "ESP_IDF_rerun": false
+}

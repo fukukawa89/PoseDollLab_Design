@@ -1,0 +1,1647 @@
+{
+  "inputs_sha256": {
+    "generated/revO3/runs/o3_20260924_r3/layouts/manny/anatomy_profile.json": "883d227b0d9a452845579900f4f3a77486a154b9e3e589e043ecf55ff53216ac",
+    "generated/revO13/runs/o13_20260929_r1/fullbody/manny_profile.json": "4851aee5b8e51d46a8c7f1a219cd5f3c11f43e16bbb0a85b0e60a8e3c2cf9cd4",
+    "generated/revO3/runs/o3_20260924_r3/layouts/quinn/anatomy_profile.json": "be8a2c2bcdec55d694da8cbf54582b311b6d6b8f3576c9969037e57bea3abf55",
+    "generated/revO13/runs/o13_20260929_r1/fullbody/quinn_profile.json": "5729d974711ecc614af95086520b6f30e1e0477016cec9fa69751685abbb00e2",
+    "generated/revO13/runs/o13_20260929_r1/integrated_arms.json": "3144cdcb13554f27df5f4addf49d05f20a0b53e2c1b8cbfe95f571e10b853a09"
+  },
+  "scope": "o13 original 102 endpoint collision witnesses classified without removing poses or contacts. Same/adjacent mechanical regions are hard failures. Whole body, new-carrier paths and cables remain incomplete.",
+  "neighbor_edges": [
+    [
+      "clavicle_l",
+      "shoulder_l"
+    ],
+    [
+      "clavicle_r",
+      "shoulder_r"
+    ],
+    [
+      "elbow_l",
+      "forearm_l"
+    ],
+    [
+      "elbow_l",
+      "shoulder_l"
+    ],
+    [
+      "elbow_r",
+      "forearm_r"
+    ],
+    [
+      "elbow_r",
+      "shoulder_r"
+    ],
+    [
+      "forearm_l",
+      "wrist_flex_l"
+    ],
+    [
+      "forearm_r",
+      "wrist_flex_r"
+    ],
+    [
+      "wrist_deviate_l",
+      "wrist_flex_l"
+    ],
+    [
+      "wrist_deviate_r",
+      "wrist_flex_r"
+    ]
+  ],
+  "cases": [
+    {
+      "character": "manny",
+      "pose": "neutral",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "clavicle_l.protract_-20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "clavicle_l.protract_20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "clavicle_l.elevate_-10",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "clavicle_l.elevate_20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "clavicle_l.elevate_40",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.flex_-45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.flex_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.flex_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.flex_135",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.flex_160",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_-20",
+      "findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 3920.3960761783696,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 136.84612603966212,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 136.84107510788365,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 1811.7507723234617,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 3920.3960761783696,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 136.84612603966212,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 136.84107510788365,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 1811.7507723234617,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_120",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.abduct_160",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.twist_-90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.twist_-45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.twist_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "upperarm_l.twist_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "elbow_l.flex_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "elbow_l.flex_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "elbow_l.flex_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "elbow_l.flex_120",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "elbow_l.flex_140",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "forearm_l.twist_-90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "forearm_l.twist_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "hand_l.flex_-60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "hand_l.flex_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "hand_l.deviate_-30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "hand_l.deviate_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "arms_forward",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "arms_overhead",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "arms_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "hands_on_hips",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "arms_crossed",
+      "findings": [
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 1134.0399658305348,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 444.17398619408374,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 275.027812490434,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 1226.4074571007795,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 1134.0399658305348,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 444.17398619408374,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 275.027812490434,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 1226.4074571007795,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "character": "manny",
+      "pose": "forehead",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "palms_turn",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "back_reach_15",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "back_reach_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "back_reach_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "waist_pitch_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "waist_roll_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "chest_pitch_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "chest_roll_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "waist_pitch_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "waist_roll_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "chest_pitch_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "chest_roll_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "manny",
+      "pose": "arms_crossed_asymmetric_candidate",
+      "findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 118.67360630943725,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 415.67700246355645,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 91.09883343110474,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 118.67360630943725,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 415.67700246355645,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 91.09883343110474,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "character": "quinn",
+      "pose": "neutral",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "clavicle_l.protract_-20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "clavicle_l.protract_20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "clavicle_l.elevate_-10",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "clavicle_l.elevate_20",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "clavicle_l.elevate_40",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.flex_-45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.flex_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.flex_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.flex_135",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.flex_160",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_-20",
+      "findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 6056.353366837468,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 11.892285796526153,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 11.891570077381527,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 4142.405471801509,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 6056.353366837468,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 11.892285796526153,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/parent"
+          ],
+          "sum_piece_overlap_mm3": 11.891570077381527,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "hand_r.deviate/child"
+          ],
+          "sum_piece_overlap_mm3": 4142.405471801509,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "wrist_deviate_r"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_120",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.abduct_160",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.twist_-90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.twist_-45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.twist_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "upperarm_l.twist_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "elbow_l.flex_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "elbow_l.flex_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "elbow_l.flex_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "elbow_l.flex_120",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "elbow_l.flex_140",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "forearm_l.twist_-90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "forearm_l.twist_90",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "hand_l.flex_-60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "hand_l.flex_60",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "hand_l.deviate_-30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "hand_l.deviate_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "arms_forward",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "arms_overhead",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "arms_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "hands_on_hips",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "arms_crossed",
+      "findings": [
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "forearm_r.twist/parent"
+          ],
+          "sum_piece_overlap_mm3": 7.502721673937011,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "forearm_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 2206.8884413981627,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 1117.1747654859773,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 477.5753689290455,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 2590.78991414332,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "forearm_r.twist/parent"
+          ],
+          "sum_piece_overlap_mm3": 7.502721673937011,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "forearm_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 2206.8884413981627,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 1117.1747654859773,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 477.5753689290455,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.flex/child",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 2590.78991414332,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_flex_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "character": "quinn",
+      "pose": "forehead",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "palms_turn",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "back_reach_15",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "back_reach_30",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "back_reach_45",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "waist_pitch_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "waist_roll_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "chest_pitch_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "chest_roll_-30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "waist_pitch_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "waist_roll_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "chest_pitch_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "chest_roll_30_arm_side",
+      "findings": [],
+      "structural_findings": [],
+      "pose_contact_findings": []
+    },
+    {
+      "character": "quinn",
+      "pose": "arms_crossed_asymmetric_candidate",
+      "findings": [
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 36.18232352785502,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 66.30841811136322,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "forearm_l.twist/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 13.422039084056191,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 271.5351216237046,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 13.64263021830545,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 1301.826038185845,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 188.80067308629813,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        }
+      ],
+      "structural_findings": [],
+      "pose_contact_findings": [
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 36.18232352785502,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "forearm_l.twist/parent",
+            "hand_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 66.30841811136322,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "forearm_l.twist/child",
+            "hand_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 13.422039084056191,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "forearm_l"
+            ],
+            [
+              "wrist_flex_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 271.5351216237046,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/parent",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 13.64263021830545,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/parent"
+          ],
+          "sum_piece_overlap_mm3": 1301.826038185845,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        },
+        {
+          "pair": [
+            "hand_l.deviate/child",
+            "elbow_r.flex/child"
+          ],
+          "sum_piece_overlap_mm3": 188.80067308629813,
+          "classification": "POSE_AVOIDABLE_NONADJACENT_CONTACT",
+          "regions": [
+            [
+              "wrist_deviate_l"
+            ],
+            [
+              "elbow_r"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "structural_failure_endpoints": 0,
+  "pose_contact_endpoints": 6,
+  "complete_body_structural_gate_passed": false
+}

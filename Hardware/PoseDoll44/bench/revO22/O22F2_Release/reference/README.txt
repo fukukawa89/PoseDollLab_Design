@@ -1,0 +1,1 @@
+本目录用于复核设计，不是额外打印盘。parts/*.npz 包含保形原网格、旋转后零件、鳍和齿的数组；其 SHA-256 与 verification/geometry_final.json 一致。design 为最终尺寸和连接记录。orientation_search 是候选朝向几何初筛，orientation_comparisons 是已保存的详细候选比较；这些不是受力仿真结果。verification_code 保存检查方法供审阅，脚本依赖原设计工程、Python 和几何库，不能在此目录独立运行。打印入口为上级 projects；彩色识别请用上级 index.html。

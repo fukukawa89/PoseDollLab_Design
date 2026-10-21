@@ -1,0 +1,30 @@
+{
+  "purpose": "Test cooling sensitivity using the successful R02 A single-object setup.",
+  "source_sha256": "ba5901ed712a5a70b8ce4081cc8a67e22d53fafeb283b11c503a70c1bb0535e5",
+  "project_sha256": "4ade8b074ef910ade4dc461deee07ae07d86f42d24818e75e41ef85375773cd1",
+  "single_changed_process_setting": {
+    "fan_max_speed": {
+      "before": [
+        "90"
+      ],
+      "after": [
+        "40"
+      ]
+    }
+  },
+  "preserved_settings": {
+    "fan_min_speed": [
+      "40"
+    ],
+    "overhang_fan_speed": [
+      "90"
+    ],
+    "close_fan_the_first_x_layers": [
+      "3"
+    ]
+  },
+  "placed_mesh_exactly_equal_to_R02_A": true,
+  "object_settings_bytes_identical": true,
+  "R02_user_observation_20261014": "Full print completed without tangled extrusion; a few hairlike strings remained. No video. User confirmed same Tinmorry PETG, 255/70 C, standard 100%, original placement and settings.",
+  "limitation": "Digital fan commands, not measured airflow. A single trial cannot establish root cause or qualify all production parts; original floating-region warning remains."
+}

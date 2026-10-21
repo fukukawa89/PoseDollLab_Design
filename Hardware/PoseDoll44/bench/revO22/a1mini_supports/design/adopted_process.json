@@ -1,0 +1,77 @@
+{
+  "schema": "O22-SUPPORT-ADOPTED-PROCESS/1",
+  "date": "2026-10-02",
+  "material": "PLA",
+  "nozzle_mm": 0.4,
+  "physical_print_tested": false,
+  "machine": "Bambu Lab A1 mini",
+  "bed": "Textured PEI Plate",
+  "settings": {
+    "print_settings_id": "O22 PLA 0.4 selective supports v1",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "enable_support": "1",
+    "support_type": "normal(auto)",
+    "support_style": "snug",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "30",
+    "support_top_z_distance": "0.28",
+    "support_bottom_z_distance": "0.28",
+    "independent_support_layer_height": "1",
+    "support_object_xy_distance": "0.45",
+    "support_object_first_layer_gap": "0.45",
+    "raft_first_layer_expansion": "0",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0.5",
+    "support_bottom_interface_spacing": "0.5",
+    "support_interface_pattern": "rectilinear",
+    "support_interface_loop_pattern": "0",
+    "support_expansion": "0",
+    "support_base_pattern": "rectilinear",
+    "support_base_pattern_spacing": "3",
+    "tree_support_wall_count": "1",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "3",
+    "tree_support_branch_angle": "35",
+    "tree_support_branch_diameter_angle": "5",
+    "support_remove_small_overhang": "0",
+    "support_critical_regions_only": "0",
+    "bridge_no_support": "0",
+    "support_filament": "0",
+    "support_interface_filament": "0",
+    "support_speed": [
+      "80"
+    ],
+    "support_interface_speed": [
+      "40"
+    ],
+    "bridge_speed": [
+      "25"
+    ],
+    "brim_type": "outer_only",
+    "brim_width": "2",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "wall_loops": "3",
+    "sparse_infill_density": "20%",
+    "filament_colour": [
+      "#BBC1C4"
+    ]
+  },
+  "strategy": "Normal(auto) snug only on selected candidate faces; all other faces blocked. No forced paint. Vertical keepout columns cover declared precision cavities and all overhead support contacts. Actual support/interface/transition/brim paths checked with measured maximum extrusion width.",
+  "keepout_margin_xy_mm": 0.8,
+  "keepout_start_below_core_mm": 0.25,
+  "keepout_end_above_model_mm": 0.5,
+  "additional_local_rules": [
+    "X046 chest_C02_-1_D4_shoulder_hole and X038 waist/P_PCB_clearance: XY margin 3.5 mm; intersecting candidate faces blocked only above core lowest Z minus 0.25 mm, preserving required support below the hole. Compensates for local snug contour closing; final G-code check required.",
+    "chest/P_shaft_bearing: XY margin 1.2 mm.",
+    "No separate brim on P035,P002,P018,P051,X058,P073,X066,P095,X073,P117,X080 after actual first-layer intrusion evidence."
+  ],
+  "protected_volumes_file": "all_protected_volumes.json",
+  "protected_volumes_sha256": "146015d966819299a83b20ec439b0a81513d91ef7bf13011cc434626d1ea0c5b",
+  "source_audit_note": "object_strategy.json and mesh_candidates.json are preliminary geometric candidate classifications, including old tree strategy labels. Actual final settings are recorded here, in native projects and per-plate decisions.",
+  "final_validation_line_width_mm": 0.5
+}

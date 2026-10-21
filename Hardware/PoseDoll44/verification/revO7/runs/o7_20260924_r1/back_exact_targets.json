@@ -1,0 +1,67 @@
+{
+  "prior_targets": [
+    {
+      "name": "grid",
+      "outer_width_height_depth_mm": [
+        54,
+        48,
+        22
+      ],
+      "local_bounds_mm": [
+        -50.0,
+        -27.0,
+        30.0,
+        -28.0,
+        27.0,
+        78.0
+      ],
+      "volume_cm3": 57.024,
+      "within_declared_thoracic_zone": true,
+      "minimum_capsule_clearance_mm": 2.657071233589839,
+      "worst_case": {
+        "character": "quinn",
+        "goal": "clavicle_l.protract_-20",
+        "path_fraction": 1.0,
+        "segment": [
+          "upperarm_r",
+          "elbow_r"
+        ],
+        "radius_assumption_mm": 10
+      },
+      "path_samples_with_reservation_contacts_or_below_guard": 0,
+      "scope_status": "CLEAR_SAMPLED_ANATOMY_CAPSULES_ONLY",
+      "examples": []
+    }
+  ],
+  "selected_thin_target": {
+    "outer_width_height_depth_mm": [
+      48,
+      48,
+      12
+    ],
+    "local_bounds_mm": [
+      -40.0,
+      -24.0,
+      0.0,
+      -28.0,
+      24.0,
+      48.0
+    ],
+    "volume_cm3": 27.648,
+    "minimum_trial_capsule_clearance_mm": 2.211044124934638,
+    "poses_with_part_AABB_overlap_or_under_guard": 40,
+    "coarse_penetration_score_mm3": 10508.915035644826,
+    "first_potential_pair": [
+      "manny",
+      "upperarm_l.abduct_30",
+      "upperarm_l.twist",
+      "housing_L"
+    ],
+    "coarse_clear": false,
+    "name": "O7 coupled back target"
+  },
+  "input_sha256": {
+    "Hardware/PoseDoll44/verification/revO7/runs/o7_20260924_r1/back_coarse.json": "11016277f1ecc1d076ee692732c7940d354167146f4fa9814b59d45f21d032c1",
+    "Hardware/PoseDoll44/verification/revO6/runs/o6_20260924_r1/backspace/back_reservation.json": "982f836cdb28733c5fd5cdc1793af4c5bafab8cc5a3ce90521a4178b2ff5b255"
+  }
+}

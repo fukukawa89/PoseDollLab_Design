@@ -1,0 +1,260 @@
+"""O15 complete-body *layout experiment*, not a manufacturing release.
+All 41 measured semantic axes are represented by physical modules. Bridges,
+wire routes and collision fixes are admitted only after this layout survives.
+"""
+from common import *
+sys.path.insert(0,str(H/'cad'))
+from model import fk
+import tut,three_axis
+from functools import lru_cache
+G3=H/'generated/revO3/runs/o3_20260924_r3'
+G9=H/'generated/revO9/runs/o9_20260926_r1'
+
+def unit(u):u=np.asarray(u,float);return u/np.linalg.norm(u)
+def frame(z,x=None):
+ z=unit(z);x=unit(np.cross(np.eye(3)[np.argmin(np.abs(z))],z)) if x is None else unit(np.asarray(x)-np.dot(x,z)*z);return np.c_[x,np.cross(z,x),z]
+def candidates(M,max_b=95):
+ polar=np.rad2deg(np.arccos(np.clip(M[2,2],-1,1)));ext=min(25,polar,180-polar)
+ aa=np.unique(np.r_[np.arange(-25,25.01,2.5),-ext,0,ext]);out=[]
+ for a in aa:
+  cb=M[2,2]/np.cos(np.deg2rad(a))
+  if abs(cb)>1+1e-8:continue
+  b=-np.rad2deg(np.arccos(np.clip(cb,-1,1)))
+  if b< -max_b-1e-8:continue
+  if abs(b)+abs(a)<1e-7:
+   theta=np.rad2deg(np.arctan2(M[1,0],M[0,0]));out.extend([[ph,0,0,(theta-ph+180)%360-180] for ph in range(-160,161,20)]);continue
+  p=np.rad2deg(np.arctan2(M[1,2],M[0,2])-np.arctan2(-np.sin(np.deg2rad(a))*cb,np.sin(np.deg2rad(b))));p=(p+180)%360-180
+  U=(rot(2,p)@rot(0,a)@rot(1,b)).T@M;s=np.rad2deg(np.arctan2(U[1,0],U[0,0]))
+  if max(abs(p),abs(s))<=170+1e-7:out.append([p,a,b,s])
+ return np.array(out).reshape(-1,4)
+
+@lru_cache(maxsize=1)
+def libraries():
+ libs={}
+ for kind in ('hinge','twist','tut','wide_tut','core','three_axis','ankle_core','clavicle_core'):
+  rr=read(OUT/(kind+'_build.json'));pp={k:from_tri(t) for k,t in np.load(OUT/(kind+'_parts.npz')).items()};
+  # The whole-doll connector tail is 14 mm. Apply this once at library load
+  # so routing, search, collision checks and export use the same actual solid.
+  if kind=='hinge':pp['lever_cup']=pp['lever_cup']^box([-50,-50,-50],[14,50,50])
+  libs[kind]=(pp,rr['owners'],rr['stock_skus'])
+ return libs
+
+@lru_cache(maxsize=8)
+def pcb_corrections(kind):
+ # Printed handed parts may be reflected. An assembled PCB must always keep
+ # its manufactured handedness; reflect its local width axis before applying
+ # the reflected mechanical mount, yielding a proper physical rotation.
+ pp,owners,sku=libraries()[kind];out={}
+ for key,shape in pp.items():
+  if not key.endswith('sensor_PCB'):continue
+  prefix=key[:-len('sensor_PCB')];bb=np.array(shape.bounding_box());center=(bb[:3]+bb[3:])/2;axis=int(np.argmax(bb[3:]-bb[:3]));B=np.eye(3);B[axis,axis]=-1;L=np.eye(4);L[:3,:3]=B;L[:3,3]=center-B@center
+  for k in pp:
+   if k.startswith(prefix) and sku[k] in ('AS5048A_MINI_PCBA','PCBA_INCLUDED'):out[k]=L
+ return out
+
+SHOULDER_F_LEFT=[[0.3758770483143634, 0.34202014332566866, 0.8612425129485718], [0.9165151389911681, 1.3877787807814457e-17, -0.4], [-0.13680805733026746, 0.9396926207859085, -0.31346663919790435]]
+SERIAL_CLAVICLE={'protract': {'delta': [-40, 18, 0], 'phase': 45, 'sign': 1}, 'elevate': {'delta': [36, 11, 7], 'phase': 175, 'sign': 1}}
+
+TRUNK_MOUNTS={
+  "waist": {
+    "offset_parent_mm": [
+      -12,
+      0,
+      16
+    ],
+    "F": [
+      [
+        -1.0,
+        -1.2246467991473532e-16,
+        -1.8369701987210297e-16
+      ],
+      [
+        1.8369701987210297e-16,
+        2.2496396739927864e-32,
+        -1.0
+      ],
+      [
+        1.2246467991473532e-16,
+        -1.0,
+        0.0
+      ]
+    ],
+    "V": [
+      [
+        -0.7431448254773944,
+        -1.2246467991473532e-16,
+        0.6691306063588581
+      ],
+      [
+        -0.6691306063588581,
+        2.2496396739927864e-32,
+        -0.7431448254773944
+      ],
+      [
+        9.100899318238092e-17,
+        -1.0,
+        -8.194486552889033e-17
+      ]
+    ]
+  },
+  "chest": {
+    "offset_parent_mm": [
+      16,
+      0,
+      16
+    ],
+    "F": [
+      [
+        0.0,
+        0.8660254037844386,
+        -0.5
+      ],
+      [
+        -0.8164965809277259,
+        0.28867513459481287,
+        0.5000000000000001
+      ],
+      [
+        0.5773502691896257,
+        0.40824829046386296,
+        0.7071067811865476
+      ]
+    ],
+    "V": [
+      [
+        -0.3345653031794291,
+        0.8660254037844386,
+        -0.3715724127386971
+      ],
+      [
+        -0.27220990595699485,
+        0.28867513459481287,
+        0.917915265024801
+      ],
+      [
+        0.9022016542920661,
+        0.40824829046386296,
+        0.1391600097944546
+      ]
+    ]
+  }
+}
+
+def config(char):
+ prof=read(G3/f'layouts/{char}/anatomy_profile.json');T,A=fk(prof,{})
+ # Preserve shoulder/hip centers and limb lengths in the first fit attempt.
+ # Wrist deviation and ankle inversion are explicitly separated for physical hinges.
+ for n in prof['nodes']:
+  if n['id'].startswith('hand_') and n.get('axis_id','').endswith('.deviate'):n['parent_to_axis']['translation_m']=[0,0,-.031]
+  if n['id'].startswith('hand_tip'):n['parent_to_axis']['translation_m'][2]+=.031
+
+ modules=[]
+ # Major multi-axis centers preserve the reference origin initially.
+ for name in ('waist','chest','head','upperarm_l','upperarm_r','thigh_l','thigh_r'):
+  axes=[n['axis_id'] for n in prof['nodes'] if n.get('axis_id','').startswith(name+'.')];first=next(n for n in prof['nodes'] if n.get('axis_id')==axes[0]);par=first['parent']
+  if name.startswith('upperarm'):
+   F=np.array(SHOULDER_F_LEFT)@rot(2,120);V=frame([0,0,-1],[0,1,0])
+   if name.endswith('_r'):F=np.diag([1,-1,1])@F;V=np.diag([1,-1,1])@V
+  elif name.startswith('thigh'):
+   F=frame([np.cos(np.deg2rad(15)),0,-np.sin(np.deg2rad(15))],[0,1,0]);V=frame([0,0,-1],[0,1,0])
+   if name.endswith('_l'):F=np.diag([1,-1,1])@F;V=np.diag([1,-1,1])@V
+  elif name=='head':F=np.eye(3);V=F.copy()
+  else:
+   F=np.array(TRUNK_MOUNTS[name]['F']);V=np.array(TRUNK_MOUNTS[name]['V'])
+  modules.append({'id':name,'kind':'three_axis' if name in ('waist','chest') else 'wide_tut' if name.startswith(('upperarm','thigh')) else 'tut','axis_ids':axes,'parent':par,'child':name,'F':F.tolist(),'V':V.tolist(),'offset_parent_mm':TRUNK_MOUNTS[name]['offset_parent_mm'] if name in ('waist','chest') else [0,16 if name.endswith('_l') else -16,0] if name.startswith('thigh') else [0,0,12] if name=='head' else [0,8 if name.endswith('_l') else -8,0] if name.startswith('upperarm') else [0,0,0]})
+ for prefix in ('foot',):
+  for side in ('l','r'):
+   name=prefix+'_'+side;sgn=1 if side=='l' else -1
+   ids=[n['axis_id'] for n in prof['nodes'] if n.get('axis_id','').startswith(name+'.')];first=next(n for n in prof['nodes'] if n.get('axis_id')==ids[0])
+   W=np.c_[[-1,0,0],[0,0,-sgn],[0,-sgn,0]] if prefix=='clavicle' else np.diag([-1,-1,1]);beta0=-20 if prefix=='clavicle' else 0
+   modules.append({'id':name,'kind':'clavicle_core' if prefix=='clavicle' else 'ankle_core','axis_ids':ids,'parent':first['parent'],'child':name,'middle':first['id'],'F':(W@rot(1,beta0)).tolist(),'W':W.tolist(),'beta0':beta0,'alpha_sign':-sgn,'offset_parent_mm':[-24,0,0] if prefix=='clavicle' else [0,0,0]})
+ for n in prof['nodes']:
+  axis=n.get('axis_id');name=(axis or '').split('.')[0]
+  if not axis or name.startswith('foot') or name in ('pelvis','waist','chest','head','upperarm_l','upperarm_r','thigh_l','thigh_r'):continue
+  direction=np.array(n['axis_local']);F=frame(direction,[0,0,-1] if abs(direction[2])<.5 else [1,0,0])
+  hinge_sign=1
+  if axis.startswith('ball_'):F=F@rot(2,150)
+  if axis=='forearm_r.twist':F=F@rot(0,180);hinge_sign=-1
+  if axis.endswith('.deviate'):F=F@rot(2,225 if '_l.' in axis else 270)
+  if axis.startswith('forearm_'):F=F@rot(2,30 if '_l.' in axis else 90)
+  if axis.startswith('clavicle_'):
+   typ=axis.split('.')[-1];cc=SERIAL_CLAVICLE[typ]
+   left_axis=[0,0,-1] if typ=='protract' else [1,0,0]
+   F=frame(left_axis,[1,0,0] if typ=='protract' else [0,0,-1])@rot(2,cc['phase'])
+   if cc['sign']==-1:F=F@rot(0,180)
+   if '_r.' in axis:F=np.diag([1,-1,1])@F
+   hinge_sign=cc['sign']
+  modules.append({'id':axis,'kind':'hinge','axis_ids':[axis],'parent':n['parent'],'child':n['id'],'F':F.tolist(),'hinge_sign':hinge_sign,'offset_parent_mm':(np.array(SERIAL_CLAVICLE[axis.split('.')[-1]]['delta'])*[1,1 if '_l.' in axis else -1,1]).tolist() if axis.startswith('clavicle_') else [0,0,-4] if axis.startswith('hand_') else [-6,-4,0] if axis=='forearm_l.twist' else [-4,4,-4] if axis=='forearm_r.twist' else [0,0,0]})
+ # Manny's slightly shorter trunk needs a separate 2 mm chest clearance.
+ # Preserve the common neutral limb endpoints with the normal FK compensation.
+ if char=='manny':
+  for m in modules:
+   if m['id']=='chest':m['offset_parent_mm']=[16,0,18]
+ return prof,modules
+
+def build(char,angles={},overrides=None,only=None,geometry=True):
+ libs=libraries();prof,modules=config(char)
+ for m in modules:
+  if overrides and m['id'] in overrides:m.update(overrides[m['id']])
+  delta=np.array(m['offset_parent_mm'])/1000
+  first=next(n for n in prof['nodes'] if n.get('axis_id')==m['axis_ids'][0]);last=next(n for n in prof['nodes'] if n.get('axis_id')==m['axis_ids'][-1])
+  first['parent_to_axis']['translation_m']=(np.array(first['parent_to_axis']['translation_m'])+delta).tolist();last['axis_to_child']['translation_m']=(np.array(last['axis_to_child']['translation_m'])-delta).tolist()
+ T,A=fk(prof,angles);placed={};meta={};states=[];fail=[]
+ for m in modules:
+  if only and m['id'] not in only:continue
+  name=m['id'];F=np.array(m['F']);par=T[m['parent']];origin=A[m['axis_ids'][0]]['origin'];world=par[:3,:3]@F
+  if m['kind'] in ('tut','wide_tut'):
+   M=F.T@par[:3,:3].T@T[m['child']][:3,:3]@np.array(m['V']);q=candidates(M,120 if m['kind']=='wide_tut' else 95)
+   if not len(q):fail.append({'module':name,'cause':'NO_DECOMPOSITION','M':M.tolist()});q=np.array([[0,0,0,0]])
+   q=q[np.argmin(np.sum(q*q*np.array([1,.1,.1,1]),axis=1))];fs=tut.frames(q);err=float(np.max(np.abs(fs['D']-M)))
+  elif m['kind']=='three_axis':
+   M=F.T@par[:3,:3].T@T[m['child']][:3,:3]@np.array(m['V']);q,err=three_axis.inverse(M);fs=three_axis.frames(q)
+   if abs(q[0])>170 or abs(q[1])>45 or not -90<=q[2]<=0:fail.append({'module':name,'cause':'THREE_AXIS_RANGE','angles':q.tolist()})
+  elif m['kind'] in ('core','clavicle_core','ankle_core'):
+   b=m['beta0']+m.get('beta_sign',-1)*angles.get(m['axis_ids'][0],0);a=m['alpha_sign']*angles.get(m['axis_ids'][1],0);q=[a,b];fs={'C02':np.eye(3),'ring':rot(1,-b),'C01':rot(1,-b)@rot(0,a)};err=0.
+   aa,bb=(30,(-50,0)) if m['kind']=='clavicle_core' else (25,(-45,45)) if m['kind']=='ankle_core' else (25,(-95,0))
+   if abs(a)>aa+1e-7 or not bb[0]-1e-7<=b<=bb[1]+1e-7:fail.append({'module':name,'cause':'CORE_RANGE','angles':q})
+  else:q=[m.get('hinge_sign',1)*angles.get(m['axis_ids'][0],0)];fs={'parent':np.eye(3),'child':rot(2,q[0])};err=0.
+  if m['kind'] in ('core','clavicle_core','ankle_core'):err=float(np.max(np.abs(world@fs['C01']-T[m['child']][:3,:3]@np.array(m['W']))))
+  elif m['kind']=='hinge':err=float(np.max(np.abs(world@fs['child']-T[m['child']][:3,:3]@F)))
+  if err>1e-7:fail.append({'module':name,'cause':'PHYSICAL_FRAME_MISMATCH','matrix_error':err})
+  pp,owners,skus=libs[m['kind']]
+  for k,s in pp.items():
+   pid=name+'/'+k;ss=s;part_M=world@fs[owners[k]];part_O=origin
+   if np.linalg.det(world)<0 and skus[k] in ('AS5048A_MINI_PCBA','PCBA_INCLUDED'):
+    L=pcb_corrections(m['kind'])[k];part_O=origin+part_M@L[:3,3];part_M=part_M@L[:3,:3]
+   if geometry:
+    if m['kind']=='hinge' and k=='lever_cup':ss=ss^box([-50,-50,-50],[14,50,50])
+    if name.startswith('foot_') and k=='C01':ss=ss^box([-100,-100,-20],[100,100,100])
+    placed[pid]=pose(ss,part_M,part_O)
+   own=owners[k];body=(m['parent'] if own=='P' else m['child'] if own=='D' else name+'/'+own) if m['kind'] in ('tut','wide_tut') else (m['parent'] if own=='P' else m['child'] if own=='C02' else name+'/'+own) if m['kind']=='three_axis' else (m['parent'] if own=='C02' else m['child'] if own=='C01' else m['middle']) if m['kind'] in ('core','clavicle_core','ankle_core') else m['parent'] if own=='parent' else m['child']
+   meta[pid]={'module':name,'owner':own,'body':body,'sku':skus[k]}
+   if not geometry:meta[pid]['transform']=np.r_[np.c_[part_M,part_O],[[0,0,0,1]]]
+  states.append({**m,'origin_mm':origin.tolist(),'world_mount':world.tolist(),'mirror_printed_parts':float(np.linalg.det(F))<0,'angles_deg':np.asarray(q).tolist(),'matrix_error':err})
+ return placed,meta,states,fail,prof
+
+def module_hits(p,meta,only=None):
+ out=[];keys=list(p);bounds={k:np.array(v.bounding_box()) for k,v in p.items()}
+ groups={}
+ for k in keys:groups.setdefault(meta[k]['module'],[]).append(k)
+ gbb={g:np.r_[np.min([bounds[k][:3] for k in ks],axis=0),np.max([bounds[k][3:] for k in ks],axis=0)] for g,ks in groups.items()}
+ for ga,gb in itertools.combinations(groups,2):
+  if only and frozenset((ga,gb)) not in only:continue
+  ba,bb=gbb[ga],gbb[gb]
+  if np.any(np.minimum(ba[3:],bb[3:])<=np.maximum(ba[:3],bb[:3])+1e-6):continue
+  records=[]
+  for a,b in itertools.product(groups[ga],groups[gb]):
+   ba,bb=bounds[a],bounds[b]
+   if np.any(np.minimum(ba[3:],bb[3:])<=np.maximum(ba[:3],bb[:3])+1e-6):continue
+   v=float((p[a]^p[b]).volume())
+   if v>1e-4:records.append({'parts':[a,b],'overlap_mm3':v,'same_rigid_body':meta[a]['body']==meta[b]['body'],'both_printed':meta[a]['sku'] is None and meta[b]['sku'] is None})
+  if records:out.append({'modules':[ga,gb],'findings':records,'overlap_pair_sum_mm3':sum(x['overlap_mm3'] for x in records)})
+ return out
+
+def main():
+ for char in ('quinn','manny'):
+  pp,meta,states,fail,prof=build(char);hh=module_hits(pp,meta)
+  save(f'fullbody/{char}_initial.json',{'status':'ASSEMBLY_LAYOUT_EXPERIMENT_NOT_RELEASED','parts':meta,'modules':states,'mapping_failures':fail,'module_interference':hh,'profile':prof,'all_41_measured_axes_present':len(set(a for m in states for a in m['axis_ids']))==41,'raw_channels':sum(4 if m['kind'] in ('tut','wide_tut') else 3 if m['kind']=='three_axis' else 2 if m['kind'] in ('core','clavicle_core','ankle_core') else 1 for m in states),'physical_tested':False,'bridges_modelled':False,'wiring_modelled':False})
+  np.savez_compressed(OUT/f'fullbody/{char}_initial.npz',**{k:tri(s) for k,s in pp.items()})
+  print(char,'parts',len(pp),'mapping',fail,'hits',[(h['modules'],round(h['overlap_pair_sum_mm3'],2)) for h in hh],flush=True)
+if __name__=='__main__':main()

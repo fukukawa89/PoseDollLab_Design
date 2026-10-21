@@ -1,0 +1,158 @@
+{
+  "id": "N003",
+  "label": "open_b",
+  "parts_npz_sha256": "b2a4c7ece1c8c3efbab68fd42cb7268ccf9be01e79e01e5410b0993fee081641",
+  "geometric_constraints_passed": true,
+  "body_exact_rigid_copy_of_F4": true,
+  "body_rigid_transform_error_mm": 0.0,
+  "body_added_from_F4_mm3": 0.0,
+  "body_removed_from_F4_mm3": 0.0,
+  "body_change_fit_and_pose_required": false,
+  "fin_body_intersection_mm3": 0.0,
+  "all_fins_bed_rooted": true,
+  "fin_count": 3,
+  "fin_bodies": [
+    {
+      "id": "S01",
+      "bounds_mm": [
+        1.5,
+        -0.5,
+        0.0,
+        9.299999997019768,
+        2.899999998509884,
+        5.251631110906601
+      ],
+      "volume_mm3": 33.96237101511781,
+      "bed_contact_mm2": 25.102396803382316,
+      "tooth_overlap_mm3": 0.36492011585760004,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    },
+    {
+      "id": "S02",
+      "bounds_mm": [
+        1.163171611726284,
+        6.700000002980232,
+        0.0,
+        9.299999997019768,
+        10.100000001490116,
+        2.657257065176964
+      ],
+      "volume_mm3": 20.710168381810334,
+      "bed_contact_mm2": 26.247613333607102,
+      "tooth_overlap_mm3": 0.8589975375871763,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    },
+    {
+      "id": "S03",
+      "bounds_mm": [
+        3.2999999970197678,
+        13.899999998509884,
+        0.0,
+        8.700000002980232,
+        17.299999997019768,
+        2.3603722229599953
+      ],
+      "volume_mm3": 14.30478807484174,
+      "bed_contact_mm2": 16.942396829161332,
+      "tooth_overlap_mm3": 0.31692438162608416,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    }
+  ],
+  "removal_stages": [
+    {
+      "groups": [
+        "S01"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    },
+    {
+      "groups": [
+        "S02"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    },
+    {
+      "groups": [
+        "S03"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    }
+  ],
+  "withdrawal_sweep_distance_mm": 220.0,
+  "all_fin_bodies_have_continuous_removal_path": true,
+  "withdrawal_condition": "Clear all yellow connector material from the removal path first. Intersecting branches can need more than one cut; the proof is for fin bodies, not scissors access or force.",
+  "connected_tooth_components": 5,
+  "connector_contacts": [
+    {
+      "body_overlap_mm3": 0.21872179285869042,
+      "fin_overlap_mm3": 0.1857201158575996
+    },
+    {
+      "body_overlap_mm3": 0.19645498244979837,
+      "fin_overlap_mm3": 0.26146139040170524
+    },
+    {
+      "body_overlap_mm3": 0.667021132456507,
+      "fin_overlap_mm3": 0.5975361471854708
+    },
+    {
+      "body_overlap_mm3": 0.1712560312462901,
+      "fin_overlap_mm3": 0.17920000000000025
+    },
+    {
+      "body_overlap_mm3": 0.2582679378691198,
+      "fin_overlap_mm3": 0.31692438162608416
+    }
+  ],
+  "connector_extra_material_in_functional_guard_mm3": 0.0,
+  "removable_fin_material_temporarily_in_functional_guard_mm3": 0.0,
+  "temporary_core_policy": "Orange fins can traverse empty assembly space only while printing; all must be removed before hardware installation, along the verified path.",
+  "support_volume_mm3": 113.8821078131737,
+  "old_support_volume_mm3": 419.1339759341361,
+  "support_volume_reduction_percent": 72.82918724034211,
+  "envelope_mm": [
+    9.299999997019768,
+    17.799999997019768,
+    23.24163080699989
+  ],
+  "neck_free_height_mm": {
+    "min": 4.915418185407837,
+    "median": 5.414833805513589,
+    "max": 7.8867622273109825
+  },
+  "physical_print_tested": false,
+  "strength_or_thermal_simulation": false
+}

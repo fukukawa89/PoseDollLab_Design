@@ -1,0 +1,133 @@
+{
+  "id": "P095",
+  "part": "thigh_l/C14",
+  "body_sha256": "27d3954f88284c18b8fe03fb0d8d1927836d26f78a9102730f13f20b86ae76a9",
+  "passed": true,
+  "groups": [
+    {
+      "owner": "ring",
+      "parts": 61,
+      "sensitive_raw_axes": [],
+      "limits_deg": [],
+      "query_centre_radius_bound_mm": 18.212358441453915,
+      "spherical_envelopes_radii_mm": [
+        1.8,
+        1.8
+      ],
+      "cells_tested": 1,
+      "certified_cells": 1,
+      "minimum_certified_gap_lower_bound_mm": 2.819523784980312,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.43605923652648926
+    },
+    {
+      "owner": "C01",
+      "parts": 13,
+      "sensitive_raw_axes": [
+        "thigh_l/r1"
+      ],
+      "limits_deg": [
+        [
+          -25.0,
+          25.0
+        ]
+      ],
+      "query_centre_radius_bound_mm": 18.212358441453915,
+      "spherical_envelopes_radii_mm": [
+        1.8,
+        1.8
+      ],
+      "cells_tested": 15,
+      "certified_cells": 8,
+      "minimum_certified_gap_lower_bound_mm": 0.16098228041837204,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.24097728729248047
+    },
+    {
+      "owner": "C02",
+      "parts": 13,
+      "sensitive_raw_axes": [
+        "thigh_l/r2"
+      ],
+      "limits_deg": [
+        [
+          -120.0,
+          0.0
+        ]
+      ],
+      "query_centre_radius_bound_mm": 18.212358441453915,
+      "spherical_envelopes_radii_mm": [
+        1.8,
+        1.8
+      ],
+      "cells_tested": 63,
+      "certified_cells": 32,
+      "minimum_certified_gap_lower_bound_mm": 0.9556463834816964,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.4654970169067383
+    },
+    {
+      "owner": "P",
+      "parts": 25,
+      "sensitive_raw_axes": [
+        "thigh_l/r0",
+        "thigh_l/r1"
+      ],
+      "limits_deg": [
+        [
+          -170.0,
+          170.0
+        ],
+        [
+          -25.0,
+          25.0
+        ]
+      ],
+      "query_centre_radius_bound_mm": 18.212358441453915,
+      "spherical_envelopes_radii_mm": [
+        1.8,
+        1.8
+      ],
+      "cells_tested": 63,
+      "certified_cells": 32,
+      "minimum_certified_gap_lower_bound_mm": 4.423370242890561,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.35805773735046387
+    },
+    {
+      "owner": "D",
+      "parts": 25,
+      "sensitive_raw_axes": [
+        "thigh_l/r2",
+        "thigh_l/r3"
+      ],
+      "limits_deg": [
+        [
+          -120.0,
+          0.0
+        ],
+        [
+          -170.0,
+          170.0
+        ]
+      ],
+      "query_centre_radius_bound_mm": 18.212358441453915,
+      "spherical_envelopes_radii_mm": [
+        1.8,
+        1.8
+      ],
+      "cells_tested": 1,
+      "certified_cells": 1,
+      "minimum_certified_gap_lower_bound_mm": 0.2215965490692824,
+      "passed": true,
+      "unresolved": [],
+      "elapsed_s": 0.10225796699523926
+    }
+  ],
+  "scope": "Spheres containing the complete candidate elbow additions are checked by signed centre-to-surface distance. Conservative rigid-rotation interval bound over all combinations of the same joint raw-axis limits, against every modeled same-module owner part. No baseline-collision exclusions. Other body modules are covered by separate sampled whole-device checks, not this local continuous proof.",
+  "clearance_gate_mm": 0.05
+}

@@ -1,0 +1,238 @@
+{
+  "id": "O23G-S04",
+  "key": "frame/hand_l",
+  "name": "pose4_tree",
+  "matrix": [
+    [
+      0.0,
+      -0.7071067811865476,
+      0.7071067811865476,
+      105.62293513760507
+    ],
+    [
+      0.0,
+      0.7071067811865476,
+      0.7071067811865476,
+      105.20356623990155
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      25.814416885375977
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "metrics": {
+    "overhang_area_mm2": 1322.580731591761,
+    "overhang_projection_volume_proxy_mm3": 28302.657504700917,
+    "bed_contact_projection_mm2": 99.1461305457158,
+    "max_rod_angle_to_bed_deg": 23.708317036367777,
+    "rod_verticality": 0.16166888102908777,
+    "score": 33.29740803176092
+  },
+  "support": "tree",
+  "project": "print_optimization_G/trials/O23G-S04/pose4_tree/sliced.3mf",
+  "source_project": "print_optimization_G/trials/O23G-S04/pose4_tree/input.3mf",
+  "returncode": 0,
+  "command": [
+    "D:\\ProgramFiles\\OrcaSlicer\\orca-slicer.exe",
+    "--allow-newer-file",
+    "--arrange",
+    "0",
+    "--slice",
+    "0",
+    "--debug",
+    "3",
+    "--export-3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-S04\\pose4_tree\\sliced.3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-S04\\pose4_tree\\input.3mf"
+  ],
+  "elapsed_s": 9.409929752349854,
+  "passed": true,
+  "project_sha256": "a4c7ed129f2f618d220df3d7e17e46eda70667e134602c21a2aef59d0b176341",
+  "gcode_sha256": "9ac51766f41c248e87a9b0cff7e118e8f5c6b76f1102b6e822790425fcdadd4d",
+  "support_g": 6.5834,
+  "model_g": 16.777,
+  "brim_g": 0.0026,
+  "total_deposited_g": 23.363,
+  "estimated_s": 391.0,
+  "repairs": 0,
+  "bed_violations": 0,
+  "layers": 503,
+  "warnings": [],
+  "classes": [
+    {
+      "id": "model",
+      "segments": 253048,
+      "moves": 222884,
+      "filament_mm": 5625.05928,
+      "path_mm": 209175.25793,
+      "layers": 272,
+      "line_width_range_mm": [
+        0.291414,
+        0.781362
+      ],
+      "bounds_mm": {
+        "min": [
+          66.077,
+          66.529,
+          0.2
+        ],
+        "max": [
+          113.92804078175294,
+          113.475,
+          43.56
+        ]
+      },
+      "filament_volume_cm3": 13.52985,
+      "estimated_mass_g": 16.777
+    },
+    {
+      "id": "support",
+      "segments": 172631,
+      "moves": 54132,
+      "filament_mm": 1962.88844,
+      "path_mm": 74089.1925,
+      "layers": 237,
+      "line_width_range_mm": [
+        0.42,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          65.76475799791771,
+          67.63464336689773,
+          0.2
+        ],
+        "max": [
+          127.89809215457664,
+          127.35340291944033,
+          39.68
+        ]
+      },
+      "filament_volume_cm3": 4.7213,
+      "estimated_mass_g": 5.8544
+    },
+    {
+      "id": "interface",
+      "segments": 15259,
+      "moves": 10655,
+      "filament_mm": 244.42554,
+      "path_mm": 9650.54698,
+      "layers": 231,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          66.60867162511538,
+          67.843,
+          0.48
+        ],
+        "max": [
+          114.77648569218171,
+          114.175,
+          40.32
+        ]
+      },
+      "filament_volume_cm3": 0.58791,
+      "estimated_mass_g": 0.729
+    },
+    {
+      "id": "transition",
+      "segments": 0,
+      "moves": 0,
+      "filament_mm": 0.0,
+      "path_mm": 0.0,
+      "layers": 0,
+      "line_width_range_mm": null,
+      "bounds_mm": null,
+      "filament_volume_cm3": 0.0,
+      "estimated_mass_g": 0.0
+    },
+    {
+      "id": "brim",
+      "segments": 52,
+      "moves": 52,
+      "filament_mm": 0.87084,
+      "path_mm": 23.38126,
+      "layers": 1,
+      "line_width_range_mm": [
+        0.5,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          93.57,
+          93.282,
+          0.2
+        ],
+        "max": [
+          108.849,
+          106.478,
+          0.2
+        ]
+      },
+      "filament_volume_cm3": 0.00209,
+      "estimated_mass_g": 0.0026
+    }
+  ],
+  "settings": {
+    "print_settings_id": "O23G A1 mini PLA / removable supports",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "5",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "outer_wall_speed": "40",
+    "inner_wall_speed": "65",
+    "sparse_infill_speed": "90",
+    "internal_solid_infill_speed": "70",
+    "top_surface_speed": "35",
+    "bridge_speed": "20",
+    "initial_layer_speed": "20",
+    "initial_layer_infill_speed": "25",
+    "default_acceleration": "1500",
+    "outer_wall_acceleration": "700",
+    "inner_wall_acceleration": "1000",
+    "enable_support": "1",
+    "support_type": "tree(auto)",
+    "support_style": "tree_slim",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "40",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "0",
+    "support_top_z_distance": "0.2",
+    "support_bottom_z_distance": "0.2",
+    "support_object_xy_distance": "0.4",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0.35",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "3",
+    "support_expansion": "0",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "4",
+    "tree_support_wall_count": "1",
+    "tree_support_auto_brim": "1",
+    "independent_support_layer_height": "1",
+    "bridge_no_support": "1",
+    "max_bridge_length": "8",
+    "brim_type": "outer_only",
+    "brim_width": "4",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "elefant_foot_compensation": "0.15"
+  }
+}

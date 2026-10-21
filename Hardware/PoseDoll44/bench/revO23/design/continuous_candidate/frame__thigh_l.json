@@ -1,0 +1,610 @@
+{
+  "key": "frame/thigh_l",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 4.69,
+  "construction_profile_sha256": "6893bd818d0ef9fbf5d55303d2e740662ef1c0f1dacfbe32c92a32f4387c031d",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "f4a9758ff629096c5a0cef3004673ee42bdac6f0022bbc8652d21560b6c52f6b",
+  "construction_keeps_sha256": "0630ddb7ad938c282d9c42b2c3b516ee5a502ca1808185b2d29548c599d0ad38",
+  "mask_method": "Conservative swept intersections extended to nearest open end; circular dilation and smoothing",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 128,
+  "lower_boundary_mm": [
+    -153.64169175290047,
+    -153.61441705451594,
+    -153.52839307625854,
+    -153.3140663198627,
+    -152.8887009727608,
+    -152.2083106104737,
+    -151.31741784643194,
+    -150.34466015983324,
+    -149.4421391155175,
+    -148.71975202904898,
+    -148.21693631727646,
+    -147.91290672766388,
+    -147.75477731539564,
+    -147.68517863106433,
+    -147.6597449965818,
+    -147.65218998301356,
+    -147.65037744898257,
+    -147.6500501872172,
+    -147.65,
+    -147.6500501872172,
+    -147.65037744898257,
+    -147.6521397957964,
+    -147.65961848368514,
+    -147.6848257057464,
+    -147.75485197664136,
+    -147.91895267227676,
+    -148.24935423872483,
+    -148.82283953658452,
+    -149.6695271631554,
+    -150.70352374973177,
+    -151.69895013868765,
+    -152.35302884699578,
+    -152.38807135099844,
+    -151.62898382366657,
+    -150.06423673944062,
+    -147.87981605558838,
+    -145.3853928156805,
+    -142.8411024841585,
+    -140.3418480339299,
+    -137.85966177837665,
+    -135.36156169770442,
+    -132.87336075150827,
+    -130.45885483781427,
+    -128.17115237206917,
+    -126.03666904817585,
+    -124.07311951642257,
+    -122.29910241363214,
+    -120.71765557517438,
+    -119.30574662322886,
+    -118.03017603209592,
+    -116.86997903613579,
+    -115.82250001804275,
+    -114.8964370533357,
+    -114.10555091186211,
+    -113.46681557220981,
+    -112.99477637664023,
+    -112.68762869233487,
+    -112.5177463448511,
+    -112.4399895125226,
+    -112.41107970719585,
+    -112.40246705756175,
+    -112.40042763619977,
+    -112.4000501872172,
+    -112.4,
+    -112.4,
+    -112.4000501872172,
+    -112.40042763619977,
+    -112.40246705756175,
+    -112.41107970719585,
+    -112.43993932530543,
+    -112.51736889586854,
+    -112.68563945819002,
+    -112.98654117598869,
+    -113.43999537546225,
+    -114.0367339909331,
+    -114.75712648355814,
+    -115.59973258155516,
+    -116.58839641829083,
+    -117.74887048879916,
+    -119.08464115912072,
+    -120.5849182336689,
+    -122.2505324611786,
+    -124.09491945934573,
+    -126.1195017266137,
+    -128.30285192946738,
+    -130.61465660300235,
+    -133.02558435193015,
+    -135.50087226748198,
+    -137.99897234815418,
+    -140.49412182156894,
+    -142.99753263441505,
+    -145.5210692265707,
+    -147.9818359394529,
+    -150.16004915722303,
+    -151.81113163094065,
+    -152.84155108966726,
+    -153.3590135495712,
+    -153.5654624295905,
+    -153.63041248635992,
+    -153.64645239750544,
+    -153.6495483150454,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.65,
+    -153.6497992511313,
+    -153.64849020406976
+  ],
+  "upper_boundary_mm": [
+    -37.049752805732105,
+    -36.5006467330419,
+    -35.938701195962004,
+    -35.370959939958595,
+    -34.79114015609801,
+    -34.17979039075087,
+    -33.52219298045433,
+    -32.82109019467325,
+    -32.091387350365906,
+    -31.347910391420818,
+    -30.599245102034885,
+    -29.847910391420818,
+    -29.09133716314873,
+    -28.320813120125052,
+    -27.52095864427462,
+    -26.675684220040527,
+    -25.78202308203555,
+    -24.86265657457584,
+    -23.966941259668793,
+    -23.159970008258448,
+    -22.50124686943761,
+    -22.009214089757833,
+    -21.624518385259563,
+    -21.202319561773926,
+    -20.557748641458716,
+    -19.56520170512244,
+    -18.267661892731294,
+    -16.897210520273465,
+    -15.745593962474002,
+    -14.981098975394223,
+    -14.581909143169478,
+    -14.418447184205972,
+    -14.366063199975128,
+    -14.352943962750137,
+    -14.350384768665043,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350000000000003,
+    -14.350184019796325,
+    -14.351434166819898,
+    -14.357905514527099,
+    -14.384046772886768,
+    -14.466898306930934,
+    -14.673797563486326,
+    -15.083565281921592,
+    -15.733794385379888,
+    -16.573934024424563,
+    -17.478975736197444,
+    -18.31614176181909,
+    -18.99895909079723,
+    -19.495853509643634,
+    -19.818490381312568,
+    -20.01300143639981,
+    -20.148436119874404,
+    -20.2970298059967,
+    -20.515098845357507,
+    -20.834914440505198,
+    -21.267465528484895,
+    -21.807681876992802,
+    -22.436042220197216,
+    -23.120347342909838,
+    -23.819906045710724,
+    -24.48927737885159,
+    -25.084908171039405,
+    -25.585202648404973,
+    -26.01824948129265,
+    -26.467239415245835,
+    -27.032035992748902,
+    -27.771292175505792,
+    -28.674358228033498,
+    -29.68005529937897,
+    -30.71419672103269,
+    -31.71622783031382,
+    -32.651358408841034,
+    -33.51363051803741,
+    -34.31900058609407,
+    -35.09063245240079,
+    -35.845820782841635,
+    -36.59063245240079,
+    -37.31900058609407,
+    -38.01358033082023,
+    -38.650880585424126,
+    -39.21333313655233,
+    -39.700700143492284,
+    -40.12946390307745,
+    -40.5195170644213,
+    -40.87946390307746,
+    -41.20070014349228,
+    -41.46333313655233,
+    -41.65088058542411,
+    -41.76358033082023,
+    -41.81905077331125,
+    -41.84100990138335,
+    -41.84791039142082,
+    -41.84962255101744,
+    -41.849949812782825,
+    -41.85,
+    -41.85,
+    -41.85,
+    -41.85,
+    -41.849949812782825,
+    -41.84962255101744,
+    -41.847960578637995,
+    -41.84133716314873,
+    -41.82071274569069,
+    -41.770103371875145,
+    -41.67080029213421,
+    -41.51024111662643,
+    -41.284867532544204,
+    -40.99129394098275,
+    -40.620930546848875,
+    -40.17278952627904,
+    -39.6680265912868,
+    -39.141206908434064,
+    -38.61690775428168,
+    -38.09962255101745,
+    -37.580952449921966
+  ],
+  "canonical_frame_mm": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      1.003094572328634
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      41.29055165627565
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      358.5960368172328
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 2.3765711620882257e-15,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 58851.813084036425,
+  "old_volume_mm3": 79123.84535892254,
+  "ribs": [
+    {
+      "length_mm": 22.416284310070633,
+      "radius_mm": 3.0,
+      "detour_mm": 5.000000000000001,
+      "volume_mm3": 406.93565508713283
+    }
+  ],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:calf_l.flex:parent",
+      "members": [
+        "calf_l.flex/pcb_clip_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 1.6200777109260271
+    },
+    {
+      "obstacle_owner": "j:calf_l.flex:parent",
+      "members": [
+        "calf_l.flex/sensor_cassette"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 47.60410303930639
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 37.056895146344154
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 37.03788451696495
+    },
+    {
+      "obstacle_owner": "j:thigh_l:ring",
+      "members": [
+        "thigh_l/C14"
+      ],
+      "pose": "thigh_l.hip_flexion@-90",
+      "wall_overlap_mm3": 196.61348787458417
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-90",
+      "wall_overlap_mm3": 564.2147445014333
+    },
+    {
+      "obstacle_owner": "j:thigh_l:ring",
+      "members": [
+        "thigh_l/C14"
+      ],
+      "pose": "thigh_l.hip_flexion@-75",
+      "wall_overlap_mm3": 203.60007370149353
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-75",
+      "wall_overlap_mm3": 435.5524750403451
+    },
+    {
+      "obstacle_owner": "j:thigh_l:ring",
+      "members": [
+        "thigh_l/C14"
+      ],
+      "pose": "thigh_l.hip_flexion@-60",
+      "wall_overlap_mm3": 7.382811022934046
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-60",
+      "wall_overlap_mm3": 307.38363769096094
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-45",
+      "wall_overlap_mm3": 198.57738181258432
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-30",
+      "wall_overlap_mm3": 117.8457041763101
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@-15",
+      "wall_overlap_mm3": 58.221877378018426
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_flexion@15",
+      "wall_overlap_mm3": 69.70370699517012
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_abduction@7",
+      "wall_overlap_mm3": 14.258920288010328
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_turn@-30",
+      "wall_overlap_mm3": 36.721659863607236
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_turn@-15",
+      "wall_overlap_mm3": 36.92129255315361
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_turn@15",
+      "wall_overlap_mm3": 37.114438716528795
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "thigh_l.hip_turn@30",
+      "wall_overlap_mm3": 37.08319091441728
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "calf_l.flex.flexion@80",
+      "wall_overlap_mm3": 21.043458633759936
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "calf_l.flex.flexion@90",
+      "wall_overlap_mm3": 151.94686850278595
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "calf_l.flex.flexion@100",
+      "wall_overlap_mm3": 265.4217442539867
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "calf_l.flex.flexion@110",
+      "wall_overlap_mm3": 403.2129245400401
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "calf_l.flex.flexion@120",
+      "wall_overlap_mm3": 546.0983872895274
+    },
+    {
+      "obstacle_owner": "j:thigh_l:ring",
+      "members": [
+        "thigh_l/C14"
+      ],
+      "pose": "daily_seated",
+      "wall_overlap_mm3": 30.13096637354819
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "daily_seated",
+      "wall_overlap_mm3": 564.2148478635287
+    },
+    {
+      "obstacle_owner": "f:pelvis",
+      "members": [
+        "frame/pelvis"
+      ],
+      "pose": "daily_step",
+      "wall_overlap_mm3": 117.8456984041577
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "validated_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "validated_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "collar_clocking_reuse": {
+    "body_frame_maximum_error": 8.526512829121202e-14,
+    "own_keeper_unchanged": true,
+    "note": "Only two native collar modules and their three structural lands move. Unchanged carriers require final actual-solid collision checks with those neighbours."
+  },
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

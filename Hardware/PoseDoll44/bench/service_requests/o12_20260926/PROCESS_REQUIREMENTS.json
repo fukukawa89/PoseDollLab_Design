@@ -1,0 +1,119 @@
+{
+  "schema": "o12-outsourced-print-request-v1",
+  "date": "2026-09-26",
+  "purpose": "One independent mechanical test coupon; not a full doll.",
+  "not_an_importable_slicer_profile": true,
+  "quantity_sets": 1,
+  "plastic_parts_per_set": 3,
+  "geometry_source": "O12 sealed o12_20260926_r1; copied unchanged.",
+  "materials": {
+    "first_choice": "Bambu Lab PLA-CF, black preferred, same spool/batch for all three parts",
+    "fallback_order": [
+      "ordinary unfilled PLA with named brand and product",
+      "ordinary PETG with named brand and product"
+    ],
+    "fallback_condition": "Supplier cannot provide the prior choice. Label the entire set and use the actual material profile. Do not mix materials within one set.",
+    "unknown_brand_CF": "Not equivalent by name alone. Do not automatically use the Bambu 0.4 mm recipe for another filled filament.",
+    "creep_friction_strength_qualified": false
+  },
+  "machine": {
+    "allowed": [
+      "Bambu Lab A1",
+      "Bambu Lab P1S"
+    ],
+    "same_machine_for_set": true,
+    "for_CF": "Verify hardened steel 0.4 mm nozzle and an extrusion path/gears suitable for abrasive filament. Model name alone does not establish installed hardware."
+  },
+  "process": {
+    "nozzle_mm": 0.4,
+    "layer_height_mm": 0.2,
+    "first_layer_mm": 0.2,
+    "wall_loops": 6,
+    "top_shell_layers": 5,
+    "bottom_shell_layers": 5,
+    "infill_percent": 100,
+    "infill_pattern": "rectilinear solid fill",
+    "scale_percent": [
+      100,
+      100,
+      100
+    ],
+    "units": "mm",
+    "ironing": false,
+    "brim": "5 mm outer brim starting point if needed; avoid internal-hole brims",
+    "speed_caps_mm_s": {
+      "first_layer": 25,
+      "outer_wall": 50,
+      "inner_wall": 70,
+      "infill": 80,
+      "top_surface": 40,
+      "bridge": 20
+    },
+    "speed_note": "Project trial caps, not a validated optimum. Preserve lower cooling/volumetric limits and supplier calibration.",
+    "flow_line_width_retraction": "Use material/machine preset and documented calibration.",
+    "support": "Slice and inspect first. Keep the provided bed-facing faces. Add local removable support only where needed; no inaccessible fused support in nut or washer pockets.",
+    "postprocess": "Remove support and burrs only; no geometry rescaling, through-drilling stepped bores, polishing friction faces, coating or annealing."
+  },
+  "official_profile_reference_observed_20260926": {
+    "applies_only_to": "Bambu PLA-CF with 0.4 mm nozzle and Smooth/High Temperature PEI or Textured PEI plate",
+    "A1": {
+      "nozzle_initial_and_other_C": 230,
+      "PEI_bed_initial_and_other_C": 65
+    },
+    "P1S": {
+      "nozzle_initial_and_other_C": 230,
+      "PEI_bed_initial_and_other_C": 55
+    },
+    "cooling": "Use selected machine PLA-CF preset; do not give A1 and P1S one universal fan setting.",
+    "different_material_or_plate": "Use the matching current official/supplier-tested preset and record the change.",
+    "drying": "Use current material instructions appropriate to the dryer; record conditions."
+  },
+  "orientation": {
+    "base_halves": "Split mating face toward bed, as supplied in 3MF.",
+    "lever": "Flat as supplied; do not stand on its long edge.",
+    "allowed_rearrangement": "XY translation and rotation about printer Z only; preserve bed-facing faces."
+  },
+  "nominal_dimensions_mm": {
+    "assembled_base": [
+      50,
+      30,
+      8
+    ],
+    "each_base_half_bounding_dimensions": [
+      50,
+      15,
+      8
+    ],
+    "lever_overall_bounds": [
+      111,
+      12,
+      6
+    ],
+    "lever_friction_hub_axial_thickness": 3,
+    "lever_center_bore": 4.25,
+    "base_front_shoulder_guide": 4.25,
+    "base_thread_channel": 3.4,
+    "M3_hex_pocket_AF": 5.8,
+    "reaction_washer_seat_diameter": 9.3,
+    "two_half_base_connection_through_holes": 3.4,
+    "mounting_holes": 4.5,
+    "printed_load_web": 2.8
+  },
+  "acceptance": "Supplier reports actual dimensions/visible defects; these are CAD nominal values, not unverified printer tolerance promises. Owner performs actual metal fit and load tests.",
+  "nominal_solid_volume_cm3": 17.259,
+  "PLA_CF_nominal_net_mass_g_at_density_1p22": 21.06,
+  "mass_scope": "Solid CAD estimate; excludes supports, brim, purge and process variation.",
+  "source_urls": {
+    "nozzle_compatibility": "https://us.store.bambulab.com/bundles/all-in-one-hotends-kit-p1-series",
+    "material_comparison": "https://cdn1.bambulab.com/filament/filament-guide/wksdyyzd8n9/filament-guide-en.pdf",
+    "PLA_CF_A1": "https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40BBL%20A1.json",
+    "PLA_CF_P1S_compatible_X1C": "https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40BBL%20X1C.json",
+    "PLA_CF_base": "https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40base.json",
+    "PLA_base": "https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/fdm_filament_pla.json"
+  },
+  "slicer_tested": false,
+  "printed": false,
+  "hardware_tested": false,
+  "sent_to_supplier": false,
+  "order_placed": false
+}

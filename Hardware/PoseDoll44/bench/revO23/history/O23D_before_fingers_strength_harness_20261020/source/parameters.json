@@ -1,0 +1,63 @@
+{
+  "revision": "O23D-continuous-walls-20261020",
+  "scale": 1.4,
+  "compact_wrist": true,
+  "maximum_height_mm": 800,
+  "wall_mm": 2.4,
+  "rib_radius_mm": 3.0,
+  "interface_overlap_mm": 10.0,
+  "controller_front_corner_neutral_mm": [
+    -55.0,
+    32.0,
+    496.0
+  ],
+  "target_moving_clearance_mm": 2.0,
+  "printer_usable_box_mm": [
+    170,
+    170,
+    170
+  ],
+  "material_density_g_cm3_for_solid_volume_only": 1.24,
+  "notes": [
+    "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+    "Outer contour and ribs form one structural print, with joint and service openings.",
+    "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+    "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+  ],
+  "backpack_mount_revision": "compact_direct_v3",
+  "controller_board_mm": [
+    64,
+    60,
+    1.6
+  ],
+  "controller_board_layout_only": true,
+  "user_controller_pcb_not_manufactured": true,
+  "motion_acceptance_policy": "ordinary_adjacent",
+  "contour_adjustments": {
+    "chest": {
+      "ap_scale": 1.08,
+      "lateral_scale": 0.9
+    },
+    "waist": {
+      "ap_scale": 1.0,
+      "lateral_scale": 0.96,
+      "longitudinal_extension_mm": 22.0
+    },
+    "pelvis": {
+      "ap_scale": 1.08
+    },
+    "forearm_l": {
+      "ap_add_mm": 2.0,
+      "lateral_add_mm": 1.0
+    },
+    "forearm_r": {
+      "ap_add_mm": 2.0,
+      "lateral_add_mm": 1.0
+    },
+    "head": {
+      "ap_add_mm": 3.0,
+      "lateral_add_mm": 2.0
+    }
+  },
+  "upper_torso_raise_mm": 22.0
+}

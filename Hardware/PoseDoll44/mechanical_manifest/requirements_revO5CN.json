@@ -1,0 +1,63 @@
+{
+  "schema": "posedoll-o5-cn-experiment-v1",
+  "run_id": "cn_20260924_r1",
+  "baseline": "O5 delivery o5_20260924_d1 preserved",
+  "production_baseline": "AS5048A six-wire; no global BOM switch",
+  "experiment": {
+    "sensor": "MT6701QT-STD",
+    "connector": "CJT A1002WR-S-5P-LCP",
+    "housing": "A1002H-5P-2",
+    "terminal": "A1002-TP",
+    "wire": "Alpha Wire 2842/19 28AWG retained for controlled comparison",
+    "pinout": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "SSI_CLK",
+      "4": "SSI_DO",
+      "5": "SSI_CSN"
+    },
+    "regional_per_port_DO_gate_retained": true,
+    "shared_bus_tristate_not_assumed": true,
+    "legacy_6pin_cable_forbidden": true,
+    "calibration_identity": "MT6701QT-STD/CN1, new per-axis calibration required",
+    "board_mm": [
+      12,
+      10,
+      1
+    ],
+    "board_datum": "same sensor XY and board/edge clamp datum as O3",
+    "QFN_EP": "isolated copper island pending manufacturer confirmation; blocks fabrication",
+    "CRC_hypothesis": {
+      "poly": 3,
+      "width": 6,
+      "init": 0,
+      "xorout": 0,
+      "msb_first": true,
+      "manufacturer_vectors_obtained": false
+    },
+    "SSI_clock": "p25 drawing and p26 text not fully consistent; no hardware SPI-mode declaration"
+  },
+  "J50": {
+    "pins": 4,
+    "supply_V": 3.3,
+    "changed": false,
+    "no_5V_on_existing_board": true
+  },
+  "system_requirements": {
+    "measured_axes": 41,
+    "fixed_pelvis_slots": 3,
+    "logical_regions": 6,
+    "CAN_nodes": 7,
+    "external_G0": true,
+    "wireless_retained": true,
+    "mass_hard_limit_kg": null,
+    "static_hz": 10,
+    "scan_max_ms": 100,
+    "stable_window_ms": 500,
+    "transaction_max_ms": 3000,
+    "data_age_max_ms": 200
+  },
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "capture_enabled": false
+}

@@ -1,0 +1,95 @@
+{
+  "input_sha256": {
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/measurement_shaft.step": "074139a0dcebd64ca9a36dd33bec9c8b7f82c868921bedfd966a9d507ba48790",
+    "Hardware/PoseDoll44/generated/revO3/runs/o3_20260924_r3/joint/threaded_adjuster_cap.step": "05a3447d8de49208faa1b63508e152103cadb440089341c20d195392185ec6fc"
+  },
+  "generator_sha256": "7f820fb2e03cb462aaa3135487d80297171262e4eb341650e0c3edf990211e69",
+  "schema": "o5-output-candidate-v1",
+  "source_manifest_sha256": "cc3ba8c40ead7d123cb2a34ae95235e749ebad9ee6f392f3de21c8fdc6cd082c",
+  "candidate": "Extended D shaft plus two-piece output collar, 8mm engagement",
+  "extra_rear_extent_mm": 16,
+  "collar_shaft_intersection_mm3": [
+    0.0,
+    0.0
+  ],
+  "collar_spanner_intersection_mm3": [
+    0.0,
+    0.0
+  ],
+  "nominal_bore_clearance_mm": 0.025,
+  "clamp_split_gap_mm": 0.3,
+  "attachment_state": "DIGITAL_CANDIDATE_NOT_LOAD_RATED",
+  "positive_torque_path": "D shaft flat to D collar flat; clamp provides axial retention only after qualified fastener/preload design",
+  "fasteners": "M2 transverse clearance holes only; screw/nut/thread/material selection and preload unqualified",
+  "preload_force_max_N": null,
+  "spring_force_policy": "326N is a catalog point, not a maximum; no multiplier grants qualification",
+  "conditional_torque_grid": [
+    {
+      "spring_force_N_assumed": 200,
+      "mu_assumed": 0.08,
+      "double_face_torque_Nm": 0.27922962962962966
+    },
+    {
+      "spring_force_N_assumed": 200,
+      "mu_assumed": 0.12,
+      "double_face_torque_Nm": 0.4188444444444444
+    },
+    {
+      "spring_force_N_assumed": 200,
+      "mu_assumed": 0.18,
+      "double_face_torque_Nm": 0.6282666666666666
+    },
+    {
+      "spring_force_N_assumed": 326,
+      "mu_assumed": 0.08,
+      "double_face_torque_Nm": 0.4551442962962964
+    },
+    {
+      "spring_force_N_assumed": 326,
+      "mu_assumed": 0.12,
+      "double_face_torque_Nm": 0.6827164444444443
+    },
+    {
+      "spring_force_N_assumed": 326,
+      "mu_assumed": 0.18,
+      "double_face_torque_Nm": 1.0240746666666667
+    },
+    {
+      "spring_force_N_assumed": 450,
+      "mu_assumed": 0.08,
+      "double_face_torque_Nm": 0.6282666666666666
+    },
+    {
+      "spring_force_N_assumed": 450,
+      "mu_assumed": 0.12,
+      "double_face_torque_Nm": 0.9424000000000001
+    },
+    {
+      "spring_force_N_assumed": 450,
+      "mu_assumed": 0.18,
+      "double_face_torque_Nm": 1.4136000000000002
+    },
+    {
+      "spring_force_N_assumed": 600,
+      "mu_assumed": 0.08,
+      "double_face_torque_Nm": 0.8376888888888888
+    },
+    {
+      "spring_force_N_assumed": 600,
+      "mu_assumed": 0.12,
+      "double_face_torque_Nm": 1.2565333333333333
+    },
+    {
+      "spring_force_N_assumed": 600,
+      "mu_assumed": 0.18,
+      "double_face_torque_Nm": 1.8848000000000003
+    }
+  ],
+  "front_backing_retention": "OPEN",
+  "rear_loaded_slide": "OPEN",
+  "interrupted_thread_and_thin_wall": "OPEN",
+  "bond_coupons": "NOT_RUN",
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "decision": "Do not freeze this larger rear output. Use the exact 16mm penalty in common-arm screening; compare a side flange/output integration next if it dominates fit."
+}

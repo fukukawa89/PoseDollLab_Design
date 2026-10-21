@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PoseDoll · 零件从哪里来</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css"><style>
+header,main,footer{max-width:1080px}main{padding:0 36px 36px}.lead{font-size:19px;max-width:760px}.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}.route{border:1px solid var(--line);border-top:4px solid var(--green);border-radius:8px;padding:20px;background:#fafaf5}.route p{font-size:14px}.route .number{font:28px Georgia,serif;color:var(--green)}.route h2{font-size:19px}.table-wrap{overflow-x:auto}table{min-width:610px}.note{background:#eee5d1;border-left:4px solid #ad8345;padding:14px 18px}.reading{padding:12px 0 24px}details{border-top:1px solid var(--line);padding:16px 0}summary{font-weight:600;cursor:pointer}details p{max-width:780px}footer{font-size:12px}@media(max-width:650px){header{padding:24px 20px}main{padding:0 20px 24px}.routes{grid-template-columns:1fr}.lead{font-size:17px}.route{padding:16px}.table-wrap{margin-right:0;overflow:visible}table,tbody,tr,td{display:block;min-width:0;width:100%!important}thead{display:none}tr{border:1px solid var(--line);border-radius:7px;margin:12px 0;padding:10px 14px}td{padding:5px 0;border:0}td:first-child{font-size:16px}td:nth-child(2){font-size:12px;color:var(--muted)}footer{padding:20px}}
+</style></head><body>
+<header><div class="eyebrow">POSEDOLL / O10 · 制作说明修订</div><h1>零件从哪里来</h1><p class="lead">这里列的是当前基准小样的制作方式。底座主体有改成打印件的空间；薄片、弹簧和紧固件需要分别判断。</p></header>
+<main>
+<p class="note"><strong>STL 是形状文件，不是材料说明。</strong>旧指南把铝底座的 STL 和塑料件一起介绍，容易产生误解。普通家用 3D 打印机不能直接把这个底座打印成铝件。</p>
+<details open><summary>这些部位一定要用金属吗？</summary><p><strong>不一定。尤其是底座主体，尚未证明必须用铝。</strong>优先研究加厚、带加强筋的打印底座，局部夹紧位置配合标准金属承压件。它需要新的结构与变形检查，不能只给原 STL 换一种耗材。</p><p>当前弹簧组合的目录夹紧力约为 210 N。塑料不仅要不破坏，还要在持续夹紧时保持尺寸；钢片保留下来，也不能消除 PA12 长臂本身的缓慢变形。0.3～0.5 mm 的薄金属片不宜直接按原尺寸打印成塑料。</p><p>值得评估的材料包括外包 MJF PA12、FDM 的 Polymaker PET-CF17 和拓竹 PAHT-CF，以及外包玻璃填充 PA12。它们是候选，不是本项目已通过测试的替代品。</p><p><a href="../../bench/revO10/MATERIAL_OPTIONS.zh-CN.md">查看各零件的替代判断与厂家材料资料</a></p></details>
+<div class="routes">
+<section class="route"><span class="number">01</span><h2>铝底座 → 机加工</h2><p>工厂从铝料中铣出外形，再钻孔。当前候选为 6061 铝；给工厂 STEP 模型，并补充材料、表面与公差要求。</p><p><a href="https://www.jlc-cnc.com/home">嘉立创 CNC 服务</a></p><a class="button" href="../../bench/revO10/aluminium_base.step" download>底座 STEP · 供机加工评估</a></section>
+<section class="route"><span class="number">02</span><h2>PA12 长臂 → 外包打印</h2><p>当前候选为 MJF PA12。小样和未来关节要使用可比较的材料、方向和后处理；家用 PLA 的结果不能代替它。</p><p><a href="https://www.jlc-3dp.cn/materialDetail/efe4966ee81f4ddb92039f46689e7596.html">嘉立创 MJF PA12</a></p><a class="button" href="../../bench/revO10/PA12_lever.stl" download>长臂 STL · 供 PA12 打印评估</a></section>
+<section class="route"><span class="number">03</span><h2>金属小件 → 买成品或定制</h2><p>碟簧、螺钉、螺母买成品。特殊尺寸钢片先找成品，找不到则按图切割、去毛刺。它们都不用塑料打印。</p><p><a href="https://cut.jlc-gw.com/">精密金属薄片定制渠道</a></p><span class="tag amber">钢片加工规格尚待补齐</span></section>
+</div>
+<h2>三种圆片，看起来像，用途不同</h2>
+<div class="table-wrap"><table><thead><tr><th>零件</th><th>O10 名义尺寸 / mm</th><th>获取方式与当前状态</th></tr></thead><tbody>
+<tr><td>钢接触片 × 2</td><td>外径 12 · 内径 4.24 · 厚 0.5</td><td>夹在塑料长臂两侧，参与摩擦。成品型号、钢材牌号、表面和定制图尚未落实；不能换成外径 9 的普通垫圈。</td></tr>
+<tr><td>前承压垫圈 × 1</td><td>外径 9 · 内径 4.3 · 厚 0.3</td><td>在螺钉头与碟簧之间承压。需精密钢制薄垫片，找不到对应商品时定制；目前没有已核实型号。</td></tr>
+<tr><td>后承压垫圈 × 1</td><td>外径 9 · 内径 4.3 · 厚 0.8</td><td>在底座背面与螺母之间承压。优先购买标准钢垫圈；<a href="https://static.jlcfa.com/Serial/E06/EPDA/542502462063341570.pdf">嘉立创 FA 目录</a>中有对应名义尺寸，材质、硬度和具体商品还需核对。</td></tr>
+<tr><td>A8 碟簧 × 6</td><td>外径 8 · 内径 4.2 · 厚 0.4</td><td>锥形弹簧片，提供弹力。购买<a href="https://www.raleigh-spring.cn/discspring/list_84_2/">锐尔立成品碟簧</a>，两片反向一组；不是普通平垫圈。</td></tr>
+</tbody></table></div>
+<details open><summary>铝能不能 3D 打印？</summary><p>工业设备可以打印铝合金，普通家用 FDM／光固化打印机不能通过换耗材直接做到。我们这块底座选择机加工，不需要购买金属打印机。<a href="https://www.eos.info/metal-solutions/metal-materials/aluminium">EOS 工业铝合金打印说明</a></p><p>常见带金属粉的装饰性 PLA/PETG 仍是复合塑料，外观看起来像金属，也不能代替本试验的铝底座和钢片。<a href="https://help.prusa3d.com/article/composite-materials-with-metal-or-wood-particles_166863">Prusa 材料说明</a></p></details>
+<details open><summary>现在是不是可以照着原清单全部下单？</summary><p>还不是。上一版的数字模型和试验方法已经准备好，但钢片的材料与表面、前薄垫圈型号或定制图、固定夹具还没有交付完整。这些应由设计侧补齐，不需要你从动画里猜。这里列的是制作途径，没有新增实物测试或制造放行结论。</p></details>
+<div class="reading"><a href="../../bench/revO10/GETTING_PARTS.zh-CN.md">完整零件获取指南（修订）</a><a href="index.html">查看装配动画</a><a href="../../bench/revO10/README.zh-CN.md">原装配与测量步骤</a></div>
+</main><footer>2026-09-26 · 本页补充 O10 的材料与制作说明。原步骤中关于零件获取和 STL 用途的歧义以本页修订为准。供应渠道已查阅，具体零件尚未询价、下单。</footer>
+</body></html>
+
+

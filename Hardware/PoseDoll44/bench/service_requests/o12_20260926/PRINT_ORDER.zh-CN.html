@@ -1,0 +1,87 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PoseDoll O12 委托打印要求</title><style>body{font:16px/1.75 "Microsoft YaHei",sans-serif;color:#203b31;background:#f6f5ef;margin:0}main{max-width:920px;margin:32px auto;padding:28px;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}a{color:#245c46}nav{padding-bottom:18px;border-bottom:1px solid #d2d8cc}@media print{body{background:white;font-size:11pt}main{margin:0;padding:0}nav{display:none}pre{line-height:1.5}}</style><main><nav><a href="PRINT_ORDER.zh-CN.txt" download>下载文本要求</a> · <a href="models/O12_taobao_bench.3mf" download>下载三件排版 3MF</a></nav><pre>PoseDoll O12 独立小样｜委托 FDM 打印要求
+日期：2026-09-26
+用途：室内机械小样实验。首批 1 套，共 3 个塑料零件，各打印 1 件。
+
+【1. 文件与数量】
+优先使用 models/O12_taobao_bench.3mf，其中已经包含三件和摆放方向。
+也提供三个独立 STL 作为替代输入。3MF 与 STL 二选一，不是要求打印两套。
+- printed_base_minus_on_bed.stl：底座半件 A，1件。
+- printed_base_plus_on_bed.stl：底座半件 B，1件。
+- printed_lever_on_bed.stl：长臂，1件。
+全部单位 mm，XYZ 缩放均为100%。本包不包含 G-code 或机器配置。
+
+【2. 材料与机器】
+首选：拓竹 Bambu PLA-CF，优先黑色；同套三件使用同品牌、型号、颜色及批次。
+若不能提供：依次改用具名品牌/型号的普通 PLA、普通 PETG；整套替换并在包装上注明。
+“PLA-CF”名称相同不保证材料和喷嘴要求相同，不把未知品牌CF自动按拓竹参数打印。
+本轮不使用丝绸、发泡、装饰填料或未注明配方的改性料，以固定试验材料。
+
+拓竹 A1 或 P1S 均可，同套尽量使用同一台已校准机器。
+喷嘴统一选0.4 mm；PLA-CF需硬化钢喷嘴，并确认挤出机齿轮/送料路径适合磨蚀性耗材。
+不能仅凭“P1S”或“A1”型号就默认已经完成耐磨配置。
+首轮不换成0.2、0.6或0.8 mm喷嘴；若设备限制，请在报价中说明。
+
+【3. 切片参数】
+层高：0.20 mm；首层：0.20 mm。
+墙层数：6道；顶面实体层：5层；底面实体层：5层。
+填充：100%，采用软件支持的直线/Rectilinear实心填充。
+熨烫：关闭。外侧Brim可从5 mm开始；不要把孔内填满裙边。
+建议速度上限：首层25、外壁50、内壁70、内部填充80、顶面40、桥接20 mm/s。
+这些是本项目首轮控制条件，不是打印机最快速度；保留更低的体积流量/冷却限速。
+线宽、流量、回抽和风扇采用对应机型/材料的已校准预设，记录任何调整。
+100%填充用于固定试验变量，不表示打印件强度已通过验收。
+
+仅限“拓竹PLA-CF + 0.4喷嘴 + 光面/高温PEI或纹理PEI板”：
+- A1：首层及其后喷嘴230°C，热床65°C。
+- P1S：首层及其后喷嘴230°C，热床55°C。
+以上来自2026-09-26核对的Bambu Studio官方预设；应以实际安装版本匹配预设复核。
+不要将该温度表用于其他品牌、普通PLA/PETG、冷板或SuperTack板。
+替换材料时用该材料自己的预设，不能只改耗材名称。
+按所购耗材与烘干设备的当前说明预干燥并记录；P1S按PLA类要求管理散热。
+
+【4. 摆放、支撑与后处理】
+底座两半：分合面朝打印平台，沿用提供的方向。
+长臂：平放，沿用提供的方向。
+可在平台平面移动和绕竖直轴旋转，不翻转底面、不竖起长臂。
+先查看切片：长臂从无支撑检查；底座关注螺母槽和垫圈槽顶部桥接。
+确有需要时增加局部支撑，必须能从分合面清除；不得留下粘死或无法取出的支撑。
+去除支撑、裙边、毛刺；不要抛光摩擦面、喷漆、退火或擅自磨薄零件。
+如使用已校准的象脚/孔径补偿，请记录。不要用整件缩放代替局部工艺校准。
+底座中心是阶梯孔：不得将4.25 mm钻头贯穿整块底座来“通孔”。
+
+【5. 检查与记录】
+以下是CAD名义尺寸，请按实际能力测量并报告；并非承诺打印机能达到未指定的公差。
+- 合拢底座外形：50×30×8 mm；每半件外形：50×15×8 mm。
+- 长臂整体包络：111×12×6 mm；中心摩擦凸台轴向厚度：3.00 mm。
+- 长臂中心孔：4.25 mm；底座正面光杆导向段：4.25 mm。
+- 底座较细螺纹通道与两半连接孔：3.40 mm；内部M3螺母槽对边：5.80 mm。
+- 内部反力垫圈座直径：9.30 mm；承压台阶名义厚度：2.80 mm。
+
+检查两半能合拢，接合面和摩擦面无明显翘曲、凸瘤、裂纹、缺料或支撑残留。
+如有4 mm光杆/相应M3螺母，可辅助试装；没有实物时注明“未做金属件试装”。
+装配需顺畅，不靠强压。不得为试装自行扩大整个阶梯孔或磨薄承压台阶。
+最终零件配合、保持力、长期受压变形由委托方小样实验确认，不以打印完成代替测试。
+
+【6. 随货提供】
+请注明：机型、喷嘴直径/材质、耗材品牌型号/颜色、干燥条件、使用板型及实际切片参数。
+提供切片设置和关键孔槽预览截图；能够提供时附实际使用的切片项目文件。
+包装标签标出O12、材料和三个零件名称，不在摩擦面或承压面加刻字。
+首批1套即可。按几何实心体积估算，PLA-CF三件净料约21.1 g；
+这不是报价依据或承诺重量，不包含支撑、裙边、排料及实际流量差异。
+
+【选择依据】
+选PLA-CF是本轮室温刚性小样的工程选择，不是全市场材料最优结论。
+厂家同系列数据中PLA-CF的XY弯曲模量高于普通PLA及PETG HF；
+该指标不能证明层间强度、摩擦性能、长期压缩蠕变或本结构寿命。
+普通PLA可先做装配/低载基线；PETG作为另一个材料样品记录，不把耐热等同于长期不变形。
+
+官方来源（资料核对日期2026-09-26）：
+喷嘴兼容性：https://us.store.bambulab.com/bundles/all-in-one-hotends-kit-p1-series
+材料比较：https://cdn1.bambulab.com/filament/filament-guide/wksdyyzd8n9/filament-guide-en.pdf
+A1的PLA-CF预设：https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40BBL%20A1.json
+P1S兼容的PLA-CF预设：https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40BBL%20X1C.json
+PLA-CF继承项：https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/Bambu%20PLA-CF%20%40base.json
+PEI热床继承项：https://raw.githubusercontent.com/bambulab/BambuStudio/master/resources/profiles/BBL/filament/fdm_filament_pla.json
+
+本包几何与已封存O12一致。尚未用服务商机器切片、打印或加载测试。
+</pre></main></html>

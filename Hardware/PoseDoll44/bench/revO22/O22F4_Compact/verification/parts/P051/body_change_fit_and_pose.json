@@ -1,0 +1,141 @@
+{
+  "id": "P051",
+  "label": "iter19_01",
+  "body_mesh_sha256": "0afbb60b1cdf87fa644d5d252128a50982564110776834de07fc000126d4e80a",
+  "source_assembly_difference_mm3": 9.287791567846606e-11,
+  "frozen_print_source_exactly_verified": true,
+  "baseline_body_policy": "Frozen F3 print mesh is authoritative. Recorded bed and owner transforms register it against the unchanged assembly hardware. Differences from regenerated assembly body are reported, not attributed to this change.",
+  "removed_volume_mm3": 1.917833197313757,
+  "added_volume_mm3": -2.786158178897779e-16,
+  "source_assembly_part_count": 1521,
+  "purely_subtractive": true,
+  "no_new_geometric_collision_at_any_rigid_pose": true,
+  "proof_scope": "New body is an exact subset of the original body in the same rigid coordinate frame. This proves no new geometric interference under any rigid pose. It does not prove stress/fatigue equivalence or the retention of every contact; actual assembly contacts and axis-limit samples are separately listed.",
+  "assembly_contacts": [
+    {
+      "part": "upperarm_l/C01",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "upperarm_l/C02_-1_shoulder_D4_L8_M3_thread6",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "upperarm_l/C02",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "upperarm_l/C15",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "upperarm_l/ring_screw_3",
+      "gap_mm": 0.0,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 1.9362333936636144e-14
+    },
+    {
+      "part": "frame/clavicle_l",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    }
+  ],
+  "assembly_contact_clear": true,
+  "qualified_small_washer_entry_chamfers": [],
+  "qualified_small_nut_corner_reliefs": [],
+  "all_other_base_contacts_clear": true,
+  "pose_count": 107,
+  "raw_axis_limits_changed": false,
+  "sampled_contact_changes": [
+    {
+      "pose": "waist/r0/min",
+      "part": "thigh_l/C02",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 235.51535634788527,
+      "remaining_overlap_mm3": 235.5091449063014,
+      "removed_material_overlap_mm3": 0.006211441583905073
+    },
+    {
+      "pose": "clavicle_l.protract/r0/max",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 327.276430887034,
+      "remaining_overlap_mm3": 327.27219759123875,
+      "removed_material_overlap_mm3": 0.004233295795212383
+    },
+    {
+      "pose": "combined_0",
+      "part": "head/P_case_plus",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 133.80826773436567,
+      "remaining_overlap_mm3": 132.10137798090162,
+      "removed_material_overlap_mm3": 1.7068897534639298
+    },
+    {
+      "pose": "combined_6",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 463.9986829446761,
+      "remaining_overlap_mm3": 462.7462508011773,
+      "removed_material_overlap_mm3": 1.2524321434992447
+    }
+  ],
+  "all_sampled_removed_material_clear_of_contacts": false,
+  "body_component_count_unchanged": true,
+  "physical_or_structural_load_test_performed": false,
+  "elapsed_s": 33.87870121002197,
+  "sampled_contact_changes_at_nonintersecting_baseline_poses": [],
+  "sampled_changes_with_preexisting_deep_collision": [
+    {
+      "pose": "waist/r0/min",
+      "part": "thigh_l/C02",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 235.51535634788527,
+      "remaining_overlap_mm3": 235.5091449063014,
+      "removed_material_overlap_mm3": 0.006211441583905073
+    },
+    {
+      "pose": "clavicle_l.protract/r0/max",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 327.276430887034,
+      "remaining_overlap_mm3": 327.27219759123875,
+      "removed_material_overlap_mm3": 0.004233295795212383
+    },
+    {
+      "pose": "combined_0",
+      "part": "head/P_case_plus",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 133.80826773436567,
+      "remaining_overlap_mm3": 132.10137798090162,
+      "removed_material_overlap_mm3": 1.7068897534639298
+    },
+    {
+      "pose": "combined_6",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 463.9986829446761,
+      "remaining_overlap_mm3": 462.7462508011773,
+      "removed_material_overlap_mm3": 1.2524321434992447
+    }
+  ],
+  "fit_and_pose_geometry_passed": true,
+  "pose_qualification_scope": "Subtraction proves no new interference at any rigid pose. Base assembly contacts and sampled initially nonintersecting contacts are protected. Samples already intersecting in the unchanged assembly are reported separately; they are not certified as achievable poses."
+}

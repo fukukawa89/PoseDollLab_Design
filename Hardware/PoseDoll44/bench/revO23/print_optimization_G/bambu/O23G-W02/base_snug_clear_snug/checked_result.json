@@ -1,0 +1,306 @@
+{
+  "id": "O23G-W02",
+  "key": "wrist_r/C15",
+  "name": "base_snug_clear_snug",
+  "matrix": [
+    [
+      0.00011975982822254316,
+      -0.9999999865102701,
+      0.00011241460402600987,
+      90.02599472255915
+    ],
+    [
+      -0.99999999067601,
+      -0.0001197672034938507,
+      -6.560332959989453e-05,
+      89.98674604999096
+    ],
+    [
+      6.56167922976794e-05,
+      -0.00011240674633437353,
+      -0.99999999152958,
+      0.0018004666552071669
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "metrics": {
+    "overhang_area_mm2": 120.20250436616894,
+    "overhang_projection_volume_proxy_mm3": 330.81957016273384,
+    "bed_contact_projection_mm2": 313.0768097516999,
+    "max_rod_angle_to_bed_deg": 0.0,
+    "rod_verticality": 0.0
+  },
+  "support": "snug",
+  "project": "print_optimization_G/bambu/O23G-W02/base_snug_clear_snug/O23G-W02_A1mini_PLA.3mf",
+  "source_project": "print_optimization_G/trials/O23G-W02/base_snug_clear_snug/input.3mf",
+  "returncode": 0,
+  "command": [
+    "D:\\ProgramFiles\\OrcaSlicer\\orca-slicer.exe",
+    "--allow-newer-file",
+    "--arrange",
+    "0",
+    "--slice",
+    "0",
+    "--debug",
+    "3",
+    "--export-3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-W02\\base_snug_clear_snug\\sliced.3mf",
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO23\\print_optimization_G\\trials\\O23G-W02\\base_snug_clear_snug\\input.3mf"
+  ],
+  "elapsed_s": 1.4950215816497803,
+  "passed": true,
+  "project_sha256": "ff247dea4ca78e6ec1286e74141c86e716a0e2052a7faf9551e3e3b2b6b3bef3",
+  "gcode_sha256": "3991e6010aeb5856c92a00aca99a57fefc04540abdfb792c82c246c54fb77204",
+  "support_g": 0.0008,
+  "model_g": 2.5604,
+  "brim_g": 0.157,
+  "total_deposited_g": 2.7182,
+  "estimated_s": 0,
+  "repairs": 0,
+  "bed_violations": 0,
+  "layers": 54,
+  "warnings": [],
+  "classes": [
+    {
+      "id": "model",
+      "segments": 46855,
+      "moves": 44232,
+      "filament_mm": 858.45953,
+      "path_mm": 32035.19938,
+      "layers": 50,
+      "line_width_range_mm": [
+        0.348861,
+        0.794336
+      ],
+      "bounds_mm": {
+        "min": [
+          76.599,
+          76.599,
+          0.2
+        ],
+        "max": [
+          103.401,
+          103.401,
+          8.04
+        ]
+      },
+      "filament_volume_cm3": 2.06484,
+      "estimated_mass_g": 2.5604
+    },
+    {
+      "id": "support",
+      "segments": 0,
+      "moves": 0,
+      "filament_mm": 0.0,
+      "path_mm": 0.0,
+      "layers": 0,
+      "line_width_range_mm": null,
+      "bounds_mm": null,
+      "filament_volume_cm3": 0.0,
+      "estimated_mass_g": 0.0
+    },
+    {
+      "id": "interface",
+      "segments": 24,
+      "moves": 24,
+      "filament_mm": 0.266,
+      "path_mm": 7.65837,
+      "layers": 4,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          77.673,
+          77.553,
+          3.52
+        ],
+        "max": [
+          102.327,
+          102.399,
+          5.24
+        ]
+      },
+      "filament_volume_cm3": 0.00064,
+      "estimated_mass_g": 0.0008
+    },
+    {
+      "id": "transition",
+      "segments": 0,
+      "moves": 0,
+      "filament_mm": 0.0,
+      "path_mm": 0.0,
+      "layers": 0,
+      "line_width_range_mm": null,
+      "bounds_mm": null,
+      "filament_volume_cm3": 0.0,
+      "estimated_mass_g": 0.0
+    },
+    {
+      "id": "brim",
+      "segments": 2648,
+      "moves": 2648,
+      "filament_mm": 52.62999,
+      "path_mm": 1413.04973,
+      "layers": 1,
+      "line_width_range_mm": [
+        0.5,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          72.922,
+          72.922,
+          0.2
+        ],
+        "max": [
+          107.078,
+          107.078,
+          0.2
+        ]
+      },
+      "filament_volume_cm3": 0.12659,
+      "estimated_mass_g": 0.157
+    }
+  ],
+  "settings": {
+    "print_settings_id": "O23G A1 mini PLA / removable supports",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "4",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "outer_wall_speed": [
+      "40"
+    ],
+    "inner_wall_speed": [
+      "65"
+    ],
+    "sparse_infill_speed": [
+      "90"
+    ],
+    "internal_solid_infill_speed": [
+      "70"
+    ],
+    "top_surface_speed": [
+      "35"
+    ],
+    "bridge_speed": [
+      "20"
+    ],
+    "initial_layer_speed": [
+      "20"
+    ],
+    "initial_layer_infill_speed": [
+      "25"
+    ],
+    "default_acceleration": [
+      "1500"
+    ],
+    "outer_wall_acceleration": [
+      "700"
+    ],
+    "inner_wall_acceleration": [
+      "1000"
+    ],
+    "enable_support": "1",
+    "support_type": "normal(auto)",
+    "support_style": "snug",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "40",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "0",
+    "support_top_z_distance": "0.2",
+    "support_bottom_z_distance": "0.2",
+    "support_object_xy_distance": "0.4",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0.35",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "3",
+    "support_expansion": "0",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "4",
+    "tree_support_wall_count": "1",
+    "tree_support_auto_brim": null,
+    "independent_support_layer_height": "1",
+    "bridge_no_support": "1",
+    "max_bridge_length": "8",
+    "brim_type": "outer_only",
+    "brim_width": "4",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "elefant_foot_compensation": "0.15"
+  },
+  "selection_score": 0.020550000000000002,
+  "clearance_passed": true,
+  "islands_passed": null,
+  "source_sha256": "0ce28cf74fbe2555f86e65dbad6f83b0c5f12639d9054beaf631bdacafb6cbef",
+  "engine": "Bambu Studio02.08.02.61",
+  "native": {
+    "id": "O23G-W02",
+    "project_sha256": "ff247dea4ca78e6ec1286e74141c86e716a0e2052a7faf9551e3e3b2b6b3bef3",
+    "same_indices": true,
+    "vertex_shift_mm": 4.963836346405515e-07,
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "repairs": 0,
+    "min_mm": [
+      76.49999945658176,
+      76.4999994573181,
+      -2.7732607721375757e-07
+    ],
+    "max_mm": [
+      103.50000049505479,
+      103.50000045633358,
+      8.000000177940425
+    ],
+    "matrix_is_rigid": true,
+    "passed": true
+  },
+  "clearance": {
+    "id": "O23G-W02",
+    "name": "base_snug_clear_snug",
+    "project_sha256": "ff247dea4ca78e6ec1286e74141c86e716a0e2052a7faf9551e3e3b2b6b3bef3",
+    "method_version": 2,
+    "guard_revision": 1,
+    "guard_sha256": "4c72f8fe059fc0740f58487377f92dedba25b70e9a6ac5a74f922981fd9b6a25",
+    "support_bead_width_mm": 0.42,
+    "arc_margin_mm": 0.02,
+    "functional_void_hits": [],
+    "wire_void_hits": [],
+    "total_layer_overlap_area_mm2": 0,
+    "wire_total_layer_overlap_area_mm2": 0,
+    "passed": true,
+    "wire_passed": true,
+    "scope": "Actual support/interface/transition LINE_WIDTH per segment plus0.02 mm arc margin; lower/middle/upper cross-sections per support layer. Local clearance screen, no physical removal guarantee."
+  },
+  "islands": {
+    "id": "O23G-W02",
+    "name": "base_snug_clear_snug",
+    "project_sha256": "ff247dea4ca78e6ec1286e74141c86e716a0e2052a7faf9551e3e3b2b6b3bef3",
+    "method_version": 3,
+    "unbacked_new_islands": [],
+    "support_backed_new_islands": [],
+    "wider_bridges_or_cantilevers": [],
+    "model_first_z_mm": 0.20000000298023224,
+    "model_last_z_mm": 8.039999961853027,
+    "passed": true,
+    "scope": "Every original detached printed footprint is retained. Regions99.5% inside the previous nominal CAD solid (bbox,+0.015 mm) are enclosed infill starts, not missing exterior supports. The remaining exterior islands must be absent. This classification does not certify infill strength or bridge quality.",
+    "raw_island_report_sha256": "5e249e341f74b84e9615d9b130ba99e2aaedaef94e854bc90a90d1887e71f975",
+    "classified_islands": [],
+    "external_new_islands": [],
+    "internal_infill_gaps": []
+  }
+}

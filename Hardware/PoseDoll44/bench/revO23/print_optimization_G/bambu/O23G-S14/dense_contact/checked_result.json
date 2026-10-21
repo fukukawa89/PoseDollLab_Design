@@ -1,0 +1,872 @@
+{
+  "id": "O23G-S14",
+  "key": "frame/chest",
+  "name": "dense_contact",
+  "matrix": [
+    [
+      -0.39899869250889364,
+      -0.13930627599976858,
+      -0.9063077870366502,
+      136.49447444443496
+    ],
+    [
+      -0.8556554573595878,
+      -0.2987432729519184,
+      0.42261826174069955,
+      52.64141506203626
+    ],
+    [
+      -0.32962673081373134,
+      0.9441113378903211,
+      -4.978225781690178e-18,
+      41.300114281153924
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "metrics": {
+    "overhang_area_mm2": 5125.1630555918955,
+    "overhang_projection_volume_proxy_mm3": 230858.2497980408,
+    "bed_contact_projection_mm2": 0.014970621265570078,
+    "max_rod_angle_to_bed_deg": 34.48364116791078,
+    "rod_verticality": 0.15095415709760618
+  },
+  "support": "snug",
+  "source_project": "print_optimization_G/trials/O23G-S14/dense_contact/input.3mf",
+  "guard_revision": 5,
+  "project": "print_optimization_G/bambu/O23G-S14/dense_contact/O23G-S14_A1mini_PLA.3mf",
+  "source_sha256": "5c8f1ad8857b451a9bffb1ad17a40c8e63063ec29ad495a0d8c3518b2ca3a83e",
+  "engine": "Bambu Studio02.08.02.61",
+  "project_sha256": "bb0a43b14b2cfe8b0cc4d8d96ff9fffc8c6b1f29c4022e890e0a2566218ce110",
+  "gcode_sha256": "e08e7af39cafc585b337b4b23ed6bbc9b3fbc1a6c1c5644507949e78faecec59",
+  "support_g": 64.0096,
+  "model_g": 62.1868,
+  "brim_g": 0.0087,
+  "total_deposited_g": 126.2051,
+  "estimated_s": 47429.0,
+  "repairs": 0,
+  "bed_violations": 0,
+  "layers": 1233,
+  "warnings": [],
+  "classes": [
+    {
+      "id": "model",
+      "segments": 855529,
+      "moves": 697105,
+      "filament_mm": 20850.20727,
+      "path_mm": 776090.1401,
+      "layers": 653,
+      "line_width_range_mm": [
+        0.0745888,
+        0.828576
+      ],
+      "bounds_mm": {
+        "min": [
+          26.652,
+          26.986044430052885,
+          0.2
+        ],
+        "max": [
+          153.353,
+          152.914,
+          104.52
+        ]
+      },
+      "filament_volume_cm3": 50.15063,
+      "estimated_mass_g": 62.1868
+    },
+    {
+      "id": "support",
+      "segments": 381537,
+      "moves": 212031,
+      "filament_mm": 19028.14958,
+      "path_mm": 752077.90511,
+      "layers": 575,
+      "line_width_range_mm": [
+        0.42,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          28.275,
+          30.14641968903859,
+          0.2
+        ],
+        "max": [
+          153.30235200643315,
+          148.89860497619395,
+          92.08
+        ]
+      },
+      "filament_volume_cm3": 45.76806,
+      "estimated_mass_g": 56.7524
+    },
+    {
+      "id": "interface",
+      "segments": 124096,
+      "moves": 113947,
+      "filament_mm": 2229.80283,
+      "path_mm": 87847.65648,
+      "layers": 581,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          28.487,
+          30.03,
+          0.2
+        ],
+        "max": [
+          153.055,
+          148.992,
+          96.32
+        ]
+      },
+      "filament_volume_cm3": 5.3633,
+      "estimated_mass_g": 6.6505
+    },
+    {
+      "id": "transition",
+      "segments": 15053,
+      "moves": 13628,
+      "filament_mm": 203.42069,
+      "path_mm": 8089.32176,
+      "layers": 357,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          28.487,
+          30.326,
+          0.2
+        ],
+        "max": [
+          151.513,
+          149.067,
+          92.24
+        ]
+      },
+      "filament_volume_cm3": 0.48928,
+      "estimated_mass_g": 0.6067
+    },
+    {
+      "id": "brim",
+      "segments": 112,
+      "moves": 112,
+      "filament_mm": 2.91433,
+      "path_mm": 78.24404,
+      "layers": 1,
+      "line_width_range_mm": [
+        0.5,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          71.024,
+          51.558,
+          0.2
+        ],
+        "max": [
+          76.461,
+          61.203,
+          0.2
+        ]
+      },
+      "filament_volume_cm3": 0.00701,
+      "estimated_mass_g": 0.0087
+    }
+  ],
+  "settings": {
+    "print_settings_id": "O23G A1 mini PLA / removable supports",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "5",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "outer_wall_speed": [
+      "40"
+    ],
+    "inner_wall_speed": [
+      "65"
+    ],
+    "sparse_infill_speed": [
+      "90"
+    ],
+    "internal_solid_infill_speed": [
+      "70"
+    ],
+    "top_surface_speed": [
+      "35"
+    ],
+    "bridge_speed": [
+      "20"
+    ],
+    "initial_layer_speed": [
+      "20"
+    ],
+    "initial_layer_infill_speed": [
+      "25"
+    ],
+    "default_acceleration": [
+      "1500"
+    ],
+    "outer_wall_acceleration": [
+      "700"
+    ],
+    "inner_wall_acceleration": [
+      "1000"
+    ],
+    "enable_support": "1",
+    "support_type": "normal(auto)",
+    "support_style": "snug",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "55",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "0",
+    "support_top_z_distance": "0.28",
+    "support_bottom_z_distance": "0.28",
+    "support_object_xy_distance": "0.4",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "3",
+    "support_expansion": "0.5",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "4",
+    "tree_support_wall_count": "1",
+    "tree_support_auto_brim": null,
+    "independent_support_layer_height": "1",
+    "bridge_no_support": "0",
+    "max_bridge_length": "8",
+    "brim_type": "outer_only",
+    "brim_width": "6",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "elefant_foot_compensation": "0.15"
+  },
+  "passed": false,
+  "native": {
+    "id": "O23G-S14",
+    "project_sha256": "bb0a43b14b2cfe8b0cc4d8d96ff9fffc8c6b1f29c4022e890e0a2566218ce110",
+    "same_indices": true,
+    "vertex_shift_mm": 3.96949673842073e-06,
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "repairs": 0,
+    "min_mm": [
+      26.35097770215655,
+      26.77895520578177,
+      -6.133965939625341e-07
+    ],
+    "max_mm": [
+      153.64902738097044,
+      153.22104499322256,
+      104.48388980944353
+    ],
+    "matrix_is_rigid": true,
+    "passed": true
+  },
+  "clearance": {
+    "id": "O23G-S14",
+    "name": "dense_contact",
+    "project_sha256": "bb0a43b14b2cfe8b0cc4d8d96ff9fffc8c6b1f29c4022e890e0a2566218ce110",
+    "method_version": 2,
+    "guard_revision": 5,
+    "source_blocker_revision": 5,
+    "guard_sha256": "c7a8c5718892f9485f3abdf2bf61816028ab3f956efea6567a3e0a0f51e84d31",
+    "support_bead_width_mm": 0.5,
+    "arc_margin_mm": 0.02,
+    "functional_void_hits": [
+      {
+        "layer": 434,
+        "z_mm": 34.959999084472656,
+        "overlap_area_mm2": 0.11287095835000288,
+        "segments": 10
+      },
+      {
+        "layer": 436,
+        "z_mm": 35.119998931884766,
+        "overlap_area_mm2": 1.100894166713021,
+        "segments": 24
+      },
+      {
+        "layer": 438,
+        "z_mm": 35.279998779296875,
+        "overlap_area_mm2": 2.715142814405563,
+        "segments": 43
+      },
+      {
+        "layer": 440,
+        "z_mm": 35.439998626708984,
+        "overlap_area_mm2": 4.162111413772666,
+        "segments": 35
+      },
+      {
+        "layer": 782,
+        "z_mm": 62.79999923706055,
+        "overlap_area_mm2": 0.3298800469304063,
+        "segments": 4
+      },
+      {
+        "layer": 784,
+        "z_mm": 62.959999084472656,
+        "overlap_area_mm2": 0.6892110256392878,
+        "segments": 5
+      },
+      {
+        "layer": 786,
+        "z_mm": 63.119998931884766,
+        "overlap_area_mm2": 0.9767772144755601,
+        "segments": 11
+      },
+      {
+        "layer": 788,
+        "z_mm": 63.279998779296875,
+        "overlap_area_mm2": 1.6971510015291964,
+        "segments": 11
+      },
+      {
+        "layer": 790,
+        "z_mm": 63.439998626708984,
+        "overlap_area_mm2": 2.26946072062935,
+        "segments": 13
+      },
+      {
+        "layer": 792,
+        "z_mm": 63.599998474121094,
+        "overlap_area_mm2": 2.7951565789845123,
+        "segments": 14
+      },
+      {
+        "layer": 794,
+        "z_mm": 63.7599983215332,
+        "overlap_area_mm2": 3.1373550882950285,
+        "segments": 12
+      },
+      {
+        "layer": 796,
+        "z_mm": 63.91999816894531,
+        "overlap_area_mm2": 3.269569459331613,
+        "segments": 12
+      },
+      {
+        "layer": 798,
+        "z_mm": 64.08000183105469,
+        "overlap_area_mm2": 3.256642574850436,
+        "segments": 11
+      },
+      {
+        "layer": 800,
+        "z_mm": 64.23999786376953,
+        "overlap_area_mm2": 3.249664626654815,
+        "segments": 11
+      },
+      {
+        "layer": 802,
+        "z_mm": 64.4000015258789,
+        "overlap_area_mm2": 3.1743255865062188,
+        "segments": 17
+      },
+      {
+        "layer": 804,
+        "z_mm": 64.55999755859375,
+        "overlap_area_mm2": 3.199833408378309,
+        "segments": 12
+      },
+      {
+        "layer": 806,
+        "z_mm": 64.72000122070312,
+        "overlap_area_mm2": 3.182565164666347,
+        "segments": 13
+      },
+      {
+        "layer": 808,
+        "z_mm": 64.87999725341797,
+        "overlap_area_mm2": 3.222411197122638,
+        "segments": 13
+      }
+    ],
+    "wire_void_hits": [],
+    "total_layer_overlap_area_mm2": 42.54102304723497,
+    "wire_total_layer_overlap_area_mm2": 0,
+    "passed": false,
+    "wire_passed": true,
+    "scope": "Actual support/interface/transition LINE_WIDTH per segment plus0.02 mm arc margin; lower/middle/upper cross-sections per support layer. Local clearance screen, no physical removal guarantee."
+  },
+  "islands": {
+    "id": "O23G-S14",
+    "name": "dense_contact",
+    "project_sha256": "bb0a43b14b2cfe8b0cc4d8d96ff9fffc8c6b1f29c4022e890e0a2566218ce110",
+    "method_version": 3,
+    "unbacked_new_islands": [
+      {
+        "z_mm": 35.2400016784668,
+        "area_mm2": 0.15034857582466055,
+        "bounds_mm": [
+          121.55380000174046,
+          42.723899997770786,
+          122.00909999758005,
+          43.169200003147125
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 48.36000061035156,
+        "area_mm2": 0.1717333386068236,
+        "bounds_mm": [
+          118.75919999927282,
+          36.043700002133846,
+          119.24780000001192,
+          36.517800003290176
+        ],
+        "support_contact_mm2": 0.0010233833143751814
+      }
+    ],
+    "support_backed_new_islands": [
+      {
+        "z_mm": 4.360000133514404,
+        "area_mm2": 1.1296908469385185,
+        "bounds_mm": [
+          75.16709999740124,
+          46.81199999898672,
+          77.97100000083447,
+          48.442900002002716
+        ],
+        "support_contact_mm2": 1.1296908469385185
+      },
+      {
+        "z_mm": 5.0,
+        "area_mm2": 0.5842924046867743,
+        "bounds_mm": [
+          78.1541000008583,
+          47.402900002896786,
+          79.6651000007987,
+          48.358900003135204
+        ],
+        "support_contact_mm2": 0.5842924046867743
+      },
+      {
+        "z_mm": 13.640000343322754,
+        "area_mm2": 1.5126090655033364,
+        "bounds_mm": [
+          123.51919999718666,
+          130.24639999866486,
+          125.81300000101328,
+          131.58879999816418
+        ],
+        "support_contact_mm2": 1.5126090655033364
+      },
+      {
+        "z_mm": 14.600000381469727,
+        "area_mm2": 5.570411693004546,
+        "bounds_mm": [
+          118.83839999884367,
+          123.95939999818802,
+          131.56260000169277,
+          130.1055999994278
+        ],
+        "support_contact_mm2": 5.570411693004546
+      },
+      {
+        "z_mm": 14.600000381469727,
+        "area_mm2": 5.570411692939183,
+        "bounds_mm": [
+          99.80539999902248,
+          132.83439999818802,
+          112.52960000187159,
+          138.9805999994278
+        ],
+        "support_contact_mm2": 5.570411692939183
+      },
+      {
+        "z_mm": 15.239999771118164,
+        "area_mm2": 1.2002084738691003,
+        "bounds_mm": [
+          114.83229999989271,
+          139.51590000092983,
+          116.89090000092983,
+          140.70170000195503
+        ],
+        "support_contact_mm2": 1.2002084738691003
+      },
+      {
+        "z_mm": 21.31999969482422,
+        "area_mm2": 6.565259276667894,
+        "bounds_mm": [
+          52.70170000195503,
+          134.91369999945164,
+          60.15829999744892,
+          138.90060000121593
+        ],
+        "support_contact_mm2": 6.565259276667894
+      },
+      {
+        "z_mm": 24.520000457763672,
+        "area_mm2": 42.50199573820526,
+        "bounds_mm": [
+          46.59279999881983,
+          113.08879999816418,
+          68.12420000135899,
+          124.36420000344515
+        ],
+        "support_contact_mm2": 42.50199573820526
+      },
+      {
+        "z_mm": 25.479999542236328,
+        "area_mm2": 0.15151489732691736,
+        "bounds_mm": [
+          51.05179999768734,
+          126.82580000162125,
+          51.51120000332594,
+          127.27319999784231
+        ],
+        "support_contact_mm2": 0.15151489732691736
+      },
+      {
+        "z_mm": 26.440000534057617,
+        "area_mm2": 0.1797190991053519,
+        "bounds_mm": [
+          41.30470000207424,
+          118.67769999802113,
+          41.749200001358986,
+          119.23319999873638
+        ],
+        "support_contact_mm2": 0.1797190991053519
+      },
+      {
+        "z_mm": 32.52000045776367,
+        "area_mm2": 1.0255858625417513,
+        "bounds_mm": [
+          41.744699999690056,
+          116.01850000023842,
+          44.07150000333786,
+          117.3272999972105
+        ],
+        "support_contact_mm2": 1.0255858625417513
+      },
+      {
+        "z_mm": 32.68000030517578,
+        "area_mm2": 14.414321147307366,
+        "bounds_mm": [
+          116.2048000022769,
+          34.8108000010252,
+          123.76839999854565,
+          41.69990000128746
+        ],
+        "support_contact_mm2": 14.414321147307366
+      },
+      {
+        "z_mm": 33.31999969482422,
+        "area_mm2": 2.824214054046413,
+        "bounds_mm": [
+          124.01210000365973,
+          41.56409999728203,
+          126.43689999729395,
+          44.18370000272989
+        ],
+        "support_contact_mm2": 2.824214054046413
+      },
+      {
+        "z_mm": 33.63999938964844,
+        "area_mm2": 1.9468029501673838,
+        "bounds_mm": [
+          146.9670000001788,
+          61.53499999642372,
+          148.81689999997616,
+          63.49340000003576
+        ],
+        "support_contact_mm2": 1.9468029501673838
+      },
+      {
+        "z_mm": 34.439998626708984,
+        "area_mm2": 1.338980263554296,
+        "bounds_mm": [
+          117.23910000175238,
+          42.80510000139475,
+          120.17090000212193,
+          45.16089999675751
+        ],
+        "support_contact_mm2": 1.338980263554296
+      },
+      {
+        "z_mm": 35.2400016784668,
+        "area_mm2": 1.9997669885142937,
+        "bounds_mm": [
+          36.44370000064373,
+          107.88270000368357,
+          40.1152999997139,
+          109.86930000036955
+        ],
+        "support_contact_mm2": 1.9997669885142937
+      },
+      {
+        "z_mm": 35.2400016784668,
+        "area_mm2": 1.9997669836694723,
+        "bounds_mm": [
+          28.740699999034405,
+          111.47569999843836,
+          32.41229999810457,
+          113.46230000257492
+        ],
+        "support_contact_mm2": 1.9997669836694723
+      },
+      {
+        "z_mm": 39.2400016784668,
+        "area_mm2": 2.793595783865263,
+        "bounds_mm": [
+          34.089299999177456,
+          102.71429999917746,
+          37.83969999849796,
+          104.84870000183582
+        ],
+        "support_contact_mm2": 2.793595783865263
+      },
+      {
+        "z_mm": 47.400001525878906,
+        "area_mm2": 0.2600633242854249,
+        "bounds_mm": [
+          116.82789999991655,
+          35.25069999694824,
+          117.40739999711514,
+          35.839500002563
+        ],
+        "support_contact_mm2": 0.2600633242854249
+      },
+      {
+        "z_mm": 48.36000061035156,
+        "area_mm2": 1.197722525786304,
+        "bounds_mm": [
+          68.5755999982357,
+          121.53959999978542,
+          69.72230000048876,
+          122.95929999649525
+        ],
+        "support_contact_mm2": 1.197722525786304
+      },
+      {
+        "z_mm": 59.400001525878906,
+        "area_mm2": 3.0049137547114846,
+        "bounds_mm": [
+          51.62550000101328,
+          132.71050000190735,
+          59.020499996840954,
+          136.35750000178814
+        ],
+        "support_contact_mm2": 3.0049137547114846
+      },
+      {
+        "z_mm": 60.040000915527344,
+        "area_mm2": 0.15177956602359366,
+        "bounds_mm": [
+          43.3897999972105,
+          118.02679999917746,
+          43.8492000028491,
+          118.47519999742508
+        ],
+        "support_contact_mm2": 0.15177956602359366
+      },
+      {
+        "z_mm": 61.0,
+        "area_mm2": 0.4965889718407128,
+        "bounds_mm": [
+          119.6524000018835,
+          47.83330000191927,
+          120.51529999822378,
+          48.64249999821186
+        ],
+        "support_contact_mm2": 0.3725472229967255
+      },
+      {
+        "z_mm": 61.63999938964844,
+        "area_mm2": 3.2826469075841302,
+        "bounds_mm": [
+          121.7964000031352,
+          56.987400002777576,
+          124.84179999679327,
+          60.756499998271465
+        ],
+        "support_contact_mm2": 3.2826469075841302
+      },
+      {
+        "z_mm": 61.63999938964844,
+        "area_mm2": 0.19404820208482576,
+        "bounds_mm": [
+          129.89389999955893,
+          65.25190000236034,
+          130.48510000109673,
+          65.70910000056028
+        ],
+        "support_contact_mm2": 0.19404820208482576
+      },
+      {
+        "z_mm": 62.279998779296875,
+        "area_mm2": 35.19721955333345,
+        "bounds_mm": [
+          41.622400000691414,
+          102.24279999732971,
+          60.23020000010729,
+          112.40559999644756
+        ],
+        "support_contact_mm2": 35.19721955333345
+      },
+      {
+        "z_mm": 63.08000183105469,
+        "area_mm2": 0.9836524203729899,
+        "bounds_mm": [
+          141.07029999792576,
+          61.85629999637604,
+          143.08330000191927,
+          63.88629999756813
+        ],
+        "support_contact_mm2": 0.9836524203729899
+      },
+      {
+        "z_mm": 72.04000091552734,
+        "area_mm2": 0.15175578301152193,
+        "bounds_mm": [
+          124.71180000156164,
+          59.5257999971509,
+          125.17119999974966,
+          59.9742000028491
+        ],
+        "support_contact_mm2": 0.15175578301152193
+      },
+      {
+        "z_mm": 72.19999694824219,
+        "area_mm2": 0.9133163738156966,
+        "bounds_mm": [
+          130.31409999728203,
+          63.95380000025034,
+          131.67090000212193,
+          65.1798999980092
+        ],
+        "support_contact_mm2": 0.9133163738156966
+      },
+      {
+        "z_mm": 89.80000305175781,
+        "area_mm2": 0.8997334415538756,
+        "bounds_mm": [
+          121.64980000257492,
+          104.27210000157356,
+          123.42289999872446,
+          105.35320000350475
+        ],
+        "support_contact_mm2": 0.8997334415538756
+      },
+      {
+        "z_mm": 90.12000274658203,
+        "area_mm2": 5.206129601994816,
+        "bounds_mm": [
+          107.68850000202656,
+          100.05650000274181,
+          120.41350000351667,
+          106.18949999660254
+        ],
+        "support_contact_mm2": 5.206129601994816
+      },
+      {
+        "z_mm": 90.12000274658203,
+        "area_mm2": 5.205779683908657,
+        "bounds_mm": [
+          88.65649999678135,
+          108.93150000274181,
+          101.38050000369549,
+          115.06449999660254
+        ],
+        "support_contact_mm2": 5.205779683908657
+      },
+      {
+        "z_mm": 90.76000213623047,
+        "area_mm2": 4.9864252982165205,
+        "bounds_mm": [
+          104.02899999916553,
+          112.7593000009656,
+          111.36270000040531,
+          116.54699999839067
+        ],
+        "support_contact_mm2": 4.9864252982165205
+      }
+    ],
+    "wider_bridges_or_cantilevers": [],
+    "model_first_z_mm": 0.20000000298023224,
+    "model_last_z_mm": 104.5199966430664,
+    "passed": false,
+    "scope": "Every original detached printed footprint is retained. Regions99.5% inside the previous nominal CAD solid (bbox,+0.015 mm) are enclosed infill starts, not missing exterior supports. The remaining exterior islands must be absent. This classification does not certify infill strength or bridge quality.",
+    "raw_island_report_sha256": "b63cdaa2835430d38ad55c413847f5ba5df7a1b57e2af160771be88d4c0b9ced",
+    "classified_islands": [
+      {
+        "z_mm": 35.2400016784668,
+        "area_mm2": 0.15034857582466055,
+        "bounds_mm": [
+          121.55380000174046,
+          42.723899997770786,
+          122.00909999758005,
+          43.169200003147125
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.5036804784780564,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 35.0
+      },
+      {
+        "z_mm": 48.36000061035156,
+        "area_mm2": 0.1717333386068236,
+        "bounds_mm": [
+          118.75919999927282,
+          36.043700002133846,
+          119.24780000001192,
+          36.517800003290176
+        ],
+        "support_contact_mm2": 0.0010233833143751814,
+        "previous_solid_bbox_coverage": 0.20606181685543842,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 48.1200008392334
+      }
+    ],
+    "external_new_islands": [
+      {
+        "z_mm": 35.2400016784668,
+        "area_mm2": 0.15034857582466055,
+        "bounds_mm": [
+          121.55380000174046,
+          42.723899997770786,
+          122.00909999758005,
+          43.169200003147125
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.5036804784780564,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 35.0
+      },
+      {
+        "z_mm": 48.36000061035156,
+        "area_mm2": 0.1717333386068236,
+        "bounds_mm": [
+          118.75919999927282,
+          36.043700002133846,
+          119.24780000001192,
+          36.517800003290176
+        ],
+        "support_contact_mm2": 0.0010233833143751814,
+        "previous_solid_bbox_coverage": 0.20606181685543842,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 48.1200008392334
+      }
+    ],
+    "internal_infill_gaps": []
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "posedoll-revO3-active-requirements-v1",
+  "reviewed_commit": "239d4430cec49eecaf12c37f1ec4717055d3fbfe",
+  "execute_against_new_branch_or_revision": true,
+  "keep_legacy_and_reviewed_runs_immutable": true,
+  "manufacturing_released": false,
+  "invariants": {
+    "measured_axes": 41,
+    "protocol_slots": 44,
+    "fixed_pelvis_slots": 3,
+    "acquisition_nodes": 6,
+    "external_gateway_nodes": 1,
+    "anatomical_reference_height_mm": 480,
+    "full_body_target_mm": 500,
+    "full_body_hard_limit_mm": 600,
+    "CAN_bitrate": 500000,
+    "cohort_rate_hz": 60,
+    "node_acquisition_max_us": 8000,
+    "gateway_END_strict_less_us": 14000,
+    "healthy_soak_minutes_min": 30,
+    "healthy_fresh_complete_ratio_min": 0.999,
+    "stale_or_fault_as_normal_max": 0,
+    "USB_PD41_version": 1
+  },
+  "do_not_conflate": [
+    [
+      "node_acquisition_time",
+      "gateway_SYNC_to_END_envelope"
+    ],
+    [
+      "physical_occupancy",
+      "service_sweep",
+      "functional_keepout"
+    ],
+    [
+      "CAD_valid",
+      "retained_assembly",
+      "load_qualified"
+    ],
+    [
+      "reference_geometry",
+      "actual_manufacturing_part"
+    ]
+  ],
+  "priority_tasks": [
+    {
+      "id": "O3-01",
+      "priority": "P0",
+      "action": "Positively retain sensor PCB support to bearing housing; prefer integral per-half posts.",
+      "gate": "constraint graph and retention/tool paths"
+    },
+    {
+      "id": "O3-02",
+      "priority": "P0",
+      "action": "Move lining retention features outside rotating wear plane; retain 0.6 mm total wear study.",
+      "gate": "new/worn/asymmetric/tolerance collisions and torque path"
+    },
+    {
+      "id": "O3-03",
+      "priority": "P0",
+      "action": "Rate complete torque chain, including lining retention, keys and backing interfaces.",
+      "gate": "load path calculations and supplier/physical qualification"
+    },
+    {
+      "id": "O3-04",
+      "priority": "P1",
+      "action": "Activate only physically reachable contacts before solving support loads.",
+      "gate": "gap/normal/force equilibrium and counterexample tests"
+    },
+    {
+      "id": "O3-05",
+      "priority": "P1",
+      "action": "Reconcile item coverage without silent deletion; verify every axis load/operating range and prefer module reuse. Weight above 1200 g is informational; no forced families or shared structures for weight alone.",
+      "gate": "complete net mass with no silent allocation removal"
+    },
+    {
+      "id": "O3-06",
+      "priority": "P1",
+      "action": "Derive packaging and service volumes from actual PCBA, mating datums and validated cable constraints.",
+      "gate": "chest and complete single arm with real mechanisms"
+    },
+    {
+      "id": "O3-07",
+      "priority": "P1",
+      "action": "Bound reconnection cost and preserve healthy node updates during single-node failure.",
+      "gate": "persistent-failure availability and fair recovery tests"
+    },
+    {
+      "id": "O3-08",
+      "priority": "P1",
+      "action": "Fix capture metric time semantics; verify 8ms from END/trace rather than USB conservative timing.",
+      "gate": "11ms END with 6.4ms acquisition fixture; 60Hz/duration/session tests"
+    },
+    {
+      "id": "O3-09",
+      "priority": "P1",
+      "action": "Hash every actually consumed STEP/PCBA/derived file at production and re-check at consumption.",
+      "gate": "single-artifact mutation becomes BLOCKED"
+    }
+  ],
+  "local_audit_script": "audit_revo2_focused.py",
+  "local_audit_results": "focused_results.json",
+  "local_tests_are_not_manufacturing_acceptance": true,
+  "user_override_date": "2026-09-24",
+  "user_override_zh": "整机重量必须 <=1.2 kg 不再作为硬性条件；优先复用模块，继续核算完整质量/COM/支撑载荷和逐轴保持/操作力。",
+  "review_source_sha256": "abf2851ac0819f511cbbfedef0a70aa7f627c15d404747b6a7147bd6ed1f29a8",
+  "mass_policy": {
+    "hard_max_g": null,
+    "lightweight_preference_g": 1200,
+    "exceedance_fails_design": false,
+    "actual_mass_and_COM_required": true,
+    "prefer_existing_modules": true,
+    "require_family_redesign_only_for_weight": false,
+    "require_shared_multi_axis_structure_only_for_weight": false,
+    "redesign_triggers": [
+      "holding capacity",
+      "operating force",
+      "dimensions",
+      "range of motion",
+      "precision",
+      "assembly/service"
+    ]
+  }
+}

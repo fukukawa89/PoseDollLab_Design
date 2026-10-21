@@ -1,0 +1,2723 @@
+{
+  "key": "frame/foot_l",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 6.29,
+  "construction_profile_sha256": "6893bd818d0ef9fbf5d55303d2e740662ef1c0f1dacfbe32c92a32f4387c031d",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "f4a9758ff629096c5a0cef3004673ee42bdac6f0022bbc8652d21560b6c52f6b",
+  "construction_keeps_sha256": "0630ddb7ad938c282d9c42b2c3b516ee5a502ca1808185b2d29548c599d0ad38",
+  "mask_method": "Conservative swept intersections extended to nearest open end; circular dilation and smoothing",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 128,
+  "lower_boundary_mm": [
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -22.65,
+    -22.65,
+    -22.65,
+    -22.65,
+    -21.65,
+    -20.65,
+    -16.65,
+    -11.65,
+    -5.65,
+    0.35,
+    3.35,
+    6.35,
+    8.35,
+    9.35,
+    10.35,
+    11.35,
+    12.35,
+    13.35,
+    14.35,
+    15.35,
+    15.35,
+    17.35,
+    18.35,
+    19.35,
+    21.35,
+    22.35,
+    23.35,
+    24.35,
+    24.35,
+    24.35,
+    25.0,
+    25.0,
+    25.0,
+    25.0,
+    25.35,
+    25.35,
+    25.0,
+    25.0,
+    25.0,
+    25.0,
+    24.35,
+    24.35,
+    24.35,
+    23.35,
+    22.35,
+    21.35,
+    19.35,
+    18.35,
+    17.35,
+    16.35,
+    15.35,
+    14.35,
+    13.35,
+    13.35,
+    13.35,
+    14.35,
+    15.35,
+    17.35,
+    18.35,
+    19.35,
+    20.35,
+    20.35,
+    20.35,
+    21.0,
+    21.0,
+    21.0,
+    21.0,
+    21.35,
+    21.0,
+    21.0,
+    21.0,
+    21.0,
+    20.35,
+    20.35,
+    20.35,
+    18.35,
+    15.35,
+    9.35,
+    1.35,
+    -5.65,
+    -13.65,
+    -18.65,
+    -21.65,
+    -22.65,
+    -22.65,
+    -22.65,
+    -22.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65,
+    -23.65
+  ],
+  "upper_boundary_mm": [
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    46.65,
+    45.65,
+    44.65,
+    43.65,
+    42.65,
+    42.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    41.65,
+    42.65,
+    42.65,
+    43.65,
+    44.65,
+    45.65,
+    46.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    47.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65,
+    48.65
+  ],
+  "canonical_frame_mm": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      1.003094572328634
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      41.29055165627565
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      34.85773222195314
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 0.0,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 29659.902737634915,
+  "old_volume_mm3": 37130.91301137853,
+  "ribs": [],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 21.68139320479763
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 22.18330967237046
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 4.660917093138903
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 4.683278513697729
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 11.94778982860653
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 96.81362730832596
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 19.032709445868043
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 13.326843403107137
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 20.457050419171264
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 16.326945302928753
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.5328978538831941
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.4476192681537206
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 2.455622012232624
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.503613556445481
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 10.911864353835059
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 11.56462745767683
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_inner_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 7.452361131013367
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.3369231945501213
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 7.726584340755267
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 8.234668737794305
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 7.749483832001926
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.37039301521072826
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 7.938528004458883
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 8.380790608570788
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 910.6196069982877
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 4.986355117065791
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 8.873144172776348
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 12.096878693773313
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 9.517254289360633
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 3.588207842378925
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 4.666565657217975
+    },
+    {
+      "obstacle_owner": "j:foot_l:C01",
+      "members": [
+        "foot_l/C01_magnet_nut_6.1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 16.615727472800234
+    },
+    {
+      "obstacle_owner": "j:foot_l:C01",
+      "members": [
+        "foot_l/C01_magnet_screw_6.1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 5.894471617995545
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 69.67828045763906
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 47.0858224852866
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 16.519583872137574
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 21.68758778197231
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 22.192374422775824
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 4.664307945217079
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 4.686396096390647
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 11.954243638741357
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 96.54026964696887
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 19.396923300811025
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 13.331217841563678
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 20.441115405904927
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 16.303181383848454
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.5264438821550106
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.4415789154026292
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 2.4370712318380066
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.49046234954987783
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 10.817466957434346
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 11.544340835369217
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.014215431710298411
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 25.630618009840706
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_outer_M4_wide"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 12.361170190472095
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 15.607593247489264
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 19.561829975145102
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 14.242065903323065
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 765.8304186311018
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 14.439892921637888
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 3.345669657756748
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 3.9366863642333767
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 5.580075026125728
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 1.010443927890584
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 4.798469685552925
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 8.873144172776339
+    },
+    {
+      "obstacle_owner": "j:foot_l:C02",
+      "members": [
+        "foot_l/C02_magnet_nut_-6.1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.06024939776701699
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 168.70482824957037
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 21.6612580019136
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 22.167345700397767
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 4.657227101611918
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 4.679609332647073
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 11.94072802587974
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 97.22222894338601
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 19.487606239774063
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 13.318428467569733
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 20.483373498280926
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 16.369158510720606
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 0.5419556083868272
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 0.4565542553766462
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 2.478626681224148
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 0.5241177115098379
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 10.861768053839938
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 11.586631003209591
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 24.101944727523907
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 25.30736212083734
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 2.149181449118242
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 1.4819657184505837
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 3.5176207409916107
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 42.917961581639084
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 18.532006040964216
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 13.145419843307634
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 668.0995963583043
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 53.592356418474374
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 4.77631719889004
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 4.080291469814694
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 8.452791767187035
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@-15",
+      "wall_overlap_mm3": 87.4999113650854
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 21.665058476723036
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 22.171747031876386
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 4.658157140849309
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 4.680623653493565
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 11.942575124248552
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 97.08639067686958
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 19.382242655133428
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 13.322118900993173
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 20.47661508394738
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 16.355702175860234
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.5387891235426439
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.45325643624502454
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 2.4699124667433088
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.5170293928667344
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 10.901816298221323
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 11.57933470255231
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 25.61066617034853
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 12.012586066449378
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 15.291832764236775
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 19.531155171699034
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 14.258491838270983
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.026214646826791713
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 806.2520664776276
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 14.890463992377411
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 4.804124977873642
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 3.8514901885996813
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 8.833276622791564
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 11.62773524730253
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.7534313613295387
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 0.019189592724328297
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@-10",
+      "wall_overlap_mm3": 78.17498589745806
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 21.67010145917803
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 22.175238561630714
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 4.660422266832409
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 4.682605035978357
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 11.945555789826432
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 96.95384489218793
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 19.152622645157507
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 13.323755592964396
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 20.467885479058218
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 16.343480567496723
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.5357271451283656
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.4503490314049113
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 2.463286666982457
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.5102180192072182
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 10.919448628366268
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 11.572959881036233
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 19.817726182267215
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.3914299431979206
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 3.6373366927245323
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 14.795304183220017
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 13.461209523511721
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.1301377442754287
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 1.410882210760561
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 3.0383602682471818
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 896.4540845839674
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 0.44372758295865555
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 4.873487333701494
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 7.951413922956188
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 11.967793381074165
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 12.131111820101047
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 2.2218145720429288
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 1.2008328980903586
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@-5",
+      "wall_overlap_mm3": 51.696110727871044
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 21.68142992181416
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 22.185492961881582
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 4.663368968021973
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 4.685271436080592
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 11.951287285439154
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 96.67909109998445
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 19.16307489272191
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 13.328209180014213
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 20.449948036561526
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 16.316916575015018
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.529514959054531
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.4444857387623845
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 2.4467739421594903
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.4969718897893445
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 10.877746774452874
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 11.555323139202716
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.08862368871030245
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 1.2945585526079708
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 2.8968903870343086
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 20.064168541638608
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.49181523269765687
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 3.7579396374852037
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 14.910619519435173
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 13.513643088744962
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 866.8302142885213
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 0.46559376856296913
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 4.712301807389361
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 7.61623579436683
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 8.877215212270968
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 4.823760382571424
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 4.78723149675629
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 8.29059395412329
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@5",
+      "wall_overlap_mm3": 89.14015548358114
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 21.6875913997262
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 22.192376604963684
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 4.664308433769243
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 4.686396595194102
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 11.954246537767403
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 96.54020334662819
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 19.397006423247188
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 13.331218749784462
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 20.441112632281463
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 16.303177228706147
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 0.5264428311514682
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 0.4415774901812107
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 2.437067326391691
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 0.4904591640014033
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 10.817431374481608
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 11.544336050587964
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 0.01406901021850954
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 25.631286489464504
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 12.368891550814599
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 15.617120990426374
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 19.56277647202012
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 14.241796497121728
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 765.7827157768181
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 14.452478122555464
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 3.344972965161571
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 3.9347405793850507
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 5.578509269425722
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 1.00934813555931
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 4.798447049863786
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 8.873144172776348
+    },
+    {
+      "obstacle_owner": "j:foot_l:C02",
+      "members": [
+        "foot_l/C02_magnet_nut_-6.1"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 0.060746319327732
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@10",
+      "wall_overlap_mm3": 168.73615225829047
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 21.69457028337577
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 22.198160393411737
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 4.666338528786834
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_spring_2"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 4.688123000004711
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 11.958165579599598
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 96.41188632554028
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_nut"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 19.49625139465527
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_-1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 13.332020617868817
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 20.43047154214233
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 16.290884602946793
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 0.5236838909875932
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 0.43903486209890713
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 2.429729891670534
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 0.484037577183692
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 10.732797289592861
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C01_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 11.534617360630307
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_inner_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 24.043859040711432
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_outer_M4_wide"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 25.42232790128314
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_spring_1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 2.2309094944437002
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_spring_2"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 1.571195089882363
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_front_M4_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 3.7142674366252257
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 43.44178229136971
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_nut"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 18.510429841008982
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_+1_M3_reaction_washer"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 13.125434375692487
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C14"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 685.155299326704
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C15"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 51.36290120439531
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 1.8558006367478157
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 1.1525527679138126
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_2"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 4.776391387369864
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_3"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 0.005630942776493815
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_screw_4"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 4.774439357728909
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/ring_nut_4"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 7.683007042100999
+    },
+    {
+      "obstacle_owner": "j:foot_l:C02",
+      "members": [
+        "foot_l/C02_magnet_nut_-6.1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 8.095616862821608
+    },
+    {
+      "obstacle_owner": "j:foot_l:C02",
+      "members": [
+        "foot_l/C02_magnet_screw_-6.1"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 2.6500645104307496
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_pcb_clip_screw"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 5.345998262666623
+    },
+    {
+      "obstacle_owner": "j:foot_l:ring",
+      "members": [
+        "foot_l/C02_pcb_clip_nut"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 11.279156279596286
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.roll@15",
+      "wall_overlap_mm3": 198.71143269473535
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@-25",
+      "wall_overlap_mm3": 46.914508579162124
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@-20",
+      "wall_overlap_mm3": 46.94770188691207
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@-15",
+      "wall_overlap_mm3": 46.98168700301063
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@-10",
+      "wall_overlap_mm3": 47.01621846057219
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@-5",
+      "wall_overlap_mm3": 47.05101622915523
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@5",
+      "wall_overlap_mm3": 47.12037767491222
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@10",
+      "wall_overlap_mm3": 47.15441245411493
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@15",
+      "wall_overlap_mm3": 47.18766514598639
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@20",
+      "wall_overlap_mm3": 47.21988796268289
+    },
+    {
+      "obstacle_owner": "f:calf_l",
+      "members": [
+        "frame/calf_l"
+      ],
+      "pose": "foot_l.pitch@25",
+      "wall_overlap_mm3": 47.25085506226358
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@5",
+      "wall_overlap_mm3": 70.51099551481283
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@5",
+      "wall_overlap_mm3": 16.521253044141243
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@10",
+      "wall_overlap_mm3": 70.52284068079645
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@10",
+      "wall_overlap_mm3": 16.5250830161092
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@15",
+      "wall_overlap_mm3": 70.52740534107619
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@15",
+      "wall_overlap_mm3": 16.525880715845673
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@20",
+      "wall_overlap_mm3": 70.52040936501449
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@20",
+      "wall_overlap_mm3": 16.523089789571596
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@25",
+      "wall_overlap_mm3": 70.5171462700758
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@25",
+      "wall_overlap_mm3": 16.522430947652435
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@30",
+      "wall_overlap_mm3": 70.5064629988603
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@30",
+      "wall_overlap_mm3": 16.51869651627214
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@35",
+      "wall_overlap_mm3": 70.48455368916643
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@35",
+      "wall_overlap_mm3": 16.511508704386987
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@40",
+      "wall_overlap_mm3": 70.46666269739418
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@40",
+      "wall_overlap_mm3": 16.50652916169856
+    },
+    {
+      "obstacle_owner": "f:ball_l",
+      "members": [
+        "frame/ball_l"
+      ],
+      "pose": "ball_l.flex.toe@45",
+      "wall_overlap_mm3": 70.4415487376436
+    },
+    {
+      "obstacle_owner": "j:ball_l.flex:child",
+      "members": [
+        "ball_l.flex/magnet_cartridge"
+      ],
+      "pose": "ball_l.flex.toe@45",
+      "wall_overlap_mm3": 16.498524368745343
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "validated_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "validated_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "collar_clocking_reuse": {
+    "body_frame_maximum_error": 8.526512829121202e-14,
+    "own_keeper_unchanged": true,
+    "note": "Only two native collar modules and their three structural lands move. Unchanged carriers require final actual-solid collision checks with those neighbours."
+  },
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

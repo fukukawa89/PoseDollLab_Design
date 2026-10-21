@@ -1,0 +1,109 @@
+{
+  "status": "IDEAL_MODEL_EXPERIMENT_ONLY",
+  "roundtrip_cases": 189,
+  "matrix_derived_field_roundtrip_max_error_deg": 2.1316282072803006e-14,
+  "ambiguity_counterexamples": [
+    {
+      "name": "joystick_fold_85_95",
+      "pose_a_deg": [
+        0,
+        85
+      ],
+      "pose_b_deg": [
+        0,
+        95
+      ],
+      "observed_a": [
+        9.924985039227318,
+        90.0
+      ],
+      "observed_b": [
+        9.924985039227318,
+        90.0
+      ],
+      "difference_norm": 0.0
+    },
+    {
+      "name": "ring_magnet_loses_alpha",
+      "pose_a_deg": [
+        0,
+        25
+      ],
+      "pose_b_deg": [
+        40,
+        25
+      ],
+      "observed_a": [
+        0.4226182617406995,
+        0.0,
+        1.8126155740732997
+      ],
+      "observed_b": [
+        0.4226182617406994,
+        1.1102230246251565e-16,
+        1.8126155740732992
+      ],
+      "difference_norm": 4.710277376051325e-16
+    },
+    {
+      "name": "alpha90_loses_beta",
+      "pose_a_deg": [
+        90,
+        0
+      ],
+      "pose_b_deg": [
+        90,
+        60
+      ],
+      "observed_a": [
+        0.0,
+        -1.0,
+        2.220446049250313e-16
+      ],
+      "observed_b": [
+        9.614813431917818e-17,
+        -1.0,
+        1.110223024625157e-16
+      ],
+      "difference_norm": 1.468687011488051e-16
+    },
+    {
+      "name": "out_of_domain_alias",
+      "pose_a_deg": [
+        100,
+        0
+      ],
+      "pose_b_deg": [
+        80,
+        180
+      ],
+      "observed_a": [
+        0.0,
+        -0.984807753012208,
+        -0.3472963553338605
+      ],
+      "observed_b": [
+        2.1265768495757738e-17,
+        -0.984807753012208,
+        -0.3472963553338608
+      ],
+      "difference_norm": 2.783692344444777e-16
+    }
+  ],
+  "invalid_field_cases_rejected": 2,
+  "decision": "Preserve raw signed X/Y/Z for a central 2-axis sensor trial; do not reuse legacy folded joystick-angle outputs as joint angles across 90 degrees. Magnet must span both bend joints. Physical alpha stops / verified workspace and calibrated sensor model are required; software cannot distinguish every out-of-domain alias.",
+  "prerequisites": [
+    "Finite magnet size and gap/off-axis calibration",
+    "IMC Z sensitivity correction and board orientation",
+    "CRC/marker/diagnostic/rolling-counter/fresh acquisition validation",
+    "Actual magnetic interference and repeatability measurements"
+  ],
+  "source_url": "https://media.melexis.com/-/media/files/documents/datasheets/mlx90363-datasheet-melexis.pdf",
+  "datasheet_sections": [
+    "13.4.1",
+    "16.2",
+    "18.2"
+  ],
+  "scope": "Dimensionless point-dipole model, perfect centering and corrected vector gains; no achieved physical angular accuracy. No production driver or UE capture contract changed.",
+  "physical_tested": false
+}

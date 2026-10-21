@@ -1,0 +1,140 @@
+{
+  "id": "O23H-S21",
+  "key": "frame/upperarm_r",
+  "stl_sha256": "ff651a36d2b891215ccde3a2f20a63ea677f195231502e959a9ef33cf38e5003",
+  "source": {
+    "key": "frame/upperarm_r",
+    "export_version": "O23H-export-1",
+    "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+    "source_mesh_sha256": "6659778ee4dceaad613af61445598593759ae33c0978ffcc8ad72e1b0919bdc3",
+    "source": {
+      "vertices": 23799,
+      "triangles": 47630,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 5,
+      "duplicate_faces": 0,
+      "volume_mm3": 15919.03653643601
+    },
+    "attempts": [
+      {
+        "before_cleanup": {
+          "vertices": 23787,
+          "triangles": 47630,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 23,
+          "degenerate_faces": 12,
+          "duplicate_faces": 7,
+          "volume_mm3": 15919.036683921784
+        },
+        "removed_opposed_face_pairs": 6,
+        "quantization_max_vertex_displacement_mm": 3.9232881734221015e-06,
+        "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+        "removed_closed_flat_membranes": [],
+        "after_membrane_cleanup": {
+          "vertices": 23787,
+          "triangles": 47606,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 15919.036683921782
+        },
+        "simplify_tolerance_mm": 0,
+        "after_cleanup": {
+          "vertices": 23787,
+          "triangles": 47606,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 15919.036683921782
+        }
+      }
+    ],
+    "case_rebuild": null,
+    "simplify_tolerance_mm": 0,
+    "surface_displacement_bound_mm": 3.9232881734221015e-06,
+    "exported": {
+      "vertices": 23787,
+      "triangles": 47606,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 15919.036683921782
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "mesh_cache_sha256": "bb27ac970b93e9510016a1beef10394c3402de12b9a186003aad57188cf1529b",
+    "id": "O23H-S21",
+    "staged_stl": "export/stl/O23H-S21_upperarm_r.stl",
+    "stl_sha256": "ff651a36d2b891215ccde3a2f20a63ea677f195231502e959a9ef33cf38e5003"
+  },
+  "candidates": [
+    {
+      "matrix": [
+        [
+          -0.9396926207859083,
+          0.3420201433256688,
+          0.0,
+          89.59705908229924
+        ],
+        [
+          0.3420201433256688,
+          0.9396926207859083,
+          0.0,
+          95.66063966387986
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -25.7995548248291
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        44.60873841380481,
+        44.291916908566805,
+        88.47814750671387
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1297.4009208272803,
+        "overhang_projection_volume_proxy_mm3": 60766.68617617873,
+        "bed_contact_projection_mm2": 186.47051990457405,
+        "max_rod_angle_to_bed_deg": 86.20509791296094,
+        "rod_verticality": 0.5472683095066603
+      },
+      "name": "revised_connections",
+      "support": "snug",
+      "protect_voids": true,
+      "blocker_margin_mm": 1.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0"
+      },
+      "guard_revision": 5,
+      "enforce_source": "print/support_sources/O23H-S21/enforce_source.json"
+    }
+  ],
+  "previous_G_source_sha256": "f985a5c7f9a8dabbb21561885579f9b24f76e6fde434c1d73aa09480cf679055"
+}

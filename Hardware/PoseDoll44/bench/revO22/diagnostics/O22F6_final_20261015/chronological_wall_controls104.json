@@ -1,0 +1,47 @@
+{
+  "all_controls_passed": true,
+  "cases": [
+    {
+      "case": "earlier_rooted",
+      "expected_residual_mm": 0,
+      "actual_residual_mm": 0
+    },
+    {
+      "case": "later_rejected",
+      "expected_residual_mm": 2,
+      "actual_residual_mm": 2.0
+    },
+    {
+      "case": "unrooted_rejected",
+      "expected_residual_mm": 2,
+      "actual_residual_mm": 2.0
+    },
+    {
+      "case": "recursive_chain_rejected",
+      "expected_residual_mm": 2,
+      "actual_residual_mm": 2.0
+    },
+    {
+      "case": "insufficient_overlap_rejected",
+      "expected_residual_mm": 2,
+      "actual_residual_mm": 2.0
+    },
+    {
+      "case": "partial_contact_gap_0.9",
+      "expected_critical": false,
+      "actual_critical": false,
+      "residual_mm": [
+        0.5648079650623998
+      ]
+    },
+    {
+      "case": "partial_contact_gap_2.0",
+      "expected_critical": true,
+      "actual_critical": true,
+      "residual_mm": [
+        1.6648079650623995
+      ]
+    }
+  ],
+  "scope": "Only earlier wall pieces whose centerlines lie 0.03 mm inside actual preceding-layer extrusion count; require 0.025 mm lateral bead overlap. Split residual gaps keep the preexisting 1 mm unanchored threshold."
+}

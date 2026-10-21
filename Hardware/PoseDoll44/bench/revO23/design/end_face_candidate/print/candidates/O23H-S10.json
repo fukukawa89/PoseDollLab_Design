@@ -1,0 +1,298 @@
+{
+  "id": "O23H-S10",
+  "key": "frame/clavicle_l",
+  "stl_sha256": "8dbac8735960ba275684164df2ad9a6f124fcb4ad1ac465b1c6ea207dfbd9349",
+  "source": {
+    "key": "frame/clavicle_l",
+    "export_version": "O23H-export-1",
+    "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+    "source_mesh_sha256": "d52c6b2bab2737f40763d96946266c2dc2d05a361ed55b0f0f6dc33dbcf75449",
+    "source": {
+      "vertices": 34557,
+      "triangles": 69162,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 5,
+      "duplicate_faces": 0,
+      "volume_mm3": 11652.251759616442
+    },
+    "attempts": [
+      {
+        "before_cleanup": {
+          "vertices": 34361,
+          "triangles": 69162,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 326,
+          "degenerate_faces": 340,
+          "duplicate_faces": 36,
+          "volume_mm3": 11652.251646017277
+        },
+        "removed_opposed_face_pairs": 36,
+        "quantization_max_vertex_displacement_mm": 4.303928282193502e-06,
+        "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+        "removed_closed_flat_membranes": [
+          {
+            "faces": 4,
+            "absolute_volume_mm3": 1.5151074839181433e-13,
+            "thickness_mm": 1.3741249003140527e-07
+          }
+        ],
+        "after_membrane_cleanup": {
+          "vertices": 34349,
+          "triangles": 68746,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 11652.251646017276
+        },
+        "simplify_tolerance_mm": 0,
+        "after_cleanup": {
+          "vertices": 34349,
+          "triangles": 68746,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 11652.251646017276
+        }
+      }
+    ],
+    "case_rebuild": null,
+    "simplify_tolerance_mm": 0,
+    "surface_displacement_bound_mm": 4.303928282193502e-06,
+    "exported": {
+      "vertices": 34349,
+      "triangles": 68746,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 11652.251646017276
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "mesh_cache_sha256": "3ece6bea3c3de5c3b7ac30b6816fb95a8a99a61ce4d555e2ec1b2d0d151be48a",
+    "id": "O23H-S10",
+    "staged_stl": "export/stl/O23H-S10_clavicle_l.stl",
+    "stl_sha256": "8dbac8735960ba275684164df2ad9a6f124fcb4ad1ac465b1c6ea207dfbd9349"
+  },
+  "candidates": [
+    {
+      "name": "endface_caps78",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.07139380484326968,
+          0.9880657924379809,
+          -0.13648778129893666,
+          39.684957460415774
+        ],
+        [
+          0.8160349234517087,
+          0.1365467171820522,
+          0.5616422328617829,
+          68.92829780989678
+        ],
+        [
+          0.5735764363510462,
+          -0.07128102019969895,
+          -0.8160447829758639,
+          46.09871495562623
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        91.16220355180062,
+        87.48883203916571,
+        66.3084226756822
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1171.0311830282974,
+        "overhang_projection_volume_proxy_mm3": 27426.046817576782,
+        "bed_contact_projection_mm2": 0.15427575001513227,
+        "max_rod_angle_to_bed_deg": 59.63599041071956,
+        "rod_verticality": 0.19957211927928833
+      },
+      "protect_voids": true,
+      "guard_revision": 5,
+      "blocker_margin_mm": 2.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "support_expansion": "0",
+        "support_object_xy_distance": "0.6",
+        "brim_width": "6",
+        "support_top_z_distance": ".2",
+        "support_bottom_z_distance": ".2",
+        "support_angle": "45",
+        "support_interface_spacing": "0.15"
+      },
+      "enforce_source": "print/support_sources/O23H-S10/enforce_source.json",
+      "shield_enforcers": true,
+      "manual_caps": "print/candidates/O23H-S10_endface_caps78.npz",
+      "cap_design": [
+        {
+          "target": {
+            "z_mm": 13.479999542236328,
+            "area_mm2": 0.153188151358278,
+            "bounds_mm": [
+              122.84059999883175,
+              67.02359999716282,
+              123.30340000241995,
+              67.47039999812841
+            ],
+            "support_contact_mm2": 0.0,
+            "previous_solid_bbox_coverage": 0.34468328298023304,
+            "inside_previous_solid_geometry": false,
+            "previous_solid_section_z_mm": 13.239999771118164
+          },
+          "patch_count": 1,
+          "volume_mm3": 0.5842796506547676
+        }
+      ],
+      "cap_bead_clearance_adjustments": [
+        {
+          "cap": 1,
+          "z": 23.079999923706055,
+          "old_bead_xy_gap_mm": 0.0,
+          "cut_top_mm": 22.979999923706057
+        }
+      ],
+      "actual_bead_trim": [
+        {
+          "cap": 1,
+          "cap_z": 22.760000228881836,
+          "body_z": 22.920000076293945,
+          "old_gap_mm": 0.06877825402765672
+        },
+        {
+          "cap": 2,
+          "cap_z": 1.0,
+          "body_z": 1.3200000524520874,
+          "old_gap_mm": 0.16000008583068848
+        }
+      ]
+    },
+    {
+      "name": "revised_connections",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.07139380484326968,
+          0.9880657924379809,
+          -0.13648778129893666,
+          39.684957460415774
+        ],
+        [
+          0.8160349234517087,
+          0.1365467171820522,
+          0.5616422328617829,
+          68.92829780989678
+        ],
+        [
+          0.5735764363510462,
+          -0.07128102019969895,
+          -0.8160447829758639,
+          46.09871495562623
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        91.16220355180062,
+        87.48883203916571,
+        66.3084226756822
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1171.0311830282974,
+        "overhang_projection_volume_proxy_mm3": 27426.046817576782,
+        "bed_contact_projection_mm2": 0.15427575001513227,
+        "max_rod_angle_to_bed_deg": 59.63599041071956,
+        "rod_verticality": 0.19957211927928833
+      },
+      "protect_voids": true,
+      "guard_revision": 5,
+      "blocker_margin_mm": 2.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "support_expansion": "0",
+        "support_object_xy_distance": "0.6",
+        "brim_width": "6",
+        "support_top_z_distance": ".2",
+        "support_bottom_z_distance": ".2",
+        "support_angle": "45",
+        "support_interface_spacing": "0.15"
+      },
+      "enforce_source": "print/support_sources/O23H-S10/enforce_source.json",
+      "shield_enforcers": true,
+      "manual_caps": "print/support_sources/O23H-S10/manual_caps.npz",
+      "cap_design": [
+        {
+          "target": {
+            "z_mm": 23.399999618530273,
+            "area_mm2": 0.9358558662437924,
+            "bounds_mm": [
+              128.9481000006199,
+              48.726099997758865,
+              130.89639999717474,
+              50.644400000572205
+            ],
+            "support_contact_mm2": 0.0,
+            "previous_solid_bbox_coverage": 0.09850958036328587,
+            "inside_previous_solid_geometry": false,
+            "previous_solid_section_z_mm": 23.15999984741211
+          },
+          "patch_count": 1,
+          "volume_mm3": 1.3389053168836045
+        }
+      ],
+      "cap_bead_clearance_adjustments": [
+        {
+          "cap": 1,
+          "z": 23.079999923706055,
+          "old_bead_xy_gap_mm": 0.0,
+          "cut_top_mm": 22.979999923706057
+        }
+      ],
+      "actual_bead_trim": [
+        {
+          "cap": 1,
+          "cap_z": 22.760000228881836,
+          "body_z": 22.920000076293945,
+          "old_gap_mm": 0.06877825402765672
+        },
+        {
+          "cap": 2,
+          "cap_z": 1.0,
+          "body_z": 1.3200000524520874,
+          "old_gap_mm": 0.16000008583068848
+        }
+      ]
+    }
+  ],
+  "previous_G_source_sha256": "3fe598f3ab810c019e50b7e85ec184ebe934d64b2a3d6977af051f164dba53d5"
+}

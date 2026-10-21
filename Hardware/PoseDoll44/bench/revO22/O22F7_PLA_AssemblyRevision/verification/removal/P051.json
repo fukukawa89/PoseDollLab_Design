@@ -1,0 +1,214 @@
+{
+  "npz_sha256": "30aa5681d4156d45473892be29298cd830125a64c8979493f94be1d217736f05",
+  "passed": true,
+  "affected_groups": [
+    {
+      "group": "S05",
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "new_connector_numbers": [
+        1,
+        2
+      ],
+      "body_sweep_overlap_mm3": 0.0,
+      "remaining_fin_sweep_overlap_mm3": 0.0,
+      "relative_order_of_unjoined_groups_retained": true
+    }
+  ],
+  "connections": [
+    {
+      "connector": 1,
+      "group": "S05",
+      "record": {
+        "native_issue": {
+          "z_mm": 6.199999809265137,
+          "feature": "Inner wall / Overhang wall",
+          "length_mm": 1.9692685179830867,
+          "anchors": 1,
+          "xy_mm": [
+            [
+              124.78790604364538,
+              82.32012460812997
+            ],
+            [
+              124.65699768066406,
+              82.02200317382812
+            ],
+            [
+              124.5250015258789,
+              81.5979995727539
+            ],
+            [
+              125.36299896240234,
+              81.33699798583984
+            ],
+            [
+              125.44599914550781,
+              81.46199798583984
+            ],
+            [
+              125.59300231933594,
+              81.5510025024414
+            ]
+          ],
+          "bounds_mm": [
+            124.5250015258789,
+            81.33699798583984,
+            125.59300231933594,
+            82.32012460812997
+          ],
+          "inside_previous_solid_geometry": false,
+          "classification": "critical_external_run",
+          "parent_free_run_length_mm": 1.9692685179830867,
+          "prior_length_mm": 1.9692685179830867,
+          "lateral_contact_screen_applied": true
+        },
+        "root": [
+          18.9,
+          15.6,
+          1.625989
+        ],
+        "tip": [
+          21.638972815996823,
+          13.998292893909365,
+          6.399999809265137
+        ],
+        "target": [
+          21.638972815996823,
+          13.998292893909365,
+          6.010445106383441
+        ],
+        "neck_xy_mm": [
+          0.8,
+          0.8
+        ],
+        "cut_z_mm": 4.810445106383441,
+        "body_overlap_mm3": 0.2372261457484215,
+        "fin_overlap_mm3": 0.17920002778533894,
+        "removal_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "new_bed_fin": false,
+        "added_contact_in_guard_mm3": 0.0,
+        "continuous_cut_stub_exit_clear": true
+      }
+    },
+    {
+      "connector": 2,
+      "group": "S05",
+      "record": {
+        "native_issue": {
+          "z_mm": 6.199999809265137,
+          "feature": "Inner wall / Overhang wall",
+          "length_mm": 1.9692685179830867,
+          "anchors": 1,
+          "xy_mm": [
+            [
+              124.78790604364538,
+              82.32012460812997
+            ],
+            [
+              124.65699768066406,
+              82.02200317382812
+            ],
+            [
+              124.5250015258789,
+              81.5979995727539
+            ],
+            [
+              125.36299896240234,
+              81.33699798583984
+            ],
+            [
+              125.44599914550781,
+              81.46199798583984
+            ],
+            [
+              125.59300231933594,
+              81.5510025024414
+            ]
+          ],
+          "bounds_mm": [
+            124.5250015258789,
+            81.33699798583984,
+            125.59300231933594,
+            82.32012460812997
+          ],
+          "inside_previous_solid_geometry": false,
+          "classification": "critical_external_run",
+          "parent_free_run_length_mm": 1.9692685179830867,
+          "prior_length_mm": 1.9692685179830867,
+          "lateral_contact_screen_applied": true
+        },
+        "root": [
+          18.9,
+          15.6,
+          1.625989
+        ],
+        "tip": [
+          22.231816908546705,
+          13.523150983313982,
+          6.399999809265137
+        ],
+        "target": [
+          22.231816908546705,
+          13.523150983313982,
+          6.006870671116838
+        ],
+        "neck_xy_mm": [
+          0.8,
+          0.8
+        ],
+        "cut_z_mm": 4.806870671116838,
+        "body_overlap_mm3": 0.25306681451512264,
+        "fin_overlap_mm3": 0.17920002778533917,
+        "removal_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "new_bed_fin": false,
+        "added_contact_in_guard_mm3": 0.0,
+        "continuous_cut_stub_exit_clear": true
+      }
+    }
+  ],
+  "revised_removal_order": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S13",
+    "S12",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26",
+    "S27",
+    "S28"
+  ],
+  "simultaneous_groups": [],
+  "scope": "After cutting new teeth at recorded cut planes, remaining stubs withdraw with their fin in the recorded direction. Continuous swept-volume tests against permanent body and all later fin groups; any explicitly joined group is removed together. Clip all other old connection teeth and obstructing roots as in the original instructions. Fins without new stubs retain the exact-subset/new-elbow exclusion proof.",
+  "physical_removal_tested": false
+}

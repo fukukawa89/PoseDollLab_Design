@@ -1,11 +1,24 @@
 [CmdletBinding()]
-param([switch]$NoBrowser,[ValidateRange(1024,65535)][int]$Port=8874)
+param([switch]$NoBrowser,[ValidateRange(1024,65535)][int]$Port=8874,[ValidateSet('revO3','revO2','revO','revN')][string]$Revision='revO3',[ValidatePattern('^[A-Za-z0-9_-]+$')][string]$RunId)
 $ErrorActionPreference='Stop'
 $repoRoot=(Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $root=Join-Path $repoRoot 'Hardware/PoseDoll44'
-$page=Join-Path $root 'generated/revN/RevN_Chest_Review.html'
-$url="http://127.0.0.1:$Port/generated/revN/RevN_Chest_Review.html"
-foreach($asset in @($page,(Join-Path $root 'generated/revN/manny/meshes.bin'),(Join-Path $root 'generated/revN/quinn/meshes.bin'))){if(!(Test-Path -LiteralPath $asset)){throw "Local export missing: $asset. Git does not include large meshes; restore or generate them first."}}
+if($Revision -in @('revO3','revO2')){
+ if(!$RunId){
+  $latestPath=Join-Path $root "verification/$Revision/latest.json"
+  $latest=Get-Content -Raw -LiteralPath $latestPath | ConvertFrom-Json
+  if($latest.execution_status -ne 'PASS_EXECUTION_ONLY'){throw "Latest execution is incomplete. Use an explicitly reviewed -RunId or finish the run first."}
+  $RunId=$latest.run_id
+ }
+ $pageRel="generated/$Revision/runs/$RunId/review.html"
+ $assets=@((Join-Path $root $pageRel),(Join-Path $root "generated/$Revision/runs/$RunId/joint/mesh.json"),(Join-Path $root "generated/$Revision/runs/$RunId/packaging_scene.json"))
+}else{
+ $pageRel=if($Revision -eq 'revO'){'generated/revO/RevO_Design_Review.html'}else{'generated/revN/RevN_Chest_Review.html'}
+ $assets=if($Revision -eq 'revO'){@((Join-Path $root $pageRel),(Join-Path $root 'generated/revO/layout_data.json'),(Join-Path $root 'generated/revO/joints/M6/mesh.json'))}else{@((Join-Path $root $pageRel),(Join-Path $root 'generated/revN/manny/meshes.bin'),(Join-Path $root 'generated/revN/quinn/meshes.bin'))}
+}
+$page=Join-Path $root $pageRel
+$url="http://127.0.0.1:$Port/$pageRel"
+foreach($asset in $assets){if(!(Test-Path -LiteralPath $asset)){throw "Local export missing: $asset. Git does not include large meshes; restore or generate them first."}}
 $expected=[IO.File]::ReadAllBytes($page)
 function Test-Viewer{
  $client=New-Object System.Net.WebClient

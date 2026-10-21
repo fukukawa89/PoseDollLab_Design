@@ -1,0 +1,471 @@
+diff --git a/Docs/PDS1_PROTOCOL.md b/Docs/PDS1_PROTOCOL.md
+index af30e79..a80bede 100644
+--- a/Docs/PDS1_PROTOCOL.md
++++ b/Docs/PDS1_PROTOCOL.md
+@@ -24,3 +24,9 @@ To avoid assuming clock synchronization, UE bounds final age by:
+ This is conservative because request transport time is included. Reject an interval whose source end lies >5ms beyond elapsed UE time. Device clock rate accuracy and trustworthy source timestamp placement remain hardware obligations.
+ 
+ PDR4, the candidate satellite byte codec, is distinct. Its request/response sizes are 68/80 bytes. Host C and Python crosschecks do not implement the gateway CAN coordinator, join challenge or STM32 drivers. Boot/reset/retry/power behavior must be qualified before hardware deployment.
++
++## O5 bounded retired transaction routing
++
++Transport validates the full envelope, identity and message schema before dispatching by capture ID. A known cancelled/completed capture is retired for at most 30 seconds in a FIFO of at most 32 IDs. Valid late replies for those IDs are counted and dropped before the active stability window. Unknown, expired or evicted IDs remain errors. Invalid CRC/status/boot/profile data remains an error even when its capture ID was retired. Repeated cancel/ack does not extend retirement; reconnect clears it.
++
++This changes routing, not the PDS1/1 wire format or stability/age thresholds. See `O5_RECOVERY.zh-CN.md` for executed tests. The design repository's O5 bridge uses a separate PDG5/1 request-driven serial format; legacy PD41 cached samples are not eligible PDS1 static measurements.
+diff --git a/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStatic.cpp b/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStatic.cpp
+index 873340a..bd2588e 100644
+--- a/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStatic.cpp
++++ b/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStatic.cpp
+@@ -63,6 +63,41 @@ bool DecodeAbsolute(const FProfile& P,const FStaticMessage& M,TArray<double>& Q,
+     FProfile StaticProfile=P;StaticProfile.CapabilityId=TEXT("pds1_full41_root3");StaticProfile.FixedAxes.Reset();for(int32 I=0;I<3;++I)StaticProfile.FixedAxes.Add(I,0);
+     FDecoder D;FIdentity ID;ID.Capability=StaticProfile.CapabilityId;return D.Decode(StaticProfile,ID,M.Sample,Q,E);
+ }
++void FStaticRouter::Reset()
++{
++    Active.Reset();
++    Retired.Reset();
++}
++void FStaticRouter::Prune(double Now)
++{
++    Retired.RemoveAll([Now](const FRetired& Item) { return Now >= Item.Expires; });
++}
++bool FStaticRouter::Begin(const FString& Id, double Now)
++{
++    Prune(Now);
++    if (Id.IsEmpty() || Id.Len() > 128 || Id == Active ||
++        Retired.ContainsByPredicate([&Id](const FRetired& Item) { return Item.Id == Id; })) return false;
++    const FString Previous = Active;
++    Retire(Previous, Now);
++    Active = Id;
++    return true;
++}
++void FStaticRouter::Retire(const FString& Id, double Now)
++{
++    Prune(Now);
++    if (Id.IsEmpty() || Id != Active) return; // Repeated cancel/ack cannot extend lifetime.
++    if (Retired.Num() == MaxRetired) Retired.RemoveAt(0);
++    Retired.Add({Id, Now + RetiredSeconds});
++    Active.Reset();
++}
++EStaticRoute FStaticRouter::Route(const FString& Id, double Now)
++{
++    Prune(Now);
++    if (!Active.IsEmpty() && Id == Active) return EStaticRoute::Active;
++    if (Retired.ContainsByPredicate([&Id](const FRetired& Item) { return Item.Id == Id; }))
++        return EStaticRoute::Retired;
++    return EStaticRoute::Unexpected;
++}
+ void FStaticWindow::Begin(const FString& Id,double Wall)
+ {*this=FStaticWindow();CaptureId=Id;Started=Wall;State=TEXT("Requested");}
+ void FStaticWindow::Cancel(){Window.Reset();Angles.Reset();State=TEXT("Cancelled");}
+diff --git a/Plugins/PoseDoll/Source/PoseDollCore/Public/PoseDollStatic.h b/Plugins/PoseDoll/Source/PoseDollCore/Public/PoseDollStatic.h
+index e103a6e..29abd5c 100644
+--- a/Plugins/PoseDoll/Source/PoseDollCore/Public/PoseDollStatic.h
++++ b/Plugins/PoseDoll/Source/PoseDollCore/Public/PoseDollStatic.h
+@@ -24,6 +24,24 @@ POSEDOLLCORE_API bool StaticHello(const FProfile& Profile,const FJsonObject& Pay
+ POSEDOLLCORE_API bool ParseStatic(const FProfile& Profile,const FStaticIdentity& Identity,const FJsonObject& Payload,FStaticMessage& Message,FString& Error);
+ POSEDOLLCORE_API TSharedRef<FJsonObject> StaticCommand(const FProfile& Profile,const FStaticIdentity& Identity,const FString& CaptureId,const FString& Type);
+ POSEDOLLCORE_API bool DecodeAbsolute(const FProfile& Profile,const FStaticMessage& Message,TArray<double>& Angles,FString& Error);
++// Used only after CRC, schema and session identity validation. Reset on reconnect.
++enum class EStaticRoute { Active, Retired, Unexpected };
++class POSEDOLLCORE_API FStaticRouter
++{
++public:
++    static constexpr int32 MaxRetired = 32;
++    static constexpr double RetiredSeconds = 30.0;
++    void Reset();
++    bool Begin(const FString& Id, double Now);
++    void Retire(const FString& Id, double Now);
++    EStaticRoute Route(const FString& Id, double Now);
++    int32 RetiredCount() const { return Retired.Num(); }
++private:
++    struct FRetired { FString Id; double Expires; };
++    void Prune(double Now);
++    FString Active;
++    TArray<FRetired> Retired;
++};
+ class POSEDOLLCORE_API FStaticWindow
+ {
+ public:
+diff --git a/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollSession.cpp b/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollSession.cpp
+index ae32498..4daec44 100644
+--- a/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollSession.cpp
++++ b/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollSession.cpp
+@@ -382,7 +382,7 @@ FString FSession::StatusJson() const
+     auto P95=[](TArray<double> Values){Values.Sort();return Values.Num()?Values[FMath::Min(Values.Num()-1,FMath::FloorToInt(Values.Num()*.95))]:0;};
+     O->SetNumberField(TEXT("processing_p95_ms"),P95(ProcessingTimes));O->SetNumberField(TEXT("receive_to_apply_p95_ms"),P95(ReceiveLatency));
+     O->SetNumberField(TEXT("preview_frames"),PreviewFrames);O->SetNumberField(TEXT("main_thread_with_preview_p95_ms"),P95(MainThreadTimes));O->SetNumberField(TEXT("receive_to_preview_p95_ms"),P95(PreviewLatency));
+-    if (Input) {const auto S=Input->Snapshot();O->SetNumberField(TEXT("received"),S.Received);O->SetNumberField(TEXT("rejected"),S.Rejected);O->SetStringField(TEXT("session"),S.Identity.Session);O->SetBoolField(TEXT("static_source"),S.bStatic);}
++    if (Input) {const auto S=Input->Snapshot();O->SetNumberField(TEXT("received"),S.Received);O->SetNumberField(TEXT("rejected"),S.Rejected);O->SetNumberField(TEXT("retired_replies"),S.RetiredReplies);O->SetStringField(TEXT("session"),S.Identity.Session);O->SetBoolField(TEXT("static_source"),S.bStatic);}
+     return JsonString(O);
+ }
+ void FSession::RecordPreview(double DurationMs)
+diff --git a/Plugins/PoseDoll/Source/PoseDollTransport/Private/PoseDollTransport.cpp b/Plugins/PoseDoll/Source/PoseDollTransport/Private/PoseDollTransport.cpp
+index 48a2c8f..85d46b8 100644
+--- a/Plugins/PoseDoll/Source/PoseDollTransport/Private/PoseDollTransport.cpp
++++ b/Plugins/PoseDoll/Source/PoseDollTransport/Private/PoseDollTransport.cpp
+@@ -51,7 +51,14 @@ bool FTcpSource::StaticRequest(const FString& CaptureId,const FString& Type)
+ {
+     FScopeLock Guard(&Mutex);
+     if(!State.bConnected||!State.bStatic||Commands.Num()>=8)return false;
+-    if(Type==TEXT("request"))StaticMessages.Reset();
++    const double Now=FPlatformTime::Seconds();
++    if(Type==TEXT("request"))
++    {
++        if(!StaticRouter.Begin(CaptureId,Now))return false;
++        StaticMessages.Reset();
++    }
++    else if(Type==TEXT("cancel")||Type==TEXT("ack"))StaticRouter.Retire(CaptureId,Now);
++    else return false;
+     Commands.Add(StaticEnvelope(StaticCommand(Profile,State.StaticIdentity,CaptureId,Type)));return true;
+ }
+ TArray<FStaticMessage> FTcpSource::DrainStatic()
+@@ -62,7 +69,7 @@ uint32 FTcpSource::Run()
+     ISocketSubsystem* Subsystem=ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM);
+     while (!bStop)
+     {
+-        {FScopeLock Guard(&Mutex);State.State=TEXT("Connecting");State.bConnected=false;State.bHasSample=false;State.bStatic=false;Commands.Reset();StaticMessages.Reset();}
++        {FScopeLock Guard(&Mutex);State.State=TEXT("Connecting");State.bConnected=false;State.bHasSample=false;State.bStatic=false;Commands.Reset();StaticMessages.Reset();StaticRouter.Reset();}
+         FSocket* Socket=Subsystem->CreateSocket(NAME_Stream,TEXT("PoseDoll loopback"),false);
+         if (!Socket) {SetError(TEXT("Socket creation failed"));return 1;}
+         Socket->SetNonBlocking(true);Socket->SetNoDelay(true);
+@@ -128,7 +135,12 @@ uint32 FTcpSource::Run()
+                     TSharedPtr<FJsonObject> Payload;FStaticMessage M;
+                     if(!UnwrapStatic(*Object,Payload,Error)||!ParseStatic(Profile,StaticID,*Payload,M,Error)){SetError(Error);Alive=false;break;}
+                     M.Sample.ReceivedSeconds=Now;
+-                    {FScopeLock Guard(&Mutex);if(StaticMessages.Num()>=32){State.Error=TEXT("PDS1 queue overflow; transaction invalidated");++State.Rejected;Alive=false;}
++                    // ParseStatic above rejects malformed or changed-identity retired packets too.
++                    {FScopeLock Guard(&Mutex);
++                    const EStaticRoute Route=StaticRouter.Route(M.CaptureId,Now);
++                    if(Route==EStaticRoute::Retired)++State.RetiredReplies;
++                    else if(Route==EStaticRoute::Unexpected){State.Error=TEXT("Unknown PDS1 capture ID");++State.Rejected;Alive=false;}
++                    else if(StaticMessages.Num()>=32){State.Error=TEXT("PDS1 queue overflow; transaction invalidated");++State.Rejected;Alive=false;}
+                     else{StaticMessages.Add(MoveTemp(M));++State.Received;}}
+                     if(!Alive)break;continue;
+                 }
+diff --git a/Plugins/PoseDoll/Source/PoseDollTransport/Public/PoseDollTransport.h b/Plugins/PoseDoll/Source/PoseDollTransport/Public/PoseDollTransport.h
+index 76828fe..db8ba69 100644
+--- a/Plugins/PoseDoll/Source/PoseDollTransport/Public/PoseDollTransport.h
++++ b/Plugins/PoseDoll/Source/PoseDollTransport/Public/PoseDollTransport.h
+@@ -14,7 +14,7 @@ struct FTransportSnapshot
+     FStaticIdentity StaticIdentity;
+     bool bStatic=false;
+     FSample Latest;
+-    uint64 Generation=0, Received=0, Rejected=0;
++    uint64 Generation=0, Received=0, Rejected=0, RetiredReplies=0;
+     bool bConnected=false, bHasSample=false;
+ };
+ 
+@@ -37,6 +37,7 @@ private:
+     TUniquePtr<FRunnableThread> Thread;
+     mutable FCriticalSection Mutex;
+     FTransportSnapshot State;
++    FStaticRouter StaticRouter;
+     TArray<TSharedRef<FJsonObject>> Commands;
+     TArray<FStaticMessage> StaticMessages;
+ };
+diff --git a/Tools/PoseDollSimulator/src/posedoll_sim/static_protocol.py b/Tools/PoseDollSimulator/src/posedoll_sim/static_protocol.py
+index 9da3393..81bff5e 100644
+--- a/Tools/PoseDollSimulator/src/posedoll_sim/static_protocol.py
++++ b/Tools/PoseDollSimulator/src/posedoll_sim/static_protocol.py
+@@ -59,6 +59,71 @@ def absolute(profile,raw,status):
+     return out
+ 
+ 
++def validate_reply(profile, h, p):
++    """Full wire validation precedes routing, including for retired transactions."""
++    if set(p) not in (ACK, SCAN) or any(p.get(k) != h[k] for k in IDENTITY):
++        raise ValueError('PDS1 identity/fields')
++    if type(p.get('capture_id')) is not str or not 1 <= len(p['capture_id']) <= 128 or p.get('source_boots') != h['source_boots']:
++        raise ValueError('PDS1 capture/boot')
++    req = uint64(p['request_start_us'])
++    if p['type'] == 'accepted' and set(p) == ACK:
++        return
++    if p['type'] != 'scan' or set(p) != SCAN:
++        raise ValueError('PDS1 reply type')
++    start, end, sid = (uint64(p[k]) for k in ('start_us', 'end_us', 'scan_id'))
++    duration = p['duration_us']
++    if not sid or type(duration) is not int or not 1 <= duration <= 2**32-1 or not req <= start < end or end-start != duration:
++        raise ValueError('PDS1 duration/range')
++    raw, status = p['raw_angles_rad'], p['axis_status']
++    if type(raw) is not list or type(status) is not list or len(raw) != 44 or len(status) != 44 or raw[:3] != [None]*3 or status[:3] != ['fixed']*3:
++        raise ValueError('PDS1 fixed root layout')
++    for i, aid in enumerate(profile.order[3:], 3):
++        if status[i] != 'valid' or type(raw[i]) not in (float, int) or not math.isfinite(raw[i]) or not 0 <= raw[i] < profile.cal[aid]['raw_period_rad']:
++            raise ValueError('PDS1 missing/fault/raw')
++
++
++class StaticRouter:
++    """Connection-local bounded retired IDs. Unknown IDs remain errors."""
++    MAX_RETIRED = 32
++    RETIRED_SECONDS = 30.0
++
++    def __init__(self, profile, h):
++        self.profile, self.hello = profile, h
++        self.active = None
++        self.retired = {}
++        self.dropped = 0
++
++    def _prune(self, now):
++        self.retired = {k:v for k,v in self.retired.items() if now < v}
++
++    def begin(self, capture, now):
++        self._prune(now)
++        if type(capture) is not str or not 1 <= len(capture) <= 128 or capture == self.active or capture in self.retired:
++            raise ValueError('PDS1 reused capture ID')
++        self.retire(self.active, now)
++        self.active = capture
++
++    def retire(self, capture, now):
++        self._prune(now)
++        if not capture or capture != self.active:
++            return
++        if len(self.retired) == self.MAX_RETIRED:
++            del self.retired[next(iter(self.retired))]
++        self.retired[capture] = now + self.RETIRED_SECONDS
++        self.active = None
++
++    def route(self, message, now):
++        p = unwrap(message)
++        validate_reply(self.profile, self.hello, p)
++        self._prune(now)
++        if p['capture_id'] == self.active:
++            return p
++        if p['capture_id'] in self.retired:
++            self.dropped += 1
++            return None
++        raise ValueError('Unknown PDS1 capture ID')
++
++
+ class StaticWindow:
+     """Independent oracle for C++ semantics; simulated source clocks must be explicit."""
+     def __init__(self,profile,hello,capture_id,wall_start):
+diff --git a/Docs/O5_RECOVERY.zh-CN.md b/Docs/O5_RECOVERY.zh-CN.md
+new file mode 100644
+--- /dev/null
++++ b/Docs/O5_RECOVERY.zh-CN.md
+@@ -0,0 +1,17 @@
++# O5 静态采集恢复
++
++本轮基于 UE `90e5104c63ea2b807ee2ea6e4cb63d21d8773687`。旧 O4 证据对应的 `608f3ea` 不被改写。用户已有的 `Config/DefaultEditor.ini` 改动保持原样。
++
++取消或完成后，旧 capture_id 的合法迟到 ACK/SCAN 由 Transport 的 `FStaticRouter` 丢弃，不送入新采集的稳定窗口。集合最多 32 个 ID，30 s 后过期；重复 cancel/ack 不续期；重连清空。过期、淘汰或未知 ID 仍严格拒绝。先进行帧 CRC、schema、profile/calibration、boot、状态解码，再按 ID 分流，因此坏旧包不会被无条件吞掉。
++
++新请求在同一互斥锁下注册活动 ID 并清除旧接收队列。命令队列 8、接收队列 32 的上限保持。`retired_replies` 是诊断计数。UE 的 500 ms 稳定窗口、漂移判断、最新数据年龄、3 s 超时、Capture/Undo/Redo、遮罩和一次性写入行为没有放宽。
++
++验证位于设计仓库 `Hardware/PoseDoll44/verification/revO5/runs/o5_20260924_r1`：
++
++- 正常非 Unity 与强制 Unity 编译均通过；5 组原生 Automation 通过。
++- Python oracle 共 75 项通过，包括 14 项新增恢复/严格拒绝用例。
++- 隔离真实 UE 中 8 组网络用例：旧包先于/晚于/穿插新 ACK、拆包、连续 5 次取消；未知 ID、CRC 错误、boot 变化。5 组合法重采各写入一次，3 组错误写入零次。
++- 原静态采集、Undo/Redo、蒙版、Clutch、故障拒绝回归及新进程保存重开通过。
++- 4 组新增 PDG5 字节 → 正式 Python 桥接 → PDS1 → UE 联调，正确数据写入一次，missing/CRC/boot 三类错误写入零次。来源明确为 simulated，没有硬件。
++
++`Scripts/test_static_late_o5.py` 会创建测试资产，只在隔离项目运行。设计仓库中的 `Tools/PoseDollHardwareBridge/run_ue_bridge_o5.py` 同理。
+diff --git a/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStaticRouterTests.cpp b/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStaticRouterTests.cpp
+new file mode 100644
+--- /dev/null
++++ b/Plugins/PoseDoll/Source/PoseDollCore/Private/PoseDollStaticRouterTests.cpp
+@@ -0,0 +1,26 @@
++#include "PoseDollStatic.h"
++#include "Misc/AutomationTest.h"
++#if WITH_DEV_AUTOMATION_TESTS
++IMPLEMENT_SIMPLE_AUTOMATION_TEST(FPoseDollStaticRouterTest,"PoseDoll.Static.RetiredRouting",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
++bool FPoseDollStaticRouterTest::RunTest(const FString& Parameters)
++{
++    (void)Parameters;
++    using namespace PoseDoll;
++    FStaticRouter R;
++    TestTrue(TEXT("First request"),R.Begin(TEXT("old"),1));
++    R.Retire(TEXT("old"),2);
++    TestTrue(TEXT("Immediate next request"),R.Begin(TEXT("new"),2));
++    TestTrue(TEXT("Late ack/scan ignored"),R.Route(TEXT("old"),2.1)==EStaticRoute::Retired);
++    TestTrue(TEXT("Active traffic delivered"),R.Route(TEXT("new"),2.1)==EStaticRoute::Active);
++    TestTrue(TEXT("Unknown is an error"),R.Route(TEXT("other"),2.1)==EStaticRoute::Unexpected);
++    TestFalse(TEXT("No retired ID reuse"),R.Begin(TEXT("old"),2.1));
++    R.Retire(TEXT("old"),20);
++    TestTrue(TEXT("Repeated cancel does not refresh age"),R.Route(TEXT("old"),32)==EStaticRoute::Unexpected);
++    R.Reset();
++    for(int32 I=0;I<40;++I){const FString Id=FString::FromInt(I);R.Begin(Id,40);R.Retire(Id,40);}
++    TestEqual(TEXT("Bounded retired IDs"),R.RetiredCount(),32);
++    TestTrue(TEXT("Evicted IDs remain strict"),R.Route(TEXT("0"),41)==EStaticRoute::Unexpected);
++    R.Reset();TestTrue(TEXT("Reconnect clears old session"),R.Route(TEXT("39"),41)==EStaticRoute::Unexpected);
++    return !HasAnyErrors();
++}
++#endif
+diff --git a/Scripts/o5_late_server.py b/Scripts/o5_late_server.py
+new file mode 100644
+--- /dev/null
++++ b/Scripts/o5_late_server.py
+@@ -0,0 +1,52 @@
++"""Adversarial simulated TCP peer for cancel/new-request Editor integration only."""
++import argparse,json,select,socket,sys,time
++from pathlib import Path
++ap=argparse.ArgumentParser();ap.add_argument('--root',type=Path,required=True);ap.add_argument('--case',required=True);a=ap.parse_args()
++sys.path.insert(0,str(a.root/'Tools/PoseDollSimulator/src'))
++from posedoll_sim.core import DeviceProfile,FrameDecoder,encode
++from posedoll_sim.static_protocol import hello,command,envelope,unwrap
++p=DeviceProfile(a.root/'Shared');h=hello(p,'o5-late-test','test-boot',['boot'+str(i) for i in range(6)])
++raw,status=p.encode_angles(dict.fromkeys(p.order,0.0));raw[:3]=[None]*3;status[:3]=['fixed']*3
++listener=socket.socket();listener.bind(('127.0.0.1',39178));listener.listen(1);listener.settimeout(10)
++(a.root/'reports/o5/server_ready').write_text(a.case)
++def ack(cid,req):return {**command(h,cid,'accepted'),'request_start_us':str(req),'source_boots':h['source_boots']}
++def scan(cid,req,sid):
++ start=time.monotonic_ns()//1000;time.sleep(.002);end=time.monotonic_ns()//1000
++ return {**ack(cid,req),'type':'scan','scan_id':str(sid),'start_us':str(start),'end_us':str(end),'duration_us':end-start,'raw_angles_rad':raw,'axis_status':status}
++def send(client,packets):
++ wire=b''.join(encode(envelope(m)) for m in packets)
++ if a.case=='crc':
++  bad=envelope(packets[0]);bad['crc32']='00000000';wire=encode(bad)+b''.join(encode(envelope(m)) for m in packets[1:])
++ if a.case=='fragment':
++  for offset in range(0,len(wire),17):client.sendall(wire[offset:offset+17])
++ else:client.sendall(wire)
++try:
++ with listener.accept()[0] as c:
++  c.settimeout(5);c.sendall(encode(envelope(h)));dec=FrameDecoder();old=[];n=0;active=None;sid=0;req=0;due=0;staged=False
++  while True:
++   ready,_,_=select.select([c],[],[],.003)
++   if ready:
++    data=c.recv(65536)
++    if not data:break
++    for obj in dec.feed(data):
++     if obj.get('type')=='welcome':continue
++     m=unwrap(obj)
++     if m['type'] in ('ack','cancel'):
++      if active==m['capture_id']:active=None
++      continue
++     if m['type']!='request':continue
++     n+=1;cid=m['capture_id'];req=time.monotonic_ns()//1000
++     limit=5 if a.case=='many' else 1
++     if n<=limit:
++      old.extend([ack(cid,req),scan(cid,req,1)]);continue
++     if a.case=='unknown':old[0]['capture_id']='unknown-id'
++     if a.case=='boot':old[0]['source_boots']=['changed']+h['source_boots'][1:]
++     new_ack=ack(cid,req)
++     if a.case=='after':packets=[new_ack]+old
++     elif a.case=='mixed':packets=[old[0],new_ack]+old[1:]
++     else:packets=old+[new_ack]
++     send(c,packets);active=cid;sid=0;due=time.monotonic();staged=True
++   if active and time.monotonic()>=due:
++    sid+=1;c.sendall(encode(envelope(scan(active,req,sid))));due+=.1
++except (ConnectionError,OSError):pass
++finally:listener.close()
+diff --git a/Scripts/test_static_late_o5.py b/Scripts/test_static_late_o5.py
+new file mode 100644
+--- /dev/null
++++ b/Scripts/test_static_late_o5.py
+@@ -0,0 +1,56 @@
++"""Real UE TCP late-message race regression, isolated O5 test project only."""
++from pathlib import Path
++import json,os,subprocess,time,traceback,unreal
++root=Path(unreal.Paths.project_dir());out=root/'reports/o5';out.mkdir(parents=True,exist_ok=True)
++result={'passed':False,'scope':'real UE + adversarial simulated TCP; no hardware','cases':[]};proc=None
++
++def cmd(a,arg='',expect=True):
++ r=json.loads(unreal.PoseDollEditorLibrary.session_command(a,arg))
++ if expect is not None:assert r['ok']==expect,(a,r)
++ return r
++
++def wait(pred):
++ end=time.monotonic()+5
++ while time.monotonic()<end:
++  cmd('tick');s=cmd('status')
++  if pred(s):return s
++  time.sleep(.01)
++ raise AssertionError(cmd('status'))
++try:
++ level=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem);actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
++ assert level.new_level('/Game/PoseDollO5/LateReplies')
++ actor=actors.spawn_actor_from_class(unreal.SkeletalMeshActor,unreal.Vector(),unreal.Rotator())
++ actor.skeletal_mesh_component.set_skeletal_mesh_asset(unreal.load_asset('/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple'))
++ seq=unreal.AssetToolsHelpers.get_asset_tools().create_asset('O5LateReplies','/Game/PoseDollO5',unreal.LevelSequence,unreal.LevelSequenceFactoryNew())
++ seq.set_display_rate(unreal.FrameRate(24,1));seq.set_playback_end(120);seq.add_possessable(actor)
++ assert unreal.LevelSequenceEditorBlueprintLibrary.open_level_sequence(seq)
++ assert unreal.PoseDollEditorLibrary.bind_target(seq,actor.skeletal_mesh_component)
++ for idx,case in enumerate(['before','after','mixed','fragment','many','unknown','crc','boot']):
++  ready=out/'server_ready';ready.unlink(missing_ok=True)
++  proc=subprocess.Popen([os.environ['POSEDOLL_TEST_PYTHON'],'-X','utf8',str(root/'Scripts/o5_late_server.py'),'--root',str(root),'--case',case],creationflags=0x08000000)
++  until=time.monotonic()+5
++  while not ready.exists():
++   assert time.monotonic()<until;time.sleep(.01)
++  cmd('connect','static');wait(lambda s:s.get('static_source') and s['state']=='Ready')
++  unreal.LevelSequenceEditorBlueprintLibrary.set_current_time(10+idx*5);before=cmd('status')['captures']
++  for _ in range(5 if case=='many' else 1):
++   cmd('snapshot_capture');time.sleep(.04);cmd('snapshot_cancel')
++  # New command goes immediately after cancel; no waiting for TCP drain.
++  new=cmd('snapshot_capture')['capture_id']
++  s=wait(lambda s:s['snapshot_state'] in ('Committed','Fault','Cancelled','TimedOut'))
++  healthy=case not in ('unknown','crc','boot')
++  assert s['captures']==before+int(healthy),(case,s)
++  if healthy:
++   assert s['snapshot_state']=='Committed' and s['capture_id']==new,(case,s)
++   assert s['retired_replies']==(10 if case=='many' else 2),(case,s)
++   cmd('capture',json.dumps({'frame':10+idx*5}),expect=False)
++  result['cases'].append({'case':case,'result':s,'captures_added':s['captures']-before})
++  cmd('disconnect');proc.wait(timeout=5);proc=None
++ result['passed']=True
++except:result['exception']=traceback.format_exc();unreal.log_error(result['exception'])
++finally:
++ cmd('disconnect',expect=None)
++ if proc is not None:
++  try:proc.wait(timeout=5)
++  except subprocess.TimeoutExpired:proc.terminate()
++ unreal.LevelSequenceEditorBlueprintLibrary.close_level_sequence();(out/'late_editor.json').write_text(json.dumps(result,indent=2),encoding='utf-8');unreal.SystemLibrary.quit_editor()
+diff --git a/Tools/PoseDollSimulator/tests/test_static_router_o5.py b/Tools/PoseDollSimulator/tests/test_static_router_o5.py
+new file mode 100644
+--- /dev/null
++++ b/Tools/PoseDollSimulator/tests/test_static_router_o5.py
+@@ -0,0 +1,53 @@
++import copy
++import pytest
++from posedoll_sim.core import FrameDecoder, encode
++from posedoll_sim.static_protocol import StaticRouter, StaticWindow, envelope
++from test_static import make_case
++
++@pytest.mark.parametrize('order', ['before', 'after', 'mixed'])
++@pytest.mark.parametrize('fragment', [False, True])
++def test_cancel_then_new_request(order, fragment):
++    p,h,cid,rows=make_case(); router=StaticRouter(p,h)
++    router.begin('retired',99);router.retire('retired',99.5);router.begin(cid,100)
++    old=[copy.deepcopy(x[0]) for x in rows[:2]]
++    for msg in old:msg['capture_id']='retired'
++    ack=rows[0][0]
++    seq=old+[ack] if order=='before' else [ack]+old if order=='after' else [old[0],ack,old[1]]
++    seq += [msg for msg,t in rows[1:8]]
++    decoder=FrameDecoder();window=StaticWindow(p,h,cid,100)
++    # At each scan arrival preserve its original wall time; fragment and coalesce ACK/old traffic.
++    groups=[(seq[:3],100.021)]+[([msg],t) for msg,t in rows[1:8]]
++    for messages,now in groups:
++        wire=b''.join(encode(envelope(msg)) for msg in messages)
++        chunks=[wire[i:i+11] for i in range(0,len(wire),11)] if fragment else [wire]
++        for chunk in chunks:
++            for message in decoder.feed(chunk):
++                accepted=router.route(message,now)
++                if accepted is not None:window.push(accepted,now)
++    assert window.final['capture_id']==cid and router.dropped==2
++    router.retire(cid,100.8)
++    assert router.route(envelope(rows[7][0]),100.9) is None
++
++@pytest.mark.parametrize('fault',['unknown','crc','boot','profile','fields','raw','duration'])
++def test_retired_is_not_a_validation_bypass(fault):
++    p,h,cid,rows=make_case();r=StaticRouter(p,h);r.begin(cid,99);r.retire(cid,99.5);r.begin('next',100)
++    m=copy.deepcopy(rows[1][0])
++    if fault=='unknown':m['capture_id']='unknown'
++    if fault=='boot':m['source_boots'][0]='restart'
++    if fault=='profile':m['profile_sha256']='bad'
++    if fault=='fields':m['extra']=1
++    if fault=='raw':m['raw_angles_rad'][3]=None
++    if fault=='duration':m['duration_us']=2**32
++    wire=envelope(m)
++    if fault=='crc':wire['crc32']='00000000'
++    with pytest.raises(ValueError):r.route(wire,100.1)
++    assert r.dropped==0
++
++def test_retired_bound_expiry_and_reconnect():
++    p,h,cid,rows=make_case();r=StaticRouter(p,h)
++    for i in range(40):r.begin(str(i),100+i*.01);r.retire(str(i),100+i*.01)
++    assert len(r.retired)==32 and '0' not in r.retired
++    r.begin(cid,101);r.retire(cid,101);r.retire(cid,125)
++    with pytest.raises(ValueError):r.route(envelope(rows[0][0]),131)
++    r=StaticRouter(p,h)
++    with pytest.raises(ValueError):r.route(envelope(rows[0][0]),101)

@@ -1,0 +1,272 @@
+{
+  "id": "P034",
+  "label": "tilt299_r12_micro",
+  "project_sha256": "733ba9cef319598611ccca49e6c02bbbf41136435ff60776f6296d061d3c7fcc",
+  "method": "Full bead contact recheck of all v2 half-bead flags: previous segment centerlines are buffered by (previous_width+current_width)/2 +0.01 mm. This identifies runs whose deposited bead has no overlap with preceding printed material. Paths lying entirely within the previous model solid are separately retained as internal infill gaps, not mislabeled as missing external fins. All original v2 flags remain available.",
+  "geometry_tolerance_mm": 0.01,
+  "review_limits": {
+    "unanchored_or_one_ended_external_free_run_mm": 1.0,
+    "two_ended_external_free_run_mm": 3.0,
+    "minimum_recorded_free_run_mm": 0.15
+  },
+  "limits_are_screening_not_physical_calibration": true,
+  "partial_bead_paths": [
+    {
+      "z_mm": 11.800000190734863,
+      "length_mm": 1.2230024303954474,
+      "max_centerline_distance_mm": 0.03119376403945581,
+      "width_mm": 0.5589479207992554,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 14.0,
+      "length_mm": 0.6472680216950675,
+      "max_centerline_distance_mm": 0.027303244597572173,
+      "width_mm": 0.5575910210609436,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 19.0,
+      "length_mm": 1.3333729488595516,
+      "max_centerline_distance_mm": 0.06522272557498758,
+      "width_mm": 0.4224173128604889,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 21.0,
+      "length_mm": 1.8186343070733515,
+      "max_centerline_distance_mm": 0.1359355744783982,
+      "width_mm": 0.41476133465766907,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 28.200000762939453,
+      "length_mm": 0.29243158798600266,
+      "max_centerline_distance_mm": 0.08737301914756956,
+      "width_mm": 0.39900198578834534,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 34.79999923706055,
+      "length_mm": 0.569605998616455,
+      "max_centerline_distance_mm": 0.07368424404471889,
+      "width_mm": 0.5203768014907837,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 46.599998474121094,
+      "length_mm": 0.5050070781898923,
+      "max_centerline_distance_mm": 0.07189176121083682,
+      "width_mm": 0.7019879817962646,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 49.0,
+      "length_mm": 0.9032941524049521,
+      "max_centerline_distance_mm": 0.05128561086672642,
+      "width_mm": 0.5562469959259033,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 49.0,
+      "length_mm": 0.9588069536050667,
+      "max_centerline_distance_mm": 0.06035756362709505,
+      "width_mm": 0.6074327826499939,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 54.0,
+      "length_mm": 0.7004789777674384,
+      "max_centerline_distance_mm": 0.05032105245709115,
+      "width_mm": 0.5303623676300049,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 57.0,
+      "length_mm": 0.5180533127751275,
+      "max_centerline_distance_mm": 0.2521354951628479,
+      "width_mm": 0.41999900341033936,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 58.400001525878906,
+      "length_mm": 0.675706043770629,
+      "max_centerline_distance_mm": 0.036547077335470475,
+      "width_mm": 0.53355872631073,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 58.400001525878906,
+      "length_mm": 0.5809368745100859,
+      "max_centerline_distance_mm": 0.08488412166013136,
+      "width_mm": 0.53355872631073,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 58.79999923706055,
+      "length_mm": 0.6120382514691334,
+      "max_centerline_distance_mm": 0.04673082615787623,
+      "width_mm": 0.5339353084564209,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 58.79999923706055,
+      "length_mm": 0.6148362949521552,
+      "max_centerline_distance_mm": 0.03946342952275189,
+      "width_mm": 0.5388134717941284,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    }
+  ],
+  "external_free_runs": [
+    {
+      "z_mm": 14.199999809265137,
+      "feature": "Outer wall",
+      "length_mm": 0.2984504863106575,
+      "anchors": 0,
+      "xy_mm": [
+        [
+          65.76874268635315,
+          39.01831749696972
+        ],
+        [
+          65.83394811971792,
+          39.309557851726375
+        ]
+      ],
+      "bounds_mm": [
+        65.76874268635315,
+        39.01831749696972,
+        65.83394811971792,
+        39.309557851726375
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 0.48060876715244133
+    }
+  ],
+  "internal_infill_gaps": [
+    {
+      "z_mm": 10.800000190734863,
+      "feature": "Outer wall",
+      "length_mm": 0.6373382881763585,
+      "anchors": 1,
+      "xy_mm": [
+        [
+          55.05032805330914,
+          35.498375678223404
+        ],
+        [
+          54.99100112915039,
+          35.16600036621094
+        ],
+        [
+          54.944000244140625,
+          34.869998931884766
+        ]
+      ],
+      "bounds_mm": [
+        54.944000244140625,
+        34.869998931884766,
+        55.05032805330914,
+        35.498375678223404
+      ],
+      "inside_previous_solid_geometry": true,
+      "classification": "internal_infill_gap"
+    },
+    {
+      "z_mm": 52.20000076293945,
+      "feature": "Outer wall",
+      "length_mm": 0.319991914111322,
+      "anchors": 1,
+      "xy_mm": [
+        [
+          57.56100082397461,
+          43.645999908447266
+        ],
+        [
+          57.50554780336237,
+          43.9611503290429
+        ]
+      ],
+      "bounds_mm": [
+        57.50554780336237,
+        43.645999908447266,
+        57.56100082397461,
+        43.9611503290429
+      ],
+      "inside_previous_solid_geometry": true,
+      "classification": "internal_infill_gap"
+    },
+    {
+      "z_mm": 62.400001525878906,
+      "feature": "Outer wall",
+      "length_mm": 0.5368326720912522,
+      "anchors": 1,
+      "xy_mm": [
+        [
+          46.76599884033203,
+          42.90700149536133
+        ],
+        [
+          46.834999084472656,
+          42.54100036621094
+        ],
+        [
+          46.86553361314034,
+          42.37947696359537
+        ]
+      ],
+      "bounds_mm": [
+        46.76599884033203,
+        42.37947696359537,
+        46.86553361314034,
+        42.90700149536133
+      ],
+      "inside_previous_solid_geometry": true,
+      "classification": "internal_infill_gap"
+    },
+    {
+      "z_mm": 62.79999923706055,
+      "feature": "Outer wall",
+      "length_mm": 0.34459594856353937,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          46.11755970985736,
+          43.75197742355507
+        ],
+        [
+          46.02899932861328,
+          44.084999084472656
+        ]
+      ],
+      "bounds_mm": [
+        46.02899932861328,
+        43.75197742355507,
+        46.11755970985736,
+        44.084999084472656
+      ],
+      "inside_previous_solid_geometry": true,
+      "classification": "internal_infill_gap"
+    }
+  ],
+  "islands": [],
+  "critical_external_runs": [],
+  "external_islands": [],
+  "critical_external_count": 0,
+  "external_island_count": 0,
+  "max_external_free_run_mm": 0.2984504863106575,
+  "native_review_resolved": true,
+  "physical_print_tested": false,
+  "elapsed_s": 0.9124274253845215,
+  "audit_schema": "full-bead-v6-explicit-residual-endpoints-256",
+  "actual_constant_layer_height_mm": 0.2,
+  "actual_initial_layer_height_mm": 0.2,
+  "first_layer_geometry_center_corrected": true,
+  "layer_profile_source": "actual native project settings, not candidate design metadata",
+  "previous_report": "full_bead_contacts.json",
+  "refinement": "A zero-bead-contact line is partitioned at previous solid geometry, instead of classifying its full length as external when only a small section crosses the boundary. Split endpoints are conservatively unanchored. Previous solid section uses the recorded constant layer height for this candidate.",
+  "original_v5_critical_count": 0,
+  "endpoint_evidence": [],
+  "endpoint_method": "Re-evaluate the newly created ends of v5 residual runs against actual prior beads and earlier, independently prior-backed wall pieces. The unchanged limits remain 1 mm for zero/one anchor and 3 mm for two anchors. No recursively floating wall chain is accepted."
+}

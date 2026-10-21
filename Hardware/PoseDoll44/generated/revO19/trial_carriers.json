@@ -1,0 +1,843 @@
+{
+  "overrides": {
+    "thigh_l": {
+      "F": [
+        [
+          0.5000000000000001,
+          1.1102230246251565e-16,
+          0.8660254037844386
+        ],
+        [
+          -5.551115123125784e-17,
+          1.0,
+          -9.614813431917819e-17
+        ],
+        [
+          0.8660254037844386,
+          0.0,
+          -0.5000000000000001
+        ]
+      ],
+      "V": [
+        [
+          1.0,
+          1.1102230246251565e-16,
+          0.0
+        ],
+        [
+          -1.1102230246251565e-16,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "offset_parent_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "thigh_r": {
+      "F": [
+        [
+          0.5000000000000001,
+          1.1102230246251565e-16,
+          0.8660254037844386
+        ],
+        [
+          5.551115123125784e-17,
+          -1.0,
+          9.614813431917819e-17
+        ],
+        [
+          0.8660254037844386,
+          0.0,
+          -0.5000000000000001
+        ]
+      ],
+      "V": [
+        [
+          1.0,
+          1.1102230246251565e-16,
+          0.0
+        ],
+        [
+          1.1102230246251565e-16,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "offset_parent_mm": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "paths_neutral_world_mm": {
+    "thigh_l": [
+      [
+        0.7164961230918823,
+        42.89325118305405,
+        218.24002629802342
+      ],
+      [
+        0.7164961230918823,
+        42.89325118305405,
+        210.24002629802342
+      ],
+      [
+        0.7164961230918814,
+        29.493251183054046,
+        201.0
+      ],
+      [
+        0.7164961230918814,
+        29.493251183054046,
+        159.16948195313634
+      ],
+      [
+        4.716496123091881,
+        21.493251183054046,
+        155.16948195313634
+      ],
+      [
+        4.716496123091881,
+        21.493251183054046,
+        147.16948195313634
+      ]
+    ],
+    "calf_l": [
+      [
+        0.7164961230918814,
+        29.493251183054046,
+        57.89838015853793
+      ],
+      [
+        0.7164961230918814,
+        29.493251183054046,
+        66.89838015853793
+      ],
+      [
+        0.7164961230918814,
+        29.493251183054046,
+        110.16948195313634
+      ],
+      [
+        0.7164961230918814,
+        31.993251183054046,
+        122.66948195313634
+      ]
+    ],
+    "thigh_r": [
+      [
+        0.716400123874668,
+        -42.8932890064523,
+        218.23988255668135
+      ],
+      [
+        0.716400123874668,
+        -42.8932890064523,
+        210.23988255668135
+      ],
+      [
+        0.7164001238746671,
+        -29.493289006452297,
+        201.0
+      ],
+      [
+        0.7164001238746671,
+        -29.493289006452297,
+        159.16960045402203
+      ],
+      [
+        4.716400123874667,
+        -37.4932890064523,
+        155.16960045402203
+      ],
+      [
+        4.716400123874667,
+        -37.4932890064523,
+        147.16960045402203
+      ]
+    ],
+    "calf_r": [
+      [
+        0.7164001238746671,
+        -29.493289006452297,
+        57.8983776245492
+      ],
+      [
+        0.7164001238746671,
+        -29.493289006452297,
+        66.8983776245492
+      ],
+      [
+        0.7164001238746671,
+        -29.493289006452297,
+        110.16960045402203
+      ],
+      [
+        0.7164001238746671,
+        -26.993289006452297,
+        122.66960045402203
+      ]
+    ],
+    "pelvis": [
+      [
+        [
+          -8.102910275613983,
+          38.400000000000254,
+          323.40550926354456
+        ],
+        [
+          -28,
+          25,
+          320
+        ],
+        [
+          -28,
+          0,
+          293
+        ],
+        [
+          -28.0,
+          16.09325118305405,
+          275.3400262980234
+        ],
+        [
+          -32.53887938223056,
+          16.09325118305405,
+          275.3400262980234
+        ]
+      ],
+      [
+        [
+          -28.0,
+          16.09325118305405,
+          275.3400262980234
+        ],
+        [
+          -28.0,
+          -16.093289006452302,
+          275.33988255668135
+        ],
+        [
+          -32.53897538144777,
+          -16.093289006452302,
+          275.33988255668135
+        ]
+      ]
+    ]
+  },
+  "hits": [
+    {
+      "pair": [
+        "frame/pelvis",
+        "frame/elbow_l"
+      ],
+      "overlap_mm3": 525.9754648217879
+    },
+    {
+      "pair": [
+        "hand_l.deviate/magnet_cartridge",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 424.1787467558655
+    },
+    {
+      "pair": [
+        "elbow_l.flex/sensor_cassette",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 318.024200374792
+    },
+    {
+      "pair": [
+        "frame/hand_l.flex_frame",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 316.3679475174055
+    },
+    {
+      "pair": [
+        "elbow_l.flex/magnet_cartridge",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 310.85680542958914
+    },
+    {
+      "pair": [
+        "frame/hand_r.flex_frame",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 286.19709225002714
+    },
+    {
+      "pair": [
+        "frame/forearm_r",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 223.55702587583824
+    },
+    {
+      "pair": [
+        "frame/hand_l",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 209.84230777539636
+    },
+    {
+      "pair": [
+        "frame/pelvis",
+        "frame/upperarm_l"
+      ],
+      "overlap_mm3": 203.7003109410936
+    },
+    {
+      "pair": [
+        "frame/pelvis",
+        "frame/forearm_l"
+      ],
+      "overlap_mm3": 156.1332974633499
+    },
+    {
+      "pair": [
+        "waist/C01",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 155.33417119100957
+    },
+    {
+      "pair": [
+        "frame/pelvis",
+        "frame/elbow_r"
+      ],
+      "overlap_mm3": 141.59312480581667
+    },
+    {
+      "pair": [
+        "waist/C02_sensor_cassette",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 89.52948293558615
+    },
+    {
+      "pair": [
+        "elbow_l.flex/pcb_clip_screw",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 87.33672253414149
+    },
+    {
+      "pair": [
+        "hand_l.deviate/sensor_cassette",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 67.56910219940588
+    },
+    {
+      "pair": [
+        "frame/hand_r",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 65.32972890326894
+    },
+    {
+      "pair": [
+        "hand_l.deviate/sensor_PCB",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 61.6399031039758
+    },
+    {
+      "pair": [
+        "hand_l.deviate/magnet",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 50.84509141914671
+    },
+    {
+      "pair": [
+        "hand_l.deviate/sensor_IC",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 44.041772926126484
+    },
+    {
+      "pair": [
+        "elbow_l.flex/magnet_cap_screw_-8",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 32.09031745413818
+    },
+    {
+      "pair": [
+        "thigh_r/D_magnet_cap",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 28.854872910362865
+    },
+    {
+      "pair": [
+        "thigh_l/D_magnet_cap",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 28.853995397188758
+    },
+    {
+      "pair": [
+        "thigh_r/D_sensor_PCB",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 28.733438239211786
+    },
+    {
+      "pair": [
+        "thigh_l/D_sensor_PCB",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 28.732175127547357
+    },
+    {
+      "pair": [
+        "elbow_l.flex/pcb_clip_nut",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 26.266823286771714
+    },
+    {
+      "pair": [
+        "tail/thigh_l/D_sensor_PCB/transition",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 22.50000000000058
+    },
+    {
+      "pair": [
+        "tail/thigh_r/D_sensor_PCB/transition",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 22.49999999999999
+    },
+    {
+      "pair": [
+        "hand_l.flex/magnet_cartridge",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 18.176721148891914
+    },
+    {
+      "pair": [
+        "elbow_l.flex/shoulder_D4_L8_M3_thread6",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 17.40171957141888
+    },
+    {
+      "pair": [
+        "waist/P_case_nut_3",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 16.50657094483058
+    },
+    {
+      "pair": [
+        "elbow_l.flex/magnet_cap_nut_-8",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 12.940461872569948
+    },
+    {
+      "pair": [
+        "hand_l.deviate/magnet_cap_screw_+8",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 12.544881041424928
+    },
+    {
+      "pair": [
+        "waist/P_case_screw_3",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 11.91509659268907
+    },
+    {
+      "pair": [
+        "thigh_r/D_sensor_FPC_connector",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 11.377890881108
+    },
+    {
+      "pair": [
+        "thigh_l/D_sensor_FPC_connector",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 11.377018240763249
+    },
+    {
+      "pair": [
+        "tail/thigh_r/D_sensor_PCB/ribbon",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 8.990479714606401
+    },
+    {
+      "pair": [
+        "tail/thigh_l/D_sensor_PCB/ribbon",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 8.99047971460597
+    },
+    {
+      "pair": [
+        "waist/C02_pcb_clip_screw",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 8.75114402382114
+    },
+    {
+      "pair": [
+        "thigh_r/C01",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 8.640848737263001
+    },
+    {
+      "pair": [
+        "thigh_l/C01",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 8.640684702856435
+    },
+    {
+      "pair": [
+        "elbow_l.flex/front_M4_washer",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 8.551905715579162
+    },
+    {
+      "pair": [
+        "elbow_l.flex/magnet",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 8.314968200698232
+    },
+    {
+      "pair": [
+        "waist/P_case_nut_2",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 7.642030488862385
+    },
+    {
+      "pair": [
+        "elbow_l.flex/sensor_IC",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 7.185337479973559
+    },
+    {
+      "pair": [
+        "hand_l.deviate/sensor_FPC_connector",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 4.630502981246018
+    },
+    {
+      "pair": [
+        "hand_l.deviate/passive_3",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 3.885000000000016
+    },
+    {
+      "pair": [
+        "hand_l.deviate/passive_2",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 3.884999999999957
+    },
+    {
+      "pair": [
+        "thigh_r/C02",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 3.490048160112043
+    },
+    {
+      "pair": [
+        "thigh_l/C02",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 3.490048160111857
+    },
+    {
+      "pair": [
+        "elbow_l.flex/M3_reaction_washer",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 3.33509494486182
+    },
+    {
+      "pair": [
+        "elbow_l.flex/spring_1",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 2.9555905560642017
+    },
+    {
+      "pair": [
+        "elbow_l.flex/spring_2",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 2.955590554733942
+    },
+    {
+      "pair": [
+        "thigh_r/D_passive_3",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 2.9010158859642696
+    },
+    {
+      "pair": [
+        "thigh_l/D_passive_3",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 2.900860887745879
+    },
+    {
+      "pair": [
+        "elbow_l.flex/passive_0",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 2.85327787156246
+    },
+    {
+      "pair": [
+        "thigh_r/D_passive_1",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 2.8324786528208157
+    },
+    {
+      "pair": [
+        "thigh_l/D_passive_1",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 2.832318127322254
+    },
+    {
+      "pair": [
+        "waist/P_case_screw_2",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 2.7354617648855033
+    },
+    {
+      "pair": [
+        "hand_l.flex/magnet_cap_screw_+8",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 2.723654031832573
+    },
+    {
+      "pair": [
+        "elbow_l.flex/M3_nut",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 2.42123701293802
+    },
+    {
+      "pair": [
+        "thigh_r/D_sensor_IC",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 1.8866031717046734
+    },
+    {
+      "pair": [
+        "thigh_l/D_sensor_IC",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 1.8861398061100754
+    },
+    {
+      "pair": [
+        "elbow_l.flex/outer_M4_wide",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 1.4058690752462872
+    },
+    {
+      "pair": [
+        "hand_r.deviate/shoulder_D4_L8_M3_thread6",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 1.0075664466673453
+    },
+    {
+      "pair": [
+        "frame/calf_l",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 0.7947437767061251
+    },
+    {
+      "pair": [
+        "frame/calf_r",
+        "frame/thigh_r"
+      ],
+      "overlap_mm3": 0.7947437767061241
+    },
+    {
+      "pair": [
+        "calf_r.flex/magnet_cap_nut_+8",
+        "frame/calf_r"
+      ],
+      "overlap_mm3": 0.46832836019696183
+    },
+    {
+      "pair": [
+        "calf_l.flex/magnet_cap_nut_+8",
+        "frame/calf_l"
+      ],
+      "overlap_mm3": 0.4683283601969328
+    },
+    {
+      "pair": [
+        "hand_l.deviate/passive_0",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 0.3955417365862676
+    },
+    {
+      "pair": [
+        "elbow_l.flex/inner_M4_wide",
+        "frame/pelvis"
+      ],
+      "overlap_mm3": 0.21494249051068925
+    },
+    {
+      "pair": [
+        "tail/hand_l.deviate/sensor_PCB/ribbon",
+        "frame/thigh_l"
+      ],
+      "overlap_mm3": 0.17674125236528063
+    }
+  ],
+  "mesh": {
+    "frame/thigh_l": {
+      "status": "Error.NoError",
+      "components": 1,
+      "boundary_shells": 1,
+      "enclosed_void_shells": 0,
+      "volume_mm3": 12438.448339935903,
+      "COM_mm": [
+        1.049054324244449,
+        29.78106967343855,
+        178.70298326652474
+      ],
+      "bounds_mm": [
+        -16.783503876908117,
+        16.493251183054046,
+        121.16948195313634,
+        18.216496123091883,
+        47.89325118305405,
+        230.34002629802342
+      ]
+    },
+    "frame/calf_l": {
+      "status": "Error.NoError",
+      "components": 1,
+      "boundary_shells": 1,
+      "enclosed_void_shells": 0,
+      "volume_mm3": 9630.497450253622,
+      "COM_mm": [
+        0.7384433093996565,
+        27.79406550663636,
+        69.19487458647312
+      ],
+      "bounds_mm": [
+        -10.746123876908118,
+        3.693251183054045,
+        16.398380158537933,
+        12.216496123091881,
+        46.99325118305404,
+        127.66948195313634
+      ]
+    },
+    "frame/thigh_r": {
+      "status": "Error.NoError",
+      "components": 1,
+      "boundary_shells": 1,
+      "enclosed_void_shells": 0,
+      "volume_mm3": 12438.43221696664,
+      "COM_mm": [
+        1.048958755861798,
+        -34.46162976850828,
+        178.702981518206
+      ],
+      "bounds_mm": [
+        -16.783599876125333,
+        -47.8932890064523,
+        121.16960045402203,
+        18.216400123874667,
+        -24.493289006452297,
+        230.33988255668135
+      ]
+    },
+    "frame/calf_r": {
+      "status": "Error.NoError",
+      "components": 1,
+      "boundary_shells": 1,
+      "enclosed_void_shells": 0,
+      "volume_mm3": 9630.506929186393,
+      "COM_mm": [
+        0.7383472885806851,
+        -31.192473010427722,
+        69.19492808328377
+      ],
+      "bounds_mm": [
+        -10.746219876125332,
+        -55.2932890064523,
+        16.398377624549198,
+        12.216400123874667,
+        -11.993289006452297,
+        127.66960045402203
+      ]
+    },
+    "frame/pelvis": {
+      "status": "Error.NoError",
+      "components": 1,
+      "boundary_shells": 1,
+      "enclosed_void_shells": 0,
+      "volume_mm3": 17067.66004856381,
+      "COM_mm": [
+        -24.597939277790125,
+        11.386832238453099,
+        292.1433103527267
+      ],
+      "bounds_mm": [
+        -51.157334857571456,
+        -29.493289006452304,
+        258.46456500937586,
+        9.397089724386019,
+        49.79500000000026,
+        328.40550926354456
+      ]
+    }
+  }
+}

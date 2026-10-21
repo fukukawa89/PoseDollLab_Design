@@ -1,0 +1,1034 @@
+{
+  "key": "frame/clavicle_l.protract_frame",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 26.82,
+  "resumed_candidate_sha256": null,
+  "construction_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "construction_extra_pose_sha256": "aea92cd1affc3cf2b27db1402550ffce4beb54d390927e57f8bbc571aa32c5c4",
+  "construction_keeps_sha256": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+  "mask_method": "Straight bounded connections between preserved collar lands",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 0,
+  "lower_boundary_mm": [],
+  "upper_boundary_mm": [],
+  "canonical_frame_mm": [
+    [
+      1.0,
+      1.0146536357569551e-17,
+      6.237488120359347e-17,
+      -16.52627605975735
+    ],
+    [
+      1.0146536357569526e-17,
+      0.9999999999999999,
+      5.414562863798753e-17,
+      3.4475832782339957
+    ],
+    [
+      -5.164119492382451e-17,
+      -1.2757067935735277e-17,
+      1.0,
+      563.9932734176529
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 0.0,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 8386.309683150097,
+  "old_volume_mm3": 12338.928710781938,
+  "ribs": [
+    {
+      "length_mm": 74.15474895510795,
+      "radius_mm": 3.0,
+      "detour_mm": 0.0,
+      "volume_mm3": 1239.0183241803663
+    }
+  ],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.451608594596402
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:child",
+      "members": [
+        "clavicle_l.protract/magnet_cap_nut_-8"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 15.716272306750454
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:child",
+      "members": [
+        "clavicle_l.protract/magnet_cap_screw_-8"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 11.561817383030846
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:child",
+      "members": [
+        "clavicle_l.protract/magnet_cap_nut_+8"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 15.716271501736244
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:child",
+      "members": [
+        "clavicle_l.protract/magnet_cap_screw_+8"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 11.561817383030851
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:child",
+      "members": [
+        "clavicle_l.protract/magnet_cartridge"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.33021037193035574
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 701.1534823570547
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.008556204303228756
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.010303244566008129
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.014818622888774741
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.013921246262919006
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.021780185021333904
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 0.43032497645597667
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "upperarm_l.forward_raise@-90",
+      "wall_overlap_mm3": 368.6995461023964
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "upperarm_l.side_raise@90",
+      "wall_overlap_mm3": 0.9379705055076341
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "upperarm_l.axial_turn@-45",
+      "wall_overlap_mm3": 0.08534839678933477
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.017981732512548938
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.026111099607591632
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.016790602325232242
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.016095218186288927
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.024397472901762193
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 0.5463685055785654
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_l.protract.protract@-10",
+      "wall_overlap_mm3": 509.57095146266147
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.0188311622540281
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.027452674918551315
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.02042019544238467
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.02001791543461322
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.022317474426899957
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 0.5733905071330953
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_l.protract.protract@-5",
+      "wall_overlap_mm3": 632.5507520347672
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.018471380202917935
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.02900914598807265
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.020246220610866637
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.019545908649407875
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.02364886886228103
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 0.5753427027544319
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_l.protract.protract@5",
+      "wall_overlap_mm3": 675.0954200784164
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.018443897582152646
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.027011237999716584
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.018154357341046007
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.017845837998315215
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.025980214727000586
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 0.5510715724290051
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_l.protract.protract@10",
+      "wall_overlap_mm3": 569.5162043467122
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/inner_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.00849691863692948
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/outer_M4_wide"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.01546315757971325
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_1"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.014706422245187483
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/spring_2"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.014119512715976916
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/front_M4_washer"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.021686358977233432
+    },
+    {
+      "obstacle_owner": "j:clavicle_l.protract:parent",
+      "members": [
+        "clavicle_l.protract/shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 0.4378646887229925
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "clavicle_l.protract.protract@15",
+      "wall_overlap_mm3": 492.1233831656918
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "clavicle_l.elevate.elevate@-15",
+      "wall_overlap_mm3": 2.3891923220244298
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/upperarm_l.side_raise@86",
+      "wall_overlap_mm3": 0.059577912951984835
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/upperarm_l.side_raise@87",
+      "wall_overlap_mm3": 0.19617450392831484
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/upperarm_l.side_raise@88",
+      "wall_overlap_mm3": 0.39581014873164955
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/upperarm_l.side_raise@89",
+      "wall_overlap_mm3": 0.642454418454348
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/clavicle_l.elevate.elevate@-14",
+      "wall_overlap_mm3": 2.0585564863901484
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/clavicle_l.elevate.elevate@-13",
+      "wall_overlap_mm3": 1.746961105298216
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/clavicle_l.elevate.elevate@-12",
+      "wall_overlap_mm3": 1.4565338214128352
+    },
+    {
+      "obstacle_owner": "f:clavicle_l",
+      "members": [
+        "frame/clavicle_l"
+      ],
+      "pose": "edge_path/clavicle_l.elevate.elevate@-11",
+      "wall_overlap_mm3": 1.1871247959739017
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "joint_edge_reliefs": [
+    {
+      "pose": "A_STAND_35",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 4.839687665471437,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 12.183300549438743,
+      "original_keep_removed_mm3": 12.18330062493164,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "A_STAND_35",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 4.839687665471437,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 14.702538641068191,
+          "original_keep_removed_mm3": 14.702538641068193,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "A_STAND_35",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "o22/controller_housing",
+      "before_overlap_mm3": 9.562534987001852,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 20.029806564638122,
+      "original_keep_removed_mm3": 20.02980664013096,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": []
+    },
+    {
+      "pose": "upperarm_l.forward_raise@-90",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 37.74653617347327,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 54.099807899684855,
+      "original_keep_removed_mm3": 54.09980797517775,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "upperarm_l.forward_raise@-90",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 37.74653617347327,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 69.19119017854868,
+          "original_keep_removed_mm3": 69.19119017854868,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.protract.protract@-10",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 37.24771508043984,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 8.559821852751252,
+      "original_keep_removed_mm3": 8.559821928244142,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "clavicle_l.protract.protract@-10",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 37.24771508043984,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 29.887240002081235,
+          "original_keep_removed_mm3": 29.88849361145501,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.protract.protract@-5",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 20.96802320977112,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 0.8386957824044804,
+      "original_keep_removed_mm3": 0.8386958578973616,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "clavicle_l.protract.protract@-5",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 20.96802320977112,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 1.7096644463393198,
+          "original_keep_removed_mm3": 1.7096644463393151,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.protract.protract@5",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "o22/controller_housing",
+      "before_overlap_mm3": 29.73732506758074,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 13.333769667171406,
+      "original_keep_removed_mm3": 13.33376978824053,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": []
+    },
+    {
+      "pose": "clavicle_l.protract.protract@10",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "o22/controller_housing",
+      "before_overlap_mm3": 57.883805940305066,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 14.271189339012993,
+      "original_keep_removed_mm3": 14.27118941071936,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": []
+    },
+    {
+      "pose": "clavicle_l.protract.protract@15",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "o22/controller_housing",
+      "before_overlap_mm3": 84.61083203611776,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 16.185387860771776,
+      "original_keep_removed_mm3": 16.185387886860784,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": []
+    },
+    {
+      "pose": "upperarm_r.forward_raise@-90",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 3.603248016224772,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 6.591624485534806,
+      "original_keep_removed_mm3": 6.59162449497645,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 1.682681771697503e-16,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "upperarm_r.forward_raise@-90",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 3.603248016224772,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 9.933403589618816,
+          "original_keep_removed_mm3": 9.933403589618795,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.protract.protract@-10",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 9.06978676882804,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 1.3724575544736572,
+      "original_keep_removed_mm3": 1.3724575639153143,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "clavicle_r.protract.protract@-10",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 9.06978676882804,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 2.46733588558293,
+          "original_keep_removed_mm3": 2.4673358855829512,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.protract.protract@-5",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 8.72844486114971,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 0.09504348251707154,
+      "original_keep_removed_mm3": 0.09504349195870801,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "clavicle_r.protract.protract@-5",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 8.72844486114971,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 0.31467808521110824,
+          "original_keep_removed_mm3": 0.3146780852111032,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    },
+    {
+      "pose": "daily_reach_front",
+      "key": "frame/clavicle_l.protract_frame",
+      "other": "frame/clavicle_r.protract_frame",
+      "before_overlap_mm3": 98.1559937486548,
+      "residual_overlap_mm3": 0.0,
+      "removed_material_mm3": 37.19472787463117,
+      "original_keep_removed_mm3": 37.19472788407283,
+      "radial_skin_removed_mm3": 0.0,
+      "protected_material_removed_mm3": 0.0,
+      "blocked_by": [
+        {
+          "key": "functional_land_guard",
+          "volume_mm3": 0.0
+        }
+      ],
+      "padding_mm": 0.4,
+      "guard_fixed_part_margin_mm": 2,
+      "pcb_clip_nut_radial_guard_mm": null,
+      "alternative_attempts": [
+        {
+          "pose": "daily_reach_front",
+          "key": "frame/clavicle_r.protract_frame",
+          "other": "frame/clavicle_l.protract_frame",
+          "before_overlap_mm3": 98.1559937486548,
+          "residual_overlap_mm3": 0.0,
+          "removed_material_mm3": 50.10682131308883,
+          "original_keep_removed_mm3": 50.10682131308881,
+          "radial_skin_removed_mm3": 0.0,
+          "protected_material_removed_mm3": 0.0,
+          "blocked_by": [
+            {
+              "key": "functional_land_guard",
+              "volume_mm3": 0.0
+            }
+          ],
+          "padding_mm": 0.4,
+          "guard_fixed_part_margin_mm": 2,
+          "pcb_clip_nut_radial_guard_mm": null
+        }
+      ]
+    }
+  ],
+  "detached_fragments_removed": [],
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

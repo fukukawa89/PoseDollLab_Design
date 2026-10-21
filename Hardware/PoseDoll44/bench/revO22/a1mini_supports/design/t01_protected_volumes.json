@@ -1,0 +1,1026 @@
+{
+  "schema": "POSEDOLL-O22-SUPPORT-PROTECTED-VOLUMES/1",
+  "status": "T01 optional coupon CAD-derived clearance supplement",
+  "containment_rule": "Map point through inverse(local_to_source_print_matrix) or inverse(local_to_plate_matrix); box inclusive min/max or cylinder x*x+y*y<=radius_mm**2 and z in z_mm. These are oriented true volumes; bounds_* are broad-phase only.",
+  "objects": [
+    {
+      "plate": "T01",
+      "number": 1,
+      "part": "sensor_coupon/sensor_bridge",
+      "id": "T001",
+      "object_name": "T01-01 T001 sensor_coupon/sensor_bridge",
+      "source_3mf": "physical_tests/sensor_coupon/sensor_bridge.3mf",
+      "volumes": [
+        {
+          "feature": "PCB_inserted_board_clearance",
+          "shape": "box",
+          "min_mm": [
+            -5.2,
+            -4.95,
+            16.0
+          ],
+          "max_mm": [
+            5.2,
+            4.95,
+            16.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            29.8,
+            22.05,
+            22.5,
+            40.2,
+            31.95,
+            23.4
+          ],
+          "bounds_plate_mm": [
+            27.8,
+            20.05,
+            22.5,
+            38.2,
+            29.95,
+            23.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested.; interior PCB bay core excludes outer edge/leaf region"
+        },
+        {
+          "feature": "PCB_component_SOP8",
+          "shape": "box",
+          "min_mm": [
+            -3.05,
+            -2.5,
+            14.15
+          ],
+          "max_mm": [
+            3.05,
+            2.5,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            31.95,
+            24.5,
+            20.65,
+            38.05,
+            29.5,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            29.95,
+            22.5,
+            20.65,
+            36.05,
+            27.5,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "PCB_component_C1",
+          "shape": "box",
+          "min_mm": [
+            -0.75,
+            -4.25,
+            15.0
+          ],
+          "max_mm": [
+            0.75,
+            -3.55,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            34.25,
+            22.75,
+            21.5,
+            35.75,
+            23.45,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            32.25,
+            20.75,
+            21.5,
+            33.75,
+            21.45,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "PCB_component_C2",
+          "shape": "box",
+          "min_mm": [
+            4.25,
+            -0.75,
+            15.0
+          ],
+          "max_mm": [
+            5.15,
+            0.75,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            39.25,
+            26.25,
+            21.5,
+            40.15,
+            27.75,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            37.25,
+            24.25,
+            21.5,
+            38.15,
+            25.75,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "PCB_component_R1",
+          "shape": "box",
+          "min_mm": [
+            -5.0,
+            1.35,
+            15.3
+          ],
+          "max_mm": [
+            -4.3,
+            2.85,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            30.0,
+            28.35,
+            21.8,
+            30.7,
+            29.85,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            28.0,
+            26.35,
+            21.8,
+            28.7,
+            27.85,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "PCB_component_R2",
+          "shape": "box",
+          "min_mm": [
+            -5.0,
+            -3.25,
+            15.3
+          ],
+          "max_mm": [
+            -4.3,
+            -1.75,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            30.0,
+            23.75,
+            21.8,
+            30.7,
+            25.25,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            28.0,
+            21.75,
+            21.8,
+            28.7,
+            23.25,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "PCB_component_wire_exit",
+          "shape": "box",
+          "min_mm": [
+            -3.15,
+            3.55,
+            15.3
+          ],
+          "max_mm": [
+            3.15,
+            4.6,
+            15.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            31.85,
+            30.55,
+            21.8,
+            38.15,
+            31.6,
+            22.4
+          ],
+          "bounds_plate_mm": [
+            29.85,
+            28.55,
+            21.8,
+            36.15,
+            29.6,
+            22.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "integral_leaf_side_slit",
+          "shape": "box",
+          "min_mm": [
+            6.35,
+            -4.0,
+            13.95
+          ],
+          "max_mm": [
+            7.15,
+            3.9,
+            18.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              35.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              27.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              33.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              25.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            41.35,
+            23.0,
+            20.45,
+            42.15,
+            30.9,
+            25.4
+          ],
+          "bounds_plate_mm": [
+            39.35,
+            21.0,
+            20.45,
+            40.15,
+            28.9,
+            25.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "upper_M3_mast_blind_opening",
+          "shape": "cylinder_z",
+          "radius_mm": 1.6,
+          "z_mm": [
+            16.6,
+            18.9
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              21.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              13.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              19.5
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              11.5
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              6.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            19.9,
+            11.9,
+            23.1,
+            23.1,
+            15.1,
+            25.4
+          ],
+          "bounds_plate_mm": [
+            17.9,
+            9.9,
+            23.1,
+            21.1,
+            13.1,
+            25.4
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; identical elbow_l.flex cassette translated+14.5mm along originalZ; post union fills original mast bore up to originalZ31: only upperserviceZ>16.5 remains clear",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "M4_bench_mount_hole",
+          "shape": "cylinder_z",
+          "radius_mm": 2.15,
+          "z_mm": [
+            8.05,
+            10.95
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              15.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              18.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -8.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              13.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              16.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -8.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            12.85,
+            15.85,
+            0.05000000000000071,
+            17.15,
+            20.15,
+            2.9499999999999993
+          ],
+          "bounds_plate_mm": [
+            10.85,
+            13.85,
+            0.05000000000000071,
+            15.15,
+            18.15,
+            2.9499999999999993
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; foot subtractsR2.25 Z8..12 at(-20,-9)",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        }
+      ]
+    },
+    {
+      "plate": "T01",
+      "number": 2,
+      "part": "sensor_coupon/magnet_bridge",
+      "id": "T002",
+      "object_name": "T01-02 T002 sensor_coupon/magnet_bridge",
+      "source_3mf": "physical_tests/sensor_coupon/magnet_bridge.3mf",
+      "volumes": [
+        {
+          "feature": "D6_magnet_recess",
+          "shape": "cylinder_z",
+          "radius_mm": 2.98,
+          "z_mm": [
+            24.95,
+            27.55
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.1102230246251565e-16,
+              0.0,
+              1.0,
+              -7.000000000000011
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              14.0
+            ],
+            [
+              -1.0,
+              0.0,
+              1.1102230246251565e-16,
+              105.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.1102230246251565e-16,
+              0.0,
+              1.0,
+              31.049999999999972
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              12.0
+            ],
+            [
+              -1.0,
+              0.0,
+              1.1102230246251565e-16,
+              105.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            17.94999999999999,
+            11.02,
+            102.02,
+            20.54999999999999,
+            16.98,
+            107.98
+          ],
+          "bounds_plate_mm": [
+            55.99999999999997,
+            9.02,
+            102.02,
+            58.59999999999997,
+            14.98,
+            107.98
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; bridge cup subtractsR3.075 Z24.9..27.7",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        },
+        {
+          "feature": "M3_lever_tip_hole",
+          "shape": "cylinder_z",
+          "radius_mm": 1.6,
+          "z_mm": [
+            15.05,
+            24.75
+          ],
+          "local_to_source_print_matrix": [
+            [
+              1.1102230246251565e-16,
+              0.0,
+              1.0,
+              -7.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              14.0
+            ],
+            [
+              -1.0,
+              0.0,
+              1.1102230246251565e-16,
+              5.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "local_to_plate_matrix": [
+            [
+              1.1102230246251565e-16,
+              0.0,
+              1.0,
+              31.049999999999983
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              12.0
+            ],
+            [
+              -1.0,
+              0.0,
+              1.1102230246251565e-16,
+              5.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "bounds_source_mm": [
+            8.05,
+            12.4,
+            3.4000000000000017,
+            17.75,
+            15.6,
+            6.600000000000003
+          ],
+          "bounds_plate_mm": [
+            46.09999999999998,
+            10.4,
+            3.4000000000000017,
+            55.79999999999998,
+            13.6,
+            6.600000000000003
+          ],
+          "evidence": "scripts/build_revo22_coupon.py actual construction plus physical_tests/sensor_coupon/fit_report.json bed rotation/translation; tip subtractsR1.7 Z14.9..25.1",
+          "scope": "Inset clearance core from unchanged O22 coupon source. Physical support removal untested."
+        }
+      ]
+    }
+  ],
+  "volume_count": 12,
+  "limitations": [
+    "Not all screw head pockets, cable-tie slots, side reliefs, core-lightening cavities or all removal corridors are encoded.",
+    "Core cylinders inside hex nuts protect the inscribed region only, not all hex corners.",
+    "Volumes conservatively inset by0.05..0.125mm; passing a path test is not a full void-clearance proof.",
+    "Large open assembly spaces must remain eligible for tree support if removable through their broad opening. Do not globally forbid every face with model below.",
+    "Swept extrusion width must be considered, not only G-code centerlines.",
+    "Direct per-instance source coordinate mapping is tied to the current source3MF and current A1mini transforms; regenerate if orientation changes.",
+    "T001 coupon inner leaf-gap primitive omitted: source-mesh samples disagreed with a full borrowed cassette slit box. Its side slit and PCB bay are encoded; the full inner latch access remains a visual/first-article check."
+  ],
+  "main_sha256": "d36d306a4648e12935c8415768de72e30742053e81914ef0d6f18513aa9223dd"
+}

@@ -1,0 +1,134 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>双轴腕装配</title><link rel="icon" href="data:,"><style>body{max-width:1040px;margin:40px auto;padding:0 26px 70px;color:#243f36;background:#fafbf6;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}h1{font-size:36px;line-height:1.3}h2{margin-top:42px;border-bottom:1px solid #d6dfd5;padding-bottom:8px}h3{margin-top:28px}a{color:#226d57}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}th,td{border:1px solid #d6dfd5;padding:9px 12px;text-align:left}th{background:#e8eee4}img{max-width:100%;border:1px solid #dbe4d8;border-radius:8px}code{background:#eaf0e7;padding:2px 5px}nav{display:flex;flex-wrap:wrap;gap:15px}small,.muted{color:#647567}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#edf3e8;padding:18px;border-radius:10px}.card b{font-size:30px;display:block}.button{display:inline-block;background:#2b715a;color:white;text-decoration:none;padding:9px 17px;border-radius:7px;margin:6px 8px 6px 0}.note{border-left:4px solid #c09b5f;padding:12px 18px;background:#f3efdf}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero img{border:0}.eyebrow{font-size:12px;letter-spacing:2px}@media(max-width:700px){.cards,.hero{grid-template-columns:1fr}body{padding:0 16px}h1{font-size:28px}table{display:block;overflow:auto}}@media print{body{margin:0;max-width:none;font-size:11pt;background:white}nav,.button{display:none}h2{break-after:avoid}img{max-height:140mm;object-fit:contain}tr{break-inside:avoid}}</style></head><body><nav><a href="START_HERE.html">打印入口</a><a href="tutorial/index.html">逐件动画</a><a href="ONE_PRINT.html">一盘打印</a><a href="HARDWARE.html">补购五金</a><a href="viewer/index.html?mode=W">双轴腕三维</a><a href="TEST_PLAN.html">实测方法</a></nav><p><a href="tutorial/index.html">打开 H / R / W 逐件动画教程</a> · <a href="TUTORIAL.html">全部步骤索引</a></p>
+<h1>O24C-T4 · 双轴碟簧腕装配</h1>
+<p>这是装在实际 O24C 手臂上的腕关节；四个新打印件不是放大的摩擦试块。两个正交轴在同一个 UE 腕中心相交：前臂叉绕 Y 做屈伸，掌侧叉绕随动 X 做偏摆。四个方向对应两个转动自由度；这里只改变腕结构，H、R保持T3原样。</p>
+<p><img alt="新版腕" src="images/W.png"></p>
+<h2>打印哪几件</h2>
+<p>已经有T3时，只需打印 <a href="printing/P3_W_new_only.3mf">P3_W_new_only.3mf</a> 中的 <strong>W4-01、W4-02、W4-03、W4-04，各1件</strong>。W3-09掌柄、F3-W加载杆、F3-M夹持柄以及全部H3/R3原样复用。C3-01试配片也可复用。旧球体、球窝、衬片和导向肩钉不装入这版。</p>
+<p>还没打印T3时，包内P1、P2提供原样H/R，P3提供新腕四件，P4提供原掌柄及4个可拆测试附件；P0是可选试配片。整套有12个实臂打印件、4个测试附件、1个试片。</p>
+<table>
+<tr><th>新件</th><th>识别和作用</th><th>打印方向</th></tr>
+<tr><td>W4-01</td><td>带大方孔的前臂屈伸叉</td><td>工程中一侧摩擦耳面朝板</td></tr>
+<tr><td>W4-02</td><td>下半十字芯，底部四个深六角槽</td><td>Z=0合模平面朝板</td></tr>
+<tr><td>W4-03</td><td>上半十字芯，四个小通孔</td><td>Z=0合模平面朝板</td></tr>
+<tr><td>W4-04</td><td>带6mm小方榫的掌侧偏摆叉</td><td>工程中一侧摩擦耳面朝板</td></tr>
+</table>
+<p>A1 mini、0.4mm喷嘴、PLA、0.12mm层高、5圈墙、100%填充、自动支撑、3mm外沿。保留工程方向。先清除孔、六角槽及摩擦面上的支撑和毛刺；合模平面不能有凸起。Φ4光杆应能滑入Φ4.25孔，3mm摩擦耳不要随意磨薄。试片4.15/4.25/4.35三个孔用于记录本机误差，不是三个互换设计。孔过紧或方键插不入时先停下，不能靠拧紧压裂零件。</p>
+<h2>五金朝向</h2>
+<p><strong>这版全套都是普通螺母，没有尼龙圈。</strong> M3调节螺母藏在十字芯中，M2合模螺母在底面的深六角槽；只用外侧内六角即可旋紧。普通螺母被卡住只解决止转，仍需检查螺钉回松。</p>
+<p>每一侧，从十字芯向外的顺序是：<strong>内侧12mm摩擦垫 → 3mm叉耳 → 外侧12mm摩擦垫 → 反向A8两片 → 9mm头下垫 → 轴肩螺钉头</strong>。芯内部为普通M3、9×3.2×0.8反力垫和2.8mm反力壁。光杆定位，轴向力经过摩擦耳；没有滚珠轴承旁路。</p>
+<p>两片12×4.3×1.0摩擦垫的光滑面都朝叉耳。内部9×3.2×0.8反力垫光滑面朝打印壁。M2/M3小垫圈光滑面朝打印件。头下9×4.3×0.8垫圈两面都贴金属，平整去毛刺即可。网页绿色只是识别，不要求实物涂色。</p>
+<p>A8第一片内孔凸边朝螺钉头，第二片翻面朝关节，<strong>两片内孔凸边相对</strong>。不是同向套叠，也不是开口弹簧垫圈。自由叠高约1.2mm；图中1.0mm仅为名义示意，不是应拧到的固定目标。两片平片厚合计0.8mm，不能压到这个状态。</p>
+<h2>实际装配顺序</h2>
+<ol><li>W4-02平放，合模面朝上。四个侧向槽各装普通M3和反力垫；再合上W4-03。</li><li>四颗普通M2从底部深六角槽装到底。上面放0.5mm小垫圈，用四颗M2×16交替轻紧。此时两只叉都没装，工具入口敞开。</li><li>十字芯Y轴两端先放内侧12mm垫圈。把带大方孔的W4-01从前臂侧套入，再逐侧装外侧垫圈、两片反向A8、头下垫、O22轴肩螺钉。暂时只消除明显松旷。</li><li>十字芯X轴两端同样先放内侧垫圈。把W4-04从掌侧套入，再装该轴两侧的外部堆叠。</li><li>接W3-09实际掌柄，普通M2＋0.5mm垫圈＋M2×14；若独立测力则换F3-W及其M2×20、两片0.5mm垫圈和普通M2。</li><li>上端插R3-04实际前臂，或独立测试插F3-M。普通M3＋7×3.2×0.5垫圈＋M3×20。只夹F3-M方柄。</li><li>回中立位，先调前臂叉的Y轴两侧，再调掌侧叉的X轴两侧。每对交替微调，最多约1/24圈一步，立即重新测力。出现阻滞、开缝、发白、可见弯曲或到极限仍不持姿时停止，不继续猛拧。</li></ol>
+<p>四颗轴肩螺钉用3mm内六角；普通M3圆柱头用2.5mm，M2圆柱头用1.5mm。Y与X调节均在外侧；安装好的R仍需先卸W及横向连接螺钉，再从原中央通道调节R。</p>
+<p>首次短测采用螺钉头见证线，反复检查回松。后续需要螺纹锁固时，确认适用材料后，只在清洁的金属螺纹用可拆卸低强度锁固方法，按产品要求固化；不让胶沾摩擦面、光杆或PLA。未锁固的状态不能当成长期持姿验证。这里不虚构一个紧固扭矩。</p>
+<p>下面每个步骤对应网页的“分步定位”：完整模型作背景，高亮当前零件，可查看型号和光滑面。爆炸图只用于辨认，实际装入方向按文字执行。</p>
+<h2>H逐步定位</h2>
+<ol><li><strong>固定叉的第一半</strong> · H3-01。X=0平面朝上，另一半先放旁边。H是实际肘关节，夹持上端方形骨杆。</li></ol>
+<ol><li><strong>左侧普通M3螺母</strong> · HL_N。普通M3 AF5.5×2.4，无塑料圈。放入合模面六角槽，平整承压面朝反力垫。</li></ol>
+<ol><li><strong>左侧反力垫</strong> · HL_RW。M3大垫圈9×3.2×0.8。光滑面朝固定叉反力壁。不是7mm小垫圈。</li></ol>
+<ol><li><strong>右侧普通M3螺母</strong> · HR_N。普通M3 AF5.5×2.4，无塑料圈。放入合模面六角槽，平整承压面朝反力垫。</li></ol>
+<ol><li><strong>右侧反力垫</strong> · HR_RW。M3大垫圈9×3.2×0.8。光滑面朝固定叉反力壁。不是7mm小垫圈。</li></ol>
+<ol><li><strong>合上固定叉</strong> · H3-02。沿X方向合拢，检查两颗调节螺母和两片反力垫均平放，不用螺钉硬拉错位的半件。</li></ol>
+<ol><li><strong>固定叉合模普通螺母</strong> · HC28N。普通M3，装进前侧六角槽。</li></ol>
+<ol><li><strong>合模垫圈</strong> · HC28W。7×3.2×0.5，光滑面朝打印件。螺钉头放在后侧，避免深屈肘干涉。</li></ol>
+<ol><li><strong>合模螺钉 M3×12</strong> · HC28B。2.5mm内六角。交替轻紧两颗，内藏普通螺母止转。</li></ol>
+<ol><li><strong>固定叉合模普通螺母</strong> · HC36N。普通M3，装进前侧六角槽。</li></ol>
+<ol><li><strong>合模垫圈</strong> · HC36W。7×3.2×0.5，光滑面朝打印件。螺钉头放在后侧，避免深屈肘干涉。</li></ol>
+<ol><li><strong>合模螺钉 M3×12</strong> · HC36B。2.5mm内六角。交替轻紧两颗，内藏普通螺母止转。</li></ol>
+<ol><li><strong>内侧摩擦垫</strong> · HL_F1。12×4.3×1.0钢垫圈；光滑面朝接下来装入的转动叉。</li></ol>
+<ol><li><strong>内侧摩擦垫</strong> · HR_F1。12×4.3×1.0钢垫圈；光滑面朝接下来装入的转动叉。</li></ol>
+<ol><li><strong>装入转动叉</strong> · H3-03。从远端沿骨轴套入，使两侧3mm转动耳对准轴孔；这里不装684ZZ轴承。保留方键座的夹紧缝，不要用胶填满。</li></ol>
+<ol><li><strong>外侧摩擦垫</strong> · HL_F2。12×4.3×1.0，光滑面朝转动耳，与内侧垫圈光滑面相向。</li></ol>
+<ol><li><strong>第一片 A8</strong> · HL_S1。内孔凸边朝螺钉头；外圆边朝关节。</li></ol>
+<ol><li><strong>第二片 A8 翻面</strong> · HL_S2。内孔凸边朝关节；两片内孔边相对，不能同向套叠。</li></ol>
+<ol><li><strong>头下金属垫圈</strong> · HL_HW。9×4.3×0.8，两面均贴金属，去毛刺即可。</li></ol>
+<ol><li><strong>O22轴肩调节螺钉</strong> · HL_AX。Φ4×8光杆、M3螺纹长6，用3mm内六角。先调到轻接触，左右交替微调；普通螺母已捕获，不需要悬空扶住它。</li></ol>
+<ol><li><strong>外侧摩擦垫</strong> · HR_F2。12×4.3×1.0，光滑面朝转动耳，与内侧垫圈光滑面相向。</li></ol>
+<ol><li><strong>第一片 A8</strong> · HR_S1。内孔凸边朝螺钉头；外圆边朝关节。</li></ol>
+<ol><li><strong>第二片 A8 翻面</strong> · HR_S2。内孔凸边朝关节；两片内孔边相对，不能同向套叠。</li></ol>
+<ol><li><strong>头下金属垫圈</strong> · HR_HW。9×4.3×0.8，两面均贴金属，去毛刺即可。</li></ol>
+<ol><li><strong>O22轴肩调节螺钉</strong> · HR_AX。Φ4×8光杆、M3螺纹长6，用3mm内六角。先调到轻接触，左右交替微调；普通螺母已捕获，不需要悬空扶住它。</li></ol>
+<ol><li><strong>连接实臂R，或装H加载杆</strong> · H_R_N, H_R_W, H_R_B。选R上端方键或F3-H。普通M3螺母在转动叉前侧；7×3.2×0.5垫圈光滑面朝叉；M3×18从后侧旋入。不要直接换长螺钉。</li></ol>
+<h2>R逐步定位</h2>
+<ol><li><strong>固定芯第一半</strong> · R3-01。上端10mm方键接H，旋转轴沿骨轴；这里也不装MR126ZZ。</li></ol>
+<ol><li><strong>普通M3调节螺母</strong> · R_N。反力垫9×3.2×0.8光滑面朝固定芯端壁；普通M3无塑料圈，先在合模面装好金属件再合拢。</li></ol>
+<ol><li><strong>M3反力垫</strong> · R_RW。反力垫9×3.2×0.8光滑面朝固定芯端壁；普通M3无塑料圈，先在合模面装好金属件再合拢。</li></ol>
+<ol><li><strong>合拢固定芯</strong> · R3-02。反力垫9×3.2×0.8光滑面朝固定芯端壁；普通M3无塑料圈，先在合模面装好金属件再合拢。</li></ol>
+<ol><li><strong>固定芯合模螺母</strong> · RC-7.4N。普通M2 AF4×1.6，装入负X侧槽。</li></ol>
+<ol><li><strong>固定芯合模垫圈</strong> · RC-7.4W。5×2.2×0.5，光滑面朝固定芯。</li></ol>
+<ol><li><strong>固定芯 M2×12</strong> · RC-7.4B。1.5mm内六角，轻紧到两半贴合。</li></ol>
+<ol><li><strong>固定芯合模螺母</strong> · RC7.4N。普通M2 AF4×1.6，装入负X侧槽。</li></ol>
+<ol><li><strong>固定芯合模垫圈</strong> · RC7.4W。5×2.2×0.5，光滑面朝固定芯。</li></ol>
+<ol><li><strong>固定芯 M2×12</strong> · RC7.4B。1.5mm内六角，轻紧到两半贴合。</li></ol>
+<ol><li><strong>先准备独立转盘</strong> · R3-03, RO-8.5N, RO8.5N。转盘尚未套到固定芯时，把两颗普通M2装进背面六角槽。装上去以后背面会被固定芯挡住。</li></ol>
+<ol><li><strong>内侧摩擦垫</strong> · R_F1。12×4.3×1.0，光滑面朝转盘。</li></ol>
+<ol><li><strong>带螺母的转盘就位</strong> · R3-03。沿轴向套到内侧垫圈，厚3mm的圆盘是磨损件，骨轴不偏移。</li></ol>
+<ol><li><strong>外侧摩擦垫</strong> · R_F2。12×4.3×1.0，光滑面朝转盘。</li></ol>
+<ol><li><strong>第一片 A8</strong> · R_S1。内孔凸边朝螺钉头。</li></ol>
+<ol><li><strong>第二片 A8</strong> · R_S2。翻面，内孔凸边朝转盘，两片内孔边相对。</li></ol>
+<ol><li><strong>头下垫圈</strong> · R_HW。9×4.3×0.8，两面去毛刺。</li></ol>
+<ol><li><strong>O22轴肩螺钉</strong> · R_AX。Φ4×8/M3牙长6，3mm内六角；先消除松旷，再按实测保持力微调。</li></ol>
+<ol><li><strong>罩上实际输出壳</strong> · R3-04。壳体围住预紧组件，输出方键位于骨轴上。中央6.4mm通道保留，不要塞入胶或支撑残渣。</li></ol>
+<ol><li><strong>输出壳垫圈</strong> · RO-8.5W。5×2.2×0.5，光滑面朝壳体。</li></ol>
+<ol><li><strong>输出壳 M2×14</strong> · RO-8.5B。只能用14mm；更长的螺钉会伸入固定芯的旋转区域。</li></ol>
+<ol><li><strong>输出壳垫圈</strong> · RO8.5W。5×2.2×0.5，光滑面朝壳体。</li></ol>
+<ol><li><strong>输出壳 M2×14</strong> · RO8.5B。只能用14mm；更长的螺钉会伸入固定芯的旋转区域。</li></ol>
+<ol><li><strong>实际腕部或径向测试杆</strong> · F3-R, FR_B, FR_W, FR_N。联装时接W。独立测试时换F3-R，用额外一套M3×20、7×3.2×0.5垫圈和普通M3螺母；力孔到轴线100mm。</li></ol>
+<h2>W逐步定位</h2>
+<ol><li><strong>先识别屈伸叉、偏摆叉及十字芯</strong> · W4-01, W4-02, W4-03, W4-04。带10.3mm大方孔的是前臂屈伸叉；带6mm小方榫的是掌侧偏摆叉。两轴在十字芯中心相交。颜色仅为网页识别，实物可用笔分别标Y和X。</li></ol>
+<ol><li><strong>下半十字芯，合模平面朝上</strong> · W4-02。有四个深六角入口的是下半；先不要合上。以下四组M3反力组件都从合模面放入，不要尝试从外侧轴孔塞入。</li></ol>
+<ol><li><strong>−Y 普通M3反力螺母</strong> · WYM_N。M3×0.5，AF5.5、高2.4，无塑料圈。平整承压面朝外侧反力垫；不要用尼龙锁紧螺母替代。</li></ol>
+<ol><li><strong>−Y 9mm反力垫</strong> · WYM_RW。9×3.2×0.8 mm钢垫圈。光滑面朝十字芯外侧反力壁，粗面朝普通螺母；先去毛刺。</li></ol>
+<ol><li><strong>+Y 普通M3反力螺母</strong> · WYP_N。M3×0.5，AF5.5、高2.4，无塑料圈。平整承压面朝外侧反力垫；不要用尼龙锁紧螺母替代。</li></ol>
+<ol><li><strong>+Y 9mm反力垫</strong> · WYP_RW。9×3.2×0.8 mm钢垫圈。光滑面朝十字芯外侧反力壁，粗面朝普通螺母；先去毛刺。</li></ol>
+<ol><li><strong>−X 普通M3反力螺母</strong> · WXM_N。M3×0.5，AF5.5、高2.4，无塑料圈。平整承压面朝外侧反力垫；不要用尼龙锁紧螺母替代。</li></ol>
+<ol><li><strong>−X 9mm反力垫</strong> · WXM_RW。9×3.2×0.8 mm钢垫圈。光滑面朝十字芯外侧反力壁，粗面朝普通螺母；先去毛刺。</li></ol>
+<ol><li><strong>+X 普通M3反力螺母</strong> · WXP_N。M3×0.5，AF5.5、高2.4，无塑料圈。平整承压面朝外侧反力垫；不要用尼龙锁紧螺母替代。</li></ol>
+<ol><li><strong>+X 9mm反力垫</strong> · WXP_RW。9×3.2×0.8 mm钢垫圈。光滑面朝十字芯外侧反力壁，粗面朝普通螺母；先去毛刺。</li></ol>
+<ol><li><strong>合上十字芯</strong> · W4-03。沿Z合拢，四颗M3和四片反力垫必须留在各自槽内；两半无翘缝才继续。不要用螺钉强行拉平。</li></ol>
+<ol><li><strong>十字芯合模：普通M2</strong> · WC-5_-5N。AF4×1.6，无塑料圈。从下半外侧的深六角槽装入到底，不能停在槽口。</li></ol>
+<ol><li><strong>十字芯合模：0.5mm平垫</strong> · WC-5_-5W。5×2.2×0.5 mm，光滑面朝上半十字芯，粗面朝螺钉头。</li></ol>
+<ol><li><strong>十字芯合模：M2×16</strong> · WC-5_-5B。用1.5mm内六角。四颗交替轻紧至合模面贴合；先完成此步，再装两只叉，避免工具入口被遮住。</li></ol>
+<ol><li><strong>十字芯合模：普通M2</strong> · WC-5_5N。AF4×1.6，无塑料圈。从下半外侧的深六角槽装入到底，不能停在槽口。</li></ol>
+<ol><li><strong>十字芯合模：0.5mm平垫</strong> · WC-5_5W。5×2.2×0.5 mm，光滑面朝上半十字芯，粗面朝螺钉头。</li></ol>
+<ol><li><strong>十字芯合模：M2×16</strong> · WC-5_5B。用1.5mm内六角。四颗交替轻紧至合模面贴合；先完成此步，再装两只叉，避免工具入口被遮住。</li></ol>
+<ol><li><strong>十字芯合模：普通M2</strong> · WC5_-5N。AF4×1.6，无塑料圈。从下半外侧的深六角槽装入到底，不能停在槽口。</li></ol>
+<ol><li><strong>十字芯合模：0.5mm平垫</strong> · WC5_-5W。5×2.2×0.5 mm，光滑面朝上半十字芯，粗面朝螺钉头。</li></ol>
+<ol><li><strong>十字芯合模：M2×16</strong> · WC5_-5B。用1.5mm内六角。四颗交替轻紧至合模面贴合；先完成此步，再装两只叉，避免工具入口被遮住。</li></ol>
+<ol><li><strong>十字芯合模：普通M2</strong> · WC5_5N。AF4×1.6，无塑料圈。从下半外侧的深六角槽装入到底，不能停在槽口。</li></ol>
+<ol><li><strong>十字芯合模：0.5mm平垫</strong> · WC5_5W。5×2.2×0.5 mm，光滑面朝上半十字芯，粗面朝螺钉头。</li></ol>
+<ol><li><strong>十字芯合模：M2×16</strong> · WC5_5B。用1.5mm内六角。四颗交替轻紧至合模面贴合；先完成此步，再装两只叉，避免工具入口被遮住。</li></ol>
+<ol><li><strong>Y轴内侧摩擦垫</strong> · WYM_F1。12×4.3×1.0 mm钢垫圈，光滑面朝外、朝即将放入的3mm叉耳。沿该轴从外侧放到十字芯端面。</li></ol>
+<ol><li><strong>Y轴内侧摩擦垫</strong> · WYP_F1。12×4.3×1.0 mm钢垫圈，光滑面朝外、朝即将放入的3mm叉耳。沿该轴从外侧放到十字芯端面。</li></ol>
+<ol><li><strong>前后屈伸叉就位</strong> · W4-01。从十字芯的+Z侧，沿前臂方向套入，让两只耳位于内侧垫圈外面，孔对中；不要掰开叉臂。模型中叉耳厚3mm，肩钉孔Φ4.25。</li></ol>
+<ol><li><strong>−Y 外侧摩擦垫</strong> · WYM_F2。12×4.3×1.0 mm，光滑面朝内、朝叉耳。两片12mm垫圈的光滑面相向，中间夹3mm打印耳。</li></ol>
+<ol><li><strong>−Y 第一片A8</strong> · WYM_S1。8×4.2×0.4，自由高约0.6 mm。内孔凸边朝外、朝螺钉头；外圆边朝内、朝关节。</li></ol>
+<ol><li><strong>−Y 第二片A8翻面</strong> · WYM_S2。与上一片反向：内孔凸边朝关节。两片内孔凸边相对；自由叠高约1.2mm。不能同向套叠。</li></ol>
+<ol><li><strong>−Y 头下平垫</strong> · WYM_HW。9×4.3×0.8 mm。两侧均贴金属，去毛刺、保持平整即可；不要错拿9×3.2的反力垫。</li></ol>
+<ol><li><strong>−Y O22轴肩螺钉</strong> · WYM_AX。光杆Φ4×8、M3×0.5螺纹长6、头Φ7×3、3mm内六角。螺母已止转，只旋外侧螺钉。先轻接触，待同轴另一侧装好后交替微调，不压平碟簧。</li></ol>
+<ol><li><strong>+Y 外侧摩擦垫</strong> · WYP_F2。12×4.3×1.0 mm，光滑面朝内、朝叉耳。两片12mm垫圈的光滑面相向，中间夹3mm打印耳。</li></ol>
+<ol><li><strong>+Y 第一片A8</strong> · WYP_S1。8×4.2×0.4，自由高约0.6 mm。内孔凸边朝外、朝螺钉头；外圆边朝内、朝关节。</li></ol>
+<ol><li><strong>+Y 第二片A8翻面</strong> · WYP_S2。与上一片反向：内孔凸边朝关节。两片内孔凸边相对；自由叠高约1.2mm。不能同向套叠。</li></ol>
+<ol><li><strong>+Y 头下平垫</strong> · WYP_HW。9×4.3×0.8 mm。两侧均贴金属，去毛刺、保持平整即可；不要错拿9×3.2的反力垫。</li></ol>
+<ol><li><strong>+Y O22轴肩螺钉</strong> · WYP_AX。光杆Φ4×8、M3×0.5螺纹长6、头Φ7×3、3mm内六角。螺母已止转，只旋外侧螺钉。先轻接触，待同轴另一侧装好后交替微调，不压平碟簧。</li></ol>
+<ol><li><strong>X轴内侧摩擦垫</strong> · WXM_F1。12×4.3×1.0 mm钢垫圈，光滑面朝外、朝即将放入的3mm叉耳。沿该轴从外侧放到十字芯端面。</li></ol>
+<ol><li><strong>X轴内侧摩擦垫</strong> · WXP_F1。12×4.3×1.0 mm钢垫圈，光滑面朝外、朝即将放入的3mm叉耳。沿该轴从外侧放到十字芯端面。</li></ol>
+<ol><li><strong>左右偏摆叉就位</strong> · W4-04。从十字芯的−Z侧，沿手掌方向套入，让两只耳位于内侧垫圈外面，孔对中；不要掰开叉臂。模型中叉耳厚3mm，肩钉孔Φ4.25。</li></ol>
+<ol><li><strong>−X 外侧摩擦垫</strong> · WXM_F2。12×4.3×1.0 mm，光滑面朝内、朝叉耳。两片12mm垫圈的光滑面相向，中间夹3mm打印耳。</li></ol>
+<ol><li><strong>−X 第一片A8</strong> · WXM_S1。8×4.2×0.4，自由高约0.6 mm。内孔凸边朝外、朝螺钉头；外圆边朝内、朝关节。</li></ol>
+<ol><li><strong>−X 第二片A8翻面</strong> · WXM_S2。与上一片反向：内孔凸边朝关节。两片内孔凸边相对；自由叠高约1.2mm。不能同向套叠。</li></ol>
+<ol><li><strong>−X 头下平垫</strong> · WXM_HW。9×4.3×0.8 mm。两侧均贴金属，去毛刺、保持平整即可；不要错拿9×3.2的反力垫。</li></ol>
+<ol><li><strong>−X O22轴肩螺钉</strong> · WXM_AX。光杆Φ4×8、M3×0.5螺纹长6、头Φ7×3、3mm内六角。螺母已止转，只旋外侧螺钉。先轻接触，待同轴另一侧装好后交替微调，不压平碟簧。</li></ol>
+<ol><li><strong>+X 外侧摩擦垫</strong> · WXP_F2。12×4.3×1.0 mm，光滑面朝内、朝叉耳。两片12mm垫圈的光滑面相向，中间夹3mm打印耳。</li></ol>
+<ol><li><strong>+X 第一片A8</strong> · WXP_S1。8×4.2×0.4，自由高约0.6 mm。内孔凸边朝外、朝螺钉头；外圆边朝内、朝关节。</li></ol>
+<ol><li><strong>+X 第二片A8翻面</strong> · WXP_S2。与上一片反向：内孔凸边朝关节。两片内孔凸边相对；自由叠高约1.2mm。不能同向套叠。</li></ol>
+<ol><li><strong>+X 头下平垫</strong> · WXP_HW。9×4.3×0.8 mm。两侧均贴金属，去毛刺、保持平整即可；不要错拿9×3.2的反力垫。</li></ol>
+<ol><li><strong>+X O22轴肩螺钉</strong> · WXP_AX。光杆Φ4×8、M3×0.5螺纹长6、头Φ7×3、3mm内六角。螺母已止转，只旋外侧螺钉。先轻接触，待同轴另一侧装好后交替微调，不压平碟簧。</li></ol>
+<ol><li><strong>沿用T3掌柄</strong> · W3-09。套到6mm方榫上，对准Z=−27的横孔；这里用实际掌柄。独立测力时可换原F3-W 100mm加载杆。</li></ol>
+<ol><li><strong>掌柄普通M2</strong> · WPALM_N。AF4×1.6，放入掌柄外侧六角槽；无塑料圈。</li></ol>
+<ol><li><strong>掌柄平垫0.5mm</strong> · WPALM_W。5×2.2×0.5 mm，光滑面朝掌柄。</li></ol>
+<ol><li><strong>掌柄M2×14</strong> · WPALM_B。1.5mm内六角；固定掌柄方键，不用来调节腕关节摩擦。</li></ol>
+<ol><li><strong>接前臂或独立夹持柄</strong> · F3-M, W_R_N, W_R_W, W_R_B。联装接R3-04；独立测试改插F3-M。普通M3置六角槽，7×3.2×0.5垫圈光滑面朝叉，M3×20从相对一侧旋入。只夹F3-M方柄，不夹两只活动叉。</li></ol>
+<ol><li><strong>可选：换100mm加载杆</strong> · F3-W, FW_W1, FW_W2, FW_N, FW_B。卸下实际掌柄及其M2×14。换F3-W、M2×20、两片5×2.2×0.5垫圈和普通M2；两片垫圈光滑面朝加载杆。已打印的T3附件可直接复用。</li></ol>
+<ol><li><strong>先调屈伸，再调偏摆</strong> · WYM_AX, WYP_AX, WXM_AX, WXP_AX。回中立位。先调连接前臂叉的Y轴两颗，再调连接掌柄叉的X轴两颗，各轴两侧交替微调。每次最多约1/24圈，先消松旷后测力；它是微调步长，不是保证安全的紧固扭矩。四颗螺钉画见证线。</li></ol></body></html>

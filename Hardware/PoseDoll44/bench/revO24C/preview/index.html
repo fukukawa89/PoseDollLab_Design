@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>O24C · 紧凑关节对比</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body><aside><div class="eyebrow">POSEDOLL LAB / O24C</div><h1>关节收紧，<br>骨架保持对齐。</h1><p class="intro">肩、肘缩短外伸支承；手腕采用 D22 球体。保留轴承规格、轴径及摩擦片厚度，再复查动作和间隙。</p>
+<div class="stats"><div><strong>560<span> mm</span></strong><small>对应整偶参考身高</small></div><div><strong>22<span> mm</span></strong><small>腕球直径 · B 为 24 mm</small></div></div>
+<div class="control-pair"><label>对比版本<select id="revision"><option value="O24C">O24C · 紧凑候选</option><option value="O24B">O24B · 原方案</option></select></label><label>观察部位<select id="focus"><option value="all">完整手臂</option><option value="shoulder">肩部</option><option value="elbow">肘部</option><option value="wrist">手腕</option></select></label></div>
+<label>查看动作<select id="pose"></select></label><div id="status" role="status"></div>
+<div class="views"><button data-view="three">立体</button><button data-view="front">正面</button><button data-view="side">侧面</button><button id="fit">居中</button></div>
+<label class="check"><input id="bones" type="checkbox" checked> 显示骨线与关节中心</label><label class="check"><input id="body" type="checkbox"> 显示整偶比例参考</label><label class="check"><input id="hardware" type="checkbox" checked> 显示五金与传感板</label>
+<details><summary>手动摆动关节</summary><div id="sliders"></div><button id="zero">回到自然垂臂</button></details>
+<p class="hint">拖动旋转 · 滚轮缩放。选择局部再切换 B / C，可以按同一比例检查大小。包围盒体积不等于材料体积或运动扫掠体积。手腕沿用 B 的两轴球面导向；肩外展 90° 附近的万向架奇异位形仍待解决。</p>
+<nav><a href="../DESIGN.zh-CN.md">尺寸变化与可靠性取舍 ↗</a><a href="../O24C_compact_arm.blend">可编辑 Blender 装配 ↗</a><a href="../O24C_compact_arm.glb">GLB 装配 ↗</a><a href="../verification/selected_clearances.json">关键活动间隙 ↗</a><a href="../verification/motion_dense.json">动作与实体干涉 ↗</a></nav>
+<div class="notice">数字设计候选，尚未实物证明持姿、磨损或测角精度。预紧锁固、衬片定位、线束及加工公差仍需完成。</div></aside>
+<main><canvas id="view" aria-label="O24C 与 O24B 可旋转手臂对比"></canvas><div class="topline"><span id="current">自然垂臂</span><span>UE 5.8.2 / QUINN</span></div><div id="scale-label" hidden>560 mm · UE 中立站姿比例参考</div><div id="dimension-readout"></div><div class="legend"><i class="teal"></i>承力结构 <i class="gold"></i>转动件 <i class="pink"></i>UE 骨线</div><div id="error" hidden></div></main>
+<script src="data.js"></script><script src="viewer.js"></script></body></html>

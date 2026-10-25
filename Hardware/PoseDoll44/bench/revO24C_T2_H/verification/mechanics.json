@@ -1,0 +1,1060 @@
+{
+  "revision": "O24C-T2-H",
+  "passed": true,
+  "geometry_sha256": "af134192a66e21b27705917cf212d4fb3958ba624435c90c7f4e29a7cdf4bc68",
+  "static_collisions": [],
+  "motion_collisions": [],
+  "motion_poses": 844,
+  "motion_step_deg": 1,
+  "spring_height_cases_mm": [
+    1.2,
+    1.1,
+    1.0,
+    0.9
+  ],
+  "threshold_mm3": 0.001,
+  "stacks": [
+    {
+      "spring_pair_height_mm": 1.2,
+      "compression_fraction": 0.0,
+      "head_face_y": 4.5,
+      "shoulder_start_y": -3.5,
+      "thread_tip_y": -9.5,
+      "shoulder_floor_clearance_mm": 0.9000000000000004,
+      "shoulder_to_reaction_washer_gap_mm": 1.7999999999999998,
+      "protrusion_past_main_nut_mm": 1.0,
+      "full_thread_engagement_mm": 2.4000000000000004,
+      "cap_screw_protrusion_mm": 1.1,
+      "cap_screw_tip_to_lever_clearance_mm": 0.7
+    },
+    {
+      "spring_pair_height_mm": 1.1,
+      "compression_fraction": 0.24999999999999967,
+      "head_face_y": 4.4,
+      "shoulder_start_y": -3.5999999999999996,
+      "thread_tip_y": -9.6,
+      "shoulder_floor_clearance_mm": 0.8000000000000007,
+      "shoulder_to_reaction_washer_gap_mm": 1.7000000000000002,
+      "protrusion_past_main_nut_mm": 1.0999999999999996,
+      "full_thread_engagement_mm": 2.4000000000000004,
+      "cap_screw_protrusion_mm": 1.1,
+      "cap_screw_tip_to_lever_clearance_mm": 0.7
+    },
+    {
+      "spring_pair_height_mm": 1.0,
+      "compression_fraction": 0.4999999999999999,
+      "head_face_y": 4.3,
+      "shoulder_start_y": -3.7,
+      "thread_tip_y": -9.7,
+      "shoulder_floor_clearance_mm": 0.7000000000000002,
+      "shoulder_to_reaction_washer_gap_mm": 1.5999999999999996,
+      "protrusion_past_main_nut_mm": 1.1999999999999993,
+      "full_thread_engagement_mm": 2.4000000000000004,
+      "cap_screw_protrusion_mm": 1.1,
+      "cap_screw_tip_to_lever_clearance_mm": 0.7
+    },
+    {
+      "spring_pair_height_mm": 0.9,
+      "compression_fraction": 0.7499999999999998,
+      "head_face_y": 4.2,
+      "shoulder_start_y": -3.8,
+      "thread_tip_y": -9.8,
+      "shoulder_floor_clearance_mm": 0.6000000000000005,
+      "shoulder_to_reaction_washer_gap_mm": 1.5,
+      "protrusion_past_main_nut_mm": 1.3000000000000007,
+      "full_thread_engagement_mm": 2.4000000000000004,
+      "cap_screw_protrusion_mm": 1.1,
+      "cap_screw_tip_to_lever_clearance_mm": 0.7
+    }
+  ],
+  "assembly_paths": [
+    {
+      "label": "反力垫从后方装入",
+      "movers": [
+        "M03"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "调节螺母先放进独立后盖",
+      "movers": [
+        "M02"
+      ],
+      "distance_mm": 20,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "带螺母后盖直线合拢",
+      "movers": [
+        "H2-03",
+        "M02"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "固定普通螺母从正面入槽",
+      "movers": [
+        "C_N1"
+      ],
+      "distance_mm": 20,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "固定普通螺母从正面入槽",
+      "movers": [
+        "C_N2"
+      ],
+      "distance_mm": 20,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "内侧大垫圈",
+      "movers": [
+        "F01"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "转动杆",
+      "movers": [
+        "H2-02"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "正面逐件装入 F02",
+      "movers": [
+        "F02"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "正面逐件装入 SP01",
+      "movers": [
+        "SP01"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "正面逐件装入 SP02",
+      "movers": [
+        "SP02"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "正面逐件装入 M04",
+      "movers": [
+        "M04"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "正面逐件装入 AX01",
+      "movers": [
+        "AX01"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "后盖垫圈与螺钉装入",
+      "movers": [
+        "C_S1",
+        "C_W1"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    },
+    {
+      "label": "后盖垫圈与螺钉装入",
+      "movers": [
+        "C_S2",
+        "C_W2"
+      ],
+      "distance_mm": 25,
+      "step_mm": 0.25,
+      "max_overlap_mm3": 0.0,
+      "pair": null,
+      "passed": true
+    }
+  ],
+  "contacts": [
+    {
+      "pair": [
+        "M02",
+        "M03"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 0.3637564770883785,
+      "passed": true
+    },
+    {
+      "pair": [
+        "M03",
+        "H2-01"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 1.0862809252393368,
+      "passed": true
+    },
+    {
+      "pair": [
+        "F01",
+        "H2-01"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 1.9634089707199396,
+      "passed": true
+    },
+    {
+      "pair": [
+        "F01",
+        "H2-02"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 1.963408970719939,
+      "passed": true
+    },
+    {
+      "pair": [
+        "F02",
+        "H2-02"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 1.9634089707199383,
+      "passed": true
+    },
+    {
+      "pair": [
+        "SP01",
+        "F02"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 0.09241409697500702,
+      "passed": true
+    },
+    {
+      "pair": [
+        "SP02",
+        "SP01"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 0.02580755117030344,
+      "passed": true
+    },
+    {
+      "pair": [
+        "M04",
+        "SP02"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 0.09241409697500726,
+      "passed": true
+    },
+    {
+      "pair": [
+        "AX01",
+        "M04"
+      ],
+      "virtual_displacement_mm": 0.02,
+      "contact_probe_mm3": 0.47728155283773416,
+      "passed": true
+    }
+  ],
+  "tools": [
+    {
+      "height_mm": 1.2,
+      "tool": "axis_AF3",
+      "findings": []
+    },
+    {
+      "height_mm": 1.2,
+      "tool": "axis_driver_D7",
+      "findings": []
+    },
+    {
+      "height_mm": 1.1,
+      "tool": "axis_AF3",
+      "findings": []
+    },
+    {
+      "height_mm": 1.1,
+      "tool": "axis_driver_D7",
+      "findings": []
+    },
+    {
+      "height_mm": 1.0,
+      "tool": "axis_AF3",
+      "findings": []
+    },
+    {
+      "height_mm": 1.0,
+      "tool": "axis_driver_D7",
+      "findings": []
+    },
+    {
+      "height_mm": 0.9,
+      "tool": "axis_AF3",
+      "findings": []
+    },
+    {
+      "height_mm": 0.9,
+      "tool": "axis_driver_D7",
+      "findings": []
+    },
+    {
+      "tool": "cap_AF2.5_1",
+      "findings": []
+    },
+    {
+      "tool": "cap_AF2.5_2",
+      "findings": []
+    }
+  ],
+  "captive_nut_30deg_overlap_mm3": 1.7738046176459057,
+  "cap_nose_gap_to_reaction_washer_mm": 0.15000000000000036,
+  "cap_min_wall_outside_hex_corner_mm": 2.551368438700171,
+  "continuous_reaction_web_mm": 2.8,
+  "fit_diametral_allowance_mm": 0.25,
+  "tolerance_sensitivity": {
+    "assumed_not_supplier_tolerances": true,
+    "cases": 64,
+    "min_full_thread_engagement_mm": 2.4000000000000004,
+    "min_shoulder_floor_clearance_mm": 0.40000000000000124,
+    "min_tip_past_nut_mm": 0.5000000000000018,
+    "rows": [
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.1999999999999993
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7999999999999998,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.8000000000000007
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7999999999999998,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5999999999999996
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7999999999999998,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.200000000000001
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7999999999999998,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.40000000000000124,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.1999999999999993
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.40000000000000124,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.3999999999999986
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.1999999999999993
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.40000000000000124,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5999999999999996
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.40000000000000124,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.799999999999999
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 0.9,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000005,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5999999999999996
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8999999999999995,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7000000000000011
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8999999999999995,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.3000000000000007
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8999999999999995,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.1000000000000014
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8999999999999995,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.3000000000000007
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.5000000000000009,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.5000000000000009,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.299999999999999
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.5000000000000009,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.5000000000000009,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.6999999999999993
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.3000000000000007
+      },
+      {
+        "pair_mm": 1.0,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000002,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7999999999999989
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9999999999999982
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 1.0,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.5999999999999996
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 1.0,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7999999999999989
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.200000000000001
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 1.0,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0000000000000018
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 1.0,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.200000000000001
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000014,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9999999999999982
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000014,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.1999999999999975
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7999999999999989
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9999999999999982
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.6000000000000014,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.6000000000000014,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.5999999999999996
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.200000000000001
+      },
+      {
+        "pair_mm": 1.1,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.8000000000000007,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4000000000000004
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7000000000000011
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 1.0999999999999996,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.5000000000000018
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 1.0999999999999996,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7000000000000011
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.299999999999999
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 1.0999999999999996,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 7.9,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 1.0999999999999996,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000011,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000011,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.7000000000000011
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 5.8,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 0.9000000000000004
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.7000000000000011,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.299999999999999
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": -0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.7000000000000011,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.4999999999999982
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": -0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.0999999999999996
+      },
+      {
+        "pair_mm": 1.2,
+        "shoulder_mm": 8.1,
+        "thread_mm": 6.2,
+        "stack_error_mm": 0.1,
+        "nut_position_error_mm": 0.1,
+        "bottom_clearance_mm": 0.9000000000000004,
+        "full_engagement_mm": 2.4000000000000004,
+        "tip_past_nut_mm": 1.299999999999999
+      }
+    ]
+  },
+  "force_estimates": {
+    "assumed_mu_not_measured": true,
+    "target_Nm": 0.13,
+    "effective_radius_mm": 4.378118609406952,
+    "area_each_mm2": 98.57532348801374,
+    "old_T1_nominal_rotor_face_area_mm2": 46.62123497927254,
+    "cases": [
+      {
+        "mu_assumed": 0.1,
+        "effective_faces": 1,
+        "required_axial_force_N": 296.93119716007294
+      },
+      {
+        "mu_assumed": 0.1,
+        "effective_faces": 2,
+        "required_axial_force_N": 148.46559858003647
+      },
+      {
+        "mu_assumed": 0.2,
+        "effective_faces": 1,
+        "required_axial_force_N": 148.46559858003647
+      },
+      {
+        "mu_assumed": 0.2,
+        "effective_faces": 2,
+        "required_axial_force_N": 74.23279929001824
+      },
+      {
+        "mu_assumed": 0.3,
+        "effective_faces": 1,
+        "required_axial_force_N": 98.97706572002431
+      },
+      {
+        "mu_assumed": 0.3,
+        "effective_faces": 2,
+        "required_axial_force_N": 49.48853286001216
+      }
+    ]
+  },
+  "physical_torque_verified": false,
+  "physical_wear_verified": false,
+  "physical_strength_verified": false,
+  "scope": "Rigid nominal geometry, 1-degree angular sampling, specified assembly trajectories, straight tool shanks, geometric force contacts. No elastic/contact-pressure/material/bolt-strength simulation; no supplier force curve assumed.",
+  "elapsed_s": 1.1722028255462646
+}

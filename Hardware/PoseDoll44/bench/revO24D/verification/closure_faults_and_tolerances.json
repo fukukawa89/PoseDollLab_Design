@@ -1,0 +1,4663 @@
+{
+  "status": "PASS_CONDITIONAL",
+  "geometry_sha256": "fd64f061821a42f803e2131b0f0642147ab9cc8e65dc32cdb5e3476a0b7c9e8e",
+  "joints": [
+    {
+      "axis": "l_hip_abduct",
+      "interface": "l_hip_abduction",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 47.7648457688859,
+        "printed_pin_bearing_stress_MPa": 2.355583952352645,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_hip_abduction_friction_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_friction_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_rotor_cap_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_rotor_cap_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_rotor_cap_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_abduction_rotor_cap_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_hip_abduction_pressure_-1",
+        "l_hip_abduction_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_hip_abduction_rotor_cap_-1",
+        "l_hip_abduction_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681384
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681423
+        }
+      ],
+      "axial_pull_N": 47.7648457688859,
+      "cap_key_stress_MPa": 3.0184020249810843,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 22.614518376408718,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 9.629392227077155,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.36706584345447746,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_hip_roll",
+      "interface": "l_hip_twist",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 52.702590736559564,
+        "printed_pin_bearing_stress_MPa": 2.5990951082965155,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_hip_twist_friction_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_-1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_-1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_friction_1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_rotor_cap_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_rotor_cap_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_rotor_cap_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_twist_rotor_cap_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_hip_twist_pressure_-1",
+        "l_hip_twist_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_hip_twist_rotor_cap_-1",
+        "l_hip_twist_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058167941
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168049
+        }
+      ],
+      "axial_pull_N": 52.702590736559564,
+      "cap_key_stress_MPa": 0.05331517114757012,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 0.3994487505903578,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 545.1614685264212,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.36994817288846765,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_knee_flex",
+      "interface": "l_knee",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 56.08152821166995,
+        "printed_pin_bearing_stress_MPa": 2.765731695607716,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_knee_friction_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_-1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_friction_1",
+          "printed_frame": "l_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_rotor_cap_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_rotor_cap_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_rotor_cap_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_knee_rotor_cap_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_knee_pressure_-1",
+        "l_knee_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_knee_rotor_cap_-1",
+        "l_knee_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168143
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681455
+        }
+      ],
+      "axial_pull_N": 56.08152821166995,
+      "cap_key_stress_MPa": 2.429114781274017,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 18.19945136694359,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 11.96541934601487,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3671941267708478,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_toe_flex",
+      "interface": "l_toe",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 25.245726880338648,
+        "printed_pin_bearing_stress_MPa": 3.8926001486820447,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_toe_friction_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_-1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_-1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_friction_1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_rotor_cap_-1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_rotor_cap_-1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_rotor_cap_1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_toe_rotor_cap_1",
+          "printed_frame": "l_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_toe_pressure_-1",
+        "l_toe_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_toe_rotor_cap_-1",
+        "l_toe_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802610117
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802609736
+        }
+      ],
+      "axial_pull_N": 25.245726880338648,
+      "cap_key_stress_MPa": 0.7336902891049322,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 4.22032890146057,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 71.74599875832939,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3694451765237664,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_knee_flex",
+      "interface": "r_knee",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 55.66290569599758,
+        "printed_pin_bearing_stress_MPa": 2.745086795281174,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_knee_friction_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_friction_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_rotor_cap_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_rotor_cap_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_rotor_cap_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_knee_rotor_cap_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_knee_pressure_-1",
+        "r_knee_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_knee_rotor_cap_-1",
+        "r_knee_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168152
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168139
+        }
+      ],
+      "axial_pull_N": 55.66290569599758,
+      "cap_key_stress_MPa": 2.4261264494788373,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 18.177062141208385,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 11.980157507367522,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3671975785962817,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_toe_flex",
+      "interface": "r_toe",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 25.168482992791308,
+        "printed_pin_bearing_stress_MPa": 3.880690031394603,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_toe_friction_-1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_-1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_friction_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_rotor_cap_-1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_rotor_cap_-1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_rotor_cap_1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_toe_rotor_cap_1",
+          "printed_frame": "r_toe_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_toe_pressure_-1",
+        "r_toe_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_toe_rotor_cap_-1",
+        "r_toe_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802609736
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080261009
+        }
+      ],
+      "axial_pull_N": 25.168482992791308,
+      "cap_key_stress_MPa": 0.734443189501474,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 4.22465973062736,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 71.67244971915578,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3694446071734268,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_shoulder_abduct",
+      "interface": "l_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.5418847582137152,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_shoulder_swing_friction_-1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_-1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_friction_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_rotor_cap_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_swing_rotor_cap_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_shoulder_swing_pressure_-1",
+        "l_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_shoulder_swing_rotor_cap_-1",
+        "l_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080260972
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802609818
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 2.9092663358801434,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 16.734664451317627,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 18.093682906207952,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.8674037740830803,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_ankle_flex",
+      "interface": "l_ankle_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 2.7330343736592537,
+        "axial_pull_N": 60.942352651893906,
+        "printed_pin_bearing_stress_MPa": 5.5746053945800105,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_friction_1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_rotor_cap_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_swing_rotor_cap_1",
+          "printed_frame": "l_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_ankle_shoulder_swing_pressure_-1",
+        "l_ankle_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_ankle_shoulder_swing_rotor_cap_-1",
+        "l_ankle_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802610088
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802609772
+        }
+      ],
+      "axial_pull_N": 60.942352651893906,
+      "cap_key_stress_MPa": 6.278308822267451,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 36.11405053109632,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 8.384318780946773,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.8643972444606505,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_elbow_flex",
+      "interface": "l_elbow",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.5418847582137152,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_elbow_friction_-1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_-1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_friction_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_rotor_cap_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_rotor_cap_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_rotor_cap_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_elbow_rotor_cap_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_elbow_pressure_-1",
+        "l_elbow_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "l_elbow_rotor_cap_-1",
+        "l_elbow_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080261003
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802610053
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.7736445213173753,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 4.450153397499012,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 68.04073592027203,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.8694231732036807,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_elbow_flex",
+      "interface": "r_elbow",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.5418847582137152,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_elbow_friction_-1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_-1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_friction_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_rotor_cap_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_rotor_cap_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_rotor_cap_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_elbow_rotor_cap_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_elbow_pressure_-1",
+        "r_elbow_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_elbow_rotor_cap_-1",
+        "r_elbow_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080261002
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802610095
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.7772848871846654,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 4.471093488310842,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 67.72207132674494,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.8694122098799237,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "lumbar_side",
+      "interface": "lumbar_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 1.1420167565833024,
+        "axial_pull_N": 41.84198623426915,
+        "printed_pin_bearing_stress_MPa": 6.106446628018028,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "lumbar_shoulder_swing_friction_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_-1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_-1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_friction_1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_rotor_cap_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_swing_rotor_cap_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "lumbar_shoulder_swing_pressure_-1",
+        "lumbar_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "lumbar_shoulder_swing_rotor_cap_-1",
+        "lumbar_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168104
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681068
+        }
+      ],
+      "axial_pull_N": 41.84198623426915,
+      "cap_key_stress_MPa": 3.0041392197096766,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 22.507658365966133,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 9.675109864034768,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3627313308875439,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "thorax_flex",
+      "interface": "thorax_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 1.1420167565833024,
+        "axial_pull_N": 35.115453045127126,
+        "printed_pin_bearing_stress_MPa": 5.124772008627075,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "thorax_shoulder_swing_friction_-1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_-1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_friction_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_rotor_cap_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_swing_rotor_cap_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "thorax_shoulder_swing_pressure_-1",
+        "thorax_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "thorax_shoulder_swing_rotor_cap_-1",
+        "thorax_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168106
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681054
+        }
+      ],
+      "axial_pull_N": 35.115453045127126,
+      "cap_key_stress_MPa": 2.214166906446078,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 16.589015571765877,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 13.127003620607425,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3674424133039883,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_clavicle_protract",
+      "interface": "l_clavicle_z",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 13.838320774061472,
+        "printed_pin_bearing_stress_MPa": 1.3761816554401616,
+        "pin_shear_factor": 72.26310304024737,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_clavicle_z_face_pad_-1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_-1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_-1",
+          "printed_frame": "l_chest",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_-1",
+          "printed_frame": "l_chest",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_1",
+          "printed_frame": "l_chest",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_z_face_pad_1",
+          "printed_frame": "l_chest",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_clavicle_z_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_clavicle_z_rear_thrust_cap",
+        "l_clavicle_z_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888244171
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673946598
+        }
+      ],
+      "axial_pull_N": 13.838320774061472,
+      "cap_key_stress_MPa": 3.5228692028116186,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 17.95380359978185,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 16.345528821852724,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_clavicle_elevate",
+      "interface": "l_clavicle_x",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_clavicle_x_face_pad_-1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_-1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_-1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_-1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_1",
+          "printed_frame": "l_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_clavicle_x_face_pad_1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_clavicle_x_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_clavicle_x_rear_thrust_cap",
+        "l_clavicle_x_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673947265
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888244416
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 5.844351186728194,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 10.822228123222704,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_shoulder_flex",
+      "interface": "l_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_shoulder_pitch_rear_thrust_cap",
+        "l_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673947248
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888244225
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 3.509901866500164,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 18.020133946954864,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "l_upperarm_roll",
+      "interface": "l_humeral",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.8541214935139397,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_humeral_face_pad_-1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_-1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_-1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_1",
+          "printed_frame": "l_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_humeral_face_pad_1",
+          "printed_frame": "l_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_humeral_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_humeral_rear_thrust_cap",
+        "l_humeral_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705910656
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911068
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.344171129679039,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 6,
+      "thread_strip_factor": 219.36222732054065,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 30.159289474462014,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_forearm_roll",
+      "interface": "l_forearm",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.2936033561844007,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.0120627692081778,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_forearm_face_pad_-1",
+          "printed_frame": "l_forearm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_-1",
+          "printed_frame": "l_forearm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_-1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_1",
+          "printed_frame": "l_forearm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_1",
+          "printed_frame": "l_forearm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_forearm_face_pad_1",
+          "printed_frame": "l_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_forearm_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_forearm_rear_thrust_cap",
+        "l_forearm_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911256
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.0311687059113455
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.017060771526875775,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 6,
+      "thread_strip_factor": 1244.6276513858863,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 30.159289474462014,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_clavicle_protract",
+      "interface": "r_clavicle_z",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10.674957963480988,
+        "printed_pin_bearing_stress_MPa": 1.0615942180986,
+        "pin_shear_factor": 93.67718387472796,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_clavicle_z_face_pad_-1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_-1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_-1",
+          "printed_frame": "r_chest",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_-1",
+          "printed_frame": "r_chest",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_1",
+          "printed_frame": "r_chest",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_z_face_pad_1",
+          "printed_frame": "r_chest",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_clavicle_z_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_clavicle_z_rear_thrust_cap",
+        "r_clavicle_z_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673947221
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888243813
+        }
+      ],
+      "axial_pull_N": 10.674957963480988,
+      "cap_key_stress_MPa": 3.9203844350454853,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 16.1333417227145,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 21.189279792227442,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_clavicle_elevate",
+      "interface": "r_clavicle_x",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_clavicle_x_face_pad_-1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_-1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_-1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_-1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_1",
+          "printed_frame": "r_clavicle_protract",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_clavicle_x_face_pad_1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_clavicle_x_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_clavicle_x_rear_thrust_cap",
+        "r_clavicle_x_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673947289
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.17315788824453
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 5.859222028174667,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 10.79476105716101,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_upperarm_roll",
+      "interface": "r_humeral",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.8541214935139397,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_humeral_face_pad_-1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_-1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_1",
+          "printed_frame": "r_upperarm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_humeral_face_pad_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_humeral_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_humeral_rear_thrust_cap",
+        "r_humeral_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911465
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911378
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.35380865451637894,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 6,
+      "thread_strip_factor": 213.38693845411737,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 30.159289474462014,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_forearm_roll",
+      "interface": "r_forearm",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.2936033561844007,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.0120627692081778,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_forearm_face_pad_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_-1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_-1",
+          "printed_frame": "r_forearm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_-1",
+          "printed_frame": "r_forearm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_1",
+          "printed_frame": "r_elbow_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_1",
+          "printed_frame": "r_forearm_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_forearm_face_pad_1",
+          "printed_frame": "r_forearm_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_forearm_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_forearm_rear_thrust_cap",
+        "r_forearm_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911345
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705910936
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.017060771526875722,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 6,
+      "thread_strip_factor": 1244.6276513858863,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 30.159289474462014,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "lumbar_flex",
+      "interface": "lumbar_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 44.63420926144878,
+        "printed_pin_bearing_stress_MPa": 3.812303747620235,
+        "pin_shear_factor": 22.404340001688226,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_-1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_-1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_shoulder_pitch_face_pad_1",
+          "printed_frame": "lumbar_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "lumbar_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "lumbar_shoulder_pitch_rear_thrust_cap",
+        "lumbar_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909785
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705910278
+        }
+      ],
+      "axial_pull_N": 44.63420926144878,
+      "cap_key_stress_MPa": 3.1988972124629145,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 6.2252055960561865,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 6.75698975595184,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "lumbar_yaw",
+      "interface": "lumbar_humeral",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 39.83859357807543,
+        "printed_pin_bearing_stress_MPa": 3.4026999046400634,
+        "pin_shear_factor": 25.10128772593857,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "lumbar_humeral_face_pad_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_-1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_-1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_-1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_1",
+          "printed_frame": "lumbar_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "lumbar_humeral_face_pad_1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "lumbar_humeral_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "lumbar_humeral_rear_thrust_cap",
+        "lumbar_humeral_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911788
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911376
+        }
+      ],
+      "axial_pull_N": 39.83859357807543,
+      "cap_key_stress_MPa": 1.2438343547330217,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 3.2,
+      "thread_strip_factor": 30.881392752749882,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 7.570370027083417,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Thin metal nut + removable thread-lock + positive end pin",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "thorax_side",
+      "interface": "thorax_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 37.91125634791936,
+        "printed_pin_bearing_stress_MPa": 3.2380818892874714,
+        "pin_shear_factor": 26.37739015617935,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "thorax_shoulder_pitch_face_pad_-1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_-1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_-1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_-1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_1",
+          "printed_frame": "thorax_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "thorax_shoulder_pitch_face_pad_1",
+          "printed_frame": "lumbar_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "thorax_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "thorax_shoulder_pitch_rear_thrust_cap",
+        "thorax_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909705
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705910336
+        }
+      ],
+      "axial_pull_N": 37.91125634791936,
+      "cap_key_stress_MPa": 2.3534504471208426,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 17.527456114648533,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 7.955233453010377,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "neck_side",
+      "interface": "neck_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "neck_shoulder_pitch_face_pad_-1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_-1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_-1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_pitch_face_pad_1",
+          "printed_frame": "thorax_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "neck_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "neck_shoulder_pitch_rear_thrust_cap",
+        "neck_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.555869673946981
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888244152
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.39168624227515364,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 161.47848698389677,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "neck_yaw",
+      "interface": "neck_humeral",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.8541214935139397,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "neck_humeral_face_pad_-1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_-1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_-1",
+          "printed_frame": "neck_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_-1",
+          "printed_frame": "neck_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_1",
+          "printed_frame": "neck_yaw",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_humeral_face_pad_1",
+          "printed_frame": "neck_yaw",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "neck_humeral_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "neck_humeral_rear_thrust_cap",
+        "neck_humeral_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705911402
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705910844
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 9.442233879882546e-10,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 6,
+      "thread_strip_factor": 1244.6276513858863,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 30.159289474462014,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_ankle_roll",
+      "interface": "l_ankle_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 58.733148153581304,
+        "printed_pin_bearing_stress_MPa": 5.016524421971235,
+        "pin_shear_factor": 17.026160378549775,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "l_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_ankle_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_ankle_shoulder_pitch_rear_thrust_cap",
+        "l_ankle_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909795
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909759
+        }
+      ],
+      "axial_pull_N": 58.733148153581304,
+      "cap_key_stress_MPa": 0.544399238723005,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 75.7715964604772,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 5.134968994952985,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "l_hip_flex",
+      "interface": "l_hip_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 49.750384961084755,
+        "printed_pin_bearing_stress_MPa": 4.249287310585515,
+        "pin_shear_factor": 20.10034697786178,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "l_hip_pitch_face_pad_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_-1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_-1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_-1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_1",
+          "printed_frame": "l_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "l_hip_pitch_face_pad_1",
+          "printed_frame": "l_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "l_hip_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "l_hip_pitch_rear_thrust_cap",
+        "l_hip_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909813
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909663
+        }
+      ],
+      "axial_pull_N": 49.750384961084755,
+      "cap_key_stress_MPa": 4.6467769225097575,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 2.2,
+      "thread_strip_factor": 2.392415497525159,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 6.06212183042461,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Thin metal nut + removable thread-lock + positive end pin",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "neck_flex",
+      "interface": "neck_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "neck_shoulder_swing_face_pad_-1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_-1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_-1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_-1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_1",
+          "printed_frame": "neck_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "neck_shoulder_swing_face_pad_1",
+          "printed_frame": "neck_side",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "neck_shoulder_swing_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "neck_shoulder_swing_rear_thrust_cap",
+        "neck_shoulder_swing_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.55586967394731
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.173157888244427
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 0.476753930638662,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 132.66571644259187,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_hip_abduct",
+      "interface": "r_hip_abduction",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 47.34521368843723,
+        "printed_pin_bearing_stress_MPa": 2.334889264058662,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_hip_abduction_friction_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_-1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_friction_1",
+          "printed_frame": "pelvis",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_rotor_cap_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_rotor_cap_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_rotor_cap_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_abduction_rotor_cap_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_hip_abduction_pressure_-1",
+        "r_hip_abduction_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_hip_abduction_rotor_cap_-1",
+        "r_hip_abduction_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681363
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.348900581681367
+        }
+      ],
+      "axial_pull_N": 47.34521368843723,
+      "cap_key_stress_MPa": 3.0184968811943618,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 22.615229059598203,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 9.6290896235898,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.36706575124576013,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_hip_roll",
+      "interface": "r_hip_twist",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 3.0,
+        "printed_engagement_per_end_mm": 3.379547402756236,
+        "axial_pull_N": 52.28346431150152,
+        "printed_pin_bearing_stress_MPa": 2.5784253570394773,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_hip_twist_friction_-1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_-1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_friction_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_rotor_cap_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_rotor_cap_-1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_rotor_cap_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_twist_rotor_cap_1",
+          "printed_frame": "r_hip_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_hip_twist_pressure_-1",
+        "r_hip_twist_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_hip_twist_rotor_cap_-1",
+        "r_hip_twist_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058167985
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 21.34890058168016
+        }
+      ],
+      "axial_pull_N": 52.28346431150152,
+      "cap_key_stress_MPa": 0.053295292400634554,
+      "metal_shoulder_area_mm2": 37.10052829812535,
+      "metal_shoulder_stress_MPa": 0.39929981473484427,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 545.3648096919109,
+      "nominal_bearing_axial_relief_mm": 0.5,
+      "worst_budgeted_bearing_relief_mm": 0.3699481922123864,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_shoulder_abduct",
+      "interface": "r_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 1.6213922517116444,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 1.5418847582137152,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_shoulder_swing_friction_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_-1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_-1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_friction_1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_rotor_cap_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_swing_rotor_cap_1",
+          "printed_frame": "r_shoulder_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_shoulder_swing_pressure_-1",
+        "r_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_shoulder_swing_rotor_cap_-1",
+        "r_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080260975
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802609786
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 2.9185579703002316,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 16.788111735365426,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 18.03607915511296,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.867395482239259,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_ankle_flex",
+      "interface": "r_ankle_shoulder_swing",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "printed_hub_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true
+      },
+      "closure_path": "Two M3 metal tie screws, steel channel plates, steel face washers, stepped hex core and two keyed caps; FDM and bearing end faces bypassed.",
+      "fixed_socket_capture": {
+        "component": "rotating printed hub",
+        "pin_diameter_mm": 2,
+        "printed_engagement_per_end_mm": 2.7330343736592537,
+        "axial_pull_N": 60.52373068016921,
+        "printed_pin_bearing_stress_MPa": 5.536312611313238,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_friction_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_rotor_cap_-1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_rotor_cap_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_swing_rotor_cap_1",
+          "printed_frame": "r_ankle_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_ankle_shoulder_swing_pressure_-1",
+        "r_ankle_shoulder_swing_pressure_1"
+      ],
+      "moving_stop_parts": [
+        "r_ankle_shoulder_swing_rotor_cap_-1",
+        "r_ankle_shoulder_swing_rotor_cap_1"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.247010802610067
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 18.24701080260975
+        }
+      ],
+      "axial_pull_N": 60.52373068016921,
+      "cap_key_stress_MPa": 6.27020013248404,
+      "metal_shoulder_area_mm2": 26.68224269059855,
+      "metal_shoulder_stress_MPa": 36.06740777412641,
+      "thread_engagement_height_mm": 4,
+      "thread_strip_factor": 8.395161471547302,
+      "nominal_bearing_axial_relief_mm": 1.0,
+      "worst_budgeted_bearing_relief_mm": 0.8644044806460448,
+      "bearing_bond_factor": null,
+      "bond_allowable_MPa": null,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_shoulder_flex",
+      "interface": "r_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.3518638859333305,
+        "axial_pull_N": 10,
+        "printed_pin_bearing_stress_MPa": 0.9944715676917061,
+        "pin_shear_factor": 100.0,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_clavicle_elevate",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_shoulder_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_shoulder_pitch_rear_thrust_cap",
+        "r_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.55586967394731
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.2,
+          "preceding_clear_sample_mm": 1.0,
+          "metal_intersection_mm3": 8.17315788824443
+        }
+      ],
+      "axial_pull_N": 10,
+      "cap_key_stress_MPa": 3.5211117169807022,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 17.96276484781198,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 22.61946710584651,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 3.98,
+      "journal_tolerance_mm": [
+        3.97,
+        3.99
+      ],
+      "catalogue_bearing_bore_mm": 4
+    },
+    {
+      "axis": "r_ankle_roll",
+      "interface": "r_ankle_shoulder_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 58.31452618185662,
+        "printed_pin_bearing_stress_MPa": 4.980769019600512,
+        "pin_shear_factor": 17.148385925000103,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_-1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_ankle_roll",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_ankle_shoulder_pitch_face_pad_1",
+          "printed_frame": "r_knee_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_ankle_shoulder_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_ankle_shoulder_pitch_rear_thrust_cap",
+        "r_ankle_shoulder_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.0311687059097965
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909791
+        }
+      ],
+      "axial_pull_N": 58.31452618185662,
+      "cap_key_stress_MPa": 0.5108659592475722,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 5,
+      "thread_strip_factor": 80.7452496750136,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 5.171831351318681,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Nylon locking nut; transverse output pin remains the positive separation stop",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    },
+    {
+      "axis": "r_hip_flex",
+      "interface": "r_hip_pitch",
+      "status": "PASS_CONDITIONAL",
+      "criteria": {
+        "positive_stop_both_directions": true,
+        "cap_key": true,
+        "metal_shoulder": true,
+        "nut_strip": true,
+        "bearing_end_relief": true,
+        "fixed_socket_capture": true,
+        "printed_preload_bypass": true,
+        "actual_printed_face_clearance": true,
+        "bearing_bond_axial": true
+      },
+      "closure_path": "Headed shaft with integral rear hex, rear cap, steel face washer, hex compression cartridge, steel washer, cross-pinned output cap, washer and metal locknut.",
+      "fixed_socket_capture": {
+        "pin_diameter_mm": 1.5,
+        "printed_engagement_per_end_mm": 3.9026454182995356,
+        "axial_pull_N": 49.33075288063608,
+        "printed_pin_bearing_stress_MPa": 4.2134456326575975,
+        "pin_shear_factor": 20.271330592088578,
+        "nominal_axial_play_mm": 0.1,
+        "hex_torque_bypass_slot": true
+      },
+      "actual_printed_face_probes": [
+        {
+          "face": "r_hip_pitch_face_pad_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_-1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_-1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_-1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_1",
+          "printed_frame": "r_hip_abduct",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": -0.3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "face": "r_hip_pitch_face_pad_1",
+          "printed_frame": "r_hip_flex",
+          "axial_displacement_mm": 0.3,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "printed_face_nominal_recess_mm": 0.35,
+      "failure_scenario": "Zero brake friction/preload; pads, locknut and bearing/adhesive stops ignored. Transverse torque pin and keyed metal caps remain installed.",
+      "fixed_stop_parts": [
+        "r_hip_pitch_compression_cartridge"
+      ],
+      "moving_stop_parts": [
+        "r_hip_pitch_rear_thrust_cap",
+        "r_hip_pitch_keyed_output_cap"
+      ],
+      "stops": [
+        {
+          "direction": -1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909809
+        },
+        {
+          "direction": 1,
+          "first_sampled_stop_mm": 1.6,
+          "preceding_clear_sample_mm": 1.4000000000000001,
+          "metal_intersection_mm3": 7.031168705909693
+        }
+      ],
+      "axial_pull_N": 49.33075288063608,
+      "cap_key_stress_MPa": 4.646911954707353,
+      "metal_shoulder_area_mm2": null,
+      "metal_shoulder_stress_MPa": 0,
+      "thread_engagement_height_mm": 2.2,
+      "thread_strip_factor": 2.3923459775675306,
+      "nominal_bearing_axial_relief_mm": 0.4,
+      "worst_budgeted_bearing_relief_mm": 0.2700000000000001,
+      "bearing_bond_factor": 6.1136892735931685,
+      "bond_allowable_MPa": 2,
+      "lock_method": "Thin metal nut + removable thread-lock + positive end pin",
+      "journal_nominal_diameter_mm": 5.98,
+      "journal_tolerance_mm": [
+        5.97,
+        5.99
+      ],
+      "catalogue_bearing_bore_mm": 6
+    }
+  ],
+  "wrists": [
+    {
+      "side": "l",
+      "status": "PASS_CONDITIONAL",
+      "parts": [
+        {
+          "part": "l_Wguide_-1",
+          "present": true
+        },
+        {
+          "part": "l_Wguide_1",
+          "present": true
+        },
+        {
+          "part": "l_W06",
+          "present": true
+        },
+        {
+          "part": "l_W07",
+          "present": true
+        },
+        {
+          "part": "l_Wpreload_-8",
+          "present": true
+        },
+        {
+          "part": "l_Wpreload_8",
+          "present": true
+        },
+        {
+          "part": "l_palm_screw",
+          "present": true
+        },
+        {
+          "part": "l_palm_nut",
+          "present": true
+        }
+      ],
+      "head_diameter_mm": 4.8,
+      "slot_width_mm": 2.94,
+      "budgeted_radial_capture_mm": 0.73,
+      "cup_wall_mm": 2.25,
+      "minimum_capture_area_mm2": 6.57,
+      "pull_N": 10,
+      "capture_bearing_stress_MPa": 1.5220700152207,
+      "allowable_MPa": 8,
+      "scope": "Positive guide-head/slot and keyed-palm M2 capture. S1 fit success is an explicit unmeasured design assumption. Guide screws require the actual stated shoulder and head dimensions; commercial fit remains incoming inspection."
+    },
+    {
+      "side": "r",
+      "status": "PASS_CONDITIONAL",
+      "parts": [
+        {
+          "part": "r_Wguide_-1",
+          "present": true
+        },
+        {
+          "part": "r_Wguide_1",
+          "present": true
+        },
+        {
+          "part": "r_W06",
+          "present": true
+        },
+        {
+          "part": "r_W07",
+          "present": true
+        },
+        {
+          "part": "r_Wpreload_-8",
+          "present": true
+        },
+        {
+          "part": "r_Wpreload_8",
+          "present": true
+        },
+        {
+          "part": "r_palm_screw",
+          "present": true
+        },
+        {
+          "part": "r_palm_nut",
+          "present": true
+        }
+      ],
+      "head_diameter_mm": 4.8,
+      "slot_width_mm": 2.94,
+      "budgeted_radial_capture_mm": 0.73,
+      "cup_wall_mm": 2.25,
+      "minimum_capture_area_mm2": 6.57,
+      "pull_N": 10,
+      "capture_bearing_stress_MPa": 1.5220700152207,
+      "allowable_MPa": 8,
+      "scope": "Positive guide-head/slot and keyed-palm M2 capture. S1 fit success is an explicit unmeasured design assumption. Guide screws require the actual stated shoulder and head dimensions; commercial fit remains incoming inspection."
+    }
+  ],
+  "scope": "Geometric positive-stop tests and quasi-static material/tolerance budgets. Axial translation here is a deliberate disassembly fault test, never an operating joint-centre adjustment. Does not measure breakaway torque, creep, wear, nut reuse or vibration retention. End-retention pins must not be omitted."
+}

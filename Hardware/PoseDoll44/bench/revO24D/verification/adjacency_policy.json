@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "geometry_sha256": "fd64f061821a42f803e2131b0f0642147ab9cc8e65dc32cdb5e3476a0b7c9e8e",
+  "authority": "Explicit user request 2026-10-23",
+  "segments": {
+    "pelvis": "pelvis",
+    "lumbar_flex": "lumbar",
+    "lumbar_side": "lumbar",
+    "lumbar_yaw": "lumbar",
+    "thorax_side": "thorax",
+    "thorax_flex": "thorax",
+    "neck_side": "neck",
+    "neck_flex": "neck",
+    "neck_yaw": "neck",
+    "head": "neck",
+    "l_chest": "thorax",
+    "l_clavicle_protract": "l_clavicle",
+    "l_clavicle_elevate": "l_clavicle",
+    "l_shoulder_flex": "l_upperarm",
+    "l_shoulder_abduct": "l_upperarm",
+    "l_upperarm_roll": "l_upperarm",
+    "l_elbow_flex": "l_forearm",
+    "l_forearm_roll": "l_forearm",
+    "l_wrist_deviation": "l_hand",
+    "l_wrist_flex": "l_hand",
+    "l_hip_abduct": "l_thigh",
+    "l_hip_flex": "l_thigh",
+    "l_hip_roll": "l_thigh",
+    "l_knee_flex": "l_shin",
+    "l_ankle_roll": "l_foot",
+    "l_ankle_flex": "l_foot",
+    "l_toe_flex": "l_toe",
+    "r_chest": "thorax",
+    "r_clavicle_protract": "r_clavicle",
+    "r_clavicle_elevate": "r_clavicle",
+    "r_shoulder_flex": "r_upperarm",
+    "r_shoulder_abduct": "r_upperarm",
+    "r_upperarm_roll": "r_upperarm",
+    "r_elbow_flex": "r_forearm",
+    "r_forearm_roll": "r_forearm",
+    "r_wrist_deviation": "r_hand",
+    "r_wrist_flex": "r_hand",
+    "r_hip_abduct": "r_thigh",
+    "r_hip_flex": "r_thigh",
+    "r_hip_roll": "r_thigh",
+    "r_knee_flex": "r_shin",
+    "r_ankle_roll": "r_foot",
+    "r_ankle_flex": "r_foot",
+    "r_toe_flex": "r_toe"
+  },
+  "required_segment_edges": [
+    [
+      "pelvis",
+      "lumbar"
+    ],
+    [
+      "lumbar",
+      "thorax"
+    ],
+    [
+      "thorax",
+      "neck"
+    ],
+    [
+      "thorax",
+      "l_clavicle"
+    ],
+    [
+      "l_clavicle",
+      "l_upperarm"
+    ],
+    [
+      "l_upperarm",
+      "l_forearm"
+    ],
+    [
+      "l_forearm",
+      "l_hand"
+    ],
+    [
+      "pelvis",
+      "l_thigh"
+    ],
+    [
+      "l_thigh",
+      "l_shin"
+    ],
+    [
+      "l_shin",
+      "l_foot"
+    ],
+    [
+      "l_foot",
+      "l_toe"
+    ],
+    [
+      "thorax",
+      "r_clavicle"
+    ],
+    [
+      "r_clavicle",
+      "r_upperarm"
+    ],
+    [
+      "r_upperarm",
+      "r_forearm"
+    ],
+    [
+      "r_forearm",
+      "r_hand"
+    ],
+    [
+      "pelvis",
+      "r_thigh"
+    ],
+    [
+      "r_thigh",
+      "r_shin"
+    ],
+    [
+      "r_shin",
+      "r_foot"
+    ],
+    [
+      "r_foot",
+      "r_toe"
+    ]
+  ],
+  "same_segment_different_moving_frames_required": true,
+  "same_rigid_body_contacts_exempt": true,
+  "nonadjacent_contacts": "ADVISORY_NOT_ACCEPTANCE_FAILURE",
+  "controls": {
+    "adjacent_overlap_detected": true,
+    "nonadjacent_is_advisory": true,
+    "gimbal_stages_included": true
+  }
+}

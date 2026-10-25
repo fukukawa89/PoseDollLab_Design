@@ -1,0 +1,51 @@
+{
+  "revision": "O24C",
+  "date_local": "2026-10-22",
+  "stage": "COMPACT_DIGITAL_CANDIDATE",
+  "manufacturing_release": false,
+  "geometry_sha256": "d661e8f2f3f2e135207a528a1001faa74baad660b26b777c748dfee802e2d032",
+  "parts": 113,
+  "reference_height_mm": 560,
+  "future_full_doll_envelope_budget_mm": 580,
+  "strict_height_limit_mm": 600,
+  "full_doll_height_verified": false,
+  "checks": {
+    "mesh_integrity": "PASS",
+    "motion_dense": "PASS",
+    "kinematics": "PASS",
+    "exported_axes": "PASS",
+    "ue_transform_mapping": "PASS",
+    "functional_reach": "PASS",
+    "selected_clearances": "PASS",
+    "reliability_screen": "PASS",
+    "antiroll_negative_control": "PASS",
+    "capture_feasibility": "PASS",
+    "magnetic_feasibility": "PASS",
+    "blender_saved_file": "PASS",
+    "browser_review": "PASS",
+    "browser_fk_agreement": "PASS"
+  },
+  "retained_baselines": "PASS",
+  "markdown_links_checked": 20,
+  "qualification": {
+    "physical_reliability": "NOT TESTED",
+    "strength_and_wear": "NOT TESTED",
+    "PCB_routing": "NOT DONE",
+    "UE_runtime": "NOT TESTED"
+  },
+  "unresolved": [
+    "Shoulder gimbal singularity at about 90 degree abduction",
+    "Friction preload bypass and shaft retention",
+    "Magnet/pin/cap/liner/hand interfaces",
+    "Manufacturing tolerances, redundant guide binding and wear",
+    "Custom magnetic PCB, harness, full-arm calibration",
+    "Full torso and second arm collision",
+    "Complete physical doll height under 600 mm"
+  ],
+  "runtime_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "trimesh": "5.1.1",
+    "manifold3d": "3.3.2"
+  }
+}

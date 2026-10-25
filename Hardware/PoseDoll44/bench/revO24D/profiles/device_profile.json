@@ -1,0 +1,1280 @@
+{
+  "schema": "POSEDOLL-O24D/1",
+  "revision": "O24D",
+  "coordinates": "RH X forward, Y left, Z up; mm; column vectors",
+  "nodes": [
+    {
+      "id": "pelvis",
+      "parent": null,
+      "offset_mm": [
+        0.0,
+        0.0,
+        308.7669362449913
+      ],
+      "axis": null,
+      "zero_deg": 0,
+      "target_bone": "pelvis"
+    },
+    {
+      "id": "lumbar_flex",
+      "parent": "pelvis",
+      "offset_mm": [
+        3.150063087041365,
+        1.4864397455966565e-13,
+        22.560830202902252
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "lumbar_side",
+      "parent": "lumbar_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "lumbar_yaw",
+      "parent": "lumbar_side",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "zero_deg": 0,
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "thorax_side",
+      "parent": "lumbar_yaw",
+      "offset_mm": [
+        1.1252524530909525,
+        8.497678434717792e-13,
+        50.6095615780269
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "spine_04"
+    },
+    {
+      "id": "thorax_flex",
+      "parent": "thorax_side",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "spine_04"
+    },
+    {
+      "id": "neck_side",
+      "parent": "thorax_flex",
+      "offset_mm": [
+        -18.996758471669118,
+        -1.001641673992286e-06,
+        88.72221571184673
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "neck_flex",
+      "parent": "neck_side",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "neck_yaw",
+      "parent": "neck_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "zero_deg": 0,
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "head",
+      "parent": "neck_yaw",
+      "offset_mm": [
+        7.80787896860155,
+        -8.855280859879673e-07,
+        34.943165477583875
+      ],
+      "axis": null,
+      "zero_deg": 0,
+      "target_bone": "head"
+    },
+    {
+      "id": "l_chest",
+      "parent": "thorax_flex",
+      "offset_mm": [
+        -18.047212256596755,
+        2.8729860651939827,
+        69.72373315545684
+      ],
+      "axis": null,
+      "zero_deg": 0,
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_clavicle_protract",
+      "parent": "l_chest",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": 0,
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_clavicle_elevate",
+      "parent": "l_clavicle_protract",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_shoulder_flex",
+      "parent": "l_clavicle_elevate",
+      "offset_mm": [
+        -1.3040584945878386,
+        46.6532886626352,
+        -6.7236923394116275
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_shoulder_abduct",
+      "parent": "l_shoulder_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_upperarm_roll",
+      "parent": "l_shoulder_abduct",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_elbow_flex",
+      "parent": "l_upperarm_roll",
+      "offset_mm": [
+        -3.552713678800501e-15,
+        -7.105427357601002e-15,
+        -83.56619993528744
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_forearm_roll",
+      "parent": "l_elbow_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": -90,
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_wrist_deviation",
+      "parent": "l_forearm_roll",
+      "offset_mm": [
+        -1.5987211554602254e-14,
+        -1.4210854715202004e-14,
+        -80.49630500229591
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_wrist_flex",
+      "parent": "l_wrist_deviation",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_hip_abduct",
+      "parent": "pelvis",
+      "offset_mm": [
+        0.835912143607195,
+        34.40879304689639,
+        -9.936905563963933
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_hip_flex",
+      "parent": "l_hip_abduct",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_hip_roll",
+      "parent": "l_hip_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_knee_flex",
+      "parent": "l_hip_roll",
+      "offset_mm": [
+        0.0,
+        0.0,
+        -141.13230173570162
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "calf_l"
+    },
+    {
+      "id": "l_ankle_roll",
+      "parent": "l_knee_flex",
+      "offset_mm": [
+        0.0,
+        0.0,
+        -128.64961876036483
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "foot_l"
+    },
+    {
+      "id": "l_ankle_flex",
+      "parent": "l_ankle_roll",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "foot_l"
+    },
+    {
+      "id": "l_toe_flex",
+      "parent": "l_ankle_flex",
+      "offset_mm": [
+        46.62800321563013,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "ball_l"
+    },
+    {
+      "id": "r_chest",
+      "parent": "thorax_flex",
+      "offset_mm": [
+        -18.047204602754956,
+        -2.8729855019572743,
+        69.72233037898002
+      ],
+      "axis": null,
+      "zero_deg": 0,
+      "target_bone": "clavicle_r"
+    },
+    {
+      "id": "r_clavicle_protract",
+      "parent": "r_chest",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "clavicle_r"
+    },
+    {
+      "id": "r_clavicle_elevate",
+      "parent": "r_clavicle_protract",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "clavicle_r"
+    },
+    {
+      "id": "r_shoulder_flex",
+      "parent": "r_clavicle_elevate",
+      "offset_mm": [
+        -1.3040700663237175,
+        -46.65314472537115,
+        -6.722419411815679
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_shoulder_abduct",
+      "parent": "r_shoulder_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_upperarm_roll",
+      "parent": "r_shoulder_abduct",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_elbow_flex",
+      "parent": "r_upperarm_roll",
+      "offset_mm": [
+        0.0,
+        7.105427357601002e-15,
+        -83.56487611634896
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "lowerarm_r"
+    },
+    {
+      "id": "r_forearm_roll",
+      "parent": "r_elbow_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "zero_deg": -90,
+      "target_bone": "lowerarm_r"
+    },
+    {
+      "id": "r_wrist_deviation",
+      "parent": "r_forearm_roll",
+      "offset_mm": [
+        1.2434497875801753e-14,
+        0.0,
+        -80.49734052288784
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_r"
+    },
+    {
+      "id": "r_wrist_flex",
+      "parent": "r_wrist_deviation",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_r"
+    },
+    {
+      "id": "r_hip_abduct",
+      "parent": "pelvis",
+      "offset_mm": [
+        0.8358001445204449,
+        -34.408837174194346,
+        -9.937073262196407
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_hip_flex",
+      "parent": "r_hip_abduct",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_hip_roll",
+      "parent": "r_hip_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "zero_deg": 0,
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_knee_flex",
+      "parent": "r_hip_roll",
+      "offset_mm": [
+        0.0,
+        0.0,
+        -141.13199578643585
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "calf_r"
+    },
+    {
+      "id": "r_ankle_roll",
+      "parent": "r_knee_flex",
+      "offset_mm": [
+        0.0,
+        0.0,
+        -128.64975996771832
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "foot_r"
+    },
+    {
+      "id": "r_ankle_flex",
+      "parent": "r_ankle_roll",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "foot_r"
+    },
+    {
+      "id": "r_toe_flex",
+      "parent": "r_ankle_flex",
+      "offset_mm": [
+        46.62800784284326,
+        0.0,
+        0.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "ball_r"
+    }
+  ],
+  "axes": [
+    {
+      "id": "lumbar_flex",
+      "label": "腰前屈 / 后伸",
+      "limits_deg": [
+        -20,
+        50
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "lumbar_side",
+      "label": "腰侧屈",
+      "limits_deg": [
+        -25,
+        25
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "lumbar_yaw",
+      "label": "腰旋转",
+      "limits_deg": [
+        -35,
+        35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "target_bone": "spine_02"
+    },
+    {
+      "id": "thorax_side",
+      "label": "胸侧屈",
+      "limits_deg": [
+        -15,
+        15
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "target_bone": "spine_04"
+    },
+    {
+      "id": "thorax_flex",
+      "label": "胸前屈 / 后伸",
+      "limits_deg": [
+        -15,
+        25
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "spine_04"
+    },
+    {
+      "id": "neck_side",
+      "label": "颈侧倾",
+      "limits_deg": [
+        -35,
+        35
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "neck_flex",
+      "label": "颈点头 / 仰头",
+      "limits_deg": [
+        -45,
+        50
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "neck_yaw",
+      "label": "颈转头",
+      "limits_deg": [
+        -70,
+        70
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "target_bone": "neck_01"
+    },
+    {
+      "id": "l_clavicle_protract",
+      "label": "左锁骨前伸 / 后收",
+      "limits_deg": [
+        -20,
+        20
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_clavicle_elevate",
+      "label": "左锁骨抬高 / 下压",
+      "limits_deg": [
+        -10,
+        25
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_shoulder_flex",
+      "label": "左肩前举 / 后伸",
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_shoulder_abduct",
+      "label": "左肩外展",
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_upperarm_roll",
+      "label": "左上臂内外旋",
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_elbow_flex",
+      "label": "左肘屈曲",
+      "limits_deg": [
+        0,
+        145
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_forearm_roll",
+      "label": "左前臂旋转",
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_wrist_deviation",
+      "label": "左腕偏转",
+      "limits_deg": [
+        -20,
+        30
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_wrist_flex",
+      "label": "左腕屈伸",
+      "limits_deg": [
+        -65,
+        70
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_hip_abduct",
+      "label": "左髋外展 / 内收",
+      "limits_deg": [
+        -20,
+        45
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_hip_flex",
+      "label": "左髋屈伸",
+      "limits_deg": [
+        -20,
+        120
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_hip_roll",
+      "label": "左髋内外旋",
+      "limits_deg": [
+        -35,
+        45
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "thigh_l"
+    },
+    {
+      "id": "l_knee_flex",
+      "label": "左膝屈曲",
+      "limits_deg": [
+        0,
+        140
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "calf_l"
+    },
+    {
+      "id": "l_ankle_roll",
+      "label": "左足内外翻",
+      "limits_deg": [
+        -20,
+        25
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "foot_l"
+    },
+    {
+      "id": "l_ankle_flex",
+      "label": "左踝背屈 / 跖屈",
+      "limits_deg": [
+        -40,
+        25
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "foot_l"
+    },
+    {
+      "id": "l_toe_flex",
+      "label": "左跖趾伸屈",
+      "limits_deg": [
+        -10,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "ball_l"
+    },
+    {
+      "id": "r_clavicle_protract",
+      "label": "右锁骨前伸 / 后收",
+      "limits_deg": [
+        -20,
+        20
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target_bone": "clavicle_r"
+    },
+    {
+      "id": "r_clavicle_elevate",
+      "label": "右锁骨抬高 / 下压",
+      "limits_deg": [
+        -10,
+        25
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "target_bone": "clavicle_r"
+    },
+    {
+      "id": "r_shoulder_flex",
+      "label": "右肩前举 / 后伸",
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_shoulder_abduct",
+      "label": "右肩外展",
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_upperarm_roll",
+      "label": "右上臂内外旋",
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target_bone": "upperarm_r"
+    },
+    {
+      "id": "r_elbow_flex",
+      "label": "右肘屈曲",
+      "limits_deg": [
+        0,
+        145
+      ],
+      "axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "target_bone": "lowerarm_r"
+    },
+    {
+      "id": "r_forearm_roll",
+      "label": "右前臂旋转",
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "target_bone": "lowerarm_r"
+    },
+    {
+      "id": "r_wrist_deviation",
+      "label": "右腕偏转",
+      "limits_deg": [
+        -20,
+        30
+      ],
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "target_bone": "hand_r"
+    },
+    {
+      "id": "r_wrist_flex",
+      "label": "右腕屈伸",
+      "limits_deg": [
+        -65,
+        70
+      ],
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "target_bone": "hand_r"
+    },
+    {
+      "id": "r_hip_abduct",
+      "label": "右髋外展 / 内收",
+      "limits_deg": [
+        -20,
+        45
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_hip_flex",
+      "label": "右髋屈伸",
+      "limits_deg": [
+        -20,
+        120
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_hip_roll",
+      "label": "右髋内外旋",
+      "limits_deg": [
+        -35,
+        45
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "target_bone": "thigh_r"
+    },
+    {
+      "id": "r_knee_flex",
+      "label": "右膝屈曲",
+      "limits_deg": [
+        0,
+        140
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "calf_r"
+    },
+    {
+      "id": "r_ankle_roll",
+      "label": "右足内外翻",
+      "limits_deg": [
+        -20,
+        25
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "target_bone": "foot_r"
+    },
+    {
+      "id": "r_ankle_flex",
+      "label": "右踝背屈 / 跖屈",
+      "limits_deg": [
+        -40,
+        25
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "foot_r"
+    },
+    {
+      "id": "r_toe_flex",
+      "label": "右跖趾伸屈",
+      "limits_deg": [
+        -10,
+        50
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "ball_r"
+    }
+  ],
+  "physical_dof": 40,
+  "single_axis_sensors": 36,
+  "field_sensors": 2,
+  "raw_scalar_values": 42,
+  "wrist_order": "Rx(deviation) @ Ry(flexion); right side is conjugated by diag(1,-1,1)",
+  "forearm_zero_clocking_deg": -90,
+  "reference_height_mm": 560,
+  "strict_height_limit_mm": 600,
+  "neutral_pose": {
+    "name": "A",
+    "angles_deg": {
+      "l_shoulder_abduct": 45.0,
+      "r_shoulder_abduct": 45.0
+    },
+    "shoulder_abduction_deg": 45,
+    "reference": "Anatomical angles remain measured from frozen UE N reference; sensor zero is now calibrated at A."
+  },
+  "collision_acceptance": "All different moving frames within the same or adjacent anatomical segments; non-adjacent contacts are advisory per user instruction 2026-10-23",
+  "root_pose": "No external support fixture. A neutral uses the two foot soles; stability and ground-reaction loads are checked separately. Root registration is unmeasured, not six extra sensors.",
+  "S1_physical_pass": "ASSUMPTION_FOR_DESIGN_ONLY_EXCLUDING_H04_CONNECTION",
+  "user_feedback": "H04 approx 0.20 x 18 mm weak connecting face reported 2026-10-22. Do not inherit that junction. No S1 physical result invented.",
+  "manufacturing_release": false,
+  "runtime_UE_tested": false
+}

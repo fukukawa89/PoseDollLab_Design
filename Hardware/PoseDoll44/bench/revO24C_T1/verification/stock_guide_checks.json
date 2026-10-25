@@ -1,0 +1,153 @@
+{
+  "revision": "O24C-T1-S3",
+  "guide_interface_revision": "O24C-T1-S1",
+  "geometry_sha256": "92f0fed0e22d1d2162504816800223e06049093ff338663d3cd19d1b0c31fb19",
+  "verification_source_sha256": "514d4e0c185951d7f8e7962f28b43de8825db2eb9558680de2ad335ef4bb4b77",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Metal stack -1",
+      "washer_to_nut_gap_mm": 0.0,
+      "thread_protrusion_mm": 1.9000000953674316,
+      "passed": true
+    },
+    {
+      "name": "Split insertion W01 -1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Split insertion W02 -1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Screw insertion -1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Neutral tool access -1",
+      "max_intersection_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift -1 -0.09",
+      "intersection_mm3": 0.0,
+      "expected_blocked": false,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift -1 0.09",
+      "intersection_mm3": 0.0,
+      "expected_blocked": false,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift -1 -0.4",
+      "intersection_mm3": 3.866555062180769,
+      "expected_blocked": true,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift -1 0.4",
+      "intersection_mm3": 4.026623130135555,
+      "expected_blocked": true,
+      "passed": true
+    },
+    {
+      "name": "Metal stack 1",
+      "washer_to_nut_gap_mm": 0.0,
+      "thread_protrusion_mm": 1.9000000953674316,
+      "passed": true
+    },
+    {
+      "name": "Split insertion W01 1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Split insertion W02 1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Screw insertion 1",
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "Neutral tool access 1",
+      "max_intersection_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift 1 -0.09",
+      "intersection_mm3": 0.0,
+      "expected_blocked": false,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift 1 0.09",
+      "intersection_mm3": 0.0,
+      "expected_blocked": false,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift 1 -0.4",
+      "intersection_mm3": 3.86655506218077,
+      "expected_blocked": true,
+      "passed": true
+    },
+    {
+      "name": "Captured stack axial shift 1 0.4",
+      "intersection_mm3": 4.026623130135555,
+      "expected_blocked": true,
+      "passed": true
+    },
+    {
+      "name": "Guide capture end float plus cup closing",
+      "guide_cases": 60,
+      "drift_mm": [
+        -0.1,
+        0.1
+      ],
+      "cup_closing_mm": 0.2,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "name": "S1 wrist interface retained in six revised wrist prints",
+      "parts": [
+        "W01",
+        "W02",
+        "W04",
+        "W06",
+        "W05",
+        "W07"
+      ],
+      "passed": true
+    }
+  ],
+  "guide": {
+    "shoulder_d": 2.5,
+    "shoulder_l": 6,
+    "thread": "M2x0.4",
+    "thread_l": 4,
+    "head_d": 4.8,
+    "head_h": 2.4,
+    "key": 2,
+    "slot_width": 2.94,
+    "nominal_diametral_clearance": 0.44,
+    "washer": [
+      5,
+      2.2,
+      0.5
+    ],
+    "nut_af": 4,
+    "nut_h": 1.6,
+    "nominal_axial_end_float": 0.2,
+    "minimum_ball_roof_over_washer_pocket_mm": 1.0760245409983966
+  },
+  "scope": "Nominal rigid assembly and retention; supplier fillet, washer bore, print error, adhesive compatibility/curing, play and wear require physical acceptance. No material strength or fatigue qualification."
+}

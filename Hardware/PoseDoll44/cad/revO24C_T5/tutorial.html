@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>逐件装配教程 · O24C-T5</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="brand" href="../START_HERE.html">POSEDOLL <span>装配工作台</span></a><nav><a href="../HARDWARE.html">已购五金补齐表</a><a href="../printing/ALL_H_R_W_T5.3mf">三样件一盘打印</a><a href="../ASSEMBLY.html">装配手册</a><a href="../BOM.csv">五金清单</a></nav><span id="revision" class="version"></span></header>
+<div class="intro"><div><p class="eyebrow">一件一件装，关键位置停下来检查</p><h1>把关节装起来。</h1></div><div class="station-tabs" role="group" aria-label="选择独立样件"><button data-station="H" class="active">H <span>肘屈伸</span></button><button data-station="R">R <span>前臂旋转</span></button><button data-station="W">W <span>双轴腕</span></button></div></div>
+<div class="revision-note">当前整套为 <strong>T5 一体 H / R 固定座与腕十字芯</strong>。每片垫圈、每颗螺母各一步；可暂停、拖动、放大并翻看朝向。T5需重印H5-01、R5-01、W5-01三件，其余沿用T4。<a href="../TUTORIAL.html">全部步骤索引 →</a></div>
+<details class="hardware-primer"><summary>开始前：普通螺母、平垫与反向 A8 碟簧</summary><div class="primer-grid">
+<div><b>全部普通螺母 · N2 / N3</b><p>两端都是金属螺纹，<strong>没有塑料圈</strong>。本 T5 套件不使用尼龙锁紧螺母。大部分螺母先放进止转槽；W 测力杆外露螺母需要小扳手扶住。</p></div>
+<div><b>蓝色 A8 · 两片相反</b><p>第一片内孔凸边朝螺钉头，第二片翻面、凸边朝关节。<strong>两个内孔凸边相对</strong>，不是同向套叠。动画的蓝色仅便于识别，实物通常为金属色。</p></div>
+<div><b>绿色平垫面 · 光滑面</b><p>一般光滑面贴打印件；两片大摩擦垫的光滑面相向，中间夹转动耳。头下孔 4.3 mm 垫圈两侧均贴金属，无强制正反。所有平垫先去毛刺。</p></div>
+</div><p class="primer-note">螺钉要旋入金属螺纹，动画仅简化显示进入方向。金属螺纹一开始就卡住时，退出并检查对中，不靠加力硬拧。碟簧预紧从轻接触开始，不能压平。</p></details>
+<main>
+<section class="visual" aria-label="可旋转装配动画">
+ <div class="scene-heading"><div><b id="stationTitle"></b><span id="installed"></span></div><button id="fit">看全局</button><button id="focus">看本步</button><button id="front">正面</button><button id="faceFocus" hidden>看朝向</button><label><input id="xray" type="checkbox">透视已有零件</label></div>
+ <div class="stage"><canvas id="scene" aria-label="三维模型，拖动可旋转，滚轮可缩放"></canvas><svg id="overlay" aria-hidden="true"><defs><marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#b95d14" stroke-width="1.4"/></marker></defs><path id="route" fill="none" stroke="#b95d14" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowhead)"/><circle id="target" r="7" fill="none" stroke="#b95d14" stroke-width="1.5"/><path id="leader" fill="none" stroke="#365d5b" stroke-width="1.2"/><path id="faceLeader" fill="none" stroke="#245fd2" stroke-width="2"/><circle id="faceDot" r="4" fill="#245fd2"/></svg><div id="faceLabel" class="face-callout" hidden></div><div id="label" class="callout"></div><div class="legend"><i></i>本步（碟簧用蓝色） <span class="nylon-key">蓝色＝A8 碟簧</span><span class="smooth-key">绿色＝光滑面</span></div><div id="stageMessage"></div><div id="error" hidden role="alert"></div></div>
+ <div class="transport"><div class="play-controls"><button id="prev" aria-label="上一步">← 上一步</button><button id="play" class="primary">播放本步</button><button id="replay" aria-label="重播本步">重播</button><button id="next">下一步 →</button></div><label class="progress-label">本步进度 <output id="progressText">0%</output><input id="progress" type="range" min="0" max="1000" value="0" aria-label="本步动画进度"></label><div class="play-options"><label>速度 <select id="speed" aria-label="播放速度"><option value="0.5">0.5× 慢速</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label><label><input id="auto" type="checkbox">连续播放（检查点暂停）</label><span>← → 切换 · 空格播放</span></div></div>
+</section>
+<aside class="instruction"><div class="step-top"><span id="chapter"></span><span id="stepNumber"></span></div><select id="stepSelect" aria-label="跳转装配步骤"></select><h2 id="stepTitle"></h2><p id="instruction"></p>
+<section id="orientationCard" class="orientation-card" hidden aria-label="本步五金类型与安装朝向">
+<div id="orientationRelation" class="orientation-relation"></div><h3 id="orientationTitle"></h3>
+<p id="orientationText"></p><div id="orientationSketch"></div>
+<p id="orientationNote" class="orientation-note"></p><p class="sketch-caption">侧面辨认示意，不按比例；实际朝向见三维标记和上方文字。</p>
+</section><div id="partCard" class="part-card"><div class="part-top"><span id="partKind"></span><b id="partCode"></b><span id="quantity"></span></div><div class="mini-wrap"><canvas id="partView" aria-label="本步零件独立放大图，可拖动旋转"></canvas><div id="miniFace" hidden></div><button id="flipPart" hidden>翻看另一面</button></div><div class="part-meta"><h3 id="partName"></h3><p id="spec"></p><p id="instance"></p><a id="stl" hidden>查看对应 STL</a></div></div><div class="tools"><b>工具</b><span id="tool"></span></div><div id="detail" class="detail"></div><div class="step-status" id="stepStatus"></div><details><summary>本样件用件清单</summary><div id="inventory"></div></details></aside>
+</main><footer><p>动画使用现有制造网格；蓝色碟簧和绿色光滑面是辨认标记。螺纹旋入与实际弹簧压缩为简化示意，不能用动画中的圈数或高度设定预紧力。尺寸单位 mm。</p><p>名义装入路径经过抽样干涉检查；手部空间、工具操作力、持姿、磨损与材料变形仍需实测。<a href="../TEST_PLAN.html">测试计划</a> · <a href="../TUTORIAL.html">步骤索引 / 离线说明</a></p></footer>
+<script src="../viewer/data.js"></script><script src="steps.js"></script><script src="orientation.js"></script><script src="tutorial.js"></script>
+</body></html>

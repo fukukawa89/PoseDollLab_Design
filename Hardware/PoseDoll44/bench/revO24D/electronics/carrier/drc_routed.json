@@ -1,0 +1,1487 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-23T22:33:03",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "PoseDoll_O24D_SPI_Carrier.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/B11_DO] (B.Cu), 长度: 4.2875 mm",
+                    "pos": {
+                        "x": 47.807,
+                        "y": 23.7695
+                    },
+                    "uuid": "f98ab7f8-94fc-493e-a7af-8f9cb9b19211"
+                },
+                {
+                    "description": "B.Cu 上 U4 的焊盘 21 [/B11_DO]",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 32.625
+                    },
+                    "uuid": "5f4d029d-b8bb-4175-adba-029a669ad957"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (F.Cu), 长度: 2.0203 mm",
+                    "pos": {
+                        "x": 35.8828,
+                        "y": 19.075
+                    },
+                    "uuid": "057f710f-7073-46d0-bd90-376e7a10b6f7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (F.Cu), 长度: 2.2131 mm",
+                    "pos": {
+                        "x": 36.225,
+                        "y": 6.2244
+                    },
+                    "uuid": "5ff4c183-d1e8-4315-b0f0-6957fb87b4cd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 34.0119,
+                        "y": 6.2244
+                    },
+                    "uuid": "92b5f1df-ec8f-453c-b771-52c23e263043"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (F.Cu), 长度: 0.1172 mm",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 19.075
+                    },
+                    "uuid": "ac2d9e98-1fd9-4480-a629-3be9b2b3d2e9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (F.Cu), 长度: 0.2250 mm",
+                    "pos": {
+                        "x": 36.225,
+                        "y": 19.2244
+                    },
+                    "uuid": "c40d13cc-b091-44ef-89fd-bdef0c3d15f2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1200 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (B.Cu), 长度: 1.2164 mm",
+                    "pos": {
+                        "x": 35.067,
+                        "y": 12.742
+                    },
+                    "uuid": "418a9b7c-7029-424a-904f-bcb425cb4960"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1200 mm)",
+            "items": [
+                {
+                    "description": "走线 [/SENSOR_3V45] (B.Cu), 长度: 0.6124 mm",
+                    "pos": {
+                        "x": 35.5,
+                        "y": 13.175
+                    },
+                    "uuid": "67ee0aab-9157-41a1-a82c-9c9ca0626ff0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.3653 mm",
+                    "pos": {
+                        "x": 31.8484,
+                        "y": 24.774
+                    },
+                    "uuid": "029ab7f7-9689-43e0-8f52-9b6104877c5a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.9422 mm",
+                    "pos": {
+                        "x": 13.9541,
+                        "y": 32.5006
+                    },
+                    "uuid": "07b0c01a-6547-49c4-b9a3-947e9bf402c6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.1298 mm",
+                    "pos": {
+                        "x": 36.9761,
+                        "y": 22.7989
+                    },
+                    "uuid": "112fdf77-4c55-46bf-8058-85f0d924f833"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.9080 mm",
+                    "pos": {
+                        "x": 34.9199,
+                        "y": 21.1744
+                    },
+                    "uuid": "25034c86-caba-4375-8cfd-d85fb35b1c4b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 33.7131,
+                        "y": 22.4744
+                    },
+                    "uuid": "27df0383-6876-4493-bf66-1711470e3afa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 13.0119,
+                        "y": 32.5006
+                    },
+                    "uuid": "3212abaa-1d65-4148-90a4-6856040f25a1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.0430 mm",
+                    "pos": {
+                        "x": 6.0945,
+                        "y": 32.0
+                    },
+                    "uuid": "440d6e82-2c3d-4221-913f-82e5baaa7772"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 34.0119,
+                        "y": 21.1744
+                    },
+                    "uuid": "7dc5799b-b0f8-416d-8845-669fdc7bb979"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.2552 mm",
+                    "pos": {
+                        "x": 32.4579,
+                        "y": 22.4744
+                    },
+                    "uuid": "8c482db1-26c9-4a2e-8906-1e20d3b76cbc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.1394 mm",
+                    "pos": {
+                        "x": 32.2137,
+                        "y": 24.774
+                    },
+                    "uuid": "8eb37313-1201-46fc-abb8-b0ad13a9e289"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.9688 mm",
+                    "pos": {
+                        "x": 43.5312,
+                        "y": 10.325
+                    },
+                    "uuid": "96cdcb6b-6fd4-44d3-a37c-677e5e26cc71"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.8721 mm",
+                    "pos": {
+                        "x": 42.2074,
+                        "y": 9.0012
+                    },
+                    "uuid": "9e7277e5-51f9-4ab4-854f-514a1a46d718"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.5703 mm",
+                    "pos": {
+                        "x": 43.5312,
+                        "y": 10.325
+                    },
+                    "uuid": "c2e9495d-bfd9-4e6f-8887-f79363e3c629"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 1.4046 mm",
+                    "pos": {
+                        "x": 32.4579,
+                        "y": 23.625
+                    },
+                    "uuid": "d1660d93-36cd-472f-88d7-da06549183c5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.6095 mm",
+                    "pos": {
+                        "x": 31.8484,
+                        "y": 23.7744
+                    },
+                    "uuid": "e0ae715d-0ac1-47e4-af28-6680f9f10063"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 4.4324 mm",
+                    "pos": {
+                        "x": 37.775,
+                        "y": 9.0012
+                    },
+                    "uuid": "ff64f59b-753f-433a-9b26-8833dff4f1fe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.8721 mm",
+                    "pos": {
+                        "x": 53.1762,
+                        "y": 20.4988
+                    },
+                    "uuid": "2063505d-4609-44bc-8ebf-75e97b3b1c68"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.9956 mm",
+                    "pos": {
+                        "x": 34.6005,
+                        "y": 47.5999
+                    },
+                    "uuid": "297ba8d1-a849-4119-8f50-5f23ad2f1b39"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.7061 mm",
+                    "pos": {
+                        "x": 34.1012,
+                        "y": 48.0992
+                    },
+                    "uuid": "31aa5c14-a751-48bb-9614-ea78ea381400"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.2954 mm",
+                    "pos": {
+                        "x": 52.558,
+                        "y": 13.6424
+                    },
+                    "uuid": "31c0e7f7-d3c0-476d-bbb7-48c445b27fe8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.7061 mm",
+                    "pos": {
+                        "x": 34.1012,
+                        "y": 10.1036
+                    },
+                    "uuid": "3b1c75dc-562a-403a-9e6f-d8923beca7bc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 14.7131,
+                        "y": 29.2256
+                    },
+                    "uuid": "401c43f6-161d-49a7-89ce-c2ba102f26fc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.8219 mm",
+                    "pos": {
+                        "x": 34.1012,
+                        "y": 11.9255
+                    },
+                    "uuid": "5be4cb9e-f3da-4933-ad49-8832afb88b15"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.9086 mm",
+                    "pos": {
+                        "x": 22.5776,
+                        "y": 26.1888
+                    },
+                    "uuid": "683f0517-6677-47a8-8cc0-9642912b9464"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.7061 mm",
+                    "pos": {
+                        "x": 54.1012,
+                        "y": 10.1036
+                    },
+                    "uuid": "72f6a7ef-20fe-419f-83a9-a12a15f84815"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.1069 mm",
+                    "pos": {
+                        "x": 52.0693,
+                        "y": 20.4988
+                    },
+                    "uuid": "77670085-b1bb-429a-bc9e-703e0a5e51f9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.0138 mm",
+                    "pos": {
+                        "x": 23.4862,
+                        "y": 25.175
+                    },
+                    "uuid": "ae870517-0817-4951-8419-263791e9cf4a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.4889 mm",
+                    "pos": {
+                        "x": 52.0691,
+                        "y": 14.4988
+                    },
+                    "uuid": "beb83524-9ff1-4c55-8a65-121259fee0ee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.9956 mm",
+                    "pos": {
+                        "x": 54.1012,
+                        "y": 12.0992
+                    },
+                    "uuid": "c7d201c8-8ee1-437f-8628-4a162e0c5b49"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.1874 mm",
+                    "pos": {
+                        "x": 21.3902,
+                        "y": 26.4988
+                    },
+                    "uuid": "d7689d53-0c41-4879-966c-57f6e49d43a7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.2478 mm",
+                    "pos": {
+                        "x": 53.8534,
+                        "y": 13.175
+                    },
+                    "uuid": "dd97021b-1760-4886-9674-7534fa18a8ff"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 0.3988 mm",
+                    "pos": {
+                        "x": 54.1012,
+                        "y": 13.175
+                    },
+                    "uuid": "ec71123b-a013-42cf-abdd-5ac8cb1768bb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/GND] (B.Cu), 长度: 1.6707 mm",
+                    "pos": {
+                        "x": 13.0424,
+                        "y": 29.2256
+                    },
+                    "uuid": "f8f3ab45-a092-48ef-9fae-3756a970aee9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_A] (F.Cu), 长度: 0.2887 mm",
+                    "pos": {
+                        "x": 58.3895,
+                        "y": 14.0144
+                    },
+                    "uuid": "439c7745-c8f7-4db9-86af-ee2efb0985be"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_C] (B.Cu), 长度: 0.8211 mm",
+                    "pos": {
+                        "x": 29.1008,
+                        "y": 35.8828
+                    },
+                    "uuid": "da8e63ba-6148-4709-9c7c-a97821f380b7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_C] (B.Cu), 长度: 0.5646 mm",
+                    "pos": {
+                        "x": 29.1008,
+                        "y": 36.7039
+                    },
+                    "uuid": "fdc5da4c-686b-4f04-ba0f-b247524b2f96"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/ENABLE_N] (B.Cu), 长度: 0.9032 mm",
+                    "pos": {
+                        "x": 13.8099,
+                        "y": 28.5756
+                    },
+                    "uuid": "082984ec-8b4d-43ae-b95b-2ade22fb0bf5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/ENABLE_N] (B.Cu), 长度: 0.1158 mm",
+                    "pos": {
+                        "x": 16.1011,
+                        "y": 42.725
+                    },
+                    "uuid": "79a25c12-7fad-4e14-abf4-c03f983f02e8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/ENABLE_N] (B.Cu), 长度: 1.2386 mm",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 42.725
+                    },
+                    "uuid": "7fffd445-e6bb-4052-9aa8-8aab4a7df2f6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/ENABLE_N] (B.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 14.7131,
+                        "y": 28.5756
+                    },
+                    "uuid": "84ef3d19-ffa2-4d09-ac36-f048c5635cd1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_A] (F.Cu), 长度: 0.7061 mm",
+                    "pos": {
+                        "x": 49.8988,
+                        "y": 25.9964
+                    },
+                    "uuid": "39cf25da-4fd2-4220-b8bf-7cfcb9260968"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_A] (F.Cu), 长度: 1.3016 mm",
+                    "pos": {
+                        "x": 49.8988,
+                        "y": 24.6948
+                    },
+                    "uuid": "84ed2c9b-e4ad-4d7d-ba79-2f7f526162c4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CLK_MCU] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 28.2869,
+                        "y": 6.8744
+                    },
+                    "uuid": "34ff3518-8c50-49d9-a301-d22e5952458b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CLK_MCU] (F.Cu), 长度: 0.8933 mm",
+                    "pos": {
+                        "x": 29.1802,
+                        "y": 6.8744
+                    },
+                    "uuid": "97dce927-45b8-4dcc-b0ca-72649761eb25"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/LX] (F.Cu), 长度: 0.4588 mm",
+                    "pos": {
+                        "x": 14.5381,
+                        "y": 48.6256
+                    },
+                    "uuid": "3105904c-db3f-4c54-8d92-8af271efe12d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/LX] (F.Cu), 长度: 0.9217 mm",
+                    "pos": {
+                        "x": 13.6164,
+                        "y": 48.6256
+                    },
+                    "uuid": "63d88087-d0a4-4c65-be60-a4191d32ff78"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A3_MCU] (F.Cu), 长度: 0.6990 mm",
+                    "pos": {
+                        "x": 27.2411,
+                        "y": 21.025
+                    },
+                    "uuid": "1a522135-c734-4b9d-8854-b412a69140a3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A3_MCU] (F.Cu), 长度: 0.6922 mm",
+                    "pos": {
+                        "x": 26.7468,
+                        "y": 20.5307
+                    },
+                    "uuid": "36a0dcd1-eed5-437f-8ea1-45d955b68f00"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A3_MCU] (F.Cu), 长度: 0.8964 mm",
+                    "pos": {
+                        "x": 28.1375,
+                        "y": 21.025
+                    },
+                    "uuid": "8bf93515-8381-4ed7-810a-c08462a01c74"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A1] (F.Cu), 长度: 2.4396 mm",
+                    "pos": {
+                        "x": 27.1375,
+                        "y": 38.925
+                    },
+                    "uuid": "6f9674f3-01f5-442c-96d8-e58979647e91"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A1] (F.Cu), 长度: 0.5187 mm",
+                    "pos": {
+                        "x": 24.6979,
+                        "y": 38.925
+                    },
+                    "uuid": "fd9412e9-3a8e-4d85-a824-e8d5e7e1cc1f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A1] (B.Cu), 长度: 1.6444 mm",
+                    "pos": {
+                        "x": 10.9313,
+                        "y": 41.9256
+                    },
+                    "uuid": "4a500826-2b9c-412f-8e20-302cb22ce945"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A1] (B.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 9.2869,
+                        "y": 41.9256
+                    },
+                    "uuid": "52dfae85-8186-47d9-9fb3-0c90b1567890"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A0] (F.Cu), 长度: 0.4499 mm",
+                    "pos": {
+                        "x": 25.0224,
+                        "y": 38.275
+                    },
+                    "uuid": "320bc8f5-214f-4fbf-ae5e-462a7123d334"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A0] (F.Cu), 长度: 2.1151 mm",
+                    "pos": {
+                        "x": 27.1375,
+                        "y": 38.275
+                    },
+                    "uuid": "547df322-36a9-4989-a4fc-99b08d0ee6fd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A0] (F.Cu), 长度: 0.9059 mm",
+                    "pos": {
+                        "x": 24.7043,
+                        "y": 37.9569
+                    },
+                    "uuid": "7e55ac30-13ac-488f-bbcc-ed2d437dfdc8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A0] (F.Cu), 长度: 0.1578 mm",
+                    "pos": {
+                        "x": 23.7984,
+                        "y": 37.9569
+                    },
+                    "uuid": "9695b454-4fc2-42fb-9d6c-86f1618dba83"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 0.7190 mm",
+                    "pos": {
+                        "x": 28.1375,
+                        "y": 10.625
+                    },
+                    "uuid": "148c8898-6a20-4a37-8620-dddd31ac4874"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 1.0427 mm",
+                    "pos": {
+                        "x": 32.8198,
+                        "y": 11.925
+                    },
+                    "uuid": "1da85ab4-ae69-4d19-ba7b-3cb7a23be434"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 0.9103 mm",
+                    "pos": {
+                        "x": 31.9095,
+                        "y": 11.7756
+                    },
+                    "uuid": "353f2a16-5653-41ca-8090-4d0cff402d61"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 0.5204 mm",
+                    "pos": {
+                        "x": 29.9847,
+                        "y": 11.1598
+                    },
+                    "uuid": "69f44a8b-3985-43af-8d0d-9fffff8e9566"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 0.7563 mm",
+                    "pos": {
+                        "x": 28.8565,
+                        "y": 10.625
+                    },
+                    "uuid": "7c4119c0-dc37-42ff-ab26-fa9ae51941da"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CS_MCU] (F.Cu), 长度: 0.5934 mm",
+                    "pos": {
+                        "x": 29.3913,
+                        "y": 11.1598
+                    },
+                    "uuid": "f6b3eee7-d4fd-49f4-a493-ef28a787f92f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_B] (B.Cu), 长度: 0.7061 mm",
+                    "pos": {
+                        "x": 39.8988,
+                        "y": 16.1036
+                    },
+                    "uuid": "cf53fa8e-1547-4efc-9795-294d50840d0a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_B] (B.Cu), 长度: 1.9956 mm",
+                    "pos": {
+                        "x": 39.8988,
+                        "y": 18.0992
+                    },
+                    "uuid": "d85bd0de-19a2-418a-b89c-73cda1603bb7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A05_DO] (F.Cu), 长度: 2.5864 mm",
+                    "pos": {
+                        "x": 27.1375,
+                        "y": 35.025
+                    },
+                    "uuid": "ba148d60-4f65-4592-8437-90000b922a75"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_MCU] (F.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 28.2869,
+                        "y": 23.4756
+                    },
+                    "uuid": "23120429-a676-49b1-acad-423f7ea99d6d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_MCU] (F.Cu), 长度: 0.8934 mm",
+                    "pos": {
+                        "x": 29.1803,
+                        "y": 23.4756
+                    },
+                    "uuid": "b3025007-a2e9-4867-a7db-5d35dc5feca1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A2_MCU] (F.Cu), 长度: 1.9389 mm",
+                    "pos": {
+                        "x": 28.1375,
+                        "y": 19.725
+                    },
+                    "uuid": "47ab7d26-4902-4251-910c-c3c8854d50c7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A2_MCU] (F.Cu), 长度: 0.4371 mm",
+                    "pos": {
+                        "x": 30.0764,
+                        "y": 19.725
+                    },
+                    "uuid": "d347c841-11cc-45bc-b34d-328800662bb4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_A_DRV] (F.Cu), 长度: 1.1518 mm",
+                    "pos": {
+                        "x": 33.8625,
+                        "y": 22.975
+                    },
+                    "uuid": "9f200967-387d-4e00-93d4-d4ae9eaaf5c5"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/MOSI_A_DRV] (F.Cu), 长度: 0.5446 mm",
+                    "pos": {
+                        "x": 35.0143,
+                        "y": 22.975
+                    },
+                    "uuid": "b9d06b6c-b088-4351-935f-c5b3b48b95bd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A2] (F.Cu), 长度: 1.3117 mm",
+                    "pos": {
+                        "x": 33.8625,
+                        "y": 20.375
+                    },
+                    "uuid": "73d60a7c-1c76-46e0-8720-e1d86a6f216d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/A2] (F.Cu), 长度: 0.0683 mm",
+                    "pos": {
+                        "x": 32.5508,
+                        "y": 20.375
+                    },
+                    "uuid": "ad8c61e7-16c9-4cb5-933a-67c8c6c58e2e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/DO_C] (B.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 9.1375,
+                        "y": 48.575
+                    },
+                    "uuid": "526f0468-660b-4ddf-b046-3a116cce0668"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/DO_C] (B.Cu), 长度: 1.8909 mm",
+                    "pos": {
+                        "x": 9.2869,
+                        "y": 48.4256
+                    },
+                    "uuid": "596002d3-7fad-4a47-bd1d-0f671242cb9c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C14_DO] (B.Cu), 长度: 0.0107 mm",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 44.675
+                    },
+                    "uuid": "10ff66e5-5665-4f95-822e-61ae02de3d80"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C14_DO] (B.Cu), 长度: 1.7624 mm",
+                    "pos": {
+                        "x": 14.8549,
+                        "y": 44.6674
+                    },
+                    "uuid": "8ee75fc2-61aa-4118-a9ae-60a70d712618"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C14_DO] (B.Cu), 长度: 0.0107 mm",
+                    "pos": {
+                        "x": 13.0925,
+                        "y": 44.6674
+                    },
+                    "uuid": "9eeea87c-40a6-487c-8923-b1e3d99dcfed"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C02_DO] (B.Cu), 长度: 0.2345 mm",
+                    "pos": {
+                        "x": 9.1375,
+                        "y": 44.025
+                    },
+                    "uuid": "5b33d8d5-450e-41f9-9c20-5720ecfe2880"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C02_DO] (B.Cu), 长度: 1.0805 mm",
+                    "pos": {
+                        "x": 9.3033,
+                        "y": 43.8592
+                    },
+                    "uuid": "f1b18c41-85e3-423b-807c-6d9bbd3270a7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C13_DO] (B.Cu), 长度: 0.1144 mm",
+                    "pos": {
+                        "x": 13.6967,
+                        "y": 45.325
+                    },
+                    "uuid": "6826e0bb-c5b3-4f94-ab60-1a29737489dd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C13_DO] (B.Cu), 长度: 1.1658 mm",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 45.325
+                    },
+                    "uuid": "a232eeca-444a-4dab-8096-e9d828c66438"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C11_DO] (B.Cu), 长度: 1.1256 mm",
+                    "pos": {
+                        "x": 16.1375,
+                        "y": 46.4756
+                    },
+                    "uuid": "7d1f6b44-b960-499f-9510-5945cc274459"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C11_DO] (B.Cu), 长度: 0.2113 mm",
+                    "pos": {
+                        "x": 15.0119,
+                        "y": 46.4756
+                    },
+                    "uuid": "af23d977-df5a-4e30-8c2a-f16c90b11727"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C10_DO] (B.Cu), 长度: 0.0717 mm",
+                    "pos": {
+                        "x": 13.6727,
+                        "y": 47.275
+                    },
+                    "uuid": "0a23c152-520d-4f91-a0b6-e93d4f50e897"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/C10_DO] (B.Cu), 长度: 1.1898 mm",
+                    "pos": {
+                        "x": 14.8625,
+                        "y": 47.275
+                    },
+                    "uuid": "d73726fe-5b09-41b6-92fb-d8d3b0935000"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [/B11_DO] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 23.9625
+                    },
+                    "uuid": "b1266cf1-4010-4a28-850f-c917aeea0ad3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

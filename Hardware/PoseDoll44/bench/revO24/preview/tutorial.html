@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>O24A 手臂 · 关节动画教程</title><meta name="description" content="拆开 O24A 手臂，逐轴观察旋转，再用分步动画了解零件的装配关系。">
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+  <header><a class="brand" href="index.html"><span class="brand-mark">P</span><span>POSEDOLL LAB<small>O24A / INTERACTIVE GUIDE</small></span></a><div class="header-title">手臂是怎样转起来的？</div><a class="back" href="index.html">自由摆姿 ↗</a></header>
+  <div class="workspace">
+    <aside class="course"><div class="eyebrow">从一个关节开始</div><h1>拆开看，<br>就明白了。</h1><p class="course-intro">先看肘部的单轴，再理解整条手臂。每一章都可以旋转、拆解和装回。</p><nav id="chapters" aria-label="教程章节"></nav><div class="course-bottom"><strong>真实 O24A 数字模型</strong><span>124 个实体 · 9 根测角轴</span><span>对应整偶参考身高 560 mm</span><a href="../DESIGN.zh-CN.md">阅读设计说明 ↗</a></div></aside>
+    <main>
+      <div class="modebar" role="group" aria-label="动画类型"><button data-mode="rotate" aria-pressed="true"><span>01</span> 看旋转</button><button data-mode="explode" aria-pressed="false"><span>02</span> 拆开看</button><button data-mode="assemble" aria-pressed="false"><span>03</span> 装回去</button></div>
+      <section class="stage" aria-label="三维动画">
+        <canvas id="scene" aria-label="可拖动旋转和滚轮缩放的 O24A 关节动画"></canvas><svg id="leaders" aria-hidden="true"></svg><div id="labels"></div>
+        <div class="scene-top"><span id="scene-name"></span><span class="model-tag">O24A · 左臂</span></div>
+        <div class="view-tools" role="group" aria-label="观察视角"><button data-view="three" title="立体视角">立体</button><button data-view="front">正面</button><button data-view="side">侧面</button><button id="fit" title="恢复最佳观察视角">复位</button></div>
+        <div class="scene-note" id="scene-note"></div>
+        <div class="scene-legend" id="legend"></div>
+        <div id="error" role="alert" hidden></div>
+      </section>
+      <div class="transport">
+        <div class="transport-row"><button id="play" class="play" aria-label="播放动画">▶ 播放</button><button id="restart" title="从头开始">↶ 重播</button><span id="readout" aria-live="off"></span><label class="speed">速度<select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label></div>
+        <label class="timeline-label" for="timeline"><span id="timeline-title">动作进度</span><output id="progress">0%</output></label><input type="range" id="timeline" min="0" max="1000" value="0" step="1" aria-label="动画进度">
+        <div class="stepbar"><button id="prev-step">← 上一步</button><span id="step-caption"></span><button id="next-step">下一步 →</button></div>
+        <div class="options"><label><input type="checkbox" id="show-bones" checked> UE 骨线</label><label><input type="checkbox" id="show-labels" checked> 零件标签</label><label><input type="checkbox" id="show-context" checked> 相邻结构</label><span>拖动看背面 · 滚轮缩放</span></div>
+      </div>
+    </main>
+    <aside class="lesson"><div class="eyebrow" id="lesson-counter"></div><h2 id="lesson-title"></h2><p class="lead" id="lesson-intro"></p><div id="motion-options" aria-label="选择旋转轴"></div>
+      <div class="instruction"><span class="mini-title" id="instruction-kicker"></span><h3 id="instruction-title"></h3><p id="instruction-text"></p></div>
+      <div class="relationship" id="relationship"></div>
+      <div class="takeaway"><span class="mini-title">观察重点</span><p id="takeaway"></p></div>
+      <details id="parts-details"><summary>认识本章零件 <span id="part-count"></span></summary><label class="select-label" for="part-select">选择一个零件</label><select id="part-select"></select><div id="part-info"></div></details>
+      <div class="scope"><strong>当前设计的边界</strong><p id="chapter-limit"></p><p>拆解距离与移入路径为教学展开；装配动画说明零件之间的关系。锁固、磁铁座和预紧细节尚未完成，不能据此直接加工装配。</p></div>
+    </aside>
+  </div>
+  <script src="data.js"></script><script src="tutorial-content.js"></script><script src="tutorial.js"></script>
+</body></html>

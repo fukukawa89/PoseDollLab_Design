@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TEST_PLAN</title><link rel="icon" href="data:,"><style>body{max-width:1040px;margin:40px auto;padding:0 26px 70px;color:#243f36;background:#fafbf6;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}h1{font-size:36px;line-height:1.3}h2{margin-top:42px;border-bottom:1px solid #d6dfd5;padding-bottom:8px}h3{margin-top:28px}a{color:#226d57}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}th,td{border:1px solid #d6dfd5;padding:9px 12px;text-align:left}th{background:#e8eee4}img{max-width:100%;border:1px solid #dbe4d8;border-radius:8px}code{background:#eaf0e7;padding:2px 5px}nav{display:flex;flex-wrap:wrap;gap:15px}small,.muted{color:#647567}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#edf3e8;padding:18px;border-radius:10px}.card b{font-size:30px;display:block}.button{display:inline-block;background:#2b715a;color:white;text-decoration:none;padding:9px 17px;border-radius:7px;margin:6px 8px 6px 0}.note{border-left:4px solid #c09b5f;padding:12px 18px;background:#f3efdf}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero img{border:0}.eyebrow{font-size:12px;letter-spacing:2px}@media(max-width:700px){.cards,.hero{grid-template-columns:1fr}body{padding:0 16px}h1{font-size:28px}table{display:block;overflow:auto}}@media print{body{margin:0;max-width:none;font-size:11pt;background:white}nav,.button{display:none}h2{break-after:avoid}img{max-height:140mm;object-fit:contain}tr{break-inside:avoid}}</style><body><nav><a href="START_HERE.html">打印入口</a><a href="tutorial/index.html">逐件动画教程</a><a href="preview/index.html">三维装配</a><a href="ASSEMBLY.html">装配手册</a><a href="TEST_PLAN.html">测试计划</a><a href="BOM.csv">采购清单</a><a href="PURCHASE_DELTA_O22.html">O22补购对照</a></nav><h1>O24C-T1 台架测试计划</h1>
+<p>S2结构修复：用户已观察到S1的H04固定压板晃动，该缺陷不能按“验证已通过”处理。H04/H05/R04/R05换用S2后另记版本，先检查腹板、锁轴座和螺母侧槽，再开始下述试验。保留S1原始记录；S2持姿、磨损与刚度仍待实测。详见 <a href="REPRINT_S2.html">重印说明</a>。</p>
+<p>S1现货接口版：记录所用版本，旧D3版与新D2.5版数据分开。测试前按装配手册确认导向肩部—钢垫圈—普通螺母的金属接触和锁固完成；每次检查增加导向组件的轴向松动、垫圈变形及捕获槽边裂纹。名义0.20mm捕获游隙不是要求拧紧消除的间隙。实际游隙显著增大、记号移位或出现裂纹时停止试验，先查锁固及凹槽磨损。</p>
+<p>目的：用一套可拆开的样件确定合适的预紧量，以及活动范围、持姿与磨损是否相互冲突。下面是本轮试制的测量方法与筛选目标，不是已经取得的性能或产品寿命承诺。</p>
+<h2>条件与记录</h2>
+<p>保持同一卷 PLA、同一层高与打印方向。记录打印日期、室温、材料、孔档位、球面直径、衬片内径档位、所有后处理、螺钉记号位置。测试前后用相同照明和距离拍接触面照片。数据写入 <code>test_records</code> 下的 CSV；首行之后的空白值表示待测，不能填作 0 或 PASS。</p>
+<p>台架夹稳，摆动区空出。工具建议：卡尺，0.1 g 或更好分辨率的秤，已称量的砝码 / 垫片，小挂钩与细线，纸质量角器或固定位置的侧视照片。若用测力计，腕部 100 mm 加载杆的目标力仅 0.060 N，要有足够分辨率，普通行李秤不适用。</p>
+<h2>1. 零预紧与短磨合</h2>
+<ol><li>H/R 在大垫圈刚接触、尚未明显压紧时，检查轴承转动、轴向晃动和有无卡点。先确认两侧轴承端面凹入量 ≥0.20 mm。</li><li>W 在极小预紧下检查球面顺滑、肩螺钉不会退出、槽内没有螺纹刮擦。记录偏转和非目标轴游隙。</li><li>交替小幅调整预紧，达到下表目标附近。做 50 个慢速往返磨合，静置 30 分钟，再复测。只在此阶段重新标定一次，后续耐磨测试先保持同一螺母位置。</li></ol>
+<table>
+<tr><th>站位 / 工况</th><th>起始持姿力矩目标</th><th>100 mm 垂直力臂对应的净切向力</th><th>忽略自重时的等效质量，仅供换算</th></tr>
+<tr><td>H 肩部工况</td><td>0.130 N·m</td><td>1.300 N</td><td>132.6 g</td></tr>
+<tr><td>H 肘部工况</td><td>0.040 N·m</td><td>0.400 N</td><td>40.8 g</td></tr>
+<tr><td>R 扭转工况</td><td>0.020 N·m</td><td>0.200 N</td><td>20.4 g</td></tr>
+<tr><td>W 腕部两轴</td><td>0.006 N·m</td><td>0.060 N</td><td>6.12 g</td></tr>
+</table>
+<p>H 与 W 的目标沿用 O24C 台架预算；R 的 0.020 N·m 是本次试制的起始筛选值，后续应随完整前臂和手掌的质量重算。四个数字都不是材料或螺钉的强度额定值。H 肩部、肘部工况分开做并记录各自预紧位置。</p>
+<h2>2. 如何测力矩，避免把加载杆自重算漏</h2>
+<p>加载孔中心到关节中心名义 100 mm，先实测。基本式是 <strong>τ = F × d⊥</strong>，其中 d⊥ 是关节轴到拉力作用线的垂直距离，不能把任何方向的拉力都直接乘 0.1 m。</p>
+<p><strong>优先使用垂直转轴、水平切向拉力测起动力矩：</strong>把被测轴竖直固定，加载杆在水平面转动，拉力水平且与杆垂直。此时重力不产生绕该竖直轴的力矩。W 的屈伸和偏转轴分别换方向夹持，另一角度归零。每个方向缓慢加力至刚开始连续转动，各测 3 次；记录正反向起动值、持续转动值与卡点。</p>
+<p><strong>用水平杆和悬挂砝码测持姿时，必须扣除转动件自重。</strong>卸下转动组件，称其总质量 m，测相对关节轴的重心力臂 r。转动件包括杆、球/转子、随动螺钉与轴承外形组件；固定架不计入。中立偏角为 0、加载杆水平、重心在杆中心线时：</p>
+<p><code>目标力矩 = 9.80665 × (挂载总质量 × 实测孔距 + 转动件质量 × 重心力臂)</code></p>
+<p>质量用 kg，距离用 m；挂载总质量包含挂钩、线和砝码。反向或斜置时使用带符号的实际重力力臂。无法可靠测重心时采用前一种垂直转轴方法，不用未经扣除的等效质量宣称持姿能力。腕部尤其容易被加载杆自重影响。</p>
+<p>不以预紧螺母拧紧力矩代替关节持姿力矩；摩擦系数、PLA 压缩和装配接触均需实测。测试中把“螺母位置没有动但力矩下降”与“螺母确实转动”分开记录，前者可能是嵌合、磨损或蠕变。</p>
+<h2>3. 活动范围</h2>
+<p>H：肩部工况检查 −45°、0°、45°、90°、135°、165°；肘部工况检查 0°、45°、90°、120°、145°。R：−85°、−45°、0°、45°、80°。</p>
+<p>W：另一轴归零，分别检查屈伸 −65°、0°、70°及偏转 −20°、0°、30°；随后检查四个角点（−65/−20、−65/30、70/−20、70/30）和连续弧形过渡。组合姿态的角度顺序为先偏转 Rx，再屈伸 Ry；不要直接把照片中的两个投影角当成这两个 Euler 角。先按刻度和单轴定位构造组合姿态，记录是否到达及碰触部位。</p>
+<p>在“很小预紧”和“目标持姿预紧”各做一遍。每个位置记录：实际到达角、卡点、弹性挠曲、球窝闭合量、槽端接触、擦痕照片。<strong>较大的夹具不能成为目标范围内的限位。</strong>标称范围以人体常规摆姿为目标，超出范围无需强推。</p>
+<h2>4. 持姿与锁固</h2>
+<p>在目标净力矩下保持 10 分钟，记录 0 / 1 / 5 / 10 分钟角度。初轮筛选目标：10 分钟角漂移不超过 2°，没有连续滑落、螺钉退出、球缝张开或打印裂纹。腕部至少分别测两轴；组合姿态另记录是否更容易滑动。</p>
+<p>H/R 刻度环每格 5°；判断 2° 漂移时应用固定视角照片或放大的纸质刻度，不靠粗刻度估读。测试前后对比螺钉记号。检查光轴端部防脱、肩螺钉有头防脱及方键横销，不能只看阻力是否足够。</p>
+<h2>5. 磨损、松弛与再次调整</h2>
+<p>一次循环定义为 A→B→A。用手慢速约 5–10 次/分钟，不撞极限；各站先做下列循环，再单独复查完整 ROM：H 0↔120°，R −60↔60°，W 屈伸 −45↔45°、偏转 −15↔20°各为独立计数组。</p>
+<p>在累计 0、100、500、1000 次检查：正反向起动 / 运行力矩、10 分钟漂移、游隙、螺钉记号、灰粉与划痕、轴承顺畅度、球窝闭合量。每次检查先测量，再决定是否拆检。1000 次后拆开拍接触面，测衬片厚度（相同位置）与导向槽宽；薄曲面不能用卡尺强夹，应以同一方法做前后比较。</p>
+<p>初轮筛选目标：同一预紧位置的起动力矩相对磨合后基准变化≤20%；无裂纹、分层、明显卡滞或紧固件退出。活动轴反向死区尽量≤2°；腕部非目标滚转单独记录，暂以≤3°作为筛选目标，后续由测角精度预算重新收紧。数字门槛是本轮比较用的工程目标，并非已证明的能力。</p>
+<p>若力矩下降，先记录原值与记号，再允许进行一次小幅重新预紧，记录补偿转角及恢复值。这样能区分“可调恢复的磨耗”和“继续拧也无法恢复的结构问题”。换衬片、换球或润滑后，另开一条试件记录，不接着沿用原寿命计数。</p>
+<p>最后在目标预紧、无外载下静置 24 小时，再检查力矩与螺母记号，观察 PLA 松弛；这不等同于长期耐久或高温验证。</p>
+<h2>6. 下一版决策</h2>
+<p>先拿到每站的可用预紧区间：下限满足持姿，上限仍能平滑摆动并到达目标 ROM。若区间很窄，优先调整接触面、尺寸配合与预紧可调性；若区间足够，再把外置夹具中的有效结构回填到 O24C 紧凑封装。未经全臂碰撞与骨架对齐复查，不把台架通过当作完整手臂通过。</p></body></html>

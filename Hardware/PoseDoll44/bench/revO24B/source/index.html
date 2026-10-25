@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>O24B · 同一个球，两种摆动</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head><body>
+<header><a href="index.html" class="brand">POSEDOLL LAB <small>O24 / DESIGN STUDY B</small></a><span>球面手腕 · 可行性对比样机</span><a href="../DESIGN.zh-CN.md">设计与调研 ↗</a></header>
+<div class="layout"><aside><div class="eyebrow">从两级转动，到同一颗球</div><h1>同一个球，<br>两种摆动。</h1><p class="intro">球心落在 UE 腕中心 W。球与连接杆一起转动，左右偏、前后弯都在这里完成。</p>
+<div class="badge">O24B 研究样机 · 未制造放行</div>
+<div class="tabs" role="group" aria-label="观察模式"><button data-mode="wrist" aria-pressed="true">新球关节</button><button data-mode="compare">对比 A / B</button><button data-mode="arm">整臂位置</button></div>
+<label for="motion">动画<select id="motion"><option value="combined">复合摆动</option><option value="flex">前后弯腕</option><option value="deviation">左右偏腕</option></select></label>
+<div class="playrow"><button id="play">▶ 播放</button><button id="zero">回到零位</button><label>速度<select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option></select></label></div>
+<label for="flex">前后弯腕 <output id="flex-out">0°</output></label><input id="flex" type="range" min="-65" max="70" step="1" value="0">
+<label for="deviation">左右偏腕 <output id="dev-out">0°</output></label><input id="deviation" type="range" min="-20" max="30" step="1" value="0">
+<label for="explode">拆解程度 <output id="explode-out">0%</output></label><input id="explode" type="range" min="0" max="100" step="1" value="0">
+<label class="check"><input id="xray" type="checkbox" checked> 透视球窝与球体，看清内部</label><label class="check"><input id="guides" type="checkbox" checked> 显示导向轨迹与骨线</label>
+<label id="pose-label" for="pose" hidden>整臂参考动作<select id="pose"><option value="neutral">自然垂臂</option><option value="bent">屈肘 90°</option><option value="raised">向前举臂</option></select></label>
+<div class="views"><button data-view="three">立体</button><button data-view="front">正面</button><button data-view="side">侧面</button><button id="fit">居中</button></div>
+<p class="hint">拖动旋转 · 滚轮缩放。拆解时停止运动并回到零位；展开路径用于看清关系。</p><nav><a href="../RESEARCH.zh-CN.md">机器人方案对照与一手来源 ↗</a><a href="../O24B_spherical_wrist.blend">下载可编辑 Blender 装配 ↗</a><a href="../O24B_spherical_wrist.glb">下载球关节 GLB ↗</a><a href="../verification/motion_grid.json">查看几何检查范围 ↗</a></nav>
+</aside>
+<main><canvas id="scene" aria-label="O24B 球面手腕三维对比模型"></canvas><div class="scene-top"><span id="scene-title">O24B / 一个球形输出件</span><span id="size-label">球体 Ø24 mm</span></div><div class="compare-heads" id="compare-heads" hidden><span>O24A · 交叉短轴</span><span>O24B · 受约束球关节</span></div><svg id="overlay" aria-hidden="true"></svg><div id="labels"></div><div class="scene-bottom"><div id="scene-status"></div><div class="legend"><span><i style="background:#dba049"></i>球与输出杆</span><span><i style="background:#6caa99"></i>固定球窝</span><span><i style="background:#785eb3"></i>导向销 / 轨迹</span><span><i style="background:#ca4a72"></i>UE 骨线</span></div></div><div id="error" role="alert" hidden></div></main>
+<aside class="notes"><div class="eyebrow">怎么做到两个方向都能动</div><h2>球面承重，导向销限转。</h2><ol class="steps"><li><b>一颗球负责摆动</b><p>两侧球窝托住同一个球体，连接杆从球心沿输出方向伸出。</p></li><li><b>弧槽限制多余自转</b><p>两根导向销沿槽移动。前后弯腕时，球绕导向销方向转；左右偏腕时，销沿弧槽走。</p></li><li><b>球面摩擦用于持姿</b><p>球窝内的曲面衬片接触球体，预紧件用于调整阻力。实际摩擦、回差和寿命尚未测量。</p></li><li><b>三轴磁传感器测角</b><p>中心磁铁随球转动，固定传感器读取磁场方向。需要新 PCB 和标定；原 MT6701 不能直接替代。</p></li></ol>
+<div class="metric"><span>腕部中立位包围盒 · 不含手掌</span><strong id="dimensions"></strong><small id="comparison"></small></div>
+<div class="proof" id="proof"></div>
+<div class="limit"><b>这次推进到哪里</b><p>已做新的球面手腕和混合整臂模型。肩、肘、前臂沿用 O24A；肩部的 90° 附近奇异位形仍未解决。</p><p>球窝、衬片、导向销锁固、PCB 与预紧结构仍要做实物小样。导向间隙对应的未预紧半侧游隙估计约 0.61°，不能把名义对齐当成实物精度。</p><p>同一组腕角在 A、B 中的组合顺序不同，组合姿态会有差异。接入 UE 应使用各自正向运动学生成四元数。</p></div>
+</aside></div><script src="data.js"></script><script src="viewer.js"></script></body></html>

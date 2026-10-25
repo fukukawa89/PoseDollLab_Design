@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "insertion_paths": [
+    {
+      "id": "Hbearing_-1",
+      "against": [
+        "H01",
+        "H02"
+      ],
+      "travel_mm": 6,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "Hbearing_1",
+      "against": [
+        "H01",
+        "H02"
+      ],
+      "travel_mm": 6,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "Rbearing_-1",
+      "against": [
+        "R01",
+        "R02"
+      ],
+      "travel_mm": 6,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "Rbearing_1",
+      "against": [
+        "R01",
+        "R02"
+      ],
+      "travel_mm": 6,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "W01",
+      "against": [
+        "W02"
+      ],
+      "travel_mm": 15,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "W09",
+      "against": [
+        "W01",
+        "W02"
+      ],
+      "travel_mm": 20,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "W04",
+      "against": [
+        "W01",
+        "W02"
+      ],
+      "travel_mm": 15,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "W05",
+      "against": [
+        "W01",
+        "W02"
+      ],
+      "travel_mm": 15,
+      "steps": 31,
+      "max_intersection_mm3": 0,
+      "passed": true
+    },
+    {
+      "id": "W04",
+      "against": [
+        "W06"
+      ],
+      "travel_mm": 15,
+      "steps": 31,
+      "max_intersection_mm3": 4.1270282750602814e-16,
+      "passed": true
+    },
+    {
+      "id": "W05",
+      "against": [
+        "W07"
+      ],
+      "travel_mm": 15,
+      "steps": 31,
+      "max_intersection_mm3": 5.877773379234404e-17,
+      "passed": true
+    }
+  ],
+  "preload_closing_keepout": {
+    "each_cup_travel_mm": 0.2,
+    "poses": 15,
+    "collisions": {}
+  },
+  "dimensions": [
+    {
+      "name": "Bearing face to braking plane",
+      "nominal_mm": 0.4,
+      "physical_gate": "Measure >=0.20 mm on both assembled rotor halves before tightening brake; no washer contact with bearing faces."
+    },
+    {
+      "name": "S1 guide metal clamp stack",
+      "nominal_mm": 2.1,
+      "physical_gate": "0.5 mm steel washer directly on 1.6 mm plain M2 nut; no PLA between them. Captured stack has nominal 0.20 mm total axial clearance. Do not substitute a 3 mm nyloc nut."
+    },
+    {
+      "name": "Liner retainer pocket floor",
+      "nominal_mm": 1.25,
+      "physical_gate": "No broken layers or white stress marks when lightly seated."
+    },
+    {
+      "name": "W cup-to-bridge adjustment gap each side",
+      "nominal_mm": 2.5,
+      "physical_gate": "Limit inward travel to <=0.20 mm per side measured from loose assembled position; match both sides within 0.10 mm."
+    },
+    {
+      "name": "Guide slot minus pin diameter",
+      "nominal_mm": 0.44,
+      "physical_gate": "Must move freely without filing the metal shoulder or forcing the slot; record cross-axis play."
+    },
+    {
+      "name": "Shaft end float",
+      "nominal_mm": 0.6,
+      "physical_gate": "Blind bores retain the 45 mm rod even before radial clamps engage; ends deburred."
+    },
+    {
+      "name": "Ball magnet chamber axial allowance",
+      "nominal_mm": 0.2,
+      "physical_gate": "D8x3 dummy/magnet seats wholly inside; split faces must close without clamping on the magnet."
+    }
+  ],
+  "scope": "Named part insertion paths and geometric keep-outs. Nut insertion into open split ball is provided by the open X=0 face. Does not replace actual tool access, elastic contact, fit or force tests."
+}

@@ -1,0 +1,143 @@
+{
+  "part_number": "E-H0678",
+  "feature": "r_ankle_shoulder_swing_rotor_cap_1",
+  "sku": "CUSTOM_QT750_KEYED_CAP",
+  "material_requirement": "42CrMo4 +QT, certified yield >=750 MPa",
+  "notes": "Machine the keyed cap or pressure-channel envelope from certified QT steel stock, minimum yield 750 MPa after processing. Kt=1.5 and material certificate are explicit strength conditions.",
+  "local_origin_in_datum_mm": [
+    0.0,
+    7.5,
+    3.552713678800501e-15
+  ],
+  "bounds_before_centering_mm": [
+    [
+      -6.4,
+      6.5,
+      -6.399999999999997
+    ],
+    [
+      6.4,
+      8.5,
+      6.400000000000004
+    ]
+  ],
+  "mesh": "E-H0678.stl",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "interface": {
+    "id": "r_ankle_shoulder_swing",
+    "axis_id": "r_ankle_flex",
+    "axis_world": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "center_mm": [
+      0.8358001445204449,
+      -34.408837174194346,
+      29.048107228640735
+    ],
+    "bearing_diameter_mm": 4,
+    "bearing_outer_mm": 9,
+    "bearing_span_mm": 29.0,
+    "friction_od_mm": 12,
+    "friction_inner_loaded_radius_mm": 2.15,
+    "friction_faces": 2,
+    "preload_path": "Two independent M3 ties / head washers / series-parallel disc spring packs / steel channel pressure plates / friction discs / steel cap-sleeve-cap / metal reaction washers / captive DIN985. Bearings and printed fork faces remain outside clamp loop.",
+    "bearing_axial_relief_mm": 1.0,
+    "cap_thickness_mm": 2.0,
+    "cap_supported_radius_mm": 3.9837168574084174,
+    "pressure_web_width_mm": 25.0,
+    "pressure_web_thickness_mm": 2,
+    "pressure_return_depth_mm": 7,
+    "pressure_bolt_arm_mm": 11.0,
+    "retention": "Two cross-drilled collars and D1.5 spring pins; positive rotor spring pin",
+    "thread_diameter_mm": 3,
+    "thread_pitch_mm": 0.5,
+    "output_hex_engagement_mm": 12.3,
+    "output_hex_radius_mm": 4.6,
+    "spacer_od_mm": 5.5,
+    "spacer_id_mm": 3.2,
+    "shaft_min_yield_MPa": 750,
+    "printed_preload_face_recess_mm": 0.35,
+    "hub_capture_pin_diameter_mm": 2,
+    "hub_capture_engagement_per_end_mm": 2.7330343736592537,
+    "structural_link_clearance_width_mm": 6.8,
+    "pressure_plate_min_yield_MPa": 750,
+    "pressure_plate_Kt": 1.5,
+    "cap_min_yield_MPa": 750,
+    "cap_Kt": 1.5,
+    "elastic_preload": [
+      {
+        "sku": "S10M3",
+        "spec": {
+          "article": "001000",
+          "od": 10.0,
+          "id": 3.2,
+          "t": 0.5,
+          "h0": 0.25,
+          "F75": 279.0
+        },
+        "parallel": 3,
+        "series": 2,
+        "count": 6,
+        "height_mm": 3.175,
+        "free_height_mm": 3.5,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.175,
+        "catalogue_force_at_75pct_N": 837.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "r_ankle_shoulder_swing_preload_-6_spring_1_1",
+          "r_ankle_shoulder_swing_preload_-6_spring_1_2",
+          "r_ankle_shoulder_swing_preload_-6_spring_1_3",
+          "r_ankle_shoulder_swing_preload_-6_spring_2_1",
+          "r_ankle_shoulder_swing_preload_-6_spring_2_2",
+          "r_ankle_shoulder_swing_preload_-6_spring_2_3"
+        ]
+      },
+      {
+        "sku": "S10M3",
+        "spec": {
+          "article": "001000",
+          "od": 10.0,
+          "id": 3.2,
+          "t": 0.5,
+          "h0": 0.25,
+          "F75": 279.0
+        },
+        "parallel": 3,
+        "series": 2,
+        "count": 6,
+        "height_mm": 3.175,
+        "free_height_mm": 3.5,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.175,
+        "catalogue_force_at_75pct_N": 837.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "r_ankle_shoulder_swing_preload_6_spring_1_1",
+          "r_ankle_shoulder_swing_preload_6_spring_1_2",
+          "r_ankle_shoulder_swing_preload_6_spring_1_3",
+          "r_ankle_shoulder_swing_preload_6_spring_2_1",
+          "r_ankle_shoulder_swing_preload_6_spring_2_2",
+          "r_ankle_shoulder_swing_preload_6_spring_2_3"
+        ]
+      }
+    ],
+    "physical_inheritance": "T6 H elastic preload and independent locking principle only; D metal pressure frame has different loading"
+  },
+  "tolerances": {
+    "unless_specified_mm": 0.1,
+    "journal_diametral_clearance_mm": [
+      0.01,
+      0.03
+    ],
+    "bearing_seat": "actual bearing/retaining-compound supplier fit; inspect, no printed substitute",
+    "metal_pin_hole_mm": "+0.00/+0.03 before press fit qualification",
+    "metal_friction_face_flatness_mm": 0.03,
+    "metal_friction_face_finish_Ra_um": 1.6,
+    "printed_nut_flat_clearance_mm": 0.2,
+    "printed_journal_entry_diametral_clearance_mm": 0.32
+  },
+  "threaded_geometry": "Threads represented by major-diameter envelope; cut actual ISO metric thread and check GO/NO-GO. Crossholes referenced to shaft axis and rear seating datum. Final manufacturing release remains false pending tolerance/physical qualification."
+}

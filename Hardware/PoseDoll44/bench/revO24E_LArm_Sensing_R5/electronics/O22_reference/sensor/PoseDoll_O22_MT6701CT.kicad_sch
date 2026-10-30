@@ -1,0 +1,652 @@
+(kicad_sch (version 20250114) (generator "posedoll_hw44") (uuid "53358b48-be8d-5fc2-b580-f7bac138dd8b") (paper "User" 1100 1100) (lib_symbols (symbol "PoseDoll:MT6701CT" (pin_names (offset .5)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 8.89 0) (effects (font (size 1.27 1.27)))) (property "Value" "MT6701CT" (at 0 11.43 0) (effects (font (size 1.27 1.27)))) (symbol "MT6701CT_0_1" (rectangle (start -12.7 6.35) (end 12.7 -6.35) (stroke (width .254) (type default)) (fill (type background)))) (symbol "MT6701CT_1_1" (pin power_in line (at -17.78 3.81 0) (length 5.08) (name "VDD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))(pin input line (at -17.78 1.27 0) (length 5.08) (name "MODE" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))(pin output line (at -17.78 -1.27 0) (length 5.08) (name "OUT" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))(pin power_in line (at -17.78 -3.81 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))(pin output line (at 17.78 3.81 180) (length 5.08) (name "PUSH" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))(pin bidirectional line (at 17.78 1.27 180) (length 5.08) (name "DO" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))(pin input line (at 17.78 -1.27 180) (length 5.08) (name "CLK" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))(pin input line (at 17.78 -3.81 180) (length 5.08) (name "CSN" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))))(symbol "Connector_Generic:Conn_01x05"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x05_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)) (symbol (lib_id "PoseDoll:MT6701CT") (at 54.61 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e819d00a-5a2d-5f2a-87b8-e37bc7a71e4a")(property "Reference" "U1" (at 54.61 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "MT6701CT-STD-R" (at 54.61 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (at 54.61 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "6bed5596-c02e-5d4f-aeb7-7e0d8fa3a4b8"))(pin "2" (uuid "6ba3279b-42cc-568f-8037-d56e9782713e"))(pin "3" (uuid "1de59e7a-8817-50b1-89fd-ca5d2150795b"))(pin "4" (uuid "542e75f0-787d-5fa8-9e69-75bc72013354"))(pin "5" (uuid "2e987d22-9395-58a4-a55e-1f6bb5e4be3f"))(pin "6" (uuid "1e9ee4da-b5d4-5b51-8dd9-4951bb75f41b"))(pin "7" (uuid "f6905910-f575-5b1b-93d9-c52cd6e92592"))(pin "8" (uuid "d1cdb2af-de1e-5287-ac9e-572a809ffe08"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "U1") (unit 1)))))(wire (pts (xy 36.83 50.8) (xy 31.75 50.8)) (stroke (width 0) (type default)) (uuid "dea5c831-6fed-5928-98a9-6f902ee581a9"))(label "+3V3" (at 31.75 50.8 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a9821345-f8c4-52fa-8158-97a0dfdbfb62"))(wire (pts (xy 36.83 53.339999999999996) (xy 31.75 53.34)) (stroke (width 0) (type default)) (uuid "1f320a0a-17cd-5307-a986-08d8bedbc56f"))(label "+3V3" (at 31.75 53.34 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0dc7ea97-3771-5ae0-879d-446f67289810"))(no_connect (at 36.83 55.88) (uuid "3f364d0b-6eec-5322-9104-bed9e29b6b84"))(wire (pts (xy 36.83 58.42) (xy 31.75 58.42)) (stroke (width 0) (type default)) (uuid "c9aaa52e-cfdc-5585-98c6-15706d96b5cf"))(label "GND" (at 31.75 58.42 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8373b2ac-9fe4-5eb6-a42d-a67aa87ba430"))(no_connect (at 72.39 50.8) (uuid "f4f43816-7989-5cad-bdb4-c3c265287838"))(wire (pts (xy 72.39 53.339999999999996) (xy 77.47 53.34)) (stroke (width 0) (type default)) (uuid "8f3101b0-3292-5b69-aa9f-d47858517d5c"))(label "DO_IC" (at 77.47 53.34 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "04468fc6-9a65-5855-bf85-f8f89513b998"))(wire (pts (xy 72.39 55.88) (xy 77.47 55.88)) (stroke (width 0) (type default)) (uuid "585aa182-e122-5f67-9fea-b9159446603f"))(label "CLK" (at 77.47 55.88 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "afff3573-7114-56cc-a3c4-87fb8151d0cd"))(wire (pts (xy 72.39 58.42) (xy 77.47 58.42)) (stroke (width 0) (type default)) (uuid "26f99f4d-b046-5584-8263-81567b80e390"))(label "CS_N" (at 77.47 58.42 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3e18ec8a-75fd-5b78-8178-139a03a7b1a6"))(symbol (lib_id "Connector_Generic:Conn_01x05") (at 139.7 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "16828e2e-8e9e-5bde-859e-833228132333")(property "Reference" "J1" (at 139.7 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "FACTORY_SOLDERED_5_CORE" (at 139.7 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "PoseDoll:WirePads_5P" (at 139.7 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "1a1a34af-b3cc-544a-8bc5-e115fa86edbb"))(pin "2" (uuid "9682e19a-70b4-5450-b5c1-11e1d31c71ef"))(pin "3" (uuid "c3691d8b-b415-584d-bd1f-eab881ec347a"))(pin "4" (uuid "6b9ee5b3-2049-5dbc-88a0-ba48c1dbd312"))(pin "5" (uuid "7c1bf331-ccd1-5f89-8709-af4b488ae569"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "J1") (unit 1)))))(wire (pts (xy 134.61999999999998 49.53) (xy 129.54 49.53)) (stroke (width 0) (type default)) (uuid "9e12a659-7128-57a7-95a0-1331f95e9a61"))(label "GND" (at 129.54 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b06723f3-e796-5216-b8a0-0cc0f1db669a"))(wire (pts (xy 134.61999999999998 52.07) (xy 129.54 52.07)) (stroke (width 0) (type default)) (uuid "46679bc8-eec6-52bd-a50c-e12d0e627c12"))(label "+3V3" (at 129.54 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9bb72fb6-5f6f-506b-a5d2-45395b17c9fc"))(wire (pts (xy 134.61999999999998 54.61) (xy 129.54 54.61)) (stroke (width 0) (type default)) (uuid "4f6c78eb-2df0-5ded-a4a5-b433b05938ce"))(label "CLK" (at 129.54 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3413d3eb-4263-5b12-8e6f-ffb4bcd1010a"))(wire (pts (xy 134.61999999999998 57.15) (xy 129.54 57.15)) (stroke (width 0) (type default)) (uuid "42890a3f-2534-58ba-97ac-371ced58a3b7"))(label "DO" (at 129.54 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3b465bb1-40d8-540e-8897-521a710a9425"))(wire (pts (xy 134.61999999999998 59.69) (xy 129.54 59.69)) (stroke (width 0) (type default)) (uuid "bbbfcd1c-331d-518a-96e5-8efe31e81fe8"))(label "CS_N" (at 129.54 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "96076f7a-4092-5b0c-b909-b8dfd0907da3"))(symbol (lib_id "Device:C") (at 224.79 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "eaa87988-eff5-5c8b-9acb-360ff15279a6")(property "Reference" "C1" (at 224.79 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100n X7R 16V" (at 224.79 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 224.79 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 224.79 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "4284604a-f63a-5ef9-b15a-183dc9cb4f12"))(pin "2" (uuid "b6009de9-87a6-52c9-a0ad-bb80fb11c78d"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "C1") (unit 1)))))(wire (pts (xy 224.79 50.8) (xy 224.79 45.72)) (stroke (width 0) (type default)) (uuid "3fc55347-01cc-572f-9803-b7821ca9190d"))(label "+3V3" (at 224.79 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b9fe583d-7db3-525d-a68e-b54cd8d48ef2"))(wire (pts (xy 224.79 58.42) (xy 224.79 63.5)) (stroke (width 0) (type default)) (uuid "c33e7f49-57c2-5956-98b6-bdddb61cd553"))(label "GND" (at 224.79 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "077b3fea-a783-5ced-b453-f504a0597e9b"))(symbol (lib_id "Device:C") (at 309.88 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8f31a894-9410-52e0-be63-e82a6020b4b5")(property "Reference" "C2" (at 309.88 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "1u X7R 16V" (at 309.88 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 309.88 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "8e2ac0ba-7e30-5c6e-800c-5b2d47b8e281"))(pin "2" (uuid "73274e63-1777-57d8-81fd-2b483434258c"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "C2") (unit 1)))))(wire (pts (xy 309.88 50.8) (xy 309.88 45.72)) (stroke (width 0) (type default)) (uuid "105a1249-0dad-5f5e-b1de-fa63ca69d4b2"))(label "+3V3" (at 309.88 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9e609194-4859-573d-af6a-f4c6a35ff9de"))(wire (pts (xy 309.88 58.42) (xy 309.88 63.5)) (stroke (width 0) (type default)) (uuid "2cd728e0-157e-5023-ae9b-e9f7d680d06c"))(label "GND" (at 309.88 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "03236810-a6dd-5e56-a42d-17d3d7e5d07c"))(symbol (lib_id "Device:R") (at 394.97 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "ea55a253-32cf-5b1d-954b-54b8acfa4343")(property "Reference" "R1" (at 394.97 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "33R" (at 394.97 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 394.97 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 394.97 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "2f32dcf6-0832-5b55-b770-9dd26ef2082f"))(pin "2" (uuid "5690c742-fd86-51b2-b847-6fe138e7489c"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "R1") (unit 1)))))(wire (pts (xy 394.97 50.8) (xy 394.97 45.72)) (stroke (width 0) (type default)) (uuid "e660b850-0a50-55b4-aba3-4531dd02215b"))(label "DO_IC" (at 394.97 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "728423aa-ebab-518a-8187-651868742e76"))(wire (pts (xy 394.97 58.42) (xy 394.97 63.5)) (stroke (width 0) (type default)) (uuid "f2a1acda-4402-5870-b3c4-3af9b10db7d4"))(label "DO" (at 394.97 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1d5b01d5-2402-57f1-800f-694a1129a508"))(symbol (lib_id "Device:R") (at 480.06 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "db6a0b7a-a378-5c86-a312-881c2ed22907")(property "Reference" "R2" (at 480.06 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 480.06 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 480.06 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 480.06 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "398ea121-1e78-503d-af2d-2c054ba9b1f2"))(pin "2" (uuid "d86c20cc-5c20-5958-801a-5969919bec20"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "R2") (unit 1)))))(wire (pts (xy 480.06 50.8) (xy 480.06 45.72)) (stroke (width 0) (type default)) (uuid "50660cbf-5845-54d0-bbf8-76deef2df8aa"))(label "+3V3" (at 480.06 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7236194e-e1cd-5cd9-b391-ce89112e5c47"))(wire (pts (xy 480.06 58.42) (xy 480.06 63.5)) (stroke (width 0) (type default)) (uuid "4ae1a565-6cc6-5a69-8c5f-94909cf9d7d2"))(label "CS_N" (at 480.06 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "da194cd4-ca22-5fac-822e-5a709fc24ec9"))(symbol (lib_id "power:PWR_FLAG") (at 565.15 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e5fe299b-db52-55de-9421-bcbcbb824579")(property "Reference" "#FLG1" (at 565.15 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "PWR_FLAG" (at 565.15 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 565.15 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 565.15 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "474b8750-7a79-5bdd-8c34-2b0ebe92be9f"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "#FLG1") (unit 1)))))(wire (pts (xy 565.15 54.61) (xy 565.15 59.69)) (stroke (width 0) (type default)) (uuid "e1d3b0fd-596c-5a16-a63e-6f340befae99"))(label "+3V3" (at 565.15 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2c738015-3865-57c6-958f-2e95cac05622"))(symbol (lib_id "power:PWR_FLAG") (at 650.24 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c973a039-2e0c-56d2-a44a-0c8e609a435d")(property "Reference" "#FLG2" (at 650.24 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "PWR_FLAG" (at 650.24 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 650.24 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 650.24 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "87146cac-e7e2-50db-9e8a-1dfa5a825b90"))(instances (project "PoseDoll_O22_MT6701CT" (path "/53358b48-be8d-5fc2-b580-f7bac138dd8b" (reference "#FLG2") (unit 1)))))(wire (pts (xy 650.24 54.61) (xy 650.24 59.69)) (stroke (width 0) (type default)) (uuid "ddf11e9e-e442-55e1-9cb6-5a09f4bedfea"))(label "GND" (at 650.24 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e3187bef-42a8-5b36-be05-f24f66b7a1c4")) (embedded_fonts no))

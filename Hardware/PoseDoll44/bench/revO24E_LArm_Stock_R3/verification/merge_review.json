@@ -1,0 +1,160 @@
+{
+  "status": "PASS_MERGE_REVIEW",
+  "geometry_sha256": "131f5773614d53e33adcd16ac34a69802cda4ff049abefa3ada9da397af0b0d9",
+  "all_same_frame_print_groups_in_R2": [
+    [
+      "S2-P001",
+      "S2-P004"
+    ],
+    [
+      "S2-P002",
+      "S2-P006"
+    ],
+    [
+      "S2-P003",
+      "S2-P008"
+    ],
+    [
+      "S2-P010",
+      "S2-P011"
+    ]
+  ],
+  "reviewed_fixed_pairs": [
+    {
+      "old_parts": [
+        "S2-P001",
+        "S2-P004"
+      ],
+      "frame": "l_clavicle_elevate",
+      "decision": "KEEP_SEPARATE_FOR_METAL_INSERTION_AND_RETENTION",
+      "nominal_cover_aperture_mm": 16.4,
+      "captive_washer_OD_mm": 18.0,
+      "fused_cover_washer_entry_max_overlap_mm3": 64.57614600782674,
+      "cover_removed_washer_entry_max_overlap_mm3": 0.0,
+      "relative_motion_after_locking": false,
+      "reason": "The lid is an assembly closure and positive axial stop. Fixed after assembly does not mean removable closure is redundant. Side-loading or embedded-metal printing would require a different retention and manufacturing process."
+    },
+    {
+      "old_parts": [
+        "S2-P002",
+        "S2-P006"
+      ],
+      "frame": "l_shoulder_abduct",
+      "decision": "KEEP_SEPARATE_FOR_METAL_INSERTION_AND_RETENTION",
+      "nominal_cover_aperture_mm": 16.4,
+      "captive_washer_OD_mm": 18.0,
+      "fused_cover_washer_entry_max_overlap_mm3": 64.57614600782652,
+      "cover_removed_washer_entry_max_overlap_mm3": 0.0,
+      "relative_motion_after_locking": false,
+      "reason": "The lid is an assembly closure and positive axial stop. Fixed after assembly does not mean removable closure is redundant. Side-loading or embedded-metal printing would require a different retention and manufacturing process."
+    },
+    {
+      "old_parts": [
+        "S2-P003",
+        "S2-P008"
+      ],
+      "frame": "l_elbow_flex",
+      "decision": "KEEP_SEPARATE_FOR_METAL_INSERTION_AND_RETENTION",
+      "nominal_cover_aperture_mm": 16.4,
+      "captive_washer_OD_mm": 18.0,
+      "fused_cover_washer_entry_max_overlap_mm3": 64.57615135449343,
+      "cover_removed_washer_entry_max_overlap_mm3": 0.0,
+      "relative_motion_after_locking": false,
+      "reason": "The lid is an assembly closure and positive axial stop. Fixed after assembly does not mean removable closure is redundant. Side-loading or embedded-metal printing would require a different retention and manufacturing process."
+    },
+    {
+      "old_parts": [
+        "S2-P010",
+        "S2-P011"
+      ],
+      "new_part": "S3-P010",
+      "frame": "l_wrist_deviation",
+      "decision": "MERGE_CONTINUOUS_PRINT",
+      "relative_motion_after_locking": false,
+      "removed_metal": [
+        "M2x20 x1",
+        "W2 x2",
+        "NL2 x1"
+      ],
+      "palm_visible_region_below_z_minus32_symmetric_volume_mm3": 0.11783981960218011,
+      "wrist_functional_region_above_z_minus20_symmetric_volume_mm3": 0.001027004193813427,
+      "reason": "No retained washer or later assembly requires this split. One continuous neck replaces the square socket and cross-bolt; the complete fork-and-hand is inserted in the same wrist assembly step."
+    }
+  ],
+  "reused_prints": [
+    {
+      "old": "S2-P001",
+      "new": "S3-P001",
+      "stl_sha256": "74590b3fb8f83ece67008a335b6a5d70cd6fa9b51bc4837968286c890374f761",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P002",
+      "new": "S3-P002",
+      "stl_sha256": "654942f81afb7a6a6ea8f38c8dbe2998444c21eaca2bec789c5dbcdc50b714e3",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P003",
+      "new": "S3-P003",
+      "stl_sha256": "9f38c502eab3c978d58364db33ca076041c1afc8772ec2cfec19bae4ed7b38aa",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P004",
+      "new": "S3-P004",
+      "stl_sha256": "9233873160537012f5e9fd75046fedbf47b2c069406daab9037bc6a5fd433060",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P005",
+      "new": "S3-P005",
+      "stl_sha256": "36a589b3f678e42ea6021e7e6d251646c4b34ac9c6f3418b6024ec8d36e825b8",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P006",
+      "new": "S3-P006",
+      "stl_sha256": "e62c8d2624b81c9a7946549d3264cbf0572ca6b4f9579f3fd235dbd9c218df60",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P007",
+      "new": "S3-P007",
+      "stl_sha256": "01923b8158b782a05c6a15a534390ea1172704b806eddbc561ad125e0b79143f",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P008",
+      "new": "S3-P008",
+      "stl_sha256": "b4b7edb06cac4c762a4260e5a5cd7bc63e517d3e25b7044aec82086eaa3f521c",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P009",
+      "new": "S3-P009",
+      "stl_sha256": "a8f6a8d9cff928b28ede3f6922f0949b4252512b774bf8ba53564f8d49d19ec3",
+      "byte_identical": true
+    },
+    {
+      "old": "S2-P012",
+      "new": "S3-P012",
+      "stl_sha256": "2ca488a11f1c9b25f1750e49b15cc2143c6f416abf8b92e4b4e973ec0626bae9",
+      "byte_identical": true
+    }
+  ],
+  "required_reprint": [
+    "S3-P010"
+  ],
+  "retired_prints": [
+    "S2-P010",
+    "S2-P011"
+  ],
+  "magnet_entry_max_overlap_mm3": 0.0,
+  "parts_before": 12,
+  "parts_after": 11,
+  "hardware_before": 134,
+  "hardware_after": 130,
+  "seven_dof_retained": true,
+  "scope": "Every same-frame printed pair in the R2 arm reviewed. No load-carrying closure is removed solely because it is fixed after assembly. Quantitative clearance results are nominal geometry, not physical strength or fatigue."
+}

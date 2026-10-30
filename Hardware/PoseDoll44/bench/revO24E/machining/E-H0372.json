@@ -1,0 +1,108 @@
+{
+  "part_number": "E-H0372",
+  "feature": "l_shoulder_pitch_shaft",
+  "sku": "CUSTOM_HEADED_D4_M4_E_CROSSHOLE",
+  "material_requirement": "See interface certified material requirement",
+  "notes": "E extended threaded end and relocated cross-hole for post-insertion capture. New certified stock with stated shaft material and journal fit; no welded hole repair and not a stock screw.",
+  "local_origin_in_datum_mm": [
+    0.0,
+    0.0,
+    3.099999999999996
+  ],
+  "bounds_before_centering_mm": [
+    [
+      -4.5,
+      -4.5,
+      -10.400000000000006
+    ],
+    [
+      4.5,
+      4.5,
+      16.599999999999998
+    ]
+  ],
+  "mesh": "E-H0372.stl",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "interface": {
+    "id": "l_shoulder_pitch",
+    "axis_id": "l_shoulder_flex",
+    "axis_world": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "center_mm": [
+      -15.075955211052275,
+      49.52627472783018,
+      444.9373688419657
+    ],
+    "bearing_diameter_mm": 4,
+    "bearing_outer_mm": 9.0,
+    "bearing_span_mm": 6.0,
+    "friction_od_mm": 12.0,
+    "friction_inner_loaded_radius_mm": 4.51,
+    "friction_faces": 2,
+    "preload_path": "Head / rear keyed cap / rear steel friction pad / fixed steel cartridge / front friction pad / floating keyed cap / disc spring pack / hardened washer / thin metal adjustment nut. Cap slot permits axial float; bearing ends and printed bodies excluded from preload loop.",
+    "bearing_axial_relief_mm": 0.4,
+    "output_hex_engagement_mm": 2.65,
+    "minimum_printed_corner_ligament_mm": 2.05,
+    "cap_thickness_mm": 1.5,
+    "cap_supported_radius_mm": 4.5,
+    "cartridge_length_mm": 10.8,
+    "cartridge_hex_radius_mm": 6.4,
+    "thread_diameter_mm": 4,
+    "thread_pitch_mm": 0.7,
+    "retention": "Output bone / transverse capture screw / shaft / keyed metal thrust caps / fixed cartridge / fixed D1.5 capture pin / input bone. Adjustment nut locked by separate keyed forming tab plus removable low-strength metal thread-lock.",
+    "bearing_outer_bond_allowable_MPa": 2,
+    "shaft_min_yield_MPa": 750,
+    "printed_preload_face_recess_mm": 0.35,
+    "fixed_capture_pin_diameter_mm": 1.5,
+    "fixed_capture_pin_length_mm": 13.805136082899056,
+    "fixed_capture_slot_width_mm": 1.6,
+    "fixed_capture_slot_tangent_width_mm": 1.9,
+    "fixed_capture_printed_engagement_per_end_mm": 3.3518638859333305,
+    "sensor_clocking_delta_deg": 15,
+    "cap_effective_ligament_mm": 1.2500000000000009,
+    "front_cap_min_yield_MPa": 750,
+    "elastic_preload": {
+      "sku": "S12M4",
+      "spec": {
+        "article": "001800",
+        "od": 12.0,
+        "id": 4.2,
+        "t": 0.6,
+        "h0": 0.4,
+        "F75": 557.0
+      },
+      "parallel": 2,
+      "series": 1,
+      "count": 2,
+      "height_mm": 1.3399999999999999,
+      "free_height_mm": 1.6,
+      "assembly_deflection_ratio": 0.65,
+      "travel_to_flat_mm": 0.13999999999999999,
+      "catalogue_force_at_75pct_N": 1114.0,
+      "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+      "parts": [
+        "l_shoulder_pitch_spring_1_1",
+        "l_shoulder_pitch_spring_1_2"
+      ]
+    },
+    "output_capture": "recessed transverse screw with captive DIN985, installed after socket",
+    "preload_cap_axial_slot_mm": 0.4
+  },
+  "tolerances": {
+    "unless_specified_mm": 0.1,
+    "journal_diametral_clearance_mm": [
+      0.01,
+      0.03
+    ],
+    "bearing_seat": "actual bearing/retaining-compound supplier fit; inspect, no printed substitute",
+    "metal_pin_hole_mm": "+0.00/+0.03 before press fit qualification",
+    "metal_friction_face_flatness_mm": 0.03,
+    "metal_friction_face_finish_Ra_um": 1.6,
+    "printed_nut_flat_clearance_mm": 0.2,
+    "printed_journal_entry_diametral_clearance_mm": 0.32
+  },
+  "threaded_geometry": "Threads represented by major-diameter envelope; cut actual ISO metric thread and check GO/NO-GO. Crossholes referenced to shaft axis and rear seating datum. Final manufacturing release remains false pending tolerance/physical qualification."
+}

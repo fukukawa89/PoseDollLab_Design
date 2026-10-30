@@ -1,0 +1,141 @@
+{
+  "part_number": "E-H0297",
+  "feature": "lumbar_shoulder_swing_compression_spacer_1_-5.5",
+  "sku": "STEEL_TUBE_5.5x3.2_CUT",
+  "material_requirement": "See interface certified material requirement",
+  "notes": "Steel compression path through the printed guide boss; plastic is not in the axial preload stack.",
+  "local_origin_in_datum_mm": [
+    15.45,
+    15.0,
+    -5.5
+  ],
+  "bounds_before_centering_mm": [
+    [
+      12.7,
+      12.25,
+      -8.25
+    ],
+    [
+      18.2,
+      17.75,
+      -2.75
+    ]
+  ],
+  "mesh": "E-H0297.stl",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "interface": {
+    "id": "lumbar_shoulder_swing",
+    "axis_id": "lumbar_side",
+    "axis_world": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "center_mm": [
+      3.150063087041365,
+      1.4864397455966565e-13,
+      331.32776644789357
+    ],
+    "bearing_diameter_mm": 6,
+    "bearing_outer_mm": 12,
+    "bearing_span_mm": 30.4,
+    "friction_od_mm": 18,
+    "friction_inner_loaded_radius_mm": 3.2,
+    "friction_faces": 2,
+    "preload_path": "Two independent M3 ties / head washers / series-parallel disc spring packs / steel channel pressure plates / friction discs / steel cap-sleeve-cap / metal reaction washers / captive DIN985. Bearings and printed fork faces remain outside clamp loop.",
+    "bearing_axial_relief_mm": 0.5,
+    "cap_thickness_mm": 3.0,
+    "cap_supported_radius_mm": 5.0229473419497435,
+    "pressure_web_width_mm": 23.5,
+    "pressure_web_thickness_mm": 2,
+    "pressure_return_depth_mm": 9,
+    "pressure_bolt_arm_mm": 15.0,
+    "retention": "Two cross-drilled collars and D1.5 spring pins; positive rotor spring pin",
+    "thread_diameter_mm": 3,
+    "thread_pitch_mm": 0.5,
+    "output_hex_engagement_mm": 11.7,
+    "output_hex_radius_mm": 5.8,
+    "spacer_od_mm": 5.5,
+    "spacer_id_mm": 3.2,
+    "shaft_min_yield_MPa": 750,
+    "printed_preload_face_recess_mm": 0.35,
+    "hub_capture_pin_diameter_mm": 3.0,
+    "hub_capture_engagement_per_end_mm": 1.1420167565833024,
+    "structural_link_clearance_width_mm": 6.8,
+    "pressure_plate_min_yield_MPa": 750,
+    "pressure_plate_Kt": 1.5,
+    "elastic_preload": [
+      {
+        "sku": "S10M3",
+        "spec": {
+          "article": "001000",
+          "od": 10.0,
+          "id": 3.2,
+          "t": 0.5,
+          "h0": 0.25,
+          "F75": 279.0
+        },
+        "parallel": 3,
+        "series": 2,
+        "count": 6,
+        "height_mm": 3.175,
+        "free_height_mm": 3.5,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.175,
+        "catalogue_force_at_75pct_N": 837.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "lumbar_shoulder_swing_preload_-5.5_spring_1_1",
+          "lumbar_shoulder_swing_preload_-5.5_spring_1_2",
+          "lumbar_shoulder_swing_preload_-5.5_spring_1_3",
+          "lumbar_shoulder_swing_preload_-5.5_spring_2_1",
+          "lumbar_shoulder_swing_preload_-5.5_spring_2_2",
+          "lumbar_shoulder_swing_preload_-5.5_spring_2_3"
+        ]
+      },
+      {
+        "sku": "S10M3",
+        "spec": {
+          "article": "001000",
+          "od": 10.0,
+          "id": 3.2,
+          "t": 0.5,
+          "h0": 0.25,
+          "F75": 279.0
+        },
+        "parallel": 3,
+        "series": 2,
+        "count": 6,
+        "height_mm": 3.175,
+        "free_height_mm": 3.5,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.175,
+        "catalogue_force_at_75pct_N": 837.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "lumbar_shoulder_swing_preload_5.5_spring_1_1",
+          "lumbar_shoulder_swing_preload_5.5_spring_1_2",
+          "lumbar_shoulder_swing_preload_5.5_spring_1_3",
+          "lumbar_shoulder_swing_preload_5.5_spring_2_1",
+          "lumbar_shoulder_swing_preload_5.5_spring_2_2",
+          "lumbar_shoulder_swing_preload_5.5_spring_2_3"
+        ]
+      }
+    ],
+    "physical_inheritance": "T6 H elastic preload and independent locking principle only; D metal pressure frame has different loading"
+  },
+  "tolerances": {
+    "unless_specified_mm": 0.1,
+    "journal_diametral_clearance_mm": [
+      0.01,
+      0.03
+    ],
+    "bearing_seat": "actual bearing/retaining-compound supplier fit; inspect, no printed substitute",
+    "metal_pin_hole_mm": "+0.00/+0.03 before press fit qualification",
+    "metal_friction_face_flatness_mm": 0.03,
+    "metal_friction_face_finish_Ra_um": 1.6,
+    "printed_nut_flat_clearance_mm": 0.2,
+    "printed_journal_entry_diametral_clearance_mm": 0.32
+  },
+  "threaded_geometry": "Threads represented by major-diameter envelope; cut actual ISO metric thread and check GO/NO-GO. Crossholes referenced to shaft axis and rear seating datum. Final manufacturing release remains false pending tolerance/physical qualification."
+}

@@ -4,7 +4,15 @@
 
 ## 当前状态
 
-**O24C-T6：尼龙锁母防松测试版（实物待测）。** 针对 T5 H 肩钉逐渐旋退，H、R、双轴腕的七组肩钉统一改用 M3×0.5 DIN985 尼龙锁紧螺母。新一体固定座采用完整六角止转窝和轴向装入，调整内部金属垫圈堆叠，保留原 Φ4×8 / M3×6 肩钉、A8、运动件及 UE 轴心。必须重印 H6-01、R6-01、W6-01，建议先印 C6-01 试配片；其余 10 件打印件与 T5 字节相同。按已备齐 T5 计算，补齐 7 颗锁母、14 片 9×4.3×0.8 平垫和 7 片 7×3.2×0.5 平垫。数字装配、活动采样、切片和教程检查通过；100 次不补紧仍待实测。
+**2026-10-30 O24E 单臂 R5：七自由度测角升级。** 以用户已实装认可摩擦与持姿效果的 R4 为基线，复用六路 O22 MT6701CT 与七颗径向充磁磁铁，腕偏摆增加一路 TMAG5170A1，双轴腕分别测量。保留 R4 摩擦、预紧、防脱结构及 136 件机械五金；重印 P005、P007、P009、P010、P012，复用其余六件主体，新增 29 件传感器附件及 J003/J004 工具。交付打印工程、清单、走线、409 步装配动画、固件和标定工具。数字几何、装配、切片、浏览器与软件检查通过；R5 实物测角精度、走线和升级后的持姿仍待测试，未烧录硬件。
+
+- [R5 打印与装配入口](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/START_HERE.html) · [重印说明](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/PRINTING.html)
+- [R5 测角方案](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/SENSING.html) · [逐步装配动画](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/assembly_guide/index.html) · [验证记录](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/VERIFICATION.html)
+- [R5 完整离线包](Hardware/PoseDoll44/bench/revO24E_LArm_Sensing_R5/O24E_R5_Arm_Sensing_20261030.zip) · [R4 实装反馈](Hardware/PoseDoll44/docs/R4_MECHANICAL_FEEDBACK_20261030.json)
+
+**2026-10-26 O24D 改版交接：** 用户满意当前 O24D 外观，后续保留外观与 UE 骨架，重点重做关节连接、预紧、防松、防脱及装配。T6 W 按用户实装反馈通过；T6 H 按用户依据 T5 安装和 T6 继承关系的判断接受通过，可用于设计推进。T6 R 的整组轴向拔出是已确认缺陷，必须修复。当前 D 的 20 组金属筒输出套还存在规定装入路径与横销干涉，旧球腕入口及机构也需更新。[完整经验、审查与新对话任务](Hardware/PoseDoll44/docs/HANDOFF_O24D_REDESIGN_20261026.zh-CN.md)。本次仅整理与审查，未改动 D/T6 冻结交付包；100 次不补紧目标保留，不虚构循环数据。
+
+**O24C-T6：尼龙锁母防松测试版（以下为发布记录，最新实物反馈见上）。** 针对 T5 H 肩钉逐渐旋退，H、R、双轴腕的七组肩钉统一改用 M3×0.5 DIN985 尼龙锁紧螺母。新一体固定座采用完整六角止转窝和轴向装入，调整内部金属垫圈堆叠，保留原 Φ4×8 / M3×6 肩钉、A8、运动件及 UE 轴心。必须重印 H6-01、R6-01、W6-01，建议先印 C6-01 试配片；其余 10 件打印件与 T5 字节相同。按已备齐 T5 计算，补齐 7 颗锁母、14 片 9×4.3×0.8 平垫和 7 片 7×3.2×0.5 平垫。数字装配、活动采样、切片和教程检查通过；100 次不补紧仍待实测。
 
 - [O24C-T6：打印、装配与测试入口](Hardware/PoseDoll44/bench/revO24C_T6/START_HERE.html)
 - [O24C-T6：H 35 步 / R 42 步 / W 74 步逐件动画](Hardware/PoseDoll44/bench/revO24C_T6/tutorial/index.html)

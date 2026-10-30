@@ -1,0 +1,130 @@
+{
+  "part_number": "E-H0082",
+  "feature": "l_hip_twist_compression_spacer_-1_-6",
+  "sku": "STEEL_TUBE_5.5x3.2_CUT",
+  "material_requirement": "See interface certified material requirement",
+  "notes": "Steel compression path through the printed guide boss; plastic is not in the axial preload stack.",
+  "local_origin_in_datum_mm": [
+    6.0,
+    -14.0,
+    -57.75
+  ],
+  "bounds_before_centering_mm": [
+    [
+      3.25,
+      -16.75,
+      -60.5
+    ],
+    [
+      8.75,
+      -11.25,
+      -55.0
+    ]
+  ],
+  "mesh": "E-H0082.stl",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "interface": {
+    "id": "l_hip_twist",
+    "axis_id": "l_hip_roll",
+    "axis_world": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center_mm": [
+      0.835912143607195,
+      34.40879304689639,
+      228.83003068102738
+    ],
+    "bearing_diameter_mm": 6,
+    "bearing_outer_mm": 12,
+    "bearing_span_mm": 24,
+    "friction_od_mm": 18,
+    "friction_inner_loaded_radius_mm": 3.2,
+    "friction_faces": 2,
+    "preload_path": "Two independent M3 ties / head washers / series-parallel disc spring packs / steel channel pressure plates / friction discs / steel cap-sleeve-cap / metal reaction washers / captive DIN985. Bearings and printed fork faces remain outside clamp loop.",
+    "bearing_axial_relief_mm": 0.5,
+    "cap_thickness_mm": 3.0,
+    "cap_supported_radius_mm": 5.0229473419497435,
+    "pressure_web_width_mm": 25.0,
+    "pressure_web_thickness_mm": 2,
+    "pressure_return_depth_mm": 11,
+    "pressure_bolt_arm_mm": 14.0,
+    "retention": "Two cross-drilled collars and D1.5 spring pins; positive rotor spring pin",
+    "thread_diameter_mm": 3,
+    "thread_pitch_mm": 0.5,
+    "output_hex_engagement_mm": 5.3,
+    "output_hex_radius_mm": 5.8,
+    "spacer_od_mm": 5.5,
+    "spacer_id_mm": 3.2,
+    "shaft_min_yield_MPa": 750,
+    "printed_preload_face_recess_mm": 0.35,
+    "hub_capture_pin_diameter_mm": 3.0,
+    "hub_capture_engagement_per_end_mm": 3.379547402756236,
+    "elastic_preload": [
+      {
+        "sku": "S8M3",
+        "spec": {
+          "article": "000400",
+          "od": 8.0,
+          "id": 3.2,
+          "t": 0.4,
+          "h0": 0.2,
+          "F75": 186.0
+        },
+        "parallel": 1,
+        "series": 2,
+        "count": 2,
+        "height_mm": 0.9400000000000001,
+        "free_height_mm": 1.2000000000000002,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.13999999999999999,
+        "catalogue_force_at_75pct_N": 186.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "l_hip_twist_preload_-6_spring_1_1",
+          "l_hip_twist_preload_-6_spring_2_1"
+        ]
+      },
+      {
+        "sku": "S8M3",
+        "spec": {
+          "article": "000400",
+          "od": 8.0,
+          "id": 3.2,
+          "t": 0.4,
+          "h0": 0.2,
+          "F75": 186.0
+        },
+        "parallel": 1,
+        "series": 2,
+        "count": 2,
+        "height_mm": 0.9400000000000001,
+        "free_height_mm": 1.2000000000000002,
+        "assembly_deflection_ratio": 0.65,
+        "travel_to_flat_mm": 0.13999999999999999,
+        "catalogue_force_at_75pct_N": 186.0,
+        "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+        "parts": [
+          "l_hip_twist_preload_6_spring_1_1",
+          "l_hip_twist_preload_6_spring_2_1"
+        ]
+      }
+    ],
+    "physical_inheritance": "T6 H elastic preload and independent locking principle only; D metal pressure frame has different loading"
+  },
+  "tolerances": {
+    "unless_specified_mm": 0.1,
+    "journal_diametral_clearance_mm": [
+      0.01,
+      0.03
+    ],
+    "bearing_seat": "actual bearing/retaining-compound supplier fit; inspect, no printed substitute",
+    "metal_pin_hole_mm": "+0.00/+0.03 before press fit qualification",
+    "metal_friction_face_flatness_mm": 0.03,
+    "metal_friction_face_finish_Ra_um": 1.6,
+    "printed_nut_flat_clearance_mm": 0.2,
+    "printed_journal_entry_diametral_clearance_mm": 0.32
+  },
+  "threaded_geometry": "Threads represented by major-diameter envelope; cut actual ISO metric thread and check GO/NO-GO. Crossholes referenced to shaft axis and rear seating datum. Final manufacturing release remains false pending tolerance/physical qualification."
+}

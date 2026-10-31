@@ -1,0 +1,26 @@
+### Result
+{"status":"PASS","initial":{"scenes":114,"options":57,"webgl":true},"protract":"实际手臂模型 + 全身参考骨架","collision":"红色零件：此端点存在穿插","sitting":"全身姿态参考 · 下肢仍为骨架","core":{"alpha":20,"beta":75,"parts":44,"label":"双轴核心试装候选 · 实物效果待测"},"mobile":{"width":390,"scrollWidth":390},"nonBackgroundPixels":16154,"errors":[],"badResponses":[]}
+### Ran Playwright code
+```js
+await (async (page) => {
+ const errors=[],badResponses=[];page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)badResponses.push({url:r.url(),status:r.status()});});
+ await page.setViewportSize({width:1365,height:1100});await page.reload();await page.waitForFunction(()=>window.O13_READY===true);
+ const initial=await page.evaluate(()=>({scenes:O13_SCENES.length,options:document.querySelector('#pose').options.length,webgl:!!document.querySelector('#model').getContext('webgl')}));
+ await page.screenshot({path:'o13_desktop.png',fullPage:true});
+ await page.locator('#shoulders').click();await page.locator('#pose').selectOption('2');
+ const protract=await page.locator('#coverage').textContent();await page.locator('#model').screenshot({path:'o13_shoulders.png'});
+ await page.locator('#pose').selectOption('11');const collision=await page.locator('#coverage').textContent();
+ if(!collision.includes('红色'))throw Error('Collision marker not shown');
+ await page.locator('#geometry').uncheck();if(await page.evaluate(()=>O13_TEST.state.geometry))throw Error('Geometry toggle failed');await page.locator('#geometry').check();
+ await page.locator('#cycle').click();const before=await page.evaluate(()=>O13_TEST.state.pose);await page.waitForTimeout(1950);const after=await page.evaluate(()=>O13_TEST.state.pose);await page.locator('#cycle').click();if(before===after)throw Error('Cycle failed');
+ await page.locator('#character').selectOption('manny');await page.locator('#pose').selectOption('51');await page.locator('#full').click();
+ const sitting=await page.locator('#coverage').textContent();if(!sitting.includes('全身姿态参考'))throw Error('Reference pose mislabeled');
+ await page.locator('#core').click();await page.locator('#alpha').fill('20');await page.locator('#alpha').dispatchEvent('input');await page.locator('#beta').fill('75');await page.locator('#beta').dispatchEvent('input');const core=await page.evaluate(()=>({alpha:O13_TEST.state.alpha,beta:O13_TEST.state.beta,parts:O13_CORE.length,label:document.querySelector('#coverage').textContent}));if(core.alpha!==20||core.beta!==75||!core.label.includes('双轴核心'))throw Error('Core controls failed');await page.locator('#model').screenshot({path:'o13_core.png'});await page.locator('#full').click();
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'o13_mobile.png',fullPage:true});
+ const mobile=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth}));if(mobile.scrollWidth>mobile.width)throw Error('Mobile overflow');
+ await page.setViewportSize({width:1365,height:1100});await page.locator('#character').selectOption('quinn');await page.locator('#reset').click();
+ const pixels=await page.evaluate(()=>{O13_TEST.draw();const c=document.querySelector('#model'),g=c.getContext('webgl'),p=new Uint8Array(c.width*c.height*4);g.readPixels(0,0,c.width,c.height,g.RGBA,g.UNSIGNED_BYTE,p);let n=0;for(let i=0;i<p.length;i+=4)if(p[i]<205||p[i+1]<205||p[i+2]<190)n++;return n;});
+ if(pixels<500)throw Error('Canvas appears blank');
+ return {status:'PASS',initial,protract,collision,sitting,core,mobile,nonBackgroundPixels:pixels,errors,badResponses};
+})(page);
+```

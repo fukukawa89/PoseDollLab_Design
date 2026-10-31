@@ -1,0 +1,194 @@
+[
+  {
+    "ref": "U1",
+    "lib": "PoseDoll",
+    "sym": "MT6701QT_TRIAL",
+    "value": "MT6701QT-STD / EP unresolved",
+    "fp": "PoseDoll:MT6701QT_QFN16_EP_UNSPECIFIED",
+    "nets": {
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null,
+      "5": null,
+      "6": "DO_IC",
+      "7": "CLK",
+      "8": "CS_N",
+      "9": null,
+      "10": null,
+      "11": null,
+      "12": null,
+      "13": "+3V3",
+      "14": "+3V3",
+      "15": null,
+      "16": "GND",
+      "17": null
+    },
+    "pcb": [
+      100,
+      100
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      54.61,
+      54.61
+    ]
+  },
+  {
+    "ref": "J1",
+    "lib": "Connector_Generic",
+    "sym": "Conn_01x05",
+    "value": "A1002WR-S-5P-LCP / CN1 FIVE-WIRE ONLY",
+    "fp": "PoseDoll:CJT_A1002WR_S_5P_LCP",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "CLK",
+      "4": "DO",
+      "5": "CS_N"
+    },
+    "pcb": [
+      100,
+      100
+    ],
+    "angle": 0,
+    "back": true,
+    "section": "control",
+    "schematic_xy": [
+      139.7,
+      54.61
+    ]
+  },
+  {
+    "ref": "C1",
+    "lib": "Device",
+    "sym": "C",
+    "value": "100n X7R",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      102.8,
+      96.6
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      224.79,
+      54.61
+    ]
+  },
+  {
+    "ref": "C2",
+    "lib": "Device",
+    "sym": "C",
+    "value": "10u bulk; derating pending",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "pcb": [
+      102.6,
+      103.6
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      309.88,
+      54.61
+    ]
+  },
+  {
+    "ref": "R1",
+    "lib": "Device",
+    "sym": "R",
+    "value": "33R source damping candidate",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DO_IC",
+      "2": "DO"
+    },
+    "pcb": [
+      97.4,
+      96.6
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      394.97,
+      54.61
+    ]
+  },
+  {
+    "ref": "R2",
+    "lib": "Device",
+    "sym": "R",
+    "value": "10k CS safe high",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CS_N"
+    },
+    "pcb": [
+      97.4,
+      103.6
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      480.06,
+      54.61
+    ]
+  },
+  {
+    "ref": "#FLG01",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "+3V3"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      565.15,
+      54.61
+    ]
+  },
+  {
+    "ref": "#FLG02",
+    "lib": "power",
+    "sym": "PWR_FLAG",
+    "value": "PWR_FLAG",
+    "fp": "",
+    "nets": {
+      "1": "GND"
+    },
+    "pcb": [
+      0,
+      0
+    ],
+    "angle": 0,
+    "back": false,
+    "section": "control",
+    "schematic_xy": [
+      650.24,
+      54.61
+    ]
+  }
+]

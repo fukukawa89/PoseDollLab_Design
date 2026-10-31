@@ -1,0 +1,341 @@
+{
+  "id": "N003",
+  "label": "open_b",
+  "project_sha256": "ebd95fba77d440b55300964aabc5521144877b0b97f302cb7766740492294777",
+  "method": "Full bead contact recheck of all v2 half-bead flags: previous segment centerlines are buffered by (previous_width+current_width)/2 +0.01 mm. This identifies runs whose deposited bead has no overlap with preceding printed material. Paths lying entirely within the previous model solid are separately retained as internal infill gaps, not mislabeled as missing external fins. All original v2 flags remain available.",
+  "geometry_tolerance_mm": 0.01,
+  "review_limits": {
+    "unanchored_or_one_ended_external_free_run_mm": 1.0,
+    "two_ended_external_free_run_mm": 3.0,
+    "minimum_recorded_free_run_mm": 0.15
+  },
+  "limits_are_screening_not_physical_calibration": true,
+  "partial_bead_paths": [
+    {
+      "z_mm": 7.599999904632568,
+      "length_mm": 3.708291117245995,
+      "max_centerline_distance_mm": 0.15784353494307377,
+      "width_mm": 0.42032039165496826,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 7.800000190734863,
+      "length_mm": 3.540895038356001,
+      "max_centerline_distance_mm": 0.12927432650435097,
+      "width_mm": 0.41999900341033936,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 8.0,
+      "length_mm": 3.4196911199531206,
+      "max_centerline_distance_mm": 0.08510478099234531,
+      "width_mm": 0.4144808351993561,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    },
+    {
+      "z_mm": 16.0,
+      "length_mm": 0.426300968432471,
+      "max_centerline_distance_mm": 0.08995702774556136,
+      "width_mm": 0.41252800822257996,
+      "classification": "has_previous_layer_bead_overlap_along_recorded_path"
+    }
+  ],
+  "external_free_runs": [
+    {
+      "z_mm": 7.0,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 0.6835614757246379,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          13.913132329913738,
+          16.34389722060289
+        ],
+        [
+          13.864999771118164,
+          16.40999984741211
+        ],
+        [
+          13.5,
+          16.886999130249023
+        ],
+        [
+          13.499184853692402,
+          16.88783058220362
+        ]
+      ],
+      "bounds_mm": [
+        13.499184853692402,
+        16.34389722060289,
+        13.913132329913738,
+        16.88783058220362
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 0.6835614757246379
+    },
+    {
+      "z_mm": 7.0,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 2.320611413851446,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          12.39847545472274,
+          12.131795731362345
+        ],
+        [
+          12.47700023651123,
+          12.1850004196167
+        ],
+        [
+          13.12399959564209,
+          12.717000007629395
+        ],
+        [
+          13.616000175476074,
+          13.234000205993652
+        ],
+        [
+          13.932999610900879,
+          13.699999809265137
+        ],
+        [
+          13.98353854947221,
+          13.798641966467574
+        ]
+      ],
+      "bounds_mm": [
+        12.39847545472274,
+        12.131795731362345,
+        13.98353854947221,
+        13.798641966467574
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 2.320611413851446
+    },
+    {
+      "z_mm": 7.0,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 2.0133106907307026,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          14.114253370563102,
+          14.054208030794337
+        ],
+        [
+          14.149999618530273,
+          14.125
+        ],
+        [
+          14.291000366210938,
+          14.607000350952148
+        ],
+        [
+          14.319999694824219,
+          15.282999992370605
+        ],
+        [
+          14.192000389099121,
+          15.791999816894531
+        ],
+        [
+          14.090999245643616,
+          15.999010846019496
+        ]
+      ],
+      "bounds_mm": [
+        14.090999245643616,
+        14.054208030794337,
+        14.319999694824219,
+        15.999010846019496
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 2.0133106907307026
+    },
+    {
+      "z_mm": 7.199999809265137,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 1.90537666425538,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          13.115799940032867,
+          12.153561658166206
+        ],
+        [
+          13.241999626159668,
+          12.239999771118164
+        ],
+        [
+          13.913999557495117,
+          12.817999839782715
+        ],
+        [
+          14.32800006866455,
+          13.288999557495117
+        ],
+        [
+          14.32800006866455,
+          13.527947085890274
+        ]
+      ],
+      "bounds_mm": [
+        13.115799940032867,
+        12.153561658166206,
+        14.32800006866455,
+        13.527947085890274
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 1.90537666425538
+    },
+    {
+      "z_mm": 7.199999809265137,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 1.3692430905447814,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          14.32800006866455,
+          16.492396520201666
+        ],
+        [
+          14.32800006866455,
+          16.711000442504883
+        ],
+        [
+          13.743000030517578,
+          17.3439998626709
+        ],
+        [
+          13.518275570193659,
+          17.525260049067864
+        ]
+      ],
+      "bounds_mm": [
+        13.518275570193659,
+        16.492396520201666,
+        14.32800006866455,
+        17.525260049067864
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 1.3692430905447814
+    },
+    {
+      "z_mm": 7.400000095367432,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 0.7283770728932393,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          13.740423727021772,
+          12.102455541555617
+        ],
+        [
+          13.852999687194824,
+          12.178000450134277
+        ],
+        [
+          14.270000457763672,
+          12.517999649047852
+        ],
+        [
+          14.270000457763672,
+          12.572760550839915
+        ]
+      ],
+      "bounds_mm": [
+        13.740423727021772,
+        12.102455541555617,
+        14.270000457763672,
+        12.572760550839915
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 0.7283770728932393
+    },
+    {
+      "z_mm": 7.400000095367432,
+      "feature": "Outer wall / Overhang wall",
+      "length_mm": 0.6790941901719122,
+      "anchors": 2,
+      "xy_mm": [
+        [
+          14.270000457763672,
+          17.40627251292298
+        ],
+        [
+          14.270000457763672,
+          17.476999282836914
+        ],
+        [
+          13.843999862670898,
+          17.820999145507812
+        ],
+        [
+          13.793464642902322,
+          17.854833943514116
+        ]
+      ],
+      "bounds_mm": [
+        13.793464642902322,
+        17.40627251292298,
+        14.270000457763672,
+        17.854833943514116
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 0.6790941901719122
+    },
+    {
+      "z_mm": 15.800000190734863,
+      "feature": "Overhang wall",
+      "length_mm": 0.3114641389611298,
+      "anchors": 0,
+      "xy_mm": [
+        [
+          7.353000164031982,
+          15.081999778747559
+        ],
+        [
+          7.369999885559082,
+          14.770999908447266
+        ]
+      ],
+      "bounds_mm": [
+        7.353000164031982,
+        14.770999908447266,
+        7.369999885559082,
+        15.081999778747559
+      ],
+      "inside_previous_solid_geometry": false,
+      "classification": "short_external_gap",
+      "parent_free_run_length_mm": 0.3114641389611298
+    }
+  ],
+  "internal_infill_gaps": [],
+  "islands": [],
+  "critical_external_runs": [],
+  "external_islands": [],
+  "critical_external_count": 0,
+  "external_island_count": 0,
+  "max_external_free_run_mm": 2.320611413851446,
+  "native_review_resolved": true,
+  "physical_print_tested": false,
+  "elapsed_s": 0.3011162281036377,
+  "audit_schema": "full-bead-v6-explicit-residual-endpoints-256",
+  "actual_constant_layer_height_mm": 0.2,
+  "actual_initial_layer_height_mm": 0.2,
+  "first_layer_geometry_center_corrected": true,
+  "layer_profile_source": "actual native project settings, not candidate design metadata",
+  "previous_report": "full_bead_contacts.json",
+  "refinement": "A zero-bead-contact line is partitioned at previous solid geometry, instead of classifying its full length as external when only a small section crosses the boundary. Split endpoints are conservatively unanchored. Previous solid section uses the recorded constant layer height for this candidate.",
+  "original_v5_critical_count": 0,
+  "endpoint_evidence": [],
+  "endpoint_method": "Re-evaluate the newly created ends of v5 residual runs against actual prior beads and earlier, independently prior-backed wall pieces. The unchanged limits remain 1 mm for zero/one anchor and 3 mm for two anchors. No recursively floating wall chain is accepted."
+}

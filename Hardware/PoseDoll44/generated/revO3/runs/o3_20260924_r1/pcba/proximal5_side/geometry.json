@@ -1,0 +1,656 @@
+{
+  "run_id": "o3_20260924_r1",
+  "kind": "proximal5_side",
+  "raw_KiCad_export_bounds_mm": [
+    0.0,
+    -48.0,
+    -1.8350001000000002,
+    36.0,
+    5.95,
+    5.514998
+  ],
+  "normalization_z_mm": -1.2,
+  "board_datum_basis": "Nominal native board thickness shifts KiCad export into board-top Z=0 frame; small stackup/model datum residual requires supplier mating validation",
+  "actual_export_bounds_mm": [
+    0.0,
+    -48.0,
+    -3.0350001000000004,
+    36.0,
+    5.95,
+    4.314998
+  ],
+  "actual_export_solids": 133,
+  "physical_with_declared_substitutes_bounds_mm": [
+    0.0,
+    -48.720000000000006,
+    -6.2,
+    36.0,
+    5.95,
+    6.3
+  ],
+  "missing_or_unqualified_components": [
+    "J1",
+    "J1_mating_model",
+    "J2_mating_model",
+    "J3_mating_model",
+    "L1",
+    "U11",
+    "U12",
+    "U13",
+    "U14",
+    "U15",
+    "U2",
+    "U50",
+    "U51"
+  ],
+  "connectors": [
+    {
+      "ref": "J15",
+      "header": "P5 sensor",
+      "housing": "SHR-06V-S",
+      "housing_width_mm": 7,
+      "entry": "top",
+      "frame_origin_xy_mm": [
+        29.7,
+        25.475
+      ],
+      "frame_rotation_deg": 90.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 6.3,
+      "unqualified_tolerance_and_true_mating_features": true
+    },
+    {
+      "ref": "J13",
+      "header": "P3 sensor",
+      "housing": "SHR-06V-S",
+      "housing_width_mm": 7,
+      "entry": "top",
+      "frame_origin_xy_mm": [
+        30.55,
+        5.475
+      ],
+      "frame_rotation_deg": 90.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 6.3,
+      "unqualified_tolerance_and_true_mating_features": true
+    },
+    {
+      "ref": "J50",
+      "header": "SM14B-SRSS-TB",
+      "housing": "SHR-14V-S",
+      "housing_width_mm": 15,
+      "entry": "side",
+      "frame_origin_xy_mm": [
+        18.0,
+        44.145
+      ],
+      "frame_rotation_deg": 0.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 2.95,
+      "unqualified_tolerance_and_true_mating_features": true
+    },
+    {
+      "ref": "J14",
+      "header": "P4 sensor",
+      "housing": "SHR-06V-S",
+      "housing_width_mm": 7,
+      "entry": "top",
+      "frame_origin_xy_mm": [
+        30.55,
+        15.475
+      ],
+      "frame_rotation_deg": 90.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 6.3,
+      "unqualified_tolerance_and_true_mating_features": true
+    },
+    {
+      "ref": "J12",
+      "header": "P2 sensor",
+      "housing": "SHR-06V-S",
+      "housing_width_mm": 7,
+      "entry": "top",
+      "frame_origin_xy_mm": [
+        3.175,
+        5.475
+      ],
+      "frame_rotation_deg": 90.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 6.3,
+      "unqualified_tolerance_and_true_mating_features": true
+    },
+    {
+      "ref": "J11",
+      "header": "P1 sensor",
+      "housing": "SHR-06V-S",
+      "housing_width_mm": 7,
+      "entry": "top",
+      "frame_origin_xy_mm": [
+        11.575,
+        34.95
+      ],
+      "frame_rotation_deg": 90.0,
+      "frame_source": "Native KiCad origin + F.Fab and pad geometry, not courtyard centroid",
+      "catalog": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "nominal_assembled_height_mm": 6.3,
+      "unqualified_tolerance_and_true_mating_features": true
+    }
+  ],
+  "objects": [
+    {
+      "id": "populated_board_available_models",
+      "class": "physical_solid",
+      "basis": "Actual KiCad STEP, board frame X right Y reversed Z top=0",
+      "qualification": "EXPORTED_AVAILABLE_MODELS_ONLY",
+      "file": "pcba/proximal5_side/populated_board_available_models.step",
+      "sha256": "5c784de3432b737992e5271cc71d6eeb13448afa655fbe33dc49121f7b03fc52",
+      "bounds_mm": [
+        0.0,
+        -48.0,
+        -3.0350001000000004,
+        36.0,
+        5.95,
+        4.314998
+      ],
+      "volume_mm3": 3549.189186362446
+    },
+    {
+      "id": "J15_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-06V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J15_catalog_mating.step",
+      "sha256": "b2a48222802412818ec6232958ddebe750a1f5370d4f187ead628d555c47128d",
+      "bounds_mm": [
+        27.849999999999998,
+        -28.975,
+        1.2999999999999998,
+        30.65,
+        -21.975,
+        6.3
+      ],
+      "volume_mm3": 98.00000000000001
+    },
+    {
+      "id": "J15_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J15_unplug_corridor.step",
+      "sha256": "e3c53bf355dc772da9fbb16da437430588f319e433f2e349a190b67a01503789",
+      "bounds_mm": [
+        27.849999999999998,
+        -28.975,
+        1.3000000000000007,
+        30.65,
+        -21.975,
+        18.3
+      ],
+      "volume_mm3": 333.20000000000005
+    },
+    {
+      "id": "J15_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J15_bend_R4.step",
+      "sha256": "0f1c069e5839f01ccafb47d2c96954f07f73f38b086dfaab94dcb7eac4d58940",
+      "bounds_mm": [
+        24.849999999999998,
+        -28.975,
+        5.9,
+        29.65,
+        -21.975,
+        13.700000000000003
+      ],
+      "volume_mm3": 262.0800000000001
+    },
+    {
+      "id": "J15_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J15_bend_R12.step",
+      "sha256": "cfd3e77e6f77e946bf90e5dc5dc18a8b5e8248d39847a6a99c87aed8806a083f",
+      "bounds_mm": [
+        16.85,
+        -28.975,
+        5.899999999999999,
+        29.65,
+        -21.975,
+        21.7
+      ],
+      "volume_mm3": 1415.68
+    },
+    {
+      "id": "J13_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-06V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J13_catalog_mating.step",
+      "sha256": "b8bec78b5003259e5d15069df16da186f5238314c52c07abdd67ac6bdd3209d0",
+      "bounds_mm": [
+        28.7,
+        -8.975,
+        1.2999999999999998,
+        31.5,
+        -1.9749999999999994,
+        6.3
+      ],
+      "volume_mm3": 98.00000000000001
+    },
+    {
+      "id": "J13_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J13_unplug_corridor.step",
+      "sha256": "4a0fde7aa88d6d7d6894a479a5c8360dc38531f657c0972144b45e6f0cd45939",
+      "bounds_mm": [
+        28.7,
+        -8.975,
+        1.3000000000000007,
+        31.5,
+        -1.9749999999999994,
+        18.3
+      ],
+      "volume_mm3": 333.20000000000005
+    },
+    {
+      "id": "J13_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J13_bend_R4.step",
+      "sha256": "6dd9923731ed176cef50b3faca3b46be045c09e8e85a29f22f462a634838f7b2",
+      "bounds_mm": [
+        25.7,
+        -8.975,
+        5.9,
+        30.5,
+        -1.9749999999999992,
+        13.700000000000003
+      ],
+      "volume_mm3": 262.0800000000001
+    },
+    {
+      "id": "J13_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J13_bend_R12.step",
+      "sha256": "5298760db8071fd9455aae78f387a0d34f1dce7bfe95e79b7110c33f1cbff1de",
+      "bounds_mm": [
+        17.700000000000003,
+        -8.975,
+        5.899999999999999,
+        30.5,
+        -1.9749999999999979,
+        21.7
+      ],
+      "volume_mm3": 1415.6799999999998
+    },
+    {
+      "id": "J50_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-14V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J50_catalog_mating.step",
+      "sha256": "35b836872d6150300e5f73aa1d7a931186f4d6243a029268a340bad8a312fe70",
+      "bounds_mm": [
+        10.5,
+        -48.720000000000006,
+        0.07500000000000018,
+        25.5,
+        -43.720000000000006,
+        2.875
+      ],
+      "volume_mm3": 209.99999999999994
+    },
+    {
+      "id": "J50_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J50_unplug_corridor.step",
+      "sha256": "00f744737d41317820180077052d4e7a32bec257a9f4b111bb839c095221529a",
+      "bounds_mm": [
+        10.5,
+        -60.72,
+        0.07500000000000018,
+        25.5,
+        -43.72,
+        2.875
+      ],
+      "volume_mm3": 714.0
+    },
+    {
+      "id": "J50_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "14 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J50_bend_R4.step",
+      "sha256": "41a9f4ccf057f0ce62e5bf895d0e412ed48ee17b7619c7b33d685f99533ee11d",
+      "bounds_mm": [
+        10.5,
+        -56.120000000000005,
+        1.0750000000000002,
+        25.5,
+        -48.32,
+        5.875
+      ],
+      "volume_mm3": 561.6
+    },
+    {
+      "id": "J50_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "14 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J50_bend_R12.step",
+      "sha256": "7e524ee7e95e6965d7b259dca43ce1b79f0ca8cdb8bd9c6dada4f64c7e799acc",
+      "bounds_mm": [
+        10.5,
+        -64.12,
+        1.0749999999999993,
+        25.5,
+        -48.32000000000001,
+        13.875
+      ],
+      "volume_mm3": 3033.5999999999995
+    },
+    {
+      "id": "J14_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-06V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J14_catalog_mating.step",
+      "sha256": "7db612bbfc1d4cf65113f91ac9d3bedfcd3df682c2c9b276301e8d04d52380b2",
+      "bounds_mm": [
+        28.7,
+        -18.975,
+        1.2999999999999998,
+        31.5,
+        -11.975,
+        6.3
+      ],
+      "volume_mm3": 98.00000000000001
+    },
+    {
+      "id": "J14_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J14_unplug_corridor.step",
+      "sha256": "a675b45a69e5942cdb56a5b65edc2d9b991ccd08c98ce7ae8f11a54fa0f01a32",
+      "bounds_mm": [
+        28.7,
+        -18.975,
+        1.3000000000000007,
+        31.5,
+        -11.975,
+        18.3
+      ],
+      "volume_mm3": 333.20000000000005
+    },
+    {
+      "id": "J14_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J14_bend_R4.step",
+      "sha256": "3bfbc85fb5cbe1e784fb72b559a840ab2359e9a3172da89eaed42cf4dc0e0ad0",
+      "bounds_mm": [
+        25.7,
+        -18.975,
+        5.9,
+        30.5,
+        -11.974999999999998,
+        13.700000000000003
+      ],
+      "volume_mm3": 262.0800000000001
+    },
+    {
+      "id": "J14_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J14_bend_R12.step",
+      "sha256": "25546eaad52785c59882cd9f9febcff70eb9033858d35d3d9729489fc9e8c41b",
+      "bounds_mm": [
+        17.700000000000003,
+        -18.975,
+        5.899999999999999,
+        30.5,
+        -11.974999999999998,
+        21.7
+      ],
+      "volume_mm3": 1415.68
+    },
+    {
+      "id": "J1_missing_model_envelope",
+      "class": "physical_envelope_unqualified",
+      "basis": "Actual footprint F.Fab XY; TI BQA 0.8 mm max height where identified, otherwise unresolved 5 mm sensitivity assumption",
+      "qualification": "NOT_A_COMPLETE_QUALIFIED_COMPONENT_MODEL",
+      "file": "pcba/proximal5_side/J1_missing_model_envelope.step",
+      "sha256": "fdc1dd3cfd5ede4d3b824a335f8c393ecc1587bca03ca31dea055ab7bcb98c98",
+      "bounds_mm": [
+        1.0750000000000002,
+        -29.125,
+        0.0,
+        6.075,
+        -21.174999999999997,
+        5.0
+      ],
+      "volume_mm3": 198.75000000000003
+    },
+    {
+      "id": "J12_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-06V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J12_catalog_mating.step",
+      "sha256": "7fc91faaec5324b0db1de41629444f1f6110a5c683d13bf65fa2414820690423",
+      "bounds_mm": [
+        1.3249999999999993,
+        -8.975,
+        1.2999999999999998,
+        4.125,
+        -1.9749999999999994,
+        6.3
+      ],
+      "volume_mm3": 98.0
+    },
+    {
+      "id": "J12_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J12_unplug_corridor.step",
+      "sha256": "2d78950ce350aff91be9272ae2af921a0ca955a0623338f8900a9461fe55ef1d",
+      "bounds_mm": [
+        1.3249999999999993,
+        -8.975,
+        1.3000000000000007,
+        4.125,
+        -1.9749999999999994,
+        18.3
+      ],
+      "volume_mm3": 333.19999999999993
+    },
+    {
+      "id": "J12_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J12_bend_R4.step",
+      "sha256": "6b757dd9cd2dde12c7abb602655df67416290edd2213cc3ee9e13d62f7463a6a",
+      "bounds_mm": [
+        -1.6750000000000012,
+        -8.975,
+        5.9,
+        3.1250000000000004,
+        -1.9749999999999992,
+        13.700000000000003
+      ],
+      "volume_mm3": 262.0800000000001
+    },
+    {
+      "id": "J12_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J12_bend_R12.step",
+      "sha256": "39756500c28d37cee76fd815a3d7b9a5836881b243ccf4d8cd17ed7867219367",
+      "bounds_mm": [
+        -9.675,
+        -8.975,
+        5.899999999999999,
+        3.1249999999999996,
+        -1.9749999999999979,
+        21.7
+      ],
+      "volume_mm3": 1415.6799999999998
+    },
+    {
+      "id": "J11_catalog_mating",
+      "class": "physical_envelope_catalog",
+      "basis": "SHR-06V-S envelope; assembled top 6.3 mm / side 6.25 mm x 2.95 mm; catalog pp1-3; KiCad F.Fab/PAD frame",
+      "qualification": "CATALOG_REFERENCE_DIMENSIONS_NOT_TOLERANCE_CERTIFICATION",
+      "file": "pcba/proximal5_side/J11_catalog_mating.step",
+      "sha256": "52a898556e84e4a9a9eaf188a6cf6073f2d168e54cf0ba75fe8ab934b98a1fd5",
+      "bounds_mm": [
+        9.724999999999998,
+        -38.45,
+        1.2999999999999998,
+        12.525,
+        -31.450000000000003,
+        6.3
+      ],
+      "volume_mm3": 97.99999999999999
+    },
+    {
+      "id": "J11_unplug_corridor",
+      "class": "service_sweep",
+      "basis": "12 mm proposed straight unmating stroke; exact latch/finger/tool clearance absent",
+      "qualification": "UNQUALIFIED_SERVICE_REQUIREMENT",
+      "file": "pcba/proximal5_side/J11_unplug_corridor.step",
+      "sha256": "3a9582a9d49a490e75de8adcd9b32719f51b5348d29f3751af34174e224b4cd4",
+      "bounds_mm": [
+        9.724999999999998,
+        -38.45,
+        1.3000000000000007,
+        12.525,
+        -31.450000000000003,
+        18.3
+      ],
+      "volume_mm3": 333.19999999999993
+    },
+    {
+      "id": "J11_bend_R4",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=4 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J11_bend_R4.step",
+      "sha256": "a88775f3e60d191291431e539645dda6bf169ad3f78778cfa9d3b3a63b2560f8",
+      "bounds_mm": [
+        6.724999999999998,
+        -38.45,
+        5.9,
+        11.525,
+        -31.450000000000003,
+        13.700000000000003
+      ],
+      "volume_mm3": 262.0800000000001
+    },
+    {
+      "id": "J11_bend_R12",
+      "class": "wire_bend_sensitivity",
+      "basis": "6 exits, 0.8 mm OD, 3 mm straight neck and R=12 mm; material and endurance unqualified",
+      "qualification": "SENSITIVITY_NOT_ACCEPTANCE",
+      "file": "pcba/proximal5_side/J11_bend_R12.step",
+      "sha256": "e42c8eafa1d46cebb081d8f24d966a32cfdfc4b4e92b3f5d673b4132b5db39fb",
+      "bounds_mm": [
+        -1.2750000000000004,
+        -38.45,
+        5.899999999999999,
+        11.524999999999999,
+        -31.450000000000003,
+        21.7
+      ],
+      "volume_mm3": 1415.68
+    },
+    {
+      "id": "L1_missing_model_envelope",
+      "class": "physical_envelope_unqualified",
+      "basis": "Actual footprint F.Fab XY; TI BQA 0.8 mm max height where identified, otherwise unresolved 5 mm sensitivity assumption",
+      "qualification": "NOT_A_COMPLETE_QUALIFIED_COMPONENT_MODEL",
+      "file": "pcba/proximal5_side/L1_missing_model_envelope.step",
+      "sha256": "aa8e7ebb152ec75b5123c703e95e6100388b0361b43bd6a0b94225af47afbca9",
+      "bounds_mm": [
+        8.425001,
+        -4.825,
+        -6.2,
+        12.425001,
+        -0.8250000000000002,
+        -1.2000000000000002
+      ],
+      "volume_mm3": 80.0
+    },
+    {
+      "id": "antenna_manufacturer_air",
+      "class": "functional_keepout",
+      "basis": "Retained library air region plus proposed +/-15 mm Z exclusion; separate from physical module; RF enabled baseline unchanged",
+      "qualification": "FUNCTIONAL_REQUIREMENT_NOT_PHYSICAL_PART",
+      "file": "pcba/proximal5_side/antenna_manufacturer_air.step",
+      "sha256": "63a6b343b4fdd649e8a8fcb5c09e98ab657244c0efafa71378f42a6236215706",
+      "bounds_mm": [
+        -6.024999999999999,
+        0.0,
+        -15.0,
+        42.025,
+        20.95,
+        15.0
+      ],
+      "volume_mm3": 30199.424999999996
+    }
+  ],
+  "bend_sensitivity": {
+    "4": {
+      "bounds_mm": [
+        -1.6750000000000012,
+        -56.120000000000005,
+        -6.2,
+        36.0,
+        5.95,
+        13.700000000000003
+      ],
+      "dimensions_mm": [
+        37.675000000000004,
+        62.07000000000001,
+        19.900000000000002
+      ]
+    },
+    "12": {
+      "bounds_mm": [
+        -9.675,
+        -64.12,
+        -6.2,
+        36.0,
+        5.95,
+        21.7
+      ],
+      "dimensions_mm": [
+        45.675,
+        70.07000000000001,
+        27.9
+      ]
+    }
+  },
+  "status": "BLOCKED_UNQUALIFIED_COMPONENTS_MATING_DATUM_TOLERANCES_AND_HARNESS",
+  "full_PCBA_qualified": false
+}

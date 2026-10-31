@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "geometry_sha256": "d661e8f2f3f2e135207a528a1001faa74baad660b26b777c748dfee802e2d032",
+  "search_cap_mm": 5,
+  "sphere_to_socket_nominal_radial_gap_mm": 0.75,
+  "scope": "Minimum triangle-mesh distances through Manifold min_gap, selected moving structures at 5 degree steps. Wrist uses the exact neck cylinder constituent, not the full ball: the spherical region has invariant nominal 0.75 mm separation from the socket. 0.5 mm is an internal nominal gate, not a manufactured clearance guarantee. Bearings, friction contacts, pin slots and rigid joins are absent from this gap gate, but present in all-pair intersection audit.",
+  "rows": [
+    {
+      "group": "shoulder_yoke_sensor",
+      "samples": 38,
+      "pairs": 1,
+      "required_nominal_gap_mm": 0.5,
+      "status": "PASS",
+      "minimum": {
+        "gap_mm": 0.5949764517842744,
+        "a": "shoulder_open_yoke",
+        "b": "humeral_sensor_holder",
+        "angles": {
+          "shoulder_abduct": -20.0
+        }
+      }
+    },
+    {
+      "group": "shoulder_washer_stem",
+      "samples": 38,
+      "pairs": 2,
+      "required_nominal_gap_mm": 0.5,
+      "status": "PASS",
+      "minimum": {
+        "gap_mm": 0.5999999999999979,
+        "a": "shoulder_swing_washer_-16",
+        "b": "humeral_stem_-1",
+        "angles": {
+          "shoulder_abduct": -5.0
+        }
+      }
+    },
+    {
+      "group": "elbow_forearm",
+      "samples": 30,
+      "pairs": 12,
+      "required_nominal_gap_mm": 0.5,
+      "status": "PASS",
+      "minimum": {
+        "gap_mm": 2.585269264068528,
+        "a": "elbow_ear_-1",
+        "b": "forearm_stem_-1",
+        "angles": {
+          "elbow_flex": 0.0
+        }
+      }
+    },
+    {
+      "group": "wrist_neck_socket",
+      "samples": 308,
+      "pairs": 2,
+      "required_nominal_gap_mm": 0.5,
+      "status": "PASS",
+      "minimum": {
+        "gap_mm": 0.6638438763305867,
+        "a": "C_neck_constituent",
+        "b": "C_socket_half_1",
+        "angles": {
+          "wrist_flex": -15.0,
+          "wrist_deviation": 30.0
+        }
+      }
+    }
+  ]
+}

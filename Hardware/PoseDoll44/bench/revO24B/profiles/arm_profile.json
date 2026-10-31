@@ -1,0 +1,148 @@
+{
+  "schema": "POSEDOLL-O24-ARM/1",
+  "revision": "O24B",
+  "reference": "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+  "neutral_height_mm": 560,
+  "root": [
+    -13.771896716464436,
+    2.872986065194981,
+    451.6610611813773
+  ],
+  "clavicle_vector": [
+    -1.3040584945878386,
+    46.6532886626352,
+    -6.7236923394116275
+  ],
+  "upperarm_mm": 83.56619993528744,
+  "forearm_mm": 80.49630500229591,
+  "hand_mm": 26.7306452609472,
+  "forearm_zero_clocking_deg": -90,
+  "axes": [
+    {
+      "id": "clavicle_protract",
+      "label": "锁骨前伸 / 后收",
+      "limits_deg": [
+        -20,
+        20
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "clavicle_elevate",
+      "label": "锁骨抬高 / 下压",
+      "limits_deg": [
+        -10,
+        25
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "shoulder_flex",
+      "label": "肩前举 / 后伸",
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "shoulder_abduct",
+      "label": "肩外展",
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "upperarm_roll",
+      "label": "上臂内外旋",
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "elbow_flex",
+      "label": "肘屈曲",
+      "limits_deg": [
+        0,
+        145
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "forearm_roll",
+      "label": "前臂旋前 / 旋后",
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "id": "wrist_flex",
+      "label": "腕屈曲 / 背伸",
+      "limits_deg": [
+        -65,
+        70
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "wrist_deviation",
+      "label": "腕尺偏 / 桡偏",
+      "limits_deg": [
+        -20,
+        30
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "channel_count": 9,
+  "physical_dof": 9,
+  "protocol_compatibility": "Design-stage 9-channel arm. Existing O22 46-channel firmware is not directly compatible.",
+  "pose_source": "anatomical N pose; shoulder flex then abduct then humeral roll",
+  "units": "mm/degree",
+  "manufacturing_release": false,
+  "wrist_angle_order": "Rx(deviation) @ Ry(flexion)",
+  "physical_wrist_dof": 2,
+  "sensor_change": "Two MT6701 channels replaced by one candidate 3D field sensor plus calibrated 2D estimator; not firmware compatible."
+}

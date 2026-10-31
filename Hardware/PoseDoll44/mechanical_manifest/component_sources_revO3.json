@@ -1,0 +1,53 @@
+{
+  "schema": "revo3-component-source-notes-v1",
+  "consulted_date": "2026-09-24",
+  "sources": [
+    {
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "downloaded_pdf_sha256": "ea3071ca5ee5a6069eba534fa39a10f34c9fb742ee42135a69ab4156bfa0f5de",
+      "pages_visually_checked": [
+        1,
+        2,
+        3
+      ],
+      "extracted_reference_dimensions_mm": {
+        "SHR-06V-S_width": 7,
+        "SHR-14V-S_width": 15,
+        "SHR-14V-S-B_width_with_protrusions": 17,
+        "housing_depth": 2.8,
+        "housing_insertion_length": 5,
+        "top_assembly_height": 6.3,
+        "side_assembly_height": 2.95,
+        "side_assembly_depth": 6.25,
+        "wire_OD_interval": [
+          0.4,
+          0.8
+        ]
+      },
+      "qualification": "Catalog reference dimensions; production tolerances and internal mating features not validated. Official STEP download form requests personal/company details and email delivery; no request submitted."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf",
+      "document": "SCAS290T, revised September 2024",
+      "used_for": "BQA body 2.5 x 3 mm and 0.8 mm maximum height; no VCC=0 Ioff qualification inferred",
+      "poweroff_state": "UNQUALIFIED"
+    },
+    {
+      "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/pcb-layout-design.html",
+      "used_for": "Retain antenna air clearance separately from physical module and service solids; no silent wireless-function waiver"
+    }
+  ],
+  "missing_model_envelopes": {
+    "height_assumption_for_unidentified_parts_mm": 5,
+    "status": "Unqualified sensitivity placeholder, not a claimed manufacturer maximum"
+  },
+  "KiCad_STEP_normalization": {
+    "board_top_frame": "Translate raw export by negative native nominal board thickness; catalogue mate frame uses pad/F.Fab geometry",
+    "exact_stackup_and_model_datum_tolerance": "Not supplier validated; never a full PCBA fit pass"
+  },
+  "wire_bend_studies_mm": [
+    4,
+    12
+  ],
+  "wire_bend_qualification": "NOT_RUN"
+}

@@ -1,0 +1,89 @@
+{
+  "scope": "toolchain verification only; synthetic material and loads; no doll analysis or edits",
+  "local_date_zone": "Asia/Hong_Kong",
+  "run": "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Tools\\simulation_toolchain\\runs\\2026-10-06_020533",
+  "FreeCAD": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "Python": "3.11.14 | packaged by conda-forge | (main, Oct 13 2025, 14:00:26) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "scipy": "1.16.3",
+  "binaries": {
+    "python.exe": {
+      "path": "D:\\ProgramFiles\\FreeCAD\\bin\\python.exe",
+      "sha256": "b4ca526908e5c93250b851427fa3265936472f1148eb7781c685afa2a13fb996"
+    },
+    "freecadcmd.exe": {
+      "path": "D:\\ProgramFiles\\FreeCAD\\bin\\freecadcmd.exe",
+      "sha256": "1692e54224b48989974e8b91d3ac7a38d1d502d3db4dee1d4cf79ba91356e42d"
+    },
+    "gmsh.exe": {
+      "path": "D:\\ProgramFiles\\FreeCAD\\bin\\gmsh.exe",
+      "sha256": "7f583d16dc0d6a80ff25c4e979b43b20f6d5c99a027de55a33ca678c1258ff65"
+    },
+    "ccx.exe": {
+      "path": "D:\\ProgramFiles\\FreeCAD\\bin\\ccx.exe",
+      "sha256": "a7c351a332373e3075029b7986ea4c9e878789c5b4d2feaed1ef83703624fff5"
+    }
+  },
+  "checks": {
+    "cad_validity_and_volume": true,
+    "axial_linear_displacement_max_error_mm": 5.283330599403779e-09,
+    "bending": [
+      {
+        "case": "bending_coarse",
+        "nodes": 2011,
+        "tetra10_elements": 944,
+        "tip_deflection_mm": 0.001998054456397372,
+        "euler_bernoulli_mm": 0.002,
+        "timoshenko_mm": 0.0020156,
+        "relative_error_vs_timoshenko": 0.008704873785784883
+      },
+      {
+        "case": "bending_fine",
+        "nodes": 6572,
+        "tetra10_elements": 3563,
+        "tip_deflection_mm": 0.001999566480585295,
+        "euler_bernoulli_mm": 0.002,
+        "timoshenko_mm": 0.0020156,
+        "relative_error_vs_timoshenko": 0.007954712946370956
+      }
+    ],
+    "bending_mesh_change_fraction": 0.0007561760024504816,
+    "steady_temperature_max_error_K": 0.0005079838250026114,
+    "all_benchmarks_passed": true
+  },
+  "freecad_result_import": true,
+  "doll_reference_hashes_unchanged": {
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\manifest.json": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\a1mini_fins_v2\\parts\\X046.npz": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\a1mini_fins_v2\\design\\X046.json": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F01_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F02_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F03_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F04_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F05_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F06_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F07_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F08_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F09_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F10_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\F11_O22F2_PLA_fins.3mf": true,
+    "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\Hardware\\PoseDoll44\\bench\\revO22\\O22F2_Release\\projects\\S01_O22F2_PLA_fins.3mf": true
+  },
+  "saved_FreeCAD_document_reopened": [
+    {
+      "name": "VerifiedCantilever_Results",
+      "nodes": 6572,
+      "displacements": 6572,
+      "stresses": 6572
+    }
+  ]
+}

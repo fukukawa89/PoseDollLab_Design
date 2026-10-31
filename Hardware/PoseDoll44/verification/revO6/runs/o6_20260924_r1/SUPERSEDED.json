@@ -1,0 +1,34 @@
+{
+  "schema": "o6-experiment-status-index-v2",
+  "active_geometry": [
+    "joint_L6_validated",
+    "joint_M4_validated"
+  ],
+  "active_joint_verification": [
+    "joint_L6_final",
+    "joint_M4_validated"
+  ],
+  "active_bilateral_layout": "bilateral_search",
+  "invalid_ruled_thread_boolean": [
+    "joint_short",
+    "joint_M4",
+    "joint_M4_r2",
+    "joint_M4_r3",
+    "mixed_layout",
+    "mixed_loads.json"
+  ],
+  "superseded_intermediate_geometry": [
+    "joint_L6_checked",
+    "joint_M4_checked"
+  ],
+  "valid_geometry_but_prior_failed_layouts": [
+    "mixed_validated",
+    "arm_candidate",
+    "arm_refined",
+    "arm_final_trial"
+  ],
+  "failed_assembly_sequence": "verification joint_L6_validated uses late bearing clamps; corrected early-clamp report is joint_L6_final",
+  "finding": "isValid=True did not prevent negative intersection or material creation in old ruled-thread Boolean. Earlier passes using those geometries are invalid; current checked-pipe models and all active tests were rerun. Historical reports may reference superseded source hashes and are NOT active qualification evidence.",
+  "old_O3_O5_archives_unchanged": true,
+  "scope": "Names are relative to generated or verification revO6/runs/o6_20260924_r1 as appropriate."
+}

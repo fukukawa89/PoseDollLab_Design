@@ -1,0 +1,1 @@
+O12 independent coupon only. Run build_taobao_bench.py, then prepare_page.py, inspect the local taobao-bench page, and seal with scripts/seal_revo12.py. Sealed O11 is immutable; O12 does not re-certify its core or full-body geometry. Unknown washer fit and spring force remain explicit.

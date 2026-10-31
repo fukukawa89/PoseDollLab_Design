@@ -1,0 +1,130 @@
+{
+  "scope": "Comparison of compiled rigid transforms against original rebuilt-mesh collision checks",
+  "cases": [
+    {
+      "pair": [
+        "C01",
+        "C02"
+      ],
+      "angles": [
+        0,
+        0
+      ],
+      "compiled": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0
+      },
+      "rebuilt": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          24.868320331220012,
+          1.3269120322135226
+        ]
+      }
+    },
+    {
+      "pair": [
+        "C01",
+        "C02"
+      ],
+      "angles": [
+        75,
+        75
+      ],
+      "compiled": {
+        "status": "PENETRATION",
+        "surface_contacts": 274,
+        "witness_body": 0,
+        "witness_world_mm": [
+          9.250000392279881,
+          -3.7165096839631673,
+          -9.059562163931348
+        ],
+        "witness_local_mm": [
+          9.250000392279881,
+          -3.7165096839631673,
+          -9.059562163931348
+        ],
+        "signed_distance_mm": -0.4627681519355562
+      },
+      "rebuilt": {
+        "status": "PENETRATION",
+        "surface_contacts": 274,
+        "witness_from": 0,
+        "witness_mm": [
+          9.250000392279881,
+          -3.7165096839631673,
+          -9.059562163931348
+        ],
+        "signed_distance_mm": -0.4627681519355551
+      }
+    },
+    {
+      "pair": [
+        "C01",
+        "C02"
+      ],
+      "angles": [
+        0,
+        100
+      ],
+      "compiled": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0
+      },
+      "rebuilt": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          16.140055453605,
+          1.1889397927158143
+        ]
+      }
+    },
+    {
+      "pair": [
+        "C01",
+        "C14"
+      ],
+      "angles": [
+        0,
+        0
+      ],
+      "compiled": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0
+      },
+      "rebuilt": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          23.58371956278017,
+          5.357779890735814
+        ]
+      }
+    },
+    {
+      "pair": [
+        "C02",
+        "C15"
+      ],
+      "angles": [
+        -30,
+        60
+      ],
+      "compiled": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0
+      },
+      "rebuilt": {
+        "status": "CLEAR_NOMINAL_MESH",
+        "surface_contacts": 0,
+        "representative_signed_distances_mm": [
+          0.23361417145342278,
+          1.3940495722173842
+        ]
+      }
+    }
+  ]
+}

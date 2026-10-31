@@ -1,0 +1,112 @@
+{
+  "project_sha256": "0380b17ac7370de56db3e3923c1a9828fa23027dd4c66efab31a12cc548ec2bc",
+  "tooth_probe": "Actual tooth cross-section intersected with its design bounds at each slice midpoint; not a bounding-box-only test.",
+  "footprint_boolean_engine": "Manifold CrossSection / Clipper",
+  "numerical_grid_mm": 0.0001,
+  "project": "F12_O22F3_PLA_fins.3mf",
+  "deposited_bead_assumptions": "Uses G-code LINE_WIDTH and path centerlines; 2D rounded bead footprint, not actual melt-flow or strength simulation. Arc chord <=0.015 mm; predecessor allowance 0.025 mm.",
+  "gcode_out_of_bed_segments": 0,
+  "layer_heights_mm": [
+    0.2
+  ],
+  "layers": 27,
+  "floating_printed_components": [
+    {
+      "z_mm": 0.4000000059604645,
+      "area_mm2": 0.6024449571194017,
+      "bounds_mm": [
+        130.51870000362396,
+        7.81360000371933,
+        131.5443999990821,
+        9.309299997985363
+      ]
+    },
+    {
+      "z_mm": 0.4000000059604645,
+      "area_mm2": 0.6018825989896079,
+      "bounds_mm": [
+        6.2626999989151955,
+        12.691699996590614,
+        7.287399999797344,
+        14.18639999628067
+      ]
+    }
+  ],
+  "fin_bed_roots": [
+    {
+      "object_name": "F12-01 X017 foot_r/C01_sensor_cassette",
+      "component": 1,
+      "first_layer_printed_mm2": 20.421925105467224
+    },
+    {
+      "object_name": "F12-05 X028 clavicle_r.elevate/sensor_cassette",
+      "component": 1,
+      "first_layer_printed_mm2": 27.774468116502916
+    }
+  ],
+  "teeth": [
+    {
+      "object_name": "F12-01 X017 foot_r/C01_sensor_cassette",
+      "tooth": 1,
+      "layers": [
+        {
+          "z_mm": 1.6,
+          "tooth_section_mm2": 0.5600000002980223,
+          "printed_overlap_mm2": 0.5502315412482309,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 1.8,
+          "tooth_section_mm2": 0.5600000002980221,
+          "printed_overlap_mm2": 0.5502315412482307,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 2.0,
+          "tooth_section_mm2": 0.5600000002980225,
+          "printed_overlap_mm2": 0.5250074879025526,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 2.2,
+          "tooth_section_mm2": 0.5600000002980225,
+          "printed_overlap_mm2": 0.5250074879025526,
+          "minimum_required_overlap_mm2": 0.02
+        }
+      ],
+      "continuous_printed_stack": true
+    },
+    {
+      "object_name": "F12-05 X028 clavicle_r.elevate/sensor_cassette",
+      "tooth": 1,
+      "layers": [
+        {
+          "z_mm": 0.4,
+          "tooth_section_mm2": 0.5600000055134309,
+          "printed_overlap_mm2": 0.5355951935479848,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 0.6,
+          "tooth_section_mm2": 0.5600000055134302,
+          "printed_overlap_mm2": 0.5569308456217391,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 0.8,
+          "tooth_section_mm2": 0.5600000055134302,
+          "printed_overlap_mm2": 0.5243797535723438,
+          "minimum_required_overlap_mm2": 0.02
+        },
+        {
+          "z_mm": 1.0,
+          "tooth_section_mm2": 0.5600000055134302,
+          "printed_overlap_mm2": 0.5243797535723438,
+          "minimum_required_overlap_mm2": 0.02
+        }
+      ],
+      "continuous_printed_stack": true
+    }
+  ],
+  "teeth_missing_printed_layer": 0
+}

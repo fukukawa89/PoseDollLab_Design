@@ -1,0 +1,1186 @@
+(kicad_sch (version 20250114) (generator "posedoll_hw44") (uuid "72f0e005-e948-53ff-b43a-f86aec385e0f") (paper "User" 1100 1100) (lib_symbols (symbol "PoseDoll:LVC125_BQA" (pin_names (offset 0.5)) (in_bom yes) (on_board yes) (property "Reference" "U" (at 0 12.7 0) (effects (font (size 1.27 1.27)))) (property "Value" "LVC125_BQA" (at 0 15.24 0) (effects (font (size 1.27 1.27)))) (symbol "LVC125_BQA_0_1" (rectangle (start -12.7 10.16) (end 12.7 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "LVC125_BQA_1_1" (pin input line (at -17.78 7.62 0) (length 5.08) (name "1OE_N" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -17.78 5.08 0) (length 5.08) (name "1A" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin tri_state line (at -17.78 2.54 0) (length 5.08) (name "1Y" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -17.78 0.0 0) (length 5.08) (name "2OE_N" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin input line (at -17.78 -2.54 0) (length 5.08) (name "2A" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin tri_state line (at -17.78 -5.079999999999999 0) (length 5.08) (name "2Y" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin power_in line (at -17.78 -7.62 0) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin tri_state line (at 17.78 7.62 180) (length 5.08) (name "3Y" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin input line (at 17.78 5.08 180) (length 5.08) (name "3A" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin input line (at 17.78 2.54 180) (length 5.08) (name "3OE_N" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin tri_state line (at 17.78 0.0 180) (length 5.08) (name "4Y" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin input line (at 17.78 -2.54 180) (length 5.08) (name "4A" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin input line (at 17.78 -5.079999999999999 180) (length 5.08) (name "4OE_N" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin power_in line (at 17.78 -7.62 180) (length 5.08) (name "VCC" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))))(pin power_in line (at 17.78 -10.16 180) (length 5.08) (name "EP_GND" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27)))))))(symbol "Connector_Generic:Conn_01x06"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x06_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -8.89)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "Connector_Generic:Conn_01x14"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x14"
+			(at 0 -20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x14, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x14_1_1"
+			(rectangle
+				(start -1.27 16.51)
+				(end 1.27 -19.05)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 15.367)
+				(end 0 15.113)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 12.827)
+				(end 0 12.573)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 10.287)
+				(end 0 10.033)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 7.747)
+				(end 0 7.493)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -7.493)
+				(end 0 -7.747)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -10.033)
+				(end 0 -10.287)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -12.573)
+				(end 0 -12.827)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -15.113)
+				(end 0 -15.367)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -17.653)
+				(end 0 -17.907)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 15.24 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 12.7 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 10.16 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 7.62 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 3.81)
+				(name "Pin_10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -10.16 0)
+				(length 3.81)
+				(name "Pin_11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -12.7 0)
+				(length 3.81)
+				(name "Pin_12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -15.24 0)
+				(length 3.81)
+				(name "Pin_13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -17.78 0)
+				(length 3.81)
+				(name "Pin_14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)) (symbol (lib_id "PoseDoll:LVC125_BQA") (at 54.61 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "2ea8747a-15a2-546a-9bcc-9183d5879720")(property "Reference" "U16" (at 54.61 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "SN74LVC125ABQAR" (at 54.61 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_DFN_QFN:DHWQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm" (at 54.61 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "24e1ee33-f9c3-53db-9359-6217b486eb81"))(pin "2" (uuid "61f433de-bbaa-597e-a862-a37b0898ed45"))(pin "3" (uuid "fd6b66fa-bee8-50a4-a1c0-5c940e465b8f"))(pin "4" (uuid "2f075166-ed7f-585e-ab31-53a66400e11c"))(pin "5" (uuid "ab0ef24b-59e8-582a-a8d2-32bf4d8d0516"))(pin "6" (uuid "18e95bd5-dd13-5c9a-bdc1-2fceb2f0ee02"))(pin "7" (uuid "ef0c99de-4825-5b8e-8d98-b895de61d29a"))(pin "8" (uuid "5693c55b-a913-54e0-86d5-e0bdbbc12801"))(pin "9" (uuid "83c58f5e-c6c9-52b9-9e28-19311e1e88a8"))(pin "10" (uuid "0c2c9038-cb02-5ca6-a82f-bc93ecb30391"))(pin "11" (uuid "a9da7bbe-3a6a-5049-bc4e-ff70ec99b387"))(pin "12" (uuid "406d1f66-0022-547e-8db6-38583d524024"))(pin "13" (uuid "6ac1e0c1-d82b-565b-b32f-c126ba0db5f6"))(pin "14" (uuid "8be08ab8-8aaf-54ab-83c9-736cd61dbfce"))(pin "15" (uuid "f98d5498-b59a-520e-babc-250183190cb2"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "U16") (unit 1)))))(wire (pts (xy 36.83 46.99) (xy 31.75 46.99)) (stroke (width 0) (type default)) (uuid "e0185c09-9ea1-541f-8618-ae76ad0a47e7"))(label "CS6_REMOTE" (at 31.75 46.99 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "36e8fa86-ada5-5dc2-a43c-35a3f7cc544c"))(wire (pts (xy 36.83 49.53) (xy 31.75 49.53)) (stroke (width 0) (type default)) (uuid "dd092e2f-7383-57c0-a1d5-cbfa43b76c74"))(label "LINK_SCK" (at 31.75 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "76ac3db1-f1d5-591a-917e-a84670c5e57e"))(wire (pts (xy 36.83 52.07) (xy 31.75 52.07)) (stroke (width 0) (type default)) (uuid "29e9109d-0598-56d4-aa5b-dbcd0b4c2049"))(label "P6_SCK_DRV" (at 31.75 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ce406308-b487-5450-8713-ba1b6f302f79"))(wire (pts (xy 36.83 54.61) (xy 31.75 54.61)) (stroke (width 0) (type default)) (uuid "ec144c15-ad01-507a-885b-3894bfd607cc"))(label "CS6_REMOTE" (at 31.75 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9869141e-bd46-53c8-a28c-93338e534c4c"))(wire (pts (xy 36.83 57.15) (xy 31.75 57.15)) (stroke (width 0) (type default)) (uuid "41bc3e1a-a05e-5bfe-8469-a290aa87e872"))(label "LINK_MOSI" (at 31.75 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "257c3fbd-634c-54e5-b5f2-615da82e6804"))(wire (pts (xy 36.83 59.69) (xy 31.75 59.69)) (stroke (width 0) (type default)) (uuid "700e452d-f6eb-5170-8fd9-90d9779b78bf"))(label "P6_MOSI_DRV" (at 31.75 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a1428d8a-b932-5f49-95e3-67a79934de83"))(wire (pts (xy 36.83 62.23) (xy 31.75 62.23)) (stroke (width 0) (type default)) (uuid "28dd84bb-0864-5db2-9758-86879008b780"))(label "GND" (at 31.75 62.23 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d8e407bc-416d-5820-bfe2-7965da3caa65"))(wire (pts (xy 72.39 46.99) (xy 77.47 46.99)) (stroke (width 0) (type default)) (uuid "68a7b814-0fc1-501a-ae12-2b9ec8d45155"))(label "MISO_REMOTE_DRV" (at 77.47 46.99 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7468c0c4-5b31-5b3e-86e9-952c1a583d54"))(wire (pts (xy 72.39 49.53) (xy 77.47 49.53)) (stroke (width 0) (type default)) (uuid "afb6c39e-6b98-5ee4-a074-ee5cc3da4442"))(label "P6_MISO" (at 77.47 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "48e7bf17-01af-54ef-9ab9-515686c02fa0"))(wire (pts (xy 72.39 52.07) (xy 77.47 52.07)) (stroke (width 0) (type default)) (uuid "25a64db5-111d-5ffb-9b29-3567334a603a"))(label "CS6_REMOTE" (at 77.47 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "928cdba5-6614-5c59-b42b-b988850a14b9"))(wire (pts (xy 72.39 54.61) (xy 77.47 54.61)) (stroke (width 0) (type default)) (uuid "7d1a393a-8bb0-5cbf-a01d-64c7505c5b8f"))(label "P6_CS_DRV" (at 77.47 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "5e2e6c60-a849-58ed-93ad-5942bf9af9f4"))(wire (pts (xy 72.39 57.15) (xy 77.47 57.15)) (stroke (width 0) (type default)) (uuid "2dbb045a-f29b-5c4b-ad63-aacf01d105ea"))(label "CS6_REMOTE" (at 77.47 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ab69577f-2552-5352-9a91-b75d9e73a016"))(wire (pts (xy 72.39 59.69) (xy 77.47 59.69)) (stroke (width 0) (type default)) (uuid "85d6b744-1519-5694-8ef8-290dab89b0b8"))(label "GND" (at 77.47 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "84047499-5401-56be-83c0-4646ca071ead"))(wire (pts (xy 72.39 62.23) (xy 77.47 62.23)) (stroke (width 0) (type default)) (uuid "1dd51fc4-56f6-5b10-92d8-f264c5619449"))(label "+3V3" (at 77.47 62.23 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e879bb62-6328-5af9-a24a-7cd0c84a09be"))(wire (pts (xy 72.39 64.77) (xy 77.47 64.77)) (stroke (width 0) (type default)) (uuid "58dc99b0-273c-5223-80f1-ba06cb2e3b92"))(label "GND" (at 77.47 64.77 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d47f737f-23d4-5bfd-9c93-95da97c41dc7"))(symbol (lib_id "Connector_Generic:Conn_01x06") (at 139.7 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e78e3cd5-b301-50a9-8a29-22ca39eef1d9")(property "Reference" "J16" (at 139.7 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "P6 sensor / CS GPIO8" (at 139.7 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" (at 139.7 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "62320894-bba9-5bdc-a317-6bfa8ab538ca"))(pin "2" (uuid "a232b618-2a01-5584-b2d5-8d160031fd78"))(pin "3" (uuid "793d3476-99fe-51fb-a59c-cf60c852d7a9"))(pin "4" (uuid "438c67b6-2c45-5125-afba-2ee071997c7f"))(pin "5" (uuid "e815a8f6-3fb8-5ded-9a07-4d538180fc39"))(pin "6" (uuid "d30f50a3-e3f0-5597-894e-962981354766"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "J16") (unit 1)))))(wire (pts (xy 134.61999999999998 49.53) (xy 129.54 49.53)) (stroke (width 0) (type default)) (uuid "fe619ecc-a007-5730-8910-23aaf356cd28"))(label "GND" (at 129.54 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "519cd715-6776-558a-baa5-072a06e20f71"))(wire (pts (xy 134.61999999999998 52.07) (xy 129.54 52.07)) (stroke (width 0) (type default)) (uuid "cc556ea4-1944-5382-9e7e-8968136db020"))(label "+3V3" (at 129.54 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2073f3f9-ad2c-5d90-8169-b65192da9829"))(wire (pts (xy 134.61999999999998 54.61) (xy 129.54 54.61)) (stroke (width 0) (type default)) (uuid "92557a2c-626b-55ed-afeb-cf9f02ed27c8"))(label "P6_SCK" (at 129.54 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e343ef18-8e28-5e1d-9874-1e411b89034f"))(wire (pts (xy 134.61999999999998 57.15) (xy 129.54 57.15)) (stroke (width 0) (type default)) (uuid "1ca03381-714a-5cb1-bdca-d4a766d51f01"))(label "P6_MOSI" (at 129.54 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b1012a77-67f4-51ec-a57b-41f9b8ad94cb"))(wire (pts (xy 134.61999999999998 59.69) (xy 129.54 59.69)) (stroke (width 0) (type default)) (uuid "d40078ec-a238-5edf-b2fe-f61ef35aba37"))(label "P6_MISO" (at 129.54 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b21e4096-df13-5dfc-8d35-19af674e31aa"))(wire (pts (xy 134.61999999999998 62.23) (xy 129.54 62.23)) (stroke (width 0) (type default)) (uuid "bd73fbdd-7038-5ad2-bfbb-7553d218f1c0"))(label "P6_CS" (at 129.54 62.23 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b9b8725e-cdc3-596c-94b0-cb82b2354321"))(symbol (lib_id "Device:R") (at 224.79 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a194372e-9875-56e6-bdaa-5efe29a59e1c")(property "Reference" "R160" (at 224.79 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 224.79 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 224.79 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 224.79 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "cff624ed-131a-5c49-b8a5-431bd597d8e9"))(pin "2" (uuid "4176d307-a1b2-55f9-b0c9-cdac96394e40"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R160") (unit 1)))))(wire (pts (xy 224.79 50.8) (xy 224.79 45.72)) (stroke (width 0) (type default)) (uuid "454613e8-3a5a-515d-b865-756201827cc8"))(label "P6_SCK_DRV" (at 224.79 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "13df9279-9d6c-56d6-98d3-c796c5b04a46"))(wire (pts (xy 224.79 58.42) (xy 224.79 63.5)) (stroke (width 0) (type default)) (uuid "13ed1f1c-ec9d-5a32-81c3-1872f3c81631"))(label "P6_SCK" (at 224.79 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a9f1cfe1-38db-5243-aea2-03a85a8f8626"))(symbol (lib_id "Device:R") (at 309.88 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "70ea33a2-1068-5e75-933e-a33ec3875f07")(property "Reference" "R161" (at 309.88 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 309.88 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 309.88 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "0b4b5ed1-50af-50a1-ad39-e60025a73f3f"))(pin "2" (uuid "a594dc1d-8c32-57cc-8d93-780496da5c0d"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R161") (unit 1)))))(wire (pts (xy 309.88 50.8) (xy 309.88 45.72)) (stroke (width 0) (type default)) (uuid "e6d81e03-7cd2-5447-8057-b9915c192a34"))(label "P6_MOSI_DRV" (at 309.88 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "691ff1a4-1891-58f7-98ba-bd7f3db12f3c"))(wire (pts (xy 309.88 58.42) (xy 309.88 63.5)) (stroke (width 0) (type default)) (uuid "652020f3-56c0-597c-a2e7-e264358527e7"))(label "P6_MOSI" (at 309.88 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "29eb7467-7370-55c0-bc71-570a41359483"))(symbol (lib_id "Device:R") (at 394.97 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c4be0362-2816-5ba3-9043-434f68337275")(property "Reference" "R162" (at 394.97 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 394.97 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 394.97 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 394.97 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "e4a113f0-053a-588a-8723-e266ef94a6fc"))(pin "2" (uuid "4e9e35a2-81b6-5e81-b9d2-873b2458205f"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R162") (unit 1)))))(wire (pts (xy 394.97 50.8) (xy 394.97 45.72)) (stroke (width 0) (type default)) (uuid "d458a344-900d-5887-9dbf-da815b1d5ba1"))(label "P6_CS_DRV" (at 394.97 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f5738db1-9528-5d2c-aca4-beee0ac09793"))(wire (pts (xy 394.97 58.42) (xy 394.97 63.5)) (stroke (width 0) (type default)) (uuid "b51e5abb-486e-5568-b5f7-9d56bb9618d6"))(label "P6_CS" (at 394.97 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8cb9bedc-3b75-5bda-b3c8-36dafb225996"))(symbol (lib_id "Device:R") (at 480.06 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "cc443b99-5fc3-5ca4-b36e-7ae5700e700b")(property "Reference" "R163" (at 480.06 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 480.06 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 480.06 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 480.06 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "5c652412-6c9b-5cda-9b29-4864c65db0e2"))(pin "2" (uuid "e01618a6-3441-553c-8797-e69886c40a76"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R163") (unit 1)))))(wire (pts (xy 480.06 50.8) (xy 480.06 45.72)) (stroke (width 0) (type default)) (uuid "d9e56c03-ad12-5b4b-922c-cbb85d8e5c97"))(label "+3V3" (at 480.06 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ba88ab73-7c95-5e7e-a315-9ce4cef1cdca"))(wire (pts (xy 480.06 58.42) (xy 480.06 63.5)) (stroke (width 0) (type default)) (uuid "95dcd9a7-843b-5b1e-947e-c3acfbdf431f"))(label "CS6_REMOTE" (at 480.06 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9521b7a0-1bde-58d1-aedb-51d1cbb57049"))(symbol (lib_id "Device:R") (at 565.15 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "47946177-71a6-5ae2-a131-22eca6eca7ac")(property "Reference" "R164" (at 565.15 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 565.15 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 565.15 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 565.15 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "45c87e9e-6bd4-5a65-9dcb-eb9adc436fe7"))(pin "2" (uuid "bb3505d2-fcfa-543d-84ee-5a5c716a442f"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R164") (unit 1)))))(wire (pts (xy 565.15 50.8) (xy 565.15 45.72)) (stroke (width 0) (type default)) (uuid "a5b866ab-21df-56f1-866d-b852cd146b67"))(label "P6_SCK" (at 565.15 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "afbb3e58-89b6-57a5-846c-558e5e83138f"))(wire (pts (xy 565.15 58.42) (xy 565.15 63.5)) (stroke (width 0) (type default)) (uuid "62bd2a29-d211-5883-b934-b70382c45381"))(label "GND" (at 565.15 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d9093bba-2420-58ee-85ad-23d43834fb49"))(symbol (lib_id "Device:R") (at 650.24 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "92a74343-f9c6-5d46-9b0c-31874aa5a240")(property "Reference" "R165" (at 650.24 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 650.24 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 650.24 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 650.24 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "3805eef3-0edf-53c6-9590-957ddc8befd5"))(pin "2" (uuid "d6fe4ae0-b395-5e8a-bad1-4f9571a98a2c"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R165") (unit 1)))))(wire (pts (xy 650.24 50.8) (xy 650.24 45.72)) (stroke (width 0) (type default)) (uuid "4b5dbd70-bc96-54d4-8c36-c9cf3d1ac146"))(label "P6_MOSI" (at 650.24 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9f0b2ada-81db-5c51-8e5e-513e173f50a6"))(wire (pts (xy 650.24 58.42) (xy 650.24 63.5)) (stroke (width 0) (type default)) (uuid "4a2cea84-de30-59bb-8d36-be82311e69e7"))(label "GND" (at 650.24 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a280a3fd-005b-50f7-8930-a0fc453aee6e"))(symbol (lib_id "Device:R") (at 735.33 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "35330168-a070-5b22-aa54-7f9b52064476")(property "Reference" "R166" (at 735.33 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 735.33 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 735.33 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 735.33 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "662fa950-f4fe-5bb9-9aa9-64d9bb2f4b69"))(pin "2" (uuid "19431ab0-f21e-5f9c-8ac5-8c6f194dffbf"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R166") (unit 1)))))(wire (pts (xy 735.33 50.8) (xy 735.33 45.72)) (stroke (width 0) (type default)) (uuid "79c23407-533f-5613-a7c9-c05fec51d517"))(label "P6_MISO" (at 735.33 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2cc8bbf5-1c21-5472-a317-c054486e6109"))(wire (pts (xy 735.33 58.42) (xy 735.33 63.5)) (stroke (width 0) (type default)) (uuid "5cb9a1ef-7e7d-5a96-8d0e-2de46189e92f"))(label "GND" (at 735.33 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3e2a459f-d151-5614-9151-db183d244d72"))(symbol (lib_id "Device:R") (at 820.42 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a4ab7b97-2e80-58a1-a30a-cddbce151c9f")(property "Reference" "R167" (at 820.42 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 820.42 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 820.42 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 820.42 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "e306a620-a864-5b7c-a68d-54dcc675803c"))(pin "2" (uuid "d32dd35f-2ae2-598d-b5e3-e518efc6c456"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R167") (unit 1)))))(wire (pts (xy 820.42 50.8) (xy 820.42 45.72)) (stroke (width 0) (type default)) (uuid "d4c2692a-f05b-5aad-9b90-84ebc996f362"))(label "+3V3" (at 820.42 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "52dee5d6-710e-56a6-9e1c-c7a1f4f7cfb2"))(wire (pts (xy 820.42 58.42) (xy 820.42 63.5)) (stroke (width 0) (type default)) (uuid "b1ae4525-3607-5f73-8186-c587652034b2"))(label "P6_CS" (at 820.42 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "aca46951-81df-59d4-b7c0-f1b636adfc17"))(symbol (lib_id "Device:C") (at 905.51 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "025f01c2-279f-527e-91ac-e630f0d8ca39")(property "Reference" "C26" (at 905.51 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "100n X7R" (at 905.51 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 905.51 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 905.51 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "437d1067-54c2-53b5-9987-de6a1faf1405"))(pin "2" (uuid "d2c940e0-be76-5f11-93a1-8949fae27de2"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "C26") (unit 1)))))(wire (pts (xy 905.51 50.8) (xy 905.51 45.72)) (stroke (width 0) (type default)) (uuid "b127e36a-0824-5588-af0d-99009279d7c1"))(label "+3V3" (at 905.51 45.72 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9eb5a2bd-7531-582e-a35d-d9e49e03a418"))(wire (pts (xy 905.51 58.42) (xy 905.51 63.5)) (stroke (width 0) (type default)) (uuid "12b3101e-25d9-5ebb-b93d-bc241c4faae0"))(label "GND" (at 905.51 63.5 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "5d5ecc4c-b122-52e3-b092-bc90b1ac1344"))(symbol (lib_id "PoseDoll:LVC125_BQA") (at 990.6 54.61 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "45d2f0ca-8b98-57ce-9e27-cbcc7c4e14c2")(property "Reference" "U17" (at 990.6 21.61 0) (effects (font (size 1.27 1.27))))(property "Value" "SN74LVC125ABQAR" (at 990.6 24.15 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_DFN_QFN:DHWQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm" (at 990.6 26.689999999999998 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 990.6 29.23 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "d7f1b263-d522-57f0-998f-ac5c6b7396df"))(pin "2" (uuid "5daf7394-42bb-5a20-80c3-b85208bd845c"))(pin "3" (uuid "65c9e7b2-ca10-516b-ab73-dbdd9608ca94"))(pin "4" (uuid "f9eb0f41-e314-535c-9a81-0bd1e15b6d93"))(pin "5" (uuid "912b5bfb-cb22-505c-877d-854b7fc7e6f2"))(pin "6" (uuid "6dd75157-59d7-5f1c-85a5-b94a04630613"))(pin "7" (uuid "a6e90333-929d-586c-98ba-6f4b76ad4ad2"))(pin "8" (uuid "cfbcd362-4127-5815-9bd2-497b8b29d990"))(pin "9" (uuid "ec3f5561-d3e9-5a55-90ae-18bab52cfff9"))(pin "10" (uuid "47710f56-7ad1-52f5-aaa0-c6adf439445e"))(pin "11" (uuid "5f6a675c-06c8-5996-818f-182072a40f17"))(pin "12" (uuid "200bebdf-32b3-558b-9369-c97d6ccaa4c4"))(pin "13" (uuid "a86f3204-68d7-5118-a11c-fd25361c23b1"))(pin "14" (uuid "d9d77a82-6d75-521b-b4c6-aed41bd49c90"))(pin "15" (uuid "d625c004-f09c-5d96-93b1-f38b6c500a32"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "U17") (unit 1)))))(wire (pts (xy 972.82 46.99) (xy 967.74 46.99)) (stroke (width 0) (type default)) (uuid "c25cdf2d-5899-588f-96b9-7fae1980cd5d"))(label "CS7_REMOTE" (at 967.74 46.99 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7a0c0a12-f4cf-59cb-a5ef-900c8017f544"))(wire (pts (xy 972.82 49.53) (xy 967.74 49.53)) (stroke (width 0) (type default)) (uuid "9dc927b0-003c-5e8f-94d1-fd5382a7308a"))(label "LINK_SCK" (at 967.74 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f0b160f9-00c0-5a8b-a404-d6d90732166d"))(wire (pts (xy 972.82 52.07) (xy 967.74 52.07)) (stroke (width 0) (type default)) (uuid "14085abb-8173-5286-a413-c7ddf22b1d4e"))(label "P7_SCK_DRV" (at 967.74 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d6f05744-84ed-5ed9-9f12-d8162354af26"))(wire (pts (xy 972.82 54.61) (xy 967.74 54.61)) (stroke (width 0) (type default)) (uuid "f697cc0a-2729-58b6-a9c8-6d0ece3d0300"))(label "CS7_REMOTE" (at 967.74 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "dd81802a-108c-517b-8b36-39d6f7f7ce99"))(wire (pts (xy 972.82 57.15) (xy 967.74 57.15)) (stroke (width 0) (type default)) (uuid "b97c5636-08e3-54a5-b6e0-7f051e44eb06"))(label "LINK_MOSI" (at 967.74 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "6fd11caf-0ea9-58cf-9203-996a23829ab3"))(wire (pts (xy 972.82 59.69) (xy 967.74 59.69)) (stroke (width 0) (type default)) (uuid "0fd64fef-5e18-5406-8cc8-4f280bb7f829"))(label "P7_MOSI_DRV" (at 967.74 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "bc4ab396-95e5-5d9e-ad06-4cce59c2a500"))(wire (pts (xy 972.82 62.23) (xy 967.74 62.23)) (stroke (width 0) (type default)) (uuid "ecf245cd-bfe8-5f6c-b95f-79ed0a4a6d7d"))(label "GND" (at 967.74 62.23 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f3a81028-e408-5452-ae86-83a4dfb08c4e"))(wire (pts (xy 1008.38 46.99) (xy 1013.46 46.99)) (stroke (width 0) (type default)) (uuid "2a53ce60-7e7b-56f4-9f42-b8a34ae187f4"))(label "MISO_REMOTE_DRV" (at 1013.46 46.99 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b7ea4a17-4c0e-5ea2-a1d6-0d6f16226440"))(wire (pts (xy 1008.38 49.53) (xy 1013.46 49.53)) (stroke (width 0) (type default)) (uuid "4ab0555d-35fc-5df5-b410-a8ef88abc7ee"))(label "P7_MISO" (at 1013.46 49.53 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f6b03a0b-7b2d-5d91-912c-a7901399dca6"))(wire (pts (xy 1008.38 52.07) (xy 1013.46 52.07)) (stroke (width 0) (type default)) (uuid "0d1d75e2-0dc5-5e78-ac15-dbb78069f49d"))(label "CS7_REMOTE" (at 1013.46 52.07 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8d177a69-c6ff-5332-8001-7b2e91044b48"))(wire (pts (xy 1008.38 54.61) (xy 1013.46 54.61)) (stroke (width 0) (type default)) (uuid "70a27c60-558d-5372-8492-ae06c9c2c000"))(label "P7_CS_DRV" (at 1013.46 54.61 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ccd76e49-35be-58cf-9a71-1f554933b864"))(wire (pts (xy 1008.38 57.15) (xy 1013.46 57.15)) (stroke (width 0) (type default)) (uuid "97e4d1a2-efaf-5d93-a8e1-fa6cbf4ca973"))(label "CS7_REMOTE" (at 1013.46 57.15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8996d444-ad02-5c47-942f-23d71ae0e3aa"))(wire (pts (xy 1008.38 59.69) (xy 1013.46 59.69)) (stroke (width 0) (type default)) (uuid "046cd4a9-70c1-5331-a617-7fdf952bb7fe"))(label "GND" (at 1013.46 59.69 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "705b49c0-e073-5b5f-9c44-f82dac953bf2"))(wire (pts (xy 1008.38 62.23) (xy 1013.46 62.23)) (stroke (width 0) (type default)) (uuid "84c9856a-f161-5b35-a7ee-949b2e0760d0"))(label "+3V3" (at 1013.46 62.23 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cd2a41bd-05a6-519a-b1c3-729e6d095272"))(wire (pts (xy 1008.38 64.77) (xy 1013.46 64.77)) (stroke (width 0) (type default)) (uuid "1cde01fa-e7d3-5034-9294-08f460f36107"))(label "GND" (at 1013.46 64.77 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "03b997fd-405e-5a25-b518-eaf07df3c89a"))(symbol (lib_id "Connector_Generic:Conn_01x06") (at 54.61 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "81c02369-b4de-5979-aa20-e50b5dae5649")(property "Reference" "J17" (at 54.61 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "P7 sensor / CS GPIO9" (at 54.61 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" (at 54.61 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "277fbda1-ee06-5f8f-b718-be8c7f0e3728"))(pin "2" (uuid "51d41f5d-18ec-58c7-ba17-4943c257e03e"))(pin "3" (uuid "37490c86-4639-58fc-9bdb-9dd6b19bb72a"))(pin "4" (uuid "4bd40803-1427-511b-9f07-ddd3d15f95cf"))(pin "5" (uuid "4170be26-4584-59a4-9901-c289fd02522c"))(pin "6" (uuid "9bcdc6d6-1b37-5352-ba7b-9731c9a5df7a"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "J17") (unit 1)))))(wire (pts (xy 49.53 125.73) (xy 44.45 125.73)) (stroke (width 0) (type default)) (uuid "aaaf6234-ca3e-59ea-9335-547575e68463"))(label "GND" (at 44.45 125.73 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8c4f2a8e-38b0-5193-af90-04243fecd927"))(wire (pts (xy 49.53 128.27) (xy 44.45 128.27)) (stroke (width 0) (type default)) (uuid "33d4f83e-7e3a-5c64-b840-aa535c2ff115"))(label "+3V3" (at 44.45 128.27 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "855a5a55-ff8a-5e40-8c1f-efb746749605"))(wire (pts (xy 49.53 130.81) (xy 44.45 130.81)) (stroke (width 0) (type default)) (uuid "7777d85f-9110-57bb-a316-3a5eedd8a594"))(label "P7_SCK" (at 44.45 130.81 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "5717d88c-4d69-512f-980c-5b6ea53e30aa"))(wire (pts (xy 49.53 133.35) (xy 44.45 133.35)) (stroke (width 0) (type default)) (uuid "1fc8424e-92b4-5089-b6a3-3f5e35eaa8ba"))(label "P7_MOSI" (at 44.45 133.35 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3ca5bcc3-4572-5d03-bf51-aa1729f9b0f1"))(wire (pts (xy 49.53 135.89000000000001) (xy 44.45 135.89)) (stroke (width 0) (type default)) (uuid "57bfa6eb-3a5d-579e-84df-d97d1a7a67d1"))(label "P7_MISO" (at 44.45 135.89 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f4af690b-2ceb-5659-8e6c-3c834bb02e86"))(wire (pts (xy 49.53 138.43) (xy 44.45 138.43)) (stroke (width 0) (type default)) (uuid "8011bffb-0492-5595-abf6-da6be9952be4"))(label "P7_CS" (at 44.45 138.43 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "4327c8df-5e92-5028-ac28-a81d07d9963d"))(symbol (lib_id "Device:R") (at 139.7 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "40b6dc50-2e10-5860-add3-f164bae53297")(property "Reference" "R170" (at 139.7 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 139.7 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 139.7 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "5edb079f-bbbf-5b5e-88cf-522276610ef9"))(pin "2" (uuid "bca574e3-da34-58d0-b1d6-fa333e07136b"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R170") (unit 1)))))(wire (pts (xy 139.7 127.0) (xy 139.7 121.92)) (stroke (width 0) (type default)) (uuid "7bbc4bac-6b43-59c9-b979-e16d3690abb4"))(label "P7_SCK_DRV" (at 139.7 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cfb830f6-cd40-514b-aad8-31c780c39b24"))(wire (pts (xy 139.7 134.62) (xy 139.7 139.7)) (stroke (width 0) (type default)) (uuid "9bc976a3-0a2a-5b3e-8793-c8fcdca7f595"))(label "P7_SCK" (at 139.7 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2f7cd695-c86b-5435-a002-aca9eea5034e"))(symbol (lib_id "Device:R") (at 224.79 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8ad3738c-8592-53b8-91a5-b65a69190698")(property "Reference" "R171" (at 224.79 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 224.79 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 224.79 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 224.79 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a61bfb4b-70a8-5a65-b89b-b7af225c1419"))(pin "2" (uuid "e3470f9e-a980-5b28-a291-8a3b36834a9e"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R171") (unit 1)))))(wire (pts (xy 224.79 127.0) (xy 224.79 121.92)) (stroke (width 0) (type default)) (uuid "bf569fc3-f8ae-5967-9040-a03ff3b79361"))(label "P7_MOSI_DRV" (at 224.79 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "4d85f231-5ca8-5fb3-af40-f4c1db0c30b9"))(wire (pts (xy 224.79 134.62) (xy 224.79 139.7)) (stroke (width 0) (type default)) (uuid "bbe093d6-ba25-54fa-a163-87bacbd4509f"))(label "P7_MOSI" (at 224.79 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d7642f31-440e-5677-b862-bc194df4334b"))(symbol (lib_id "Device:R") (at 309.88 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "66ed2198-371f-52ac-a10b-cad5bda55db2")(property "Reference" "R172" (at 309.88 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 309.88 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 309.88 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "9e9e668f-0fd0-5f54-b7ff-c14bd2bd42c7"))(pin "2" (uuid "474da6bf-2602-5446-a03a-91f989f10fb2"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R172") (unit 1)))))(wire (pts (xy 309.88 127.0) (xy 309.88 121.92)) (stroke (width 0) (type default)) (uuid "ee4f4499-4612-5755-9af3-af1f066e1291"))(label "P7_CS_DRV" (at 309.88 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9590d223-b00b-536b-8c51-0157b3ef3ba4"))(wire (pts (xy 309.88 134.62) (xy 309.88 139.7)) (stroke (width 0) (type default)) (uuid "d6ef893d-0cdc-55e5-8d2f-f6ff6d38fe5a"))(label "P7_CS" (at 309.88 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "030df239-1967-533a-bda4-de44f98c3f61"))(symbol (lib_id "Device:R") (at 394.97 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "850e6cd0-4214-5f81-a7ec-dc082af245d7")(property "Reference" "R173" (at 394.97 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 394.97 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 394.97 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 394.97 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "7292d98e-a904-5675-a416-82cd66ca86ba"))(pin "2" (uuid "b02fedc2-04ea-558a-9ed0-6a763dd2bc73"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R173") (unit 1)))))(wire (pts (xy 394.97 127.0) (xy 394.97 121.92)) (stroke (width 0) (type default)) (uuid "12f06213-32ea-59c1-b0da-9b80bd231316"))(label "+3V3" (at 394.97 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1aa79a21-f685-545a-ab73-5820b9a4c2cd"))(wire (pts (xy 394.97 134.62) (xy 394.97 139.7)) (stroke (width 0) (type default)) (uuid "1bb2b94e-4e23-5ccb-8e72-68b309d16d2c"))(label "CS7_REMOTE" (at 394.97 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "01d308b2-c459-524c-aeaa-42e19525cbb7"))(symbol (lib_id "Device:R") (at 480.06 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "ea23bbd8-4366-5699-a90d-28135c542576")(property "Reference" "R174" (at 480.06 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 480.06 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 480.06 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 480.06 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "2d35ab23-c000-50f8-8396-16b2afa15ea9"))(pin "2" (uuid "f8edc899-c0c6-56a1-93b5-30841bbeab97"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R174") (unit 1)))))(wire (pts (xy 480.06 127.0) (xy 480.06 121.92)) (stroke (width 0) (type default)) (uuid "486cc06d-c66d-5d21-b54c-17a00ffa85fe"))(label "P7_SCK" (at 480.06 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "73b9621e-6f4e-5967-aa44-efd76627c191"))(wire (pts (xy 480.06 134.62) (xy 480.06 139.7)) (stroke (width 0) (type default)) (uuid "9505cb81-3d3b-52cf-98d5-4b8d299d2063"))(label "GND" (at 480.06 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "26b2f938-1f96-56c5-8217-0840f4fae530"))(symbol (lib_id "Device:R") (at 565.15 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "836993d9-019f-5a54-9e60-de6c40100408")(property "Reference" "R175" (at 565.15 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 565.15 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 565.15 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 565.15 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "4150dfd4-2267-5e95-be9e-6b64cb8eab40"))(pin "2" (uuid "b1373f7a-03d0-58c2-94ae-11cff965b389"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R175") (unit 1)))))(wire (pts (xy 565.15 127.0) (xy 565.15 121.92)) (stroke (width 0) (type default)) (uuid "45ac90af-2ac0-5016-ae84-ee4d167450e7"))(label "P7_MOSI" (at 565.15 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d104c8d1-762b-5a5c-ad7a-2df2760c5fda"))(wire (pts (xy 565.15 134.62) (xy 565.15 139.7)) (stroke (width 0) (type default)) (uuid "d0b13b70-e8ad-5abd-a22b-a99c4005f8a1"))(label "GND" (at 565.15 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "405d5c40-eee2-5a21-a9c0-34d3d41436c9"))(symbol (lib_id "Device:R") (at 650.24 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7f1293a5-36d5-5114-acb3-243f13f63bb2")(property "Reference" "R176" (at 650.24 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 650.24 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 650.24 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 650.24 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "cb1d9d19-ad43-5931-88d9-43bbf4f0ea07"))(pin "2" (uuid "f6c2aee9-fd14-53ad-8c52-d15db172677f"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R176") (unit 1)))))(wire (pts (xy 650.24 127.0) (xy 650.24 121.92)) (stroke (width 0) (type default)) (uuid "9530d311-98a3-574f-bf9f-2d0fb73b911c"))(label "P7_MISO" (at 650.24 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0b6da82a-2550-573d-9d6a-f7df65fac05a"))(wire (pts (xy 650.24 134.62) (xy 650.24 139.7)) (stroke (width 0) (type default)) (uuid "9257fee9-1c09-5dc3-9fe8-58d9a88f815e"))(label "GND" (at 650.24 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9b352090-d547-5197-9565-4a31adeeba01"))(symbol (lib_id "Device:R") (at 735.33 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5c77d18a-f29c-53e2-b8b6-33f2023242c0")(property "Reference" "R177" (at 735.33 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 735.33 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 735.33 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 735.33 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "f4306582-1ea7-5525-b4f8-f467ffa5fdeb"))(pin "2" (uuid "44c84eaa-d5a2-595f-bee9-b7fab53eade9"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R177") (unit 1)))))(wire (pts (xy 735.33 127.0) (xy 735.33 121.92)) (stroke (width 0) (type default)) (uuid "1fa9fdde-6833-51b6-9f66-bba5990fdef0"))(label "+3V3" (at 735.33 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0dab80ff-e4b0-5a72-b7b4-2b0e4d3f6097"))(wire (pts (xy 735.33 134.62) (xy 735.33 139.7)) (stroke (width 0) (type default)) (uuid "bd876549-e269-51f6-85c1-08edbf5f17b5"))(label "P7_CS" (at 735.33 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "bc72f635-c0f9-5a07-ba6c-456a037c75c8"))(symbol (lib_id "Device:C") (at 820.42 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5ce7423b-3739-5398-9241-283bb7c2d7ee")(property "Reference" "C27" (at 820.42 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "100n X7R" (at 820.42 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 820.42 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 820.42 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "637d8969-8b50-5d7f-98de-aef127d01e9c"))(pin "2" (uuid "ecc41d77-fabd-5624-85a2-edf484a80ba8"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "C27") (unit 1)))))(wire (pts (xy 820.42 127.0) (xy 820.42 121.92)) (stroke (width 0) (type default)) (uuid "df4fbfe8-1c41-50cd-a6c0-8b360acfb8c2"))(label "+3V3" (at 820.42 121.92 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "aed1145c-bb4b-51d1-8b66-1b8c9b9dd1eb"))(wire (pts (xy 820.42 134.62) (xy 820.42 139.7)) (stroke (width 0) (type default)) (uuid "adfc3fd7-86d3-50ad-9057-7162ab338d42"))(label "GND" (at 820.42 139.7 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2e23ab40-5f39-50ec-b52d-49f4d59fbc0a"))(symbol (lib_id "PoseDoll:LVC125_BQA") (at 905.51 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a42f7e53-e0ab-5b9e-94e1-2eed6f0111d0")(property "Reference" "U18" (at 905.51 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "SN74LVC125ABQAR" (at 905.51 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_DFN_QFN:DHWQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm" (at 905.51 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 905.51 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "af3aa3b3-c87b-59cd-b522-9c2ad6a4942a"))(pin "2" (uuid "e6b94377-1536-5cc5-8dce-5128c107bff9"))(pin "3" (uuid "f3aa287e-cffb-5b40-b367-e25b8726426b"))(pin "4" (uuid "517e39a6-e049-5b40-a544-8a84a916836c"))(pin "5" (uuid "7dbf7f3c-cfbc-57c3-9f4e-8239fee33911"))(pin "6" (uuid "8ffa5cf3-0233-5e3b-a538-01096b941d65"))(pin "7" (uuid "61f25741-7653-577e-bf1d-0e37ebc0d01a"))(pin "8" (uuid "f6bf6443-da76-579a-b74c-c990c2fa63de"))(pin "9" (uuid "e7df510e-1e0b-5def-9ebd-d51d1b848751"))(pin "10" (uuid "2ed3b787-9afa-5e81-86f1-0223cb5467e8"))(pin "11" (uuid "f13bd3ae-40b9-50f3-ad36-b62a73d71e00"))(pin "12" (uuid "e63bb6db-e2f4-51eb-b56d-ab6a8faa3e68"))(pin "13" (uuid "98d6bc57-7c01-572c-95d8-fce8577e066b"))(pin "14" (uuid "bacaafa0-9cdb-53c6-9da3-3c93af49e82d"))(pin "15" (uuid "70b50d5b-e417-59aa-9221-7f6e192f8546"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "U18") (unit 1)))))(wire (pts (xy 887.73 123.19) (xy 882.65 123.19)) (stroke (width 0) (type default)) (uuid "165fe67b-6ba3-5326-b3d7-9b9f2c913e5a"))(label "CS8_REMOTE" (at 882.65 123.19 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "59c23e63-d310-5a84-8687-1abeb66e0d35"))(wire (pts (xy 887.73 125.73) (xy 882.65 125.73)) (stroke (width 0) (type default)) (uuid "3137f7aa-8903-5624-9057-4ba62400372c"))(label "LINK_SCK" (at 882.65 125.73 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9ddb445e-b597-5603-b6f3-6d1601e01a2b"))(wire (pts (xy 887.73 128.27) (xy 882.65 128.27)) (stroke (width 0) (type default)) (uuid "36555223-15d7-5a52-bf6b-4c75c62736c5"))(label "P8_SCK_DRV" (at 882.65 128.27 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "46026e2c-a11b-5751-a5b3-3ee2c8a9752d"))(wire (pts (xy 887.73 130.81) (xy 882.65 130.81)) (stroke (width 0) (type default)) (uuid "42c97bdb-c597-5e6a-bd8f-9f16083a8ec7"))(label "CS8_REMOTE" (at 882.65 130.81 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2e77d379-a459-5c76-80ea-de685d41e5d9"))(wire (pts (xy 887.73 133.35) (xy 882.65 133.35)) (stroke (width 0) (type default)) (uuid "b28177e7-30ae-5b54-837a-5676ebd666f5"))(label "LINK_MOSI" (at 882.65 133.35 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "4bc485bf-a5c0-56f9-9df4-1915a18dc4f3"))(wire (pts (xy 887.73 135.89000000000001) (xy 882.65 135.89)) (stroke (width 0) (type default)) (uuid "c466533e-3407-57d6-b396-ba2441d76763"))(label "P8_MOSI_DRV" (at 882.65 135.89 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e1a78334-10cf-5361-8fb8-dc37fa982009"))(wire (pts (xy 887.73 138.43) (xy 882.65 138.43)) (stroke (width 0) (type default)) (uuid "0cc40155-c30a-5eec-ae3c-6b54942fa520"))(label "GND" (at 882.65 138.43 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "aec49c5c-1675-55ef-9f5a-326b0f2edead"))(wire (pts (xy 923.29 123.19) (xy 928.37 123.19)) (stroke (width 0) (type default)) (uuid "2bc98b6c-30ef-5087-be05-d964cc852a60"))(label "MISO_REMOTE_DRV" (at 928.37 123.19 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b2e3d7f3-68e5-55d4-a2a7-b09836cdb4bd"))(wire (pts (xy 923.29 125.73) (xy 928.37 125.73)) (stroke (width 0) (type default)) (uuid "69a10e5f-8e96-5c7d-a709-3a3e863f1ee5"))(label "P8_MISO" (at 928.37 125.73 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ae4d465f-6edc-58ce-ab05-8088c7eae931"))(wire (pts (xy 923.29 128.27) (xy 928.37 128.27)) (stroke (width 0) (type default)) (uuid "324e4d17-1e7f-57ea-b500-6003027f525c"))(label "CS8_REMOTE" (at 928.37 128.27 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "548c60e8-8fb2-519a-bfa4-ccad34c4491a"))(wire (pts (xy 923.29 130.81) (xy 928.37 130.81)) (stroke (width 0) (type default)) (uuid "5bd37b61-132c-53f8-9a41-222ecaed5a59"))(label "P8_CS_DRV" (at 928.37 130.81 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "5003bb3d-7728-5ab6-b535-c43f0838a7f4"))(wire (pts (xy 923.29 133.35) (xy 928.37 133.35)) (stroke (width 0) (type default)) (uuid "71dc7bb9-6c05-5ec8-9c0c-a1aacc857b1a"))(label "CS8_REMOTE" (at 928.37 133.35 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1df25300-b985-5d60-9c7c-a9166a17299b"))(wire (pts (xy 923.29 135.89000000000001) (xy 928.37 135.89)) (stroke (width 0) (type default)) (uuid "3175c475-6502-5755-b24f-6750e4a0b040"))(label "GND" (at 928.37 135.89 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1fd71f6d-bce8-5344-af96-c4bcfece9d28"))(wire (pts (xy 923.29 138.43) (xy 928.37 138.43)) (stroke (width 0) (type default)) (uuid "3e5e143c-bd4e-5c91-b4f0-4d820d5d0bea"))(label "+3V3" (at 928.37 138.43 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2b380aa4-c56c-5d87-b3b1-5d0de11fa0b9"))(wire (pts (xy 923.29 140.97) (xy 928.37 140.97)) (stroke (width 0) (type default)) (uuid "e5ea5a14-c097-5552-869e-fc034413acf8"))(label "GND" (at 928.37 140.97 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b49afb57-9456-5422-9ad7-3613561fbc21"))(symbol (lib_id "Connector_Generic:Conn_01x06") (at 990.6 130.81 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e49f3425-5225-5357-b61b-e5000f1c95d2")(property "Reference" "J18" (at 990.6 97.81 0) (effects (font (size 1.27 1.27))))(property "Value" "P8 sensor / CS GPIO10" (at 990.6 100.35000000000001 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" (at 990.6 102.89 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 990.6 105.43 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "0e7b3a55-9516-5eba-8cd5-a1ee11ada1c2"))(pin "2" (uuid "e39a5e0f-c9cf-579f-a2b9-d330a7f68f75"))(pin "3" (uuid "0ea58bfd-147a-523b-b38c-adf442b6bd7e"))(pin "4" (uuid "5e9ca0b0-7040-541c-b9bb-07e84192478f"))(pin "5" (uuid "a4a9d4ae-d4c4-5a7c-9b98-de21efbae09c"))(pin "6" (uuid "e1e3abcb-0bc3-5d6d-82a6-e6352ec20747"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "J18") (unit 1)))))(wire (pts (xy 985.52 125.73) (xy 980.44 125.73)) (stroke (width 0) (type default)) (uuid "816d7be1-a49d-5baa-ba82-6bef32de1f53"))(label "GND" (at 980.44 125.73 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1e418fc8-9960-5c2c-983a-44aa9cd0d482"))(wire (pts (xy 985.52 128.27) (xy 980.44 128.27)) (stroke (width 0) (type default)) (uuid "c1b88458-c510-53ad-9ed3-6b0073a4c43f"))(label "+3V3" (at 980.44 128.27 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e8de4a4a-0f0d-52df-970e-122feebadb6f"))(wire (pts (xy 985.52 130.81) (xy 980.44 130.81)) (stroke (width 0) (type default)) (uuid "0b4762de-06d5-500f-ac76-25cfdef5e0a2"))(label "P8_SCK" (at 980.44 130.81 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "da7bdc52-a512-5643-bb93-d61916a470e0"))(wire (pts (xy 985.52 133.35) (xy 980.44 133.35)) (stroke (width 0) (type default)) (uuid "9d575fe8-ed09-572a-9fbc-0d07451c9a31"))(label "P8_MOSI" (at 980.44 133.35 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "c2d4fc95-60de-5a0b-9e1c-47850bef91b1"))(wire (pts (xy 985.52 135.89000000000001) (xy 980.44 135.89)) (stroke (width 0) (type default)) (uuid "118a9c49-35af-5411-a728-ee842e4dbef2"))(label "P8_MISO" (at 980.44 135.89 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e422cabf-b5a8-58e6-a121-03e7546a028c"))(wire (pts (xy 985.52 138.43) (xy 980.44 138.43)) (stroke (width 0) (type default)) (uuid "0cee14af-887e-54b0-9aea-13f3d696c392"))(label "P8_CS" (at 980.44 138.43 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2ab3420a-dabf-592c-9c09-fc491d523736"))(symbol (lib_id "Device:R") (at 54.61 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b4334abb-32f3-570e-8abe-e2079fbd6782")(property "Reference" "R180" (at 54.61 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 54.61 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 54.61 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "7602f759-a263-523d-bea9-b69f838f894c"))(pin "2" (uuid "3e6a1ef9-1f8c-557c-b35f-b52bdaf93df1"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R180") (unit 1)))))(wire (pts (xy 54.61 203.2) (xy 54.61 198.12)) (stroke (width 0) (type default)) (uuid "34938b63-2c08-5ab0-ae3a-1049c66d5dc1"))(label "P8_SCK_DRV" (at 54.61 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "c62604a1-9408-58ce-a4f6-8a422a7c7116"))(wire (pts (xy 54.61 210.82) (xy 54.61 215.9)) (stroke (width 0) (type default)) (uuid "7b7c3e0c-55af-5701-afee-aa5c50bb5956"))(label "P8_SCK" (at 54.61 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2a062c33-1498-54a0-a1d3-69eee8fe6ea4"))(symbol (lib_id "Device:R") (at 139.7 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d17a7a3d-32ea-5759-883d-d03456c599ae")(property "Reference" "R181" (at 139.7 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 139.7 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 139.7 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "b1eed46f-2bea-5e93-ad19-13ba2d27c6b3"))(pin "2" (uuid "668f4fee-ac25-55b8-a6f9-bcaa70420190"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R181") (unit 1)))))(wire (pts (xy 139.7 203.2) (xy 139.7 198.12)) (stroke (width 0) (type default)) (uuid "52899f14-9076-529e-971e-c29cff3c1b44"))(label "P8_MOSI_DRV" (at 139.7 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "47fd5cfc-64c9-5d92-86e5-1cf855220aec"))(wire (pts (xy 139.7 210.82) (xy 139.7 215.9)) (stroke (width 0) (type default)) (uuid "72cfbdef-4099-51f0-9f69-d685d9de0a40"))(label "P8_MOSI" (at 139.7 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cb0e7ab3-5e0f-5c2b-893f-9ff4bc8b4397"))(symbol (lib_id "Device:R") (at 224.79 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "cd984f52-31cb-5e36-ad3b-977d66ff7c40")(property "Reference" "R182" (at 224.79 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 224.79 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 224.79 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 224.79 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "c07328e4-e3f5-569b-8e21-01a9b5b20d6b"))(pin "2" (uuid "9be812a4-2c20-518a-82a2-db4286b2bb99"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R182") (unit 1)))))(wire (pts (xy 224.79 203.2) (xy 224.79 198.12)) (stroke (width 0) (type default)) (uuid "24382dfd-26c4-51e2-97b6-3e38302a936f"))(label "P8_CS_DRV" (at 224.79 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "6ff94cd4-e9a5-50a3-b2c9-0b9efc7bdc9b"))(wire (pts (xy 224.79 210.82) (xy 224.79 215.9)) (stroke (width 0) (type default)) (uuid "f0488bdd-e5b1-5eb0-b3e1-77b59546aba9"))(label "P8_CS" (at 224.79 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9beebe4b-b502-58b8-8f68-57cd6c98abec"))(symbol (lib_id "Device:R") (at 309.88 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "6c44bf6e-e23c-5942-9f50-df3bf35706df")(property "Reference" "R183" (at 309.88 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 309.88 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 309.88 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "a3e42cfb-5003-57ae-9232-8d2bd06811f1"))(pin "2" (uuid "99d3a877-dc2e-5937-8aa1-5b111055f8e5"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R183") (unit 1)))))(wire (pts (xy 309.88 203.2) (xy 309.88 198.12)) (stroke (width 0) (type default)) (uuid "ab76dbcd-f21a-549c-be81-9487876754e2"))(label "+3V3" (at 309.88 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "eb585003-91f6-5857-82dc-11fff2e75710"))(wire (pts (xy 309.88 210.82) (xy 309.88 215.9)) (stroke (width 0) (type default)) (uuid "829cb5c2-2bba-5fe3-a8f8-8a5e71b3b646"))(label "CS8_REMOTE" (at 309.88 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "48e7d9f8-e91b-5a20-ae1e-b724eddef93a"))(symbol (lib_id "Device:R") (at 394.97 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a7a373dc-5034-5e7f-ac3b-e2e972bb5cc6")(property "Reference" "R184" (at 394.97 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 394.97 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 394.97 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 394.97 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "c7f9727d-a801-5be8-816a-222975d1452a"))(pin "2" (uuid "f6b9f0a9-b800-51fe-85a0-499c0cfaa913"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R184") (unit 1)))))(wire (pts (xy 394.97 203.2) (xy 394.97 198.12)) (stroke (width 0) (type default)) (uuid "2bf681b8-1a22-5b68-8f94-84a79a3939f4"))(label "P8_SCK" (at 394.97 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0d5fbf22-1e52-5b81-83bf-c16ca053d000"))(wire (pts (xy 394.97 210.82) (xy 394.97 215.9)) (stroke (width 0) (type default)) (uuid "36c4aae0-8245-584a-a2b0-ffedf4143191"))(label "GND" (at 394.97 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7f87fb37-1872-5abb-a960-adb551157b8a"))(symbol (lib_id "Device:R") (at 480.06 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a92467ba-a62f-52a7-91c5-d0b9688f74c3")(property "Reference" "R185" (at 480.06 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 480.06 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 480.06 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 480.06 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "aa850a94-0996-5205-be6c-e6f77afea3fd"))(pin "2" (uuid "00408ff2-2800-543e-bf06-4fb153a2cf5e"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R185") (unit 1)))))(wire (pts (xy 480.06 203.2) (xy 480.06 198.12)) (stroke (width 0) (type default)) (uuid "2d289bb9-9131-5e1b-90c2-9db2e83571f3"))(label "P8_MOSI" (at 480.06 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "6ca5dc7e-3581-5ac8-b945-166660b7e4db"))(wire (pts (xy 480.06 210.82) (xy 480.06 215.9)) (stroke (width 0) (type default)) (uuid "da4d2fb1-55c1-53c4-a4c2-30a0b0c2f9a9"))(label "GND" (at 480.06 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "18bb6f46-e751-5995-aec6-fadd00f2f78d"))(symbol (lib_id "Device:R") (at 565.15 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "bcb183d0-657c-5006-ba40-5d0142b7b5b5")(property "Reference" "R186" (at 565.15 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 565.15 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 565.15 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 565.15 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "daf05f55-383e-5c46-a416-817e67dae490"))(pin "2" (uuid "35f2dabc-f307-5907-a9b8-2be8596d0efc"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R186") (unit 1)))))(wire (pts (xy 565.15 203.2) (xy 565.15 198.12)) (stroke (width 0) (type default)) (uuid "f3e21c23-112d-58c0-8c01-7f89da24cd24"))(label "P8_MISO" (at 565.15 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "27b8e9f4-23a1-515f-81fd-23590f212e62"))(wire (pts (xy 565.15 210.82) (xy 565.15 215.9)) (stroke (width 0) (type default)) (uuid "dbbb76c9-ea3b-5144-a48c-20e812fff1b2"))(label "GND" (at 565.15 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2660d241-a851-5dcf-bd06-0565f976ffe7"))(symbol (lib_id "Device:R") (at 650.24 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "08ad389c-354a-56ea-a25b-28b7b049c06d")(property "Reference" "R187" (at 650.24 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 650.24 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 650.24 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 650.24 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "76133190-4503-57d9-adcc-c3203ccf3faa"))(pin "2" (uuid "428e7ec5-61ef-5c56-a6a2-f178c91d0fd6"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R187") (unit 1)))))(wire (pts (xy 650.24 203.2) (xy 650.24 198.12)) (stroke (width 0) (type default)) (uuid "d28cf6f0-0bcd-5627-8cfe-017265af7b9c"))(label "+3V3" (at 650.24 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "739077ae-90b5-507f-9023-6506b64c9625"))(wire (pts (xy 650.24 210.82) (xy 650.24 215.9)) (stroke (width 0) (type default)) (uuid "041028df-095e-5dd8-add9-d4343e3c33fd"))(label "P8_CS" (at 650.24 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1cf3e520-f9b1-5d65-a933-7fa6bb88c102"))(symbol (lib_id "Device:C") (at 735.33 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5d5d6653-24ac-5bb4-8882-0103b258bd8a")(property "Reference" "C28" (at 735.33 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100n X7R" (at 735.33 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 735.33 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 735.33 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "632d877a-08bf-59af-a3b9-a58ecdd9c507"))(pin "2" (uuid "6a74d6d9-49c1-5acc-9ea6-54c1445b78f0"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "C28") (unit 1)))))(wire (pts (xy 735.33 203.2) (xy 735.33 198.12)) (stroke (width 0) (type default)) (uuid "e068de3c-a245-5620-a3d7-77e000be6975"))(label "+3V3" (at 735.33 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a3f6e0f8-16e0-5156-831e-229e94f54ce5"))(wire (pts (xy 735.33 210.82) (xy 735.33 215.9)) (stroke (width 0) (type default)) (uuid "830bff40-3815-5563-8524-a53c3dd996df"))(label "GND" (at 735.33 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "edd6f84a-fb4a-5174-8665-e02885b141dc"))(symbol (lib_id "PoseDoll:LVC125_BQA") (at 820.42 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "8db74ca9-7170-5195-9560-d1030c994838")(property "Reference" "U19" (at 820.42 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "SN74LVC125ABQAR" (at 820.42 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Package_DFN_QFN:DHWQFN-14-1EP_2.5x3mm_P0.5mm_EP1x1.5mm" (at 820.42 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 820.42 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "1e3f394f-77da-5bbb-9b05-8a1eee318197"))(pin "2" (uuid "8ce401e5-5454-5d56-ab3b-4cc63a2c24ad"))(pin "3" (uuid "c351e4c6-16b3-51d4-9538-f7b6c723f32b"))(pin "4" (uuid "1f4cec1a-e389-5353-bccd-f0ddeae6bebc"))(pin "5" (uuid "aef52e08-c0f8-552f-840a-9b8b7d2ed894"))(pin "6" (uuid "e8600372-b80c-58ca-8673-86af2a47086b"))(pin "7" (uuid "5fa0ab46-84f7-5f4e-b8e7-8486302e79b5"))(pin "8" (uuid "8c3e285b-4437-5724-95a1-5180ecc2ed80"))(pin "9" (uuid "7449296f-6bc1-5488-a5a2-dd0ec7d7d6d5"))(pin "10" (uuid "7e548417-b831-5ffc-b47b-6fef7d6a9ed1"))(pin "11" (uuid "29a28a58-3560-56df-98a2-42883e142627"))(pin "12" (uuid "e8b4a89d-ad8b-511d-8422-0ce38ca1deb3"))(pin "13" (uuid "498c7271-55e1-589c-913d-e390787efabb"))(pin "14" (uuid "cf84509f-4e04-53c0-94f8-4b15d778d8a5"))(pin "15" (uuid "cefb496f-6176-5be8-88be-d2854828bdf6"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "U19") (unit 1)))))(wire (pts (xy 802.64 199.39) (xy 797.56 199.39)) (stroke (width 0) (type default)) (uuid "7db0509e-b5d0-59ed-8cfe-e3f421d4f5bf"))(label "CS9_REMOTE" (at 797.56 199.39 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "36412013-5a58-5f79-b333-cd1fff746825"))(wire (pts (xy 802.64 201.92999999999998) (xy 797.56 201.93)) (stroke (width 0) (type default)) (uuid "2ba0a004-3bb0-5019-89be-84d1bd059fdd"))(label "LINK_SCK" (at 797.56 201.93 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "75ef786a-eaad-5c1f-9f7e-333f6f0b3c9d"))(wire (pts (xy 802.64 204.47) (xy 797.56 204.47)) (stroke (width 0) (type default)) (uuid "c8721cc1-d6ba-52a4-b470-8425e4a10f1d"))(label "P9_SCK_DRV" (at 797.56 204.47 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cab8d500-88a0-5311-abdd-ec512d8e33eb"))(wire (pts (xy 802.64 207.01) (xy 797.56 207.01)) (stroke (width 0) (type default)) (uuid "94e00eeb-35c6-568f-823f-538c767c1c59"))(label "CS9_REMOTE" (at 797.56 207.01 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ac6b174a-939b-5418-a49d-b5884327671c"))(wire (pts (xy 802.64 209.54999999999998) (xy 797.56 209.55)) (stroke (width 0) (type default)) (uuid "607bcead-58fc-5ba3-a357-797be825fe93"))(label "LINK_MOSI" (at 797.56 209.55 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "00aedef3-9f0a-514d-84fe-8ad1410bf551"))(wire (pts (xy 802.64 212.09) (xy 797.56 212.09)) (stroke (width 0) (type default)) (uuid "a116858a-fe14-53fe-a5d4-647f245980f2"))(label "P9_MOSI_DRV" (at 797.56 212.09 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b094bd4c-413e-532d-aa7e-42cfc54d2d76"))(wire (pts (xy 802.64 214.63) (xy 797.56 214.63)) (stroke (width 0) (type default)) (uuid "34c07f62-2aa6-5db0-9a4f-1aec5403583f"))(label "GND" (at 797.56 214.63 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cf70dc6c-62b5-53cc-ba5d-e6908f3191f7"))(wire (pts (xy 838.1999999999999 199.39) (xy 843.28 199.39)) (stroke (width 0) (type default)) (uuid "f0f2393e-e8d6-5ea8-972b-0a2c7624a68a"))(label "MISO_REMOTE_DRV" (at 843.28 199.39 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "014e1486-3b8a-5992-a619-7dea71dcc613"))(wire (pts (xy 838.1999999999999 201.92999999999998) (xy 843.28 201.93)) (stroke (width 0) (type default)) (uuid "5dd7e607-2522-5f93-a7da-b2d9f02386f5"))(label "P9_MISO" (at 843.28 201.93 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "21731f73-2c27-52ef-b418-3ba69abfa396"))(wire (pts (xy 838.1999999999999 204.47) (xy 843.28 204.47)) (stroke (width 0) (type default)) (uuid "a4d1c9be-7d80-5fdc-8b66-5dc8504f1881"))(label "CS9_REMOTE" (at 843.28 204.47 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "db134379-2282-5a07-90fa-5de3d706384b"))(wire (pts (xy 838.1999999999999 207.01) (xy 843.28 207.01)) (stroke (width 0) (type default)) (uuid "afc2883c-e502-568d-9083-7391be366727"))(label "P9_CS_DRV" (at 843.28 207.01 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a2ab3833-e257-5d13-8367-6efad2991ac4"))(wire (pts (xy 838.1999999999999 209.54999999999998) (xy 843.28 209.55)) (stroke (width 0) (type default)) (uuid "0d23f681-b2ac-52f0-a7b5-1262055c5803"))(label "CS9_REMOTE" (at 843.28 209.55 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "039d5ee0-8cb2-5d8a-8dcd-9f691e132f75"))(wire (pts (xy 838.1999999999999 212.09) (xy 843.28 212.09)) (stroke (width 0) (type default)) (uuid "6908e7c6-77d5-5fd4-9860-ff9df74feaa9"))(label "GND" (at 843.28 212.09 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "3a28bde4-ac6f-58b8-b0bf-374c5f44cd95"))(wire (pts (xy 838.1999999999999 214.63) (xy 843.28 214.63)) (stroke (width 0) (type default)) (uuid "77a18702-8c7d-5b2f-aab7-9b71d61dff52"))(label "+3V3" (at 843.28 214.63 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d2856f6a-df0f-55a8-9484-568a3333e0e3"))(wire (pts (xy 838.1999999999999 217.17) (xy 843.28 217.17)) (stroke (width 0) (type default)) (uuid "6944f6e4-c823-55ee-80d6-2929aeb5f868"))(label "GND" (at 843.28 217.17 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "17e74c84-8ce9-5bd9-8611-9711ee1449d4"))(symbol (lib_id "Connector_Generic:Conn_01x06") (at 905.51 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "b8be222b-9ddb-5faf-be52-b028f73ac449")(property "Reference" "J19" (at 905.51 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "P9 sensor / CS GPIO14" (at 905.51 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical" (at 905.51 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 905.51 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "83970ef4-70c2-5ba1-b367-ae301da10805"))(pin "2" (uuid "b62d8b7b-f38a-5c69-8567-7741882da7a6"))(pin "3" (uuid "3029a8f3-3020-57f5-b714-67be183be315"))(pin "4" (uuid "b488304f-3fc9-5dd7-b45d-a7d0663e29a3"))(pin "5" (uuid "9864e3db-26ca-548e-8319-c589b246fb67"))(pin "6" (uuid "de0db808-ddbd-5400-8995-c2a633d38388"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "J19") (unit 1)))))(wire (pts (xy 900.43 201.92999999999998) (xy 895.35 201.93)) (stroke (width 0) (type default)) (uuid "528ae276-78e0-55ec-9c97-bffcea3e7f88"))(label "GND" (at 895.35 201.93 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8a5e77ff-47df-5edf-ba81-37f9176c4bc4"))(wire (pts (xy 900.43 204.47) (xy 895.35 204.47)) (stroke (width 0) (type default)) (uuid "a364d0b2-4672-5078-8cd4-5bd72856fc77"))(label "+3V3" (at 895.35 204.47 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "18e25db6-3afe-5232-9d65-f4a4b9751654"))(wire (pts (xy 900.43 207.01) (xy 895.35 207.01)) (stroke (width 0) (type default)) (uuid "9418d612-fe32-5609-840e-17f8c4994944"))(label "P9_SCK" (at 895.35 207.01 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "cfcc842e-0db6-597d-b0bd-aed250283372"))(wire (pts (xy 900.43 209.54999999999998) (xy 895.35 209.55)) (stroke (width 0) (type default)) (uuid "ba8d1ed3-cae4-5e8c-8f8c-5e953c5d136d"))(label "P9_MOSI" (at 895.35 209.55 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f95a2c97-74d3-5480-b480-4431cb0b4def"))(wire (pts (xy 900.43 212.09) (xy 895.35 212.09)) (stroke (width 0) (type default)) (uuid "2957cee3-ca53-500a-9394-8b127852a76d"))(label "P9_MISO" (at 895.35 212.09 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b58bef47-2b1a-578f-8f37-b8700fb28339"))(wire (pts (xy 900.43 214.63) (xy 895.35 214.63)) (stroke (width 0) (type default)) (uuid "12b992c8-5af8-5955-b85c-ce700f1bd75a"))(label "P9_CS" (at 895.35 214.63 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "5bd86c86-174c-5366-b76a-b6910213986b"))(symbol (lib_id "Device:R") (at 990.6 207.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "fc22c5bb-f649-5331-a5d4-107c3621f4eb")(property "Reference" "R190" (at 990.6 174.01 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 990.6 176.54999999999998 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 990.6 179.09 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 990.6 181.63 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "f9e8579d-56fb-5c6a-9194-7159faca675f"))(pin "2" (uuid "27cdc8e6-4221-546b-a9c8-b9fdcdd943c3"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R190") (unit 1)))))(wire (pts (xy 990.6 203.2) (xy 990.6 198.12)) (stroke (width 0) (type default)) (uuid "8a86783e-22a1-52c8-b283-e470d209cf0d"))(label "P9_SCK_DRV" (at 990.6 198.12 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "c530ddcf-49eb-566d-a58c-3e7a682111b6"))(wire (pts (xy 990.6 210.82) (xy 990.6 215.9)) (stroke (width 0) (type default)) (uuid "80b67813-e135-5eb4-aa94-1aa8150281b3"))(label "P9_SCK" (at 990.6 215.9 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0bea3f5f-8fca-562d-8c1b-e8f2503e7beb"))(symbol (lib_id "Device:R") (at 54.61 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c86a5661-1206-5720-991f-9eb2403cf42b")(property "Reference" "R191" (at 54.61 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 54.61 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 54.61 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "43a82709-94ae-52a8-8075-1e5b512da927"))(pin "2" (uuid "4c22ac7e-3df3-5a83-a91d-e52b6dadd9ee"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R191") (unit 1)))))(wire (pts (xy 54.61 279.4) (xy 54.61 274.32)) (stroke (width 0) (type default)) (uuid "75ff4dd6-c730-513e-bfe9-aaa26ab42be9"))(label "P9_MOSI_DRV" (at 54.61 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ecab10c9-27ae-50e8-b62a-90bfcf7da425"))(wire (pts (xy 54.61 287.02) (xy 54.61 292.1)) (stroke (width 0) (type default)) (uuid "c1dfba83-6222-596f-8c3b-c17a02471604"))(label "P9_MOSI" (at 54.61 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8189e52f-1122-5d48-92f4-2a0562a41f44"))(symbol (lib_id "Device:R") (at 139.7 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "0e073555-7ffd-5b79-9660-2d7da9c252b9")(property "Reference" "R192" (at 139.7 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "100R" (at 139.7 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 139.7 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 139.7 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "14426e50-f56f-5715-bde6-0e583a9e4456"))(pin "2" (uuid "a4c6e01e-ac0a-567a-9fec-7735c54555c4"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R192") (unit 1)))))(wire (pts (xy 139.7 279.4) (xy 139.7 274.32)) (stroke (width 0) (type default)) (uuid "67fe8e3d-e3a2-5c10-a20a-579a2e56c2aa"))(label "P9_CS_DRV" (at 139.7 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a94f10b7-a1b8-5a2d-b6c9-b62b704fddf3"))(wire (pts (xy 139.7 287.02) (xy 139.7 292.1)) (stroke (width 0) (type default)) (uuid "e2ab871c-f506-54b6-ba9d-c59feeda6b84"))(label "P9_CS" (at 139.7 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "2ceae799-4c03-554f-90ac-eb7d9c3f6a3c"))(symbol (lib_id "Device:R") (at 224.79 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "69efe5d1-2355-5b5f-95e0-f13ea0264e6f")(property "Reference" "R193" (at 224.79 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 224.79 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 224.79 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 224.79 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "9bae1407-9f4a-5002-999a-36d729bbf370"))(pin "2" (uuid "92762ff3-d912-5b9e-a92e-81affa187041"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R193") (unit 1)))))(wire (pts (xy 224.79 279.4) (xy 224.79 274.32)) (stroke (width 0) (type default)) (uuid "b3337383-ce97-50d2-b4e8-6cff564ec9da"))(label "+3V3" (at 224.79 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "6da69c95-7dd6-5461-95c9-7a3144b21046"))(wire (pts (xy 224.79 287.02) (xy 224.79 292.1)) (stroke (width 0) (type default)) (uuid "265b89a1-4511-54b6-9d9b-b6c01125d006"))(label "CS9_REMOTE" (at 224.79 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "23927892-b4c1-53f8-a84b-f68c0b59d915"))(symbol (lib_id "Device:R") (at 309.88 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "97618adc-4efe-5835-90b5-3d0af813e416")(property "Reference" "R194" (at 309.88 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 309.88 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 309.88 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 309.88 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "32667865-5f4e-5ddf-b399-fb85ed3994c3"))(pin "2" (uuid "de690de8-bb8a-56e0-90d1-054479f2aeb8"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R194") (unit 1)))))(wire (pts (xy 309.88 279.4) (xy 309.88 274.32)) (stroke (width 0) (type default)) (uuid "b6653b3e-72d2-5241-8560-16d9b9f0f1d5"))(label "P9_SCK" (at 309.88 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "88016d7a-822d-54ff-968e-9632f2972c03"))(wire (pts (xy 309.88 287.02) (xy 309.88 292.1)) (stroke (width 0) (type default)) (uuid "2842b435-2b42-5634-85b4-f3dfdc17921e"))(label "GND" (at 309.88 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d27ec826-ce70-559c-bc64-0ee5a58fb0de"))(symbol (lib_id "Device:R") (at 394.97 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "0db08563-0873-5dec-bd68-7599b1822dc4")(property "Reference" "R195" (at 394.97 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "47k" (at 394.97 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 394.97 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 394.97 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "55c2dea4-df5b-5b15-8d9e-82af13b42ca2"))(pin "2" (uuid "196d2a82-f07f-5319-889c-17eca40784cd"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R195") (unit 1)))))(wire (pts (xy 394.97 279.4) (xy 394.97 274.32)) (stroke (width 0) (type default)) (uuid "a4da7803-65a0-537b-af72-3d885ad87562"))(label "P9_MOSI" (at 394.97 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f9227b1a-4969-51b8-bac1-f478c2df398d"))(wire (pts (xy 394.97 287.02) (xy 394.97 292.1)) (stroke (width 0) (type default)) (uuid "1bb954c0-fa2e-50fb-a03c-303f8808d593"))(label "GND" (at 394.97 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "24ba585f-55a4-56a4-b64e-1d1c5249ebb3"))(symbol (lib_id "Device:R") (at 480.06 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5ffa2ff5-9b5e-5fcc-ad08-a094d8d8c8bd")(property "Reference" "R196" (at 480.06 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "100k" (at 480.06 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 480.06 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 480.06 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "07cbcbe8-b588-50ed-89f8-4eb1a43b8177"))(pin "2" (uuid "aaa9d1fc-ae1a-5647-8305-392cbfb7ccfc"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R196") (unit 1)))))(wire (pts (xy 480.06 279.4) (xy 480.06 274.32)) (stroke (width 0) (type default)) (uuid "aea78658-8b60-5d0a-b7c8-68a7982172b3"))(label "P9_MISO" (at 480.06 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ef5a9400-dbfa-50ec-a084-29417bc53206"))(wire (pts (xy 480.06 287.02) (xy 480.06 292.1)) (stroke (width 0) (type default)) (uuid "7e957cff-27c1-55dc-ba92-13d19a740b69"))(label "GND" (at 480.06 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "9f79eeb0-46ff-5a3d-aed0-f2c5ed1295a9"))(symbol (lib_id "Device:R") (at 565.15 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "25a880ca-f01a-5e69-b4fa-2b3c967e1c25")(property "Reference" "R197" (at 565.15 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "10k" (at 565.15 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 565.15 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 565.15 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "665e5c07-db51-5b60-8a63-347689f5905a"))(pin "2" (uuid "9151e09d-5403-5735-8cfb-289e06e8b53a"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R197") (unit 1)))))(wire (pts (xy 565.15 279.4) (xy 565.15 274.32)) (stroke (width 0) (type default)) (uuid "7f60183f-7782-589a-ab90-21503936efd7"))(label "+3V3" (at 565.15 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0dd1b31b-18e1-58ab-a3ff-afa8645b5517"))(wire (pts (xy 565.15 287.02) (xy 565.15 292.1)) (stroke (width 0) (type default)) (uuid "12a9e9ee-aa89-53fe-aa2c-986bb51b8976"))(label "P9_CS" (at 565.15 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0761ab6d-98d0-58da-a242-9655cb92c73b"))(symbol (lib_id "Device:C") (at 650.24 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "f0ca5164-091d-5901-b6af-2e92aa31e026")(property "Reference" "C29" (at 650.24 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "100n X7R" (at 650.24 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 650.24 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 650.24 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "569bbffd-efb6-5233-b5e7-cf0a86110dda"))(pin "2" (uuid "ced004c0-381d-50d4-aac6-2b11c30c46fe"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "C29") (unit 1)))))(wire (pts (xy 650.24 279.4) (xy 650.24 274.32)) (stroke (width 0) (type default)) (uuid "4d9ada2e-5567-50ad-9979-853bdbdc4fef"))(label "+3V3" (at 650.24 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7be1db5d-1116-5635-a941-a8da365e876e"))(wire (pts (xy 650.24 287.02) (xy 650.24 292.1)) (stroke (width 0) (type default)) (uuid "0c01d7d6-1b0c-5811-a6f2-856eaff7f200"))(label "GND" (at 650.24 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "a6a8e29b-5938-50fb-9f05-32c54dd4dd5a"))(symbol (lib_id "Connector_Generic:Conn_01x14") (at 735.33 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d57eca86-b438-5706-8b25-bfe212cdb116")(property "Reference" "J50" (at 735.33 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "BM14B-SRSS-TB / SHR-14V-S / SSH-003T-P0.2-H" (at 735.33 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Connector_JST:JST_SH_BM14B-SRSS-TB_1x14-1MP_P1.00mm_Vertical" (at 735.33 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 735.33 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "faf1b5f9-cb74-5f36-953a-94d54fc857da"))(pin "2" (uuid "4bfce8f9-4519-50a0-813b-ca203de147df"))(pin "3" (uuid "e34ba005-cb01-5926-a806-371098f47aec"))(pin "4" (uuid "a5019ca6-d976-5a6b-af23-47677c47fcde"))(pin "5" (uuid "c9f67886-f465-569a-90b7-301bf07e8a89"))(pin "6" (uuid "3c639684-7156-5064-aea2-eee118fc02ad"))(pin "7" (uuid "1c6bd2d3-1da4-5aa4-8386-87fac26ab5fb"))(pin "8" (uuid "7013c1cf-c3ae-5795-9241-80fb20d345d0"))(pin "9" (uuid "37683f79-3932-5d29-bfaf-7c20388c5255"))(pin "10" (uuid "44c0b34d-0aef-5fe9-889d-bde1d5651d10"))(pin "11" (uuid "a7882135-31cd-529d-a392-9443e2a1b9d9"))(pin "12" (uuid "5a02fb1d-96ad-5433-a8e7-b81153be71b3"))(pin "13" (uuid "e01b447e-164a-594c-ad8d-10c4b4c2beda"))(pin "14" (uuid "4463b93f-65d4-5649-978b-8b4e48b7e904"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "J50") (unit 1)))))(wire (pts (xy 730.25 267.96999999999997) (xy 725.17 267.97)) (stroke (width 0) (type default)) (uuid "0f012596-b792-5f34-83cb-1a3196260454"))(label "GND" (at 725.17 267.97 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b15f7e24-170b-592a-8e18-c88bc535db25"))(wire (pts (xy 730.25 270.51) (xy 725.17 270.51)) (stroke (width 0) (type default)) (uuid "97f06b14-6450-588b-ac32-85416ac4db2b"))(label "LINK_SCK" (at 725.17 270.51 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "09d9eb74-d51f-5fc6-a352-354797d7fadc"))(wire (pts (xy 730.25 273.04999999999995) (xy 725.17 273.05)) (stroke (width 0) (type default)) (uuid "4c34f609-ed02-5c9a-9dfe-c8c876e26303"))(label "GND" (at 725.17 273.05 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "8f063076-82a0-53e4-a650-74b74a98e5da"))(wire (pts (xy 730.25 275.59) (xy 725.17 275.59)) (stroke (width 0) (type default)) (uuid "4c5d06b5-d61c-50c7-8eb1-2eb377b5e773"))(label "LINK_MOSI" (at 725.17 275.59 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1c653de7-e51a-53bc-9ad4-961bf630e5e0"))(wire (pts (xy 730.25 278.13) (xy 725.17 278.13)) (stroke (width 0) (type default)) (uuid "317a657b-f6f2-5dba-9705-ccde11b640b9"))(label "GND" (at 725.17 278.13 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "742700ff-bd23-58cc-a46b-4f47f45f0ea9"))(wire (pts (xy 730.25 280.66999999999996) (xy 725.17 280.67)) (stroke (width 0) (type default)) (uuid "d4cc8484-c7d2-5d28-b27d-75b9cd0a6872"))(label "LINK_MISO" (at 725.17 280.67 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ea86bc9a-0d1a-54f3-a580-cd16bf9fdbc9"))(wire (pts (xy 730.25 283.21) (xy 725.17 283.21)) (stroke (width 0) (type default)) (uuid "41ab704c-120e-5c52-a20a-7067b2de2e05"))(label "CS6_REMOTE" (at 725.17 283.21 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "93adb0f2-16c8-5490-99e3-73ef82849939"))(wire (pts (xy 730.25 285.75) (xy 725.17 285.75)) (stroke (width 0) (type default)) (uuid "2cc5217f-6c0b-5c09-89bc-d5fe0bb09fb9"))(label "CS7_REMOTE" (at 725.17 285.75 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0806d3e4-0dce-51e2-95e6-731a927a820f"))(wire (pts (xy 730.25 288.28999999999996) (xy 725.17 288.29)) (stroke (width 0) (type default)) (uuid "023ac9d1-9303-5bff-9a79-495b3d6a2389"))(label "GND" (at 725.17 288.29 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f6cfeaca-4b05-5b87-af1a-c7e22ab1d62d"))(wire (pts (xy 730.25 290.83) (xy 725.17 290.83)) (stroke (width 0) (type default)) (uuid "7a6585a3-dfc3-57ba-bb68-943bfd8bb157"))(label "CS8_REMOTE" (at 725.17 290.83 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "7e3c30a5-0ec1-5f72-9861-75fa0241332d"))(wire (pts (xy 730.25 293.37) (xy 725.17 293.37)) (stroke (width 0) (type default)) (uuid "b60b7d40-fc9d-5152-92c3-b83a3a21f2c7"))(label "CS9_REMOTE" (at 725.17 293.37 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "b77ff35b-2f78-5f9f-8d4a-57680e006e40"))(wire (pts (xy 730.25 295.90999999999997) (xy 725.17 295.91)) (stroke (width 0) (type default)) (uuid "1bd83d93-283d-5dce-927e-f161b37b3b7f"))(label "GND" (at 725.17 295.91 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0f5ecde9-6d2e-570e-898e-882fd73a8b6a"))(wire (pts (xy 730.25 298.45) (xy 725.17 298.45)) (stroke (width 0) (type default)) (uuid "ef8be5ca-019b-52a9-b8b8-e8e10459c872"))(label "+3V3" (at 725.17 298.45 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d1c37123-3719-5053-a64b-5e0d3a4f50ef"))(wire (pts (xy 730.25 300.99) (xy 725.17 300.99)) (stroke (width 0) (type default)) (uuid "26a76cca-726e-59b8-a612-76ec0281a894"))(label "+3V3" (at 725.17 300.99 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "494f5234-c7c4-52e5-8d2d-1a85aa57d6bc"))(symbol (lib_id "Device:R") (at 820.42 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "563909ff-1f44-5902-a8ba-268953fb96f6")(property "Reference" "R500" (at 820.42 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "100R return source damping candidate" (at 820.42 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 820.42 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 820.42 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "2d88b1bb-7ba4-53a0-9081-125109bd8778"))(pin "2" (uuid "7c3411be-d911-5709-964a-6ac76e900bdd"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "R500") (unit 1)))))(wire (pts (xy 820.42 279.4) (xy 820.42 274.32)) (stroke (width 0) (type default)) (uuid "cc994abe-7cf9-548d-8810-fe72900e7ba4"))(label "MISO_REMOTE_DRV" (at 820.42 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "ac161c66-6700-5755-b5c5-c5a3fd286365"))(wire (pts (xy 820.42 287.02) (xy 820.42 292.1)) (stroke (width 0) (type default)) (uuid "03cb2323-566c-562e-b45e-61a96b7906b9"))(label "LINK_MISO" (at 820.42 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "90ab50b3-6bae-5536-8321-129f7504cb2a"))(symbol (lib_id "Device:C") (at 905.51 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "c6c2b812-21cc-5045-b5e0-fe00e00c7f81")(property "Reference" "C50" (at 905.51 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "1u X7R" (at 905.51 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 905.51 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 905.51 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "c5705d75-92f4-5803-9f74-f8f1079763f1"))(pin "2" (uuid "a93b50fb-5125-55a2-9c56-70345aae2e76"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "C50") (unit 1)))))(wire (pts (xy 905.51 279.4) (xy 905.51 274.32)) (stroke (width 0) (type default)) (uuid "fab0ac11-1595-5726-a9b9-6457fcb3dea1"))(label "+3V3" (at 905.51 274.32 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "85c9b8e8-fdc6-5bac-b1b3-418a756381f2"))(wire (pts (xy 905.51 287.02) (xy 905.51 292.1)) (stroke (width 0) (type default)) (uuid "0053873b-2765-5189-8b31-7fa9f36abc97"))(label "GND" (at 905.51 292.1 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "0fdaf7a3-bca4-5817-b137-3a7efc7e347e"))(symbol (lib_id "power:PWR_FLAG") (at 990.6 283.21 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "20c12e26-68f6-5576-83e9-df5be9432729")(property "Reference" "#FLG01" (at 990.6 250.20999999999998 0) (effects (font (size 1.27 1.27))))(property "Value" "PWR_FLAG" (at 990.6 252.74999999999997 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 990.6 255.29 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 990.6 257.83 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "4a02112e-2ed8-571b-9133-76c21f4622ea"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "#FLG01") (unit 1)))))(wire (pts (xy 990.6 283.21) (xy 990.6 288.29)) (stroke (width 0) (type default)) (uuid "871c1c30-1dc9-58cf-b7ae-2a23341b9efc"))(label "+3V3" (at 990.6 288.29 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "41b13c4c-8e11-5fc2-bf5e-0258341d35c8"))(symbol (lib_id "power:PWR_FLAG") (at 54.61 359.41 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d0d5cb19-0d4f-586d-ae16-50b6a28493d6")(property "Reference" "#FLG02" (at 54.61 326.41 0) (effects (font (size 1.27 1.27))))(property "Value" "PWR_FLAG" (at 54.61 328.95000000000005 0) (effects (font (size 1.27 1.27))))(property "Footprint" "" (at 54.61 331.49 0) (effects (font (size 1.27 1.27)) (hide yes)))(property "Datasheet" "" (at 54.61 334.03000000000003 0) (effects (font (size 1.27 1.27)) (hide yes)))(pin "1" (uuid "9d0c3774-7bb4-5994-9b9b-b2cabb9fa4a5"))(instances (project "PoseDoll_RevO2_distal4_narrow" (path "/72f0e005-e948-53ff-b43a-f86aec385e0f" (reference "#FLG02") (unit 1)))))(wire (pts (xy 54.61 359.41) (xy 54.61 364.49)) (stroke (width 0) (type default)) (uuid "e0becb1e-adea-52fd-adfd-cb255ce8f8f0"))(label "GND" (at 54.61 364.49 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e53caccb-b786-5876-8e5f-ed53d85f9637")) (embedded_fonts no))

@@ -1,0 +1,106 @@
+{
+  "part_number": "E-H0421",
+  "feature": "lumbar_humeral_fixed_capture_pin",
+  "sku": "ROLL_PIN_1.5_CUT",
+  "material_requirement": "See interface certified material requirement",
+  "notes": "D1.5 spring pin through the steel central shoulder positively retains the printed socket axially. Printed 1.6 mm slot is widened tangentially to let the hex faces take torque. Both ends remain inside the original housing envelope. Insert before the bearings.",
+  "local_origin_in_datum_mm": [
+    -5.850000000000001,
+    8.881784197001252e-16,
+    -3.552713678800501e-14
+  ],
+  "bounds_before_centering_mm": [
+    [
+      -6.600000000000001,
+      -8.319374977600171,
+      -0.7500000000000355
+    ],
+    [
+      -5.100000000000001,
+      8.319374977600173,
+      0.7499999999999645
+    ]
+  ],
+  "mesh": "E-H0421.stl",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "interface": {
+    "id": "lumbar_humeral",
+    "axis_id": "lumbar_yaw",
+    "axis_world": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "center_mm": [
+      3.150063087041365,
+      1.4864397455966565e-13,
+      331.32776644789357
+    ],
+    "bearing_diameter_mm": 6,
+    "bearing_outer_mm": 12,
+    "bearing_span_mm": 8.400000000000034,
+    "friction_od_mm": 18,
+    "friction_inner_loaded_radius_mm": 6.01,
+    "friction_faces": 2,
+    "preload_path": "Head / rear keyed cap / rear steel friction pad / fixed steel cartridge / front friction pad / floating keyed cap / disc spring pack / hardened washer / thin metal adjustment nut. Cap slot permits axial float; bearing ends and printed bodies excluded from preload loop.",
+    "bearing_axial_relief_mm": 0.4,
+    "output_hex_engagement_mm": 3.65,
+    "minimum_printed_corner_ligament_mm": 2.05,
+    "cap_thickness_mm": 1.5,
+    "cap_supported_radius_mm": 5,
+    "cartridge_length_mm": 13.2,
+    "cartridge_hex_radius_mm": 8.4,
+    "thread_diameter_mm": 6,
+    "thread_pitch_mm": 1,
+    "retention": "Output bone / transverse capture screw / shaft / keyed metal thrust caps / fixed cartridge / fixed D1.5 capture pin / input bone. Adjustment nut locked by separate keyed forming tab plus removable low-strength metal thread-lock.",
+    "bearing_outer_bond_allowable_MPa": 2,
+    "shaft_min_yield_MPa": 750,
+    "printed_preload_face_recess_mm": 0.35,
+    "fixed_capture_pin_diameter_mm": 1.5,
+    "fixed_capture_pin_length_mm": 16.638749955200343,
+    "fixed_capture_slot_width_mm": 1.6,
+    "fixed_capture_slot_tangent_width_mm": 1.9,
+    "fixed_capture_printed_engagement_per_end_mm": 3.9026454182995356,
+    "cap_effective_ligament_mm": 1.5999999999999996,
+    "front_cap_min_yield_MPa": 750,
+    "elastic_preload": {
+      "sku": "S12M6",
+      "spec": {
+        "article": "002700A",
+        "od": 12.5,
+        "id": 6.2,
+        "t": 0.7,
+        "h0": 0.3,
+        "F75": 660.0
+      },
+      "parallel": 1,
+      "series": 1,
+      "count": 1,
+      "height_mm": 0.8049999999999999,
+      "free_height_mm": 1.0,
+      "assembly_deflection_ratio": 0.65,
+      "travel_to_flat_mm": 0.105,
+      "catalogue_force_at_75pct_N": 660.0,
+      "source": "https://www.schnorr-group.com/fileadmin/4_Downloads/Brochures/SCHNORR_Produktbroschuere_EN_2024-02.pdf",
+      "parts": [
+        "lumbar_humeral_spring_1_1"
+      ]
+    },
+    "output_capture": "recessed transverse screw with captive DIN985, installed after socket",
+    "preload_cap_axial_slot_mm": 0.4
+  },
+  "tolerances": {
+    "unless_specified_mm": 0.1,
+    "journal_diametral_clearance_mm": [
+      0.01,
+      0.03
+    ],
+    "bearing_seat": "actual bearing/retaining-compound supplier fit; inspect, no printed substitute",
+    "metal_pin_hole_mm": "+0.00/+0.03 before press fit qualification",
+    "metal_friction_face_flatness_mm": 0.03,
+    "metal_friction_face_finish_Ra_um": 1.6,
+    "printed_nut_flat_clearance_mm": 0.2,
+    "printed_journal_entry_diametral_clearance_mm": 0.32
+  },
+  "threaded_geometry": "Threads represented by major-diameter envelope; cut actual ISO metric thread and check GO/NO-GO. Crossholes referenced to shaft axis and rear seating datum. Final manufacturing release remains false pending tolerance/physical qualification."
+}

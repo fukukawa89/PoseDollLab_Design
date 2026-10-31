@@ -1,0 +1,89 @@
+{
+  "schema": "posedoll-redesign-handoff-1",
+  "date": "2026-10-26",
+  "main_document": "Hardware/PoseDoll44/docs/HANDOFF_O24D_REDESIGN_20261026.zh-CN.md",
+  "user_decisions": {
+    "preserve_O24D_appearance": true,
+    "T6_W": {
+      "status": "ACCEPTED_BY_USER_PHYSICAL_FEEDBACK",
+      "use_as_design_baseline": true
+    },
+    "T6_H": {
+      "status": "ACCEPTED_BY_USER_INFERENCE_FROM_T5_INSTALLATION_AND_T6_SIMILARITY",
+      "use_as_design_baseline": true,
+      "do_not_require_retest_before_design_work": true
+    },
+    "T6_R": {
+      "status": "REJECTED_CONFIRMED_AXIAL_RETENTION_DEFECT",
+      "mechanism": "Engaged screw, nyloc and clamped rotating assembly can leave R6-01 through its axial entry; closed hex prevents spin but not axial escape. Later shell does not attach to fixed core.",
+      "must_fix_before_reuse": true
+    },
+    "cycle_goal": {
+      "cycles": 100,
+      "retightening_allowed": false,
+      "measured_cycle_count_provided": false
+    }
+  },
+  "baseline": {
+    "O24D_geometry_sha256": "fd64f061821a42f803e2131b0f0642147ab9cc8e65dc32cdb5e3476a0b7c9e8e",
+    "T6_geometry_sha256": "645544a8af0ef769ffa8130e56f2587599ec042861d99358609bf31587e0a5e9",
+    "O24D_A_height_mm": 557.5546019867103,
+    "hard_height_limit_mm": 600,
+    "neutral_shoulder_abduction_deg": 45,
+    "physical_dof": 40,
+    "single_axis_modules": 36,
+    "cartridge_modules": 20,
+    "H2_modules": 16,
+    "old_wrist_sensors": 2,
+    "old_sensor_boards": 38,
+    "old_wrist_order": "Rx(deviation) @ Ry(flexion)",
+    "T6_wrist_order": "Ry(flexion) @ Rx(deviation)"
+  },
+  "review_findings": [
+    {
+      "priority": "P0",
+      "id": "R_AXIAL_ESCAPE",
+      "status": "CONFIRMED_T6_GEOMETRY_AND_USER_FEEDBACK"
+    },
+    {
+      "priority": "P0",
+      "id": "D_OUTPUT_SOCKET_PIN_INSERTION",
+      "status": "CONFIRMED_DOCUMENTED_RIGID_PATH_INTERFERENCE_20_OF_20",
+      "do_not_claim": "All 20 outputs are freely detachable or all alternative assembly paths are impossible."
+    },
+    {
+      "priority": "P0",
+      "id": "D_WRIST_LINER_ENTRY",
+      "status": "CONFIRMED_RIGID_AXIAL_PATH_INTERFERENCE_4_OF_4",
+      "plan": "Replace old spherical wrists with accepted T6 dual-axis mechanism."
+    },
+    {
+      "priority": "P0",
+      "id": "D_RETENTION_TEST_SCOPE",
+      "status": "OLD_METAL_STOP_TEST_DOES_NOT_COVER_COMPLETE_OUTPUT_SOCKET_AND_BONE_CONNECTION"
+    },
+    {
+      "priority": "P1",
+      "id": "PRELOAD_COMPLIANCE",
+      "status": "D_HAS_NO_A8_PRELOAD_ELEMENT; RETAIN_ACCEPTED_H_W_PRINCIPLE_AND_RESIZE_FOR_LOAD"
+    },
+    {
+      "priority": "P1",
+      "id": "CUSTOM_PARTS_AND_MASS",
+      "status": "REVIEW_REQUIRED_NOT_PHYSICAL_FAILURE_PROOF"
+    },
+    {
+      "priority": "P1",
+      "id": "WRIST_KINEMATICS_SENSORS",
+      "status": "MUST_UPDATE_WITH_MECHANISM_CHANGE"
+    },
+    {
+      "priority": "P1",
+      "id": "PRODUCTION_PARTS_ASSEMBLY",
+      "status": "NOT_MANUFACTURING_RELEASE"
+    }
+  ],
+  "current_turn_scope": "Documentation and read-only review. No CAD/STL/3MF/tutorial package modifications.",
+  "next_task": "Proceed with full-body redesign in a separate revision while preserving accepted appearance, bone alignment and normal ROM; repair R and output interfaces before propagation. See main document for execution order.",
+  "evidence": "Hardware/PoseDoll44/verification/O24D_REVIEW_20261026/findings.json"
+}

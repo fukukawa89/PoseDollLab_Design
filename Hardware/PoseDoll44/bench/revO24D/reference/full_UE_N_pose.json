@@ -1,0 +1,3041 @@
+{
+  "asset": "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
+  "source_files": {
+    "Hardware\\PoseDoll44\\reference\\ue58\\quinn_mesh_probe.json": "8205d08de98c098937f48e11cdfda366a8c34fdf616bbfb3d3242d5a96545ec4",
+    "Hardware\\PoseDoll44\\reference\\ue58\\quinn_geometry.json": "bfd683e65100f4e2e9fc3ce5bea618b73e0276e9e8bcd42438bf346a5e54931b"
+  },
+  "bones": [
+    {
+      "bone": "root",
+      "parent": null,
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.339979560216101,
+        -5.069987860000097e-21,
+        4.325812053434524
+      ],
+      "neutral_parent_translation_mm": [
+        -7.339979560216101,
+        -5.069987860000097e-21,
+        4.325812053434524
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pelvis",
+      "parent": "root",
+      "frame": "pelvis",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9980238243269087,
+          -0.06283666187737627,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.06283666187737627,
+          0.9980238243269087,
+          0.0
+        ]
+      ],
+      "neutral_position_mm": [
+        0.0,
+        0.0,
+        308.7669362449913
+      ],
+      "neutral_parent_translation_mm": [
+        7.339979560216101,
+        5.069987860000097e-21,
+        304.4411241915568
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "spine_01",
+      "parent": "pelvis",
+      "frame": "pelvis",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9717797297578409,
+          0.23589013720155633,
+          1.6759413796302514e-06
+        ],
+        [
+          1.7246103473925518e-06,
+          9.754749375573098e-15,
+          -0.9999999999985129
+        ],
+        [
+          -0.23589013720120555,
+          0.971779729759286,
+          -4.0681856198618506e-07
+        ]
+      ],
+      "neutral_position_mm": [
+        -0.4791282058487107,
+        -2.1752336588078586e-15,
+        316.37684660350374
+      ],
+      "neutral_parent_translation_mm": [
+        -2.2903223761971958e-10,
+        7.624978655854354,
+        2.1752336588078586e-15
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "spine_02",
+      "parent": "spine_01",
+      "frame": "lumbar_yaw",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9929260132333795,
+          0.11873471372623229,
+          -9.035044379787297e-07
+        ],
+        [
+          -9.099413525934449e-07,
+          1.287275051114171e-14,
+          -0.999999999999586
+        ],
+        [
+          -0.11873471372618315,
+          0.9929260132337905,
+          1.0804163878953232e-07
+        ]
+      ],
+      "neutral_position_mm": [
+        3.150063087041365,
+        1.4864397455966565e-13,
+        331.32776644789357
+      ],
+      "neutral_parent_translation_mm": [
+        4.668834208132466e-10,
+        15.38509127804443,
+        6.369264246878711e-17
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "spine_03",
+      "parent": "spine_02",
+      "frame": "lumbar_yaw",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9981325383569261,
+          -0.06108547999991236,
+          2.5178771904047616e-06
+        ],
+        [
+          2.5225880280602918e-06,
+          2.095197460227696e-14,
+          -0.9999999999968183
+        ],
+        [
+          0.061085479999717966,
+          0.9981325383601019,
+          1.54093521448943e-07
+        ]
+      ],
+      "neutral_position_mm": [
+        5.943146269859323,
+        4.425350227635e-13,
+        354.6850885003772
+      ],
+      "neutral_parent_translation_mm": [
+        2.032721990730124e-09,
+        23.523728597515735,
+        7.074387835248868e-15
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "spine_04",
+      "parent": "spine_03",
+      "frame": "thorax_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9782175795822318,
+          -0.20758219326657065,
+          5.9093105385551e-06
+        ],
+        [
+          6.040895884001839e-06,
+          5.640786027685658e-14,
+          -0.9999999999817538
+        ],
+        [
+          0.20758219326278304,
+          0.9782175796000807,
+          1.2539824720752613e-06
+        ]
+      ],
+      "neutral_position_mm": [
+        4.2753155401323175,
+        9.984118180314448e-13,
+        381.93732802592046
+      ],
+      "neutral_parent_translation_mm": [
+        1.2672995319817915e-08,
+        27.303227254311956,
+        4.814847912054275e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "spine_05",
+      "parent": "spine_04",
+      "frame": "thorax_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.977271160278216,
+          -0.21199311140698943,
+          2.1101555685983355e-06
+        ],
+        [
+          2.1533207679770913e-06,
+          -2.7252221465816418e-08,
+          -0.9999999999976813
+        ],
+        [
+          0.21199311140655536,
+          0.9772711602804941,
+          4.298563593686944e-07
+        ]
+      ],
+      "neutral_position_mm": [
+        -6.929722075115765,
+        4.0047230677840504e-12,
+        434.74033870903855
+      ],
+      "neutral_parent_translation_mm": [
+        -6.636025062789486e-09,
+        53.978799589844606,
+        -1.5701957963021318e-15
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "neck_01",
+      "parent": "spine_05",
+      "frame": "neck_yaw",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.974779887539112,
+          0.22316848084859509,
+          2.228433798440082e-06
+        ],
+        [
+          2.2917376480601654e-06,
+          -2.467180127799187e-08,
+          -0.9999999999973738
+        ],
+        [
+          -0.2231684808479541,
+          0.9747798875416591,
+          -5.354931850962675e-07
+        ]
+      ],
+      "neutral_position_mm": [
+        -14.721442931536801,
+        -1.0016406755804678e-06,
+        470.6595437377672
+      ],
+      "neutral_parent_translation_mm": [
+        -4.8630543147965e-08,
+        36.75459432234606,
+        2.3122757032115367e-13
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "neck_02",
+      "parent": "neck_01",
+      "frame": "neck_yaw",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9770782309012924,
+          0.21288055492396757,
+          -5.8364462504288235e-06
+        ],
+        [
+          -5.967964709104166e-06,
+          -2.4792542813169723e-08,
+          -0.9999999999821916
+        ],
+        [
+          -0.21288055492032124,
+          0.9770782309187239,
+          1.2462393851693135e-06
+        ]
+      ],
+      "neutral_position_mm": [
+        -10.695030194010775,
+        -1.4467699768613798e-06,
+        488.246552861294
+      ],
+      "neutral_parent_translation_mm": [
+        4.671406417244839e-08,
+        18.042031189528714,
+        1.7791418837308226e-16
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "head",
+      "parent": "neck_02",
+      "frame": "head",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9999999999999996,
+          2.532288946646498e-08,
+          -1.869281785421995e-13
+        ],
+        [
+          -1.869281835743936e-13,
+          1.1292293027619579e-13,
+          -1.0000000000000002
+        ],
+        [
+          -2.5322889477033093e-08,
+          0.9999999999999998,
+          1.129229350415675e-13
+        ]
+      ],
+      "neutral_position_mm": [
+        -6.913563962935251,
+        -1.8871687615684351e-06,
+        505.60270921535107
+      ],
+      "neutral_parent_translation_mm": [
+        1.3933934805976378e-07,
+        17.76332317566847,
+        2.7978243636803124e-15
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "clavicle_l",
+      "parent": "spine_05",
+      "frame": "l_clavicle_elevate",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9996123242227705,
+          -0.02765569426624792,
+          -0.0032192913198721023
+        ],
+        [
+          0.02783213313687636,
+          0.989395102384946,
+          0.14255772073701933
+        ],
+        [
+          -0.0007573816749644076,
+          -0.14259205430645364,
+          0.9897812548344529
+        ]
+      ],
+      "neutral_position_mm": [
+        -13.771896716464436,
+        2.872986065194981,
+        451.6610611813773
+      ],
+      "neutral_parent_translation_mm": [
+        -3.099577159958528,
+        17.986627896040975,
+        -2.8729932297570753
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "upperarm_l",
+      "parent": "clavicle_l",
+      "frame": "l_upperarm_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9988424208204507,
+          4.971293809518302e-16,
+          -0.04810216595477969
+        ],
+        [
+          0.04810216595477966,
+          9.332219333926504e-16,
+          0.9988424208204512
+        ],
+        [
+          4.938110533203475e-16,
+          -1.0,
+          7.085002231868029e-16
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052275,
+        49.52627472783018,
+        444.9373688419657
+      ],
+      "neutral_parent_translation_mm": [
+        1.5980532869219743e-13,
+        47.15334505919528,
+        9.237055564881302e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "lowerarm_l",
+      "parent": "upperarm_l",
+      "frame": "l_forearm_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9988424208204508,
+          4.278007560469553e-16,
+          -0.048102165954779966
+        ],
+        [
+          0.04810216595477982,
+          -1.1398912732911863e-15,
+          0.998842420820451
+        ],
+        [
+          5.592507040813151e-16,
+          -0.9999999999999998,
+          -1.3156214911455083e-15
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052278,
+        49.52627472783017,
+        361.37116890667824
+      ],
+      "neutral_parent_translation_mm": [
+        -4.5156300789373025e-14,
+        83.56619993528744,
+        -6.613298034488672e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "lowerarm_twist_02_l",
+      "parent": "lowerarm_l",
+      "frame": "l_forearm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9989585674384305,
+          -0.0013267534735525383,
+          -0.04560723919049325
+        ],
+        [
+          0.045611394069489934,
+          0.003290925339454307,
+          0.9989538380433043
+        ],
+        [
+          -0.0011752754554278586,
+          -0.999993704748,
+          0.003348013138163218
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052355,
+        49.52627472783009,
+        334.5390682198528
+      ],
+      "neutral_parent_translation_mm": [
+        -9.506044643179534e-14,
+        26.832100686825406,
+        -3.9094132281162044e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "lowerarm_twist_01_l",
+      "parent": "lowerarm_l",
+      "frame": "l_forearm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9989585674420687,
+          -0.001326747339015491,
+          -0.04560723928926468
+        ],
+        [
+          0.04561139399109291,
+          0.003290792069520695,
+          0.9989538384859156
+        ],
+        [
+          -0.0011752754056444667,
+          -0.9999937051947143,
+          0.0033478797271244264
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052236,
+        49.5262747278302,
+        307.7069675330276
+      ],
+      "neutral_parent_translation_mm": [
+        1.393861695854448e-14,
+        53.66420137365064,
+        9.693986700804554e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "hand_l",
+      "parent": "lowerarm_l",
+      "frame": "l_wrist_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9769586700897426,
+          -0.08223428996139848,
+          0.1969499390480371
+        ],
+        [
+          -0.1945431595054579,
+          0.036399869128314666,
+          0.9802183474191222
+        ],
+        [
+          -0.08777651181332506,
+          -0.9959480764989636,
+          0.019563049146260374
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052294,
+        49.526274727830156,
+        280.8748639043823
+      ],
+      "neutral_parent_translation_mm": [
+        -6.166989323171578e-14,
+        80.4963050022959,
+        9.247728379651774e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "middle_metacarpal_l",
+      "parent": "hand_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9789926973142103,
+          0.047104676961481906,
+          0.19837955543301503
+        ],
+        [
+          -0.20052360704730496,
+          0.04622365047913607,
+          0.9785978015268173
+        ],
+        [
+          0.03692670608359503,
+          -0.9978198853223643,
+          0.05469821599539298
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.883929470683617,
+        48.733412486064154,
+        271.2595633415461
+      ],
+      "neutral_parent_translation_mm": [
+        0.2088860108520434,
+        9.613923208226957,
+        -1.1244131950084935
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_01_l",
+      "parent": "middle_metacarpal_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9257562226167114,
+          -0.34000280702524993,
+          0.16544941070124056
+        ],
+        [
+          -0.10203561432048053,
+          0.1966937499349563,
+          0.975141170368048
+        ],
+        [
+          -0.3640936001863796,
+          -0.919624738657826,
+          0.14739806766659186
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052294,
+        49.526274727830156,
+        254.14421864343512
+      ],
+      "neutral_parent_translation_mm": [
+        -1.7064127888488656e-13,
+        17.152739637556436,
+        -6.23945339839338e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_02_l",
+      "parent": "middle_01_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.762703071737089,
+          -0.6262665104165118,
+          0.16147533029392885
+        ],
+        [
+          -0.03342169915642904,
+          0.21117322541711453,
+          0.9768770950802508
+        ],
+        [
+          -0.6458846757651907,
+          -0.7504639410375803,
+          0.1401315767913745
+        ]
+      ],
+      "neutral_position_mm": [
+        -20.23577478268201,
+        52.51126261487489,
+        240.18816408436464
+      ],
+      "neutral_parent_translation_mm": [
+        1.7763568394002505e-15,
+        15.175814625690728,
+        -1.3633538742396922e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_03_l",
+      "parent": "middle_02_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.7306482925989497,
+          -0.6627977409382682,
+          0.16386649178330315
+        ],
+        [
+          -0.02269393538183196,
+          0.2162994414835745,
+          0.9760632853000765
+        ],
+        [
+          -0.6823767711602765,
+          -0.7168777484488003,
+          0.1429973285060027
+        ]
+      ],
+      "neutral_position_mm": [
+        -25.842126715269508,
+        54.40169009380968,
+        233.46999395041433
+      ],
+      "neutral_parent_translation_mm": [
+        2.291500322826323e-13,
+        8.952022564417561,
+        -4.984901380566953e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_metacarpal_l",
+      "parent": "hand_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9754529737644141,
+          -0.14763302098587552,
+          -0.16338906661323643
+        ],
+        [
+          0.21162830682654707,
+          0.42339739414879873,
+          0.8808791667293165
+        ],
+        [
+          -0.06086834747132107,
+          -0.8938339542345604,
+          0.44424757346947835
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.391072570779967,
+        55.834666414494805,
+        271.8919014535786
+      ],
+      "neutral_parent_translation_mm": [
+        -0.7466179771218158,
+        9.20210225827683,
+        5.945804793279523
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_01_l",
+      "parent": "pinky_metacarpal_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9257953631640851,
+          -0.3397584568060047,
+          -0.16573212293542097
+        ],
+        [
+          0.28922436961527764,
+          0.3543136042689809,
+          0.8892756231060023
+        ],
+        [
+          -0.24341776756129493,
+          -0.8712210172273883,
+          0.42628831742935325
+        ]
+      ],
+      "neutral_position_mm": [
+        -17.539657645029468,
+        61.99660305623912,
+        258.8834411504488
+      ],
+      "neutral_parent_translation_mm": [
+        9.048317650695026e-14,
+        14.553553533630996,
+        -1.2878587085651816e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_02_l",
+      "parent": "pinky_01_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.7501593507136488,
+          -0.6403440698341624,
+          -0.16498612294704557
+        ],
+        [
+          0.3957460581932468,
+          0.2348654971202038,
+          0.8878193823559982
+        ],
+        [
+          -0.5297603287915995,
+          -0.731298619232048,
+          0.4296001903490213
+        ]
+      ],
+      "neutral_position_mm": [
+        -20.572007781620904,
+        65.15885813710263,
+        251.10777841808874
+      ],
+      "neutral_parent_translation_mm": [
+        -2.327027459614328e-13,
+        8.925017393526245,
+        -5.995204332975845e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_03_l",
+      "parent": "pinky_02_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.7125866237700051,
+          -0.6821337273126501,
+          -0.16405450827885104
+        ],
+        [
+          0.4085216173463632,
+          0.213321034680628,
+          0.8874706892757064
+        ],
+        [
+          -0.5703774117062983,
+          -0.6994195552208534,
+          0.43067608941045976
+        ]
+      ],
+      "neutral_position_mm": [
+        -24.110766523969517,
+        66.4568046167594,
+        247.06637395447686
+      ],
+      "neutral_parent_translation_mm": [
+        3.5438318946034997e-13,
+        5.526339524414344,
+        2.930988785010413e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_metacarpal_l",
+      "parent": "hand_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9996175611137472,
+          0.014316186067464138,
+          0.023659635024341426
+        ],
+        [
+          -0.026550620385504632,
+          0.25761096340379014,
+          0.9658838729843848
+        ],
+        [
+          0.007732791872804649,
+          -0.9661426594197423,
+          0.2578925465755048
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.559419382385865,
+        52.334584381021855,
+        271.3892168964123
+      ],
+      "neutral_parent_translation_mm": [
+        -0.1860449400115607,
+        9.589191328635268,
+        2.471970229615683
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_01_l",
+      "parent": "ring_metacarpal_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9557193049390675,
+          -0.2941562083896175,
+          0.008528495332059224
+        ],
+        [
+          0.06529357637049725,
+          0.24022049221787584,
+          0.9685199347475254
+        ],
+        [
+          -0.2869448711016371,
+          -0.925076342895247,
+          0.2487898727119322
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.338931790614478,
+        56.302122988519606,
+        256.5093831698088
+      ],
+      "neutral_parent_translation_mm": [
+        8.79296635503124e-14,
+        15.401280112752842,
+        -1.4344081478157023e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_02_l",
+      "parent": "ring_01_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.7255252417082456,
+          -0.6881857681676352,
+          0.0036704408063524723
+        ],
+        [
+          0.16455113057281362,
+          0.17865310876900667,
+          0.9700546335925506
+        ],
+        [
+          -0.6682335288440711,
+          -0.7031951473230532,
+          0.2428590861176675
+        ]
+      ],
+      "neutral_position_mm": [
+        -19.19659941989683,
+        59.45245872949364,
+        244.37760773614028
+      ],
+      "neutral_parent_translation_mm": [
+        3.4994229736184934e-13,
+        13.1143505364099,
+        -1.4166445794216997e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_03_l",
+      "parent": "ring_02_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.6676398292530995,
+          -0.744440431017571,
+          0.008093396151472572
+        ],
+        [
+          0.17894096447924043,
+          0.1710139106537288,
+          0.9688830546532212
+        ],
+        [
+          -0.7226598021379982,
+          -0.6454166770616412,
+          0.24738658683238574
+        ]
+      ],
+      "neutral_position_mm": [
+        -26.06369147676761,
+        61.23515665919576,
+        237.3607439270123
+      ],
+      "neutral_parent_translation_mm": [
+        1.9539925233402755e-13,
+        9.97854412937839,
+        -8.903988657493755e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_01_l",
+      "parent": "hand_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.1856727208893243,
+          -0.455588481820786,
+          0.870611725139161
+        ],
+        [
+          -0.8909875069169005,
+          -0.45165753859885116,
+          -0.046332821464194276
+        ],
+        [
+          0.41432704864099895,
+          -0.7671014294466266,
+          -0.4897841296993816
+        ]
+      ],
+      "neutral_position_mm": [
+        -21.584956011482813,
+        42.955365858329124,
+        274.0174334018316
+      ],
+      "neutral_parent_translation_mm": [
+        -4.478778063790306,
+        7.125727555018347,
+        -7.857024993950834
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_02_l",
+      "parent": "thumb_01_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.03380370996155682,
+          -0.3932837610425217,
+          0.9187955117941549
+        ],
+        [
+          -0.9926527102961036,
+          -0.12008009793467818,
+          -0.014878401184184618
+        ],
+        [
+          0.11618048861420066,
+          -0.9115419098320416,
+          -0.39445334411704364
+        ]
+      ],
+      "neutral_position_mm": [
+        -28.094304329963148,
+        36.50218199455466,
+        263.0572564019297
+      ],
+      "neutral_parent_translation_mm": [
+        -1.376676550535194e-13,
+        14.287780701710153,
+        1.687538997430238e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_03_l",
+      "parent": "thumb_02_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.024529123267015434,
+          -0.3971253887178826,
+          0.9174365088372174
+        ],
+        [
+          -0.9995355013832501,
+          0.026345225732246118,
+          -0.015320266174302594
+        ],
+        [
+          -0.018086005260588806,
+          -0.9173861535453796,
+          -0.3975871498136306
+        ]
+      ],
+      "neutral_position_mm": [
+        -31.382714115113632,
+        35.498142143014825,
+        255.43547377881706
+      ],
+      "neutral_parent_translation_mm": [
+        -1.0624834345662748e-13,
+        8.361417660452998,
+        -1.7497114868092467e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_metacarpal_l",
+      "parent": "hand_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.8759492704495324,
+          -0.0354765657731736,
+          0.48109696411417197
+        ],
+        [
+          -0.48238428239965314,
+          -0.07325479538721467,
+          0.8728912527036505
+        ],
+        [
+          0.004275475728224905,
+          -0.9966820697864079,
+          -0.08128082229885712
+        ]
+      ],
+      "neutral_position_mm": [
+        -17.53832489722051,
+        43.77730576683754,
+        270.1741977068171
+      ],
+      "neutral_parent_translation_mm": [
+        -0.3479436753968509,
+        10.650537421684206,
+        -6.329546072633266
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_01_l",
+      "parent": "index_metacarpal_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.8943186201158451,
+          -0.28372040095412276,
+          0.34597245525694964
+        ],
+        [
+          -0.3125763685059105,
+          0.15708712306138786,
+          0.9368135618253789
+        ],
+        [
+          -0.3201409370351555,
+          -0.9459526255847738,
+          0.0518016465329476
+        ]
+      ],
+      "neutral_position_mm": [
+        -18.126748436175106,
+        42.56228269434604,
+        253.6429698967095
+      ],
+      "neutral_parent_translation_mm": [
+        3.5342562210161077e-13,
+        16.586259862836982,
+        -4.1522341120980855e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_02_l",
+      "parent": "index_01_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.8176976720633433,
+          -0.4608744106164455,
+          0.3449134597853966
+        ],
+        [
+          -0.2752377065037337,
+          0.2132284069793239,
+          0.9374315182324646
+        ],
+        [
+          -0.5055835460344343,
+          -0.8614687597910924,
+          0.04750635624043764
+        ]
+      ],
+      "neutral_position_mm": [
+        -22.121634334090405,
+        44.774126222522696,
+        240.32361467468064
+      ],
+      "neutral_parent_translation_mm": [
+        -2.0872192862952943e-13,
+        14.08036180860019,
+        1.5898393712632242e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_03_l",
+      "parent": "index_02_l",
+      "frame": "l_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.8177970553555365,
+          -0.4610600603439549,
+          0.34442937883903235
+        ],
+        [
+          -0.27528356544207316,
+          0.212184508253509,
+          0.9376548901673343
+        ],
+        [
+          -0.5053977986193774,
+          -0.8616271555683724,
+          0.04660160874736069
+        ]
+      ],
+      "neutral_position_mm": [
+        -25.656573726020184,
+        46.409603215705076,
+        233.71608823417114
+      ],
+      "neutral_parent_translation_mm": [
+        -5.3290705182007514e-14,
+        7.6700708707206795,
+        8.271161533457416e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "upperarm_twist_01_l",
+      "parent": "upperarm_l",
+      "frame": "l_upperarm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9988423683387967,
+          -0.00043946519301831953,
+          -0.04810124823419026
+        ],
+        [
+          0.04810266277172199,
+          0.004160191929736153,
+          0.9988337332295992
+        ],
+        [
+          -0.00023884223465288847,
+          -0.9999912497984429,
+          0.004176515405821079
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052301,
+        49.52627472783002,
+        417.0819678829299
+      ],
+      "neutral_parent_translation_mm": [
+        -4.788911518442374e-14,
+        27.855400959035762,
+        -1.7459230840643965e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "upperarm_twist_02_l",
+      "parent": "upperarm_l",
+      "frame": "l_upperarm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9988424208204507,
+          8.890075945510205e-16,
+          -0.04810216595477978
+        ],
+        [
+          0.04810216595477975,
+          7.297920331151709e-16,
+          0.9988424208204512
+        ],
+        [
+          8.754502180352452e-16,
+          -1.0,
+          4.864556182617716e-16
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075955211052278,
+        49.52627472782992,
+        389.2265669238941
+      ],
+      "neutral_parent_translation_mm": [
+        -4.3363522961557566e-14,
+        55.71080191807158,
+        -2.947995038317837e-13
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "clavicle_r",
+      "parent": "spine_05",
+      "frame": "r_clavicle_elevate",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9996123243863536,
+          0.0276556871705615,
+          0.0032193014825552635
+        ],
+        [
+          0.027832127548205597,
+          0.9893950997882814,
+          0.14255773984978015
+        ],
+        [
+          0.0007573711454465299,
+          0.1425920736999822,
+          -0.9897812520485965
+        ]
+      ],
+      "neutral_position_mm": [
+        -13.77188906262264,
+        -2.872985501956276,
+        451.6596584049005
+      ],
+      "neutral_parent_translation_mm": [
+        -3.0998794319495127,
+        17.98525553707461,
+        2.8729783367940165
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "upperarm_r",
+      "parent": "clavicle_r",
+      "frame": "r_upperarm_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9988424208957756,
+          -4.471543369645678e-16,
+          0.048102164390665184
+        ],
+        [
+          0.048102164390665114,
+          -1.1282156618657917e-15,
+          0.9988424208957756
+        ],
+        [
+          -3.7811286446001374e-16,
+          1.0,
+          1.1831724973785527e-15
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946357,
+        -49.52613022732743,
+        444.9372389930848
+      ],
+      "neutral_parent_translation_mm": [
+        1.686914899374451e-05,
+        -47.15302145901028,
+        -0.0012403614087626025
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "lowerarm_r",
+      "parent": "upperarm_r",
+      "frame": "r_forearm_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9988424208957755,
+          -1.1937440890195305e-15,
+          0.04810216439066537
+        ],
+        [
+          0.04810216439066529,
+          6.130246867575922e-16,
+          0.9988424208957756
+        ],
+        [
+          -1.135054945635135e-15,
+          1.0,
+          -5.67591074420837e-16
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946357,
+        -49.52613022732742,
+        361.37236287673585
+      ],
+      "neutral_parent_translation_mm": [
+        3.193874111142014e-14,
+        -83.56487611634896,
+        -9.177446090434472e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "lowerarm_twist_02_r",
+      "parent": "lowerarm_r",
+      "frame": "r_forearm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9989585675098548,
+          0.0013267534683984227,
+          0.04560723762620418
+        ],
+        [
+          0.045611392505193527,
+          0.0032909253415336595,
+          0.9989538381147218
+        ],
+        [
+          0.0011752754554272878,
+          0.9999937047480002,
+          -0.003348013138165104
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946415,
+        -49.52613022732751,
+        334.5398797533282
+      ],
+      "neutral_parent_translation_mm": [
+        8.456503769298224e-14,
+        -26.832483123407656,
+        -7.985348958562978e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "lowerarm_twist_01_r",
+      "parent": "lowerarm_r",
+      "frame": "r_forearm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9989585675134929,
+          0.001326747333861584,
+          0.045607237724975616
+        ],
+        [
+          0.045611392426796495,
+          0.003290792071600038,
+          0.9989538385573332
+        ],
+        [
+          0.001175275405643896,
+          0.9999937051947145,
+          -0.0033478797271263125
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946284,
+        -49.526130227327364,
+        307.70745546631787
+      ],
+      "neutral_parent_translation_mm": [
+        -9.099413157677321e-15,
+        -53.66490741041798,
+        9.074065151961381e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "hand_r",
+      "parent": "lowerarm_r",
+      "frame": "r_wrist_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9769584012348294,
+          0.08224226035727575,
+          -0.19694794456407072
+        ],
+        [
+          -0.19454357827346594,
+          0.03637063126074029,
+          0.9802193496020423
+        ],
+        [
+          0.08777857602651121,
+          0.9959484865157543,
+          -0.019532890153192012
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946344,
+        -49.52613022732742,
+        280.875022353848
+      ],
+      "neutral_parent_translation_mm": [
+        7.89488005100902e-14,
+        -80.49734052288784,
+        4.6287698256343086e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "middle_metacarpal_r",
+      "parent": "hand_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9789934295573016,
+          -0.047096670189437514,
+          -0.19837784286734292
+        ],
+        [
+          -0.2005203830415413,
+          0.04619464158661111,
+          0.9785998319402869
+        ],
+        [
+          -0.03692480018234875,
+          0.997821606674135,
+          -0.05466809294041402
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.88381700558426,
+        -48.733907876823224,
+        271.2598187247823
+      ],
+      "neutral_parent_translation_mm": [
+        -0.20888711403449134,
+        -9.613873932744216,
+        1.1234703417422713
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_01_r",
+      "parent": "middle_metacarpal_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9257535617363544,
+          0.34001052422692574,
+          -0.16544844014793603
+        ],
+        [
+          -0.10204420715692408,
+          0.19666617360288924,
+          0.9751458331686151
+        ],
+        [
+          0.3640979575858244,
+          0.9196277831684565,
+          -0.1473683063161883
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075959128946344,
+        -49.52613022732742,
+        254.144223679876
+      ],
+      "neutral_parent_translation_mm": [
+        -4.0897032298481406e-05,
+        -17.152954390406652,
+        0.0001471786718584278
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_02_r",
+      "parent": "middle_01_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.7626980278614917,
+          0.6262729191526882,
+          -0.16147429836404875
+        ],
+        [
+          -0.03343887100448169,
+          0.21114995680756637,
+          0.9768815371610358
+        ],
+        [
+          0.6458897430693084,
+          0.7504651400805592,
+          -0.14010179628302324
+        ]
+      ],
+      "neutral_position_mm": [
+        -20.23591070812637,
+        -52.510771460228796,
+        240.18835171730183
+      ],
+      "neutral_parent_translation_mm": [
+        0.00010442316978931387,
+        -15.175623407399584,
+        -0.00010130746266368007
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "middle_03_r",
+      "parent": "middle_02_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.7306429360848425,
+          0.6628038948215157,
+          -0.16386548434234063
+        ],
+        [
+          -0.02271224220298129,
+          0.21627707267561977,
+          0.9760678162345982
+        ],
+        [
+          0.6823818974763576,
+          0.7168788076406595,
+          -0.14296755279528425
+        ]
+      ],
+      "neutral_position_mm": [
+        -25.84234087468354,
+        -54.40092178907772,
+        233.4700914686154
+      ],
+      "neutral_parent_translation_mm": [
+        -3.7661495032814685e-05,
+        -8.952080665359816,
+        8.174749827860595e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_metacarpal_r",
+      "parent": "hand_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9754520274223779,
+          0.1476410309883482,
+          0.16338747860919497
+        ],
+        [
+          0.21162866964946822,
+          0.4233709919785715,
+          0.8808917693641349
+        ],
+        [
+          0.060882250122418574,
+          0.8938451371013764,
+          -0.44422316745106105
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.390981087157025,
+        -55.835030346935824,
+        271.8920031235467
+      ],
+      "neutral_parent_translation_mm": [
+        0.7466027164312729,
+        -9.201991204577029,
+        -5.946598716915166
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_01_r",
+      "parent": "pinky_metacarpal_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9257928003865177,
+          0.33976613615669093,
+          0.16573069562891052
+        ],
+        [
+          0.28921929750652675,
+          0.35428744062065903,
+          0.889287696624829
+        ],
+        [
+          0.24343354062725361,
+          0.8712286623726382,
+          -0.42626368500971723
+        ]
+      ],
+      "neutral_position_mm": [
+        -17.53985653793533,
+        -61.996687139592,
+        258.8833134126473
+      ],
+      "neutral_parent_translation_mm": [
+        0.00014338452952533665,
+        -14.553682973704975,
+        -9.074828152844105e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_02_r",
+      "parent": "pinky_01_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.7501542857553386,
+          0.6403503786826577,
+          0.1649846662083328
+        ],
+        [
+          0.39573224667421586,
+          0.23484275679669372,
+          0.887831554137555
+        ],
+        [
+          0.5297778180568486,
+          0.7313003979905293,
+          -0.42957559450441163
+        ]
+      ],
+      "neutral_position_mm": [
+        -20.572175832853805,
+        -65.15860432946599,
+        251.1074202049205
+      ],
+      "neutral_parent_translation_mm": [
+        -0.00010131181686579005,
+        -8.925087997203054,
+        0.0001784521503558345
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "pinky_03_r",
+      "parent": "pinky_02_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.712581209003104,
+          0.6821397363483805,
+          0.16405304224621006
+        ],
+        [
+          0.40850653839850903,
+          0.2132991328338241,
+          0.8874828944931873
+        ],
+        [
+          0.5703949760134132,
+          0.6994203743292736,
+          -0.43065149635378874
+        ]
+      ],
+      "neutral_position_mm": [
+        -24.110854357371487,
+        -66.45650944487484,
+        247.0661232939418
+      ],
+      "neutral_parent_translation_mm": [
+        -5.750583154950917e-05,
+        -5.526199787970832,
+        -0.00010628782016386396
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_metacarpal_r",
+      "parent": "hand_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9996176805658733,
+          -0.014307966725006163,
+          -0.023659560188219953
+        ],
+        [
+          -0.026548202986480324,
+          0.25758280673540956,
+          0.9658914486589562
+        ],
+        [
+          -0.007725646787973335,
+          0.966150288393325,
+          -0.2578641786274371
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.55949564019821,
+        -52.33503982805971,
+        271.3892864684155
+      ],
+      "neutral_parent_translation_mm": [
+        0.18620599315759745,
+        -9.589233249568307,
+        -2.4728321828356585
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_01_r",
+      "parent": "ring_metacarpal_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9557168883551419,
+          0.29416406423166347,
+          -0.00852834259838327
+        ],
+        [
+          0.06528730003290788,
+          0.24019285733646314,
+          0.9685272116667442
+        ],
+        [
+          0.2869543478799,
+          0.9250810205594187,
+          -0.24876154773912731
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.338953290747563,
+        -56.302096091933436,
+        256.50918488416744
+      ],
+      "neutral_parent_translation_mm": [
+        -0.00018140786323253555,
+        -15.401415436466502,
+        8.151629949493255e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_02_r",
+      "parent": "ring_01_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.7255195866468849,
+          0.6881917310944781,
+          -0.0036702377197478588
+        ],
+        [
+          0.16453322507850426,
+          0.17863108351127793,
+          0.9700617268240475
+        ],
+        [
+          0.6682440775921623,
+          0.7031949070185113,
+          -0.2428307548607208
+        ]
+      ],
+      "neutral_position_mm": [
+        -19.196962866663885,
+        -59.452111154505296,
+        244.37745240695617
+      ],
+      "neutral_parent_translation_mm": [
+        0.0002555469892149276,
+        -13.114334356400702,
+        -6.433006159722865e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ring_03_r",
+      "parent": "ring_02_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.6676337114369636,
+          0.7444459194305066,
+          -0.008093231503757889
+        ],
+        [
+          0.1789213441303032,
+          0.17099344778527073,
+          0.9688902896763447
+        ],
+        [
+          0.7226703120839483,
+          0.6454157682128426,
+          -0.24735825471310863
+        ]
+      ],
+      "neutral_position_mm": [
+        -26.06379628600405,
+        -61.23446268698501,
+        237.36066896847862
+      ],
+      "neutral_parent_translation_mm": [
+        -0.00015787839919934044,
+        -9.978247741027207,
+        0.00010272468583361061
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_01_r",
+      "parent": "hand_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.18567795726376637,
+          0.45559356888962455,
+          -0.8706079463069298
+        ],
+        [
+          -0.8909750111192993,
+          -0.45168091810469946,
+          -0.04634520235213257
+        ],
+        [
+          -0.41435157263768085,
+          0.7670846421396474,
+          0.48978967531601775
+        ]
+      ],
+      "neutral_position_mm": [
+        -21.584876043251864,
+        -42.95573051370582,
+        274.01763053667116
+      ],
+      "neutral_parent_translation_mm": [
+        4.478779902427722,
+        -7.125947456053184,
+        7.856295422624712
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_02_r",
+      "parent": "thumb_01_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.03380680715718694,
+          0.3932907195680553,
+          -0.9187924192609983
+        ],
+        [
+          -0.9926492460984209,
+          -0.12010755513315102,
+          -0.014887895088754351
+        ],
+        [
+          -0.11620918212462143,
+          0.9115352901021324,
+          0.3944601892312432
+        ]
+      ],
+      "neutral_position_mm": [
+        -28.094438535720432,
+        -36.502156576628884,
+        263.0577586455865
+      ],
+      "neutral_parent_translation_mm": [
+        -5.069008549618559e-05,
+        -14.287820416278333,
+        0.00015254787688867566
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thumb_03_r",
+      "parent": "thumb_02_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.024527074727158635,
+          0.3971327146337371,
+          -0.9174333924449051
+        ],
+        [
+          -0.9995360824113636,
+          0.026317589537624128,
+          -0.015329854489623257
+        ],
+        [
+          0.018056648722070835,
+          0.917383775444371,
+          0.39759397126762364
+        ]
+      ],
+      "neutral_position_mm": [
+        -31.382915508008452,
+        -35.49804648582713,
+        255.43606670615878
+      ],
+      "neutral_parent_translation_mm": [
+        0.0001543688955278899,
+        -8.361369855880177,
+        2.4582674282846995e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_metacarpal_r",
+      "parent": "hand_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.8759503620882195,
+          0.03548430152989508,
+          -0.48109440601866554
+        ],
+        [
+          -0.48238223683244297,
+          -0.07328395210092908,
+          0.8728899357610885
+        ],
+        [
+          -0.004282609723739573,
+          0.9966796509959479,
+          0.08131010112249215
+        ]
+      ],
+      "neutral_position_mm": [
+        -17.538193381960152,
+        -43.77775798161982,
+        270.1746113376913
+      ],
+      "neutral_parent_translation_mm": [
+        0.34792469146553984,
+        -10.650485939836623,
+        6.3286076320968485
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_01_r",
+      "parent": "index_metacarpal_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.894316769143213,
+          0.2837282398938772,
+          -0.34597081136414914
+        ],
+        [
+          -0.31258374783040577,
+          0.1570589020158277,
+          0.936815831361682
+        ],
+        [
+          0.32013890269934775,
+          0.9459549604417249,
+          -0.05177157322462303
+        ]
+      ],
+      "neutral_position_mm": [
+        -18.126917436950382,
+        -42.562203027200326,
+        253.64345546450483
+      ],
+      "neutral_parent_translation_mm": [
+        0.00012742012026553673,
+        -16.58623779918803,
+        0.00012757990125766838
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_02_r",
+      "parent": "index_01_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.8176942700126081,
+          0.4608817033207226,
+          -0.34491178050733134
+        ],
+        [
+          -0.2752506642739085,
+          0.21320226236013665,
+          0.9374336601281666
+        ],
+        [
+          0.5055819939488749,
+          0.8614713291042884,
+          -0.04747627329488932
+        ]
+      ],
+      "neutral_position_mm": [
+        -22.12168151925738,
+        -44.773482884576445,
+        240.3239032486888
+      ],
+      "neutral_parent_translation_mm": [
+        -0.00031217791935134187,
+        -14.080425057727197,
+        8.396566327084631e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "index_03_r",
+      "parent": "index_02_r",
+      "frame": "r_wrist_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.8177936476136067,
+          0.46106735202386584,
+          -0.3444277091357963
+        ],
+        [
+          -0.2752965373322864,
+          0.21215835860730864,
+          0.9376569988038831
+        ],
+        [
+          0.5053962469742778,
+          0.8616296929486319,
+          -0.04657151246805009
+        ]
+      ],
+      "neutral_position_mm": [
+        -25.656672251385285,
+        -46.408736800192855,
+        233.71643528861313
+      ],
+      "neutral_parent_translation_mm": [
+        2.9566530229008237e-05,
+        -7.669996589769154,
+        1.5838799720502283e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "upperarm_twist_01_r",
+      "parent": "upperarm_r",
+      "frame": "r_upperarm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9988423684141223,
+          0.0004394651865038116,
+          0.04810124667008916
+        ],
+        [
+          0.04810266120760733,
+          0.0041601919304222615,
+          0.9988337333049222
+        ],
+        [
+          0.00023884223465300456,
+          0.9999912497984429,
+          -0.004176515405819187
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075946680092427,
+        -49.52651948559479,
+        417.0822793070285
+      ],
+      "neutral_parent_translation_mm": [
+        -3.115860855325876e-05,
+        -27.854959686056304,
+        -0.00038820885333977007
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "upperarm_twist_02_r",
+      "parent": "upperarm_r",
+      "frame": "r_upperarm_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9988424208957756,
+          -8.038675517581837e-16,
+          0.04810216439066533
+        ],
+        [
+          0.04810216439066526,
+          -1.6112164568764151e-15,
+          0.9988424208957756
+        ],
+        [
+          -7.111797718475605e-16,
+          1.0,
+          1.6827728584598731e-15
+        ]
+      ],
+      "neutral_position_mm": [
+        -15.075934231238497,
+        -49.52690874386214,
+        389.22731962097225
+      ],
+      "neutral_parent_translation_mm": [
+        -6.231721710583394e-05,
+        -55.70991937211255,
+        -0.0007764177066653458
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_r",
+      "parent": "pelvis",
+      "frame": "r_hip_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9891430852855361,
+          -1.6981166093217285e-17,
+          -0.14695562878573715
+        ],
+        [
+          0.14695562878573715,
+          -1.8862644613192593e-16,
+          -0.9891430852855357
+        ],
+        [
+          -1.563512069279039e-17,
+          -1.0000000000000004,
+          2.0737524797141403e-16
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8358001445204449,
+        -34.408837174194346,
+        298.8298629827949
+      ],
+      "neutral_parent_translation_mm": [
+        0.20973594397992545,
+        -9.96995475083222,
+        34.408837174194346
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "calf_r",
+      "parent": "thigh_r",
+      "frame": "r_knee_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9891430852855361,
+          1.5081972595029678e-16,
+          -0.14695562878573712
+        ],
+        [
+          0.14695562878573715,
+          8.923847886297362e-17,
+          -0.9891430852855359
+        ],
+        [
+          -1.4021639530154464e-16,
+          -1.0000000000000004,
+          -9.318835048055321e-17
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8358001445204449,
+        -34.408837174194346,
+        157.69786719635906
+      ],
+      "neutral_parent_translation_mm": [
+        2.2066157877353092e-15,
+        141.1319957864359,
+        -2.9267282622912693e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "foot_r",
+      "parent": "calf_r",
+      "frame": "r_ankle_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.9016551444069204,
+          0.4324460276312411,
+          -0.0029040920261260077
+        ],
+        [
+          0.03646170790582278,
+          0.06932823017198736,
+          -0.99692734958863
+        ],
+        [
+          -0.43091593660611677,
+          -0.8989905615117327,
+          -0.0782778761317231
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8358001445204449,
+        -34.408837174194346,
+        29.048107228640735
+      ],
+      "neutral_parent_translation_mm": [
+        1.8038805599082427e-14,
+        128.64975996771838,
+        1.1988658921110779e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "ball_r",
+      "parent": "foot_r",
+      "frame": "r_toe_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          -0.432446027631241,
+          -0.9016551444069207,
+          -0.0029040920261257275
+        ],
+        [
+          -0.06932823017198747,
+          0.0364617079058225,
+          -0.99692734958863
+        ],
+        [
+          0.8989905615117331,
+          -0.43091593660611666,
+          -0.07827787613172306
+        ]
+      ],
+      "neutral_position_mm": [
+        47.46380798736371,
+        -34.408837174194346,
+        29.048107228640735
+      ],
+      "neutral_parent_translation_mm": [
+        -42.04238314494586,
+        20.164096767995925,
+        -0.13541202577054207
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "calf_twist_02_r",
+      "parent": "calf_r",
+      "frame": "r_knee_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9891282340648899,
+          0.0012337655222436044,
+          -0.14705038047658775
+        ],
+        [
+          0.14704219703693872,
+          -0.005180528979364383,
+          -0.9891166535904874
+        ],
+        [
+          -0.001982136782162439,
+          -0.9999858198705275,
+          0.004942791887861571
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8131355582899221,
+        -34.56139015182439,
+        114.8146148543929
+      ],
+      "neutral_parent_translation_mm": [
+        2.574021043100527e-14,
+        42.88325234196618,
+        0.15422741148315658
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "calf_twist_01_r",
+      "parent": "calf_r",
+      "frame": "r_knee_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9891282340648899,
+          0.0012337655222436044,
+          -0.14705038047658775
+        ],
+        [
+          0.14704219703693872,
+          -0.005180528979364383,
+          -0.9891166535904874
+        ],
+        [
+          -0.001982136782162439,
+          -0.9999858198705275,
+          0.004942791887861571
+        ]
+      ],
+      "neutral_position_mm": [
+        0.7904709720594256,
+        -34.71394312945444,
+        71.93136251242676
+      ],
+      "neutral_parent_translation_mm": [
+        2.4411795742868433e-14,
+        85.76650468393234,
+        0.3084548229663163
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_twist_01_r",
+      "parent": "thigh_r",
+      "frame": "r_hip_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9891429952513817,
+          0.00019357996273776712,
+          -0.14695610729712397
+        ],
+        [
+          0.1469532908166746,
+          -0.005026803079889006,
+          -0.9891306595030537
+        ],
+        [
+          -0.0009301952889790708,
+          -0.9999873468087458,
+          0.004943779842419818
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8358001445204483,
+        -34.40883717419431,
+        251.78586242610302
+      ],
+      "neutral_parent_translation_mm": [
+        2.6619430684154453e-15,
+        47.044000556691906,
+        -4.5386643542888434e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_twist_02_r",
+      "parent": "thigh_r",
+      "frame": "r_hip_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9891429952513704,
+          0.00019357996273757386,
+          -0.1469561072972
+        ],
+        [
+          0.14695329081675063,
+          -0.0050268030798890145,
+          -0.9891306595030424
+        ],
+        [
+          -0.0009301952889792607,
+          -0.9999873468087458,
+          0.004943779842419781
+        ]
+      ],
+      "neutral_position_mm": [
+        0.835800144520435,
+        -34.408837174194346,
+        204.74186186941122
+      ],
+      "neutral_parent_translation_mm": [
+        1.1244785161752776e-14,
+        94.08800111338373,
+        -1.8059456210204504e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_l",
+      "parent": "pelvis",
+      "frame": "l_hip_roll",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.989143085285536,
+          -5.575618881991314e-17,
+          0.1469556287857372
+        ],
+        [
+          0.1469556287857371,
+          -1.0546286428878625e-16,
+          -0.9891430852855357
+        ],
+        [
+          9.38399546746743e-17,
+          1.0000000000000002,
+          -1.012878176304288e-16
+        ]
+      ],
+      "neutral_position_mm": [
+        0.835912143607195,
+        34.40879304689639,
+        298.8300306810274
+      ],
+      "neutral_parent_translation_mm": [
+        0.2098582593339362,
+        -9.96979442164966,
+        -34.40879304689639
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "calf_l",
+      "parent": "thigh_l",
+      "frame": "l_knee_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9891430852855359,
+          -1.4826682022792288e-17,
+          0.1469556287857372
+        ],
+        [
+          0.1469556287857371,
+          4.564626453003089e-17,
+          -0.9891430852855359
+        ],
+        [
+          3.264900851242759e-17,
+          1.0000000000000002,
+          4.4731277499949217e-17
+        ]
+      ],
+      "neutral_position_mm": [
+        0.835912143607195,
+        34.40879304689639,
+        157.69772894532576
+      ],
+      "neutral_parent_translation_mm": [
+        -1.3243848798010697e-14,
+        -141.13230173570165,
+        1.4294982839968396e-14
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "foot_l",
+      "parent": "calf_l",
+      "frame": "l_ankle_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.9016551707930088,
+          -0.4324459759088917,
+          0.002903601631837302
+        ],
+        [
+          0.03646121427029819,
+          0.06932834190038178,
+          -0.9969273598729645
+        ],
+        [
+          0.4309159231638645,
+          0.8989905777757352,
+          0.07827776334492713
+        ]
+      ],
+      "neutral_position_mm": [
+        0.835912143607195,
+        34.40879304689639,
+        29.048110184960937
+      ],
+      "neutral_parent_translation_mm": [
+        -4.200282498027715e-15,
+        -128.64961876036486,
+        -5.754661797032552e-15
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "ball_l",
+      "parent": "foot_l",
+      "frame": "l_toe_flex",
+      "mode": "physical_group",
+      "neutral_rotation_RH": [
+        [
+          0.4324459759088916,
+          0.9016551707930092,
+          0.0029036016318371733
+        ],
+        [
+          -0.06932834190038191,
+          0.03646121427029809,
+          -0.9969273598729645
+        ],
+        [
+          -0.8989905777757355,
+          0.4309159231638644,
+          0.07827776334492717
+        ]
+      ],
+      "neutral_position_mm": [
+        47.463915359237326,
+        34.40879304689639,
+        29.048110184960937
+      ],
+      "neutral_parent_translation_mm": [
+        42.04238020312595,
+        -20.164092355266114,
+        0.13538914622621862
+      ],
+      "note": "Neutral mount clock removed by F(q) R * F(0) R transpose"
+    },
+    {
+      "bone": "calf_twist_02_l",
+      "parent": "calf_l",
+      "frame": "l_knee_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9891282340648897,
+          -0.0012337655222434678,
+          0.14705038047658783
+        ],
+        [
+          0.14704219703693866,
+          -0.005180528979364427,
+          -0.9891166535904874
+        ],
+        [
+          0.0019821367821623312,
+          0.9999858198705273,
+          -0.004942791887861617
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8132525634184551,
+        34.56150276960544,
+        114.81452367247743
+      ],
+      "neutral_parent_translation_mm": [
+        2.7986263237080208e-05,
+        -42.883205272848336,
+        -0.15438171912818535
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "calf_twist_01_l",
+      "parent": "calf_l",
+      "frame": "l_knee_flex",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9891282340648897,
+          -0.0012337655222434678,
+          0.14705038047658783
+        ],
+        [
+          0.14704219703693866,
+          -0.005180528979364427,
+          -0.9891166535904874
+        ],
+        [
+          0.0019821367821623312,
+          0.9999858198705273,
+          -0.004942791887861617
+        ]
+      ],
+      "neutral_position_mm": [
+        0.7905890458910703,
+        34.71406269069858,
+        71.93131251598938
+      ],
+      "neutral_parent_translation_mm": [
+        3.0063744520729756e-05,
+        -85.7664164293364,
+        -0.3086158416379102
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_twist_01_l",
+      "parent": "thigh_l",
+      "frame": "l_hip_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9891429952513817,
+          -0.00019357996273784134,
+          0.14695610729712322
+        ],
+        [
+          0.14695329081667377,
+          -0.005026803079888923,
+          -0.9891306595030538
+        ],
+        [
+          0.0009301952889791469,
+          0.9999873468087456,
+          -0.00494377984241971
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8359134585035675,
+        34.408842974985106,
+        251.7859330442801
+      ],
+      "neutral_parent_translation_mm": [
+        8.637834321308076e-06,
+        -47.044097636747274,
+        -4.919279228507708e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "thigh_twist_02_l",
+      "parent": "thigh_l",
+      "frame": "l_hip_roll",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9891429952513817,
+          -0.00019357996273784134,
+          0.14695610729712322
+        ],
+        [
+          0.14695329081667377,
+          -0.005026803079888923,
+          -0.9891306595030538
+        ],
+        [
+          0.0009301952889791469,
+          0.9999873468087456,
+          -0.00494377984241971
+        ]
+      ],
+      "neutral_position_mm": [
+        0.8359147733999431,
+        34.40889290307382,
+        204.7418354075327
+      ],
+      "neutral_parent_translation_mm": [
+        1.7275668645800847e-05,
+        -94.08819527349469,
+        -9.838558456968102e-05
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_foot_root",
+      "parent": "root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.339979560216101,
+        -5.069987860000097e-21,
+        4.325812053434524
+      ],
+      "neutral_parent_translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_foot_l",
+      "parent": "ik_foot_root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.9958414031985448,
+          0.0101176455372858,
+          0.09054022821009074
+        ],
+        [
+          0.09048599031918325,
+          0.0056966681443111344,
+          -0.9958814354771408
+        ],
+        [
+          -0.010591752995144157,
+          0.9999325883382517,
+          0.004757472822247477
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.2121105329476185,
+        45.38183997384227,
+        29.447135642347433
+      ],
+      "neutral_parent_translation_mm": [
+        0.12786902726848215,
+        45.38183997384227,
+        25.121323588912908
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_foot_r",
+      "parent": "ik_foot_root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.9958414513946856,
+          -0.010117653202448049,
+          -0.09053969724823333
+        ],
+        [
+          0.09048546022054525,
+          0.005696581192476513,
+          -0.9958814841392493
+        ],
+        [
+          0.010591750223777015,
+          -0.9999325887560585,
+          -0.0047573911763285626
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.2122219888493975,
+        -45.3819017520594,
+        29.44712975870771
+      ],
+      "neutral_parent_translation_mm": [
+        0.12775757136670318,
+        -45.3819017520594,
+        25.121317705273185
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_hand_root",
+      "parent": "root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.339979560216101,
+        -5.069987860000097e-21,
+        4.325812053434524
+      ],
+      "neutral_parent_translation_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_hand_gun",
+      "parent": "ik_hand_root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.16574136492855263,
+          -0.35417790209336686,
+          0.9203737358379811
+        ],
+        [
+          0.7905885225458664,
+          0.5101570386656817,
+          0.33868803332655006
+        ],
+        [
+          -0.5894909566485007,
+          0.7837715289346785,
+          0.19545486041803095
+        ]
+      ],
+      "neutral_position_mm": [
+        37.08177102482099,
+        -140.52415696625647,
+        330.1979762771959
+      ],
+      "neutral_parent_translation_mm": [
+        44.42175058503709,
+        -140.52415696625647,
+        325.8721642237614
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_hand_l",
+      "parent": "ik_hand_gun",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          0.16574130061070103,
+          0.35417824670876147,
+          -0.9203736148055206
+        ],
+        [
+          0.7905883488211883,
+          0.5101571742991141,
+          0.3386882345451792
+        ],
+        [
+          0.5894912077207429,
+          -0.7837712849227452,
+          -0.19545508166964795
+        ]
+      ],
+      "neutral_position_mm": [
+        37.081181589487144,
+        140.52454043451692,
+        330.1976778216483
+      ],
+      "neutral_parent_translation_mm": [
+        222.19414807218075,
+        143.37894603083495,
+        95.18722975626898
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "ik_hand_r",
+      "parent": "ik_hand_gun",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          -0.16574136492855238,
+          -0.35417790209336675,
+          0.9203737358379812
+        ],
+        [
+          0.7905885225458665,
+          0.5101570386656817,
+          0.3386880333265498
+        ],
+        [
+          -0.5894909566485007,
+          0.7837715289346785,
+          0.195454860418031
+        ]
+      ],
+      "neutral_position_mm": [
+        37.08177102482097,
+        -140.52415696625647,
+        330.1979762771959
+      ],
+      "neutral_parent_translation_mm": [
+        2.355326457298938e-15,
+        5.033170709983876e-15,
+        -1.3079297443681257e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "interaction",
+      "parent": "root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          1.0,
+          2.7755575615628914e-17,
+          1.2663142561451782e-18
+        ],
+        [
+          -2.7755575615628914e-17,
+          1.0,
+          -5.0550926292136644e-17
+        ],
+        [
+          -1.2663142561451798e-18,
+          5.0550926292136644e-17,
+          1.0
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.3399795602161015,
+        -5.479571568494408e-15,
+        4.325812053434535
+      ],
+      "neutral_parent_translation_mm": [
+        -8.881784197001252e-16,
+        -5.479566498506548e-15,
+        1.0658141036401503e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    },
+    {
+      "bone": "center_of_mass",
+      "parent": "root",
+      "frame": "pelvis",
+      "mode": "rigid_derived_from_parent",
+      "neutral_rotation_RH": [
+        [
+          1.0,
+          2.7755575615628914e-17,
+          1.2663142561451782e-18
+        ],
+        [
+          -2.7755575615628914e-17,
+          1.0,
+          -5.0550926292136644e-17
+        ],
+        [
+          -1.2663142561451798e-18,
+          5.0550926292136644e-17,
+          1.0
+        ]
+      ],
+      "neutral_position_mm": [
+        -7.3399795602161015,
+        -5.479571568494408e-15,
+        4.325812053434535
+      ],
+      "neutral_parent_translation_mm": [
+        -8.881784197001252e-16,
+        -5.479566498506548e-15,
+        1.0658141036401503e-14
+      ],
+      "note": "Rigid fingers and helper bones; no additional sensor"
+    }
+  ],
+  "uniform_scale": 0.30847217051032433,
+  "floor_shift_mm": [
+    -7.339979560216101,
+    -5.069987860000097e-21,
+    4.325812053434524
+  ]
+}

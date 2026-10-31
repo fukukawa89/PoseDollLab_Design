@@ -1,0 +1,667 @@
+{
+  "physical_dof": 40,
+  "scalar_channels": 42,
+  "single_axis_devices": 36,
+  "field_devices": 2,
+  "channels": [
+    {
+      "raw_channel": 0,
+      "id": "lumbar_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        1,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        50
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 1,
+      "id": "lumbar_side",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -25,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 2,
+      "id": "lumbar_yaw",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        1
+      ],
+      "limits_deg": [
+        -35,
+        35
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 3,
+      "id": "thorax_side",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -15,
+        15
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 4,
+      "id": "thorax_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        1,
+        0
+      ],
+      "limits_deg": [
+        -15,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 5,
+      "id": "neck_side",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -35,
+        35
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 6,
+      "id": "neck_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        1,
+        0
+      ],
+      "limits_deg": [
+        -45,
+        50
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 7,
+      "id": "neck_yaw",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        1
+      ],
+      "limits_deg": [
+        -70,
+        70
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 8,
+      "id": "l_clavicle_protract",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        -1
+      ],
+      "limits_deg": [
+        -20,
+        20
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 9,
+      "id": "l_clavicle_elevate",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -10,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 10,
+      "id": "l_shoulder_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 11,
+      "id": "l_shoulder_abduct",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "A_zero_offset_deg": 45.0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 12,
+      "id": "l_upperarm_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        -1
+      ],
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 13,
+      "id": "l_elbow_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        0,
+        145
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 14,
+      "id": "l_forearm_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        -1
+      ],
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 15,
+      "id": "l_hip_abduct",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        45
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 16,
+      "id": "l_hip_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        120
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 17,
+      "id": "l_hip_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        -1
+      ],
+      "limits_deg": [
+        -35,
+        45
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 18,
+      "id": "l_knee_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        1,
+        0
+      ],
+      "limits_deg": [
+        0,
+        140
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 19,
+      "id": "l_ankle_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 20,
+      "id": "l_ankle_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -40,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 21,
+      "id": "l_toe_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -10,
+        50
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 22,
+      "id": "r_clavicle_protract",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits_deg": [
+        -20,
+        20
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 23,
+      "id": "r_clavicle_elevate",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "limits_deg": [
+        -10,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 24,
+      "id": "r_shoulder_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 25,
+      "id": "r_shoulder_abduct",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "A_zero_offset_deg": 45.0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 26,
+      "id": "r_upperarm_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 27,
+      "id": "r_elbow_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "limits_deg": [
+        0,
+        145
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 28,
+      "id": "r_forearm_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 29,
+      "id": "r_hip_abduct",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        45
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 30,
+      "id": "r_hip_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        120
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 31,
+      "id": "r_hip_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        0,
+        1
+      ],
+      "limits_deg": [
+        -35,
+        45
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 32,
+      "id": "r_knee_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        1,
+        0
+      ],
+      "limits_deg": [
+        0,
+        140
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 33,
+      "id": "r_ankle_roll",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        -1,
+        0,
+        0
+      ],
+      "limits_deg": [
+        -20,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 34,
+      "id": "r_ankle_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -40,
+        25
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channel": 35,
+      "id": "r_toe_flex",
+      "kind": "single_axis_angle",
+      "physical_axis": [
+        0,
+        -1,
+        0
+      ],
+      "limits_deg": [
+        -10,
+        50
+      ],
+      "A_zero_offset_deg": 0,
+      "calibration": "angle = A_zero_offset_deg + sign * unwrap(raw - raw_at_A); radians/degrees explicit; fixed -90 forearm mounting clock is applied only in FK"
+    },
+    {
+      "raw_channels": [
+        36,
+        37,
+        38
+      ],
+      "id": "l_wrist_field",
+      "kind": "Bx_By_Bz",
+      "solved_axes": [
+        "l_wrist_deviation",
+        "l_wrist_flex"
+      ],
+      "model": "two-DOF bounded calibrated field lookup; not three independent joint angles"
+    },
+    {
+      "raw_channels": [
+        39,
+        40,
+        41
+      ],
+      "id": "r_wrist_field",
+      "kind": "Bx_By_Bz",
+      "solved_axes": [
+        "r_wrist_deviation",
+        "r_wrist_flex"
+      ],
+      "model": "two-DOF bounded calibrated field lookup; not three independent joint angles"
+    }
+  ],
+  "firmware_compatible_with_O22_46ch": false,
+  "calibration_pose": "A neutral",
+  "neutral_angles_deg": {
+    "l_shoulder_abduct": 45.0,
+    "r_shoulder_abduct": 45.0
+  },
+  "packet_candidate": {
+    "schema": "POSEDOLL_O24D_40_A_2",
+    "units": "deg",
+    "angles": {
+      "lumbar_flex": 0,
+      "lumbar_side": 0,
+      "lumbar_yaw": 0,
+      "thorax_side": 0,
+      "thorax_flex": 0,
+      "neck_side": 0,
+      "neck_flex": 0,
+      "neck_yaw": 0,
+      "l_clavicle_protract": 0,
+      "l_clavicle_elevate": 0,
+      "l_shoulder_flex": 0,
+      "l_shoulder_abduct": 45.0,
+      "l_upperarm_roll": 0,
+      "l_elbow_flex": 0,
+      "l_forearm_roll": 0,
+      "l_wrist_deviation": 0,
+      "l_wrist_flex": 0,
+      "l_hip_abduct": 0,
+      "l_hip_flex": 0,
+      "l_hip_roll": 0,
+      "l_knee_flex": 0,
+      "l_ankle_roll": 0,
+      "l_ankle_flex": 0,
+      "l_toe_flex": 0,
+      "r_clavicle_protract": 0,
+      "r_clavicle_elevate": 0,
+      "r_shoulder_flex": 0,
+      "r_shoulder_abduct": 45.0,
+      "r_upperarm_roll": 0,
+      "r_elbow_flex": 0,
+      "r_forearm_roll": 0,
+      "r_wrist_deviation": 0,
+      "r_wrist_flex": 0,
+      "r_hip_abduct": 0,
+      "r_hip_flex": 0,
+      "r_hip_roll": 0,
+      "r_knee_flex": 0,
+      "r_ankle_roll": 0,
+      "r_ankle_flex": 0,
+      "r_toe_flex": 0
+    },
+    "sequence": 0,
+    "calibrated": false
+  },
+  "note": "Sensor zero is A; packet angles retain anatomical N-reference coordinates. Offline interface only; real magnetic calibration and UE runtime pending."
+}

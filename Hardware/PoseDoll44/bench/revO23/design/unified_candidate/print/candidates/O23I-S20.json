@@ -1,0 +1,311 @@
+{
+  "id": "O23I-S20",
+  "key": "frame/clavicle_r.protract_frame",
+  "stl_sha256": "009787b53d080130184832b674c48f4c1b0e1bd89998417ed350be4bdd102d28",
+  "source": {
+    "key": "frame/clavicle_r.protract_frame",
+    "export_version": "O23I-verified-void-retention-1",
+    "source_geometry_sha256": "b9ef731234695c69dcfb250b7fc7a6bb65f9498bbaab62fd2b6939a2fc1fd818",
+    "source_mesh_sha256": "44458063737efe6c3fe15998f62993f51271a7a85943599b63d30bb927d7014c",
+    "source": {
+      "vertices": 30956,
+      "triangles": 62028,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 956,
+      "duplicate_faces": 0,
+      "volume_mm3": 20470.813458576475
+    },
+    "attempts": [
+      {
+        "simplify_tolerance_mm": 0,
+        "stats": {
+          "vertices": 25976,
+          "triangles": 52036,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 10,
+          "nonmanifold_edges": 3,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 20470.813718215748
+        },
+        "surface_bound_mm": 1.0896967565485319e-05,
+        "cleanup": {
+          "before_cleanup": {
+            "vertices": 25990,
+            "triangles": 52766,
+            "watertight": false,
+            "winding_consistent": true,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 444,
+            "degenerate_faces": 692,
+            "duplicate_faces": 281,
+            "volume_mm3": 20470.81371836134
+          },
+          "removed_opposed_face_pairs": 7,
+          "quantization_max_vertex_displacement_mm": 5.319026286429165e-06,
+          "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+          "removed_closed_flat_membranes": [
+            {
+              "faces": 8,
+              "absolute_volume_mm3": 2.9785022214826964e-09,
+              "thickness_mm": 2.577661923407612e-07
+            },
+            {
+              "faces": 6,
+              "absolute_volume_mm3": 9.763037323029522e-10,
+              "thickness_mm": 1.2190735419409367e-06
+            },
+            {
+              "faces": 4,
+              "absolute_volume_mm3": 1.5655664785396706e-10,
+              "thickness_mm": 2.118748421213858e-08
+            },
+            {
+              "faces": 6,
+              "absolute_volume_mm3": 6.921737016885032e-09,
+              "thickness_mm": 1.3530720599508328e-08
+            }
+          ],
+          "after_membrane_cleanup": {
+            "vertices": 25977,
+            "triangles": 52036,
+            "watertight": false,
+            "winding_consistent": true,
+            "boundary_edges": 16,
+            "nonmanifold_edges": 3,
+            "degenerate_faces": 0,
+            "duplicate_faces": 0,
+            "volume_mm3": 20470.813718215744
+          },
+          "collapsed_slit_retriangulation": [
+            {
+              "kind": "collapse_quantized_edge",
+              "displacement_mm": 2.6973983046972182e-06
+            },
+            {
+              "kind": "split_existing_face_at_collinear_vertex",
+              "slit_width_mm": 0.0
+            }
+          ]
+        }
+      },
+      {
+        "simplify_tolerance_mm": 1e-06,
+        "stats": {
+          "vertices": 24282,
+          "triangles": 48624,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 20470.813822405253
+        },
+        "surface_bound_mm": 9.1995692607881e-06,
+        "cleanup": {
+          "before_cleanup": {
+            "vertices": 24282,
+            "triangles": 48714,
+            "watertight": false,
+            "winding_consistent": true,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 78,
+            "degenerate_faces": 90,
+            "duplicate_faces": 17,
+            "volume_mm3": 20470.81382240525
+          },
+          "removed_opposed_face_pairs": 0,
+          "quantization_max_vertex_displacement_mm": 2.621627981731947e-06,
+          "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+          "removed_closed_flat_membranes": [],
+          "after_membrane_cleanup": {
+            "vertices": 24282,
+            "triangles": 48624,
+            "watertight": true,
+            "winding_consistent": true,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "degenerate_faces": 0,
+            "duplicate_faces": 0,
+            "volume_mm3": 20470.813822405253
+          }
+        },
+        "volume_relative_difference": 1.7773049005768363e-08,
+        "retained_native_missing_mm3": 0.0008682803293836095
+      }
+    ],
+    "simplify_tolerance_mm": 1e-06,
+    "surface_displacement_bound_mm": 9.1995692607881e-06,
+    "main_surface_displacement_bound_mm": 9.1995692607881e-06,
+    "numeric_island_removal": [],
+    "exported": {
+      "vertices": 24282,
+      "triangles": 48624,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 20470.813822405253
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "functional_void_retention": "Existing CAD tie-slot planes recut after simplification; right forearm uses finer intermediate simplification only.",
+    "mesh_cache_sha256": "1e2e011d8e5a925b4f8e6f197da6d4c6b7f7388f93a6036ae6e2eb2e3366f724",
+    "id": "O23I-S20",
+    "staged_stl": "export/stl/O23I-S20_clavicle_r_protract_frame.stl",
+    "stl_sha256": "009787b53d080130184832b674c48f4c1b0e1bd89998417ed350be4bdd102d28"
+  },
+  "candidates": [
+    {
+      "name": "unified_final_caps",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.7894037721004883,
+          0.21875044287121972,
+          -0.573576436351046,
+          107.78773481399908
+        ],
+        [
+          -0.5527464719159416,
+          0.15317070908514052,
+          0.8191520442889918,
+          87.60377627950717
+        ],
+        [
+          0.26704498193749965,
+          0.9636840652527158,
+          0.0,
+          37.46457299064556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        79.79655095287362,
+        76.34980225369115,
+        36.456144419237724
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1248.2575366491028,
+        "overhang_projection_volume_proxy_mm3": 15692.417046899382,
+        "bed_contact_projection_mm2": 8.246770694269808,
+        "max_rod_angle_to_bed_deg": 76.78725512049662,
+        "rod_verticality": 0.19013993453000425
+      },
+      "protect_voids": true,
+      "guard_revision": 5,
+      "blocker_margin_mm": 1.5,
+      "enforce_source": "print/support_sources/O23I-S20/enforce_source.json",
+      "settings": {
+        "bridge_no_support": "0",
+        "support_threshold_angle": "55"
+      },
+      "manual_caps": "print/candidates/O23I-S20_unified_caps.npz",
+      "cap_design": [
+        {
+          "target": {
+            "z_mm": 21.479999542236328,
+            "area_mm2": 0.1838437979810159,
+            "bounds_mm": [
+              76.55889999866486,
+              90.48189999908209,
+              77.03310000151396,
+              91.04110000282526
+            ],
+            "support_contact_mm2": 0.0,
+            "previous_solid_bbox_coverage": 0.0,
+            "inside_previous_solid_geometry": false,
+            "previous_solid_section_z_mm": 21.239999771118164
+          },
+          "patch_count": 1,
+          "volume_mm3": 0.7382640953429904
+        },
+        {
+          "target": {
+            "z_mm": 31.079999923706055,
+            "area_mm2": 0.14952121952980058,
+            "bounds_mm": [
+              53.44979999959469,
+              91.50890000164509,
+              53.90209999680519,
+              91.95319999754429
+            ],
+            "support_contact_mm2": 0.0,
+            "previous_solid_bbox_coverage": 0.2476408290593326,
+            "inside_previous_solid_geometry": false,
+            "previous_solid_section_z_mm": 30.84000015258789
+          },
+          "patch_count": 1,
+          "volume_mm3": 0.5226178216809397
+        }
+      ],
+      "shield_enforcers": true
+    },
+    {
+      "name": "unified_contours",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.7894037721004883,
+          0.21875044287121972,
+          -0.573576436351046,
+          107.78773481399908
+        ],
+        [
+          -0.5527464719159416,
+          0.15317070908514052,
+          0.8191520442889918,
+          87.60377627950717
+        ],
+        [
+          0.26704498193749965,
+          0.9636840652527158,
+          0.0,
+          37.46457299064556
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        79.79655095287362,
+        76.34980225369115,
+        36.456144419237724
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1216.5165402702164,
+        "overhang_projection_volume_proxy_mm3": 14750.735621496762,
+        "bed_contact_projection_mm2": 8.246770694269808,
+        "max_rod_angle_to_bed_deg": 76.78725512049662,
+        "rod_verticality": 0.19013993453000425
+      },
+      "protect_voids": true,
+      "guard_revision": 5,
+      "blocker_margin_mm": 1.5,
+      "enforce_source": "print/support_sources/O23I-S20/enforce_source.json",
+      "settings": {
+        "bridge_no_support": "0",
+        "support_threshold_angle": "55"
+      }
+    }
+  ],
+  "previous_H_source_sha256": "624dc9731f7f6a5cf21465b597cae947eabd357747fd42d22004bfef2277d26c"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "O23H-S16",
+  "key": "frame/upperarm_l",
+  "stl_sha256": "42cd5864ee560d98fdfcb79fe8cdfacac791dea1c727a5ee93dc1a5bd254e57a",
+  "source": {
+    "key": "frame/upperarm_l",
+    "export_version": "O23H-export-1",
+    "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+    "source_mesh_sha256": "11e3e01a88ea088e6649b91596435e26348af916f35d691febf8748eb4f9279a",
+    "source": {
+      "vertices": 24056,
+      "triangles": 48140,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 15227.575697787523
+    },
+    "attempts": [
+      {
+        "before_cleanup": {
+          "vertices": 24051,
+          "triangles": 48140,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 10,
+          "degenerate_faces": 2,
+          "duplicate_faces": 4,
+          "volume_mm3": 15227.575680289016
+        },
+        "removed_opposed_face_pairs": 4,
+        "quantization_max_vertex_displacement_mm": 3.9436994125735e-06,
+        "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+        "removed_closed_flat_membranes": [],
+        "after_membrane_cleanup": {
+          "vertices": 24051,
+          "triangles": 48130,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 15227.575680289012
+        },
+        "simplify_tolerance_mm": 0,
+        "after_cleanup": {
+          "vertices": 24051,
+          "triangles": 48130,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 15227.575680289012
+        }
+      }
+    ],
+    "case_rebuild": null,
+    "simplify_tolerance_mm": 0,
+    "surface_displacement_bound_mm": 3.9436994125735e-06,
+    "exported": {
+      "vertices": 24051,
+      "triangles": 48130,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 15227.575680289012
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "mesh_cache_sha256": "87d59a965c2532fbe3354263112f52d802eefbf2a3835ba88f6225a2ab082bdc",
+    "id": "O23H-S16",
+    "staged_stl": "export/stl/O23H-S16_upperarm_l.stl",
+    "stl_sha256": "42cd5864ee560d98fdfcb79fe8cdfacac791dea1c727a5ee93dc1a5bd254e57a"
+  },
+  "candidates": [
+    {
+      "name": "revised_connections",
+      "support": "snug",
+      "matrix": [
+        [
+          0.6427876096865394,
+          -9.581116694508103e-17,
+          -0.766044443118978,
+          33.453777952362614
+        ],
+        [
+          0.766044443118978,
+          -1.6599931479359566e-16,
+          0.6427876096865394,
+          134.35916813914807
+        ],
+        [
+          -1.8874908364109852e-16,
+          -1.0,
+          -3.3306690738754713e-17,
+          32.57063674926758
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        73.56629637668883,
+        74.70265982051467,
+        51.04561424255371
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1517.3055298781155,
+        "overhang_projection_volume_proxy_mm3": 34156.88858532245,
+        "bed_contact_projection_mm2": 12.136583604307535,
+        "max_rod_angle_to_bed_deg": 50.69194142602585,
+        "rod_verticality": 0.22599719359967876
+      },
+      "protect_voids": true,
+      "guard_revision": 5,
+      "blocker_margin_mm": 1.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "brim_width": "6"
+      }
+    }
+  ],
+  "previous_G_source_sha256": "421d6703f22c5edc41dfab67271c2587677ff851efb487f23aa32197107f6560"
+}

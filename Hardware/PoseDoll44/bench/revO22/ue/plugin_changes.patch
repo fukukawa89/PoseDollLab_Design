@@ -1,0 +1,894 @@
+diff --git a/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollMeasurement22.cpp b/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollMeasurement22.cpp
+new file mode 100644
+index 0000000..c162eed
+--- /dev/null
++++ b/Plugins/PoseDoll/Source/PoseDollEditor/Private/PoseDollMeasurement22.cpp
+@@ -0,0 +1,151 @@
++#include "PoseDollEditorLibrary.h"
++#include "PoseDollCore.h"
++#include "PoseDollRigAdapter.h"
++#include "ControlRigBlueprintLegacy.h"
++#include "Engine/SkeletalMesh.h"
++#include "Misc/Paths.h"
++
++FString UPoseDollEditorLibrary::SolveMeasuredPose22(const FString& PayloadFile,const FString& TargetProfileFile,bool AllowSyntheticForTesting)
++{
++    check(IsInGameThread());
++    auto Result=MakeShared<FJsonObject>();Result->SetBoolField(TEXT("ok"),false);
++    FString Error;TSharedPtr<FJsonObject> Data,Target;
++    auto Fail=[&](const FString& Message){Result->SetStringField(TEXT("error"),Message);return PoseDoll::JsonString(Result);};
++    if(!PoseDoll::LoadJson(PayloadFile,Data,Error)||!PoseDoll::LoadJson(TargetProfileFile,Target,Error))return Fail(Error);
++    FString Schema,Status,Basis,ProfileId;bool Eligible=false;double Count=0;
++    if(!Data->TryGetStringField(TEXT("schema"),Schema)||Schema!=TEXT("POSEDOLL-O22-UE/1")||
++       !Data->TryGetStringField(TEXT("status"),Status)||Status!=TEXT("VALID_MEASUREMENT")||
++       !Data->TryGetStringField(TEXT("basis"),Basis)||Basis!=TEXT("RH_X_FORWARD_Y_LEFT_Z_UP")||
++       !Data->TryGetNumberField(TEXT("raw_count"),Count)||Count!=46||
++       !Data->TryGetBoolField(TEXT("hardware_capture_eligible"),Eligible))
++       return Fail(TEXT("Invalid O22 calibrated pose envelope"));
++    if(!Eligible&&!AllowSyntheticForTesting)return Fail(TEXT("Unqualified or synthetic input; production import refused"));
++    if(!AllowSyntheticForTesting)
++    {
++        FString Fingerprint,Qualification;
++        if(!Target->TryGetStringField(TEXT("rig_runtime_sha256"),Fingerprint)||Fingerprint.Len()!=64||
++           !Target->TryGetStringField(TEXT("o22_validation"),Qualification)||Qualification!=TEXT("DIGITAL_CAPTURE_REOPEN_PASS"))
++           return Fail(TEXT("Target profile has not passed O22 capture/reopen validation"));
++    }
++    const TSharedPtr<FJsonObject>* Rotations=nullptr;
++    if(!Data->TryGetObjectField(TEXT("semantic_rotations"),Rotations))return Fail(TEXT("Missing semantic rotations"));
++    const TArray<FString> Names={TEXT("pelvis"),TEXT("waist"),TEXT("chest"),TEXT("head"),TEXT("clavicle_l"),TEXT("clavicle_r"),
++      TEXT("upperarm_l"),TEXT("upperarm_r"),TEXT("lowerarm_l"),TEXT("lowerarm_r"),TEXT("hand_l"),TEXT("hand_r"),
++      TEXT("thigh_l"),TEXT("thigh_r"),TEXT("calf_l"),TEXT("calf_r"),TEXT("foot_l"),TEXT("foot_r"),TEXT("ball_l"),TEXT("ball_r")};
++    if((*Rotations)->Values.Num()!=Names.Num())return Fail(TEXT("Semantic channel set mismatch"));
++    PoseDoll::FProfile Source;TArray<PoseDoll::FMatrix44> Matrices;
++    for(const auto& Name:Names)
++    {
++        const TArray<TSharedPtr<FJsonValue>>* Values=nullptr;
++        if(!(*Rotations)->TryGetArrayField(Name,Values)||Values->Num()!=9)return Fail(TEXT("Invalid rotation: ")+Name);
++        PoseDoll::FMatrix44 M=PoseDoll::FMatrix44::Identity();
++        for(int32 I=0;I<9;++I)
++        {
++            double Value;
++            if(!(*Values)[I]->TryGetNumber(Value)||!FMath::IsFinite(Value))return Fail(TEXT("Nonfinite rotation"));
++            M.M[I/3][I%3]=Value;
++        }
++        FVector3d Col[3];
++        for(int32 I=0;I<3;++I)Col[I]=FVector3d(M.M[0][I],M.M[1][I],M.M[2][I]);
++        for(int32 I=0;I<3;++I)for(int32 J=0;J<3;++J)
++            if(FMath::Abs(FVector3d::DotProduct(Col[I],Col[J])-(I==J?1.:0.))>1e-6)return Fail(TEXT("Non-orthonormal rotation"));
++        if(FVector3d::DotProduct(FVector3d::CrossProduct(Col[0],Col[1]),Col[2])<.999999)return Fail(TEXT("Mirrored rotation"));
++        Source.Segments.Add(Name,Matrices.Num());Source.Nodes.AddDefaulted();Matrices.Add(M);
++    }
++    const auto& Root=Matrices[0];
++    for(int32 I=0;I<3;++I)for(int32 J=0;J<3;++J)
++        if(FMath::Abs(Root.M[I][J]-(I==J?1.:0.))>1e-8)return Fail(TEXT("O22 root rotation is not measured"));
++    FString MeshPath,RigPath;
++    if(!Target->TryGetStringField(TEXT("mesh"),MeshPath)||!Target->TryGetStringField(TEXT("rig"),RigPath))return Fail(TEXT("Target assets missing"));
++    USkeletalMesh* Mesh=LoadObject<USkeletalMesh>(nullptr,*MeshPath);
++    UControlRigBlueprint* Rig=LoadObject<UControlRigBlueprint>(nullptr,*RigPath);
++    if(!Mesh||!Rig||!Rig->GeneratedClass)return Fail(TEXT("Target mesh or Rig unavailable"));
++    PoseDoll::FCuratedAdapter Adapter;
++    if(!Adapter.Initialize(Rig->GeneratedClass,Mesh,TargetProfileFile,Error))return Fail(Error);
++    PoseDoll::FPoseResult Pose;
++    if(!Adapter.Apply(Source,Matrices,Pose,Error))return Fail(Error);
++    auto EncodeTransform=[](const FTransform& T)
++    {
++        auto O=MakeShared<FJsonObject>();
++        auto Array=[](std::initializer_list<double> V){TArray<TSharedPtr<FJsonValue>> A;for(double N:V)A.Add(MakeShared<FJsonValueNumber>(N));return A;};
++        const auto P=T.GetLocation();const auto Q=T.GetRotation();const auto S=T.GetScale3D();
++        O->SetArrayField(TEXT("p"),Array({P.X,P.Y,P.Z}));
++        O->SetArrayField(TEXT("q"),Array({Q.X,Q.Y,Q.Z,Q.W}));
++        O->SetArrayField(TEXT("s"),Array({S.X,S.Y,S.Z}));return O;
++    };
++    auto Controls=MakeShared<FJsonObject>(),Bones=MakeShared<FJsonObject>(),Switches=MakeShared<FJsonObject>();
++    for(const auto& V:Pose.Controls)Controls->SetObjectField(V.Key.ToString(),EncodeTransform(V.Value));
++    for(const auto& V:Pose.Bones)Bones->SetObjectField(V.Key.ToString(),EncodeTransform(V.Value));
++    for(const auto& V:Pose.Switches)Switches->SetBoolField(V.Key.ToString(),V.Value);
++    Result->SetObjectField(TEXT("controls"),Controls);Result->SetObjectField(TEXT("bones"),Bones);Result->SetObjectField(TEXT("switches"),Switches);
++    Result->SetBoolField(TEXT("ok"),true);Result->SetBoolField(TEXT("hardware_capture_eligible"),Eligible);
++    Result->SetBoolField(TEXT("contact_correction"),false);Result->SetBoolField(TEXT("physical_source_test"),Eligible);
++    Result->SetNumberField(TEXT("maximum_bone_rotation_error_deg"),Pose.MaximumRotationErrorDegrees);
++    Result->SetStringField(TEXT("rig_runtime_sha256"),Adapter.Fingerprint);Result->SetStringField(TEXT("mesh"),MeshPath);
++    Result->SetStringField(TEXT("root_and_fingers"),TEXT("AUTHORED_IN_UE"));
++    return PoseDoll::JsonString(Result);
++}
++
++
++
++#include "LevelSequence.h"
++#include "GameFramework/Actor.h"
++#include "ControlRigObjectBinding.h"
++#include "MovieScene.h"
++#include "MovieSceneBinding.h"
++#include "Sequencer/MovieSceneControlRigParameterTrack.h"
++#include "Sequencer/MovieSceneControlRigParameterSection.h"
++#include "LevelSequenceEditorBlueprintLibrary.h"
++#include "ScopedTransaction.h"
++#include "Variants/MovieSceneTimeWarpVariant.h"
++#include "Serialization/JsonReader.h"
++#include "Serialization/JsonSerializer.h"
++
++FString UPoseDollEditorLibrary::CaptureMeasuredPose22(ULevelSequence* Sequence,UControlRig* ControlRig,int32 Frame,const FString& PayloadFile,const FString& TargetProfileFile,bool AllowSyntheticForTesting)
++{
++    const FString Solved=SolveMeasuredPose22(PayloadFile,TargetProfileFile,AllowSyntheticForTesting);
++    TSharedPtr<FJsonObject> Data;
++    if(!FJsonSerializer::Deserialize(TJsonReaderFactory<>::Create(Solved),Data)||!Data->GetBoolField(TEXT("ok")))return Solved;
++    auto Fail=[&](const FString& Message){auto Out=MakeShared<FJsonObject>();Out->SetBoolField(TEXT("ok"),false);Out->SetStringField(TEXT("error"),Message);return PoseDoll::JsonString(Out);};
++    if(!Sequence||!ControlRig)return Fail(TEXT("Explicit sequence and Control Rig required"));
++    auto* Movie=Sequence->GetMovieScene();
++    if(!Movie||Movie->IsReadOnly()||ControlRig->IsAdditive())return Fail(TEXT("Read-only or additive Rig capture is unsupported"));
++    UMovieSceneControlRigParameterSection* Section=nullptr;int32 Matches=0;
++    for(const auto& Binding:static_cast<const UMovieScene*>(Movie)->GetBindings())for(auto* Base:Binding.GetTracks())
++    {
++        auto* Track=Cast<UMovieSceneControlRigParameterTrack>(Base);
++        if(!Track||Track->GetControlRig()!=ControlRig)continue;
++        if(Track->GetAllSections().Num()!=1)return Fail(TEXT("Select a single-section Control Rig track"));
++        Section=Cast<UMovieSceneControlRigParameterSection>(Track->GetAllSections()[0]);++Matches;
++    }
++    if(Matches!=1||!Section)return Fail(TEXT("Control Rig must belong uniquely to the selected sequence"));
++    if(Section->IsReadOnly()||!Section->IsActive())return Fail(TEXT("Section must be active and writable"));
++    const auto* Warp=Section->GetTimeWarp();
++    if(Warp&&!(*Warp==FMovieSceneTimeWarpVariant(1.0)))return Fail(TEXT("Time warp is unsupported"));
++    auto* Component=ControlRig->GetObjectBinding().IsValid()?Cast<USkeletalMeshComponent>(ControlRig->GetObjectBinding()->GetBoundObject()):nullptr;
++    if(!Component && ControlRig->GetObjectBinding().IsValid())if(auto* Actor=Cast<AActor>(ControlRig->GetObjectBinding()->GetBoundObject()))Component=Actor->FindComponentByClass<USkeletalMeshComponent>();
++    if(!Component||Component->GetSkeletalMeshAsset()!=LoadObject<USkeletalMesh>(nullptr,*Data->GetStringField(TEXT("mesh"))))return Fail(TEXT("Bound mesh differs from the validated target"));
++    const auto Controls=Data->GetObjectField(TEXT("controls")),Switches=Data->GetObjectField(TEXT("switches"));
++    for(const auto& V:Controls->Values)if(!Section->HasTransformParameter(FName(*V.Key)))return Fail(FString(TEXT("Missing control channel "))+V.Key);
++    for(const auto& V:Switches->Values)if(!Section->HasBoolParameter(FName(*V.Key)))return Fail(FString(TEXT("Missing switch channel "))+V.Key);
++    const FFrameNumber Time=FFrameRate::TransformTime(FFrameTime(Frame),Movie->GetDisplayRate(),Movie->GetTickResolution()).RoundToFrame();
++    {
++        FScopedTransaction Transaction(FText::FromString(TEXT("Capture PoseDoll O22 measured pose")));
++        Sequence->Modify();Movie->Modify();Section->Modify();Section->ExpandToFrame(Time);
++        for(const auto& V:Controls->Values)
++        {
++            const auto O=V.Value->AsObject();const auto P=O->GetArrayField(TEXT("p")),Q=O->GetArrayField(TEXT("q")),S=O->GetArrayField(TEXT("s"));
++            FTransform T(FQuat(Q[0]->AsNumber(),Q[1]->AsNumber(),Q[2]->AsNumber(),Q[3]->AsNumber()),FVector(P[0]->AsNumber(),P[1]->AsNumber(),P[2]->AsNumber()),FVector(S[0]->AsNumber(),S[1]->AsNumber(),S[2]->AsNumber()));
++            const FName Name(*V.Key);Section->AddTransformParameterKey(Name,Time,T,EMovieSceneKeyInterpolation::Constant);
++            if(Section->CanCreateSpaceChannel(Name))
++            {
++                Section->AddSpaceChannel(Name,true);
++                if(auto* Space=Section->GetSpaceChannel(Name))Space->SpaceCurve.GetData().UpdateOrAddKey(Time,FMovieSceneControlRigSpaceBaseKey());
++            }
++        }
++        for(const auto& V:Switches->Values)Section->AddBoolParameterKey(FName(*V.Key),Time,V.Value->AsBool());
++        Section->MarkAsChanged();
++    }
++    ULevelSequenceEditorBlueprintLibrary::RefreshCurrentLevelSequence();
++    return Solved;
++}
+diff --git a/Plugins/PoseDoll/Source/PoseDollEditor/Public/PoseDollEditorLibrary.h b/Plugins/PoseDoll/Source/PoseDollEditor/Public/PoseDollEditorLibrary.h
+index b6e0cc4..919f687 100644
+--- a/Plugins/PoseDoll/Source/PoseDollEditor/Public/PoseDollEditorLibrary.h
++++ b/Plugins/PoseDoll/Source/PoseDollEditor/Public/PoseDollEditorLibrary.h
+@@ -3,6 +3,7 @@
+ #include "Kismet/BlueprintFunctionLibrary.h"
+ #include "PoseDollEditorLibrary.generated.h"
+ class ULevelSequence;
++class UControlRig;
+ class USkeletalMeshComponent;
+ 
+ UCLASS()
+@@ -18,6 +19,11 @@ public:
+     static FString TestRigFixtures();
+     UFUNCTION(BlueprintCallable, Category="PoseDoll")
+     static FString SessionCommand(const FString& Action, const FString& Argument = TEXT(""));
++    // O22 file input: solve only. Sequencer writing remains an explicit editor action.
++    UFUNCTION(BlueprintCallable, Category="PoseDoll")
++    static FString SolveMeasuredPose22(const FString& PayloadFile, const FString& TargetProfileFile, bool AllowSyntheticForTesting = false);
++    UFUNCTION(BlueprintCallable, Category="PoseDoll")
++    static FString CaptureMeasuredPose22(ULevelSequence* Sequence, UControlRig* ControlRig, int32 Frame, const FString& PayloadFile, const FString& TargetProfileFile, bool AllowSyntheticForTesting = false);
+     UFUNCTION(BlueprintCallable, Category="PoseDoll")
+     static bool BindTarget(ULevelSequence* Sequence, USkeletalMeshComponent* Component);
+ };
+diff --git a/Plugins/PoseDoll/Source/PoseDollRig/Private/PoseDollRigAdapter.cpp b/Plugins/PoseDoll/Source/PoseDollRig/Private/PoseDollRigAdapter.cpp
+index 905ed0b..f51c105 100644
+--- a/Plugins/PoseDoll/Source/PoseDollRig/Private/PoseDollRigAdapter.cpp
++++ b/Plugins/PoseDoll/Source/PoseDollRig/Private/PoseDollRigAdapter.cpp
+@@ -20,7 +20,11 @@ bool FCuratedAdapter::Initialize(UClass* Class,USkeletalMesh* Mesh,const FString
+     Component.Reset(NewObject<USkeletalMeshComponent>(GetTransientPackage(),NAME_None,RF_Transient));Component->SetSkeletalMeshAsset(Mesh);
+     Rig.Reset(NewObject<UControlRig>(GetTransientPackage(),Class,NAME_None,RF_Transient));
+     auto Binding=MakeShared<FControlRigObjectBinding>();Binding->BindToObject(Component.Get());Rig->SetObjectBinding(Binding);
+-    Rig->Initialize();Rig->RequestConstruction();Rig->Evaluate_AnyThread();
++    Rig->Initialize();
++    bool bUseTargetMeshReference=false;
++    Config->TryGetBoolField(TEXT("use_target_mesh_reference"),bUseTargetMeshReference);
++    if (bUseTargetMeshReference) Rig->SetBoneInitialTransformsFromSkeletalMesh(Mesh);
++    Rig->RequestConstruction();Rig->Evaluate_AnyThread();
+     URigHierarchy* H=Rig->GetHierarchy();
+     FString Signature;
+     for (const auto& Key:H->GetAllKeys())
+diff --git a/Scripts/O22/capture_bridge.py b/Scripts/O22/capture_bridge.py
+new file mode 100644
+index 0000000..7a0cb3d
+--- /dev/null
++++ b/Scripts/O22/capture_bridge.py
+@@ -0,0 +1,28 @@
++"""Key an explicitly bound O22 payload into a target Control Rig. No live stream."""
++import json
++from pathlib import Path
++import unreal
++
++def solve(payload,profile,allow_synthetic=False):
++    data=json.loads(unreal.PoseDollEditorLibrary.solve_measured_pose22(str(payload),str(profile),allow_synthetic))
++    if not data.get('ok'):raise ValueError(data.get('error',data))
++    return data
++
++def snapshot(rig):
++    assert rig.execute('Forwards Solve')
++    out={};h=rig.get_hierarchy()
++    for key in h.get_all_keys():
++        if key.type!=unreal.RigElementType.BONE:continue
++        t=h.get_global_transform(key)
++        out[str(key.name)]={'p':[t.translation.x,t.translation.y,t.translation.z],
++          'q':[t.rotation.x,t.rotation.y,t.rotation.z,t.rotation.w],'s':[t.scale3d.x,t.scale3d.y,t.scale3d.z]}
++    return out
++
++def errors(expected,actual):
++    import math
++    pe,re=0,0
++    for k,v in expected.items():
++        a=actual[k];pe=max(pe,math.dist(v['p'],a['p']))
++        qa,qb=v['q'],a['q'];dot=abs(sum(x*y for x,y in zip(qa,qb)))/math.sqrt(sum(x*x for x in qa)*sum(x*x for x in qb))
++        re=max(re,math.degrees(2*math.acos(min(1,dot))))
++    return {'position_cm':pe,'rotation_deg':re}
+diff --git a/Scripts/O22/capture_file.py b/Scripts/O22/capture_file.py
+new file mode 100644
+index 0000000..4715013
+--- /dev/null
++++ b/Scripts/O22/capture_file.py
+@@ -0,0 +1,18 @@
++"""Capture a qualified O22 file into the one Control Rig in the open sequence."""
++import json
++from pathlib import Path
++import unreal
++
++def capture(payload_file, target):
++    if target not in ('manny','quinn'):raise ValueError('Choose manny or quinn explicitly')
++    seq=unreal.LevelSequenceEditorBlueprintLibrary.get_current_level_sequence()
++    if not seq:raise ValueError('Open the intended Level Sequence first')
++    rigs=unreal.ControlRigSequencerLibrary.get_control_rigs(seq)
++    if len(rigs)!=1:raise ValueError('This helper needs one Control Rig in the open sequence; use the explicit API for more')
++    unreal.LevelSequenceEditorBlueprintLibrary.refresh_current_level_sequence()
++    frame=unreal.LevelSequenceEditorBlueprintLibrary.get_current_time()
++    profile=Path(unreal.Paths.project_dir())/'Shared/Profiles/O22'/f'{target}.json'
++    result=json.loads(unreal.PoseDollEditorLibrary.capture_measured_pose22(seq,rigs[0].control_rig,frame,str(Path(payload_file).resolve()),str(profile),False))
++    if not result.get('ok'):raise ValueError(result.get('error','O22 capture failed'))
++    unreal.log(f'O22 pose keyed at frame {frame}; use Sequencer Undo or Save as needed.')
++    return result
+diff --git a/Scripts/O22/probe_target.py b/Scripts/O22/probe_target.py
+new file mode 100644
+index 0000000..85da6e7
+--- /dev/null
++++ b/Scripts/O22/probe_target.py
+@@ -0,0 +1,20 @@
++"""Read-only native target solve and Sequencer API inventory."""
++import json
++from pathlib import Path
++import unreal
++R=Path(unreal.Paths.project_dir())
++D=Path('E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/Hardware/PoseDoll44/bench/revO22')
++out={'status':'RUNNING','targets':{},'api':{}}
++try:
++ for name in ['manny','quinn']:
++  rows={}
++  for pose in ['a_stand','left_elbow','asymmetric','right_forearm']:
++   rows[pose]=json.loads(unreal.PoseDollEditorLibrary.solve_measured_pose22(str(D/'ue'/f'{pose}.payload.json'),str(R/'Shared/Profiles/O22'/f'{name}.json'),True))
++  out['targets'][name]=rows
++ for name in dir(unreal.ControlRigSequencerLibrary):
++  if any(s in name for s in ('create_control','set_local','set_control_rig_bool','get_control_rigs')):
++   out['api'][name]=getattr(unreal.ControlRigSequencerLibrary,name).__doc__
++ out['status']='PASS' if all(x.get('ok') for v in out['targets'].values() for x in v.values()) else 'FAIL'
++finally:
++ (R/'reports/o22_target_probe.json').write_text(json.dumps(out,indent=2),encoding='utf-8')
++ unreal.log('O22_TARGET_PROBE '+out['status'])
+diff --git a/Scripts/O22/test_capture.py b/Scripts/O22/test_capture.py
+new file mode 100644
+index 0000000..bf31f63
+--- /dev/null
++++ b/Scripts/O22/test_capture.py
+@@ -0,0 +1,51 @@
++"""Owned O22 digital fixtures only; never labels synthetic input as hardware."""
++import sys,json
++from pathlib import Path
++import unreal
++R=Path(unreal.Paths.project_dir());sys.path.insert(0,str(R/'Scripts/O22'))
++from capture_bridge import solve,snapshot,errors
++D=Path('E:/UnrealProjects/PoseDollLab_UE58_Design/PoseDoll_HW44_Plan/design/Hardware/PoseDoll44/bench/revO22')
++OUT=R/'reports/o22_capture.json';report={'passed':False,'source_kind':'SYNTHETIC_P21R','physical_test':False,'targets':{}}
++POSES=['a_stand','left_elbow','asymmetric','right_forearm']
++def run():
++    level=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem);actors=unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
++    path='/Game/PoseDoll_O22/MeasurementTest'
++    if unreal.EditorAssetLibrary.does_asset_exist(path):assert level.load_level(path)
++    else:assert level.new_level(path)
++    for target in ['manny','quinn']:
++        cfg=json.loads((R/'Shared/Profiles/O22'/f'{target}.json').read_text())
++        label='PoseDoll_O22_'+target
++        found=[a for a in actors.get_all_level_actors() if a.get_actor_label()==label];assert len(found)<=1
++        actor=found[0] if found else actors.spawn_actor_from_class(unreal.SkeletalMeshActor,unreal.Vector(0,0 if target=='manny' else 150,0))
++        actor.set_actor_label(label);actor.skeletal_mesh_component.set_skeletal_mesh_asset(unreal.load_asset(cfg['mesh']))
++        seqpath='/Game/PoseDoll_O22/Measured_'+target
++        seq=unreal.load_asset(seqpath)
++        if seq:
++            for b in seq.get_bindings():b.remove()
++        else:seq=unreal.AssetToolsHelpers.get_asset_tools().create_asset('Measured_'+target,'/Game/PoseDoll_O22',unreal.LevelSequence,unreal.LevelSequenceFactoryNew())
++        seq.set_display_rate(unreal.FrameRate(24,1));seq.set_playback_start(0);seq.set_playback_end(20)
++        binding=seq.add_possessable(actor);assert unreal.LevelSequenceEditorBlueprintLibrary.open_level_sequence(seq)
++        cls=unreal.load_class(None,cfg['rig']+'.'+cfg['rig'].split('/')[-1]+'_C')
++        track=unreal.ControlRigSequencerLibrary.find_or_create_control_rig_track(actor.get_world(),seq,cls,binding,False)
++        proxies=unreal.ControlRigSequencerLibrary.get_control_rigs(seq);assert len(proxies)==1
++        unreal.LevelSequenceEditorBlueprintLibrary.refresh_current_level_sequence();unreal.LevelSequenceEditorBlueprintLibrary.set_current_time(0)
++        rig=proxies[0].control_rig;record={'sequence':seqpath,'poses':{},'checks':[]}
++        report['targets'][target]=record
++        for i,pose in enumerate(POSES):
++            frame=i*4;solved=solve(D/'ue'/f'{pose}.payload.json',R/'Shared/Profiles/O22'/f'{target}.json',True)
++            assert not solved['hardware_capture_eligible']
++            keyed=json.loads(unreal.PoseDollEditorLibrary.capture_measured_pose22(seq,rig,frame,str(D/'ue'/f'{pose}.payload.json'),str(R/'Shared/Profiles/O22'/f'{target}.json'),True));assert keyed['ok'],keyed
++            unreal.LevelSequenceEditorBlueprintLibrary.set_current_time(frame)
++            actual=snapshot(rig);err=errors(solved['bones'],actual)
++            record['checks'].append({'frame':frame,'pose':pose,**err});record['poses'][str(frame)]=actual
++            OUT.write_text(json.dumps(report,indent=2),encoding='utf-8')
++            assert err['position_cm']<.1 and err['rotation_deg']<.5,err
++        assert len(binding.get_tracks())==1
++        assert unreal.EditorAssetLibrary.save_loaded_asset(seq,False)
++        unreal.LevelSequenceEditorBlueprintLibrary.close_level_sequence()
++    assert level.save_current_level();report['passed']=True
++try:run()
++except Exception as ex:report['error']=repr(ex);raise
++finally:
++    OUT.write_text(json.dumps(report,indent=2),encoding='utf-8')
++    unreal.LevelSequenceEditorBlueprintLibrary.close_level_sequence()
+diff --git a/Scripts/O22/test_reopen.py b/Scripts/O22/test_reopen.py
+new file mode 100644
+index 0000000..41601dd
+--- /dev/null
++++ b/Scripts/O22/test_reopen.py
+@@ -0,0 +1,37 @@
++"""Fresh-process saved-pose verification, with no source payload replay."""
++from pathlib import Path
++import sys,json,math
++import unreal
++R=Path(unreal.Paths.project_dir());sys.path.insert(0,str(R/'Scripts/O22'))
++from capture_bridge import snapshot,errors
++out=R/'reports/o22_reopen.json';report={'passed':False,'physical_test':False,'source_payload_replayed':False,'targets':{}}
++try:
++ expected=json.loads((R/'reports/o22_capture.json').read_text());assert expected['passed']
++ level=unreal.get_editor_subsystem(unreal.LevelEditorSubsystem);assert level.load_level('/Game/PoseDoll_O22/MeasurementTest')
++ for target,prior in expected['targets'].items():
++  seq=unreal.load_asset(prior['sequence']);assert unreal.LevelSequenceEditorBlueprintLibrary.open_level_sequence(seq)
++  proxies=unreal.ControlRigSequencerLibrary.get_control_rigs(seq);assert len(proxies)==1;rig=proxies[0].control_rig;rows=[]
++  for frame,pose in prior['poses'].items():
++   unreal.LevelSequenceEditorBlueprintLibrary.set_current_time(int(frame));actual=snapshot(rig);err=errors(pose,actual)
++   rows.append({'frame':int(frame),**err});assert err['position_cm']<.001 and err['rotation_deg']<.01,err
++  ctrl='hand_l_fk_ctrl';frame=unreal.FrameNumber(4)
++  before=unreal.ControlRigSequencerLibrary.get_local_control_rig_euler_transform(seq,rig,ctrl,frame)
++  edited=unreal.EulerTransform(location=before.location,rotation=unreal.Rotator(pitch=before.rotation.pitch,yaw=before.rotation.yaw+10,roll=before.rotation.roll),scale=before.scale)
++  with unreal.ScopedEditorTransaction('O22 acceptance manual wrist edit'):
++   unreal.ControlRigSequencerLibrary.set_local_control_rig_euler_transform(seq,rig,ctrl,frame,edited,set_key=True)
++  after=unreal.ControlRigSequencerLibrary.get_local_control_rig_euler_transform(seq,rig,ctrl,frame)
++  assert abs(after.rotation.yaw-before.rotation.yaw)>9
++  unreal.PoseDollEditorLibrary.session_command('undo')
++  restored=unreal.ControlRigSequencerLibrary.get_local_control_rig_euler_transform(seq,rig,ctrl,frame)
++  assert abs(restored.rotation.yaw-before.rotation.yaw)<.001
++  report['targets'][target]={'cases':rows,'manual_wrist_edit':True,'undo':True,'input_disconnected':True}
++  unreal.LevelSequenceEditorBlueprintLibrary.close_level_sequence()
++ # Target proportions must be preserved, not normalized to the doll or Manny.
++ lengths={}
++ for target,prior in expected['targets'].items():
++  bones=prior['poses']['0'];lengths[target]=math.dist(bones['upperarm_l']['p'],bones['lowerarm_l']['p'])
++ assert abs(lengths['manny']-lengths['quinn'])>.5
++ report['upperarm_length_cm']=lengths;report['passed']=True
++except Exception as exc:report['error']=repr(exc);raise
++finally:
++ out.write_text(json.dumps(report,indent=2),encoding='utf-8');unreal.LevelSequenceEditorBlueprintLibrary.close_level_sequence()
+diff --git a/Shared/Profiles/O22/manny.json b/Shared/Profiles/O22/manny.json
+new file mode 100644
+index 0000000..9f7e3f5
+--- /dev/null
++++ b/Shared/Profiles/O22/manny.json
+@@ -0,0 +1,250 @@
++{
++  "profile_id": "o22_manny_ue582_v1",
++  "status": "DIGITAL_SYNTHETIC_VALIDATED_PHYSICAL_PENDING",
++  "mesh": "/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple",
++  "rig": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Body",
++  "source_basis_to_mesh_yaw_degrees": 90,
++  "controls": [
++    {
++      "control": "body_ctrl",
++      "bone": "pelvis",
++      "semantic": "pelvis",
++      "group": "pelvis"
++    },
++    {
++      "control": "spine_01_ctrl",
++      "bone": "spine_02",
++      "semantic": "waist",
++      "from": "pelvis",
++      "weight": 0.5,
++      "group": "torso"
++    },
++    {
++      "control": "spine_02_ctrl",
++      "bone": "spine_03",
++      "semantic": "waist",
++      "group": "torso"
++    },
++    {
++      "control": "spine_03_ctrl",
++      "bone": "spine_04",
++      "semantic": "chest",
++      "group": "torso"
++    },
++    {
++      "control": "neck_01_ctrl",
++      "bone": "neck_01",
++      "semantic": "head",
++      "from": "chest",
++      "weight": 0.3333333333333333,
++      "group": "head"
++    },
++    {
++      "control": "neck_02_ctrl",
++      "bone": "neck_02",
++      "semantic": "head",
++      "from": "chest",
++      "weight": 0.6666666666666666,
++      "group": "head"
++    },
++    {
++      "control": "head_ctrl",
++      "bone": "head",
++      "semantic": "head",
++      "group": "head"
++    },
++    {
++      "control": "clavicle_l_ctrl",
++      "bone": "clavicle_l",
++      "semantic": "clavicle_l",
++      "group": "arm_l"
++    },
++    {
++      "control": "clavicle_r_ctrl",
++      "bone": "clavicle_r",
++      "semantic": "clavicle_r",
++      "group": "arm_r"
++    },
++    {
++      "control": "upperarm_l_fk_ctrl",
++      "bone": "upperarm_l",
++      "semantic": "upperarm_l",
++      "neutral_child": "lowerarm_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "lowerarm_l_fk_ctrl",
++      "bone": "lowerarm_l",
++      "semantic": "lowerarm_l",
++      "neutral_child": "hand_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "hand_l_fk_ctrl",
++      "bone": "hand_l",
++      "semantic": "hand_l",
++      "neutral_child": "middle_01_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "thigh_l_fk_ctrl",
++      "bone": "thigh_l",
++      "semantic": "thigh_l",
++      "neutral_child": "calf_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "calf_l_fk_ctrl",
++      "bone": "calf_l",
++      "semantic": "calf_l",
++      "neutral_child": "foot_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "foot_l_fk_ctrl",
++      "bone": "foot_l",
++      "semantic": "foot_l",
++      "neutral_child": "ball_l",
++      "neutral_direction": [
++        0,
++        1,
++        0
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "ball_l_fk_ctrl",
++      "bone": "ball_l",
++      "semantic": "ball_l",
++      "group": "leg_l"
++    },
++    {
++      "control": "upperarm_r_fk_ctrl",
++      "bone": "upperarm_r",
++      "semantic": "upperarm_r",
++      "neutral_child": "lowerarm_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "lowerarm_r_fk_ctrl",
++      "bone": "lowerarm_r",
++      "semantic": "lowerarm_r",
++      "neutral_child": "hand_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "hand_r_fk_ctrl",
++      "bone": "hand_r",
++      "semantic": "hand_r",
++      "neutral_child": "middle_01_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "thigh_r_fk_ctrl",
++      "bone": "thigh_r",
++      "semantic": "thigh_r",
++      "neutral_child": "calf_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "calf_r_fk_ctrl",
++      "bone": "calf_r",
++      "semantic": "calf_r",
++      "neutral_child": "foot_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "foot_r_fk_ctrl",
++      "bone": "foot_r",
++      "semantic": "foot_r",
++      "neutral_child": "ball_r",
++      "neutral_direction": [
++        0,
++        1,
++        0
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "ball_r_fk_ctrl",
++      "bone": "ball_r",
++      "semantic": "ball_r",
++      "group": "leg_r"
++    }
++  ],
++  "switches": {
++    "arm_l_fk_ik_switch": false,
++    "arm_r_fk_ik_switch": false,
++    "leg_l_fk_ik_switch": false,
++    "leg_r_fk_ik_switch": false,
++    "spine_fk_ik_switch": false,
++    "neck_fk_ik_switch": false,
++    "arm_l_stretch_switch": false,
++    "arm_r_stretch_switch": false,
++    "leg_l_stretch_switch": false,
++    "leg_r_stretch_switch": false,
++    "spine_stretch_switch": false,
++    "arm_l_fk_local": true,
++    "arm_r_fk_local": true,
++    "head_local": true
++  },
++  "notes": [
++    "Discovered from transient runtime probe, not asset-name inference.",
++    "Spine controls drive spine_02/03/04; spine_01 stays with pelvis and spine_05 follows spine_04.",
++    "head_ctrl is world oriented unless explicitly set; global source orientation is applied.",
++    "Twist and corrective helpers remain owned by the native Rig. Fingers/face are excluded."
++  ],
++  "o22_validation": "DIGITAL_CAPTURE_REOPEN_PASS",
++  "use_target_mesh_reference": true,
++  "rig_runtime_sha256": "8178edddcdbf500319aa1ce6b548fa9633bfd0ecf244122ecdeacb65d8d8e9f6"
++}
+diff --git a/Shared/Profiles/O22/quinn.json b/Shared/Profiles/O22/quinn.json
+new file mode 100644
+index 0000000..c7ac106
+--- /dev/null
++++ b/Shared/Profiles/O22/quinn.json
+@@ -0,0 +1,250 @@
++{
++  "profile_id": "o22_quinn_ue582_v1",
++  "status": "DIGITAL_SYNTHETIC_VALIDATED_PHYSICAL_PENDING",
++  "mesh": "/Game/Characters/Mannequins/Meshes/SKM_Quinn_Simple",
++  "rig": "/Game/Characters/Mannequins/Rigs/CR_Mannequin_Body",
++  "source_basis_to_mesh_yaw_degrees": 90,
++  "controls": [
++    {
++      "control": "body_ctrl",
++      "bone": "pelvis",
++      "semantic": "pelvis",
++      "group": "pelvis"
++    },
++    {
++      "control": "spine_01_ctrl",
++      "bone": "spine_02",
++      "semantic": "waist",
++      "from": "pelvis",
++      "weight": 0.5,
++      "group": "torso"
++    },
++    {
++      "control": "spine_02_ctrl",
++      "bone": "spine_03",
++      "semantic": "waist",
++      "group": "torso"
++    },
++    {
++      "control": "spine_03_ctrl",
++      "bone": "spine_04",
++      "semantic": "chest",
++      "group": "torso"
++    },
++    {
++      "control": "neck_01_ctrl",
++      "bone": "neck_01",
++      "semantic": "head",
++      "from": "chest",
++      "weight": 0.3333333333333333,
++      "group": "head"
++    },
++    {
++      "control": "neck_02_ctrl",
++      "bone": "neck_02",
++      "semantic": "head",
++      "from": "chest",
++      "weight": 0.6666666666666666,
++      "group": "head"
++    },
++    {
++      "control": "head_ctrl",
++      "bone": "head",
++      "semantic": "head",
++      "group": "head"
++    },
++    {
++      "control": "clavicle_l_ctrl",
++      "bone": "clavicle_l",
++      "semantic": "clavicle_l",
++      "group": "arm_l"
++    },
++    {
++      "control": "clavicle_r_ctrl",
++      "bone": "clavicle_r",
++      "semantic": "clavicle_r",
++      "group": "arm_r"
++    },
++    {
++      "control": "upperarm_l_fk_ctrl",
++      "bone": "upperarm_l",
++      "semantic": "upperarm_l",
++      "neutral_child": "lowerarm_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "lowerarm_l_fk_ctrl",
++      "bone": "lowerarm_l",
++      "semantic": "lowerarm_l",
++      "neutral_child": "hand_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "hand_l_fk_ctrl",
++      "bone": "hand_l",
++      "semantic": "hand_l",
++      "neutral_child": "middle_01_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_l"
++    },
++    {
++      "control": "thigh_l_fk_ctrl",
++      "bone": "thigh_l",
++      "semantic": "thigh_l",
++      "neutral_child": "calf_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "calf_l_fk_ctrl",
++      "bone": "calf_l",
++      "semantic": "calf_l",
++      "neutral_child": "foot_l",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "foot_l_fk_ctrl",
++      "bone": "foot_l",
++      "semantic": "foot_l",
++      "neutral_child": "ball_l",
++      "neutral_direction": [
++        0,
++        1,
++        0
++      ],
++      "group": "leg_l"
++    },
++    {
++      "control": "ball_l_fk_ctrl",
++      "bone": "ball_l",
++      "semantic": "ball_l",
++      "group": "leg_l"
++    },
++    {
++      "control": "upperarm_r_fk_ctrl",
++      "bone": "upperarm_r",
++      "semantic": "upperarm_r",
++      "neutral_child": "lowerarm_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "lowerarm_r_fk_ctrl",
++      "bone": "lowerarm_r",
++      "semantic": "lowerarm_r",
++      "neutral_child": "hand_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "hand_r_fk_ctrl",
++      "bone": "hand_r",
++      "semantic": "hand_r",
++      "neutral_child": "middle_01_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "arm_r"
++    },
++    {
++      "control": "thigh_r_fk_ctrl",
++      "bone": "thigh_r",
++      "semantic": "thigh_r",
++      "neutral_child": "calf_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "calf_r_fk_ctrl",
++      "bone": "calf_r",
++      "semantic": "calf_r",
++      "neutral_child": "foot_r",
++      "neutral_direction": [
++        0,
++        0,
++        -1
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "foot_r_fk_ctrl",
++      "bone": "foot_r",
++      "semantic": "foot_r",
++      "neutral_child": "ball_r",
++      "neutral_direction": [
++        0,
++        1,
++        0
++      ],
++      "group": "leg_r"
++    },
++    {
++      "control": "ball_r_fk_ctrl",
++      "bone": "ball_r",
++      "semantic": "ball_r",
++      "group": "leg_r"
++    }
++  ],
++  "switches": {
++    "arm_l_fk_ik_switch": false,
++    "arm_r_fk_ik_switch": false,
++    "leg_l_fk_ik_switch": false,
++    "leg_r_fk_ik_switch": false,
++    "spine_fk_ik_switch": false,
++    "neck_fk_ik_switch": false,
++    "arm_l_stretch_switch": false,
++    "arm_r_stretch_switch": false,
++    "leg_l_stretch_switch": false,
++    "leg_r_stretch_switch": false,
++    "spine_stretch_switch": false,
++    "arm_l_fk_local": true,
++    "arm_r_fk_local": true,
++    "head_local": true
++  },
++  "notes": [
++    "Discovered from transient runtime probe, not asset-name inference.",
++    "Spine controls drive spine_02/03/04; spine_01 stays with pelvis and spine_05 follows spine_04.",
++    "head_ctrl is world oriented unless explicitly set; global source orientation is applied.",
++    "Twist and corrective helpers remain owned by the native Rig. Fingers/face are excluded."
++  ],
++  "o22_validation": "DIGITAL_CAPTURE_REOPEN_PASS",
++  "use_target_mesh_reference": true,
++  "rig_runtime_sha256": "9ce400ecf3593f6a1711b3add078be7c87bc00acc60ea915c24cab0cebefb642"
++}

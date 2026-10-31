@@ -1,0 +1,3473 @@
+{
+  "schema": "F5-contact-zone-v6-print-local-direct-triangle-cube-sums",
+  "id": "X080",
+  "label": "gusset336_0",
+  "parts_npz_sha256": "a1ca50e7fe6a1e454d401446e8330b7997f0c9315c87a1a413246d41f92d1fd2",
+  "fit_and_pose_geometry_passed": true,
+  "reference": "Frozen O22F4_Compact actual body including prior reliefs",
+  "removed_volume_mm3": 0.0,
+  "removed_fraction": 0.0,
+  "added_volume_mm3": 1.218882728956379,
+  "boolean_volume_tolerance_mm3": 1.5552879017057343e-05,
+  "edited_volume_outside_recorded_ROIs_mm3": -1.571429076273334e-15,
+  "body_components_unchanged": true,
+  "base_actual_contact_zones_preserved": true,
+  "contact_zone_clearance_mm": 0.05,
+  "pose_count": 107,
+  "raw_axis_limits_changed": false,
+  "no_new_geometric_interference_at_any_rigid_pose": false,
+  "no_new_interference_in_tested_valid_poses": true,
+  "body_has_permanent_gussets": true,
+  "outer_convex_envelope_unchanged": true,
+  "local_expansion_bound_per_axis_mm": 0,
+  "proof": "Small permanent gussets remain within the reported convex envelope or explicitly bounded local surface expansion, and outside all functional clearance volumes. Preserve the actual 0.05 mm assembly contact zones in the base and tested valid poses; original axis limits are unchanged. This is a 107-pose geometric check, not a proof of every continuous combined pose or strength equivalence.",
+  "sampled_valid_pose_contact_changes": [],
+  "preexisting_collision_samples": [
+    {
+      "part": "upperarm_r/C01_sensor_PCB/pcb",
+      "pose": "waist/r0/min",
+      "contact_zone_mm": 0.05,
+      "changed_volume_in_contact_zone_mm3": 1.208514609141849,
+      "removed_volume_in_contact_zone_mm3": 1.208514609141849,
+      "before_intersection_mm3": 0.5563182396799004,
+      "after_intersection_mm3": 1.7407415547931935,
+      "local_intersection_evaluated": true,
+      "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+      "same_rigid_motion": false
+    },
+    {
+      "part": "upperarm_r/C01_sensor_PCB/SOP8_max",
+      "pose": "waist/r0/min",
+      "contact_zone_mm": 0.05,
+      "changed_volume_in_contact_zone_mm3": 0.016597185435441437,
+      "removed_volume_in_contact_zone_mm3": 0.016597185435441437,
+      "before_intersection_mm3": 0.029241687001045288,
+      "after_intersection_mm3": 0.03651302426040541,
+      "local_intersection_evaluated": true,
+      "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+      "same_rigid_motion": false
+    },
+    {
+      "part": "frame/hand_r",
+      "pose": "upperarm_r/r3/min",
+      "contact_zone_mm": 0.05,
+      "changed_volume_in_contact_zone_mm3": 0.6874594698745969,
+      "removed_volume_in_contact_zone_mm3": 0.6874594698745969,
+      "before_intersection_mm3": 0.31157288661904176,
+      "after_intersection_mm3": 0.9474620791918642,
+      "local_intersection_evaluated": true,
+      "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+      "same_rigid_motion": false
+    },
+    {
+      "part": "frame/hand_r.flex_frame",
+      "pose": "upperarm_r/r3/min",
+      "contact_zone_mm": 0.05,
+      "changed_volume_in_contact_zone_mm3": 0.02488305512223442,
+      "removed_volume_in_contact_zone_mm3": 0.02488305512223442,
+      "before_intersection_mm3": 0.1638864570611239,
+      "after_intersection_mm3": 0.18156665398440763,
+      "local_intersection_evaluated": true,
+      "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+      "same_rigid_motion": false
+    },
+    {
+      "part": "frame/hand_r",
+      "pose": "upperarm_r/r3/max",
+      "contact_zone_mm": 0.05,
+      "changed_volume_in_contact_zone_mm3": 1.0437828906575979,
+      "removed_volume_in_contact_zone_mm3": 1.0437828906575979,
+      "before_intersection_mm3": 0.6747236730519389,
+      "after_intersection_mm3": 1.6172673828615938,
+      "local_intersection_evaluated": true,
+      "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+      "same_rigid_motion": false
+    }
+  ],
+  "pose_records": [
+    {
+      "pose": "base",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "base",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "neutral",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "neutral",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "default",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "default",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "default",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "waist/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "upperarm_r/C01",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C14",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/clavicle_r",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_sensor_cassette",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_magnet_cartridge",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/chest",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/clavicle_l.protract_frame",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_sensor_PCB/pcb",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 1.208514609141849,
+          "removed_volume_in_contact_zone_mm3": 1.208514609141849,
+          "before_intersection_mm3": 0.5563182396799004,
+          "after_intersection_mm3": 1.7407415547931935,
+          "local_intersection_evaluated": true,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_sensor_PCB/SOP8_max",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.016597185435441437,
+          "removed_volume_in_contact_zone_mm3": 0.016597185435441437,
+          "before_intersection_mm3": 0.029241687001045288,
+          "after_intersection_mm3": 0.03651302426040541,
+          "local_intersection_evaluated": true,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_sensor_PCB/R1",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/C01_sensor_PCB/wire_solder",
+          "pose": "waist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "waist/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "upperarm_r/C01",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "upperarm_r/P_case_plus",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/clavicle_r",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/chest",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/clavicle_l.protract_frame",
+          "pose": "waist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "waist/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "waist/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_l.deviate/sensor_cassette",
+          "pose": "waist/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "waist/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/sensor_cassette",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/magnet_cartridge",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r.flex_frame",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/sensor_PCB/pcb",
+          "pose": "waist/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "waist/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "waist/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_l",
+          "pose": "chest/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/forearm_l",
+          "pose": "chest/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_l.flex_frame",
+          "pose": "chest/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "chest/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "chest/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r3/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "head/r3/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "head/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_l/r3/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_l/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r",
+          "pose": "upperarm_r/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.6874594698745969,
+          "removed_volume_in_contact_zone_mm3": 0.6874594698745969,
+          "before_intersection_mm3": 0.31157288661904176,
+          "after_intersection_mm3": 0.9474620791918642,
+          "local_intersection_evaluated": true,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r.flex_frame",
+          "pose": "upperarm_r/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.02488305512223442,
+          "removed_volume_in_contact_zone_mm3": 0.02488305512223442,
+          "before_intersection_mm3": 0.1638864570611239,
+          "after_intersection_mm3": 0.18156665398440763,
+          "local_intersection_evaluated": true,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "upperarm_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/magnet_cap_nut_+8",
+          "pose": "upperarm_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/magnet_cap_screw_+8",
+          "pose": "upperarm_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r",
+          "pose": "upperarm_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 1.0437828906575979,
+          "removed_volume_in_contact_zone_mm3": 1.0437828906575979,
+          "before_intersection_mm3": 0.6747236730519389,
+          "after_intersection_mm3": 1.6172673828615938,
+          "local_intersection_evaluated": true,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r.flex_frame",
+          "pose": "upperarm_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_l/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "thigh_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "thigh_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "thigh_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "thigh_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "thigh_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/forearm_r",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r.flex_frame",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "thigh_r/r2/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "thigh_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "thigh_r/r2/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r3/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "thigh_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "thigh_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "thigh_r/r3/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_l/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_l/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_l/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_l/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_r/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_r/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_r/r1/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "foot_r/r1/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.protract/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_l.protract/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.protract/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_l.protract/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.elevate/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_l.elevate/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_l.elevate/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_l.elevate/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "elbow_l.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "elbow_l.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "elbow_l.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "elbow_l.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "forearm_l.twist/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "forearm_l.twist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "forearm_l.twist/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "forearm_l.twist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_l.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_l.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_l.deviate/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_l.deviate/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "calf_l.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "calf_l.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "ball_l.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "ball_l.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_r.protract/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_r.protract/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_r.elevate/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "clavicle_r.elevate/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "elbow_r.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "elbow_r.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "forearm_r.twist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "hand_r.deviate/sensor_cassette",
+          "pose": "forearm_r.twist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r.flex_frame",
+          "pose": "forearm_r.twist/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "forearm_r.twist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/hand_r",
+          "pose": "forearm_r.twist/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_r.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_r.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_r.deviate/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "hand_r.deviate/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "calf_r.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "calf_r.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/calf_r",
+          "pose": "calf_r.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "ball_r.flex/r0/min",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "ball_r.flex/r0/max",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        }
+      ]
+    },
+    {
+      "pose": "combined_0",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/waist",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_0",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_1",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_1",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_1",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_1",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_1",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_2",
+      "contact_zone_checks": [
+        {
+          "part": "chest/C01",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/C14",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_screw_-5.8",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/chest",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_2",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_3",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/elbow_r",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/forearm_r",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/SOP8_max",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_3",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_4",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_4",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C14",
+          "pose": "combined_4",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_screw_-5.8",
+          "pose": "combined_4",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_4",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_4",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_5",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_screw_+5.8",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/waist",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_l/C01_sensor_cassette",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/pelvis",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/chest",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_5",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_6",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_6",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_6",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_6",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_6",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_6",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_7",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C14",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_7",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_8",
+      "contact_zone_checks": [
+        {
+          "part": "chest/C01",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/P_adjust_screw",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/P_case_screw_0",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/P_case_screw_1",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/P_magnet_cap",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "chest/P_case_plus",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C14",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/waist",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "frame/chest",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_8",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_9",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_9",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_10",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C01",
+          "pose": "combined_10",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_10",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_10",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_10",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_10",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    },
+    {
+      "pose": "combined_11",
+      "contact_zone_checks": [
+        {
+          "part": "thigh_r/C02",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_magnet_cap",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_case_plus",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "frame/chest",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": false
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/pcb",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        },
+        {
+          "part": "thigh_r/D_sensor_PCB/wire_solder",
+          "pose": "combined_11",
+          "contact_zone_mm": 0.05,
+          "changed_volume_in_contact_zone_mm3": 0.0,
+          "removed_volume_in_contact_zone_mm3": 0.0,
+          "before_intersection_mm3": null,
+          "after_intersection_mm3": null,
+          "local_intersection_evaluated": false,
+          "intersection_scope": "Union of exact change-component bounds plus 0.1 mm; geometry outside is unchanged",
+          "same_rigid_motion": true
+        }
+      ]
+    }
+  ],
+  "structural_strength_or_fatigue_tested": false,
+  "mixed_boolean_differences_clipped_to_their_source_material": true,
+  "envelope_method": "Direct intersections with original volume and boundary triangle Minkowski sums; four analytic positive/negative controls passed",
+  "contact_arithmetic_frame": "Source print coordinates, with the original assembly-frame 0.05 mm cube transformed into that frame; avoids near-coincident zero-thickness shells after moving edit regions",
+  "scope": "Geometric fit and collision envelope; no strength or fatigue equivalence claimed."
+}

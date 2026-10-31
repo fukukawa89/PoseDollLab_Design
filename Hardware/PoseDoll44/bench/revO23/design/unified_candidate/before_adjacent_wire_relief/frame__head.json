@@ -1,0 +1,265 @@
+{
+  "key": "frame/head",
+  "revision": "O23I-unified-mount-contours-20261021",
+  "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+  "rods": [
+    {
+      "mount": 0,
+      "rod_count": 1,
+      "radius_mm": 4.0,
+      "centerline_world_mm": [
+        [
+          -19.615357010757798,
+          22.01077273537904,
+          653.30083177953
+        ],
+        [
+          -23.318389429801172,
+          26.151585102897965,
+          656.2274842464003
+        ]
+      ],
+      "foot_fully_embedded_fraction": 0.9999999999999994,
+      "wall_bond_disk_fraction": 0.9999999999999994,
+      "land_overlap_mm3": 69.45281001257874,
+      "wall_landing_world_mm": [
+        -25.958941345973216,
+        32.1747448792333,
+        655.6715778813206
+      ],
+      "method": "Circular stem enters a complete angled socket on a fully seated flat flange.",
+      "positive_cells": true,
+      "foot_tip_mm": 1.8,
+      "foot_depth_mm": 13.0,
+      "source_socket": {
+        "base_world_mm": [
+          -14.5,
+          10.0,
+          654.0
+        ],
+        "normal_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "u_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "width_mm": 4.0,
+        "height_mm": 11.0,
+        "depth_mm": 13.0,
+        "top_radius_mm": 5.4,
+        "top_normal_world": [
+          -0.5897619928281337,
+          0.6594848430806407,
+          0.4661121469799848
+        ],
+        "top_offset_world_mm": [
+          -6.0,
+          -0.0,
+          -0.0
+        ]
+      },
+      "source_cap_embedded_fraction": 1.0,
+      "source_end_face": {
+        "point_world_mm": [
+          -19.615357010757798,
+          22.01077273537904,
+          653.30083177953
+        ],
+        "outward_world": [
+          -0.5897619928281317,
+          0.6594848430806382,
+          0.46611214697999115
+        ],
+        "radius_mm": 4.0,
+        "area_mm2": 50.26548245743669,
+        "samples": [
+          {
+            "offset_mm": -0.8,
+            "covered_fraction": 0.9811238262703487
+          },
+          {
+            "offset_mm": -0.4,
+            "covered_fraction": 0.9999999999999958
+          },
+          {
+            "offset_mm": 0.0,
+            "covered_fraction": 0.9999999999999851
+          },
+          {
+            "offset_mm": 0.3,
+            "covered_fraction": 0.9999999999999546
+          },
+          {
+            "offset_mm": 0.6,
+            "covered_fraction": 0.9999999999999675
+          }
+        ],
+        "minimum_face_coverage": 0.9811238262703487,
+        "first_stem_coverage": 0.9999999999999911,
+        "passed": true
+      },
+      "target_end_face": {
+        "point_world_mm": [
+          -23.318389429801172,
+          26.151585102897965,
+          656.2274842464003
+        ],
+        "outward_world": [
+          0.5897619928281317,
+          -0.6594848430806382,
+          -0.46611214697999115
+        ],
+        "radius_mm": 4.0,
+        "area_mm2": 50.26548245743669,
+        "samples": [
+          {
+            "offset_mm": -0.8,
+            "covered_fraction": 1.0
+          },
+          {
+            "offset_mm": -0.4,
+            "covered_fraction": 1.0
+          },
+          {
+            "offset_mm": 0.0,
+            "covered_fraction": 0.9999999999999464
+          },
+          {
+            "offset_mm": 0.3,
+            "covered_fraction": 1.0
+          },
+          {
+            "offset_mm": 0.6,
+            "covered_fraction": 1.0
+          }
+        ],
+        "minimum_face_coverage": 0.9999999999999464,
+        "first_stem_coverage": 0.9999999999999993,
+        "passed": true
+      },
+      "wall_foot_reference_endpoint_world_mm": [
+        -22.998322530871228,
+        25.421505130008832,
+        656.294866836107
+      ]
+    }
+  ],
+  "candidate_sha256": "e8e7126017b43d45d00962a7ff264d44c124f66247ae139cb47d9ba4b27d1b54",
+  "volume_mm3": 29401.876165307345,
+  "mirrored_connections": false,
+  "components": 1,
+  "unclipped_round_struts": true,
+  "inherited_functional_interfaces": true,
+  "wire_fixtures_pending": true,
+  "legacy_stub_cleanup": {
+    "key": "frame/head",
+    "removed_legacy_stub_mm3": 0.0,
+    "components": 1
+  },
+  "positive_cell_rebuild": {
+    "wire_space_intersection_mm3": 0.0,
+    "redundant_free_cylinders_removed": 0,
+    "method": "Boolean union of individually convex ring-to-ring cells. No self-overlapping single tube surface and no spherical bend nodes."
+  },
+  "analytic_recomposition": {
+    "key": "frame/head",
+    "removed_mm3": 1.6188864352132949e-12,
+    "added_mm3": 9.319782300432051e-13,
+    "components": 1,
+    "old_volume_mm3": 29628.250300324908
+  },
+  "unified_mounts": [
+    {
+      "mount": 0,
+      "status": "unified_contour",
+      "added_mm3": 787.0993770773725,
+      "rods": [
+        0
+      ],
+      "reliefs": [
+        {
+          "part": "head/C02",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/D_case_nut_0",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/D_case_nut_1",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/D_case_nut_2",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/D_case_nut_3",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/D_case_plus",
+          "pose": "A_STAND_35",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/C02",
+          "pose": "head.turn@-60",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/C02",
+          "pose": "head.turn@20",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/C02",
+          "pose": "head.turn@40",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/C02",
+          "pose": "head.turn@60",
+          "clearance_mm": 0.25
+        },
+        {
+          "part": "head/C02",
+          "pose": "head.bend@5",
+          "clearance_mm": 0.25
+        }
+      ],
+      "geometry_sha256": "ff9a9f4101a73ed9a7321216c273adbf996411b87171e05936d4ab77d895a6a1"
+    }
+  ],
+  "unified_auxiliary": [
+    {
+      "type": "wall_landing",
+      "rods": [
+        0
+      ],
+      "added_mm3": 133.1398623160508,
+      "reliefs": []
+    },
+    {
+      "type": "wire_seat",
+      "id": "head:tie1",
+      "added_mm3": 492.2044125449431,
+      "reliefs": []
+    }
+  ],
+  "access_reliefs": [],
+  "exterior_surface_guard": {
+    "removed_added_material_mm3": 67.2765415804226,
+    "clearance_inside_original_surface_mm": 0.08
+  },
+  "surface_access_reliefs": []
+}

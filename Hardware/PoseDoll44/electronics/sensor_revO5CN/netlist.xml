@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>E:\UnrealProjects\PoseDollLab_UE58_Design\PoseDoll_HW44_Plan\design\Hardware\PoseDoll44\electronics\sensor_revO5CN\PoseDoll_MT6701_CJT_CN1.kicad_sch</source>
+    <date>2026-09-24T15:54:14</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>PoseDoll_MT6701_CJT_CN1.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2028936e-0d6c-5e30-91b9-b92415e8a00b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>10u bulk; derating pending</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5cb2022f-8fb9-5e75-a384-e92fe92c9ece</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>A1002WR-S-5P-LCP / CN1 FIVE-WIRE ONLY</value>
+      <footprint>PoseDoll:CJT_A1002WR_S_5P_LCP</footprint>
+      <fields>
+        <field name="Footprint">PoseDoll:CJT_A1002WR_S_5P_LCP</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4878853-3138-582b-9879-0fa70b0e9e65</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>33R source damping candidate</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb56dcd0-618a-5a4e-8f76-60bfee425804</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k CS safe high</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00fbbbb9-459f-5b4f-aaed-710262bab2c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>MT6701QT-STD / EP unresolved</value>
+      <footprint>PoseDoll:MT6701QT_QFN16_EP_UNSPECIFIED</footprint>
+      <fields>
+        <field name="Footprint">PoseDoll:MT6701QT_QFN16_EP_UNSPECIFIED</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="PoseDoll" part="MT6701QT_TRIAL" description=""/>
+      <property name="Sheetname" value="PoseDoll_MT6701_CJT_CN1"/>
+      <property name="Sheetfile" value="PoseDoll_MT6701_CJT_CN1.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe62d801-d960-501b-856b-dc60e1de2975</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="PoseDoll" part="MT6701QT_TRIAL">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MT6701QT_TRIAL</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="PUSH" type="output"/>
+        <pin num="6" name="DO" type="output"/>
+        <pin num="7" name="CLK" type="input"/>
+        <pin num="8" name="CSN" type="input"/>
+        <pin num="9" name="W" type="output"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="U" type="output"/>
+        <pin num="12" name="V" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="14" name="MODE" type="input"/>
+        <pin num="15" name="OUT" type="output"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="EP_UNSPECIFIED" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>${KIPRJMOD}/symbols/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KIPRJMOD}/symbols/Device.kicad_sym</uri>
+    </library>
+    <library logical="PoseDoll">
+      <uri>${KIPRJMOD}/symbols/PoseDoll.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/+3V3" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="VDD_13" pintype="power_in"/>
+      <node ref="U1" pin="14" pinfunction="MODE_14" pintype="input"/>
+    </net>
+    <net code="2" name="/CLK" class="Default">
+      <node ref="J1" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="CLK_7" pintype="input"/>
+    </net>
+    <net code="3" name="/CS_N" class="Default">
+      <node ref="J1" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="CSN_8" pintype="input"/>
+    </net>
+    <net code="4" name="/DO" class="Default">
+      <node ref="J1" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/DO_IC" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="DO_6" pintype="output"/>
+    </net>
+    <net code="6" name="/GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="GND_16" pintype="power_in"/>
+    </net>
+    <net code="7" name="unconnected-(U1-EP_UNSPECIFIED-Pad17)" class="Default">
+      <node ref="U1" pin="17" pinfunction="EP_UNSPECIFIED_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="8" name="unconnected-(U1-NC-Pad1)" class="Default">
+      <node ref="U1" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="9" name="unconnected-(U1-NC-Pad2)" class="Default">
+      <node ref="U1" pin="2" pinfunction="NC_2" pintype="no_connect"/>
+    </net>
+    <net code="10" name="unconnected-(U1-NC-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+    <net code="11" name="unconnected-(U1-NC-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(U1-NC-Pad10)" class="Default">
+      <node ref="U1" pin="10" pinfunction="NC_10" pintype="no_connect"/>
+    </net>
+    <net code="13" name="unconnected-(U1-OUT-Pad15)" class="Default">
+      <node ref="U1" pin="15" pinfunction="OUT_15" pintype="output+no_connect"/>
+    </net>
+    <net code="14" name="unconnected-(U1-PUSH-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="PUSH_5" pintype="output+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(U1-U-Pad11)" class="Default">
+      <node ref="U1" pin="11" pinfunction="U_11" pintype="output+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(U1-V-Pad12)" class="Default">
+      <node ref="U1" pin="12" pinfunction="V_12" pintype="output+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(U1-W-Pad9)" class="Default">
+      <node ref="U1" pin="9" pinfunction="W_9" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>

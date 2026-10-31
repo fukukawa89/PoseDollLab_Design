@@ -1,0 +1,91 @@
+{
+  "status": "PASS_INCREMENTAL_EXACT",
+  "geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9",
+  "proof": {
+    "baseline_directory": "reference/motion_baseline_5a06",
+    "baseline_geometry_sha256": "5a06c2dc0275979dbeb905337a3facf6f9f99056d3de267f73e5af38ed45f335",
+    "changed_parts": [
+      "r_clavicle_z_housing",
+      "r_clavicle_x_output",
+      "r_clavicle_z_sensor_holder",
+      "r_clavicle_link_-1",
+      "r_shoulder_pitch_sensor_holder",
+      "thoracic_centered_tube",
+      "thoracic_fork_root_22",
+      "right_clavicle_seat",
+      "thorax_shell",
+      "head_shell",
+      "r_clavicle_x_output_socket"
+    ],
+    "unchanged_parts_count": 1664,
+    "removed_parts": [],
+    "unchanged_profile_and_exact_mesh_arrays": true,
+    "affected_candidate_pairs": 3648,
+    "full_engine_spot_comparisons": [
+      {
+        "angles": {
+          "l_shoulder_abduct": 45.0,
+          "r_shoulder_abduct": 45.0
+        },
+        "full_matches_delta": true
+      },
+      {
+        "angles": {
+          "l_shoulder_abduct": 45.0,
+          "r_shoulder_abduct": 45.0,
+          "r_clavicle_elevate": 25
+        },
+        "full_matches_delta": true
+      },
+      {
+        "angles": {
+          "l_shoulder_abduct": 45.0,
+          "r_shoulder_abduct": 45.0,
+          "r_clavicle_protract": -20
+        },
+        "full_matches_delta": true
+      },
+      {
+        "angles": {
+          "l_shoulder_abduct": 45.0,
+          "r_shoulder_abduct": 45.0,
+          "neck_yaw": 70
+        },
+        "full_matches_delta": true
+      },
+      {
+        "angles": {
+          "l_shoulder_abduct": 45.0,
+          "r_shoulder_abduct": 45.0,
+          "r_shoulder_flex": 165
+        },
+        "full_matches_delta": true
+      }
+    ]
+  },
+  "reports": [
+    {
+      "report": "motion_named_endpoints",
+      "samples": 110,
+      "failed_samples": 0
+    },
+    {
+      "report": "rom_examination_dense",
+      "samples": 2106,
+      "failed_samples": 0
+    },
+    {
+      "report": "motion_task_paths",
+      "samples": 630,
+      "failed_samples": 0
+    },
+    {
+      "report": "joint_local_grids",
+      "samples": 975,
+      "failed_samples": 0
+    }
+  ],
+  "unique_poses": 3658,
+  "exact_boolean_tests": 28675,
+  "scope": "Same/adjacent anatomy, different rigid family, 0.02 mm3 overlap threshold. Unchanged pair results proved by exact saved mesh arrays and unchanged profile; all changed pairs recomputed. Finite samples only."
+}

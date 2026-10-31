@@ -1,0 +1,1 @@
+O22-F5 安装资料。打开 tutorials/assembly-o22/index.html，按 D 系列新盘位取件。原 A 图只用于身份对照。X062 R2 可沿用已打印实物。

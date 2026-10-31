@@ -1,0 +1,150 @@
+{
+  "reviewed_commit": "239d4430cec49eecaf12c37f1ec4717055d3fbfe",
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "full_repository_clone": "NOT_AVAILABLE_DNS_FAILURE",
+  "complete_CAD_rerun": false,
+  "KiCad_rerun": false,
+  "ESP_IDF_rerun": false,
+  "hardware_tests": false,
+  "calculations": {
+    "status": "CONDITIONAL_ARITHMETIC_NOT_A_RATING",
+    "effective_radius_mm": 8.725925925925926,
+    "pin_loading": [
+      {
+        "mu_assumed": 0.08,
+        "torque_per_face_Nm": 0.2275721481481482,
+        "per_pin_force_N_if_pins_carry_all_torque": 10.6342125302873,
+        "pin_direct_shear_MPa_equal_sharing": 37.6108331129999
+      },
+      {
+        "mu_assumed": 0.22,
+        "torque_per_face_Nm": 0.6258234074074075,
+        "per_pin_force_N_if_pins_carry_all_torque": 29.244084458290068,
+        "pin_direct_shear_MPa_equal_sharing": 103.42979106074971
+      }
+    ],
+    "front_wear_to_first_pin_contact_mm": 0.09999999999999998,
+    "rear_wear_to_first_pin_contact_mm": 0.19999999999999996,
+    "declared_total_wear_mm": 0.6,
+    "symmetric_wear_per_face_mm": 0.3,
+    "front_pin_penetration_at_symmetric_wear_mm": 0.2,
+    "rear_pin_penetration_at_symmetric_wear_mm": 0.1,
+    "mass_budget_g": 1635.589739452759,
+    "mass_target_g": 1200.0,
+    "over_target_g": 435.589739452759,
+    "unmodeled_allocations_g": {
+      "frames_links": 150,
+      "harness": 90,
+      "unresolved_fasteners_springs": 100,
+      "covers": 130,
+      "eight_pcba": 127,
+      "power_distribution": 35,
+      "new_links": 12
+    },
+    "joint_reference_total_g": 991.589739452759,
+    "mean_joint_budget_g_if_allowances_unchanged": 13.560975609756097,
+    "nominal_diametral_tilt_deg": 0.08185105790915614,
+    "key_clearance_angle_scale_deg": 0.150284011837593,
+    "bundle_diameter_mm_at_assumed_065_packing": 3.7127638471380564,
+    "unvalidated_bend_radius_mm": 4.0,
+    "limitations": [
+      "Pin calculation assumes equal load sharing and no unqualified back-face friction or bonding credit.",
+      "Wear example holds spring working height/force by moving pressure plate and adjuster; this is an allowed candidate state, not measured wear.",
+      "Mass allocations may overlap detailed hardware, but cannot be removed without item-level reconciliation."
+    ]
+  },
+  "geometry": {
+    "status": "SCOPED_CAD_COUNTEREXAMPLES_REPRODUCED",
+    "cadquery_version": "2.8.0",
+    "wear_states": [
+      {
+        "front_wear_mm": 0.0,
+        "rear_wear_mm": 0.0,
+        "front_pin_disc_intersection_mm3": 0.0,
+        "rear_pin_disc_intersection_mm3": 0.0,
+        "status": "NO_VOLUME_COLLISION_THIS_STATE_ONLY"
+      },
+      {
+        "front_wear_mm": 0.1,
+        "rear_wear_mm": 0.0,
+        "front_pin_disc_intersection_mm3": 0.0,
+        "rear_pin_disc_intersection_mm3": 0.0,
+        "status": "NO_VOLUME_COLLISION_THIS_STATE_ONLY"
+      },
+      {
+        "front_wear_mm": 0.15,
+        "rear_wear_mm": 0.0,
+        "front_pin_disc_intersection_mm3": 0.028274333882308125,
+        "rear_pin_disc_intersection_mm3": 0.0,
+        "status": "COUNTEREXAMPLE_COLLISION"
+      },
+      {
+        "front_wear_mm": 0.3,
+        "rear_wear_mm": 0.3,
+        "front_pin_disc_intersection_mm3": 0.1130973355292326,
+        "rear_pin_disc_intersection_mm3": 0.05654866776461649,
+        "status": "COUNTEREXAMPLE_COLLISION"
+      }
+    ],
+    "post_tab_interface": [
+      {
+        "post_lift_mm": 0.0,
+        "intersection_mm3": 0.0,
+        "distance_mm": 0.0
+      },
+      {
+        "post_lift_mm": 0.1,
+        "intersection_mm3": 0.0,
+        "distance_mm": 0.10000000000000142
+      },
+      {
+        "post_lift_mm": 1.0,
+        "intersection_mm3": 0.0,
+        "distance_mm": 1.0
+      },
+      {
+        "post_lift_mm": 5.0,
+        "intersection_mm3": 0.0,
+        "distance_mm": 5.0
+      }
+    ],
+    "pcb_clamp_screw_bottom_z_mm": 26.295,
+    "housing_tab_top_z_mm": 20.0,
+    "pcb_clamp_screw_stops_above_base_mm": 6.295000000000002,
+    "scope": "Only source-defined rotor, pins, post and tab primitives; original full assembly and its original tests were NOT executed."
+  },
+  "contact_counterexample": {
+    "status": "HEIGHT_OMISSION_COUNTEREXAMPLE_REPRODUCED",
+    "total_weight_N": 10.0,
+    "airborne_height_mm": 20.0,
+    "max_airborne_support_force_without_gap_constraint_N": 10.0,
+    "max_airborne_support_force_with_gap_constraint_N": 0.0,
+    "scope": "Synthetic example of the source constraint form, not recomputation of the character load report."
+  },
+  "maintenance_model": {
+    "status": "IDEAL_SCHEDULER_MODEL_NOT_ESP_IDF_EXECUTION",
+    "permanently_missing_nodes": 1,
+    "window_frames": 60,
+    "maintenance_cohorts": 10,
+    "normal_acquisition_cohorts": 50,
+    "healthy_node_fresh_opportunity_fraction": 0.8333333333333334,
+    "steady_all_healthy_maintenance_cohorts": 0,
+    "assumptions": "Persistent missing node, maintenance eligibility remains true, 16667us loop, no SDK jitter; each target slot suppresses SYNC for all nodes as in main.c."
+  },
+  "timing_semantics_counterexample": {
+    "status": "SEMANTIC_COUNTEREXAMPLE_REPRODUCED",
+    "node_local_delay_us": 200,
+    "node_local_span_us": 6200,
+    "gateway_end_receive_elapsed_us": 11000,
+    "PD41_v1_exported_node_timing_us": [
+      0,
+      11000
+    ],
+    "actual_node_8ms_gate": true,
+    "gateway_strict_14ms_gate": true,
+    "current_metric_misclassifies_as_not_in_8ms": true,
+    "correct_PD41_only_8ms_observability": "NOT_OBSERVABLE_NEEDS_RAW_END_OR_NODE_TRACE",
+    "scope": "Source-derived field semantics, not an end-to-end timing measurement."
+  }
+}

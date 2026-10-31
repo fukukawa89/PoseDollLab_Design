@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HARDWARE_ALTERNATIVES</title><link rel="icon" href="data:,"><style>body{max-width:1040px;margin:40px auto;padding:0 26px 70px;color:#243f36;background:#fafbf6;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}h1{font-size:36px;line-height:1.3}h2{margin-top:42px;border-bottom:1px solid #d6dfd5;padding-bottom:8px}h3{margin-top:28px}a{color:#226d57}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}th,td{border:1px solid #d6dfd5;padding:9px 12px;text-align:left}th{background:#e8eee4}img{max-width:100%;border:1px solid #dbe4d8;border-radius:8px}code{background:#eaf0e7;padding:2px 5px}nav{display:flex;flex-wrap:wrap;gap:15px}small,.muted{color:#647567}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#edf3e8;padding:18px;border-radius:10px}.card b{font-size:30px;display:block}.button{display:inline-block;background:#2b715a;color:white;text-decoration:none;padding:9px 17px;border-radius:7px;margin:6px 8px 6px 0}.note{border-left:4px solid #c09b5f;padding:12px 18px;background:#f3efdf}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero img{border:0}.eyebrow{font-size:12px;letter-spacing:2px}@media(max-width:700px){.cards,.hero{grid-template-columns:1fr}body{padding:0 16px}h1{font-size:28px}table{display:block;overflow:auto}}@media print{body{margin:0;max-width:none;font-size:11pt;background:white}nav,.button{display:none}h2{break-after:avoid}img{max-height:140mm;object-fit:contain}tr{break-inside:avoid}}</style><body><nav><a href="START_HERE.html">打印入口</a><a href="tutorial/index.html">逐件动画教程</a><a href="preview/index.html">三维装配</a><a href="ASSEMBLY.html">装配手册</a><a href="TEST_PLAN.html">测试计划</a><a href="BOM.csv">采购清单</a><a href="PURCHASE_DELTA_O22.html">O22补购对照</a></nav><h1>O24C-T1-S1：按可购肩螺钉修改腕部</h1>
+<p>2026-10-22。<strong>按用户已找到的D2.5×6/M2肩螺钉修改六件腕部打印件，取消原D3/M2规格的采购要求。</strong> 这是新的配套接口，不能把小肩螺钉直接装入旧T1打印件。尺寸单位为mm。</p>
+<h2>采购结论与纠正</h2>
+<p>原 <a href="https://www.accu.co.uk/metric-socket-shoulder-screws/637045-SSH-M2-6-3-A4-R360">Accu SSH-M2-6-3-A4-R360</a> 确实有D3肩、肩长6、M2螺纹长4、头D5×2的目录参数，但厂家明确标为 <strong>Not Standardised</strong>。先前把它当作容易采购的通用规格不妥，应按实际可以买到的商品修改设计。</p>
+<p>查到的嘉立创 <a href="https://www.jlcfa.com/serial/2174571191761.html">标准型自由指定系列</a> 轴径从4起、肩长从10起；<a href="https://www.jlcfa.com/serial/1504714523884.html?codeModel=LC-TBH83&amp;series=1">经济型系列</a> 虽有肩长6，轴径仍从4起。未核实到与原D3/M2全部尺寸匹配的国内型号。这只是已查系列，不代表全站所有商品或库存保证。淘宝登录流程未继续，采用用户已提供的商品图尺寸。</p>
+<table>
+<tr><th>采购项目</th><th>参数</th><th>一套净用量</th></tr>
+<tr><td>腕部导向轴肩螺钉</td><td><strong>光杆Ø2.5×长6；M2×0.4螺纹长4；头Ø4.8×高2.4；内六角2；304不锈钢</strong></td><td><strong>2颗</strong></td></tr>
+<tr><td>M2平垫圈</td><td><strong>外径5×内径2.2×厚0.5</strong>；导向座新增2片，其余6片用于原位置</td><td><strong>8片</strong></td></tr>
+<tr><td>导向普通M2螺母</td><td>AF4×高1.6，螺距0.4；可复用O22同尺寸件</td><td>2颗，不变</td></tr>
+<tr><td>R站M6大垫圈</td><td>18×6.4×厚1.5，两片同厚；原1.6也可</td><td>2片，不变</td></tr>
+</table>
+<p>肩螺钉尺寸来自用户“肩轴螺钉.png”的天卓五金标注，头下总长为6+4=10，尚未测量到货件。D3/M2.5不适用于S1。整套五金仍为23项规格，净数量由106变108；对比O22新增17项79件、可复用6项29件。不含备件和锁固耗材。</p>
+<h2>接口改动</h2>
+<table>
+<tr><th>部位</th><th>原T1</th><th>S1</th></tr>
+<tr><td>球窝及衬片槽宽</td><td>3.44，配D3</td><td><strong>2.94，配D2.5</strong></td></tr>
+<tr><td>名义横向总间隙</td><td>0.44</td><td><strong>0.44</strong>，不是实测角度回差</td></tr>
+<tr><td>肩部支承</td><td>D3肩直接靠塑料孔边</td><td><strong>D2.5肩→0.5钢垫圈→1.6普通金属螺母</strong></td></tr>
+<tr><td>球内结构</td><td>小塑料环承受肩部拧紧力</td><td>凹槽捕获直接贴合的金属堆叠</td></tr>
+<tr><td>导向螺纹穿出量</td><td>1.0</td><td><strong>1.9</strong>，超过本套件两牙0.8的检查门槛</td></tr>
+<tr><td>导向头最外位置，距球心</td><td>17.5</td><td>17.9，增加0.4已纳入干涉检查</td></tr>
+</table>
+<p><img alt="S1实际CAD局部剖面" src="images/guide_section.svg"></p>
+<p>原方案直接换D2.5会把槽间隙增到0.94，塑料孔边承压宽度仅剩0.10。本版同时修改槽和支承：肩部压在钢垫圈上，垫圈直接由普通螺母背托。拧紧夹力在三件金属间闭合；球内凹槽仍承受导向载荷并防脱，不能理解成塑料不再受力。</p>
+<p>捕获组件预留名义0.20总轴向游隙，不用紧固肩螺钉挤压球体。垫圈穴外侧最薄名义球壁约1.08，需要检查打印质量和磨损。不要拧紧以消除该游隙。球径D22、球心、腕部运动轴和杆长保持原值。本次是台架接口适配，不是整条手臂制造定版。</p>
+<h2>重印范围</h2>
+<p><strong>必须配套更新W01、W02、W04、W05、W06、W07，共6件</strong>：球半体、衬片、球窝各两件。对应P0_fit_1和P3_wrist_1；整盘含未变零件，已有旧件时可只打印六件新版STL。</p>
+<p>备选内径衬片W04/W05的R11.15、R11.25共四个文件也已改为S1槽宽。其余20件基础件、8个轴承孔备选件形状不变；W03占位块、W08固定桥、W09加载杆可继续用。</p>
+<p>本目录STL、3MF、预览、Blender、BOM和压缩包统一更新为S1，目录仍叫revO24C_T1。旧包留在仓库 <code>output/o24ct1-stock-adaptation/before/O24C_T1_before_D2p5.zip</code>，用于追溯，勿混装。</p>
+<h2>到货试配与锁固</h2>
+<ol><li>先在球外干装螺钉、0.5垫圈和普通螺母。垫圈必须平贴肩部台阶，不能骑在退刀圆角上，也不能滑过光肩。商品图没有局部公差，几何计算不能代替此项检查。</li><li>拆下螺钉，从球体合模面装入垫圈及螺母，再闭合球体；先装好衬片并包合球窝，最后从外侧穿入肩螺钉。头部不能穿过槽。</li><li>保留AF4×1.6普通螺母和低强度可拆金属螺纹锁固。<strong>导向处禁止换3mm高尼龙螺母</strong>：4mm螺纹减0.5垫圈、3mm螺母仅余0.5，低于本设计两牙0.8要求。按锁固产品说明确认不锈钢、附近PLA及固化条件；只处理啮合金属牙，不让胶进入球面、凹槽和导向槽。</li><li>干装通过后锁固，充分固化再做持姿与循环测试。持姿仍由M3球窝预紧螺钉调整。记录导向组件松动、槽边磨损、垫圈变形及裂纹。</li></ol>
+<h2>之前确认的垫圈仍适用</h2>
+<p>新增导向座两片M2垫圈必须0.5厚。其他六片允许0.5或原0.3；用0.5时，衬片M2×8穿出约1.9，加载杆M2×20约4.0，无需换螺钉。三维模型中这六片仍保留0.3基准。</p>
+<p>R站两片18×6.4大垫圈允许1.5或1.6，两片同厚。用1.5时转子沿原轴线向固定压板移动0.1、浮动压板多合拢0.2，M3×30穿出约2.0，轴承端面名义退让仍0.4。从松装消隙后再调预紧，不在已预紧状态强行压入0.2。三维模型保留1.6基准。以上均以表中内外径为条件。</p>
+<h2>验证范围</h2>
+<p>本版重新检查981个名义姿态、静态装配、螺钉长度、插入路径和每侧0.20球窝预紧避让；另核对0.5/1.5垫圈配置的770个姿态。导向专项检查覆盖金属贴合、球内放入垫圈/螺母、后装肩螺钉、2mm工具空间和捕获防脱。打印工程经离线切片检查。</p>
+<p>报告：<a href="verification/stock_guide_checks.json">导向接口</a>、<a href="verification/collisions.json">活动干涉</a>、<a href="verification/hardware_alternatives.json">垫圈替代</a>、<a href="verification/slicing.json">切片</a>。<strong>尚未打印或实测持姿、松动与耐磨。</strong> 名义几何通过不能保证未知商家公差、PLA强度、锁固效果或寿命。先按P0试配，再打印其余件。</p>
+<p><a href="PURCHASE_DELTA_O22.html">采购对照</a> · <a href="ASSEMBLY.html">装配手册</a> · <a href="TEST_PLAN.html">测试计划</a> · <a href="START_HERE.html">打印入口</a></p></body></html>

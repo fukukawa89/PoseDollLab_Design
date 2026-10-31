@@ -1,0 +1,870 @@
+{
+  "key": "frame/elbow_l",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 4.0,
+  "construction_profile_sha256": "6893bd818d0ef9fbf5d55303d2e740662ef1c0f1dacfbe32c92a32f4387c031d",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "f4a9758ff629096c5a0cef3004673ee42bdac6f0022bbc8652d21560b6c52f6b",
+  "construction_keeps_sha256": "0630ddb7ad938c282d9c42b2c3b516ee5a502ca1808185b2d29548c599d0ad38",
+  "mask_method": "Conservative swept intersections extended to nearest open end; circular dilation and smoothing",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 75,
+  "lower_boundary_mm": [
+    -39.64773530610464,
+    -39.649698876696924,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.65,
+    -39.64974906391411,
+    -39.64796219343567,
+    -39.63867054624229,
+    -39.60066792609196,
+    -39.478681426385,
+    -39.169727392569946,
+    -38.54860552962816,
+    -37.5472734757602,
+    -36.23063303466843,
+    -34.78054183381937,
+    -33.39466255169226,
+    -32.20435433674494,
+    -31.264887945530376,
+    -30.570359076486284,
+    -30.056465362541974,
+    -29.619740474271183,
+    -29.17517689149266,
+    -28.711981424994505,
+    -28.28910481482108,
+    -27.973456965213103,
+    -27.785198993999437,
+    -27.696084917377767,
+    -27.662691492358114,
+    -27.65279431932713,
+    -27.65047782341692,
+    -27.650050187217182,
+    -27.650050187217182,
+    -27.65037744898256,
+    -27.65208960857919,
+    -27.658990098616655,
+    -27.680999413905937,
+    -27.736746930945152,
+    -27.850731199738156,
+    -28.04281245552003,
+    -28.317079767421454,
+    -28.658026342180257,
+    -29.031284227597304,
+    -29.385194020217615,
+    -29.663366758650625,
+    -29.832957591804888,
+    -29.904320948144242,
+    -29.91762072576479,
+    -29.91125686985882,
+    -29.904483619692904,
+    -29.90128452339689,
+    -29.9002770745482,
+    -29.90005018721718,
+    -29.900000000000002,
+    -29.900000000000002,
+    -29.900000000000002,
+    -29.90005018721718,
+    -29.90037744898256,
+    -29.90203942136201,
+    -29.908612649634097,
+    -29.92885961810957,
+    -29.977479757780298,
+    -30.06854763686969,
+    -30.202286615629905,
+    -30.358843278783116,
+    -30.513156487784194,
+    -30.661129894413023,
+    -30.82957715684835,
+    -31.060866161750496,
+    -31.391712941310637,
+    -31.847204893022457,
+    -32.44722546903764,
+    -33.212468278434976,
+    -34.16056202234508,
+    -35.28212831529951,
+    -36.49956237924073,
+    -37.65439694024659,
+    -38.57223011647943,
+    -39.165730219791364,
+    -39.47233581241883,
+    -39.59751901701312,
+    -39.6376630973936
+  ],
+  "upper_boundary_mm": [
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -39.67880483689979,
+    -38.92750796044833,
+    -37.73096666477975,
+    -36.04955171103748,
+    -33.89712975955509,
+    -31.343440203088118,
+    -28.553578275028478,
+    -25.817400877314256,
+    -23.48062668005113,
+    -21.776986581137727,
+    -20.6880271456818,
+    -19.944920909124612,
+    -19.139006510804116,
+    -17.85824649722541,
+    -15.853779149636852,
+    -13.225679472542353,
+    -10.454814575067028,
+    -8.137720796430727,
+    -6.618747159168046,
+    -5.874132760320719,
+    -5.705783806138662,
+    -5.975048016890231,
+    -6.645041441080905,
+    -7.652246466574157,
+    -8.798489612611142,
+    -9.810695226198687,
+    -10.506373292349444,
+    -10.878742927826627,
+    -11.033969686138596,
+    -11.084364436224613,
+    -11.097106224467044,
+    -11.0995148569006,
+    -11.099245102034882,
+    -11.095870970058806,
+    -11.082347064532069,
+    -11.039863893436292,
+    -10.93430476808134,
+    -10.72480337687936,
+    -10.385838918898513,
+    -9.923214540326176,
+    -9.362154581101315,
+    -8.72095071572814,
+    -8.009462408904188,
+    -7.262102698532461,
+    -6.561090390582676,
+    -6.004851187961588,
+    -5.644660870828554,
+    -5.458235470079659,
+    -5.382007351524759,
+    -5.357528065544539,
+    -5.351383979602719,
+    -5.350184019796325,
+    -5.35,
+    -5.3502342070135045,
+    -5.351861803019637,
+    -5.360272197654485,
+    -5.394271207683131,
+    -5.501903517112855,
+    -5.76905723218035,
+    -6.289653351266162,
+    -7.087259742010952,
+    -8.049474647864745,
+    -8.964811775758628,
+    -9.652371815481716,
+    -10.060840090011665,
+    -10.254127820183749,
+    -10.331870050676537,
+    -10.373019346800278,
+    -10.426440465584493,
+    -10.518069813452769,
+    -10.650197007050721,
+    -10.79980299294928,
+    -10.932783369239283,
+    -11.029942708974234,
+    -11.111599932567518,
+    -11.264895923660719,
+    -11.690561964286024,
+    -12.73011405673856,
+    -14.76214172133344,
+    -17.93429175115638,
+    -21.945939573995183,
+    -26.163540046979335,
+    -30.000675919322163,
+    -33.17844091985408,
+    -35.67486252648717,
+    -37.54693607018264,
+    -38.84758842345651,
+    -39.64972042116663,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0,
+    -40.0
+  ],
+  "canonical_frame_mm": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -18.09114625326277
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      59.4315296733962
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      455.645402688014
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 1.6086295826754168e-13,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 13057.12619828176,
+  "old_volume_mm3": 19433.27148398099,
+  "ribs": [
+    {
+      "length_mm": 5.844098726210533,
+      "radius_mm": 3.0,
+      "detour_mm": 5.0,
+      "volume_mm3": 295.62115021787855
+    }
+  ],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 12.664800969929637
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 233.19243637196303
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 4.827614395159186
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 1.9149052597409058
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 64.7458778372038
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 1.9157642941754294
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@10",
+      "wall_overlap_mm3": 10.59854692257245
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@10",
+      "wall_overlap_mm3": 3.554462312708097
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@20",
+      "wall_overlap_mm3": 5.542455553115343
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@20",
+      "wall_overlap_mm3": 2.1779779898340945
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@30",
+      "wall_overlap_mm3": 4.153343452431076
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@30",
+      "wall_overlap_mm3": 0.9996674121590371
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@30",
+      "wall_overlap_mm3": 1.704706083805948
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@40",
+      "wall_overlap_mm3": 3.328662185358132
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@40",
+      "wall_overlap_mm3": 4.129522525797774
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@40",
+      "wall_overlap_mm3": 1.5603833697146063
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@50",
+      "wall_overlap_mm3": 2.6293251597111196
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@50",
+      "wall_overlap_mm3": 0.34112020198923015
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@50",
+      "wall_overlap_mm3": 1.631334136450806
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@60",
+      "wall_overlap_mm3": 1.9154284350795825
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@60",
+      "wall_overlap_mm3": 64.67839741137468
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@60",
+      "wall_overlap_mm3": 1.91547643549914
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@70",
+      "wall_overlap_mm3": 1.1860159981159222
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@70",
+      "wall_overlap_mm3": 134.69804009830662
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@70",
+      "wall_overlap_mm3": 2.187656336027148
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@80",
+      "wall_overlap_mm3": 0.38470222804616616
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@80",
+      "wall_overlap_mm3": 201.7636347164809
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@80",
+      "wall_overlap_mm3": 1.7935401886207343
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@90",
+      "wall_overlap_mm3": 0.02757096601851578
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@90",
+      "wall_overlap_mm3": 265.4817484965651
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@100",
+      "wall_overlap_mm3": 0.8433614851915474
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@100",
+      "wall_overlap_mm3": 339.0984082966088
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@100",
+      "wall_overlap_mm3": 1.7519302673962889
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@110",
+      "wall_overlap_mm3": 2.587005684653205
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@110",
+      "wall_overlap_mm3": 457.04813852563194
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@110",
+      "wall_overlap_mm3": 2.0784407343050724
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@120",
+      "wall_overlap_mm3": 3.5982897436094943
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@120",
+      "wall_overlap_mm3": 624.8893495755461
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@120",
+      "wall_overlap_mm3": 1.7960042073290443
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_cassette"
+      ],
+      "pose": "elbow_l.flex.flexion@130",
+      "wall_overlap_mm3": 4.212726544586659
+    },
+    {
+      "obstacle_owner": "f:upperarm_l",
+      "members": [
+        "frame/upperarm_l"
+      ],
+      "pose": "elbow_l.flex.flexion@130",
+      "wall_overlap_mm3": 638.5102906787258
+    },
+    {
+      "obstacle_owner": "j:elbow_l.flex:parent",
+      "members": [
+        "elbow_l.flex/sensor_PCB/pcb"
+      ],
+      "pose": "elbow_l.flex.flexion@130",
+      "wall_overlap_mm3": 1.5675730059167279
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-80",
+      "wall_overlap_mm3": 85.8070153228339
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-70",
+      "wall_overlap_mm3": 85.82320066449799
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-60",
+      "wall_overlap_mm3": 85.8431469022421
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-50",
+      "wall_overlap_mm3": 85.86556854717631
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-40",
+      "wall_overlap_mm3": 85.88994794971909
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-30",
+      "wall_overlap_mm3": 85.91609345594523
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-20",
+      "wall_overlap_mm3": 93.75303298002837
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@-10",
+      "wall_overlap_mm3": 169.38312682154785
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@10",
+      "wall_overlap_mm3": 251.04311778909664
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@20",
+      "wall_overlap_mm3": 257.1075764839792
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@30",
+      "wall_overlap_mm3": 259.9929110561007
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@40",
+      "wall_overlap_mm3": 251.0866053476086
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@50",
+      "wall_overlap_mm3": 233.65861637004667
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@60",
+      "wall_overlap_mm3": 231.11303331571915
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@70",
+      "wall_overlap_mm3": 232.098234317265
+    },
+    {
+      "obstacle_owner": "f:forearm_l",
+      "members": [
+        "frame/forearm_l"
+      ],
+      "pose": "forearm_l.twist.twist@80",
+      "wall_overlap_mm3": 219.88850275020218
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "validated_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "validated_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "collar_clocking_reuse": {
+    "body_frame_maximum_error": 8.526512829121202e-14,
+    "own_keeper_unchanged": true,
+    "note": "Only two native collar modules and their three structural lands move. Unchanged carriers require final actual-solid collision checks with those neighbours."
+  },
+  "needs_web_reconnection": false,
+  "restored_F7_magnet_seats": [
+    {
+      "key": "frame/elbow_l",
+      "removed_material_mm3": 34.878699649195354,
+      "original_F7_positive_material_removed_mm3": 1.6771113465460764e-05,
+      "radial_skin_removed_mm3": 0.0,
+      "fitting": "elbow_l.flex/magnet_cartridge",
+      "original_overlap_mm3": 24.992181926415128,
+      "resulting_overlap_mm3": 8.259071238991264e-14
+    }
+  ],
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

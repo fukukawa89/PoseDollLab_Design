@@ -1,0 +1,41 @@
+{
+  "revision": "O24A",
+  "date_local": "2026-10-22",
+  "stage": "DIGITAL_LAYOUT_REVIEW",
+  "manufacturing_release": false,
+  "reference_height_mm": 560,
+  "future_full_doll_envelope_budget_mm": 580,
+  "strict_limit_mm": 600,
+  "physical_complete_doll_height": "NOT BUILT",
+  "geometry_sha256": "89bf32cdc6e5f58e3e7ac27f04bda5560c70786d238d7456ea36e27af1aac7e2",
+  "checks": {
+    "kinematics": "PASS",
+    "exported_axes": "PASS",
+    "motion_dense": "PASS",
+    "ue_transform_mapping": "PASS",
+    "functional_reach": "PASS",
+    "browser_review": "PASS",
+    "browser_fk_agreement": "PASS",
+    "blender_saved_file": "PASS",
+    "tutorial_browser": "PASS",
+    "tutorial_fk_agreement": "PASS",
+    "tutorial_portability": "PASS"
+  },
+  "motion_samples": 633,
+  "unresolved": [
+    "Shoulder gimbal singularity near 90 deg abduction",
+    "Magnet carriers and anti-rotation attachments",
+    "Axial preload closure and bypass load paths",
+    "Bearing fits, retention and printable assembly splits",
+    "Hard travel stops and flexible harness",
+    "Bilateral clavicle and full torso/head clearance",
+    "Physical holding, accuracy and wear",
+    "Live UE plugin integration"
+  ],
+  "runtime_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "manifold3d": "3.3.2",
+    "trimesh": "5.1.1"
+  }
+}

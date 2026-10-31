@@ -1,0 +1,4442 @@
+{
+  "id": "P093",
+  "label": "registered87",
+  "body_mesh_sha256": "5aa6b3df233ae2548dea2b94698833e863cbe53c59f61fd7b8f95df008277f0e",
+  "nominal_reference_recovery": null,
+  "registered_congruent_reference": {
+    "qualified": true,
+    "method": "Rigidly register the original congruent donor reference; independently compare all frozen target vertices and face centres against the registered reference and vice versa. Copy exact donor print meshes without subtracting the repair a second time.",
+    "donor": "P049",
+    "donor_label": "bearing_finish85",
+    "max_bidirectional_sampled_boundary_distance_mm": 9.979253089123607e-06,
+    "frozen_source_mesh_sha256": "92f1f8c8e3d35cade4ade31e5ef05e4a166c99af10313ee8c32ddc6560ee1182",
+    "printed_reference_mesh_sha256": "6ea8e4bab7b248ac672b5513599fe5ab6ab7860d03e512c0635bdebfb4e9a2f6",
+    "orientation_matrix": [
+      [
+        -0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ],
+      [
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865476
+      ]
+    ],
+    "source_translation_mm": [
+      -28.779245994292488,
+      31.000000000000007,
+      -11.667261889578034
+    ]
+  },
+  "source_assembly_difference_mm3": -5.587935314255062e-06,
+  "frozen_print_source_exactly_verified": true,
+  "baseline_body_policy": "Frozen F3 print mesh is authoritative. Recorded bed and owner transforms register it against the unchanged assembly hardware. Differences from regenerated assembly body are reported, not attributed to this change.",
+  "removed_volume_mm3": 15.66438644619048,
+  "added_volume_mm3": 2.19444482757422e-14,
+  "source_assembly_part_count": 1521,
+  "purely_subtractive": true,
+  "no_new_geometric_collision_at_any_rigid_pose": true,
+  "proof_scope": "New body is a subset of the validated computational reference in the same rigid coordinate frame. A registered_congruent_reference, when present, uses an independently measured congruent source boundary within 0.0001 mm to avoid a second numerically unstable Boolean regeneration; its frozen source and printed reference hashes are verified. Where nominal_reference_recovery is present, the reference is the unchanged analytic O22 CAD with separately measured sub-0.0001 mm boundary agreement to the frozen print mesh. This proves no new geometric interference under any rigid pose. It does not prove stress/fatigue equivalence or the retention of every contact; actual assembly contacts and axis-limit samples are separately listed.",
+  "assembly_contacts": [
+    {
+      "part": "thigh_l/C01_+1_inner_M4_wide",
+      "gap_mm": 0.0,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 1.734723475976807e-17
+    },
+    {
+      "part": "thigh_l/C01_+1_outer_M4_wide",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_spring_1",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_spring_2",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_front_M4_washer",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_shoulder_D4_L8_M3_thread6",
+      "gap_mm": 0.1271427073928273,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_M3_nut",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_+1_M3_reaction_washer",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C02",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C14",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C15",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/ring_screw_3",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/ring_nut_3",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/ring_screw_4",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_magnet_nut_6.1",
+      "gap_mm": 0.0,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 1.6878359163595685e-13
+    },
+    {
+      "part": "thigh_l/C01_magnet_screw_6.1",
+      "gap_mm": 0.099940722335771,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": -5.241168827066489e-16
+    },
+    {
+      "part": "thigh_l/C01_magnet",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/P_case_screw_3",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/P_case_plus",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_sensor_cassette",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_magnet_cartridge",
+      "gap_mm": 0.0,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": -6.81515933097232e-16
+    },
+    {
+      "part": "frame/pelvis",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    },
+    {
+      "part": "thigh_l/C01_sensor_PCB/SOP8_max",
+      "gap_mm": 0.3,
+      "removed_material_intersection_mm3": 0.0,
+      "intersection_with_neighbor_shape_margin_008_mm3": 0.0
+    }
+  ],
+  "assembly_contact_clear": true,
+  "qualified_small_washer_entry_chamfers": [
+    {
+      "entry_chamfer_geometric_criteria_passed": true,
+      "washer_local_bounds": [
+        -5.99934849048978,
+        -5.999348490489766,
+        -0.49999999999991473,
+        5.999348490489822,
+        5.999348490489837,
+        0.5000000000001705
+      ],
+      "washer_axis_from_actual_mesh": [
+        -0.24954918908939502,
+        0.26523416576279335,
+        -0.9313302526692347
+      ],
+      "washer_center": [
+        4.2101847703434085,
+        41.779972862374876,
+        269.17864983539283
+      ],
+      "contact_sides": [
+        {
+          "outer_1mm_bearing_ring_lost_volume_mm3": 0.0,
+          "z": -0.5019999999999147,
+          "original_contact_area_mm2": 98.87972134465001,
+          "new_contact_area_mm2": 98.87972134440844,
+          "lost_area_mm2": 1.0047375543816367e-09,
+          "retained_fraction": 0.999999999997557,
+          "lost_bounds": [
+            -0.697362869977951,
+            2.0073090568184853,
+            0.4002848224015738,
+            2.124774344265461
+          ]
+        },
+        {
+          "outer_1mm_bearing_ring_lost_volume_mm3": 0.0,
+          "z": 0.5020000000001705,
+          "original_contact_area_mm2": 0.0,
+          "new_contact_area_mm2": 0.0,
+          "lost_area_mm2": 0.0,
+          "retained_fraction": 0.0,
+          "lost_bounds": []
+        }
+      ],
+      "scope": "Physical disk axis is recovered from the actual washer geometry, independent of metadata frame axes. At least 98% of original washer contact area and the entire outer 1 mm bearing ring through 1 mm of original backing must remain. Geometry only, not a load test.",
+      "part": "thigh_l/C01_+1_inner_M4_wide",
+      "sku": "W_M4_D12_T1"
+    }
+  ],
+  "qualified_small_nut_corner_reliefs": [
+    {
+      "part": "thigh_l/C01_magnet_nut_6.1",
+      "sku": "NUT_M2",
+      "qualified_corner_relief": true,
+      "face_checks": [
+        {
+          "normal_world": [
+            0.24954918908940366,
+            -0.2652341657627982,
+            0.931330252669231
+          ],
+          "face_area_mm2": 10.395271395490907,
+          "original_clearance_band_material_mm3": 0.40254473780474126,
+          "removed_band_material_mm3": 3.024545725498337e-13,
+          "retained_band_fraction": 0.9999999999992486,
+          "central_face_material_removed_mm3": 0,
+          "passed": true
+        }
+      ],
+      "scope": "Within a 0.08 mm clearance band outside every nut planar face with original surrounding material, retain at least 98% of material and preserve the face core 0.15 mm from its edges. This protects nominal flat spacing and bearing centers, without claiming a load test."
+    }
+  ],
+  "qualified_small_screw_clearance_chamfers": [],
+  "qualified_magnet_retention_entry_reliefs": [
+    {
+      "part": "thigh_l/C01_magnet_nut_6.1",
+      "screw_part": "thigh_l/C01_magnet_screw_6.1",
+      "screw_facing_axis_world": [
+        0.24954918908935134,
+        -0.26523416576278674,
+        0.9313302526692482
+      ],
+      "qualified_magnet_retention_entry_relief": true,
+      "face_checks": [
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            -0.8708402159972825,
+            -0.48209184476026373,
+            0.09604567360090943
+          ],
+          "area_mm2": 3.69504129678603,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 2.904353379635438e-10,
+              "removed_mm3": 1.6046192152785466e-17,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 7.273692551130454e-10,
+              "removed_mm3": 3.720981855970251e-16,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.004618788756726117,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 0.14589226249250817,
+              "removed_mm3": 2.025827790476586e-15,
+              "retained_fraction": 0.9999999999999861,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "opposite_entry_wall",
+          "normal_world": [
+            -0.24954918908935134,
+            0.26523416576278674,
+            -0.9313302526692482
+          ],
+          "area_mm2": 10.39527139549092,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.15,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 0.25170830245086345,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.15,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 1.792890066714941,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.15,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 4.3878920623061815,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.15,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            -0.06864765351128654,
+            -0.9641840266837624,
+            -0.25619653072452064
+          ],
+          "area_mm2": 3.6950400032935704,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 0.00726155046756265,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.6851894927600352,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 1.9584797901145266,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "screw_facing_loaded_wall",
+          "normal_world": [
+            0.24954918908940366,
+            -0.2652341657627982,
+            0.931330252669231
+          ],
+          "area_mm2": 10.395271395490907,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.40254473780474126,
+              "removed_mm3": 3.024545725498337e-13,
+              "retained_fraction": 0.9999999999992486,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 1.4563004089045064e-13
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 1.0063618446580547,
+              "removed_mm3": 3.0307907300118533e-13,
+              "retained_fraction": 0.9999999999996988,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 1.446386464239299e-13
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 2.5159046118745305,
+              "removed_mm3": 3.0238331896366187e-13,
+              "retained_fraction": 0.9999999999998798,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 1.4527962674830332e-13
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 5.0318092239193755,
+              "removed_mm3": 3.018645332020991e-13,
+              "retained_fraction": 0.99999999999994,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 1.4641673798680612e-13
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            -0.802192586491229,
+            0.4820918447602606,
+            0.35224211473666883
+          ],
+          "area_mm2": 3.6950412978648046,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 2.442400565628402e-10,
+              "removed_mm3": 9.199455433539505e-17,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 6.211211852235823e-10,
+              "removed_mm3": 8.105495441501631e-15,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.004618788953342915,
+              "removed_mm3": 5.47062638020935e-15,
+              "retained_fraction": 0.9999999999988156,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 0.14589198618034946,
+              "removed_mm3": 4.732103240067794e-15,
+              "retained_fraction": 0.9999999999999676,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            0.06864765351129264,
+            0.9641840266837624,
+            0.25619653072451903
+          ],
+          "area_mm2": 3.695040003293542,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 0.007261549988843763,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.6851894641822817,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 1.9584797615359777,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            0.8021925864912317,
+            -0.48209184476026495,
+            -0.3522421147366574
+          ],
+          "area_mm2": 3.6950412978647904,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "kind": "anti_rotation_flat",
+          "normal_world": [
+            0.870840215997285,
+            0.48209184476025924,
+            -0.09604567360090772
+          ],
+          "area_mm2": 3.695041299326732,
+          "bands": [
+            {
+              "depth_mm": 0.08,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.2,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 0.5,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            },
+            {
+              "depth_mm": 1.0,
+              "original_material_mm3": 0.0,
+              "removed_mm3": 0.0,
+              "retained_fraction": 1.0,
+              "core_inset_mm": 0.25,
+              "core_removed_mm3": 0.0
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "criteria": "Magnet-cap M2 nuts only, independently identified by matching magnet_screw hardware. Entire screw-facing bearing footprint and existing material through 1 mm remain unchanged. Opposite unloaded entry-face band retains >=95% and its 0.15 mm inset core, with >=70% of existing 1 mm backing. Anti-rotation flats retain >=99% through 0.5 mm and their 0.25 mm inset cores. Screw and nut geometry/position are unchanged. This is geometry screening, not a strength/creep test.",
+      "source_design_evidence": "cad/revO15/twist.py: sensor-cap M2x4 screws and magnet_nut pockets; radial M3 brake and captured rotor collar are separate."
+    }
+  ],
+  "all_other_base_contacts_clear": true,
+  "pose_count": 107,
+  "raw_axis_limits_changed": false,
+  "sampled_contact_changes": [
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "waist/r0/min",
+      "part": "upperarm_l/D_magnet_cap",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 13.311513506511815,
+      "remaining_overlap_mm3": 13.213713112614462,
+      "removed_material_overlap_mm3": 0.09780039389737176
+    },
+    {
+      "pose": "waist/r0/max",
+      "part": "upperarm_l/C02",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 38.12879933182139,
+      "remaining_overlap_mm3": 38.09728897263486,
+      "removed_material_overlap_mm3": 0.03151035918653208
+    },
+    {
+      "pose": "waist/r0/max",
+      "part": "frame/upperarm_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 241.26961246122673,
+      "remaining_overlap_mm3": 239.00210628862752,
+      "removed_material_overlap_mm3": 2.2675061725991976
+    },
+    {
+      "pose": "waist/r2/max",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 43.20648248177301,
+      "remaining_overlap_mm3": 43.06796309048252,
+      "removed_material_overlap_mm3": 0.13851939129054933
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/shoulder_D4_L8_M3_thread6",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 116.76974221083798,
+      "remaining_overlap_mm3": 116.70905985648962,
+      "removed_material_overlap_mm3": 0.060682354342263795
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/pcb_clip_nut",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 10.344496109945673,
+      "remaining_overlap_mm3": 10.21348449863547,
+      "removed_material_overlap_mm3": 0.13101161131015202
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 43.0089854812475,
+      "remaining_overlap_mm3": 40.91831076790069,
+      "removed_material_overlap_mm3": 2.0906747133468424
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 235.29950541833077,
+      "remaining_overlap_mm3": 235.2247838868584,
+      "removed_material_overlap_mm3": 0.0747215314723333
+    },
+    {
+      "pose": "upperarm_l/r3/max",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 163.48485642686413,
+      "remaining_overlap_mm3": 163.35498147905824,
+      "removed_material_overlap_mm3": 0.12987494780593803
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 92.04956277290347,
+      "remaining_overlap_mm3": 89.64092176790835,
+      "removed_material_overlap_mm3": 2.4086410049950095
+    },
+    {
+      "pose": "thigh_l/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 98.93520647389636,
+      "remaining_overlap_mm3": 91.72872048577635,
+      "removed_material_overlap_mm3": 7.206485988120137
+    },
+    {
+      "pose": "thigh_l/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 132.78287159245065,
+      "remaining_overlap_mm3": 132.770809507474,
+      "removed_material_overlap_mm3": 0.012062084976626294
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_l.twist/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_l.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 159.70590523766768,
+      "remaining_overlap_mm3": 150.19511063305026,
+      "removed_material_overlap_mm3": 9.5107946046173
+    },
+    {
+      "pose": "forearm_l.twist/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_l.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 100.70144824994708,
+      "remaining_overlap_mm3": 92.69749292932823,
+      "removed_material_overlap_mm3": 8.003955320618646
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "combined_2",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 431.9019810870248,
+      "remaining_overlap_mm3": 431.7634616957343,
+      "removed_material_overlap_mm3": 0.1385193912905218
+    },
+    {
+      "pose": "combined_7",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 299.52594816147376,
+      "remaining_overlap_mm3": 298.92278608696125,
+      "removed_material_overlap_mm3": 0.6031620745125575
+    },
+    {
+      "pose": "combined_11",
+      "part": "upperarm_r/C01_sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 90.02306467721208,
+      "remaining_overlap_mm3": 89.88680388775552,
+      "removed_material_overlap_mm3": 0.1362607894488534
+    }
+  ],
+  "all_sampled_removed_material_clear_of_contacts": false,
+  "body_component_count_unchanged": true,
+  "physical_or_structural_load_test_performed": false,
+  "elapsed_s": 98.04630589485168,
+  "sampled_contact_changes_at_nonintersecting_baseline_poses": [],
+  "sampled_changes_with_preexisting_deep_collision": [
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "neutral",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "waist/r0/min",
+      "part": "upperarm_l/D_magnet_cap",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 13.311513506511815,
+      "remaining_overlap_mm3": 13.213713112614462,
+      "removed_material_overlap_mm3": 0.09780039389737176
+    },
+    {
+      "pose": "waist/r0/max",
+      "part": "upperarm_l/C02",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 38.12879933182139,
+      "remaining_overlap_mm3": 38.09728897263486,
+      "removed_material_overlap_mm3": 0.03151035918653208
+    },
+    {
+      "pose": "waist/r0/max",
+      "part": "frame/upperarm_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 241.26961246122673,
+      "remaining_overlap_mm3": 239.00210628862752,
+      "removed_material_overlap_mm3": 2.2675061725991976
+    },
+    {
+      "pose": "waist/r2/max",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 43.20648248177301,
+      "remaining_overlap_mm3": 43.06796309048252,
+      "removed_material_overlap_mm3": 0.13851939129054933
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "head/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/shoulder_D4_L8_M3_thread6",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 116.76974221083798,
+      "remaining_overlap_mm3": 116.70905985648962,
+      "removed_material_overlap_mm3": 0.060682354342263795
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/pcb_clip_nut",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 10.344496109945673,
+      "remaining_overlap_mm3": 10.21348449863547,
+      "removed_material_overlap_mm3": 0.13101161131015202
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 43.0089854812475,
+      "remaining_overlap_mm3": 40.91831076790069,
+      "removed_material_overlap_mm3": 2.0906747133468424
+    },
+    {
+      "pose": "upperarm_l/r3/min",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 235.29950541833077,
+      "remaining_overlap_mm3": 235.2247838868584,
+      "removed_material_overlap_mm3": 0.0747215314723333
+    },
+    {
+      "pose": "upperarm_l/r3/max",
+      "part": "frame/elbow_l",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 163.48485642686413,
+      "remaining_overlap_mm3": 163.35498147905824,
+      "removed_material_overlap_mm3": 0.12987494780593803
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "upperarm_r/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 92.04956277290347,
+      "remaining_overlap_mm3": 89.64092176790835,
+      "removed_material_overlap_mm3": 2.4086410049950095
+    },
+    {
+      "pose": "thigh_l/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 98.93520647389636,
+      "remaining_overlap_mm3": 91.72872048577635,
+      "removed_material_overlap_mm3": 7.206485988120137
+    },
+    {
+      "pose": "thigh_l/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 132.78287159245065,
+      "remaining_overlap_mm3": 132.770809507474,
+      "removed_material_overlap_mm3": 0.012062084976626294
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_l/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r2/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r2/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r3/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "thigh_r/r3/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_l/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r1/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "foot_r/r1/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_l.twist/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_l.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 159.70590523766768,
+      "remaining_overlap_mm3": 150.19511063305026,
+      "removed_material_overlap_mm3": 9.5107946046173
+    },
+    {
+      "pose": "forearm_l.twist/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_l.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 100.70144824994708,
+      "remaining_overlap_mm3": 92.69749292932823,
+      "removed_material_overlap_mm3": 8.003955320618646
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_l.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_l.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_l.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.protract/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.protract/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "clavicle_r.elevate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "elbow_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "elbow_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_r.twist/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "forearm_r.twist/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.deviate/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "hand_r.deviate/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "calf_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_r.flex/r0/min",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cap_screw_-8",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 14.70218763252205,
+      "remaining_overlap_mm3": 14.689812506615503,
+      "removed_material_overlap_mm3": 0.012375125906514699
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 35.39094474735866,
+      "remaining_overlap_mm3": 34.08073001633553,
+      "removed_material_overlap_mm3": 1.310214731023148
+    },
+    {
+      "pose": "ball_r.flex/r0/max",
+      "part": "forearm_l.twist/magnet_cartridge",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 139.6810587591652,
+      "remaining_overlap_mm3": 130.22289225864793,
+      "removed_material_overlap_mm3": 9.458166500517105
+    },
+    {
+      "pose": "combined_2",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 431.9019810870248,
+      "remaining_overlap_mm3": 431.7634616957343,
+      "removed_material_overlap_mm3": 0.1385193912905218
+    },
+    {
+      "pose": "combined_7",
+      "part": "frame/chest",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 299.52594816147376,
+      "remaining_overlap_mm3": 298.92278608696125,
+      "removed_material_overlap_mm3": 0.6031620745125575
+    },
+    {
+      "pose": "combined_11",
+      "part": "upperarm_r/C01_sensor_cassette",
+      "same_rigid_motion": false,
+      "gap_mm": 0.0,
+      "existing_overlap_mm3": 90.02306467721208,
+      "remaining_overlap_mm3": 89.88680388775552,
+      "removed_material_overlap_mm3": 0.1362607894488534
+    }
+  ],
+  "fit_and_pose_geometry_passed": true,
+  "pose_qualification_scope": "Subtraction proves no new interference at any rigid pose. Base assembly contacts and sampled initially nonintersecting contacts are protected. Samples already intersecting in the unchanged assembly are reported separately; they are not certified as achievable poses."
+}

@@ -1,0 +1,129 @@
+{
+  "version": "O22-F1",
+  "status": "DIGITAL_CHECKS_PASSED_WITH_DOCUMENTED_BRIDGES_PHYSICAL_NOT_TESTED",
+  "source_types": 150,
+  "main_instances": 186,
+  "source_meshes_exact": true,
+  "all_support_components_touch_bed": true,
+  "body_overlap_with_source_mm3": 0.0,
+  "functional_guard_overlap_mm3": 3.159170858400782e-10,
+  "teeth_count_unique_parts": 63,
+  "geometry_layout_checks": [
+    {
+      "plate": "S00",
+      "object_count": 7,
+      "issues": []
+    },
+    {
+      "plate": "A01",
+      "object_count": 20,
+      "issues": []
+    },
+    {
+      "plate": "A02",
+      "object_count": 13,
+      "issues": []
+    },
+    {
+      "plate": "A03",
+      "object_count": 15,
+      "issues": []
+    },
+    {
+      "plate": "A04",
+      "object_count": 11,
+      "issues": []
+    },
+    {
+      "plate": "A05",
+      "object_count": 26,
+      "issues": []
+    },
+    {
+      "plate": "A06",
+      "object_count": 14,
+      "issues": []
+    },
+    {
+      "plate": "A07",
+      "object_count": 23,
+      "issues": []
+    },
+    {
+      "plate": "A08",
+      "object_count": 27,
+      "issues": []
+    },
+    {
+      "plate": "A09",
+      "object_count": 27,
+      "issues": []
+    },
+    {
+      "plate": "A10",
+      "object_count": 10,
+      "issues": []
+    }
+  ],
+  "physical_release": "NOT TESTED",
+  "all_11_native_projects_sliced_successfully": true,
+  "all_fin_components_have_first_layer_extrusion": true,
+  "unsupported_fin_body_layer_islands": 0,
+  "layer_audit_component_area_threshold_mm2": 0.02,
+  "source_mesh_max_native_vertex_error_mm": 1.5729395101971022e-05,
+  "intentional_teeth_instances_in_main_plates": 63,
+  "intentional_teeth_instances_including_S00": 64,
+  "max_tooth_center_to_extrusion_path_mm": 0.010413117141844716,
+  "all_extrusion_centerlines_within_180mm_bed": true,
+  "main_estimated_filament_g": 739.4494209289551,
+  "main_estimated_hours": 75.02148057725694,
+  "warnings": [
+    {
+      "plate": "S00",
+      "message": "It seems object S00-02 P130 foot_l/C14 has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A01",
+      "message": "It seems object A01-04 P033 head/C01 has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A02",
+      "message": "It seems object A02-01 X046 frame/chest has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A03",
+      "message": "It seems object A03-01 X038 frame/pelvis has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A04",
+      "message": "It seems object A04-02 W005 frame/clavicle_l.protract_frame has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A05",
+      "message": "It seems object A05-03 W004 frame/forearm_l has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A06",
+      "message": "It seems object A06-04 X062 frame/clavicle_r has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A07",
+      "message": "It seems object A07-09 P072 upperarm_r/C02 has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A08",
+      "message": "It seems object A08-01 X073 frame/thigh_l has floating cantilever. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A09",
+      "message": "It seems object A09-01 X080 frame/thigh_r has floating regions. Please re-orient the object or enable support generation."
+    },
+    {
+      "plate": "A10",
+      "message": "It seems object A10-08 W017 frame/foot_r has floating regions. Please re-orient the object or enable support generation."
+    }
+  ],
+  "remaining_bridge_note": "Source hole roofs and several small ledges retain bridges. These are documented in remaining_bridge_geometry.json. Geometry sampling is not a physical print-quality or strength qualification.",
+  "source_geometry_note": "Original v/f arrays exact before packaging. Native Bambu float serialization changes coordinates by less than 0.00015 mm; topology preserved.",
+  "validation_scope": "CAD body clearance, protected volumes, bed roots, fin layer continuity, original part preservation, quantity/layout, native project settings, actual first-layer fin extrusion and tooth-center extrusion. Does not certify deposited bead clearance or physical removal/fit/strength."
+}

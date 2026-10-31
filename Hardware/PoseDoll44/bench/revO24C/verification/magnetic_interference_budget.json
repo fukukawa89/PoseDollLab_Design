@@ -1,0 +1,56 @@
+{
+  "status": "BUDGET_ONLY",
+  "geometry_sha256": "d661e8f2f3f2e135207a528a1001faa74baad660b26b777c748dfee802e2d032",
+  "samples": 1001,
+  "worst_variable": {
+    "pose": "fold_twist_wrist/145/80/0/0",
+    "variable_bound_mT": 0.3987321277073767,
+    "fixed_bound_mT": 0.17212763125486072,
+    "parts": [
+      {
+        "part": "clavicle_z_magnet",
+        "distance_mm": 87.76133818866487,
+        "upper_bound_mT": 0.01989008424284455,
+        "fixed": false
+      },
+      {
+        "part": "clavicle_x_magnet",
+        "distance_mm": 60.33402031464621,
+        "upper_bound_mT": 0.061215237285507165,
+        "fixed": false
+      },
+      {
+        "part": "shoulder_pitch_magnet",
+        "distance_mm": 57.569485243436375,
+        "upper_bound_mT": 0.07046432468745405,
+        "fixed": false
+      },
+      {
+        "part": "shoulder_swing_magnet",
+        "distance_mm": 65.54221407394954,
+        "upper_bound_mT": 0.047751059086192385,
+        "fixed": false
+      },
+      {
+        "part": "humeral_magnet",
+        "distance_mm": 44.13497780563551,
+        "upper_bound_mT": 0.1563859005138326,
+        "fixed": false
+      },
+      {
+        "part": "elbow_magnet",
+        "distance_mm": 67.85888644056702,
+        "upper_bound_mT": 0.04302552189154594,
+        "fixed": false
+      },
+      {
+        "part": "forearm_magnet",
+        "distance_mm": 42.74630500229589,
+        "upper_bound_mT": 0.17212763125486072,
+        "fixed": true
+      }
+    ]
+  },
+  "max_fixed_bound_mT": 0.17212763125486172,
+  "scope": "Conservative point-dipole magnitude upper bounds summed, Br=1.2 T assumed. Not the actual vector field or angular error; no finite-magnet/ferromagnetic/ambient model or calibration."
+}

@@ -1,0 +1,56 @@
+{
+  "status": "ANALYTIC_BUDGET_ONLY",
+  "samples": 326,
+  "worst_variable_case": {
+    "pose": "elbow_max",
+    "sum_bound_mT": 0.576754047447883,
+    "variable_bound_mT": 0.3919582002006411,
+    "parts": [
+      {
+        "name": "clavicle_z_magnet",
+        "distance_mm": 88.13489782873798,
+        "unknown_orientation_upper_bound_mT": 0.01963824241469816,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "clavicle_x_magnet",
+        "distance_mm": 60.73372425167436,
+        "unknown_orientation_upper_bound_mT": 0.06001455537316528,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "shoulder_pitch_magnet",
+        "distance_mm": 58.46930706114578,
+        "unknown_orientation_upper_bound_mT": 0.06726087180066073,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "shoulder_swing_magnet",
+        "distance_mm": 66.74109171242448,
+        "unknown_orientation_upper_bound_mT": 0.045223733570504125,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "humeral_magnet",
+        "distance_mm": 44.08800233989233,
+        "unknown_orientation_upper_bound_mT": 0.15688631765693992,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "elbow_magnet",
+        "distance_mm": 67.90681747033345,
+        "unknown_orientation_upper_bound_mT": 0.0429344793846729,
+        "fixed_relative_to_wrist_sensor": false
+      },
+      {
+        "name": "forearm_magnet",
+        "distance_mm": 41.74630500229593,
+        "unknown_orientation_upper_bound_mT": 0.18479584724724188,
+        "fixed_relative_to_wrist_sensor": true
+      }
+    ]
+  },
+  "max_fixed_proximal_forearm_magnet_bound_mT": 0.18479584724724324,
+  "scope": "Conservative sum of dipole magnitude bounds, using actual O24A magnet positions/volumes and assumed Br=1.2T. Unknown dipole clockings prevent a field prediction. Same-forearm magnet bias is nominally constant; others vary with pose. Ambient fields and ferromagnetism excluded.",
+  "conclusion": "Interference must be measured and compensated with the whole arm. The ideal isolated-sensor angular RMS is not a system accuracy claim."
+}

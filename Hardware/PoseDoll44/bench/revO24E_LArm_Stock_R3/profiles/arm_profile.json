@@ -1,0 +1,235 @@
+{
+  "schema": "O24E_LEFT_ARM_MECHANICAL_TRIAL/1",
+  "nodes": [
+    {
+      "id": "l_clavicle_elevate",
+      "parent": null,
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": null,
+      "zero_deg": 0,
+      "target_bone": "clavicle_l"
+    },
+    {
+      "id": "l_shoulder_flex",
+      "parent": "l_clavicle_elevate",
+      "offset_mm": [
+        -1.3040584945878386,
+        46.6532886626352,
+        -6.7236923394116275
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_shoulder_abduct",
+      "parent": "l_shoulder_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_upperarm_roll",
+      "parent": "l_shoulder_abduct",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": 0,
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_elbow_flex",
+      "parent": "l_upperarm_roll",
+      "offset_mm": [
+        -3.552713678800501e-15,
+        -7.105427357601002e-15,
+        -83.56619993528744
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_forearm_roll",
+      "parent": "l_elbow_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "zero_deg": -90,
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_wrist_flex",
+      "parent": "l_forearm_roll",
+      "offset_mm": [
+        -1.5987211554602254e-14,
+        -1.4210854715202004e-14,
+        -80.49630500229591
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_wrist_deviation",
+      "parent": "l_wrist_flex",
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "zero_deg": 0,
+      "target_bone": "hand_l"
+    }
+  ],
+  "axes": [
+    {
+      "id": "l_shoulder_flex",
+      "label": "左肩前举 / 后伸",
+      "limits_deg": [
+        -45,
+        165
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_shoulder_abduct",
+      "label": "左肩外展",
+      "limits_deg": [
+        -20,
+        165
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_upperarm_roll",
+      "label": "左上臂内外旋",
+      "limits_deg": [
+        -75,
+        85
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "upperarm_l"
+    },
+    {
+      "id": "l_elbow_flex",
+      "label": "左肘屈曲",
+      "limits_deg": [
+        0,
+        145
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_forearm_roll",
+      "label": "左前臂旋转",
+      "limits_deg": [
+        -85,
+        80
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "target_bone": "lowerarm_l"
+    },
+    {
+      "id": "l_wrist_deviation",
+      "label": "左腕偏转",
+      "limits_deg": [
+        -20,
+        30
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "target_bone": "hand_l"
+    },
+    {
+      "id": "l_wrist_flex",
+      "label": "左腕屈伸",
+      "limits_deg": [
+        -65,
+        70
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "target_bone": "hand_l"
+    }
+  ],
+  "physical_dof": 7,
+  "root_fixed_frame": "l_clavicle_elevate",
+  "wrist_order": "Ry(flexion) @ Rx(deviation); right conjugated by diag(1,-1,1)",
+  "forearm_zero_clocking_deg": -90,
+  "manufacturing_release": false,
+  "source_geometry_sha256": "7bd25d1e5257824dcb37aa3c8da398e2b2fa13618672bcac6a746cfd583347a9"
+}

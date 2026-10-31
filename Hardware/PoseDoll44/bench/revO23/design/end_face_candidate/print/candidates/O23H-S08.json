@@ -1,0 +1,293 @@
+{
+  "id": "O23H-S08",
+  "key": "frame/calf_l",
+  "stl_sha256": "bbd29a49bd494846ad2644a8d9a1ccef6b6a84858fd533cf8fceb097cea1c3c5",
+  "source": {
+    "key": "frame/calf_l",
+    "export_version": "O23H-export-1",
+    "source_geometry_sha256": "538c5c2bb9ba8445058fc95251ed41d3908bbbb6c48ac6ece0d92314f5e09459",
+    "source_mesh_sha256": "f58692e785ca90a0c689bd29dbd13075021f58d5c0826811767816a80c68910b",
+    "source": {
+      "vertices": 26703,
+      "triangles": 53482,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 41267.061595813815
+    },
+    "attempts": [
+      {
+        "before_cleanup": {
+          "vertices": 26702,
+          "triangles": 53482,
+          "watertight": false,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 2,
+          "degenerate_faces": 0,
+          "duplicate_faces": 1,
+          "volume_mm3": 41267.063465208026
+        },
+        "removed_opposed_face_pairs": 1,
+        "quantization_max_vertex_displacement_mm": 1.7653815230958408e-05,
+        "additional_opposed_pairs_in_multiple_coincident_faces": 0,
+        "removed_closed_flat_membranes": [],
+        "after_membrane_cleanup": {
+          "vertices": 26702,
+          "triangles": 53480,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 41267.063465208026
+        },
+        "edge_sheet_separation": {
+          "vertices": 3,
+          "maximum_displacement_mm": 1e-05,
+          "direction": "inward source vertex normal",
+          "functional_holes_filled": false
+        },
+        "simplify_tolerance_mm": 0,
+        "after_cleanup": {
+          "vertices": 26702,
+          "triangles": 53480,
+          "watertight": true,
+          "winding_consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "volume_mm3": 41267.063465208026
+        }
+      }
+    ],
+    "case_rebuild": null,
+    "simplify_tolerance_mm": 0,
+    "surface_displacement_bound_mm": 1.7653815230958408e-05,
+    "exported": {
+      "vertices": 26702,
+      "triangles": 53480,
+      "watertight": true,
+      "winding_consistent": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "duplicate_faces": 0,
+      "volume_mm3": 41267.063465208026
+    },
+    "components": 1,
+    "passed": true,
+    "no_hole_filling": true,
+    "no_voxel_remeshing": true,
+    "nominal_geometry_edited": false,
+    "mesh_cache_sha256": "1c25bb09676bd9ad7fe68720dec448607e4150f6ed67a2f61ad43271d5d1d1fa",
+    "id": "O23H-S08",
+    "staged_stl": "export/stl/O23H-S08_calf_l.stl",
+    "stl_sha256": "bbd29a49bd494846ad2644a8d9a1ccef6b6a84858fd533cf8fceb097cea1c3c5"
+  },
+  "candidates": [
+    {
+      "name": "endface_flip_local",
+      "support": "snug",
+      "matrix": [
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          1.2246467991473532e-16,
+          93.57062334895419
+        ],
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0,
+          93.2468593508884
+        ],
+        [
+          8.659560562354934e-17,
+          8.659560562354934e-17,
+          -1.0,
+          11.499303817749023
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        54.30106294987457,
+        54.948663775760345,
+        174.3835506439209
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1830.9066227130352,
+        "overhang_projection_volume_proxy_mm3": 184335.5474998508,
+        "bed_contact_projection_mm2": 11.835724167421706,
+        "max_rod_angle_to_bed_deg": 63.58874682739619,
+        "rod_verticality": 0.8021430917234306
+      },
+      "protect_voids": true,
+      "blocker_margin_mm": 2.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "support_expansion": "0",
+        "support_object_xy_distance": "0.6",
+        "brim_width": "6",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_angle": "45"
+      },
+      "guard_revision": 5,
+      "enforce_sources": [],
+      "shield_enforcers": true,
+      "enforce_source": "print/bambu/O23H-S08/endface_tilt180_clean/checked_result.json"
+    },
+    {
+      "name": "endface_flip_cap",
+      "support": "snug",
+      "matrix": [
+        [
+          0.7071067811865476,
+          0.7071067811865476,
+          1.2246467991473532e-16,
+          93.57062334895419
+        ],
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0,
+          93.2468593508884
+        ],
+        [
+          8.659560562354934e-17,
+          8.659560562354934e-17,
+          -1.0,
+          11.499303817749023
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        54.30106294987457,
+        54.948663775760345,
+        174.3835506439209
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1830.9066227130352,
+        "overhang_projection_volume_proxy_mm3": 184335.5474998508,
+        "bed_contact_projection_mm2": 11.835724167421706,
+        "max_rod_angle_to_bed_deg": 63.58874682739619,
+        "rod_verticality": 0.8021430917234306
+      },
+      "protect_voids": true,
+      "blocker_margin_mm": 2.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "support_expansion": "0",
+        "support_object_xy_distance": "0.6",
+        "brim_width": "6",
+        "support_top_z_distance": "0.2",
+        "support_bottom_z_distance": "0.2",
+        "support_angle": "45"
+      },
+      "guard_revision": 5,
+      "enforce_sources": [],
+      "shield_enforcers": true,
+      "manual_caps": "print/candidates/O23H-S08_endface_flip_cap.npz",
+      "cap_design": [
+        {
+          "target": {
+            "z_mm": 131.0800018310547,
+            "area_mm2": 1.594851889255334,
+            "bounds_mm": [
+              92.26399999856949,
+              93.03100000321865,
+              93.78299999982119,
+              94.55399999767542
+            ],
+            "support_contact_mm2": 0.0,
+            "previous_solid_bbox_coverage": 0.0,
+            "inside_previous_solid_geometry": false,
+            "previous_solid_section_z_mm": 130.83999633789062
+          },
+          "patch_count": 1,
+          "volume_mm3": 2.5460661831198284
+        }
+      ]
+    },
+    {
+      "name": "revised_connections",
+      "support": "snug",
+      "matrix": [
+        [
+          -0.7071067811865476,
+          -0.7071067811865476,
+          0.0,
+          86.42937665104581
+        ],
+        [
+          0.7071067811865476,
+          -0.7071067811865476,
+          0.0,
+          93.2468593508884
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          162.88424682617188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        54.30106294987456,
+        54.948663775760345,
+        174.3835506439209
+      ],
+      "metrics": {
+        "overhang_area_mm2": 1556.816947286185,
+        "overhang_projection_volume_proxy_mm3": 88062.73015990597,
+        "bed_contact_projection_mm2": 22.05502855360307,
+        "max_rod_angle_to_bed_deg": 63.58874682739619,
+        "rod_verticality": 0.8021430917234306
+      },
+      "protect_voids": true,
+      "blocker_margin_mm": 2.2,
+      "settings": {
+        "support_threshold_angle": "55",
+        "bridge_no_support": "0",
+        "support_expansion": "0",
+        "support_object_xy_distance": "0.6",
+        "brim_width": "6",
+        "support_top_z_distance": "0.32",
+        "support_bottom_z_distance": "0.32",
+        "support_angle": "45"
+      },
+      "guard_revision": 5,
+      "enforce_source": "print/support_sources/O23H-S08/enforce_source.json",
+      "enforce_sources": [
+        "print/support_sources/O23H-S08/enforce_0.json",
+        "print/support_sources/O23H-S08/enforce_1.json"
+      ],
+      "shield_enforcers": true
+    }
+  ],
+  "previous_G_source_sha256": "51610dc0d47cde5b3bb20fc88dbefc7860c2243a395489e57594fd37d647067f"
+}

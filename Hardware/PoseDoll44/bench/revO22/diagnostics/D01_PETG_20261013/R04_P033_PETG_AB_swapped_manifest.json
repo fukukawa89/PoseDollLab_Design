@@ -1,0 +1,55 @@
+{
+  "purpose": "Position crossover of the original R01 A/B conditions after both R02 and R03 A single-object trials completed successfully.",
+  "source_sha256": "3feaae9a7cdeb897057392212f311c03c1a6de0870ff4424a2f497fcb96a3aad",
+  "project_sha256": "88cab88f1d817a7ed2c58058fb04bbc00640b00cc57951c552cd8de3438dc6ba",
+  "global_project_settings_bytes_identical_to_R01": true,
+  "object_process_settings_unchanged": true,
+  "mesh_payload_bytes_identical": true,
+  "single_planned_change": "Translate A by +83 mm X and B by -83 mm X; no rotation. A is now right, B left.",
+  "objects": [
+    {
+      "id": "4",
+      "name": "R04-01 P033 A RIGHT 40-70",
+      "source_name": "R01-01 P033 A original 40-70",
+      "translation_from_R01_mm": [
+        83.0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        98.0,
+        60.0,
+        0.0,
+        163.1942292,
+        111.3164596,
+        45.265152
+      ],
+      "outer_wall_mm_s": 40,
+      "inner_wall_mm_s": 70,
+      "maximum_mesh_translation_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "id": "6",
+      "name": "R04-02 P033 B LEFT 20-35",
+      "source_name": "R01-02 P033 B walls 20-35",
+      "translation_from_R01_mm": [
+        -83.0,
+        0,
+        0
+      ],
+      "bounds_mm": [
+        15.0,
+        60.0,
+        0.0,
+        80.1942292,
+        111.3164596,
+        45.265152
+      ],
+      "outer_wall_mm_s": 20,
+      "inner_wall_mm_s": 35,
+      "maximum_mesh_translation_error_mm": 1.4210854715202004e-14
+    }
+  ],
+  "R03_user_report_20261014": "Full print completed successfully, essentially similar to R02 A, with extra strings on supports but no reported structural failure.",
+  "limits": "Position changes also affect approach paths and potentially printing order. Failure following a side does not prove a bed hardware fault. One crossover is not statistical proof; material moisture remains uncontrolled."
+}

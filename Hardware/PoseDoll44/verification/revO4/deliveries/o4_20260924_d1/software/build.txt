@@ -1,0 +1,32 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" DollSimulationEditor Win64 Development -Project=E:/UnrealProjects/DollSimulation/Saved/O4TestProject/DollSimulation.uproject -WaitMutex -NoHotReloadFromIDE -NoLiveCoding -NoUBTMakefiles
+Log file: C:\Users\Ding\AppData\Local\UnrealBuildTool\Log.txt
+Determining max actions to execute in parallel (16 physical cores, 32 logical cores)
+  Executing up to 16 processes, one per physical core
+UbaServer - Listening on 0.0.0.0:1345
+Building DollSimulationEditor...
+===== Toolchain Information =====
+Using ISPC compiler (E:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.44.35229 toolchain (D:\ProgramFiles\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from PoseDollTransport unity file: PoseDollTransport.cpp, PoseDollTransportModule.cpp
+[Adaptive Build] Excluded from PoseDollRig unity file: PoseDollContacts.cpp, PoseDollRigAdapter.cpp, PoseDollRigModule.cpp
+[Adaptive Build] Excluded from PoseDollEditor unity file: PoseDollEditorModule.cpp, PoseDollEngineBridge.cpp, PoseDollSession.cpp, PoseDollSessionLibrary.cpp, PoseDollStaticSession.cpp
+[Adaptive Build] Excluded from PoseDollCore unity file: PoseDollCore.cpp, PoseDollCoreModule.cpp, PoseDollCoreTests.cpp, PoseDollStatic.cpp, PoseDollStaticTests.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  CPU 16 physical cores, 32 logical cores
+  Memory 63.89 GB physical, 42.37 GB/85.89 GB committed
+  UBA Storage capacity 40 GB
+[1/4] Compile [x64] PoseDollStatic.cpp
+[2/4] Link [x64] UnrealEditor-PoseDollCore.lib
+  正在创建库 E:/UnrealProjects/DollSimulation/Saved/O4TestProject/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollCore/UnrealEditor-PoseDollCore.lib 和对象 E:/UnrealProjects/DollSimulation/Saved/O4TestProject/Plugins/PoseDoll/Intermediate/Build/Win64/x64/UnrealEditor/Development/PoseDollCore/UnrealEditor-PoseDollCore.exp
+[3/4] Link [x64] UnrealEditor-PoseDollCore.dll
+[4/4] WriteMetadata DollSimulationEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 1.61 seconds
+Output binary: E:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 3.05 seconds
+Trace written to file C:\Users\Ding\AppData\Local\UnrealBuildTool\Trace.uba with size 5.5kb

@@ -1,0 +1,217 @@
+{
+  "run_id": "o3_20260924_r3",
+  "schema": "revo3-gates-v1",
+  "gates": {
+    "V0": {
+      "status": "PASS",
+      "scope": "Current-run core reports, exact identities, sealed producer/consumer files, offline tests and seven role builds. Browser and final immutable run manifest are separate records.",
+      "blocking": []
+    },
+    "V1": {
+      "status": "PARTIAL",
+      "scope": "Single-joint nominal assembly and scoped wear geometry only",
+      "blocking": [
+        "摩擦层与钢背板结合强度未取得；最大实际弹簧力未知",
+        "输出接头、小螺钉工具、轴套固定与受载滑移仍待完成",
+        "公差叠加、生产螺纹、预紧变形和样件精度未验证"
+      ]
+    },
+    "V2": {
+      "status": "BLOCKED",
+      "blocking": [
+        "原生 PCB 仍有未连接网络；完整保护与失电隔离未闭合",
+        "PCBA 包络已由实际模型驱动，但部分器件与配合公差仍缺失",
+        "胸肩多轴、N2 与完整单臂线束尚未形成共同总装"
+      ]
+    },
+    "V3": {
+      "status": "NOT_RUN",
+      "blocking": [
+        "没有实物关节保持力、手感、精度与寿命测试"
+      ]
+    },
+    "V4": {
+      "status": "PARTIAL_OFFLINE_ONLY",
+      "blocking": [
+        "七角色构建与离线协议反例可验证；未烧录或做 CAN 台架",
+        "退避仍占用专门维护帧，不能宣称 99.9% 健康节点台架指标通过",
+        "8 ms 需要原始 END；严格 14 ms 需要共时钟总线 trace"
+      ]
+    },
+    "V5": {
+      "status": "BLOCKED",
+      "blocking": [
+        "完整多轴机构、真实偏置 profile、带线动作和 UE 联调未完成"
+      ]
+    }
+  },
+  "review_items": [
+    {
+      "id": "O3-01",
+      "status": "SCOPED_GEOMETRY_FIXED",
+      "result": "传感板支柱并入各自半盒，约束图按本轮 BOM 建立"
+    },
+    {
+      "id": "O3-02",
+      "status": "PASS_SCOPED_LIFE_GEOMETRY",
+      "result": "取消工作环内销；外耳钢背板；保留 0.6 mm 总磨损与非对称、压缩状态"
+    },
+    {
+      "id": "O3-03",
+      "status": "PARTIAL",
+      "result": "完整扭矩链条件计算；粘接、输出连接和实际最大预紧力阻塞制造"
+    },
+    {
+      "id": "O3-04",
+      "status": "MODEL_FIXED_PHYSICAL_CONTACTS_UNRESOLVED",
+      "result": "悬空点强制零反力；无壳体接触时不出反力和定型选簧"
+    },
+    {
+      "id": "O3-05",
+      "status": "LEDGER_RECONCILED_PROVISIONAL",
+      "result": "取消硬质量门槛；按明细移交已计入的 L6 紧固件/弹簧分配"
+    },
+    {
+      "id": "O3-06",
+      "status": "PARTIAL",
+      "result": "五种原生板方案，实际 PCBA、配合包络、服务区和 RF 区分开；完整多轴/单臂尚未建成"
+    },
+    {
+      "id": "O3-07",
+      "status": "BOUNDED_DEGRADED_RECOVERY",
+      "result": "有限快重试、逐节点指数退避、公平轮询与超时清理；仍有显式维护损失"
+    },
+    {
+      "id": "O3-08",
+      "status": "OFFLINE_SEMANTICS_FIXED",
+      "result": "8/14 ms 分层，时间戳帧率与长暂停，显式会话分段"
+    },
+    {
+      "id": "O3-09",
+      "status": "PRODUCER_CONSUMER_SEAL_IMPLEMENTED",
+      "result": "整套输出即时锁定；单 STEP、工具、配合头、板文件变异会阻塞下游"
+    }
+  ],
+  "evidence_issues": [],
+  "fallback_91cm_preserved": true,
+  "mass_policy": {
+    "hard_max_g": null,
+    "lightweight_preference_g": 1200,
+    "exceedance_fails_design": false
+  },
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "consumed_inputs": [
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/baseline.json",
+        "sha256": "855d727f94468882543a3c642bfeb56339dbb980ca24d3397e920f96c8d543d0",
+        "merkle_root": "d84e704f15a3aa0f979a90fe01863ca87ecff83894ab28a37e2fb255956d2485",
+        "file_count": 9
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/baseline.json": "453c82816350a1bf11994d8f8e91c726eae8397264d8ed0abb418fb9514d34bf"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/offline.json",
+        "sha256": "2507ab478d9b618678dff745806375800fe50cf34ebf3b5eb857a0cb7b5057ef",
+        "merkle_root": "c8a677f8fac7da1a99b4b78ad36b57ef0e40b6d392505aa50b57e2beeafd5718",
+        "file_count": 2
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/offline.json": "6349ea0591e54943fdbdcba2b1c9a4c4900f09902c7d79abc6e9f67816d2d6fb"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/joint.json",
+        "sha256": "0ec9f03dfaa0f07547b19fc00294aaac174da11e5298af2cd671f8201a0ef9e2",
+        "merkle_root": "e52307fc70801d00031a343bf67301b800206f77adeeee7e4804eb94c779210e",
+        "file_count": 53
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/joint.json": "cc3ba8c40ead7d123cb2a34ae95235e749ebad9ee6f392f3de21c8fdc6cd082c"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/assembly.json",
+        "sha256": "41807195a4091a543b96b4e861378a466b8503f8e424f49a788e63422782ce52",
+        "merkle_root": "3067a287e023f9fcc971c7bf7d52065d6c3786acc39f8ceb43b64aa66468a312",
+        "file_count": 2
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/assembly.json": "87dab98158d5fe29e8c40ec1fb5c9ad4ecf3d5f84ac104c23fb9ef5ec4b83527"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/lifecycle.json",
+        "sha256": "9b3421737c3fcc629b2a807a1fa08f781bcb990622b7f98537d27c2ad1d0fb11",
+        "merkle_root": "7beb5336a609be130e7cea2a5fb39d3166c4f30327ffb13731066645d4a79ab1",
+        "file_count": 3
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/lifecycle.json": "2c71e96603e91db6626cb38abcf8926037664af01a2ad0669257724653c584a1"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/electronics.json",
+        "sha256": "b3c272fb106d6210f41b9a0960bc07efd97ac94da4b1841cbf566dec8a6b56b0",
+        "merkle_root": "5d521c20a9469c01cb1dd393e1e6a26b5ae0a92cb4ed8f529429bf70aa342bde",
+        "file_count": 124
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/electronics.json": "a5c113092287ae4f4c4bebf33e00dee7ccc0d05da09c7d779ae0b5eddc98678e"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/pcba_geometry.json",
+        "sha256": "ff54375fb2338bf41d9c8e53595477e838aa5d726f5499ee973c0f76063092a9",
+        "merkle_root": "dd43250e8b22e3599fb3be43405f6eb2e1b76af1c9d98ca8bcfbb9be759338ef",
+        "file_count": 126
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/pcba_geometry.json": "b86cb5b6e520dfed3ecff78c7ae1ad424e443e0aab229451b17580488c808c12"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/mass_mechanics.json",
+        "sha256": "fee88dbfb400dd4d45f6ba713cbffe0b5c1ceaf7ab039a1ea325bf38afb53d1d",
+        "merkle_root": "57e59ca419cb83af88003456491fa568f1254395f7a442adcf1ecd25a5c0d621",
+        "file_count": 5
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/mass_properties_revO3.json": "2b92b40c281b91f9b79e8004dcf9e62159980ffddcc47d876ba99b3044b4d5dd",
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/mechanics_analysis.json": "867e55ab39204df1b2cc11851fce3c861caa38e31420a4ed39e5de65401085bc"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/packaging.json",
+        "sha256": "5e4f7e8ab4ae5d76e51ab9eece2207391ca2d123e5a0564fde158f175baf56e8",
+        "merkle_root": "2afe3fbe0ceea60eaefd8ad3a445c4cab2bb0713a0246f549b4df3c258f8b945",
+        "file_count": 3
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/packaging.json": "4962acd2937be6607b74ac722a104e1686cd990c2f24ed7ac89679ec955d749f"
+      }
+    },
+    {
+      "producer_manifest": {
+        "path": "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/artifacts/firmware.json",
+        "sha256": "76a238048eff9f1bf2f0f9ee63137921d3d369ee387117f23266dcff94ebe30e",
+        "merkle_root": "c9647e60fff9dcd73192d5b3e54751c409ae3ce42a565dbb6925f03a1287784b",
+        "file_count": 38
+      },
+      "actually_read_sha256": {
+        "Hardware/PoseDoll44/verification/revO3/runs/o3_20260924_r3/firmware_builds.json": "88b5a658377355ece006a820e1c08e4cb2f3b7bd7e3dc824b522df335fc2419c"
+      }
+    }
+  ]
+}

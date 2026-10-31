@@ -1,0 +1,173 @@
+{
+  "revision": "O23C-compact-backpack-20261020",
+  "geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "pcb_sha256": "69096ae07cb4478633343c1a0bd34093bd37365302c59313c47d7578b9b80285",
+  "user_controller_pcb_not_manufactured": true,
+  "box_body_mm": [
+    74,
+    70,
+    34.2
+  ],
+  "whole_pack_world_bounds_mm": [
+    [
+      -90.7,
+      -45.00000000000002,
+      491.0
+    ],
+    [
+      -49.2,
+      45.0,
+      561.0
+    ]
+  ],
+  "old_B2_furthest_back_x_mm": -230,
+  "new_pack_furthest_back_x_mm": -90.7,
+  "pcb_area_reduction_percent": 48.93617021276596,
+  "clavicle_axes": [
+    {
+      "side": "l",
+      "centres_mm": [
+        [
+          -35.0,
+          19.999999999999996,
+          560.0
+        ],
+        [
+          23.999999999999996,
+          28.0,
+          562.0
+        ]
+      ],
+      "spacing_mm": 59.57348403442592
+    },
+    {
+      "side": "r",
+      "centres_mm": [
+        [
+          -35.0,
+          -20.000000000000004,
+          560.0
+        ],
+        [
+          24.0,
+          -28.000000000000004,
+          562.0
+        ]
+      ],
+      "spacing_mm": 59.57348403442592
+    }
+  ],
+  "backpack_contacts": 1207,
+  "backpack_affected_poses": [
+    "clavicle_l.elevate/r0@-50.8333",
+    "clavicle_l.elevate/r0@-90.0",
+    "clavicle_l.protract/r0@-50.8333",
+    "clavicle_l.protract/r0@-90.0",
+    "clavicle_l.protract/r0@145.0",
+    "clavicle_r.elevate/r0@-50.8333",
+    "clavicle_r.elevate/r0@-90.0",
+    "clavicle_r.protract/r0@-50.8333",
+    "clavicle_r.protract/r0@-90.0",
+    "clavicle_r.protract/r0@145.0",
+    "combined_0",
+    "combined_1",
+    "combined_10",
+    "combined_14",
+    "combined_15",
+    "combined_2",
+    "combined_3",
+    "combined_4",
+    "combined_5",
+    "combined_6",
+    "combined_7",
+    "combined_8",
+    "combined_9",
+    "upperarm_l/r0@-113.3333",
+    "upperarm_l/r0@-56.6667",
+    "upperarm_r/r0@-113.3333",
+    "upperarm_r/r0@-56.6667",
+    "waist/r0@113.3333",
+    "waist/r0@170.0"
+  ],
+  "kinematics": {
+    "samples": 34,
+    "maximum_scaled_center_error_mm": 2.2737367544323206e-13,
+    "maximum_rotation_matrix_error": 2.220446049250313e-16,
+    "neutral_body_center_error_mm_excluding_redesigned_wrists": 2.2737367544323206e-13,
+    "shoulder_motion_translation_redesigned": true,
+    "raw_order_unchanged": true,
+    "raw_limits_unchanged": true,
+    "neutral_values_unchanged": true,
+    "redesigned_center_exclusions": [
+      "f:clavicle_l",
+      "f:clavicle_l.protract_frame",
+      "f:clavicle_r",
+      "f:clavicle_r.protract_frame",
+      "f:elbow_l",
+      "f:elbow_r",
+      "f:forearm_l",
+      "f:forearm_r",
+      "f:hand_l",
+      "f:hand_r",
+      "f:hand_tip_l",
+      "f:hand_tip_r",
+      "f:upperarm_l",
+      "f:upperarm_r",
+      "j:clavicle_l.elevate:child",
+      "j:clavicle_l.elevate:parent",
+      "j:clavicle_l.protract:child",
+      "j:clavicle_l.protract:parent",
+      "j:clavicle_r.elevate:child",
+      "j:clavicle_r.elevate:parent",
+      "j:clavicle_r.protract:child",
+      "j:clavicle_r.protract:parent",
+      "j:elbow_l.flex:child",
+      "j:elbow_l.flex:parent",
+      "j:elbow_r.flex:child",
+      "j:elbow_r.flex:parent",
+      "j:forearm_l.twist:child",
+      "j:forearm_l.twist:parent",
+      "j:forearm_r.twist:child",
+      "j:forearm_r.twist:parent",
+      "j:upperarm_l:C01",
+      "j:upperarm_l:C02",
+      "j:upperarm_l:D",
+      "j:upperarm_l:P",
+      "j:upperarm_l:ring",
+      "j:upperarm_r:C01",
+      "j:upperarm_r:C02",
+      "j:upperarm_r:D",
+      "j:upperarm_r:P",
+      "j:upperarm_r:ring",
+      "j:wrist_l:C01",
+      "j:wrist_l:C02",
+      "j:wrist_l:ring",
+      "j:wrist_r:C01",
+      "j:wrist_r:C02",
+      "j:wrist_r:ring"
+    ],
+    "rotation_scope": "Every retained body including both hands; 34 multi-axis samples",
+    "passed": true
+  },
+  "manufacturing_release": false,
+  "pcb_routed": false,
+  "unresolved_wrist_note": "Ankle-family geometry supplies the intersecting wrist axes. Matching output orientation does not prove old hinge travel; inherited stops and sensor envelopes still require redesign/qualification.",
+  "wrist_raw_limits_deg": {
+    "hand_l.flex/r0": [
+      -90,
+      145
+    ],
+    "hand_l.deviate/r0": [
+      -90,
+      145
+    ],
+    "hand_r.flex/r0": [
+      -90,
+      145
+    ],
+    "hand_r.deviate/r0": [
+      -90,
+      145
+    ]
+  }
+}

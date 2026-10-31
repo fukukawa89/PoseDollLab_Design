@@ -1,0 +1,7610 @@
+{
+  "key": "frame/head",
+  "source_geometry_sha256": "fd65aa05c1c60feb4ba8f53aabccba061c95a59778b330a16e73e724f0e1b5c3",
+  "seconds": 36.28,
+  "construction_profile_sha256": "6893bd818d0ef9fbf5d55303d2e740662ef1c0f1dacfbe32c92a32f4387c031d",
+  "builder_id": "D12-precision-collar-shortened-back-mounts",
+  "construction_configuration": {
+    "revision": "O23D-continuous-walls-20261020",
+    "scale": 1.4,
+    "compact_wrist": true,
+    "maximum_height_mm": 800,
+    "wall_mm": 2.4,
+    "rib_radius_mm": 3.0,
+    "interface_overlap_mm": 10.0,
+    "controller_front_corner_neutral_mm": [
+      -55.0,
+      32.0,
+      496.0
+    ],
+    "target_moving_clearance_mm": 2.0,
+    "printer_usable_box_mm": [
+      170,
+      170,
+      170
+    ],
+    "material_density_g_cm3_for_solid_volume_only": 1.24,
+    "notes": [
+      "FK translations scale 1.4 except redesigned wrists. Wrist length follows Quinn elbow-to-hand ratio. Metal hardware, magnets, PCBs and friction interfaces retain O22 dimensions.",
+      "Outer contour and ribs form one structural print, with joint and service openings.",
+      "Wall parameter is a radial offset; verify minimum normal thickness and slicing before release.",
+      "Candidate only. Physical hold-pose, fatigue, wire routing and assembly tests remain required."
+    ],
+    "backpack_mount_revision": "compact_direct_v3",
+    "controller_board_mm": [
+      64,
+      60,
+      1.6
+    ],
+    "controller_board_layout_only": true,
+    "user_controller_pcb_not_manufactured": true,
+    "motion_acceptance_policy": "ordinary_adjacent",
+    "contour_adjustments": {
+      "chest": {
+        "ap_scale": 1.08,
+        "lateral_scale": 0.9
+      },
+      "waist": {
+        "ap_scale": 1.0,
+        "lateral_scale": 0.96,
+        "longitudinal_extension_mm": 22.0
+      },
+      "pelvis": {
+        "ap_scale": 1.08
+      },
+      "forearm_l": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "forearm_r": {
+        "ap_add_mm": 2.0,
+        "lateral_add_mm": 1.0
+      },
+      "head": {
+        "ap_add_mm": 3.0,
+        "lateral_add_mm": 2.0
+      }
+    },
+    "upper_torso_raise_mm": 22.0
+  },
+  "construction_pose_sha256": "f4a9758ff629096c5a0cef3004673ee42bdac6f0022bbc8652d21560b6c52f6b",
+  "construction_keeps_sha256": "0630ddb7ad938c282d9c42b2c3b516ee5a502ca1808185b2d29548c599d0ad38",
+  "mask_method": "Conservative swept intersections extended to nearest open end; circular dilation and smoothing",
+  "isolated_holes_in_radial_wall": 0,
+  "angular_segments_remaining": 128,
+  "lower_boundary_mm": [
+    36.10015056165154,
+    36.100754897965125,
+    36.104078842724014,
+    36.117275486485376,
+    36.158096685201706,
+    36.25689856248824,
+    36.44495302540835,
+    36.72925363221101,
+    37.077035556461674,
+    37.43182981211287,
+    37.74533786592449,
+    37.992083756730146,
+    38.16460451284468,
+    38.26849158671288,
+    38.320385483925314,
+    38.341286975931546,
+    38.347960578637995,
+    38.34962255101745,
+    38.349949812782825,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.35,
+    38.349949812782825,
+    38.349522176583086,
+    38.34685437015262,
+    38.334565990329615,
+    38.288834047905894,
+    38.1501063540725,
+    37.805688623589454,
+    37.105123737379984,
+    35.93884273128641,
+    34.353037757313594,
+    32.594495185124664,
+    31.002066795662586,
+    29.813549586948714,
+    29.05575191143442,
+    28.59140668375241,
+    28.241610815030036,
+    27.872308417268535,
+    27.412307132675146,
+    26.843138902935465,
+    26.206667535655853,
+    25.635986878653256,
+    25.36246425533071,
+    25.63089693244715,
+    26.527937208079354,
+    27.86316647234373,
+    29.25309383922613,
+    30.358000453627426,
+    31.053872347777876,
+    31.418486859519223,
+    31.61672346437189,
+    31.814520228594724,
+    32.14818999361682,
+    32.70214522756368,
+    33.475801877662754,
+    34.378561462532524,
+    35.282865845557886,
+    36.09687801238134,
+    36.788366511273566,
+    37.35280643390153,
+    37.782144194541715,
+    38.0706065083167,
+    38.234242889293746,
+    38.31038793645997,
+    38.33897048002134,
+    38.34753294243826,
+    38.34957236380026,
+    38.349949812782825,
+    38.349949812782825,
+    38.34957236380026,
+    38.34733219356954,
+    38.33751087130828,
+    38.30280844886322,
+    38.20354225691832,
+    37.97359872854232,
+    37.54507634854809,
+    36.91394003695938,
+    36.20878279591285,
+    35.67545358539873,
+    35.53996669960599,
+    35.85204969112237,
+    36.45915339604299,
+    37.12542098350499,
+    37.67106652109246,
+    38.0293537168304,
+    38.22228015643845,
+    38.30764380435002,
+    38.33849265660442,
+    38.34748275522108,
+    38.34957236380026,
+    38.349949812782825,
+    38.35,
+    38.35,
+    38.349949812782825,
+    38.34962255101745,
+    38.34791039142082,
+    38.341009901383345,
+    38.31905077331125,
+    38.26358033082023,
+    38.150930772641296,
+    37.963760772752075,
+    37.70316720105403,
+    37.39054361027329,
+    37.05945638972671,
+    36.74683279894598,
+    36.486239227247935,
+    36.29906922735871,
+    36.18641966917978,
+    36.13094922668876,
+    36.10899009861666,
+    36.102089608579185,
+    36.10037744898256
+  ],
+  "upper_boundary_mm": [
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65,
+    92.65
+  ],
+  "canonical_frame_mm": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -12.932014835393149
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -1.7342317432508811e-06
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      607.803522325765
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "retained_interface_loss_mm3": 0.0,
+  "component_count": 1,
+  "source_watertight": true,
+  "source_winding": true,
+  "volume_mm3": 29174.744694778772,
+  "old_volume_mm3": 40869.28194186276,
+  "ribs": [
+    {
+      "length_mm": 17.99565900736216,
+      "radius_mm": 3.0,
+      "detour_mm": 0.0,
+      "volume_mm3": 506.0498281689346
+    }
+  ],
+  "discarded_unattached_wall_mm3": [],
+  "cut_records": [
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 10.403346673337152
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.6005688512663974
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 1.7654659974361442
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 11.197366295276902
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 43.01483658474971
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 695.2441154254599
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 32.97595033236976
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 21.578760811460555
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 19.257189408698245
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 5.666632530705419
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 17.269133478782805
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 72.76200845725597
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 2.904761055180784
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 260.50628597944603
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 140.86905460912138
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 81.62483796642918
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 38.86851946609
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 42.213245255017675
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 1.2800003242492706
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.8960000495910065
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.7617260280657075
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "A_STAND_35",
+      "wall_overlap_mm3": 0.3053679491802506
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 16.939512586408526
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 2.2772785476343853
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 3.886083448551498
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 15.93756543910479
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 53.77634359441295
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 685.6402597880729
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 10.696090889973044
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 17.1907117764471
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 80.9752108320116
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 0.11341957690128429
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 257.78997483400076
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 89.36441074407676
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 38.19531279557495
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 42.38131127156173
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 1.2800003242492703
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 0.8960000495910037
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 0.7638178476095313
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "N_NEUTRAL",
+      "wall_overlap_mm3": 0.16236402847093037
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 10.382798882009883
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 0.5961410214865428
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 1.759123876598839
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 11.17831282151657
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 42.97921089886011
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 695.2493936289097
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 21.62291887132499
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 17.26937536696804
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 72.75090482259183
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 2.9221468827746233
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 260.5149308336061
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 81.61699748995244
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 38.87089526859343
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 42.212668721087404
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 1.2800003242492701
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 0.896000049591003
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 0.7617262798892847
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "left_elbow",
+      "wall_overlap_mm3": 0.3059339149617504
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_1"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 0.01193289539584152
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 66.11479198099013
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "asymmetric",
+      "wall_overlap_mm3": 91.82256141886239
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 5.722894130598443
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 0.03870739387335735
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 0.7995088152203857
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 8.539318554770356
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 42.375508990580336
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 701.3218753799372
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 2.4380837952619108
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 137.027363839507
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 23.182711441694153
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 3.0394633420086103
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 10.751379057360518
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 4.2593097698162445
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 14.266009795875267
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 23.787020686921835
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 17.45066808737548
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 16.493300242392873
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 78.87155623480369
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 134.49305744870603
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 173.06483753176136
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-60",
+      "wall_overlap_mm3": 93.23496876977904
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 7.192431155744143
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 0.1733838167514508
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 1.1850661939685403
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 9.855324022638392
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 44.32474101640216
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 698.084949892432
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 0.9041648963195705
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 127.93879137910166
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 17.183634883948287
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 2.5379923576028243
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 12.497530408450904
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 5.528723316959062
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 11.685346570632488
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 30.776504098358284
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 17.370021010110804
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 11.755099788248062
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 78.29209209985241
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 160.5329489948776
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 184.66371312734577
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-55",
+      "wall_overlap_mm3": 93.23496877936235
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 8.632117681088136
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 0.39210521009342264
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 1.5784294094538287
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 11.079592788865929
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 46.08858684086787
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 695.3867770404012
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 0.16688469221525606
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 118.54825011989827
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 12.116125211811983
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 2.284559298063474
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 13.112770582888889
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 6.80424870522305
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 8.967131915421827
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 37.63591131798348
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 17.361952790756444
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 7.727798453052167
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 77.83706491851974
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 186.4894488294369
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 195.39786045822876
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-50",
+      "wall_overlap_mm3": 93.23496878915432
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 10.032413100116589
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 0.6650244000176028
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 1.974049981619819
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 12.159491954701314
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 47.755093586446584
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 693.1160467766277
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 109.75556471577946
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 7.829967499599042
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 2.084496560549346
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 12.581951282048207
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 7.677413142010622
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 6.4471978003543855
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 43.63833257736121
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 17.369129819433077
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 4.435735047988759
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 77.46968921177654
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 210.89191803585211
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 203.63518917309673
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-45",
+      "wall_overlap_mm3": 93.23496879917205
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 11.37117926647107
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 0.9521785107457325
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 2.3490801569004742
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 13.077930034466496
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 49.09324449584921
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 691.2787531274186
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 102.28276719007145
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 4.522013809145942
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 2.2508152019730505
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 10.613590796966239
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 8.161989217658933
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 4.124050377654896
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 47.99101868087662
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 17.28068357874421
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 2.0331331282573033
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 77.20759736712971
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 232.48008624207537
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 208.96680297364142
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 93.2339371486176
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 0.1988427770018612
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-40",
+      "wall_overlap_mm3": 0.007985478987586295
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 12.596890111557949
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 1.2214464260181819
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 2.6945150564478633
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 13.860178565522784
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 50.22122328667137
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 689.8444844836446
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 95.95404780708485
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 2.160440884254183
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 2.336986606217633
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 8.226633659008233
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 8.178003298352571
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 2.32030460730794
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 49.680900887282064
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 17.317333368467654
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 0.38670111894334663
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 77.18862497810693
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 249.62154018114146
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 211.25197772710592
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 93.15299948060753
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 0.03878030258283045
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 1.057154593588263
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-35",
+      "wall_overlap_mm3": 0.22121049727561393
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 13.685059869562787
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 1.4781876962221514
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 3.0108394218975496
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 14.496050064252053
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 51.27860487924237
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 688.6833525004923
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 90.58902399515944
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 0.681932126711428
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 2.863326028138106
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 5.690207665115387
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 8.286752652516482
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 0.9952325729067848
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 48.41017121655123
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 17.251415591345463
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 77.43559794806218
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 261.1207255002753
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 208.98084595252138
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 92.90401277746801
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 0.6288724153445318
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 2.9194933559578486
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-30",
+      "wall_overlap_mm3": 0.6387766296977928
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 14.655144377241896
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 1.7132186469534036
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 3.2810534688831723
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 14.995777077705455
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 52.09485967864945
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 687.6867897257363
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 85.47075029161167
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 0.01722064144851828
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 3.3399319980589364
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 3.1355378130385656
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 9.113566294190603
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 0.1634742285662708
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 44.154310069745854
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 17.2508832289585
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 77.8231096446958
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 267.70613018905715
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 202.00703126317768
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 92.51652321364152
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 2.525543309192434
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 6.23263197398156
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 0.009295416941467918
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-25",
+      "wall_overlap_mm3": 0.8919845614806711
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 15.467546813455389
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 1.9121292510067498
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 3.495843568003648
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 15.360751393546199
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 52.68831786440853
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 686.9172990692648
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 79.29453036814837
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 4.273165822701897
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 1.197418560751868
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 10.75403654043441
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 36.830674061864414
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 17.259052237735222
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 78.32353915574502
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 269.1842688440248
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 191.89955356146982
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 92.01609696879882
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 6.382740334078095
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 11.397081639135225
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 0.1715337477688989
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 0.1573329958329507
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-20",
+      "wall_overlap_mm3": 0.8959999160766066
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 16.08859195711497
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 2.0700392611640694
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 3.6711604644866305
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 15.623627855296151
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 53.18520783688998
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 686.3657349275603
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 70.75378908759816
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 5.314570041720645
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 0.15002173005438565
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 13.098643471871082
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 27.772863955023237
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 17.190365907634444
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 78.91236090532159
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 268.2475261707425
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 180.8824432257917
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 91.4272556655187
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 12.125252415191252
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 18.26632508081422
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 0.6783914104967176
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 0.5290482564950351
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-15",
+      "wall_overlap_mm3": 0.895999916076607
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 16.535748549648797
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 2.1873090677510327
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 3.79774859418673
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 15.80861291211438
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 53.55327261757459
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 685.9905608169521
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 59.69262909032393
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 6.765203274467354
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 16.091783164446483
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 18.679436655864986
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 17.230330479666243
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 79.56454509833948
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 266.589934415824
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 168.4721640388277
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 90.7750979702116
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 19.486694604909378
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 26.673817074385926
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 1.1196524842832671
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 0.8494086353877544
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-10",
+      "wall_overlap_mm3": 0.8959999160766061
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 16.830054435142134
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 2.2568068188757278
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 3.8673367053022965
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 15.907296072649281
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 53.73178124334005
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 685.7294260593245
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 46.65428529743873
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 8.545150639819093
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 18.567445839023346
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 11.237227491017656
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 17.1570232913593
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 80.25967992260502
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 263.3629889811924
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 154.27084311791336
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 90.07996474486181
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 28.250692770095533
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 35.36237830455298
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 1.2799589454666507
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 0.8960000495910013
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@-5",
+      "wall_overlap_mm3": 0.8959999160766061
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 16.834112530007914
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 2.2570802645517714
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 3.8682972728485203
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 15.908887784800758
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 53.73596281855659
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 685.7344579061756
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 20.567603558806038
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 13.464736777771288
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 17.928149348750527
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 2.1469316174935904
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 17.961126114975695
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 81.6907229357419
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 0.7695193967160434
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 245.9546264860768
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 127.21861387032598
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 88.64892685043687
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 48.92805394490711
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 46.35541584270833
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 1.2798572977777978
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 0.8960000495910028
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 0.33188833984329374
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@5",
+      "wall_overlap_mm3": 0.6875886625442795
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 16.54276898402195
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 2.187919404778359
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 3.799456528250578
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 15.811523594544392
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 53.55938168304041
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 685.992898828984
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 10.792204385566091
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 16.63272426461214
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 14.701349132583653
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 0.36420683768214557
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 20.450637379939078
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 82.38581235828879
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 1.891424243825472
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 228.10103209675526
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 112.27946572512442
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 87.95384334164284
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 58.7586975751147
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 45.8812622632169
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 1.1094433968380275
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 0.032559646986530986
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 0.895995573613483
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 0.007339145024271708
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@10",
+      "wall_overlap_mm3": 1.570301589202903
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 16.099353834720638
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 2.0712339031124056
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 3.6734060524133425
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 15.62836908568679
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 53.19333937768687
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 686.3649622199066
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 4.301144936544377
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 20.879989891808066
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 10.025965201840615
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 24.53770487686905
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 83.037843835523
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 4.239135808519954
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 206.37318221414625
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 95.38784911208323
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 87.30178969304033
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 66.18047602847068
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 40.674157085206126
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 0.6306625137953288
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 0.49626454944006687
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 0.8072749421847433
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@15",
+      "wall_overlap_mm3": 2.4602440064441797
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 15.481306899900243
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 1.9140380345436456
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 3.4986173697811593
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 15.368390822304583
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 52.70123637386682
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 686.9192520470119
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 1.0087121753145594
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 25.721231703551386
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 5.710178367044433
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 29.867221150601054
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 83.62654257515666
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 7.406027828946157
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 180.4222526063933
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 76.9172280814323
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 86.7131141720352
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 70.76000773007208
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 32.1770804627616
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 0.12990175791393319
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 1.2056171598261747
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 0.4498531880574119
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@20",
+      "wall_overlap_mm3": 3.3223229873696263
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 14.669570437373395
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 1.7157133351618488
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 3.284006447427309
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 15.005747940776711
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 52.113432954123326
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 687.6950199816594
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 0.01428707703038964
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 31.351846290672874
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 2.7051494048836022
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 35.267754077352684
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 84.12675000407619
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 12.145631598444561
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 151.1304785819349
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 57.159894480449005
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 86.21290886364577
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 71.83860448893829
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 22.3429022840375
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 1.5851860350807665
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 0.07009165819481722
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@25",
+      "wall_overlap_mm3": 4.278852546519415
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 13.69996978502536
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 1.4816887091083273
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 3.0136087636410704
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 14.506775946759074
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 51.299275362897475
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 688.6881492330306
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 36.58277018771818
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 0.7838228277466999
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 40.71960751606048
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 84.51401376446802
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 18.428235820580774
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 120.51389549036317
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 38.343116622772385
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 85.82562504569985
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 69.32435418836337
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 13.308320099027942
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 1.6000000238418524
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@30",
+      "wall_overlap_mm3": 4.955490472372058
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 12.613196126778998
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 1.226222922282302
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 2.697630631809125
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 13.873831937364896
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 50.24235150301055
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 689.842481265785
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 41.08105333092609
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 0.024087113181802695
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 44.966465159437796
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 84.76264349717164
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 26.30023751921657
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 90.21153701580789
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 22.88628665461233
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 85.57702001322092
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 63.76560185161673
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 6.590148993765378
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 1.5989608482662667
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@35",
+      "wall_overlap_mm3": 4.760873077394655
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 11.38763601690251
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 0.9577069771586364
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 2.353210213333255
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 13.09222693623992
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 49.12243392268537
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 691.2754358610139
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 44.692703181617624
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 48.87297612189418
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 84.84332237314557
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 36.028957339446784
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 62.88663123070511
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 11.478924566039405
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 85.49634266195564
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 55.46953700465262
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 2.5458127586811496
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 1.4148162573429857
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@40",
+      "wall_overlap_mm3": 3.8920573397185887
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 10.04943172433771
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 0.6705113657173364
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 1.9790320760508142
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 12.173313893083785
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 47.789943390207185
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 693.1021122645889
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 47.31397055773575
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 51.404840709699506
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 84.84434678210928
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 46.9379311656884
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 44.07603128434999
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 4.285132946655337
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 85.49529506581698
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 45.494109262501965
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 0.6939071269678104
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 0.7765192775897906
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@45",
+      "wall_overlap_mm3": 2.7403206025344558
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 8.651262939970016
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 0.39725419504573617
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 1.5839343051539476
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 11.095048545413771
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 46.11761583558467
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 695.3244875600984
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 0.1617466230118309
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 49.03734445492722
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 52.54801779265776
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 84.84434677370595
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 58.814776186729055
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 30.55975553718622
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 0.8664259696881761
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 85.49531783602401
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 34.914141741175605
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 0.06738316411970763
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 0.18358303906386092
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@50",
+      "wall_overlap_mm3": 1.6493303092053782
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 7.213251262495658
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 0.17730420627681737
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 1.191658111351295
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 9.872377477251447
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 44.358600718879934
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 697.9414421975004
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 0.8922838107757658
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 49.56281523044194
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 51.22436644855501
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 84.84434676547927
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 70.90542401024298
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 20.406981714650755
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 85.49531856177755
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 24.8300046986486
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@55",
+      "wall_overlap_mm3": 0.6840830944409466
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 5.7432926599495815
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 0.03999026660778433
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 0.8064705982637225
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 8.559870497830245
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 42.41809159820826
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 701.1121185441292
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 2.413382600581481
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 48.77840968431635
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 47.088831443068756
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 84.84434675743742
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 83.57106550927351
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 14.060640939211298
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 85.49529432872338
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 16.490060362807668
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.turn@60",
+      "wall_overlap_mm3": 0.07847553495492782
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 384.9478326717373
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.9209406762739324
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 3.5382676937342716
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 20.61039254033849
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 17.717446800732993
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.027681457027976586
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 49.50510096127095
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 175.91042546277023
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 268.5689865661139
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 12.224677354543532
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 63.59648376730769
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 35.77664745205926
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/C2"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.7816642533936757
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.006513241837763968
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 42.76954678946134
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 41.08182666508991
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 1.2336548928101465
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.8960000495909999
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 0.8634281292307363
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-25",
+      "wall_overlap_mm3": 1.8205239402781475
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 436.54004241857274
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 0.07853708586437123
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 33.2661120813539
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 17.603966383665455
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 53.3792612171244
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 125.5305229170721
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 271.034401999354
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 72.24168800770033
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 16.405505804986472
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 42.26339874141938
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 41.31074700124207
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 1.2744655904167819
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 0.8960000495910037
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 0.8282100571499446
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-20",
+      "wall_overlap_mm3": 1.500890568885509
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 1.091166213668594
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 491.993487065204
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 48.09603981800802
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 17.468686185899262
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 65.0115986806946
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 80.49001658382232
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 269.41045217526903
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 84.22202879480216
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 0.9055402316629022
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 41.514426508501614
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 41.56181554921768
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 1.280000324249271
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 0.8960000495910037
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 0.7959680590105238
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-15",
+      "wall_overlap_mm3": 1.15702753181004
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 0.5791297153924632
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 0.7905553633363277
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 15.65793161444238
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 560.2043849665523
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 46.78468994299126
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 17.355339613258806
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 78.40935997800938
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 33.558885403133175
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 265.80237960311365
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 92.16607122957537
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 40.4978956288895
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 41.82526009016571
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 1.2800003242492692
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 0.8960000495910027
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 0.7735063080935513
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-10",
+      "wall_overlap_mm3": 0.7825040597915928
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 6.658745959990807
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 0.034047989153986484
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 0.6802752018154157
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 7.499491681834116
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 36.364369374898956
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 672.0012053457153
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 30.41343394018537
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 17.310574110832555
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 74.40639623617706
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 7.408739602515704
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 262.1079279243055
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 84.11947312653025
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 39.336916794645056
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 42.1009460054795
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 1.2800003242492706
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 0.8960000495910032
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 0.7627200754752751
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@-5",
+      "wall_overlap_mm3": 0.42487128484719083
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 735.7314340148207
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 16.93951258567327
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_1"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 2.277383362803211
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_2"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 3.885981684530961
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 15.937565438887054
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 53.77634359358244
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 5.322322843428527
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 125.26227061132325
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 18.917727935245175
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 5.638738916637523
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 16.54018149058038
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_nut"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 29.765665533596103
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 10.696089374525323
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 2.35597669421052
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 3.1094871000015694
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 111.21378765492477
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 94.87310054842541
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 0.11341948412684394
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 128.00474239021523
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 120.82914493018816
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 38.248984828007266
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 42.41905003573558
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 0.8213144704084095
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 0.8959999160766055
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@5",
+      "wall_overlap_mm3": 4.9362586451904
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 567.8658027305021
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 18.18887733563759
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 5.638745567421047
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 32.39470581440004
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 7.629300630209535
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 167.4273841038591
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 132.4778747663799
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@10",
+      "wall_overlap_mm3": 180.95024568883454
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 457.71642375671263
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 16.992669682416096
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 5.638803955222173
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 77.36206520717286
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 9.602624482225288
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 186.8223119784593
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 136.84623593861738
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@15",
+      "wall_overlap_mm3": 206.90101574546696
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 403.2879429606638
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 16.939520599793564
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_1"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 2.2773837716528007
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_2"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 3.8859835338697493
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 15.937567874606566
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 53.77635378664389
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 5.3223249730214555
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 125.36674424379696
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 15.299420742511805
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 5.66524587576212
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 16.52856345878489
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_nut"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 29.759794844560567
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 10.712168228044568
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 39.89410755044116
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 8.213669841014436
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 223.86371189246674
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 94.75233021043353
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 0.11537200306642234
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 141.14442301090463
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 253.1739254671405
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 38.18212518713415
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 42.38552286489531
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 0.8230429329132242
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/R2"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 0.8959999160766032
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@20",
+      "wall_overlap_mm3": 4.933747564107775
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 436.27072403007867
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 16.116077236066808
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_1"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 2.075819141838658
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_2"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 3.6782627615364447
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 15.635483990991313
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 53.210560396267624
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 4.738415051647852
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 198.90518162774757
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_-6.1"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 6.559519490973079
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 17.464198089945505
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 42.70751467082796
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 4.662038886168625
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_nut"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 14.115011963967312
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 29.324245184125623
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 0.9389115235967709
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 1.5265107892913323
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 234.35063933062114
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 16.831938526567075
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 11.009586802225527
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 147.65223046848396
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 272.26301278838474
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 1.6320047372032862
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 6.120804181624467
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/R1"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 0.7802868135163351
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.bend@25",
+      "wall_overlap_mm3": 0.6916040884615899
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_+1_outer_M4_wide"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 1.0615263166254243
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_+1_spring_2"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 0.05201120819474101
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_+1_front_M4_washer"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 5.61486615234603
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 53.729604740574814
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 599.0846449870621
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_outer_M4_wide"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 4.424908508360183
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_spring_2"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 0.4704199551718448
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_front_M4_washer"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 7.290291749376441
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 40.29473187400421
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 0.07003558264566133
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 249.35659670100952
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_nut_-6.1"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 14.409645644230567
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_-6.1"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 6.591783520145592
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_nut_6.1"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 9.941807415547002
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_screw_6.1"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 3.374618129851221
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 24.77006620807441
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 1.5811008267562534
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 200.46252690951044
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 154.655663632935
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01_magnet_cartridge"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 26.032548015912468
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.bend@30",
+      "wall_overlap_mm3": 245.0382816215483
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 4.553438932875732
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 452.64205835906944
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 2.1784518134665327
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 0.07761533143057193
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 25.66192050357905
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 51.82981733665739
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_1"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 0.5926521913120344
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 28.688868404745417
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 356.08167379572376
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 167.0766284417795
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 35.17968409968188
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 52.44558358873387
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 0.04027098120592112
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 19.043860896432562
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@-20",
+      "wall_overlap_mm3": 0.07140476131421036
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 12.551007932567144
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 1.1092414188703306
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 2.4841771584705343
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 13.180145025605533
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 47.21425091079972
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 466.3128736981342
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 6.778818096007021
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 26.615446085642198
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 12.18216427200454
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 0.038268901685270945
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 21.596219828065593
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_1"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 0.19296398342380927
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 26.375799631081545
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 339.3135605169792
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 6.833363992541057
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 220.49597998752068
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 103.1041459190227
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 32.768903004215424
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 63.18403974312111
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 43.40571536073313
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 0.907738215132441
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C2"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 0.17166875234981593
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 0.8567839065700535
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@-15",
+      "wall_overlap_mm3": 2.1978281824672545
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 16.920720839490833
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 2.2719147008734364
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 3.880224617308923
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 15.92822797960008
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 53.74946913916535
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 540.1773429849355
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 32.73169965054576
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 10.764708518040935
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 19.25038415623126
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 5.584536668777856
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 17.191735398366646
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 11.124686860089172
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 284.9533397999738
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 0.12115423781901534
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 257.65211163141237
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 140.6287940538703
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 22.41587545823069
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 38.38910978540556
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 42.48409773223576
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 1.2800003242492708
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 0.896000049591001
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 0.7574830758509102
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@-10",
+      "wall_overlap_mm3": 0.16838239976982888
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 16.930154772742988
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 2.2746050432137093
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 3.883167100851093
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 15.932918154472356
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 53.76297676401395
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 666.844170485854
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 32.73074899887886
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 10.752940737596827
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 19.250356238732152
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 5.584218167223219
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 17.191627040328335
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 2.58023594925517
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 175.54112920672938
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 0.12012333222117146
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 257.647596844537
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 140.62785744811782
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 23.821006142881952
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 38.38899107256897
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 42.48472486580759
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 1.2800003242492766
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 0.8960000495910051
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 0.7574645061312163
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@-5",
+      "wall_overlap_mm3": 0.16824108022271278
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 16.93004469081694
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 2.2745921988646782
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 3.883142454547936
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 15.93288094392599
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 53.76284572615589
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 666.8541328820712
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 33.2222911280523
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 10.663021259074426
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 19.263312096017387
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 5.7499641107866015
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 17.189994562902758
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_1"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 0.02115164972964101
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 3.2257106760157366
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 23.821211862730284
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 0.10915146567394671
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 257.93874059062165
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 141.11062033824325
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 201.22360595072382
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 38.00321606165954
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 42.276186887673276
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 1.2800003242492677
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 0.896000049591004
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 0.770068497360648
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@5",
+      "wall_overlap_mm3": 0.15690523421132882
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 16.920504733623012
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 2.2718716617566996
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 3.8801669251879614
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 15.928138086841505
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 53.74918653094783
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 540.1806921710561
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 10.675010769909546
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 17.190108140726704
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 4.307206454817645
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 7.742218424095841
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 22.415520211620418
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 0.11017590834274721
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 257.94273718524823
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 325.45054748297866
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 38.003997020033744
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 42.275912207559514
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 1.2800003242492677
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 0.8960000495910008
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 0.7700658251357438
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/wire_solder"
+      ],
+      "pose": "head.side_bend@10",
+      "wall_overlap_mm3": 0.15706169053303776
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_outer_M4_wide"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 10.757791166067623
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.7010702091813428
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_spring_2"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 1.924699944709082
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_front_M4_washer"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 11.715620347480199
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 44.39198172513741
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 469.11953135841634
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 75.61710790174878
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 10.683350804538096
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.5647420641868595
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 11.781586151618532
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 32.71446724854809
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 17.2388158682546
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.19241926044766125
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 17.27354245685785
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 9.965033588997317
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 32.767402505157065
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 270.19697093989265
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 186.79512762013587
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 380.6174482019382
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/pcb"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 8.888577908405969
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/SOP8_max"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 14.534644535927667
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/C1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.31295499311749486
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R1"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.4143583733901876
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_PCB/R2"
+      ],
+      "pose": "head.side_bend@15",
+      "wall_overlap_mm3": 0.8959999160766027
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_-1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 6.556900537152675
+    },
+    {
+      "obstacle_owner": "j:head:C01",
+      "members": [
+        "head/C01"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 450.95324472937654
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_+1_shoulder_D4_L8_M3_thread6"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 1.2362505200219032
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 130.46486281460434
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C14"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 47.75941211431569
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 39.371521240390585
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_nut_-6.1"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 12.125888430978161
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_-6.1"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 5.165505005155385
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_screw_6.1"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 12.415046189568772
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 28.863156771649553
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_screw"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 17.64225745997197
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_pcb_clip_nut"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 29.21537605245317
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_1"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 0.5902863660202539
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_screw_3"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 21.71102579741564
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_nut_3"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 7.766638016132569
+    },
+    {
+      "obstacle_owner": "j:head:P",
+      "members": [
+        "head/P_case_plus"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 52.44181709507118
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C01_sensor_cassette"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 10.880838434577685
+    },
+    {
+      "obstacle_owner": "j:head:ring",
+      "members": [
+        "head/C02_sensor_cassette"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 85.90709568021325
+    },
+    {
+      "obstacle_owner": "j:head:C02",
+      "members": [
+        "head/C02_magnet_cartridge"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 181.52263918350067
+    },
+    {
+      "obstacle_owner": "f:chest",
+      "members": [
+        "frame/chest"
+      ],
+      "pose": "head.side_bend@20",
+      "wall_overlap_mm3": 395.7222723831637
+    }
+  ],
+  "continuous_motion_proven": false,
+  "structural_strength_proven": false,
+  "validated_keeps_sha256": "17e706b9d29d3da9db78ebd7dc9065f9e93334d0b29520b6a11def8ecfc7c909",
+  "keep_input_revalidation": {
+    "original_hash": "a827b2b659305d540e3d08e0056c460e8297f05b4778e4ea1ee1191818d9db03",
+    "current_hash": "793e5564b6da5fed3636b4980c8006781efcbcaeaedaaec7dba5ffefa481d349",
+    "proof": "Only recorded material subtraction. Unchanged carriers were constructed against a superset of the revised neighbouring lands; final actual-solid checks remain mandatory."
+  },
+  "validated_profile_sha256": "7dd91630e037c0129c523d8681d680d9637a5bbf31a1e7492dc4d97410205238",
+  "validated_pose_sha256": "c31b6bf2569707dae3a6cbfa318bfdb633406d2940e68557974f81971ecd352a",
+  "collar_clocking_reuse": {
+    "body_frame_maximum_error": 8.526512829121202e-14,
+    "own_keeper_unchanged": true,
+    "note": "Only two native collar modules and their three structural lands move. Unchanged carriers require final actual-solid collision checks with those neighbours."
+  },
+  "magnet_seat_input_revalidation": "Only original F7 negative space is restored; no material added. Final actual-solid verification follows."
+}

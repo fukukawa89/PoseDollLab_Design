@@ -1,0 +1,11 @@
+T5 source snapshots belong at Hardware/PoseDoll44/cad/revO24C_T5 in the original repository.
+Dependencies: revO24C_T4 / T3 / T1 / revO24 helpers, repository .venv, scripts/verify_revo22_a1mini.py,
+O22 A1mini 3MF template, Blender and local OrcaSlicer. This is not a standalone source installer.
+Print STL/3MF and offline HTML/tutorial need none of those development dependencies.
+Order: arm_kit.py; audit.py; assembly_checks.py; bench_checks.py; tutorial.py;
+tutorial_checks.py; print_projects.py; combined_print.py; Blender --python render.py;
+publish.py; docs.py. Serve bench/revO24C_T5 on localhost:8781 for browser review.
+Use Playwright CLI with tutorial_browser_review.js and browser_review.js; save raw results to
+output/playwright/o24ct5-tutorial-browser-raw.txt and o24ct5-browser-raw.txt.
+Then verify_tutorial_browser.py and verify_delivery.py; lastly call publish.package().
+No file has been sent to a printer. Physical T5 test remains pending.

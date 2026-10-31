@@ -1,0 +1,66 @@
+{
+  "run_id": "o2_20260923_r1",
+  "schema": "revo2-status-v1",
+  "evidence_issues": [],
+  "gates": {
+    "V0": {
+      "status": "PASS",
+      "scope": "Fresh outputs, expected sets, source fingerprints and raw producer results; not engineering acceptance"
+    },
+    "V1": {
+      "status": "PARTIAL",
+      "nominal_CAD_and_sampled_paths": true,
+      "blocking": [
+        "Integral drive-slot tolerance, wear and parasitic axial friction unqualified",
+        "Supplier tolerance and joint/cap/plate strength qualification pending",
+        "Mating plug/output coupler and full small-fastener tool access incomplete"
+      ]
+    },
+    "V2": {
+      "status": "BLOCKED",
+      "blocking": [
+        "Candidate placements still fail or have only sparse surface corner checks",
+        "Some native component models and exact mating datums missing",
+        "Complete chest mechanisms, shoulder wire sweep and service paths missing"
+      ]
+    },
+    "V3": {
+      "status": "BLOCKED_DEPENDENCY",
+      "requires": [
+        "V1",
+        "V2"
+      ],
+      "physical_tests": "NOT_RUN"
+    },
+    "V4": {
+      "status": "BLOCKED_DEPENDENCY",
+      "requires": [
+        "V2"
+      ],
+      "new_candidate_schematics_ERC": "PASS",
+      "PCB_DRC": "FAIL",
+      "seven_role_compile": "PASS",
+      "physical_power_and_8_14ms_soak": "NOT_RUN"
+    },
+    "V5": {
+      "status": "BLOCKED_DEPENDENCY",
+      "requires": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ],
+      "full_body_and_UE": "NOT_RUN"
+    }
+  },
+  "nominal_joint_CAD_delivered": true,
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "final_device_profile_delivered": false,
+  "fallback_91cm_preserved": true,
+  "mass_budget_g": {
+    "manny": 1635.589739452759,
+    "quinn": 1635.589739452759
+  },
+  "source_contract": "Hardware\\PoseDoll44\\docs\\revO2_review_source\\iteration2_contract.json"
+}

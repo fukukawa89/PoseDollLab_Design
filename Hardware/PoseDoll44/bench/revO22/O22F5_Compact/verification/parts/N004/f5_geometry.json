@@ -1,0 +1,190 @@
+{
+  "id": "N004",
+  "label": "opt0_route0",
+  "parts_npz_sha256": "9bc7b4d7ee159ce2edf1f243755c6a6ad5e6d82cea3350452b76f522701f2e29",
+  "geometric_constraints_passed": true,
+  "body_exact_rigid_copy_of_F4": true,
+  "body_rigid_transform_error_mm": 0.0,
+  "body_added_from_F4_mm3": 0.0,
+  "body_removed_from_F4_mm3": 0.0,
+  "body_change_fit_and_pose_required": false,
+  "fin_body_intersection_mm3": 0.0,
+  "all_fins_bed_rooted": true,
+  "fin_count": 4,
+  "fin_bodies": [
+    {
+      "id": "S01",
+      "bounds_mm": [
+        0.04856254160404205,
+        6.700000002980232,
+        0.0,
+        15.161642618477345,
+        10.100000001490116,
+        12.015731796622276
+      ],
+      "volume_mm3": 109.49975897688104,
+      "bed_contact_mm2": 49.966869072182625,
+      "tooth_overlap_mm3": 0.8475291009288387,
+      "body_gap_mm_capped_at_05": 0.3499999953303212,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    },
+    {
+      "id": "S02",
+      "bounds_mm": [
+        7.5,
+        -0.5,
+        0.0,
+        12.299999997019768,
+        2.899999998509884,
+        3.755663000047207
+      ],
+      "volume_mm3": 16.430627289288743,
+      "bed_contact_mm2": 14.902396807852657,
+      "tooth_overlap_mm3": 0.1792000000000003,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    },
+    {
+      "id": "S03",
+      "bounds_mm": [
+        9.299999997019768,
+        13.899999998509884,
+        0.0,
+        15.161642618477345,
+        17.299999997019768,
+        1.3098967671394348
+      ],
+      "volume_mm3": 11.40285282891071,
+      "bed_contact_mm2": 18.511981729359256,
+      "tooth_overlap_mm3": 0.4535452769501184,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    },
+    {
+      "id": "S04",
+      "bounds_mm": [
+        9.227255880832672,
+        21.100000001490116,
+        0.0,
+        14.172744117677212,
+        24.5,
+        5.973837226629257
+      ],
+      "volume_mm3": 24.010901162136463,
+      "bed_contact_mm2": 15.397056831235734,
+      "tooth_overlap_mm3": 0.17919999999999991,
+      "body_gap_mm_capped_at_05": 0.5,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    }
+  ],
+  "removal_stages": [
+    {
+      "groups": [
+        "S01"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    },
+    {
+      "groups": [
+        "S02"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    },
+    {
+      "groups": [
+        "S03"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    },
+    {
+      "groups": [
+        "S04"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    }
+  ],
+  "withdrawal_sweep_distance_mm": 220.0,
+  "all_fin_bodies_have_continuous_removal_path": true,
+  "withdrawal_condition": "Clear all yellow connector material from the removal path first. Intersecting branches can need more than one cut; the proof is for fin bodies, not scissors access or force.",
+  "connected_tooth_components": 5,
+  "connector_contacts": [
+    {
+      "body_overlap_mm3": 0.04560525146838105,
+      "fin_overlap_mm3": 0.26890008598584125
+    },
+    {
+      "body_overlap_mm3": 0.0965531579067796,
+      "fin_overlap_mm3": 0.17920000000000028
+    },
+    {
+      "body_overlap_mm3": 0.5354895356501622,
+      "fin_overlap_mm3": 0.5786290149429976
+    },
+    {
+      "body_overlap_mm3": 0.3571589867022395,
+      "fin_overlap_mm3": 0.4535452769501184
+    },
+    {
+      "body_overlap_mm3": 0.08682879176925112,
+      "fin_overlap_mm3": 0.1791999999999998
+    }
+  ],
+  "connector_extra_material_in_functional_guard_mm3": 0.0,
+  "removable_fin_material_temporarily_in_functional_guard_mm3": 0.0,
+  "temporary_core_policy": "Orange fins can traverse empty assembly space only while printing; all must be removed before hardware installation, along the verified path.",
+  "support_volume_mm3": 200.57554175897832,
+  "old_support_volume_mm3": 616.356604263239,
+  "support_volume_reduction_percent": 67.45787416381528,
+  "envelope_mm": [
+    15.161642618477345,
+    25.0,
+    27.753429546575695
+  ],
+  "neck_free_height_mm": {
+    "min": 3.916803728931206,
+    "median": 5.20000000125224,
+    "max": 8.01225882352371
+  },
+  "physical_print_tested": false,
+  "strength_or_thermal_simulation": false
+}

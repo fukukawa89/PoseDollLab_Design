@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TUTORIAL</title><link rel="icon" href="data:,"><style>body{max-width:1040px;margin:40px auto;padding:0 26px 70px;color:#243f36;background:#fafbf6;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}h1{font-size:36px;line-height:1.3}h2{margin-top:42px;border-bottom:1px solid #d6dfd5;padding-bottom:8px}h3{margin-top:28px}a{color:#226d57}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}th,td{border:1px solid #d6dfd5;padding:9px 12px;text-align:left}th{background:#e8eee4}img{max-width:100%;border:1px solid #dbe4d8;border-radius:8px}code{background:#eaf0e7;padding:2px 5px}nav{display:flex;flex-wrap:wrap;gap:15px}small,.muted{color:#647567}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#edf3e8;padding:18px;border-radius:10px}.card b{font-size:30px;display:block}.button{display:inline-block;background:#2b715a;color:white;text-decoration:none;padding:9px 17px;border-radius:7px;margin:6px 8px 6px 0}.note{border-left:4px solid #c09b5f;padding:12px 18px;background:#f3efdf}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero img{border:0}.eyebrow{font-size:12px;letter-spacing:2px}@media(max-width:700px){.cards,.hero{grid-template-columns:1fr}body{padding:0 16px}h1{font-size:28px}table{display:block;overflow:auto}}@media print{body{margin:0;max-width:none;font-size:11pt;background:white}nav,.button{display:none}h2{break-after:avoid}img{max-height:140mm;object-fit:contain}tr{break-inside:avoid}}</style><body><nav><a href="START_HERE.html">打印入口</a><a href="tutorial/index.html">逐件动画教程</a><a href="preview/index.html">三维装配</a><a href="ASSEMBLY.html">装配手册</a><a href="TEST_PLAN.html">测试计划</a><a href="BOM.csv">采购清单</a><a href="PURCHASE_DELTA_O22.html">O22补购对照</a></nav><h1>H / R / W 逐件装配动画</h1>
+<p><strong>2026-10-23 五金朝向版：本次无需重印，也不改变五金规格或步骤编号。</strong> 三套教程覆盖 35 颗螺母和 38 片垫圈的朝向；29 个螺钉位置同步显示所配螺母类型。</p>
+<p><a href="tutorial/index.html">打开动画教程</a>。使用实际 CAD 网格，并与当前 S3 装配数据绑定；H、R 打印件仍沿用 S2，仅腕部 W06/W07 更新为 S3。</p>
+<table>
+<tr><th>独立样件</th><th>步骤数</th><th>装配件数</th><th>内容</th></tr>
+<tr><td>H 肩 / 肘单轴</td><td>64</td><td>45</td><td>支架、轴承、转子、摩擦垫圈、后桥、预紧与锁轴</td></tr>
+<tr><td>R 前臂扭转</td><td>64</td><td>45</td><td>D6 光轴、MR126ZZ 轴承、同轴转子与预紧</td></tr>
+<tr><td>W 球面腕</td><td>60</td><td>43</td><td>球内五金、衬片、球窝、导向肩螺钉、锁固与加载杆</td></tr>
+</table>
+<p>总计 <strong>188 步、133 个装配实体</strong>。25 个打印装配件与 108 个五金实例全部逐件出现，每个新增步骤只加入一件。C01 是配合试片，不作为第 134 个装配件装进关节。其准备方法见装配手册。</p>
+<h2>怎么使用</h2>
+<ol><li>顶部选择 H、R 或 W。第一步先预览完整样件，点击“下一步”开始。</li><li>每步右侧显示零件编号、名称、五金完整规格、数量与工具；小窗口单独放大当前零件。打印件编号与 STL 文件名一致，五金编号对应 BOM。</li><li>点击“播放本步”。橙色是当前零件或正在移动的已装组件，虚线箭头指向目标位置。每一片垫圈、每一颗螺母都分开演示。</li><li>可以暂停、重播、拖动进度条、调到 0.5 倍速；下拉菜单可跳到任意步骤。“连续播放”遇到检查点仍会暂停，需人工核对后继续。</li><li>每个螺母、垫圈步骤都有“五金类型与安装朝向”卡片。蓝色是尼龙圈端，绿色是垫圈光滑面；普通螺母明确标注“无尼龙圈”。文字直接写出要朝向的打印件编号。</li><li>“看朝向”把主画面对准标记端面并打开透视；单件放大图可以拖动旋转，也可以点“翻看另一面”。翻面只改变观察视角，不会改变安装方向。侧面辨认小图与主动画视角不同，以文字和三维端面箭头对应实物。</li><li>拖动模型旋转，滚轮缩放；“看本步”聚焦操作位置，“看全局”查看已装组件。小螺母被遮住时打开“透视已有零件”。透视只是显示辅助，不代表零件可以穿过实体。</li><li>键盘左右方向键切换步骤，空格播放或暂停。下拉菜单获得焦点时，按键仍按菜单自身规则工作。</li></ol>
+<h2>重点避免混用</h2>
+<ul><li>H / R 第 7–9 步的槽内螺母、第 16 / 19 / 22 步的外侧并紧螺母，都用 <strong>N3 普通 M3，厚 2.4 mm，无尼龙圈</strong>。第 15 / 18 / 21 步旋入螺钉时再次提示，不能换成 NL3。</li><li>W 导向座用 <strong>N2 普通 M2，厚 1.6 mm</strong>；球合模、衬片固定和加载杆用 NL2 尼龙锁紧螺母。导向座 0.5 mm 钢垫圈两面接触金属，无强制正反。</li><li>尼龙螺母先从金属螺纹端起牙，最后旋过尼龙圈；塑料圈颜色以实物为准。普通螺母不应出现这段尼龙锁紧阻力。</li><li>平垫圈光滑面贴对应打印件，大摩擦垫圈的光滑面相对、朝向转子。明显毛刺先去除或换件。</li></ul>
+<p>完整位置对照见 <a href="ASSEMBLY.html">装配手册的五金朝向表</a>。</p>
+<h2>尺寸和停点</h2>
+<ul><li>螺钉长度均为头下长度；垫圈规格为外径 × 内径 × 厚度，单位 mm。</li><li>腕部导向座两片 M2 钢垫圈必须厚 0.5；其余六片可用 0.5 或原 0.3。动画后六片保留 0.3 的名义模型；两片 R 大垫圈仍显示 1.6，实际可采购 1.5，同一关节两片同厚。</li><li>轴承凹入量、合模面、金属导向叠层、锁固剂固化、预紧和测力矩均有检查停点。动画播放完毕不代表实物已通过验证。</li><li>预紧每次最多 1/12 圈只是逐步调整建议，不是最终拧紧扭矩。名义活动范围动画也不能代替实测。</li></ul>
+<h2>离线使用</h2>
+<p>完整解压 <a href="PoseDoll_O24C_T1_Print_Test_Kit.zip">套件 ZIP</a> 后，双击 <code>tutorial/index.html</code>，用支持 WebGL 的 Chrome 或 Edge 打开。需要保留 <code>tutorial</code>、<code>preview</code> 与其他文件夹的相对位置，不要只复制一个 HTML。无需联网下载脚本，也无需安装 CAD 软件。</p>
+<p>本地服务器入口：<a href="tutorial/index.html#H-1">H 教程</a>、<a href="tutorial/index.html#R-1">R 教程</a>、<a href="tutorial/index.html#W-1">W 教程</a>。</p>
+<h2>此前 S3 打印件更新（与本次教程补充区分）</h2>
+<p>已采用 S2 的打印件，只重印 <strong>W06、W07 各一件</strong>。见 <a href="REPRINT_S3.html">S3 变更与两件工程</a>。五金型号和数量不变，H / R 的装配顺序细节已同步进手册。</p>
+<p><a href="ASSEMBLY.html">装配手册</a> · <a href="TEST_PLAN.html">测试计划</a> · <a href="BOM.csv">完整 BOM</a> · <a href="verification/tutorial_coverage.json">逐件覆盖核对</a> · <a href="verification/tutorial_paths.json">逐段装配路径</a> · <a href="verification/tutorial_orientation.json">五金端面核对</a></p></body></html>

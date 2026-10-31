@@ -1,0 +1,101 @@
+{
+  "schema": "o6-primary-evidence-index-v1",
+  "records": [
+    {
+      "id": "raleigh-A8",
+      "supplier": "锐尔立 / Raleigh",
+      "country_context": "China supplier considered for M4",
+      "url": "https://www.raleigh-spring.cn/discspring/",
+      "access": "Official table read",
+      "facts": [
+        "A series OD8 / ID4.2 / thickness0.4 mm; free0.60 / work0.45 mm; catalog point210 N",
+        "B series alternative was compared; no B specimen generated"
+      ],
+      "limits": [
+        "Catalog force is not maximum preload",
+        "No batch force curve, purchase, fatigue or actual tolerance qualification"
+      ]
+    },
+    {
+      "id": "AS5048-UG",
+      "url": "https://look.ams-osram.com/m/d6b55afbdfe4b3d0/original/AS5048_UG000223_1-00.pdf",
+      "access": "Official indexed section4.3 read; direct URL returned404; no mirror or bypass",
+      "facts": [
+        "Daisy-chain n x16-bit READ then n x16-bit transfer for returned response",
+        "Four communication wires exclude supply and ground"
+      ],
+      "limits": [
+        "Declared near/far order still requires physical fixture verification",
+        "Index is not a locally verified complete datasheet"
+      ]
+    },
+    {
+      "id": "AS5048-DS",
+      "url": "https://look.ams-osram.com/m/287d7ad97d1ca22e/original/AS5048-DS000298.pdf",
+      "access": "Official indexed excerpt; direct asset restricted; no bypass",
+      "facts": [
+        "15 mA maximum operating supply excerpt used in conditional power budget"
+      ],
+      "limits": [
+        "No complete local PDF receipt"
+      ]
+    },
+    {
+      "id": "MT6701-Rev19",
+      "url": "https://www.novosns.com/en/datasheet/MT6701QT-AAD/MT6701_Rev.1.8.pdf",
+      "access": "Official PDF downloaded and pages25/26 visually inspected",
+      "actual_version": "Chinese Rev1.9 May2024, despite Rev1.8 URL filename",
+      "local_audit_file": ".local/o6_sources/MT6701_Chinese_rev19.pdf",
+      "facts": [
+        "Timing drawing supports idle-low interpretation; a drawing does not prove target implementation waveforms"
+      ],
+      "limits": [
+        "CRC init/reference vectors and EP remain unresolved; no production promotion"
+      ],
+      "local_pdf_sha256": "2e22f871b5963864916e44a6b264027b7d57db3b6de8d16374ac6aefb51021b8",
+      "bytes": 1911076,
+      "redistributed_in_delivery": false
+    },
+    {
+      "id": "STM32C011-Rev5",
+      "url": "https://www.st.com/resource/en/datasheet/stm32c011f6.pdf",
+      "access": "Official PDF read",
+      "local_audit_file": ".local/o6_sources/STM32C011_rev5.pdf",
+      "facts": [
+        "48 MHz flash table27 max4.9 mA characterization with peripherals disabled",
+        "Peripherals consume additional current; allocated10 mA is not measured whole-board maximum"
+      ],
+      "local_pdf_sha256": "e392b1542086b25f6bcb8856b6c0467aa3ec10e31f03bdafca74796485c531fe",
+      "bytes": 2052207,
+      "redistributed_in_delivery": false
+    },
+    {
+      "id": "THVD1400-RevB",
+      "url": "https://www.ti.com/lit/ds/symlink/thvd1400.pdf",
+      "access": "Official PDF read",
+      "local_audit_file": ".local/o6_sources/THVD1400_revB.pdf",
+      "facts": [
+        "No-load quiescent specification excludes terminated-drive load",
+        "Conditional 3.6V/54ohm load included separately"
+      ],
+      "local_pdf_sha256": "5ba9785d9fb8dc878b90fd196ff5faed27b5fff0ddfccb8346a82ac3c6a5c47f",
+      "bytes": 1481342,
+      "redistributed_in_delivery": false
+    },
+    {
+      "id": "M2p5-head-reference",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/1010018-NBK-SNSP-M2-5-4-R360",
+      "access": "Primary supplier dimensions read",
+      "facts": [
+        "M2.5 pitch0.45, head diameter4.5 and height2.5, hex2 mm used as reference envelope"
+      ],
+      "limits": [
+        "Not a selected production screw length/material or Chinese supplier qualification",
+        "M1.6 tool and actual fasteners still need complete supplier data"
+      ]
+    }
+  ],
+  "retrieved_during_iteration": true,
+  "prices_stock_MOQ_leadtime_not_verified": true,
+  "supplier_contact_or_order_performed": false
+}

@@ -1,0 +1,37 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>REPRINT_S2</title><link rel="icon" href="data:,"><style>body{max-width:1040px;margin:40px auto;padding:0 26px 70px;color:#243f36;background:#fafbf6;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}h1{font-size:36px;line-height:1.3}h2{margin-top:42px;border-bottom:1px solid #d6dfd5;padding-bottom:8px}h3{margin-top:28px}a{color:#226d57}table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0}th,td{border:1px solid #d6dfd5;padding:9px 12px;text-align:left}th{background:#e8eee4}img{max-width:100%;border:1px solid #dbe4d8;border-radius:8px}code{background:#eaf0e7;padding:2px 5px}nav{display:flex;flex-wrap:wrap;gap:15px}small,.muted{color:#647567}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#edf3e8;padding:18px;border-radius:10px}.card b{font-size:30px;display:block}.button{display:inline-block;background:#2b715a;color:white;text-decoration:none;padding:9px 17px;border-radius:7px;margin:6px 8px 6px 0}.note{border-left:4px solid #c09b5f;padding:12px 18px;background:#f3efdf}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.hero img{border:0}.eyebrow{font-size:12px;letter-spacing:2px}@media(max-width:700px){.cards,.hero{grid-template-columns:1fr}body{padding:0 16px}h1{font-size:28px}table{display:block;overflow:auto}}@media print{body{margin:0;max-width:none;font-size:11pt;background:white}nav,.button{display:none}h2{break-after:avoid}img{max-height:140mm;object-fit:contain}tr{break-inside:avoid}}</style><body><nav><a href="START_HERE.html">打印入口</a><a href="tutorial/index.html">逐件动画教程</a><a href="preview/index.html">三维装配</a><a href="ASSEMBLY.html">装配手册</a><a href="TEST_PLAN.html">测试计划</a><a href="BOM.csv">采购清单</a><a href="PURCHASE_DELTA_O22.html">O22补购对照</a></nav><h1>O24C-T1-S2：薄弱连接修复与重印清单</h1>
+<p>2026-10-22。用户反馈：S1 的 H04 三孔固定压板在打印后容易晃动。核对实际 STL 后，确认是阶梯根部的结构连接缺陷。本版同时检查了全部 26 件基础打印件和 12 件备选配合件。</p>
+<h2>只需更新这四件</h2>
+<table>
+<tr><th>零件</th><th>数量</th><th>本次修复</th><th>单件 STL</th></tr>
+<tr><td>H04 固定端支架</td><td>1</td><td>固定压板改为连续腹板支承；加宽锁轴螺母座及侧向入口</td><td><a href="stl_print/H04.stl">H04.stl</a></td></tr>
+<tr><td>H05 可拆端支架</td><td>1</td><td>加宽锁轴螺母座及侧向入口</td><td><a href="stl_print/H05.stl">H05.stl</a></td></tr>
+<tr><td>R04 固定端支架</td><td>1</td><td>与 H04 相同的两项修复</td><td><a href="stl_print/R04.stl">R04.stl</a></td></tr>
+<tr><td>R05 可拆端支架</td><td>1</td><td>加宽锁轴螺母座及侧向入口</td><td><a href="stl_print/R05.stl">R05.stl</a></td></tr>
+</table>
+<p>已经打印过的上述四件请更换；尚未打印的直接使用本版。<strong>其余 22 件基础件、12 件备选件和全部五金不变，可以继续使用原 S1 零件。</strong> 不需要重印整套，也不需要因为更新了工程就把原来整盘重打一遍。腕部仍采用 S1 的 D2.5×6 / M2 现货接口。</p>
+<ul><li><a href="printing/REPRINT_S2_1.3mf">四件专用重印工程 REPRINT_S2_1.3mf</a>：四件各一，已排方向与支撑配置。</li><li><a href="printing/REPRINT_S2_1.svg">重印盘位图</a>。</li><li><a href="PoseDoll_O24C_T1_S2_Reprint_4_Parts.zip">只含四件的重印包</a>。</li><li>首次制作完整套件时，原 <a href="printing/P1_hinge_1.3mf">H 站第一盘</a> 和 <a href="printing/P2_roll_2.3mf">R 站第二盘</a> 也已替换为 S2 几何；其余盘保留原零件。</li></ul>
+<h2>修复了什么</h2>
+<p>H04/R04 的旧阶梯块虽然本身有厚度，但与主体的交界只有约 <strong>0.20×18 mm</strong>，连接面积约 3.6 mm²。S2 改用贯通背面与固定压板的实心腹板，宽 12 mm，与后部主体的连接面为 <strong>12×12 mm，约 144 mm²</strong>；腹板沿长度方向与主体、压板均有 2 mm 的实体重叠，贯穿压板原有的 5 mm 厚度。这里的面积变化不是强度倍率或实测载荷承诺。</p>
+<p>H04/H05/R04/R05 原锁轴座在 D3.4 螺孔两侧只剩约 0.30 mm 的顶板细桥。S2 把座体平面尺寸从 8×4 mm 加宽到 10×10 mm，孔到两侧外缘的名义距离增至 3.3 mm；侧槽宽 6.7 mm，允许 AF5.5 六角螺母的约 6.35 mm 角部宽度通过，两侧保留 1.65 mm 实体壁。螺母座仍可从侧面装入，螺钉、螺母的位置与规格不变。</p>
+<p><img alt="H04 修复前后" src="images/S2_H04_comparison.png"></p>
+<p>关节轴线、摩擦面位置、轴承座、后桥隔柱、预紧螺钉与整体活动范围均保留。四件的总体包围盒也未扩大。固定压板应固定；用于调节预紧的仍是另一侧 H03/R03 浮动压板。</p>
+<h2>其他零件的检查结果</h2>
+<table>
+<tr><th>检查范围</th><th>结论与用途</th></tr>
+<tr><td>H01/H02/R01/R02，以及 8 件轴承孔径备选半体</td><td>加载杆与转子连续连接，检查了轴承座、螺母槽及加载孔附近；未发现同类薄边连接</td></tr>
+<tr><td>H03/R03</td><td>厚 5 mm 的连续浮动压板；沿轴向移动属于预紧功能</td></tr>
+<tr><td>H06/H07/R06/R07</td><td>外径 10、内径 4.6，径向壁厚 2.7 mm 的隔柱，无单独细颈连接</td></tr>
+<tr><td>H08/R08</td><td>1.6 mm 刻度环，刻线处名义余厚 1.05 mm；不作为承力把手</td></tr>
+<tr><td>W01/W02/W09</td><td>检查球颈、方键、杆与套口的连接；保留 S1 捕获式金属导向接口</td></tr>
+<tr><td>W04/W05，以及 4 件内径备选衬片</td><td>0.70/0.60/0.50 mm 曲面薄衬片是功能性薄壁，受球窝支承；D1.5 固定臂与 1.2 mm 固定片用于定位。拆支撑与装配时仍需避免掰折，不把这些小片当作持姿承力支架</td></tr>
+<tr><td>W06/W07</td><td>检查 D4.2 预紧耳连接臂、球窝与固定耳。局部 M2 衬片螺母座底厚 1.25 mm，服务于衬片定位；与 M3 主预紧路径分开审阅，未发现 H04 式的 0.2 mm 薄边连接</td></tr>
+<tr><td>W08</td><td>D14 支柱与两端块体有完整圆截面连接</td></tr>
+<tr><td>W03/C01</td><td>磁铁占位块、配合试片，无新增承力连接问题</td></tr>
+</table>
+<p>检查使用了实际导出的 STL 剖面、0.25 mm 网格的内部连通筛查和逐项结构审阅。功能性薄衬片单独解释，不能把“所有薄处都加厚”当成修复。此方法能发现本次两类缺陷，但不是全模型最小壁厚保证，也不是有限元、实物刚度或疲劳认证。</p>
+<h2>打印与验证</h2>
+<p>继续使用 A1 mini、0.4 mm 喷嘴、PLA、0.12 mm 层高、5 圈墙、100% 填充与工程内自动支撑。不要为补偿旧缺陷而混用旧 H04/R04，也不要保留支撑充当结构连接。拆支撑后先检查新腹板、螺母座和孔边有无裂纹、分层、白化。</p>
+<p>装配前，固定主体，轻拨固定压板和螺母座，不应有原来那种独立晃动；不规定破坏性试掰载荷。侧向装入 M3 锁紧螺母应能到位，不能用螺钉强行拉入。随后按照 <a href="ASSEMBLY.html">装配手册</a> 从零预紧开始，确认轴承顺畅，再做 <a href="TEST_PLAN.html">持姿、活动范围和磨损测试</a>。如果根部仍明显晃动，先记录位置和照片，不靠增大预紧掩盖。</p>
+<p>S1 的 H04 晃动已是实物问题记录；<strong>S2 尚未经过用户重印、持姿与磨损验证</strong>。记录表中请标明 S2，并保留已有原始观察，不把旧版本记录改成新版本通过。</p>
+<ul><li><a href="verification/connections.json">38 件连接检查、旧件回归与螺母装入路径</a></li><li><a href="verification/collisions.json">981 个姿态的干涉检查</a></li><li><a href="verification/hardware_alternatives.json">垫圈替代配置检查</a></li><li><a href="verification/slicing.json">10 盘实际离线切片检查</a></li><li><a href="verification/extrusion_by_part.json">逐件实际挤出检查</a></li></ul>
+<p>上述数字检查通过后才能作为本版交付记录；它们不代替实际打印验收。</p></body></html>

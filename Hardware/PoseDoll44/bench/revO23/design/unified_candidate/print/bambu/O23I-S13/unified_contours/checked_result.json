@@ -1,0 +1,900 @@
+{
+  "id": "O23I-S13",
+  "key": "frame/pelvis",
+  "name": "unified_contours",
+  "matrix": [
+    [
+      -0.7071067811865476,
+      0.7071067811865476,
+      0.0,
+      74.71806152670504
+    ],
+    [
+      0.7071067811865476,
+      0.7071067811865476,
+      0.0,
+      104.70365370316935
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      64.08738708496094
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "metrics": {
+    "overhang_area_mm2": 2045.986507172865,
+    "overhang_projection_volume_proxy_mm3": 116903.95047180561,
+    "bed_contact_projection_mm2": 53.33969162970341,
+    "max_rod_angle_to_bed_deg": 89.78516527943745,
+    "rod_verticality": 0.4928949509463585
+  },
+  "support": "snug",
+  "source_project": "print/trials/O23I-S13/unified_contours/input.3mf",
+  "guard_revision": 5,
+  "project": "print/bambu/O23I-S13/unified_contours/O23I-S13_A1mini_PLA.3mf",
+  "source_sha256": "1e5a86ffcbeab1256bcc141cc2ed64ae0c564af7114f83fa7863b0a7dec1e881",
+  "engine": "Bambu Studio02.08.02.61",
+  "project_sha256": "6f225001b2a620ae8395010eaada5390302969ffbe11885771e765a4bb5e2dde",
+  "gcode_sha256": "efcbbbb0cd4b16ab91a55a9088011b916789465c55fa77632ed37e9d9c5b22df",
+  "support_g": 34.2079,
+  "model_g": 37.3944,
+  "brim_g": 0.0186,
+  "total_deposited_g": 71.62089999999999,
+  "estimated_s": 28574.0,
+  "repairs": 0,
+  "bed_violations": 0,
+  "layers": 1130,
+  "warnings": [],
+  "classes": [
+    {
+      "id": "model",
+      "segments": 425043,
+      "moves": 277145,
+      "filament_mm": 12537.72845,
+      "path_mm": 473239.41174,
+      "layers": 598,
+      "line_width_range_mm": [
+        0.0515338,
+        0.797238
+      ],
+      "bounds_mm": {
+        "min": [
+          39.665,
+          38.98455225979498,
+          0.2
+        ],
+        "max": [
+          140.43834028707545,
+          140.96,
+          95.72
+        ]
+      },
+      "filament_volume_cm3": 30.15677,
+      "estimated_mass_g": 37.3944
+    },
+    {
+      "id": "support",
+      "segments": 250017,
+      "moves": 163854,
+      "filament_mm": 10485.27161,
+      "path_mm": 397129.89342,
+      "layers": 528,
+      "line_width_range_mm": [
+        0.42,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          40.716,
+          38.997,
+          0.2
+        ],
+        "max": [
+          140.351,
+          140.443,
+          87.6
+        ]
+      },
+      "filament_volume_cm3": 25.22003,
+      "estimated_mass_g": 31.2728
+    },
+    {
+      "id": "interface",
+      "segments": 55052,
+      "moves": 48107,
+      "filament_mm": 928.04842,
+      "path_mm": 36833.37915,
+      "layers": 508,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          40.711,
+          38.977,
+          0.2
+        ],
+        "max": [
+          140.369,
+          140.27946837470128,
+          88.4
+        ]
+      },
+      "filament_volume_cm3": 2.23222,
+      "estimated_mass_g": 2.768
+    },
+    {
+      "id": "transition",
+      "segments": 2901,
+      "moves": 2622,
+      "filament_mm": 56.02473,
+      "path_mm": 2208.31948,
+      "layers": 190,
+      "line_width_range_mm": [
+        0.42,
+        0.42
+      ],
+      "bounds_mm": {
+        "min": [
+          45.125,
+          38.93,
+          0.4
+        ],
+        "max": [
+          140.0408511526561,
+          140.199,
+          87.44
+        ]
+      },
+      "filament_volume_cm3": 0.13476,
+      "estimated_mass_g": 0.1671
+    },
+    {
+      "id": "brim",
+      "segments": 195,
+      "moves": 195,
+      "filament_mm": 6.22895,
+      "path_mm": 167.23833,
+      "layers": 1,
+      "line_width_range_mm": [
+        0.5,
+        0.5
+      ],
+      "bounds_mm": {
+        "min": [
+          92.175,
+          115.286,
+          0.2
+        ],
+        "max": [
+          106.142,
+          136.027,
+          0.2
+        ]
+      },
+      "filament_volume_cm3": 0.01498,
+      "estimated_mass_g": 0.0186
+    }
+  ],
+  "settings": {
+    "print_settings_id": "O23I A1 mini PLA / unified mount contours",
+    "layer_height": "0.16",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "5",
+    "sparse_infill_density": "20%",
+    "sparse_infill_pattern": "gyroid",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "outer_wall_speed": [
+      "40"
+    ],
+    "inner_wall_speed": [
+      "65"
+    ],
+    "sparse_infill_speed": [
+      "90"
+    ],
+    "internal_solid_infill_speed": [
+      "70"
+    ],
+    "top_surface_speed": [
+      "35"
+    ],
+    "bridge_speed": [
+      "20"
+    ],
+    "initial_layer_speed": [
+      "20"
+    ],
+    "initial_layer_infill_speed": [
+      "25"
+    ],
+    "default_acceleration": [
+      "1500"
+    ],
+    "outer_wall_acceleration": [
+      "700"
+    ],
+    "inner_wall_acceleration": [
+      "1000"
+    ],
+    "enable_support": "1",
+    "support_type": "normal(auto)",
+    "support_style": "snug",
+    "support_on_build_plate_only": "0",
+    "support_threshold_angle": "55",
+    "support_critical_regions_only": "0",
+    "support_remove_small_overhang": "0",
+    "support_top_z_distance": "0.28",
+    "support_bottom_z_distance": "0.28",
+    "support_object_xy_distance": "0.5",
+    "support_interface_top_layers": "2",
+    "support_interface_bottom_layers": "2",
+    "support_interface_spacing": "0.35",
+    "support_base_pattern": "default",
+    "support_base_pattern_spacing": "3",
+    "support_expansion": "0",
+    "tree_support_branch_diameter": "2",
+    "tree_support_branch_distance": "4",
+    "tree_support_wall_count": "1",
+    "tree_support_auto_brim": null,
+    "independent_support_layer_height": "1",
+    "bridge_no_support": "0",
+    "max_bridge_length": "8",
+    "brim_type": "outer_only",
+    "brim_width": "4",
+    "brim_object_gap": "0.15",
+    "skirt_loops": "0",
+    "print_sequence": "by layer",
+    "enable_prime_tower": "0",
+    "elefant_foot_compensation": "0.15"
+  },
+  "passed": false,
+  "native": {
+    "id": "O23I-S13",
+    "project_sha256": "6f225001b2a620ae8395010eaada5390302969ffbe11885771e765a4bb5e2dde",
+    "same_indices": true,
+    "vertex_shift_mm": 2.9345459040541755e-06,
+    "watertight": true,
+    "winding": true,
+    "components": 1,
+    "repairs": 0,
+    "min_mm": [
+      39.35344809544316,
+      38.77503221606839,
+      1.00000000458067e-06
+    ],
+    "max_mm": [
+      140.64655112567425,
+      141.22496843266993,
+      95.7377138
+    ],
+    "matrix_is_rigid": true,
+    "passed": true
+  },
+  "clearance": {
+    "id": "O23I-S13",
+    "name": "unified_contours",
+    "project_sha256": "6f225001b2a620ae8395010eaada5390302969ffbe11885771e765a4bb5e2dde",
+    "method_version": 2,
+    "path_classification_version": 0,
+    "guard_revision": 5,
+    "source_blocker_revision": 5,
+    "guard_sha256": "5343a86c01f6aa782b1b94498532def20ab6a7ccba15168ad652ee685ab7e562",
+    "support_bead_width_mm": 0.5,
+    "arc_margin_mm": 0.02,
+    "functional_void_hits": [],
+    "wire_void_hits": [],
+    "total_layer_overlap_area_mm2": 0,
+    "wire_total_layer_overlap_area_mm2": 0,
+    "passed": true,
+    "wire_passed": true,
+    "scope": "Actual support/interface/transition LINE_WIDTH per segment plus0.02 mm arc margin; lower/middle/upper cross-sections per support layer. Local clearance screen, no physical removal guarantee."
+  },
+  "islands": {
+    "id": "O23I-S13",
+    "name": "unified_contours",
+    "project_sha256": "6f225001b2a620ae8395010eaada5390302969ffbe11885771e765a4bb5e2dde",
+    "method_version": 4,
+    "path_classification_version": 0,
+    "unbacked_new_islands": [
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.1956606393768725,
+        "bounds_mm": [
+          65.28809999674559,
+          41.56409999728203,
+          65.8255999982357,
+          42.05359999835491
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.19026221697674117,
+        "bounds_mm": [
+          137.36840000003576,
+          113.59539999812841,
+          137.8505000025034,
+          114.11689999699593
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16834437468279262,
+        "bounds_mm": [
+          79.39660000056028,
+          55.14859999716282,
+          79.84539999812841,
+          55.64140000194311
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16717641126662786,
+        "bounds_mm": [
+          123.78620000183582,
+          99.58120000362396,
+          124.26969999819994,
+          100.0300000011921
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.40206515396632625,
+        "bounds_mm": [
+          63.84059999883175,
+          40.893299996852875,
+          64.6376999989152,
+          41.61200000345707
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.4029863779862577,
+        "bounds_mm": [
+          137.80799999833107,
+          114.78779999911785,
+          138.52419999986887,
+          115.58229999989271
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.35063861870741286,
+        "bounds_mm": [
+          58.1423000022769,
+          47.7871999964118,
+          58.764399997889996,
+          48.58340000361204
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.3518548485969877,
+        "bounds_mm": [
+          130.8352999985218,
+          120.65429999679327,
+          131.63570000231266,
+          121.2757000029087
+        ],
+        "support_contact_mm2": 0.0
+      },
+      {
+        "z_mm": 82.44000244140625,
+        "area_mm2": 0.5000231114622977,
+        "bounds_mm": [
+          72.48849999904633,
+          59.29749999940395,
+          73.10790000110865,
+          60.47860000282526
+        ],
+        "support_contact_mm2": 0.0
+      }
+    ],
+    "support_backed_new_islands": [
+      {
+        "z_mm": 5.0,
+        "area_mm2": 0.34250270326668186,
+        "bounds_mm": [
+          85.83280000090599,
+          137.67329999804497,
+          86.78620000183582,
+          138.15219999849796
+        ],
+        "support_contact_mm2": 0.282256759703572
+      },
+      {
+        "z_mm": 25.31999969482422,
+        "area_mm2": 130.62158918652636,
+        "bounds_mm": [
+          77.84210000187159,
+          62.351099997758865,
+          117.0628999993205,
+          101.56989999860525
+        ],
+        "support_contact_mm2": 127.29730656289095
+      },
+      {
+        "z_mm": 25.479999542236328,
+        "area_mm2": 5.367805951707254,
+        "bounds_mm": [
+          118.31660000234842,
+          107.83569999784231,
+          121.56580000370741,
+          110.3910000026226
+        ],
+        "support_contact_mm2": 5.253391705707873
+      },
+      {
+        "z_mm": 50.119998931884766,
+        "area_mm2": 1.4602812421038678,
+        "bounds_mm": [
+          109.23300000280142,
+          104.48200000077486,
+          111.54259999841452,
+          105.50450000166893
+        ],
+        "support_contact_mm2": 1.4446779135810683
+      },
+      {
+        "z_mm": 66.12000274658203,
+        "area_mm2": 1.7183939874121794,
+        "bounds_mm": [
+          65.0612000003457,
+          43.5371999964118,
+          67.35189999639988,
+          45.49499999731779
+        ],
+        "support_contact_mm2": 1.694488205691714
+      },
+      {
+        "z_mm": 66.12000274658203,
+        "area_mm2": 1.720492926225094,
+        "bounds_mm": [
+          75.53299999982119,
+          53.67620000243187,
+          77.49080000072718,
+          55.96679999679327
+        ],
+        "support_contact_mm2": 1.6957301590493215
+      },
+      {
+        "z_mm": 66.12000274658203,
+        "area_mm2": 1.7243013852137152,
+        "bounds_mm": [
+          123.45120000094175,
+          101.92920000106096,
+          125.73809999972582,
+          103.89000000059605
+        ],
+        "support_contact_mm2": 1.7007357207926672
+      },
+      {
+        "z_mm": 66.12000274658203,
+        "area_mm2": 1.7225592356987143,
+        "bounds_mm": [
+          133.92620000243187,
+          112.07020000368357,
+          135.8867999985814,
+          114.36379999667406
+        ],
+        "support_contact_mm2": 1.7021219371683678
+      },
+      {
+        "z_mm": 66.27999877929688,
+        "area_mm2": 0.49860708415314736,
+        "bounds_mm": [
+          62.74379999935627,
+          42.06480000168085,
+          63.73189999908209,
+          42.858900003135204
+        ],
+        "support_contact_mm2": 0.49822038998274554
+      },
+      {
+        "z_mm": 66.27999877929688,
+        "area_mm2": 0.49804573726482726,
+        "bounds_mm": [
+          78.17059999704361,
+          57.290200002491474,
+          78.9632000029087,
+          58.28419999778271
+        ],
+        "support_contact_mm2": 0.48449658444308863
+      },
+      {
+        "z_mm": 66.27999877929688,
+        "area_mm2": 0.5002627069560028,
+        "bounds_mm": [
+          121.1347000002861,
+          100.45669999718666,
+          122.12569999694824,
+          101.25270000100136
+        ],
+        "support_contact_mm2": 0.4904288062539899
+      },
+      {
+        "z_mm": 66.27999877929688,
+        "area_mm2": 0.4996648862641493,
+        "bounds_mm": [
+          136.563299998641,
+          115.68419999629259,
+          137.35819999873638,
+          116.68020000308752
+        ],
+        "support_contact_mm2": 0.49009923373534886
+      },
+      {
+        "z_mm": 66.44000244140625,
+        "area_mm2": 0.2533201405273522,
+        "bounds_mm": [
+          63.00890000164509,
+          41.53090000152588,
+          63.637100003659725,
+          42.07530000060797
+        ],
+        "support_contact_mm2": 0.2533201405273522
+      },
+      {
+        "z_mm": 66.44000244140625,
+        "area_mm2": 0.2547860445302783,
+        "bounds_mm": [
+          137.34989999979734,
+          115.78289999812841,
+          137.8931000009179,
+          116.41610000282526
+        ],
+        "support_contact_mm2": 0.2547860445302783
+      },
+      {
+        "z_mm": 81.16000366210938,
+        "area_mm2": 0.16281326811930974,
+        "bounds_mm": [
+          120.36060000211,
+          105.46230000257492,
+          120.84409999847412,
+          105.90209999680519
+        ],
+        "support_contact_mm2": 0.02146360726354235
+      }
+    ],
+    "wider_bridges_or_cantilevers": [],
+    "model_first_z_mm": 0.20000000298023224,
+    "model_last_z_mm": 95.72000122070312,
+    "passed": false,
+    "scope": "All raw unsupported beads remain recorded. Internal starts require >99.5% bbox coverage with the established +0.015 mm CAD allowance, or, only for footprints <0.5 mm2, >99.5% coverage of a 0.025 mm tube around their actual extrusion centrelines by the undilated preceding nominal solid. This distinguishes small perimeter starts above interior infill gaps from exterior unsupported geometry; it does not certify physical infill or bridge strength. All remaining exterior islands must be absent.",
+    "raw_island_report_sha256": "51a757cd303204df94e723c8545a2f15b450d6a02464536cb2646f95105f2da0",
+    "classified_islands": [
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.1956606393768725,
+        "bounds_mm": [
+          65.28809999674559,
+          41.56409999728203,
+          65.8255999982357,
+          42.05359999835491
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8007649266627758,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 69.4000015258789
+      },
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.19026221697674117,
+        "bounds_mm": [
+          137.36840000003576,
+          113.59539999812841,
+          137.8505000025034,
+          114.11689999699593
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8081948699399887,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 69.4000015258789
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16834437468279262,
+        "bounds_mm": [
+          79.39660000056028,
+          55.14859999716282,
+          79.84539999812841,
+          55.64140000194311
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8453870828588459,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 71.0
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16717641126662786,
+        "bounds_mm": [
+          123.78620000183582,
+          99.58120000362396,
+          124.26969999819994,
+          100.0300000011921
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8456411333898932,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 71.0
+      },
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.40206515396632625,
+        "bounds_mm": [
+          63.84059999883175,
+          40.893299996852875,
+          64.6376999989152,
+          41.61200000345707
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.11719583146861728,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 76.91999816894531
+      },
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.4029863779862577,
+        "bounds_mm": [
+          137.80799999833107,
+          114.78779999911785,
+          138.52419999986887,
+          115.58229999989271
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.11402965582775569,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 76.91999816894531
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.35063861870741286,
+        "bounds_mm": [
+          58.1423000022769,
+          47.7871999964118,
+          58.764399997889996,
+          48.58340000361204
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.001701425329696939,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 79.31999969482422
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.3518548485969877,
+        "bounds_mm": [
+          130.8352999985218,
+          120.65429999679327,
+          131.63570000231266,
+          121.2757000029087
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.0019367972654247203,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 79.31999969482422
+      },
+      {
+        "z_mm": 82.44000244140625,
+        "area_mm2": 0.5000231114622977,
+        "bounds_mm": [
+          72.48849999904633,
+          59.29749999940395,
+          73.10790000110865,
+          60.47860000282526
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.5030042387959482,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 82.20000076293945
+      }
+    ],
+    "external_new_islands": [
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.40206515396632625,
+        "bounds_mm": [
+          63.84059999883175,
+          40.893299996852875,
+          64.6376999989152,
+          41.61200000345707
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.11719583146861728,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 76.91999816894531
+      },
+      {
+        "z_mm": 77.16000366210938,
+        "area_mm2": 0.4029863779862577,
+        "bounds_mm": [
+          137.80799999833107,
+          114.78779999911785,
+          138.52419999986887,
+          115.58229999989271
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.11402965582775569,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 76.91999816894531
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.35063861870741286,
+        "bounds_mm": [
+          58.1423000022769,
+          47.7871999964118,
+          58.764399997889996,
+          48.58340000361204
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.001701425329696939,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 79.31999969482422
+      },
+      {
+        "z_mm": 79.55999755859375,
+        "area_mm2": 0.3518548485969877,
+        "bounds_mm": [
+          130.8352999985218,
+          120.65429999679327,
+          131.63570000231266,
+          121.2757000029087
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.0019367972654247203,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 79.31999969482422
+      },
+      {
+        "z_mm": 82.44000244140625,
+        "area_mm2": 0.5000231114622977,
+        "bounds_mm": [
+          72.48849999904633,
+          59.29749999940395,
+          73.10790000110865,
+          60.47860000282526
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.5030042387959482,
+        "tiny_path_core_coverage": 0.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": false,
+        "inside_previous_solid_geometry": false,
+        "previous_solid_section_z_mm": 82.20000076293945
+      }
+    ],
+    "internal_infill_gaps": [
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.1956606393768725,
+        "bounds_mm": [
+          65.28809999674559,
+          41.56409999728203,
+          65.8255999982357,
+          42.05359999835491
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8007649266627758,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 69.4000015258789
+      },
+      {
+        "z_mm": 69.63999938964844,
+        "area_mm2": 0.19026221697674117,
+        "bounds_mm": [
+          137.36840000003576,
+          113.59539999812841,
+          137.8505000025034,
+          114.11689999699593
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8081948699399887,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 69.4000015258789
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16834437468279262,
+        "bounds_mm": [
+          79.39660000056028,
+          55.14859999716282,
+          79.84539999812841,
+          55.64140000194311
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8453870828588459,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 71.0
+      },
+      {
+        "z_mm": 71.23999786376953,
+        "area_mm2": 0.16717641126662786,
+        "bounds_mm": [
+          123.78620000183582,
+          99.58120000362396,
+          124.26969999819994,
+          100.0300000011921
+        ],
+        "support_contact_mm2": 0.0,
+        "previous_solid_bbox_coverage": 0.8456411333898932,
+        "tiny_path_core_coverage": 1.0,
+        "tiny_path_interior_probe_mm": 0.025,
+        "small_internal_path_classified": true,
+        "inside_previous_solid_geometry": true,
+        "previous_solid_section_z_mm": 71.0
+      }
+    ],
+    "required_first_layer_z_mm": 0.2
+  },
+  "caps": {
+    "passed": true,
+    "count": 0
+  }
+}

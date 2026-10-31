@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "powershell.exe",
+        "-NoProfile",
+        "-File",
+        "scripts/Build-Design.ps1",
+        "-Stage",
+        "OfflineTests"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "Hardware/PoseDoll44/verification/revO/offline/01.txt",
+      "log_sha256": "feadbaa9750ff706761aa2c5e1776ecae55b691bdbeb3c41d2108d2370911c8e"
+    },
+    {
+      "command": [
+        "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "scripts/tests/test_revo.py",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "Hardware/PoseDoll44/verification/revO/offline/02.txt",
+      "log_sha256": "57e9e3ffdfcd7e63aa155e38a60b1b24a2541e4b8c26cc9878202c51e46a1274"
+    },
+    {
+      "command": [
+        "cmd.exe",
+        "/c",
+        "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\scripts\\Run-RevO-CoreTests.cmd"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "Hardware/PoseDoll44/verification/revO/offline/03.txt",
+      "log_sha256": "b83d7f3e8acac35ddfba9ef642a6bdb976f27202e19a56745170d82d3dcd1e73"
+    },
+    {
+      "command": [
+        "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\.venv\\Scripts\\python.exe",
+        "scripts/check_repository.py",
+        "--golden",
+        ".local/revO-core/golden_pd41.bin"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "Hardware/PoseDoll44/verification/revO/offline/04.txt",
+      "log_sha256": "0ab9eb00461cd84df08e219ca75b9042d67b43806831cacb5d2f8dcfa9c254b3"
+    },
+    {
+      "command": [
+        "E:\\UnrealProjects\\PoseDollLab_UE58_Design\\PoseDoll_HW44_Plan\\design\\.venv\\Scripts\\python.exe",
+        "scripts/freeze_revo_baseline.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "Hardware/PoseDoll44/verification/revO/offline/05.txt",
+      "log_sha256": "9657fcd987716e61201660673679a496df80ada724ad7d36df8b18789a311859"
+    }
+  ],
+  "tested_utc": "2026-09-23T09:31:42.325594+00:00",
+  "hardware_tested": false,
+  "UE_editor_regression": "NOT_RUN_UNMODIFIED_SOFTWARE"
+}

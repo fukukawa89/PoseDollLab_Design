@@ -1,0 +1,393 @@
+{
+  "status": "PASS_DESIGN_GEOMETRY",
+  "geometry_sha256": "de73b1fb747faa73d77f735215eed157c6503b94efe380b91477f848450ccdfa",
+  "checks": [
+    {
+      "check": "positive axial capture with negative control",
+      "passed": true
+    },
+    {
+      "check": "specified spanners, sockets and hex keys clear",
+      "passed": true
+    },
+    {
+      "check": "external 16 mm finger proxy clears",
+      "passed": true
+    },
+    {
+      "check": "only P005 P007 P012 changed; 8 exact STL reuses",
+      "passed": true
+    },
+    {
+      "check": "eight declared temporary radial fits, not loaded friction faces",
+      "passed": true
+    },
+    {
+      "check": "seven axes and limits unchanged",
+      "passed": true
+    }
+  ],
+  "capture": [
+    {
+      "id": "RP",
+      "positive_stops": [
+        {
+          "shift_mm": -0.25,
+          "body_overlap_mm3": 0.0,
+          "cover_overlap_mm3": 10.762691001304455
+        },
+        {
+          "shift_mm": 0.25,
+          "body_overlap_mm3": 33.80312560449862,
+          "cover_overlap_mm3": 0.0
+        }
+      ],
+      "cover_removed_negative_control_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "RU",
+      "positive_stops": [
+        {
+          "shift_mm": -0.25,
+          "body_overlap_mm3": 0.0,
+          "cover_overlap_mm3": 10.762691001304418
+        },
+        {
+          "shift_mm": 0.25,
+          "body_overlap_mm3": 33.80297076505,
+          "cover_overlap_mm3": 0.0
+        }
+      ],
+      "cover_removed_negative_control_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "RF",
+      "positive_stops": [
+        {
+          "shift_mm": -0.25,
+          "body_overlap_mm3": 0.0,
+          "cover_overlap_mm3": 10.76269189241557
+        },
+        {
+          "shift_mm": 0.25,
+          "body_overlap_mm3": 33.802970454228735,
+          "cover_overlap_mm3": 0.0
+        }
+      ],
+      "cover_removed_negative_control_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "cover_tool_access": [
+    {
+      "module": "RP",
+      "x": -16,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 0.0,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    },
+    {
+      "module": "RP",
+      "x": 16,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 0.0,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    },
+    {
+      "module": "RU",
+      "x": -16,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 0.0,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    },
+    {
+      "module": "RU",
+      "x": 16,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 0.0,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    },
+    {
+      "module": "RF",
+      "x": -20,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 2.34274229917843,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    },
+    {
+      "module": "RF",
+      "x": 20,
+      "volumes_mm3": {
+        "inner_5p5_spanner": 0.0,
+        "outer_5p5_spanner": 0.0,
+        "outer_spanner_60deg_sweep": 0.0,
+        "head_2p5_hex": 0.0
+      },
+      "rejected_long_socket_overlap_mm3": 2.3427328931240656,
+      "passed": true,
+      "nut_height_mm": 2.4,
+      "spanner_thickness_max_mm": 2.0,
+      "thread_beyond_outer_nut_mm": 1.1
+    }
+  ],
+  "external_hand_envelopes": [
+    {
+      "module": "RP",
+      "location": "20 x 20 mm external tray handle",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "RU",
+      "location": "20 x 20 mm external tray handle",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "RF",
+      "location": "20 x 20 mm external tray handle",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "HS",
+      "side": -1,
+      "location": "open cup mouth; not a fingertip inserted to the deep nut seat",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "HS",
+      "side": 1,
+      "location": "open cup mouth; not a fingertip inserted to the deep nut seat",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "HE",
+      "side": -1,
+      "location": "open cup mouth; not a fingertip inserted to the deep nut seat",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "HE",
+      "side": 1,
+      "location": "open cup mouth; not a fingertip inserted to the deep nut seat",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "W",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "location": "unclosed centre face",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "W",
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "location": "unclosed centre face",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "W",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "location": "unclosed centre face",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "module": "W",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "location": "unclosed centre face",
+      "assumed_finger_diameter_mm": 16,
+      "maximum_print_overlap_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "required_reprint": [
+    "S4-P005",
+    "S4-P007",
+    "S4-P012"
+  ],
+  "reused_prints": [
+    {
+      "part_number": "S4-P001",
+      "source": "S3-P001",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P002",
+      "source": "S3-P002",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P003",
+      "source": "S3-P003",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P004",
+      "source": "S3-P004",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P006",
+      "source": "S3-P006",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P008",
+      "source": "S3-P008",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P009",
+      "source": "S3-P009",
+      "byte_identical": true
+    },
+    {
+      "part_number": "S4-P010",
+      "source": "S3-P010",
+      "byte_identical": true
+    }
+  ],
+  "temporary_retention": [
+    {
+      "pad_part": "S4-P005",
+      "washer": "S4-H053",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175563935531968,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P005",
+      "washer": "S4-H061",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175556132539447,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P007",
+      "washer": "S4-H073",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175605437971538,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P007",
+      "washer": "S4-H081",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175618106194986,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P012",
+      "washer": "S4-H093",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175680352165789,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P012",
+      "washer": "S4-H101",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.081756574362206,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P012",
+      "washer": "S4-H109",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175680148895806,
+      "physical_retention_tested": false
+    },
+    {
+      "pad_part": "S4-P012",
+      "washer": "S4-H117",
+      "radial_interference_mm": 0.06,
+      "axial_clearance_to_moving_ear_mm": 0.18,
+      "rigid_overlap_mm3": 0.08175657639492666,
+      "physical_retention_tested": false
+    }
+  ],
+  "physical_assembly_tested": false,
+  "scope": "Specific geometric checks. 16 mm fingers are an explicit screening assumption, not population coverage or real dexterity validation. Pad press fits require the eight physical inversion gates in the tutorial; no retention-force or fatigue claim."
+}

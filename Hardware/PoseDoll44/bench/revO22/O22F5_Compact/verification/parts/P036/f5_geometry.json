@@ -1,0 +1,78 @@
+{
+  "id": "P036",
+  "label": "pass2_tip0",
+  "parts_npz_sha256": "29eee1fa463fc3372ddd305c0a6f171063e9bf234473fed40ba8f644d28986b0",
+  "geometric_constraints_passed": true,
+  "body_exact_rigid_copy_of_F4": true,
+  "body_rigid_transform_error_mm": 0.0,
+  "body_added_from_F4_mm3": 0.0,
+  "body_removed_from_F4_mm3": 0.0,
+  "body_change_fit_and_pose_required": false,
+  "fin_body_intersection_mm3": 0.0,
+  "all_fins_bed_rooted": true,
+  "fin_count": 1,
+  "fin_bodies": [
+    {
+      "id": "S01",
+      "bounds_mm": [
+        27.328642170000002,
+        9.64576117,
+        0.0,
+        33.37348209,
+        13.93396989,
+        4.79981919545498
+      ],
+      "volume_mm3": 22.794716072212257,
+      "bed_contact_mm2": 16.178520991080184,
+      "tooth_overlap_mm3": 0.12836464436420175,
+      "body_gap_mm_capped_at_05": 0.4863343895188883,
+      "removal_vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "continuous_body_clearance": true
+    }
+  ],
+  "removal_stages": [
+    {
+      "groups": [
+        "S01"
+      ],
+      "vector": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "simultaneous": false
+    }
+  ],
+  "withdrawal_sweep_distance_mm": 220.0,
+  "all_fin_bodies_have_continuous_removal_path": true,
+  "withdrawal_condition": "Clear all yellow connector material from the removal path first. Intersecting branches can need more than one cut; the proof is for fin bodies, not scissors access or force.",
+  "connected_tooth_components": 1,
+  "connector_contacts": [
+    {
+      "body_overlap_mm3": 0.13969494571150753,
+      "fin_overlap_mm3": 0.12836464436420164
+    }
+  ],
+  "connector_extra_material_in_functional_guard_mm3": 0.0,
+  "removable_fin_material_temporarily_in_functional_guard_mm3": 15.759408593873065,
+  "temporary_core_policy": "Orange fins can traverse empty assembly space only while printing; all must be removed before hardware installation, along the verified path.",
+  "support_volume_mm3": 25.08862378434067,
+  "old_support_volume_mm3": 2599.383090442291,
+  "support_volume_reduction_percent": 99.03482392123773,
+  "envelope_mm": [
+    33.37348209,
+    27.000000000000004,
+    8.2
+  ],
+  "neck_free_height_mm": {
+    "min": 3.0,
+    "median": 3.0000000000000004,
+    "max": 3.000000000000001
+  },
+  "physical_print_tested": false,
+  "strength_or_thermal_simulation": false
+}

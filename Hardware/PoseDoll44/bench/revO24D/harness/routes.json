@@ -1,0 +1,5849 @@
+{
+  "status": "PASS_ROUTING_AND_SLACK_CONDITIONAL",
+  "geometry_sha256": "fd64f061821a42f803e2131b0f0642147ab9cc8e65dc32cdb5e3476a0b7c9e8e",
+  "cable_count": 38,
+  "clip_count": 16,
+  "span_count": 88,
+  "motion_cases": 2551,
+  "wire": "Six AWG30 finely stranded copper conductors, insulation OD <=0.7 mm, loose braid",
+  "mass_assumption_g_per_mm_of_6_core": 0.0055,
+  "total_wire_mass_g": 92.7025,
+  "total_6core_length_mm": 16855,
+  "minimum_dynamic_bend_radius_mm": 10,
+  "rigid_obstacle_boolean_tests": 2110,
+  "cables": [
+    {
+      "id": "A01",
+      "sensor": "lumbar_shoulder_pitch",
+      "port": "J10",
+      "mux_address": 0,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_lumbar_shoulder_pitch",
+        "l_back_wire_tab_1",
+        "J10"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A01",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 305
+    },
+    {
+      "id": "A02",
+      "sensor": "lumbar_shoulder_swing",
+      "port": "J11",
+      "mux_address": 1,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_lumbar_shoulder_swing",
+        "r_back_wire_tab_1",
+        "J11"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A02",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 275
+    },
+    {
+      "id": "A03",
+      "sensor": "lumbar_humeral",
+      "port": "J12",
+      "mux_address": 2,
+      "bank": "A",
+      "variant": "S3",
+      "route": [
+        "sensor_lumbar_humeral",
+        "l_back_wire_tab_1",
+        "J12"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A03",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 305
+    },
+    {
+      "id": "A04",
+      "sensor": "thorax_shoulder_pitch",
+      "port": "J13",
+      "mux_address": 3,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_thorax_shoulder_pitch",
+        "r_back_wire_tab_1",
+        "J13"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A04",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 290
+    },
+    {
+      "id": "A05",
+      "sensor": "thorax_shoulder_swing",
+      "port": "J14",
+      "mux_address": 4,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_thorax_shoulder_swing",
+        "l_back_wire_tab_1",
+        "J14"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A05",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 290
+    },
+    {
+      "id": "A06",
+      "sensor": "neck_shoulder_pitch",
+      "port": "J15",
+      "mux_address": 5,
+      "bank": "A",
+      "variant": "S4",
+      "route": [
+        "sensor_neck_shoulder_pitch",
+        "r_back_wire_tab_1",
+        "J15"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A06",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 230
+    },
+    {
+      "id": "A07",
+      "sensor": "neck_shoulder_swing",
+      "port": "J16",
+      "mux_address": 6,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_neck_shoulder_swing",
+        "l_back_wire_tab_1",
+        "J16"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A07",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 235
+    },
+    {
+      "id": "A08",
+      "sensor": "neck_humeral",
+      "port": "J17",
+      "mux_address": 7,
+      "bank": "A",
+      "variant": "S1",
+      "route": [
+        "sensor_neck_humeral",
+        "r_back_wire_tab_1",
+        "J17"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_A",
+        "SDO_A08",
+        "CS_A",
+        "MOSI_A"
+      ],
+      "cut_length_mm": 250
+    },
+    {
+      "id": "B01",
+      "sensor": "l_clavicle_z",
+      "port": "J26",
+      "mux_address": 0,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_clavicle_z",
+        "l_back_wire_tab_1",
+        "J26"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B01",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 225
+    },
+    {
+      "id": "B02",
+      "sensor": "l_clavicle_x",
+      "port": "J27",
+      "mux_address": 1,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_clavicle_x",
+        "l_back_wire_tab_1",
+        "J27"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B02",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 245
+    },
+    {
+      "id": "B03",
+      "sensor": "l_shoulder_pitch",
+      "port": "J28",
+      "mux_address": 2,
+      "bank": "B",
+      "variant": "S2",
+      "route": [
+        "sensor_l_shoulder_pitch",
+        "l_back_wire_tab_1",
+        "J28"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B03",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 250
+    },
+    {
+      "id": "B04",
+      "sensor": "l_shoulder_swing",
+      "port": "J29",
+      "mux_address": 3,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_shoulder_swing",
+        "l_back_wire_tab_1",
+        "J29"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B04",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 265
+    },
+    {
+      "id": "B05",
+      "sensor": "l_humeral",
+      "port": "J30",
+      "mux_address": 4,
+      "bank": "B",
+      "variant": "S3",
+      "route": [
+        "sensor_l_humeral",
+        "l_back_wire_tab_1",
+        "J30"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B05",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 235
+    },
+    {
+      "id": "B06",
+      "sensor": "l_elbow",
+      "port": "J31",
+      "mux_address": 5,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_elbow",
+        "l_upperarm_wire_tab",
+        "l_back_wire_tab_1",
+        "J31"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B06",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 365
+    },
+    {
+      "id": "B07",
+      "sensor": "l_forearm",
+      "port": "J32",
+      "mux_address": 6,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_forearm",
+        "l_forearm_wire_tab",
+        "l_upperarm_wire_tab",
+        "l_back_wire_tab_1",
+        "J32"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B07",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 595
+    },
+    {
+      "id": "B08",
+      "sensor": "l_wrist",
+      "port": "J33",
+      "mux_address": 7,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_wrist",
+        "l_forearm_wire_tab",
+        "l_upperarm_wire_tab",
+        "l_back_wire_tab_1",
+        "J33"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B08",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 515
+    },
+    {
+      "id": "B09",
+      "sensor": "l_hip_abduction",
+      "port": "J34",
+      "mux_address": 8,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_hip_abduction",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J34"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B09",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 325
+    },
+    {
+      "id": "B10",
+      "sensor": "l_hip_pitch",
+      "port": "J35",
+      "mux_address": 9,
+      "bank": "B",
+      "variant": "S3",
+      "route": [
+        "sensor_l_hip_pitch",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J35"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B10",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 465
+    },
+    {
+      "id": "B11",
+      "sensor": "l_hip_twist",
+      "port": "J36",
+      "mux_address": 10,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_hip_twist",
+        "l_thigh_wire_tab",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J36"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B11",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 755
+    },
+    {
+      "id": "B12",
+      "sensor": "l_knee",
+      "port": "J37",
+      "mux_address": 11,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_knee",
+        "l_thigh_wire_tab",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J37"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B12",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 685
+    },
+    {
+      "id": "B13",
+      "sensor": "l_ankle_shoulder_pitch",
+      "port": "J38",
+      "mux_address": 12,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_ankle_shoulder_pitch",
+        "l_shin_wire_tab",
+        "l_thigh_wire_tab",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J38"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B13",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 765
+    },
+    {
+      "id": "B14",
+      "sensor": "l_ankle_shoulder_swing",
+      "port": "J39",
+      "mux_address": 13,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_ankle_shoulder_swing",
+        "l_shin_wire_tab",
+        "l_thigh_wire_tab",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J39"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B14",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 825
+    },
+    {
+      "id": "B15",
+      "sensor": "l_toe",
+      "port": "J40",
+      "mux_address": 14,
+      "bank": "B",
+      "variant": "S1",
+      "route": [
+        "sensor_l_toe",
+        "l_foot_wire_tab",
+        "l_shin_wire_tab",
+        "l_thigh_wire_tab",
+        "l_pelvis_wire_tab",
+        "l_back_wire_tab_0",
+        "J40"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_B",
+        "SDO_B15",
+        "CS_B",
+        "MOSI_B"
+      ],
+      "cut_length_mm": 1015
+    },
+    {
+      "id": "C01",
+      "sensor": "r_clavicle_z",
+      "port": "J42",
+      "mux_address": 0,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_clavicle_z",
+        "r_back_wire_tab_1",
+        "J42"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C01",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 260
+    },
+    {
+      "id": "C02",
+      "sensor": "r_clavicle_x",
+      "port": "J43",
+      "mux_address": 1,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_clavicle_x",
+        "r_back_wire_tab_1",
+        "J43"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C02",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 250
+    },
+    {
+      "id": "C03",
+      "sensor": "r_shoulder_pitch",
+      "port": "J44",
+      "mux_address": 2,
+      "bank": "C",
+      "variant": "S5",
+      "route": [
+        "sensor_r_shoulder_pitch",
+        "r_back_wire_tab_1",
+        "J44"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C03",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 255
+    },
+    {
+      "id": "C04",
+      "sensor": "r_shoulder_swing",
+      "port": "J45",
+      "mux_address": 3,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_shoulder_swing",
+        "r_back_wire_tab_1",
+        "J45"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C04",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 170
+    },
+    {
+      "id": "C05",
+      "sensor": "r_humeral",
+      "port": "J46",
+      "mux_address": 4,
+      "bank": "C",
+      "variant": "S3",
+      "route": [
+        "sensor_r_humeral",
+        "r_back_wire_tab_1",
+        "J46"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C05",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 260
+    },
+    {
+      "id": "C06",
+      "sensor": "r_elbow",
+      "port": "J47",
+      "mux_address": 5,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_elbow",
+        "r_upperarm_wire_tab",
+        "r_back_wire_tab_1",
+        "J47"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C06",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 395
+    },
+    {
+      "id": "C07",
+      "sensor": "r_forearm",
+      "port": "J48",
+      "mux_address": 6,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_forearm",
+        "r_forearm_wire_tab",
+        "r_upperarm_wire_tab",
+        "r_back_wire_tab_1",
+        "J48"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C07",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 540
+    },
+    {
+      "id": "C08",
+      "sensor": "r_wrist",
+      "port": "J49",
+      "mux_address": 7,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_wrist",
+        "r_forearm_wire_tab",
+        "r_upperarm_wire_tab",
+        "r_back_wire_tab_1",
+        "J49"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C08",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 460
+    },
+    {
+      "id": "C09",
+      "sensor": "r_hip_abduction",
+      "port": "J50",
+      "mux_address": 8,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_hip_abduction",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J50"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C09",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 335
+    },
+    {
+      "id": "C10",
+      "sensor": "r_hip_pitch",
+      "port": "J51",
+      "mux_address": 9,
+      "bank": "C",
+      "variant": "S3",
+      "route": [
+        "sensor_r_hip_pitch",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J51"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C10",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 460
+    },
+    {
+      "id": "C11",
+      "sensor": "r_hip_twist",
+      "port": "J52",
+      "mux_address": 10,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_hip_twist",
+        "r_thigh_wire_tab",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J52"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C11",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 660
+    },
+    {
+      "id": "C12",
+      "sensor": "r_knee",
+      "port": "J53",
+      "mux_address": 11,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_knee",
+        "r_thigh_wire_tab",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J53"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C12",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 570
+    },
+    {
+      "id": "C13",
+      "sensor": "r_ankle_shoulder_pitch",
+      "port": "J54",
+      "mux_address": 12,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_ankle_shoulder_pitch",
+        "r_shin_wire_tab",
+        "r_thigh_wire_tab",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J54"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C13",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 780
+    },
+    {
+      "id": "C14",
+      "sensor": "r_ankle_shoulder_swing",
+      "port": "J55",
+      "mux_address": 13,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_ankle_shoulder_swing",
+        "r_shin_wire_tab",
+        "r_thigh_wire_tab",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J55"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C14",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 825
+    },
+    {
+      "id": "C15",
+      "sensor": "r_toe",
+      "port": "J56",
+      "mux_address": 14,
+      "bank": "C",
+      "variant": "S1",
+      "route": [
+        "sensor_r_toe",
+        "r_foot_wire_tab",
+        "r_shin_wire_tab",
+        "r_thigh_wire_tab",
+        "r_pelvis_wire_tab",
+        "r_back_wire_tab_0",
+        "J56"
+      ],
+      "pins": [
+        "GND",
+        "SENSOR3V45",
+        "SCK_C",
+        "SDO_C15",
+        "CS_C",
+        "MOSI_C"
+      ],
+      "cut_length_mm": 925
+    }
+  ],
+  "nodes": [
+    {
+      "id": "l_upperarm_wire_tab",
+      "frame": "l_upperarm_roll",
+      "local_mm": [
+        -22.0,
+        0.0,
+        -58.93309996764373
+      ],
+      "A": [
+        -37.075955211052275,
+        91.19826935129576,
+        403.2653742185001
+      ]
+    },
+    {
+      "id": "l_forearm_wire_tab",
+      "frame": "l_forearm_roll",
+      "local_mm": [
+        7.105427357601002e-15,
+        21.999999999999993,
+        -56.39815250114793
+      ],
+      "A": [
+        -37.075955211052275,
+        148.49601746001753,
+        345.9676261097784
+      ]
+    },
+    {
+      "id": "r_upperarm_wire_tab",
+      "frame": "r_upperarm_roll",
+      "local_mm": [
+        -22.0,
+        0.0,
+        -58.932438058174455
+      ],
+      "A": [
+        -37.07595912894635,
+        -91.19765681011876,
+        403.2657124102935
+      ]
+    },
+    {
+      "id": "r_forearm_wire_tab",
+      "frame": "r_forearm_roll",
+      "local_mm": [
+        7.105427357601002e-15,
+        -22.0,
+        -56.3986702614439
+      ],
+      "A": [
+        -37.07595912894636,
+        -148.4953029899826,
+        345.96806623042966
+      ]
+    },
+    {
+      "id": "l_thigh_wire_tab",
+      "frame": "l_hip_roll",
+      "local_mm": [
+        -23.0,
+        0.0,
+        -102.56615086785081
+      ],
+      "A": [
+        -22.164087856392804,
+        34.40879304689639,
+        196.26387981317657
+      ]
+    },
+    {
+      "id": "l_shin_wire_tab",
+      "frame": "l_knee_flex",
+      "local_mm": [
+        -22.0,
+        0.0,
+        -58.824809380182415
+      ],
+      "A": [
+        -21.164087856392804,
+        34.40879304689639,
+        98.87291956514335
+      ]
+    },
+    {
+      "id": "r_thigh_wire_tab",
+      "frame": "r_hip_roll",
+      "local_mm": [
+        -23.0,
+        0.0,
+        -102.56599789321791
+      ],
+      "A": [
+        -22.164199855479556,
+        -34.408837174194346,
+        196.263865089577
+      ]
+    },
+    {
+      "id": "r_shin_wire_tab",
+      "frame": "r_knee_flex",
+      "local_mm": [
+        -22.0,
+        0.0,
+        -58.82487998385916
+      ],
+      "A": [
+        -21.164199855479556,
+        -34.408837174194346,
+        98.8729872124999
+      ]
+    },
+    {
+      "id": "l_pelvis_wire_tab",
+      "frame": "pelvis",
+      "local_mm": [
+        -67.1640878563928,
+        34.40879304689639,
+        7.063094436036067
+      ],
+      "A": [
+        -67.1640878563928,
+        34.40879304689639,
+        315.8300306810274
+      ]
+    },
+    {
+      "id": "l_foot_wire_tab",
+      "frame": "l_ankle_flex",
+      "local_mm": [
+        20.0,
+        22.000000000000004,
+        -24.999999999999996
+      ],
+      "A": [
+        20.835912143607196,
+        56.40879304689639,
+        4.048110184960937
+      ]
+    },
+    {
+      "id": "l_back_wire_tab_0",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -55.02531554013232,
+        48.999999999999005,
+        21.062671974079535
+      ],
+      "A": [
+        -50.75,
+        49.00000000000001,
+        403.0
+      ]
+    },
+    {
+      "id": "l_back_wire_tab_1",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -55.02531554013232,
+        48.999999999999005,
+        45.062671974079535
+      ],
+      "A": [
+        -50.75,
+        49.00000000000001,
+        427.0
+      ]
+    },
+    {
+      "id": "r_pelvis_wire_tab",
+      "frame": "pelvis",
+      "local_mm": [
+        -67.16419985547955,
+        -34.408837174194346,
+        7.062926737803593
+      ],
+      "A": [
+        -67.16419985547955,
+        -34.408837174194346,
+        315.8298629827949
+      ]
+    },
+    {
+      "id": "r_foot_wire_tab",
+      "frame": "r_ankle_flex",
+      "local_mm": [
+        20.0,
+        -22.000000000000004,
+        -24.999999999999996
+      ],
+      "A": [
+        20.835800144520444,
+        -56.408837174194346,
+        4.048107228640735
+      ]
+    },
+    {
+      "id": "r_back_wire_tab_0",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -55.02531554013232,
+        -49.000000000001,
+        21.062671974079535
+      ],
+      "A": [
+        -50.75,
+        -49.0,
+        403.0
+      ]
+    },
+    {
+      "id": "r_back_wire_tab_1",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -55.02531554013232,
+        -49.000000000001,
+        45.062671974079535
+      ],
+      "A": [
+        -50.75,
+        -49.0,
+        427.0
+      ]
+    },
+    {
+      "id": "sensor_lumbar_shoulder_pitch",
+      "frame": "pelvis",
+      "local_mm": [
+        11.350063087041365,
+        52.80000000000016,
+        22.560830202902252
+      ],
+      "A": [
+        11.350063087041365,
+        52.80000000000016,
+        331.32776644789357
+      ],
+      "ignore": "lumbar_shoulder_pitch_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J10",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -15.000000000000998,
+        54.062671974079535
+      ],
+      "A": [
+        -66.0,
+        -15.0,
+        436.0
+      ],
+      "ignore": "electronics_J10",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_lumbar_shoulder_swing",
+      "frame": "lumbar_flex",
+      "local_mm": [
+        24.80000000000001,
+        8.200000000000003,
+        0.0
+      ],
+      "A": [
+        27.950063087041375,
+        8.200000000000152,
+        331.32776644789357
+      ],
+      "ignore": "lumbar_shoulder_swing_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J11",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -25.000000000001,
+        54.062671974079535
+      ],
+      "A": [
+        -66.0,
+        -25.0,
+        436.0
+      ],
+      "ignore": "electronics_J11",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_lumbar_humeral",
+      "frame": "lumbar_side",
+      "local_mm": [
+        9.200000000000003,
+        -18.000000000000007,
+        23.75
+      ],
+      "A": [
+        12.350063087041368,
+        -17.999999999999858,
+        355.07776644789357
+      ],
+      "ignore": "lumbar_humeral_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J12",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -15.000000000000998,
+        47.86267197407955
+      ],
+      "A": [
+        -66.0,
+        -15.0,
+        429.8
+      ],
+      "ignore": "electronics_J12",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_thorax_shoulder_pitch",
+      "frame": "lumbar_yaw",
+      "local_mm": [
+        52.42525245309104,
+        8.200000000000852,
+        50.6095615780269
+      ],
+      "A": [
+        55.57531554013241,
+        8.200000000001001,
+        381.93732802592046
+      ],
+      "ignore": "thorax_shoulder_pitch_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        1.1102230246251565e-16
+      ]
+    },
+    {
+      "id": "J13",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -25.000000000001,
+        47.86267197407955
+      ],
+      "A": [
+        -66.0,
+        -25.0,
+        429.8
+      ],
+      "ignore": "electronics_J13",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_thorax_shoulder_swing",
+      "frame": "thorax_side",
+      "local_mm": [
+        8.200000000000001,
+        -24.5,
+        0.0
+      ],
+      "A": [
+        12.475315540132318,
+        -24.499999999999,
+        381.93732802592046
+      ],
+      "ignore": "thorax_shoulder_swing_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J14",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -15.000000000000998,
+        41.66267197407956
+      ],
+      "A": [
+        -66.0,
+        -15.0,
+        423.6
+      ],
+      "ignore": "electronics_J14",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_neck_shoulder_pitch",
+      "frame": "thorax_flex",
+      "local_mm": [
+        19.903241528330852,
+        11.199998998358325,
+        88.72221571184662
+      ],
+      "A": [
+        24.17855706846317,
+        11.199998998359323,
+        470.6595437377671
+      ],
+      "ignore": "neck_shoulder_pitch_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J15",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -25.000000000001,
+        41.66267197407956
+      ],
+      "A": [
+        -66.0,
+        -25.0,
+        423.6
+      ],
+      "ignore": "electronics_J15",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_neck_shoulder_swing",
+      "frame": "neck_side",
+      "local_mm": [
+        8.199999999999998,
+        15.400000000000006,
+        0.0
+      ],
+      "A": [
+        -6.521442931536802,
+        15.39999899835933,
+        470.6595437377672
+      ],
+      "ignore": "neck_shoulder_swing_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J16",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -15.000000000000998,
+        35.46267197407951
+      ],
+      "A": [
+        -66.0,
+        -15.0,
+        417.4
+      ],
+      "ignore": "electronics_J16",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_neck_humeral",
+      "frame": "neck_flex",
+      "local_mm": [
+        -1.7763568394002505e-15,
+        -8.199999999999998,
+        60.80000000000018
+      ],
+      "A": [
+        -14.721442931536801,
+        -8.200001001640674,
+        531.4595437377674
+      ],
+      "ignore": "neck_humeral_connector",
+      "direction_A": [
+        0.0,
+        -0.9999999999999999,
+        -2.220446049250313e-16
+      ],
+      "escape_A": [
+        [
+          -14.721442931536801,
+          -16.200001001640672,
+          531.4595437377674
+        ],
+        [
+          -14.721442931536801,
+          -16.200001001640672,
+          510.0
+        ],
+        [
+          -38.7214429315368,
+          -16.200001001640672,
+          506.0
+        ]
+      ]
+    },
+    {
+      "id": "J17",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -70.27531554013231,
+        -25.000000000001,
+        35.46267197407951
+      ],
+      "A": [
+        -66.0,
+        -25.0,
+        417.4
+      ],
+      "ignore": "electronics_J17",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_clavicle_z",
+      "frame": "l_chest",
+      "local_mm": [
+        0.0,
+        8.200000000000001,
+        -77.9999999999996
+      ],
+      "A": [
+        -13.771896716464436,
+        11.072986065194982,
+        373.6610611813777
+      ],
+      "ignore": "l_clavicle_z_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J26",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        54.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        436.5
+      ],
+      "ignore": "electronics_J26",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_clavicle_x",
+      "frame": "l_clavicle_protract",
+      "local_mm": [
+        33.79999999999996,
+        8.2,
+        0.0
+      ],
+      "A": [
+        20.028103283535525,
+        11.07298606519498,
+        451.6610611813773
+      ],
+      "ignore": "l_clavicle_x_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J27",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        54.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        436.5
+      ],
+      "ignore": "electronics_J27",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_shoulder_pitch",
+      "frame": "l_clavicle_elevate",
+      "local_mm": [
+        8.616533280982537,
+        7.753288662635202,
+        -8.846008509252343
+      ],
+      "A": [
+        -5.155363435481899,
+        10.626274727830182,
+        442.815052672125
+      ],
+      "ignore": "l_shoulder_pitch_connector",
+      "direction_A": [
+        0.9659258262890688,
+        5.551115123125783e-17,
+        -0.258819045102519
+      ]
+    },
+    {
+      "id": "J28",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        54.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        436.5
+      ],
+      "ignore": "electronics_J28",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_shoulder_swing",
+      "frame": "l_shoulder_flex",
+      "local_mm": [
+        -24.5,
+        8.2,
+        0.0
+      ],
+      "A": [
+        -39.575955211052275,
+        57.72627472783017,
+        444.9373688419657
+      ],
+      "ignore": "l_shoulder_swing_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J29",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        54.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        436.5
+      ],
+      "ignore": "electronics_J29",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_humeral",
+      "frame": "l_shoulder_abduct",
+      "local_mm": [
+        -10.988457268119879,
+        16.967433714816835,
+        -26.0
+      ],
+      "A": [
+        -26.064412479172155,
+        79.90883847776065,
+        438.5503799701957
+      ],
+      "ignore": "l_humeral_connector",
+      "direction_A": [
+        0.5000000000000002,
+        0.6123724356957944,
+        0.6123724356957945
+      ]
+    },
+    {
+      "id": "J30",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        48.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        430.5
+      ],
+      "ignore": "electronics_J30",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_elbow",
+      "frame": "l_upperarm_roll",
+      "local_mm": [
+        8.2,
+        21.500000000000007,
+        -83.56619993528744
+      ],
+      "A": [
+        -6.8759552110522755,
+        123.81929717557352,
+        401.0499379852439
+      ],
+      "ignore": "l_elbow_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J31",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        48.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        430.5
+      ],
+      "ignore": "electronics_J31",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_forearm",
+      "frame": "l_elbow_flex",
+      "local_mm": [
+        -3.3000000000000194,
+        6.600000000000004,
+        -16.19999999999999
+      ],
+      "A": [
+        -18.375955211052297,
+        124.73853599111604,
+        379.0589170903423
+      ],
+      "ignore": "l_forearm_connector",
+      "direction_A": [
+        -1.0,
+        -1.3274418059781007e-15,
+        -1.327441805978101e-15
+      ]
+    },
+    {
+      "id": "J32",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        48.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        430.5
+      ],
+      "ignore": "electronics_J32",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_wrist",
+      "frame": "l_forearm_roll",
+      "local_mm": [
+        -1.4210854715202004e-14,
+        8.200000000000015,
+        -63.99630500229637
+      ],
+      "A": [
+        -23.275955211052295,
+        153.86872261806909,
+        340.59492095172675
+      ],
+      "ignore": "l_wrist_plug",
+      "direction_A": [
+        -1.0000000000000002,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J33",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        48.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        430.5
+      ],
+      "ignore": "electronics_J33",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_hip_abduction",
+      "frame": "pelvis",
+      "local_mm": [
+        -68.76408785639279,
+        34.4087930468964,
+        -1.7369055639639335
+      ],
+      "A": [
+        -68.76408785639279,
+        34.4087930468964,
+        307.03003068102737
+      ],
+      "ignore": "l_hip_abduction_connector",
+      "direction_A": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "J34",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        42.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        424.5
+      ],
+      "ignore": "electronics_J34",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_hip_pitch",
+      "frame": "l_hip_abduct",
+      "local_mm": [
+        -10.988457268119882,
+        -3.849999999999998,
+        -16.967433714816835
+      ],
+      "A": [
+        -10.152545124512688,
+        30.558793046896394,
+        281.86259696621056
+      ],
+      "ignore": "l_hip_pitch_connector",
+      "direction_A": [
+        0.5,
+        0.0,
+        -0.8660254037844387
+      ]
+    },
+    {
+      "id": "J35",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        42.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        424.5
+      ],
+      "ignore": "electronics_J35",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_hip_twist",
+      "frame": "l_hip_flex",
+      "local_mm": [
+        0.0,
+        8.2,
+        -48.400000000000006
+      ],
+      "A": [
+        0.835912143607195,
+        42.608793046896395,
+        250.43003068102738
+      ],
+      "ignore": "l_hip_twist_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J36",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        42.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        424.5
+      ],
+      "ignore": "electronics_J36",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_knee",
+      "frame": "l_hip_roll",
+      "local_mm": [
+        -8.2,
+        -21.60000000000002,
+        -141.13230173570142
+      ],
+      "A": [
+        -7.364087856392804,
+        12.808793046896373,
+        157.69772894532596
+      ],
+      "ignore": "l_knee_connector",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J37",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        42.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        424.5
+      ],
+      "ignore": "electronics_J37",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_ankle_shoulder_pitch",
+      "frame": "l_knee_flex",
+      "local_mm": [
+        -45.15,
+        11.0,
+        -120.44961876036483
+      ],
+      "A": [
+        -44.3140878563928,
+        45.40879304689639,
+        37.248110184960936
+      ],
+      "ignore": "l_ankle_shoulder_pitch_connector",
+      "direction_A": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "J38",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        36.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        418.5
+      ],
+      "ignore": "electronics_J38",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_ankle_shoulder_swing",
+      "frame": "l_ankle_roll",
+      "local_mm": [
+        8.200000000000001,
+        24.500000000000007,
+        3.552713678800501e-15
+      ],
+      "A": [
+        9.035912143607195,
+        58.9087930468964,
+        29.048110184960937
+      ],
+      "ignore": "l_ankle_shoulder_swing_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J39",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        36.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        418.5
+      ],
+      "ignore": "electronics_J39",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_l_toe",
+      "frame": "l_ankle_flex",
+      "local_mm": [
+        54.82800321563015,
+        20.099999999999994,
+        3.552713678800501e-15
+      ],
+      "A": [
+        55.66391535923734,
+        54.508793046896386,
+        29.048110184960937
+      ],
+      "ignore": "l_toe_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J40",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        36.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        418.5
+      ],
+      "ignore": "electronics_J40",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "escape_A": [
+        [
+          -46.4,
+          -15.0,
+          418.5
+        ],
+        [
+          -46.4,
+          -15.0,
+          410.5
+        ],
+        [
+          -46.4,
+          -45,
+          410.5
+        ]
+      ]
+    },
+    {
+      "id": "sensor_r_clavicle_z",
+      "frame": "r_chest",
+      "local_mm": [
+        6.6,
+        -3.3,
+        -42.80000000000001
+      ],
+      "A": [
+        -7.171889062622638,
+        -6.172985501956276,
+        408.8596584049005
+      ],
+      "ignore": "r_clavicle_z_connector",
+      "direction_A": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J42",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        30.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        412.5
+      ],
+      "ignore": "electronics_J42",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_clavicle_x",
+      "frame": "r_clavicle_protract",
+      "local_mm": [
+        -33.8,
+        -8.2,
+        0.0
+      ],
+      "A": [
+        -47.57188906262263,
+        -11.072985501956275,
+        451.6596584049005
+      ],
+      "ignore": "r_clavicle_x_connector",
+      "direction_A": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J43",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        30.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        412.5
+      ],
+      "ignore": "electronics_J43",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_shoulder_pitch",
+      "frame": "r_clavicle_elevate",
+      "local_mm": [
+        -1.304070066323714,
+        -6.753144725371143,
+        2.877580588184321
+      ],
+      "A": [
+        -15.075959128946351,
+        -9.626130227327419,
+        454.5372389930848
+      ],
+      "ignore": "r_shoulder_pitch_connector",
+      "direction_A": [
+        0.0,
+        1.0,
+        -1.1102230246251565e-16
+      ]
+    },
+    {
+      "id": "J44",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        30.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        412.5
+      ],
+      "ignore": "electronics_J44",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_shoulder_swing",
+      "frame": "r_shoulder_flex",
+      "local_mm": [
+        -24.499999999999996,
+        -8.2,
+        0.0
+      ],
+      "A": [
+        -39.57595912894635,
+        -57.72613022732743,
+        444.9372389930848
+      ],
+      "ignore": "r_shoulder_swing_connector",
+      "direction_A": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J45",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        30.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        412.5
+      ],
+      "ignore": "electronics_J45",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_humeral",
+      "frame": "r_shoulder_abduct",
+      "local_mm": [
+        -10.988457268119902,
+        -16.967433714816845,
+        -26.0
+      ],
+      "A": [
+        -26.064416397066257,
+        -79.90869397725791,
+        438.55025012131483
+      ],
+      "ignore": "r_humeral_connector",
+      "direction_A": [
+        0.5000000000000001,
+        -0.6123724356957944,
+        0.6123724356957945
+      ]
+    },
+    {
+      "id": "J46",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        24.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        406.5
+      ],
+      "ignore": "electronics_J46",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_elbow",
+      "frame": "r_upperarm_roll",
+      "local_mm": [
+        8.200000000000001,
+        -21.5,
+        -83.56487611634896
+      ],
+      "A": [
+        -6.875959128946354,
+        -123.81821659372231,
+        401.05074421771144
+      ],
+      "ignore": "r_elbow_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J47",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        24.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        406.5
+      ],
+      "ignore": "electronics_J47",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_forearm",
+      "frame": "r_elbow_flex",
+      "local_mm": [
+        3.2999999999999834,
+        -6.600000000000007,
+        -16.19999999999999
+      ],
+      "A": [
+        -11.775959128946372,
+        -124.73745540926483,
+        379.0597233228099
+      ],
+      "ignore": "r_forearm_connector",
+      "direction_A": [
+        1.0,
+        -7.993197971481037e-16,
+        7.993197971481038e-16
+      ]
+    },
+    {
+      "id": "J48",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        24.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        406.5
+      ],
+      "ignore": "electronics_J48",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_wrist",
+      "frame": "r_forearm_roll",
+      "local_mm": [
+        0.0,
+        8.20000000000001,
+        -63.99734052288761
+      ],
+      "A": [
+        -6.875959128946343,
+        -153.86837425985001,
+        340.59499496056225
+      ],
+      "ignore": "r_wrist_plug",
+      "direction_A": [
+        1.0000000000000002,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J49",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        24.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        406.5
+      ],
+      "ignore": "electronics_J49",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_hip_abduction",
+      "frame": "pelvis",
+      "local_mm": [
+        -68.76419985547965,
+        -34.40883717419434,
+        -1.7370732621964073
+      ],
+      "A": [
+        -68.76419985547965,
+        -34.40883717419434,
+        307.0298629827949
+      ],
+      "ignore": "r_hip_abduction_connector",
+      "direction_A": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "J50",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        18.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        400.5
+      ],
+      "ignore": "electronics_J50",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_hip_pitch",
+      "frame": "r_hip_abduct",
+      "local_mm": [
+        -10.988457268119873,
+        3.8499999999999956,
+        -16.967433714816845
+      ],
+      "A": [
+        -10.152657123599429,
+        -30.558837174194352,
+        281.8624292679781
+      ],
+      "ignore": "r_hip_pitch_connector",
+      "direction_A": [
+        0.5,
+        -2.220446049250313e-16,
+        -0.8660254037844386
+      ]
+    },
+    {
+      "id": "J51",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        18.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        400.5
+      ],
+      "ignore": "electronics_J51",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_hip_twist",
+      "frame": "r_hip_flex",
+      "local_mm": [
+        0.0,
+        -8.2,
+        -48.400000000000006
+      ],
+      "A": [
+        0.8358001445204449,
+        -42.60883717419435,
+        250.4298629827949
+      ],
+      "ignore": "r_hip_twist_connector",
+      "direction_A": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J52",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        18.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        400.5
+      ],
+      "ignore": "electronics_J52",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_knee",
+      "frame": "r_hip_roll",
+      "local_mm": [
+        -8.2,
+        21.60000000000002,
+        -141.13199578643608
+      ],
+      "A": [
+        -7.364199855479554,
+        -12.808837174194327,
+        157.69786719635883
+      ],
+      "ignore": "r_knee_connector",
+      "direction_A": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J53",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -25.000000000001,
+        18.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -25.0,
+        400.5
+      ],
+      "ignore": "electronics_J53",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_ankle_shoulder_pitch",
+      "frame": "r_knee_flex",
+      "local_mm": [
+        -45.15,
+        -11.0,
+        -120.44975996771832
+      ],
+      "A": [
+        -44.31419985547955,
+        -45.408837174194346,
+        37.248107228640734
+      ],
+      "ignore": "r_ankle_shoulder_pitch_connector",
+      "direction_A": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "id": "J54",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        4.999999999999002,
+        12.562671974079535
+      ],
+      "A": [
+        -54.4,
+        5.0,
+        394.5
+      ],
+      "ignore": "electronics_J54",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_ankle_shoulder_swing",
+      "frame": "r_ankle_roll",
+      "local_mm": [
+        8.200000000000001,
+        -24.500000000000007,
+        3.552713678800501e-15
+      ],
+      "A": [
+        9.035800144520445,
+        -58.90883717419435,
+        29.048107228640735
+      ],
+      "ignore": "r_ankle_shoulder_swing_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J55",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -5.000000000000998,
+        12.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -5.0,
+        394.5
+      ],
+      "ignore": "electronics_J55",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "sensor_r_toe",
+      "frame": "r_ankle_flex",
+      "local_mm": [
+        54.82800784284326,
+        -20.09999999999998,
+        3.552713678800501e-15
+      ],
+      "A": [
+        55.66380798736371,
+        -54.508837174194326,
+        29.048107228640735
+      ],
+      "ignore": "r_toe_connector",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "J56",
+      "frame": "thorax_flex",
+      "local_mm": [
+        -58.67531554013232,
+        -15.000000000000998,
+        12.562671974079535
+      ],
+      "A": [
+        -54.4,
+        -15.0,
+        394.5
+      ],
+      "ignore": "electronics_J56",
+      "direction_A": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "spans": [
+    {
+      "id": "sensor_lumbar_shoulder_pitch__l_back_wire_tab_1",
+      "start": "sensor_lumbar_shoulder_pitch",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "A01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          11.350063087041365,
+          52.80000000000016,
+          331.32776644789357
+        ],
+        [
+          14.0,
+          52.0,
+          356.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 120.96527390084793,
+      "cut_length_per_cable_mm": 205,
+      "free_span": true,
+      "max_endpoint_distance_mm": 149.4098303709813,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/4",
+      "reserve_over_max_distance_mm": 55.5901696290187,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J10",
+      "start": "l_back_wire_tab_1",
+      "end": "J10",
+      "cables": [
+        "A01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -82.0,
+          20.0,
+          428.0
+        ],
+        [
+          -66.0,
+          -15.0,
+          436.0
+        ]
+      ],
+      "guide_length_mm": 81.9510949415556,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 66.40453674260522,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 33.59546325739478,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_lumbar_shoulder_swing__r_back_wire_tab_1",
+      "start": "sensor_lumbar_shoulder_swing",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "A02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          27.950063087041375,
+          8.200000000000152,
+          331.32776644789357
+        ],
+        [
+          34.0,
+          8.0,
+          348.0
+        ],
+        [
+          6.0,
+          -28.0,
+          348.0
+        ],
+        [
+          -50.0,
+          -48.0,
+          424.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 163.09283270472727,
+      "cut_length_per_cable_mm": 215,
+      "free_span": true,
+      "max_endpoint_distance_mm": 141.99475532890676,
+      "worst_extension_pose": "grid/thorax_side,thorax_flex/24",
+      "reserve_over_max_distance_mm": 73.00524467109324,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J11",
+      "start": "r_back_wire_tab_1",
+      "end": "J11",
+      "cables": [
+        "A02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -74.0,
+          -25.0,
+          436.0
+        ],
+        [
+          -66.0,
+          -25.0,
+          436.0
+        ]
+      ],
+      "guide_length_mm": 42.60581598517798,
+      "cut_length_per_cable_mm": 60,
+      "free_span": false,
+      "max_endpoint_distance_mm": 29.825534362354723,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/102",
+      "reserve_over_max_distance_mm": 30.174465637645277,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_lumbar_humeral__l_back_wire_tab_1",
+      "start": "sensor_lumbar_humeral",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "A03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          12.350063087041368,
+          -17.999999999999858,
+          355.07776644789357
+        ],
+        [
+          26.0,
+          12.0,
+          356.0
+        ],
+        [
+          -38.0,
+          44.0,
+          392.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 150.6562906704149,
+      "cut_length_per_cable_mm": 205,
+      "free_span": true,
+      "max_endpoint_distance_mm": 119.4781605330938,
+      "worst_extension_pose": "grid/thorax_side,thorax_flex/14",
+      "reserve_over_max_distance_mm": 85.5218394669062,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J12",
+      "start": "l_back_wire_tab_1",
+      "end": "J12",
+      "cables": [
+        "A03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -82.0,
+          20.0,
+          428.0
+        ],
+        [
+          -66.0,
+          -15.0,
+          429.8
+        ]
+      ],
+      "guide_length_mm": 81.17044241485983,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 65.85136672841351,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 34.14863327158649,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_thorax_shoulder_pitch__r_back_wire_tab_1",
+      "start": "sensor_thorax_shoulder_pitch",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "A04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          55.57531554013241,
+          8.200000000001001,
+          381.93732802592046
+        ],
+        [
+          30.0,
+          12.0,
+          400.0
+        ],
+        [
+          18.0,
+          -56.0,
+          400.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 174.78384568853141,
+      "cut_length_per_cable_mm": 230,
+      "free_span": true,
+      "max_endpoint_distance_mm": 133.07420649542516,
+      "worst_extension_pose": "grid/thorax_side,thorax_flex/0",
+      "reserve_over_max_distance_mm": 96.92579350457484,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J13",
+      "start": "r_back_wire_tab_1",
+      "end": "J13",
+      "cables": [
+        "A04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -74.0,
+          -25.0,
+          429.8
+        ],
+        [
+          -66.0,
+          -25.0,
+          429.8
+        ]
+      ],
+      "guide_length_mm": 41.532111475420095,
+      "cut_length_per_cable_mm": 60,
+      "free_span": false,
+      "max_endpoint_distance_mm": 28.572758004784944,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/119",
+      "reserve_over_max_distance_mm": 31.427241995215056,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_thorax_shoulder_swing__l_back_wire_tab_1",
+      "start": "sensor_thorax_shoulder_swing",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "A05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          12.475315540132318,
+          -24.499999999999,
+          381.93732802592046
+        ],
+        [
+          14.0,
+          -36.0,
+          380.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          380.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 142.94612755768054,
+      "cut_length_per_cable_mm": 195,
+      "free_span": true,
+      "max_endpoint_distance_mm": 107.66085804013814,
+      "worst_extension_pose": "grid/thorax_side,thorax_flex/5",
+      "reserve_over_max_distance_mm": 87.33914195986186,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J14",
+      "start": "l_back_wire_tab_1",
+      "end": "J14",
+      "cables": [
+        "A05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -78.0,
+          24.0,
+          424.0
+        ],
+        [
+          -66.0,
+          -15.0,
+          423.6
+        ]
+      ],
+      "guide_length_mm": 77.90842725057293,
+      "cut_length_per_cable_mm": 95,
+      "free_span": false,
+      "max_endpoint_distance_mm": 65.87960610082611,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/0",
+      "reserve_over_max_distance_mm": 29.12039389917389,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_neck_shoulder_pitch__r_back_wire_tab_1",
+      "start": "sensor_neck_shoulder_pitch",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "A06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          24.17855706846317,
+          11.199998998359323,
+          470.6595437377671
+        ],
+        [
+          -26.0,
+          24.0,
+          472.0
+        ],
+        [
+          -54.0,
+          -48.0,
+          448.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 153.9712555329383,
+      "cut_length_per_cable_mm": 170,
+      "free_span": false,
+      "max_endpoint_distance_mm": 105.56743959741759,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/25",
+      "reserve_over_max_distance_mm": 64.43256040258241,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J15",
+      "start": "r_back_wire_tab_1",
+      "end": "J15",
+      "cables": [
+        "A06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -74.0,
+          -25.0,
+          423.6
+        ],
+        [
+          -66.0,
+          -25.0,
+          423.6
+        ]
+      ],
+      "guide_length_mm": 41.58753489019401,
+      "cut_length_per_cable_mm": 60,
+      "free_span": false,
+      "max_endpoint_distance_mm": 28.6377809894552,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/83",
+      "reserve_over_max_distance_mm": 31.3622190105448,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_neck_shoulder_swing__l_back_wire_tab_1",
+      "start": "sensor_neck_shoulder_swing",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "A07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -6.521442931536802,
+          15.39999899835933,
+          470.6595437377672
+        ],
+        [
+          -6.0,
+          24.0,
+          472.0
+        ],
+        [
+          -50.0,
+          44.0,
+          452.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 86.53236028994414,
+      "cut_length_per_cable_mm": 140,
+      "free_span": true,
+      "max_endpoint_distance_mm": 77.68856454523642,
+      "worst_extension_pose": "grid/neck_side,neck_flex,neck_yaw/0",
+      "reserve_over_max_distance_mm": 62.31143545476358,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J16",
+      "start": "l_back_wire_tab_1",
+      "end": "J16",
+      "cables": [
+        "A07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -78.0,
+          24.0,
+          424.0
+        ],
+        [
+          -66.0,
+          -15.0,
+          417.4
+        ]
+      ],
+      "guide_length_mm": 78.4367863582992,
+      "cut_length_per_cable_mm": 95,
+      "free_span": false,
+      "max_endpoint_distance_mm": 66.4885140456606,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 28.511485954339406,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_neck_humeral__r_back_wire_tab_1",
+      "start": "sensor_neck_humeral",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "A08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -14.721442931536801,
+          -8.200001001640674,
+          531.4595437377674
+        ],
+        [
+          -14.721442931536801,
+          -16.200001001640672,
+          531.4595437377674
+        ],
+        [
+          -14.721442931536801,
+          -16.200001001640672,
+          510.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 125.70348826794488,
+      "cut_length_per_cable_mm": 190,
+      "free_span": true,
+      "max_endpoint_distance_mm": 134.25629233524907,
+      "worst_extension_pose": "grid/neck_side,neck_flex,neck_yaw/115",
+      "reserve_over_max_distance_mm": 55.74370766475093,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J17",
+      "start": "r_back_wire_tab_1",
+      "end": "J17",
+      "cables": [
+        "A08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -74.0,
+          -25.0,
+          417.4
+        ],
+        [
+          -66.0,
+          -25.0,
+          417.4
+        ]
+      ],
+      "guide_length_mm": 42.76668664109366,
+      "cut_length_per_cable_mm": 60,
+      "free_span": false,
+      "max_endpoint_distance_mm": 30.012039250940642,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/12",
+      "reserve_over_max_distance_mm": 29.987960749059358,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_clavicle_z__l_back_wire_tab_1",
+      "start": "sensor_l_clavicle_z",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -13.771896716464436,
+          11.072986065194982,
+          373.6610611813777
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 75.17234134144985,
+      "cut_length_per_cable_mm": 130,
+      "free_span": true,
+      "max_endpoint_distance_mm": 75.17234134144992,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/99",
+      "reserve_over_max_distance_mm": 54.82765865855008,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J26",
+      "start": "l_back_wire_tab_1",
+      "end": "J26",
+      "cables": [
+        "B01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -50.0,
+          32.0,
+          456.0
+        ],
+        [
+          -46.4,
+          5.0,
+          436.5
+        ],
+        [
+          -54.4,
+          5.0,
+          436.5
+        ]
+      ],
+      "guide_length_mm": 75.12324124964891,
+      "cut_length_per_cable_mm": 95,
+      "free_span": false,
+      "max_endpoint_distance_mm": 45.16162641003978,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/54",
+      "reserve_over_max_distance_mm": 49.83837358996022,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_clavicle_x__l_back_wire_tab_1",
+      "start": "sensor_l_clavicle_x",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          20.028103283535525,
+          11.07298606519498,
+          451.6610611813773
+        ],
+        [
+          -34.0,
+          44.0,
+          424.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 86.78921175323087,
+      "cut_length_per_cable_mm": 145,
+      "free_span": true,
+      "max_endpoint_distance_mm": 90.69142000046944,
+      "worst_extension_pose": "arms_shrug",
+      "reserve_over_max_distance_mm": 54.308579999530565,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J27",
+      "start": "l_back_wire_tab_1",
+      "end": "J27",
+      "cables": [
+        "B02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -42.0,
+          12.0,
+          456.0
+        ],
+        [
+          -46.4,
+          -5.0,
+          436.5
+        ],
+        [
+          -54.4,
+          -5.0,
+          436.5
+        ]
+      ],
+      "guide_length_mm": 82.05939392479222,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 54.95063693898374,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 45.04936306101626,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_shoulder_pitch__l_back_wire_tab_1",
+      "start": "sensor_l_shoulder_pitch",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -5.155363435481899,
+          10.626274727830182,
+          442.815052672125
+        ],
+        [
+          -14.0,
+          36.0,
+          424.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 71.90018439168784,
+      "cut_length_per_cable_mm": 125,
+      "free_span": true,
+      "max_endpoint_distance_mm": 65.69620617600093,
+      "worst_extension_pose": "grid/l_clavicle_protract,l_clavicle_elevate/20",
+      "reserve_over_max_distance_mm": 59.30379382399907,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J28",
+      "start": "l_back_wire_tab_1",
+      "end": "J28",
+      "cables": [
+        "B03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -54.0,
+          32.0,
+          456.0
+        ],
+        [
+          -54.0,
+          -20.0,
+          460.0
+        ],
+        [
+          -54.4,
+          -15.0,
+          436.5
+        ]
+      ],
+      "guide_length_mm": 109.95519119777995,
+      "cut_length_per_cable_mm": 125,
+      "free_span": false,
+      "max_endpoint_distance_mm": 64.80410866604066,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/72",
+      "reserve_over_max_distance_mm": 60.19589133395934,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_shoulder_swing__l_back_wire_tab_1",
+      "start": "sensor_l_shoulder_swing",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -39.575955211052275,
+          57.72627472783017,
+          444.9373688419657
+        ],
+        [
+          -50.0,
+          56.0,
+          444.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 29.00758388061841,
+      "cut_length_per_cable_mm": 115,
+      "free_span": true,
+      "max_endpoint_distance_mm": 62.68038489006345,
+      "worst_extension_pose": "arms_overhead_front",
+      "reserve_over_max_distance_mm": 52.31961510993655,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J29",
+      "start": "l_back_wire_tab_1",
+      "end": "J29",
+      "cables": [
+        "B04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -54.0,
+          32.0,
+          456.0
+        ],
+        [
+          -58.0,
+          -44.0,
+          444.0
+        ],
+        [
+          -54.4,
+          -25.0,
+          436.5
+        ]
+      ],
+      "guide_length_mm": 131.55916033299766,
+      "cut_length_per_cable_mm": 150,
+      "free_span": false,
+      "max_endpoint_distance_mm": 74.69653606426476,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 75.30346393573524,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_humeral__l_back_wire_tab_1",
+      "start": "sensor_l_humeral",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -26.064412479172155,
+          79.90883847776065,
+          438.5503799701957
+        ],
+        [
+          -50.0,
+          72.0,
+          444.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 54.40123569829982,
+      "cut_length_per_cable_mm": 130,
+      "free_span": true,
+      "max_endpoint_distance_mm": 74.24012233724602,
+      "worst_extension_pose": "grid/l_clavicle_protract,l_clavicle_elevate/24",
+      "reserve_over_max_distance_mm": 55.75987766275398,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J30",
+      "start": "l_back_wire_tab_1",
+      "end": "J30",
+      "cables": [
+        "B05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -50.0,
+          32.0,
+          456.0
+        ],
+        [
+          -46.0,
+          12.0,
+          456.0
+        ],
+        [
+          -46.4,
+          5.0,
+          430.5
+        ],
+        [
+          -54.4,
+          5.0,
+          430.5
+        ]
+      ],
+      "guide_length_mm": 88.46627713251264,
+      "cut_length_per_cable_mm": 105,
+      "free_span": false,
+      "max_endpoint_distance_mm": 44.28964325889297,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/79",
+      "reserve_over_max_distance_mm": 60.71035674110703,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_elbow__l_upperarm_wire_tab",
+      "start": "sensor_l_elbow",
+      "end": "l_upperarm_wire_tab",
+      "cables": [
+        "B06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -6.8759552110522755,
+          123.81929717557352,
+          401.0499379852439
+        ],
+        [
+          -6.0,
+          140.0,
+          400.0
+        ],
+        [
+          -38.0,
+          116.0,
+          404.0
+        ],
+        [
+          -37.075955211052275,
+          91.19826935129576,
+          403.2653742185001
+        ]
+      ],
+      "guide_length_mm": 81.26768536701672,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 44.50932052970404,
+      "worst_extension_pose": "path/arms_overhead_side/24",
+      "reserve_over_max_distance_mm": 55.49067947029596,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_upperarm_wire_tab__l_back_wire_tab_1",
+      "start": "l_upperarm_wire_tab",
+      "end": "l_back_wire_tab_1",
+      "cables": [
+        "B06",
+        "B07",
+        "B08"
+      ],
+      "diameter_mm": 4.347413023856832,
+      "guide_A_mm": [
+        [
+          -37.075955211052275,
+          91.19826935129576,
+          403.2653742185001
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 50.30910353129437,
+      "cut_length_per_cable_mm": 160,
+      "free_span": true,
+      "max_endpoint_distance_mm": 106.30249663931887,
+      "worst_extension_pose": "path/arms_overhead_front/38",
+      "reserve_over_max_distance_mm": 53.697503360681125,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J31",
+      "start": "l_back_wire_tab_1",
+      "end": "J31",
+      "cables": [
+        "B06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -42.0,
+          12.0,
+          456.0
+        ],
+        [
+          -46.4,
+          -5.0,
+          430.5
+        ],
+        [
+          -54.4,
+          -5.0,
+          430.5
+        ]
+      ],
+      "guide_length_mm": 86.77944200354924,
+      "cut_length_per_cable_mm": 105,
+      "free_span": false,
+      "max_endpoint_distance_mm": 54.23626554253163,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/72",
+      "reserve_over_max_distance_mm": 50.76373445746837,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_forearm__l_forearm_wire_tab",
+      "start": "sensor_l_forearm",
+      "end": "l_forearm_wire_tab",
+      "cables": [
+        "B07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -18.375955211052297,
+          124.73853599111604,
+          379.0589170903423
+        ],
+        [
+          -26.375955211052297,
+          124.73853599111602,
+          379.0589170903423
+        ],
+        [
+          -37.075955211052275,
+          148.49601746001753,
+          345.9676261097784
+        ]
+      ],
+      "guide_length_mm": 50.118184487291785,
+      "cut_length_per_cable_mm": 105,
+      "free_span": true,
+      "max_endpoint_distance_mm": 49.30498342951179,
+      "worst_extension_pose": "arms_supinate",
+      "reserve_over_max_distance_mm": 55.69501657048821,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_forearm_wire_tab__l_upperarm_wire_tab",
+      "start": "l_forearm_wire_tab",
+      "end": "l_upperarm_wire_tab",
+      "cables": [
+        "B07",
+        "B08"
+      ],
+      "diameter_mm": 3.5496478698597698,
+      "guide_A_mm": [
+        [
+          -37.075955211052275,
+          148.49601746001753,
+          345.9676261097784
+        ],
+        [
+          -37.075955211052275,
+          91.19826935129576,
+          403.2653742185001
+        ]
+      ],
+      "guide_length_mm": 81.03125246879162,
+      "cut_length_per_cable_mm": 145,
+      "free_span": true,
+      "max_endpoint_distance_mm": 93.56383720599132,
+      "worst_extension_pose": "ROM/l_elbow_flex/145/scan/16",
+      "reserve_over_max_distance_mm": 51.43616279400868,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J32",
+      "start": "l_back_wire_tab_1",
+      "end": "J32",
+      "cables": [
+        "B07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -78.0,
+          24.0,
+          424.0
+        ],
+        [
+          -66.0,
+          -44.0,
+          416.0
+        ],
+        [
+          -46.0,
+          -44.0,
+          416.0
+        ],
+        [
+          -46.4,
+          -15.0,
+          430.5
+        ],
+        [
+          -54.4,
+          -15.0,
+          430.5
+        ]
+      ],
+      "guide_length_mm": 167.04009695229536,
+      "cut_length_per_cable_mm": 185,
+      "free_span": false,
+      "max_endpoint_distance_mm": 64.1994742969131,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/47",
+      "reserve_over_max_distance_mm": 120.8005257030869,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_wrist__l_forearm_wire_tab",
+      "start": "sensor_l_wrist",
+      "end": "l_forearm_wire_tab",
+      "cables": [
+        "B08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -23.275955211052295,
+          153.86872261806909,
+          340.59492095172675
+        ],
+        [
+          -42.0,
+          148.0,
+          344.0
+        ],
+        [
+          -37.075955211052275,
+          148.49601746001753,
+          345.9676261097784
+        ]
+      ],
+      "guide_length_mm": 25.24124727441438,
+      "cut_length_per_cable_mm": 45,
+      "free_span": false,
+      "max_endpoint_distance_mm": 15.753473313231883,
+      "worst_extension_pose": "grid/l_shoulder_flex,l_shoulder_abduct,l_upperarm_roll/114",
+      "reserve_over_max_distance_mm": 29.246526686768117,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_1__J33",
+      "start": "l_back_wire_tab_1",
+      "end": "J33",
+      "cables": [
+        "B08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          427.0
+        ],
+        [
+          -50.0,
+          32.0,
+          456.0
+        ],
+        [
+          -58.0,
+          -44.0,
+          444.0
+        ],
+        [
+          -50.0,
+          -44.0,
+          440.0
+        ],
+        [
+          -46.4,
+          -25.0,
+          430.5
+        ],
+        [
+          -54.4,
+          -25.0,
+          430.5
+        ]
+      ],
+      "guide_length_mm": 149.469961782905,
+      "cut_length_per_cable_mm": 165,
+      "free_span": false,
+      "max_endpoint_distance_mm": 74.17258590611497,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/75",
+      "reserve_over_max_distance_mm": 90.82741409388503,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_hip_abduction__l_pelvis_wire_tab",
+      "start": "sensor_l_hip_abduction",
+      "end": "l_pelvis_wire_tab",
+      "cables": [
+        "B09"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -68.76408785639279,
+          34.4087930468964,
+          307.03003068102737
+        ],
+        [
+          -67.1640878563928,
+          34.40879304689639,
+          315.8300306810274
+        ]
+      ],
+      "guide_length_mm": 8.94427190999917,
+      "cut_length_per_cable_mm": 25,
+      "free_span": false,
+      "max_endpoint_distance_mm": 8.94427190999917,
+      "worst_extension_pose": "neutral",
+      "reserve_over_max_distance_mm": 16.05572809000083,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_pelvis_wire_tab__l_back_wire_tab_0",
+      "start": "l_pelvis_wire_tab",
+      "end": "l_back_wire_tab_0",
+      "cables": [
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "B14",
+        "B15"
+      ],
+      "diameter_mm": 6.640783086353597,
+      "guide_A_mm": [
+        [
+          -67.1640878563928,
+          34.40879304689639,
+          315.8300306810274
+        ],
+        [
+          -58.0,
+          52.0,
+          404.0
+        ],
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ]
+      ],
+      "guide_length_mm": 98.28317398127645,
+      "cut_length_per_cable_mm": 215,
+      "free_span": true,
+      "max_endpoint_distance_mm": 159.74885380720238,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/100",
+      "reserve_over_max_distance_mm": 55.25114619279762,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J34",
+      "start": "l_back_wire_tab_0",
+      "end": "J34",
+      "cables": [
+        "B09"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -30.0,
+          24.0,
+          404.0
+        ],
+        [
+          -54.4,
+          5.0,
+          424.5
+        ]
+      ],
+      "guide_length_mm": 69.60750265664383,
+      "cut_length_per_cable_mm": 85,
+      "free_span": false,
+      "max_endpoint_distance_mm": 49.10776415191395,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/72",
+      "reserve_over_max_distance_mm": 35.89223584808605,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_hip_pitch__l_pelvis_wire_tab",
+      "start": "sensor_l_hip_pitch",
+      "end": "l_pelvis_wire_tab",
+      "cables": [
+        "B10"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -10.152545124512688,
+          30.558793046896394,
+          281.86259696621056
+        ],
+        [
+          -10.0,
+          44.0,
+          280.0
+        ],
+        [
+          -38.0,
+          48.0,
+          316.0
+        ],
+        [
+          -70.0,
+          40.0,
+          316.0
+        ],
+        [
+          -67.1640878563928,
+          34.40879304689639,
+          315.8300306810274
+        ]
+      ],
+      "guide_length_mm": 98.60903497931014,
+      "cut_length_per_cable_mm": 155,
+      "free_span": true,
+      "max_endpoint_distance_mm": 66.58515106052563,
+      "worst_extension_pose": "grid/l_hip_abduct,l_hip_flex,l_hip_roll/50",
+      "reserve_over_max_distance_mm": 88.41484893947437,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J35",
+      "start": "l_back_wire_tab_0",
+      "end": "J35",
+      "cables": [
+        "B10"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -30.0,
+          24.0,
+          404.0
+        ],
+        [
+          -54.4,
+          -5.0,
+          424.5
+        ]
+      ],
+      "guide_length_mm": 75.59320484699646,
+      "cut_length_per_cable_mm": 95,
+      "free_span": false,
+      "max_endpoint_distance_mm": 58.237208896031454,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/92",
+      "reserve_over_max_distance_mm": 36.762791103968546,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_hip_twist__l_thigh_wire_tab",
+      "start": "sensor_l_hip_twist",
+      "end": "l_thigh_wire_tab",
+      "cables": [
+        "B11"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          0.835912143607195,
+          42.608793046896395,
+          250.43003068102738
+        ],
+        [
+          -22.0,
+          40.0,
+          228.0
+        ],
+        [
+          -22.164087856392804,
+          34.40879304689639,
+          196.26387981317657
+        ]
+      ],
+      "guide_length_mm": 64.34057433757977,
+      "cut_length_per_cable_mm": 120,
+      "free_span": true,
+      "max_endpoint_distance_mm": 61.20918992790536,
+      "worst_extension_pose": "grid/l_hip_abduct,l_hip_flex,l_hip_roll/60",
+      "reserve_over_max_distance_mm": 58.79081007209464,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_thigh_wire_tab__l_pelvis_wire_tab",
+      "start": "l_thigh_wire_tab",
+      "end": "l_pelvis_wire_tab",
+      "cables": [
+        "B11",
+        "B12",
+        "B13",
+        "B14",
+        "B15"
+      ],
+      "diameter_mm": 5.612486080160912,
+      "guide_A_mm": [
+        [
+          -22.164087856392804,
+          34.40879304689639,
+          196.26387981317657
+        ],
+        [
+          -82.0,
+          36.0,
+          304.0
+        ],
+        [
+          -67.1640878563928,
+          34.40879304689639,
+          315.8300306810274
+        ]
+      ],
+      "guide_length_mm": 142.28916155624785,
+      "cut_length_per_cable_mm": 230,
+      "free_span": true,
+      "max_endpoint_distance_mm": 175.2038119180758,
+      "worst_extension_pose": "ROM/l_hip_flex/120/scan/22",
+      "reserve_over_max_distance_mm": 54.796188081924214,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J36",
+      "start": "l_back_wire_tab_0",
+      "end": "J36",
+      "cables": [
+        "B11"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -70.0,
+          24.0,
+          408.0
+        ],
+        [
+          -66.0,
+          -48.0,
+          428.0
+        ],
+        [
+          -42.0,
+          -48.0,
+          428.0
+        ],
+        [
+          -46.4,
+          -15.0,
+          424.5
+        ],
+        [
+          -54.4,
+          -15.0,
+          424.5
+        ]
+      ],
+      "guide_length_mm": 172.25490508507878,
+      "cut_length_per_cable_mm": 190,
+      "free_span": false,
+      "max_endpoint_distance_mm": 67.61340473604332,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/41",
+      "reserve_over_max_distance_mm": 122.38659526395668,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_knee__l_thigh_wire_tab",
+      "start": "sensor_l_knee",
+      "end": "l_thigh_wire_tab",
+      "cables": [
+        "B12"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -7.364087856392804,
+          12.808793046896373,
+          157.69772894532596
+        ],
+        [
+          -22.164087856392804,
+          34.40879304689639,
+          196.26387981317657
+        ]
+      ],
+      "guide_length_mm": 46.614890247235536,
+      "cut_length_per_cable_mm": 65,
+      "free_span": false,
+      "max_endpoint_distance_mm": 46.614890247235586,
+      "worst_extension_pose": "grid/l_hip_abduct,l_hip_flex,l_hip_roll/47",
+      "reserve_over_max_distance_mm": 18.385109752764414,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J37",
+      "start": "l_back_wire_tab_0",
+      "end": "J37",
+      "cables": [
+        "B12"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -70.0,
+          24.0,
+          408.0
+        ],
+        [
+          -66.0,
+          -44.0,
+          416.0
+        ],
+        [
+          -38.0,
+          -44.0,
+          424.0
+        ],
+        [
+          -46.4,
+          -25.0,
+          424.5
+        ],
+        [
+          -54.4,
+          -25.0,
+          424.5
+        ]
+      ],
+      "guide_length_mm": 158.4324347642414,
+      "cut_length_per_cable_mm": 175,
+      "free_span": false,
+      "max_endpoint_distance_mm": 77.14643543288314,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/75",
+      "reserve_over_max_distance_mm": 97.85356456711686,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_ankle_shoulder_pitch__l_shin_wire_tab",
+      "start": "sensor_l_ankle_shoulder_pitch",
+      "end": "l_shin_wire_tab",
+      "cables": [
+        "B13"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -44.3140878563928,
+          45.40879304689639,
+          37.248110184960936
+        ],
+        [
+          -21.164087856392804,
+          34.40879304689639,
+          98.87291956514335
+        ]
+      ],
+      "guide_length_mm": 66.74233762121176,
+      "cut_length_per_cable_mm": 85,
+      "free_span": false,
+      "max_endpoint_distance_mm": 66.7423376212118,
+      "worst_extension_pose": "sit",
+      "reserve_over_max_distance_mm": 18.257662378788197,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_shin_wire_tab__l_thigh_wire_tab",
+      "start": "l_shin_wire_tab",
+      "end": "l_thigh_wire_tab",
+      "cables": [
+        "B13",
+        "B14",
+        "B15"
+      ],
+      "diameter_mm": 4.347413023856832,
+      "guide_A_mm": [
+        [
+          -21.164087856392804,
+          34.40879304689639,
+          98.87291956514335
+        ],
+        [
+          -22.164087856392804,
+          34.40879304689639,
+          196.26387981317657
+        ]
+      ],
+      "guide_length_mm": 97.39609405943334,
+      "cut_length_per_cable_mm": 150,
+      "free_span": true,
+      "max_endpoint_distance_mm": 97.39609405943341,
+      "worst_extension_pose": "grid/l_hip_abduct,l_hip_flex,l_hip_roll/67",
+      "reserve_over_max_distance_mm": 52.60390594056659,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J38",
+      "start": "l_back_wire_tab_0",
+      "end": "J38",
+      "cables": [
+        "B13"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -30.0,
+          24.0,
+          404.0
+        ],
+        [
+          -54.4,
+          5.0,
+          418.5
+        ]
+      ],
+      "guide_length_mm": 66.66048036482547,
+      "cut_length_per_cable_mm": 85,
+      "free_span": false,
+      "max_endpoint_distance_mm": 46.79286804631667,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/41",
+      "reserve_over_max_distance_mm": 38.20713195368333,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_ankle_shoulder_swing__l_shin_wire_tab",
+      "start": "sensor_l_ankle_shoulder_swing",
+      "end": "l_shin_wire_tab",
+      "cables": [
+        "B14"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          9.035912143607195,
+          58.9087930468964,
+          29.048110184960937
+        ],
+        [
+          10.0,
+          60.0,
+          44.0
+        ],
+        [
+          -21.164087856392804,
+          34.40879304689639,
+          98.87291956514335
+        ]
+      ],
+      "guide_length_mm": 83.11922769244742,
+      "cut_length_per_cable_mm": 140,
+      "free_span": true,
+      "max_endpoint_distance_mm": 86.93668431256042,
+      "worst_extension_pose": "grid/l_ankle_roll,l_ankle_flex/0",
+      "reserve_over_max_distance_mm": 53.063315687439584,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J39",
+      "start": "l_back_wire_tab_0",
+      "end": "J39",
+      "cables": [
+        "B14"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -30.0,
+          24.0,
+          404.0
+        ],
+        [
+          -54.4,
+          -5.0,
+          418.5
+        ]
+      ],
+      "guide_length_mm": 73.08324988942758,
+      "cut_length_per_cable_mm": 90,
+      "free_span": false,
+      "max_endpoint_distance_mm": 56.29895647345521,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/75",
+      "reserve_over_max_distance_mm": 33.70104352654479,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_l_toe__l_foot_wire_tab",
+      "start": "sensor_l_toe",
+      "end": "l_foot_wire_tab",
+      "cables": [
+        "B15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          55.66391535923734,
+          54.508793046896386,
+          29.048110184960937
+        ],
+        [
+          58.0,
+          56.0,
+          12.0
+        ],
+        [
+          20.835912143607196,
+          56.40879304689639,
+          4.048110184960937
+        ]
+      ],
+      "guide_length_mm": 55.279402362446945,
+      "cut_length_per_cable_mm": 75,
+      "free_span": false,
+      "max_endpoint_distance_mm": 42.913864985432696,
+      "worst_extension_pose": "grid/l_hip_abduct,l_hip_flex,l_hip_roll/44",
+      "reserve_over_max_distance_mm": 32.086135014567304,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_foot_wire_tab__l_shin_wire_tab",
+      "start": "l_foot_wire_tab",
+      "end": "l_shin_wire_tab",
+      "cables": [
+        "B15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          20.835912143607196,
+          56.40879304689639,
+          4.048110184960937
+        ],
+        [
+          -21.164087856392804,
+          34.40879304689639,
+          98.87291956514335
+        ]
+      ],
+      "guide_length_mm": 106.01766114184905,
+      "cut_length_per_cable_mm": 165,
+      "free_span": true,
+      "max_endpoint_distance_mm": 111.09288369928456,
+      "worst_extension_pose": "grid/l_ankle_roll,l_ankle_flex/1",
+      "reserve_over_max_distance_mm": 53.907116300715444,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "l_back_wire_tab_0__J40",
+      "start": "l_back_wire_tab_0",
+      "end": "J40",
+      "cables": [
+        "B15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          49.00000000000001,
+          403.0
+        ],
+        [
+          -70.0,
+          24.0,
+          408.0
+        ],
+        [
+          -62.0,
+          -48.0,
+          412.0
+        ],
+        [
+          -46.4,
+          -45.0,
+          410.5
+        ],
+        [
+          -46.4,
+          -15.0,
+          410.5
+        ],
+        [
+          -54.4,
+          -15.0,
+          418.5
+        ]
+      ],
+      "guide_length_mm": 161.7698843748893,
+      "cut_length_per_cable_mm": 180,
+      "free_span": false,
+      "max_endpoint_distance_mm": 65.95128884259962,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/75",
+      "reserve_over_max_distance_mm": 114.04871115740038,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_clavicle_z__r_back_wire_tab_1",
+      "start": "sensor_r_clavicle_z",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -7.171889062622638,
+          -6.172985501956276,
+          408.8596584049005
+        ],
+        [
+          -7.171889062622638,
+          -14.172985501956276,
+          408.8596584049005
+        ],
+        [
+          -50.0,
+          -48.0,
+          412.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 77.71803150731952,
+      "cut_length_per_cable_mm": 130,
+      "free_span": true,
+      "max_endpoint_distance_mm": 63.73599388785682,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/97",
+      "reserve_over_max_distance_mm": 66.26400611214318,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J42",
+      "start": "r_back_wire_tab_1",
+      "end": "J42",
+      "cables": [
+        "C01"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -30.0,
+          16.0,
+          388.0
+        ],
+        [
+          -54.4,
+          5.0,
+          412.5
+        ]
+      ],
+      "guide_length_mm": 114.87623046562388,
+      "cut_length_per_cable_mm": 130,
+      "free_span": false,
+      "max_endpoint_distance_mm": 56.03188824232149,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/91",
+      "reserve_over_max_distance_mm": 73.96811175767851,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_clavicle_x__r_back_wire_tab_1",
+      "start": "sensor_r_clavicle_x",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -47.57188906262263,
+          -11.072985501956275,
+          451.6596584049005
+        ],
+        [
+          -54.0,
+          -48.0,
+          448.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 58.93408078192638,
+      "cut_length_per_cable_mm": 115,
+      "free_span": true,
+      "max_endpoint_distance_mm": 55.78618197923768,
+      "worst_extension_pose": "arms_shrug",
+      "reserve_over_max_distance_mm": 59.21381802076232,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J43",
+      "start": "r_back_wire_tab_1",
+      "end": "J43",
+      "cables": [
+        "C02"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -30.0,
+          16.0,
+          388.0
+        ],
+        [
+          -54.4,
+          -5.0,
+          412.5
+        ]
+      ],
+      "guide_length_mm": 119.04614631732382,
+      "cut_length_per_cable_mm": 135,
+      "free_span": false,
+      "max_endpoint_distance_mm": 46.471200759179915,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/49",
+      "reserve_over_max_distance_mm": 88.52879924082009,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_shoulder_pitch__r_back_wire_tab_1",
+      "start": "sensor_r_shoulder_pitch",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -15.075959128946351,
+          -9.626130227327419,
+          454.5372389930848
+        ],
+        [
+          -15.075959128946351,
+          -1.626130227327419,
+          454.5372389930848
+        ],
+        [
+          -30.0,
+          16.0,
+          464.0
+        ],
+        [
+          -58.0,
+          -48.0,
+          456.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 133.18181356788836,
+      "cut_length_per_cable_mm": 185,
+      "free_span": true,
+      "max_endpoint_distance_mm": 63.20813650084196,
+      "worst_extension_pose": "grid/r_clavicle_protract,r_clavicle_elevate/24",
+      "reserve_over_max_distance_mm": 121.79186349915804,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J44",
+      "start": "r_back_wire_tab_1",
+      "end": "J44",
+      "cables": [
+        "C03"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -46.0,
+          -44.0,
+          416.0
+        ],
+        [
+          -46.4,
+          -15.0,
+          412.5
+        ],
+        [
+          -54.4,
+          -15.0,
+          412.5
+        ]
+      ],
+      "guide_length_mm": 50.196344128695245,
+      "cut_length_per_cable_mm": 70,
+      "free_span": false,
+      "max_endpoint_distance_mm": 37.142596839747256,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/97",
+      "reserve_over_max_distance_mm": 32.857403160252744,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_shoulder_swing__r_back_wire_tab_1",
+      "start": "sensor_r_shoulder_swing",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -39.57595912894635,
+          -57.72613022732743,
+          444.9372389930848
+        ],
+        [
+          -50.0,
+          -56.0,
+          428.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 27.07345204183608,
+      "cut_length_per_cable_mm": 115,
+      "free_span": true,
+      "max_endpoint_distance_mm": 62.68026659675271,
+      "worst_extension_pose": "arms_overhead_front",
+      "reserve_over_max_distance_mm": 52.31973340324729,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J45",
+      "start": "r_back_wire_tab_1",
+      "end": "J45",
+      "cables": [
+        "C04"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -46.4,
+          -25.0,
+          412.5
+        ],
+        [
+          -54.4,
+          -25.0,
+          412.5
+        ]
+      ],
+      "guide_length_mm": 36.37556166844985,
+      "cut_length_per_cable_mm": 55,
+      "free_span": false,
+      "max_endpoint_distance_mm": 28.27671303387298,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/49",
+      "reserve_over_max_distance_mm": 26.72328696612702,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_humeral__r_back_wire_tab_1",
+      "start": "sensor_r_humeral",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -26.064416397066257,
+          -79.90869397725791,
+          438.55025012131483
+        ],
+        [
+          -50.0,
+          -80.0,
+          428.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 57.1829488657915,
+      "cut_length_per_cable_mm": 130,
+      "free_span": true,
+      "max_endpoint_distance_mm": 74.23953006746156,
+      "worst_extension_pose": "grid/r_clavicle_protract,r_clavicle_elevate/24",
+      "reserve_over_max_distance_mm": 55.76046993253844,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J46",
+      "start": "r_back_wire_tab_1",
+      "end": "J46",
+      "cables": [
+        "C05"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -30.0,
+          16.0,
+          388.0
+        ],
+        [
+          -54.4,
+          5.0,
+          406.5
+        ]
+      ],
+      "guide_length_mm": 111.1273969822772,
+      "cut_length_per_cable_mm": 130,
+      "free_span": false,
+      "max_endpoint_distance_mm": 57.875491358605366,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/14",
+      "reserve_over_max_distance_mm": 72.12450864139464,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_elbow__r_upperarm_wire_tab",
+      "start": "sensor_r_elbow",
+      "end": "r_upperarm_wire_tab",
+      "cables": [
+        "C06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -6.875959128946354,
+          -123.81821659372231,
+          401.05074421771144
+        ],
+        [
+          -6.0,
+          -140.0,
+          400.0
+        ],
+        [
+          -38.0,
+          -116.0,
+          404.0
+        ],
+        [
+          -37.07595912894635,
+          -91.19765681011876,
+          403.2657124102935
+        ]
+      ],
+      "guide_length_mm": 81.26941616778076,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 44.508954207999636,
+      "worst_extension_pose": "grid/r_shoulder_flex,r_shoulder_abduct,r_upperarm_roll/15",
+      "reserve_over_max_distance_mm": 55.491045792000364,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_upperarm_wire_tab__r_back_wire_tab_1",
+      "start": "r_upperarm_wire_tab",
+      "end": "r_back_wire_tab_1",
+      "cables": [
+        "C06",
+        "C07",
+        "C08"
+      ],
+      "diameter_mm": 4.347413023856832,
+      "guide_A_mm": [
+        [
+          -37.07595912894635,
+          -91.19765681011876,
+          403.2657124102935
+        ],
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ]
+      ],
+      "guide_length_mm": 50.30842912871266,
+      "cut_length_per_cable_mm": 160,
+      "free_span": true,
+      "max_endpoint_distance_mm": 106.30173264346337,
+      "worst_extension_pose": "path/arms_overhead_front/38",
+      "reserve_over_max_distance_mm": 53.69826735653663,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J47",
+      "start": "r_back_wire_tab_1",
+      "end": "J47",
+      "cables": [
+        "C06"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -30.0,
+          16.0,
+          388.0
+        ],
+        [
+          -54.4,
+          -5.0,
+          406.5
+        ]
+      ],
+      "guide_length_mm": 115.72074730554806,
+      "cut_length_per_cable_mm": 135,
+      "free_span": false,
+      "max_endpoint_distance_mm": 48.6782548988766,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/14",
+      "reserve_over_max_distance_mm": 86.3217451011234,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_forearm__r_forearm_wire_tab",
+      "start": "sensor_r_forearm",
+      "end": "r_forearm_wire_tab",
+      "cables": [
+        "C07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -11.775959128946372,
+          -124.73745540926483,
+          379.0597233228099
+        ],
+        [
+          -10.0,
+          -148.0,
+          384.0
+        ],
+        [
+          -37.07595912894636,
+          -148.4953029899826,
+          345.96806623042966
+        ]
+      ],
+      "guide_length_mm": 70.53568824660232,
+      "cut_length_per_cable_mm": 125,
+      "free_span": true,
+      "max_endpoint_distance_mm": 49.78997719544017,
+      "worst_extension_pose": "path/arms_carry/17",
+      "reserve_over_max_distance_mm": 75.21002280455983,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_forearm_wire_tab__r_upperarm_wire_tab",
+      "start": "r_forearm_wire_tab",
+      "end": "r_upperarm_wire_tab",
+      "cables": [
+        "C07",
+        "C08"
+      ],
+      "diameter_mm": 3.5496478698597698,
+      "guide_A_mm": [
+        [
+          -37.07595912894636,
+          -148.4953029899826,
+          345.96806623042966
+        ],
+        [
+          -37.07595912894635,
+          -91.19765681011876,
+          403.2657124102935
+        ]
+      ],
+      "guide_length_mm": 81.0311083196184,
+      "cut_length_per_cable_mm": 145,
+      "free_span": true,
+      "max_endpoint_distance_mm": 93.56382445507205,
+      "worst_extension_pose": "path/arms_elbow_max/16",
+      "reserve_over_max_distance_mm": 51.43617554492795,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J48",
+      "start": "r_back_wire_tab_1",
+      "end": "J48",
+      "cables": [
+        "C07"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -54.4,
+          -15.0,
+          406.5
+        ]
+      ],
+      "guide_length_mm": 91.24489039100591,
+      "cut_length_per_cable_mm": 110,
+      "free_span": false,
+      "max_endpoint_distance_mm": 39.86944318648059,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/14",
+      "reserve_over_max_distance_mm": 70.1305568135194,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_wrist__r_forearm_wire_tab",
+      "start": "sensor_r_wrist",
+      "end": "r_forearm_wire_tab",
+      "cables": [
+        "C08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -6.875959128946343,
+          -153.86837425985001,
+          340.59499496056225
+        ],
+        [
+          10.0,
+          -144.0,
+          340.0
+        ],
+        [
+          -30.0,
+          -132.0,
+          332.0
+        ],
+        [
+          -37.07595912894636,
+          -148.4953029899826,
+          345.96806623042966
+        ]
+      ],
+      "guide_length_mm": 84.82272645920462,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 31.14128754149634,
+      "worst_extension_pose": "path/arms_overhead_front/35",
+      "reserve_over_max_distance_mm": 68.85871245850366,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_1__J49",
+      "start": "r_back_wire_tab_1",
+      "end": "J49",
+      "cables": [
+        "C08"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          427.0
+        ],
+        [
+          -46.4,
+          -25.0,
+          406.5
+        ],
+        [
+          -54.4,
+          -25.0,
+          406.5
+        ]
+      ],
+      "guide_length_mm": 39.8617717649223,
+      "cut_length_per_cable_mm": 55,
+      "free_span": false,
+      "max_endpoint_distance_mm": 31.773770629247057,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/14",
+      "reserve_over_max_distance_mm": 23.226229370752943,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_hip_abduction__r_pelvis_wire_tab",
+      "start": "sensor_r_hip_abduction",
+      "end": "r_pelvis_wire_tab",
+      "cables": [
+        "C09"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -68.76419985547965,
+          -34.40883717419434,
+          307.0298629827949
+        ],
+        [
+          -67.16419985547955,
+          -34.408837174194346,
+          315.8298629827949
+        ]
+      ],
+      "guide_length_mm": 8.944271909999186,
+      "cut_length_per_cable_mm": 25,
+      "free_span": false,
+      "max_endpoint_distance_mm": 8.944271909999186,
+      "worst_extension_pose": "neutral",
+      "reserve_over_max_distance_mm": 16.055728090000812,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_pelvis_wire_tab__r_back_wire_tab_0",
+      "start": "r_pelvis_wire_tab",
+      "end": "r_back_wire_tab_0",
+      "cables": [
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15"
+      ],
+      "diameter_mm": 6.640783086353597,
+      "guide_A_mm": [
+        [
+          -67.16419985547955,
+          -34.408837174194346,
+          315.8298629827949
+        ],
+        [
+          -58.0,
+          -52.0,
+          404.0
+        ],
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ]
+      ],
+      "guide_length_mm": 98.2833403582328,
+      "cut_length_per_cable_mm": 215,
+      "free_span": true,
+      "max_endpoint_distance_mm": 159.74904023728251,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/124",
+      "reserve_over_max_distance_mm": 55.250959762717486,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J50",
+      "start": "r_back_wire_tab_0",
+      "end": "J50",
+      "cables": [
+        "C09"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -54.4,
+          5.0,
+          400.5
+        ]
+      ],
+      "guide_length_mm": 79.54016776610224,
+      "cut_length_per_cable_mm": 95,
+      "free_span": false,
+      "max_endpoint_distance_mm": 54.1809237647348,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/78",
+      "reserve_over_max_distance_mm": 40.8190762352652,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_hip_pitch__r_pelvis_wire_tab",
+      "start": "sensor_r_hip_pitch",
+      "end": "r_pelvis_wire_tab",
+      "cables": [
+        "C10"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -10.152657123599429,
+          -30.558837174194352,
+          281.8624292679781
+        ],
+        [
+          -10.0,
+          -44.0,
+          280.0
+        ],
+        [
+          -38.0,
+          -48.0,
+          316.0
+        ],
+        [
+          -70.0,
+          -40.0,
+          316.0
+        ],
+        [
+          -67.16419985547955,
+          -34.408837174194346,
+          315.8298629827949
+        ]
+      ],
+      "guide_length_mm": 98.60888407915587,
+      "cut_length_per_cable_mm": 155,
+      "free_span": true,
+      "max_endpoint_distance_mm": 66.58515106052565,
+      "worst_extension_pose": "grid/r_hip_abduct,r_hip_flex,r_hip_roll/50",
+      "reserve_over_max_distance_mm": 88.41484893947435,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J51",
+      "start": "r_back_wire_tab_0",
+      "end": "J51",
+      "cables": [
+        "C10"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -54.4,
+          -5.0,
+          400.5
+        ]
+      ],
+      "guide_length_mm": 74.80762197615786,
+      "cut_length_per_cable_mm": 90,
+      "free_span": false,
+      "max_endpoint_distance_mm": 44.221855456323894,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/84",
+      "reserve_over_max_distance_mm": 45.778144543676106,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_hip_twist__r_thigh_wire_tab",
+      "start": "sensor_r_hip_twist",
+      "end": "r_thigh_wire_tab",
+      "cables": [
+        "C11"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          0.8358001445204449,
+          -42.60883717419435,
+          250.4298629827949
+        ],
+        [
+          -22.0,
+          -48.0,
+          196.0
+        ],
+        [
+          -22.164199855479556,
+          -34.408837174194346,
+          196.263865089577
+        ]
+      ],
+      "guide_length_mm": 72.86653347271317,
+      "cut_length_per_cable_mm": 125,
+      "free_span": true,
+      "max_endpoint_distance_mm": 61.209054555349105,
+      "worst_extension_pose": "grid/r_hip_abduct,r_hip_flex,r_hip_roll/30",
+      "reserve_over_max_distance_mm": 63.790945444650895,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_thigh_wire_tab__r_pelvis_wire_tab",
+      "start": "r_thigh_wire_tab",
+      "end": "r_pelvis_wire_tab",
+      "cables": [
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15"
+      ],
+      "diameter_mm": 5.612486080160912,
+      "guide_A_mm": [
+        [
+          -22.164199855479556,
+          -34.408837174194346,
+          196.263865089577
+        ],
+        [
+          -82.0,
+          -36.0,
+          304.0
+        ],
+        [
+          -67.16419985547955,
+          -34.408837174194346,
+          315.8298629827949
+        ]
+      ],
+      "guide_length_mm": 142.28892434738248,
+      "cut_length_per_cable_mm": 230,
+      "free_span": true,
+      "max_endpoint_distance_mm": 175.20366251084974,
+      "worst_extension_pose": "ROM/r_hip_flex/120/scan/22",
+      "reserve_over_max_distance_mm": 54.79633748915026,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J52",
+      "start": "r_back_wire_tab_0",
+      "end": "J52",
+      "cables": [
+        "C11"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -54.4,
+          -15.0,
+          400.5
+        ]
+      ],
+      "guide_length_mm": 72.837643121477,
+      "cut_length_per_cable_mm": 90,
+      "free_span": false,
+      "max_endpoint_distance_mm": 34.28662275582129,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/90",
+      "reserve_over_max_distance_mm": 55.71337724417871,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_knee__r_thigh_wire_tab",
+      "start": "sensor_r_knee",
+      "end": "r_thigh_wire_tab",
+      "cables": [
+        "C12"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -7.364199855479554,
+          -12.808837174194327,
+          157.69786719635883
+        ],
+        [
+          -22.164199855479556,
+          -34.408837174194346,
+          196.263865089577
+        ]
+      ],
+      "guide_length_mm": 46.614763685979455,
+      "cut_length_per_cable_mm": 65,
+      "free_span": false,
+      "max_endpoint_distance_mm": 46.6147636859795,
+      "worst_extension_pose": "grid/r_hip_abduct,r_hip_flex,r_hip_roll/45",
+      "reserve_over_max_distance_mm": 18.385236314020503,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J53",
+      "start": "r_back_wire_tab_0",
+      "end": "J53",
+      "cables": [
+        "C12"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -38.0,
+          -44.0,
+          400.0
+        ],
+        [
+          -46.4,
+          -25.0,
+          400.5
+        ],
+        [
+          -54.4,
+          -25.0,
+          400.5
+        ]
+      ],
+      "guide_length_mm": 42.80011339133059,
+      "cut_length_per_cable_mm": 60,
+      "free_span": false,
+      "max_endpoint_distance_mm": 24.404354119705797,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/22",
+      "reserve_over_max_distance_mm": 35.5956458802942,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_ankle_shoulder_pitch__r_shin_wire_tab",
+      "start": "sensor_r_ankle_shoulder_pitch",
+      "end": "r_shin_wire_tab",
+      "cables": [
+        "C13"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -44.31419985547955,
+          -45.408837174194346,
+          37.248107228640734
+        ],
+        [
+          -21.164199855479556,
+          -34.408837174194346,
+          98.8729872124999
+        ]
+      ],
+      "guide_length_mm": 66.74240281129416,
+      "cut_length_per_cable_mm": 85,
+      "free_span": false,
+      "max_endpoint_distance_mm": 66.7424028112942,
+      "worst_extension_pose": "grid/r_hip_abduct,r_hip_flex,r_hip_roll/67",
+      "reserve_over_max_distance_mm": 18.2575971887058,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_shin_wire_tab__r_thigh_wire_tab",
+      "start": "r_shin_wire_tab",
+      "end": "r_thigh_wire_tab",
+      "cables": [
+        "C13",
+        "C14",
+        "C15"
+      ],
+      "diameter_mm": 4.347413023856832,
+      "guide_A_mm": [
+        [
+          -21.164199855479556,
+          -34.408837174194346,
+          98.8729872124999
+        ],
+        [
+          -22.164199855479556,
+          -34.408837174194346,
+          196.263865089577
+        ]
+      ],
+      "guide_length_mm": 97.39601169281906,
+      "cut_length_per_cable_mm": 150,
+      "free_span": true,
+      "max_endpoint_distance_mm": 97.39601169281912,
+      "worst_extension_pose": "grid/r_hip_abduct,r_hip_flex,r_hip_roll/47",
+      "reserve_over_max_distance_mm": 52.603988307180884,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J54",
+      "start": "r_back_wire_tab_0",
+      "end": "J54",
+      "cables": [
+        "C13"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -46.4,
+          5.0,
+          394.5
+        ],
+        [
+          -54.4,
+          5.0,
+          394.5
+        ]
+      ],
+      "guide_length_mm": 80.00476149066296,
+      "cut_length_per_cable_mm": 100,
+      "free_span": false,
+      "max_endpoint_distance_mm": 54.78660876528136,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/77",
+      "reserve_over_max_distance_mm": 45.21339123471864,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_ankle_shoulder_swing__r_shin_wire_tab",
+      "start": "sensor_r_ankle_shoulder_swing",
+      "end": "r_shin_wire_tab",
+      "cables": [
+        "C14"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          9.035800144520445,
+          -58.90883717419435,
+          29.048107228640735
+        ],
+        [
+          10.0,
+          -60.0,
+          44.0
+        ],
+        [
+          -21.164199855479556,
+          -34.408837174194346,
+          98.8729872124999
+        ]
+      ],
+      "guide_length_mm": 83.11932380113109,
+      "cut_length_per_cable_mm": 140,
+      "free_span": true,
+      "max_endpoint_distance_mm": 86.93674782443507,
+      "worst_extension_pose": "grid/r_ankle_roll,r_ankle_flex/0",
+      "reserve_over_max_distance_mm": 53.06325217556493,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J55",
+      "start": "r_back_wire_tab_0",
+      "end": "J55",
+      "cables": [
+        "C14"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -46.4,
+          -5.0,
+          394.5
+        ],
+        [
+          -54.4,
+          -5.0,
+          394.5
+        ]
+      ],
+      "guide_length_mm": 73.7308278645906,
+      "cut_length_per_cable_mm": 90,
+      "free_span": false,
+      "max_endpoint_distance_mm": 44.961900538122315,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/104",
+      "reserve_over_max_distance_mm": 45.038099461877685,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "sensor_r_toe__r_foot_wire_tab",
+      "start": "sensor_r_toe",
+      "end": "r_foot_wire_tab",
+      "cables": [
+        "C15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          55.66380798736371,
+          -54.508837174194326,
+          29.048107228640735
+        ],
+        [
+          58.0,
+          -56.0,
+          12.0
+        ],
+        [
+          20.835800144520444,
+          -56.408837174194346,
+          4.048107228640735
+        ]
+      ],
+      "guide_length_mm": 55.27952076435852,
+      "cut_length_per_cable_mm": 75,
+      "free_span": false,
+      "max_endpoint_distance_mm": 42.91386874078304,
+      "worst_extension_pose": "ROM/r_hip_flex/120/scan/23",
+      "reserve_over_max_distance_mm": 32.08613125921696,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_foot_wire_tab__r_shin_wire_tab",
+      "start": "r_foot_wire_tab",
+      "end": "r_shin_wire_tab",
+      "cables": [
+        "C15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          20.835800144520444,
+          -56.408837174194346,
+          4.048107228640735
+        ],
+        [
+          -21.164199855479556,
+          -34.408837174194346,
+          98.8729872124999
+        ]
+      ],
+      "guide_length_mm": 106.01772429152257,
+      "cut_length_per_cable_mm": 165,
+      "free_span": true,
+      "max_endpoint_distance_mm": 111.09295133393398,
+      "worst_extension_pose": "grid/r_ankle_roll,r_ankle_flex/1",
+      "reserve_over_max_distance_mm": 53.90704866606602,
+      "minimum_dynamic_bend_radius_mm": 10,
+      "A_CSG_clear": true
+    },
+    {
+      "id": "r_back_wire_tab_0__J56",
+      "start": "r_back_wire_tab_0",
+      "end": "J56",
+      "cables": [
+        "C15"
+      ],
+      "diameter_mm": 2.1,
+      "guide_A_mm": [
+        [
+          -50.75,
+          -49.0,
+          403.0
+        ],
+        [
+          -30.0,
+          -16.0,
+          384.0
+        ],
+        [
+          -46.4,
+          -15.0,
+          394.5
+        ],
+        [
+          -54.4,
+          -15.0,
+          394.5
+        ]
+      ],
+      "guide_length_mm": 70.86442717178954,
+      "cut_length_per_cable_mm": 90,
+      "free_span": false,
+      "max_endpoint_distance_mm": 35.235954648625636,
+      "worst_extension_pose": "grid/lumbar_flex,lumbar_side,lumbar_yaw/78",
+      "reserve_over_max_distance_mm": 54.764045351374364,
+      "minimum_dynamic_bend_radius_mm": null,
+      "A_CSG_clear": true
+    }
+  ],
+  "scope": "A-pose centreline routing guides checked with actual rigid solids and full estimated bundle diameter. Length budget covers finite endpoint travel, plus pi*10 mm bending allowance and 20 mm dressing reserve on every moving span. Guide corners do not define bent wire geometry. Reserved slack must be dressed as smooth service loops outside hinge pinch zones. This is not a flexible-body collision, bend-cycle, fatigue or all-pose cable clearance proof. Clamp each span at both anchors; never pull wire taut."
+}

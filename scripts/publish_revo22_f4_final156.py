@@ -1,0 +1,95 @@
+"""Publish only frozen plate artifacts and their exact meshes; final mode requires 150 types / 186 + 7 instances."""
+from pathlib import Path
+import sys,json,hashlib,shutil,gzip,base64,csv,re,zipfile
+from html import escape
+import numpy as np
+from collect_revo22_f4_delivery import collect,R,B,O
+CSS=(O/'review/index.html').read_text(encoding='utf8').split('<style>')[1].split('</style>')[0]
+def write(p,s):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s,encoding='utf8')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def page(title,body):return '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+'</title><link rel="icon" href="data:,"><style>'+CSS+'main.doc{display:block;max-width:1120px}main.doc h2{margin-top:28px}main.doc p{max-width:1000px}main.doc li{margin:8px 0}a.button{display:inline-block;padding:8px 12px;border:1px solid #b7c9c7;border-radius:5px;margin:4px}#flagged,#mode,#engine,#issue,#focus,#riskinfo,#layerplot{display:none}td,th{white-space:normal}</style>'+body+'</html>'
+
+def build(preview=False,destination=None):
+ c=collect(not preview);D=Path(destination) if destination is not None else (O/'final_preview156' if preview else B/'O22F4_Release');D.mkdir(exist_ok=True)
+ for s in ['projects','parts','design','verification/parts','verification/plates','geometry','records']:(D/s).mkdir(parents=True,exist_ok=True)
+ plates=[];byid={};mapping={};csvrows=[]
+ for ent in c['plates']:
+  p=ent['plate'];pid=p['id'];name=pid+'_O22F4_PLA_fins.3mf';dest=D/'projects'/name;shutil.copy2(ent['native_project'],dest);assert sha(dest)==ent['proof']['project_sha256']
+  proofdir=Path(ent['source_directory'])/'candidates'/('PLATE_'+pid)/'native/verification';vp=D/'verification/plates'/pid;vp.mkdir(exist_ok=True)
+  for fn in ['plate_result.json','full_bead_contacts.json','full_bead_contacts_v2.json','full_bead_contacts_v4.json','full_bead_contacts_v5.json','local_extrusion.json','native_mesh.json']:
+   if (proofdir/fn).exists():shutil.copy2(proofdir/fn,vp/fn)
+  plates.append(dict(p,project='projects/'+name,project_sha256=sha(dest),proof='verification/plates/'+pid+'/plate_result.json'))
+  for it in p['items']:
+   old=it['original_object_name'].split()[0];addr=it['object_name'].split()[0];rec={'id':it['id'],'part':it['part'],'address':addr,'original_address':old,'optional':p['optional'],'plate':pid,'project':'projects/'+name,'native_object_name':it.get('native_internal_object_name',it['object_name'])};byid.setdefault(it['id'],[]).append(rec);csvrows.append(rec)
+   if not p['optional']:mapping[old]=addr
+ rows=[];changes=[]
+ for pid,info in sorted(c['parts'].items()):
+  src=Path(info['source_directory']);npz=src/'parts'/f'{pid}.npz';assert sha(npz)==info['npz_sha256'];n=np.load(npz);d=json.loads((src/'design'/f'{pid}.json').read_text());gp=None
+  for q in (O/'candidates'/pid).glob('*/verification/geometry.json'):
+   g=json.loads(q.read_text())
+   if g.get('npz_sha256')==info['npz_sha256']and g.get('geometric_constraints_passed'):gp=q;break
+  assert gp is not None,(pid,'No matching geometry certificate');g=json.loads(gp.read_text());vp=D/'verification/parts'/pid;vp.mkdir(exist_ok=True);shutil.copy2(gp,vp/'geometry.json');fit={}
+  for fn in ['body_change_fit_and_pose.json','support_and_teeth_independent_growth.json','portal_layer_growth.json','functional_edge_reliefs188.json','washer_contact_surfaces.json','nut_contact_surfaces.json','screw_contact_surfaces.json','magnet_retention.json']:
+   if (gp.parent/fn).exists():shutil.copy2(gp.parent/fn,vp/fn)
+  if (gp.parent/'body_change_fit_and_pose.json').exists():fit=json.loads((gp.parent/'body_change_fit_and_pose.json').read_text())
+  changed=fit.get('removed_volume_mm3',0)>1e-6 or fit.get('added_volume_mm3',0)>1e-6
+  if changed:assert fit['fit_and_pose_geometry_passed'];changes.append({'id':pid,'part':d['part'],'removed_mm3':fit['removed_volume_mm3'],'added_mm3':fit['added_volume_mm3'],'proof':'verification/parts/'+pid+'/body_change_fit_and_pose.json'})
+  for sub,ext in [('parts','npz'),('design','json')]:shutil.copy2(src/sub/f'{pid}.{ext}',D/sub/f'{pid}.{ext}')
+  vv=np.r_[n['v'],n['fin_v'],n['teeth_v']];meshes={}
+  for role,v,f in [('part','v','f'),('fin','fin_v','fin_f'),('teeth','teeth_v','teeth_f')]:
+   if len(n[f]):meshes[role]={'v':base64.b64encode(gzip.compress(np.asarray(n[v],dtype='<f4').tobytes())).decode(),'f':base64.b64encode(gzip.compress(np.asarray(n[f],dtype='<u4').tobytes())).decode()}
+  geom={'meshes':meshes,'bounds':np.r_[vv.min(0),vv.max(0)].tolist()};write(D/'geometry'/f'{pid}_candidate.js','window.AUDIT_MESHES['+json.dumps(pid+'_candidate')+']='+json.dumps(geom,separators=(',',':'))+';')
+  row={'id':pid,'part':d['part'],'plates':' / '.join(x['address']for x in byid[pid]if not x['optional']),'height_mm':float(vv[:,2].max()),'body_changed':changed,'instances':byid[pid],'review_required':False,'npz_sha256':info['npz_sha256'],'geometry_proof':'verification/parts/'+pid+'/geometry.json','removed_mm3':fit.get('removed_volume_mm3',0)};access=[x for x in d.get('body_change',{}).get('chamfers',[])if x.get('kind')=='support_access_window']
+  if access and d['body_change']['kind']=='noncontact_support_access_opening':
+   bb=np.array(access[0]['local_bounds_mm']);target=np.array(access[0]['read_only_preinspection']['target']);row['support_access_view_bounds']=[(np.minimum(bb[:3],target)-[2,2,0]).tolist(),(np.maximum(bb[3:],target)+[2,2,2]).tolist()]
+  rows.append(row);write(D/'records'/f'{pid}.json',json.dumps({'summary':row,'design':d,'geometry':g,'fit':fit},ensure_ascii=False,indent=2));write(D/'records'/f'{pid}.js','window.AUDIT_DETAILS['+json.dumps(pid)+']='+json.dumps(row,ensure_ascii=False,separators=(',',':'))+';')
+ manifest={'version':'O22-F4','complete':c['complete'],'main_instances':c['main_instances'],'sample_instances':c['optional_instances'],'type_count':len(rows),'body_change_type_count':len(changes),'physical_print_tested':False,'force_or_thermal_simulated':False,'plates':plates,'rows':rows,'changes':changes};write(D/'manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2));write(D/'audit-data.js','window.AUDIT='+json.dumps(manifest,ensure_ascii=False,separators=(',',':'))+';window.AUDIT_DETAILS={};window.AUDIT_MESHES={};')
+ with (D/'零件与打印盘对照.csv').open('w',encoding='utf-8-sig',newline='')as f:
+  w=csv.DictWriter(f,fieldnames=['id','part','address','original_address','optional','plate','project','native_object_name']);w.writeheader();w.writerows(csvrows)
+ body='''<header><div><p>POSEDOLL · O22-F4</p><h1>支撑识别与打印文件</h1><p>蓝色保留 · 橙色支撑鳍与黄色连接齿移除</p></div><nav><a href="打印与拆除.html">打印与拆除</a> · <a href="assembly/tutorials/assembly-o22/index.html">安装图解</a><br><a href="验证说明.html">检查记录</a> · <a href="零件与打印盘对照.csv">编号对照 CSV</a></nav></header><main><div id="notice"></div><div id="stats"></div><aside class="card"><h2>零件索引</h2><input id="search" type="search" placeholder="编号、名称或盘号"><input id="flagged" type="checkbox"><div id="parts"></div></aside><section class="card"><h2 id="title"></h2><div id="position"></div><div class="toolbar"><a id="project" class="button">打开所在打印盘 3MF</a><a id="data">本件检查记录</a></div><div id="measure" class="measure"></div><div class="legend"><label><input id="part" type="checkbox" checked><i style="background:#65a5be"></i>本体</label><label><input id="fin" type="checkbox" checked><i style="background:#ef692f"></i>支撑鳍</label><label><input id="teeth" type="checkbox" checked><i style="background:#efc329"></i>连接齿</label><label><input id="ghost" type="checkbox">本体半透明</label></div><canvas id="model" aria-label="实际打印零件与支撑三维网格"></canvas><p id="loading" class="muted"></p><div class="toolbar"><button id="reset">整体视图</button><button id="top">俯视</button><button id="front">正视</button><button id="access" hidden>查看通口与短齿</button><label>剖切 <input id="clip" type="range" min="0" max="180" step=".2" value="180"><span id="zlabel">全部</span></label></div><p class="muted">拖动旋转，滚轮缩放。可隐藏本体或显示半透明本体，查看内部落地鳍与连接齿。颜色仅用于识别，实际使用同一种 PLA，无需 AMS。</p></section><section id="table" class="card"><h2>打印盘</h2><div id="inventory"></div></section><section class="card notes"><h2>拆除后再安装</h2><p>先剪黄色短齿，再分段剪开橙色鳍的顶部连接，分别取下落地立腿、侧向加强筋和底脚。不要把整个拱形支撑硬拔出来；清理孔道和五金槽中的残留。蓝色局部通窗与倒角属于永久零件，应保留。</p><p>取件按 Fxx-nn 编号装袋，随后使用 <a href="assembly/tutorials/assembly-o22/index.html">26 步安装图解</a>。图解中的装配整体示意沿用 O22；本页蓝色网格是最终打印形状。</p></section></main><script src="audit-data.js"></script><script src="viewer.js"></script>'''
+ write(D/'index.html',page('O22-F4 支撑识别与打印',body));js=(O/'review/review.js').read_text();js=js[:js.index('function indexList()')];js=js.replace("mode:'baseline'","mode:'candidate'");js+='''
+function indexList(){let term=$('#search').value.toLowerCase();$('#parts').replaceChildren();for(let r of A.rows){if(!(r.id+' '+r.part+' '+r.plates).toLowerCase().includes(term))continue;let b=document.createElement('button');b.className='part'+(state.id===r.id?' active':'');b.textContent=r.id+' · '+[...new Set(r.instances.filter(x=>!x.optional).map(x=>x.plate))].join(' / ');b.title=r.part;b.onclick=()=>load(r.id);$('#parts').append(b)}}
+async function load(id=state.id){let token=++serial;state.id=id;state.focus=null;state.zoom=1;$('#loading').textContent='读取实际网格…';indexList();if(!window.AUDIT_DETAILS[id])await script('records/'+id+'.js');if(token!==serial)return;data=window.AUDIT_DETAILS[id];$('#access').hidden=!data.support_access_view_bounds;let key=id+'_candidate';if(!window.AUDIT_MESHES[key])await script('geometry/'+key+'.js');if(token!==serial)return;meshData=window.AUDIT_MESHES[key];let obs=[];for(let [role,x]of Object.entries(meshData.meshes))obs.push({role,mesh:await geometry(key+role,x)});if(token!==serial)return;objects=obs;$('#title').textContent=id+' · '+data.part;$('#position').textContent=data.instances.map(x=>x.address+'（原 '+x.original_address+'）'+(x.optional?' 额外小样':'')).join(' / ');$('#data').href='records/'+id+'.json';$('#project').href=data.instances.find(x=>!x.optional).project;$('#measure').innerHTML='<div>本体<br><strong>'+(data.body_changed?'局部改形并复核配合':'保留原形状')+'</strong></div><div>总高度<br><strong>'+data.height_mm.toFixed(1)+' mm</strong></div><div>实际切片检查<br><strong>未检出所列悬空问题</strong></div>';$('#loading').textContent='显示交付打印盘对应的实际网格。未进行实物打印、拆除或力学试验。';$('#clip').value=180;$('#zlabel').textContent='全部';draw();history.replaceState(null,'','?id='+id)}
+async function init(){
+$('#notice').textContent=A.complete?'全部零件已完成几何与原生出丝筛查。请保留项目内朝向、相对位置和切片设置；先试小样。数字检查不能保证实物不坍塌。':'交付页面正在整理，主套件尚未齐全；当前是工作预览。';$('#stats').innerHTML=[[A.type_count,'零件类型'],[A.main_instances,'主套实例（含量规）'],[A.sample_instances,'额外小样'],[A.body_change_type_count,'局部改形类型']].map(x=>'<div class="stat"><strong>'+x[0]+'</strong><span>'+x[1]+'</span></div>').join('');$('#inventory').innerHTML='<table><tr><th>盘</th><th>用途 / 零件</th><th>文件</th></tr>'+A.plates.map(p=>'<tr><td>'+p.id+'</td><td>'+(p.optional?'额外小样':'主套')+' · '+p.items.map(i=>'<button data-id="'+i.id+'">'+i.object_name.split(' ')[0]+' '+i.id+'</button>').join(' ')+'</td><td><a href="'+p.project+'">3MF</a> · <a href="'+p.proof+'">检查</a></td></tr>').join('')+'</table>';$('#inventory').onclick=e=>{if(e.target.dataset.id){load(e.target.dataset.id);$('#model').scrollIntoView({block:'center'})}};
+'''
+ orig=(O/'review/review.js').read_text();a=orig.index("c=$('#model');gl=");b=orig.index('let query=new URLSearchParams',a);js+=orig[a:b];js+='''let query=new URLSearchParams(location.search);state.id=A.rows.some(r=>r.id===query.get('id'))?query.get('id'):(A.rows.some(r=>r.id==='X046')?'X046':A.rows[0].id);$('#search').oninput=indexList;
+''';a=orig.index("for(let x of ['part','fin','teeth','ghost'])");b=orig.index("$('#focus').onclick=",a);js+=orig[a:b];a=orig.index('let drag;');b=orig.index('await load();',a);js+=orig[a:b]+"$('#access').onclick=()=>{state.focus=data.support_access_view_bounds;$('#loading').textContent='通口与短齿的局部裁切视图。点击整体视图恢复完整零件。';state.zoom=1;state.yaw=-.8;state.pitch=-1.1;$('#clip').value=180;$('#zlabel').textContent='全部';draw();c.scrollIntoView({block:'center'})};await load();window.AUDIT_UI={state,load,draw};}\ninit().catch(e=>{$('#loading').textContent=e.message;console.error(e)});";js=js.replace("state.focus=null;state.zoom=1;state.yaw=-.8","state.focus=null;$('#loading').textContent='显示交付打印盘对应的实际网格。未进行实物打印、拆除或力学试验。';state.zoom=1;state.yaw=-.8");write(D/'viewer.js',js)
+ # Install guide source contains stable original A addresses. Never translate an already relabelled guide.
+ src=B/'a1mini_fins/assembly';ad=D/'assembly';shutil.copytree(src,ad,dirs_exist_ok=True)
+ def relabel(s):return re.sub(r'\bA\d\d-\d\d\b',lambda m:mapping.get(m[0],m[0])+'（原 '+m[0]+'）'if m[0]in mapping else m[0],s)
+ sp=src/'tutorials/assembly-o22';dp=ad/'tutorials/assembly-o22';raw=(sp/'index.html').read_text(encoding='utf-8-sig');raw=relabel(raw).replace('O22-F1','O22-F4');banner='<p style="padding:14px;background:#fff4dc">O22-F4 安装图解：按本行新版 F 位置取件；括号内 A 编号和旧盘示意图用于身份对照。打印请使用 <a href="../../../index.html">新版打印与彩色支撑页</a>。先去掉橙色鳍与黄色齿，再安装五金。整体装配视图沿用 O22，局部永久通窗与倒角以新版蓝色网格为准。S01 / S02 打印盘是额外小样，本教程 S01–S26 是安装步骤。</p>';raw=re.sub(r'<p style="padding:14px;background:#fff4dc">.*?</p>',banner,raw,flags=re.S)
+ if banner not in raw:raw=raw.replace('<body>','<body>'+banner,1)
+ def update_install_text(text):
+  text=text.replace('O22-F1','O22-F4').replace('O22 人偶拼装教程','O22-F4 人偶拼装教程')
+  text=text.replace('对应 A1 mini 打印盘 A01–A10。','本版使用 A1 mini 的 F 系列主套打印盘；S01、S02 是额外小样盘。')
+  text=text.replace('本教程使用已保存的 O22 设计和 A1 mini 排盘，不改变结构。','本教程沿用 O22 装配步骤，取件位置已更新为 O22-F4 盘号。')
+  text=text.replace('另有可选 T01 两件传感器小样。','另有 S01、S02 共 7 个打印与配合小样。')
+  text=text.replace('打印盘 A','原始分组 A').replace('原打印 / 工程文件说明 ↗','本版打印文件 ↗')
+  text=text.replace('“首次领用”统计每件只取一次；','下方 A 图是原始身份分组，实际取件按表内 F 编号；当前排盘见本版打印文件。“首次领用”统计每件只取一次；')
+  text=text.replace('T01 为传感器安装小样：','原 O22 工程另有 T01 传感器安装小样（本包未包含，区别于本包 S01、S02）：')
+  text=text.replace('O22-F4 的 11 盘支撑鳍打印工程',f'O22-F4 的 {len(plates)} 盘支撑鳍打印工程')
+  return text
+ raw=update_install_text(raw);write(dp/'index.html',raw);write(dp/'ASSEMBLY.zh-CN.md',update_install_text(relabel((sp/'ASSEMBLY.zh-CN.md').read_text(encoding='utf-8-sig'))))
+ projectlinks=''.join('<li><a href="../../../'+p['project']+'">'+p['id']+' · '+('额外小样' if p['optional'] else '主套')+'</a></li>'for p in plates)
+ write(dp/'external-files.html',page('O22-F4 打印文件','<main class="doc"><h1>O22-F4 打印文件</h1><p><a href="../../../index.html">彩色支撑识别与新版盘位</a> · <a href="index.html">返回安装图解</a></p><p>下列链接均指向本包实际 3MF。各盘朝向、支撑鳍、连接齿及切片设置已经一并保存。</p><ul>'+projectlinks+'</ul><p>电子制造文件继续使用原 PoseDoll O22 工程包；本包包含机械打印、支撑识别和安装资料。</p></main>'))
+ for fn,coll in [('guide-data.json','parts'),('scene.json','objects')]:
+  q=json.loads((sp/fn).read_text(encoding='utf-8-sig'));values=q[coll].values()if isinstance(q[coll],dict)else q[coll]
+  for x in values:
+   addr=x.get('address');x['original_address']=addr
+   if addr in mapping:x['address']=mapping[addr]+'（原 '+addr+'）'
+  q['f4_note']='Assembly axes and body ownership retained. Overall animation uses O22 reference geometry. Final local print modifications are shown by the blue meshes in the F4 support viewer.';write(dp/fn,json.dumps(q,ensure_ascii=False,separators=(',',':')))
+ write(ad/'README.zh-CN.md','O22-F4 安装资料。打开 tutorials/assembly-o22/index.html；使用新版 F 盘位置取件。原 A 图只作历史分组参考。整体动画保留 O22 装配示意，本版局部通窗和倒角见上级彩色网格。')
+ nav='<p><a href="index.html">← 彩色网格与打印盘</a> · <a href="assembly/tutorials/assembly-o22/index.html">安装图解</a></p>'
+ instructions='''<h1>打印、拆支撑与安装</h1><ol><li>在 OrcaSlicer 中以“项目”打开对应 3MF。使用 A1 mini、0.4 mm 喷嘴和 PLA，按层打印，关闭自动支撑。保留各盘自带的层高、壁生成方式和小特征设置；重新切片或改变材料、朝向后需要重新检查。</li><li>F 系列是主套，含 185 个安装件和 P242 量规。S01、S02 为额外 7 个小样，建议先验证连接齿的打印和拆除、孔口与五金配合，再试胸架 F01。小样不能替代胸架试印。</li><li>每个零件与对应鳍、齿合并为一个打印对象。彩色页面只用于识别，同一种 PLA 即可，不需多色打印。个别单件盘在切片器内保留 QC 开头的对象名，外部 F 盘号与内部名称的精确对应见编号 CSV。</li><li>完全冷却后扶住蓝色厚壁，逐段剪断黄色短连接齿。对有跨越空腔的橙色支撑，先把顶部连接剪成数段，再拆立腿、加强筋和底脚，避免硬拔或以关节孔作杠杆。</li><li>清理孔道、螺母槽、传感器滑轨中的支撑碎屑。蓝色永久通窗、倒角和承托边应保留。W006、W007 的关节杯通口用于让矮鳍进入；先清除通口中的橙色鳍和黄色齿，再装入五金。不要磨掉装配孔和限位面来迁就残留支撑。</li><li>按新版 Fxx-nn 与原 Axx-nn 编号分袋；先试配实际螺钉、垫圈、螺母、磁铁与 PCB，再按 26 步图解装配、接线和校准。原 O22 关节轴线及角度参数未修改。</li></ol><p>本包完成数字检查，尚未实物打印、拆除或进行热变形与疲劳验证。床面附着、材料干燥程度、风冷和实际五金公差仍会影响结果。</p>'''
+ write(D/'打印与拆除.html',page('O22-F4 打印与拆除','<main class="doc">'+nav+instructions+'</main>'))
+ ch=''.join('<tr><td>'+x['id']+'</td><td>'+escape(x['part'])+'</td><td>'+f"{x['removed_mm3']:.3f}"+'</td><td><a href="'+x['proof']+'">配合 / 姿态记录</a></td></tr>'for x in changes)
+ verification=f'''<h1>检查记录与范围</h1><p>本套有 {len(rows)} 类零件，主套 {c['main_instances']} 个实例，额外小样 {c['optional_instances']} 个。发布采用冻结整盘 3MF 的原始字节，重命名文件不改变模型、位置或 G-code。</p><h2>已完成的检查</h2><ul><li>鳍主体与零件本体体积交叠为零；每个物理鳍连通体从 Z=0 起始，并通过实际短齿与零件相接。高鳍具有宽基底和横向加强，不以低层零件作基础。</li><li>绕开零件的宽鳍按逐层扩展验证自身落地通路；独立修剪连接齿时不把本体当作支撑根。橙色和黄色为实际打印几何。</li><li>OrcaSlicer 2.4.2 的正向挤出路径按实际线宽和顺序复核。面积大于 0.05 mm² 的外部孤立片，以及无/单锚点超过 1 mm、双锚点超过 3 mm 的剩余外部路径均未检出。前一道同层壁线只有自身已由前层出丝承托，才可作为侧向接触证据。</li><li>每盘保持原生文件哈希，整套零件身份无缺项或重复主件。排盘检查保留至少 4 mm 床边余量，多对象包围框至少 6 mm 间距。</li><li>局部改形先核对实际五金和承托面，复核垫圈承托、螺母与磁铁约束，并检查 107 个姿态样本与原关节参数。采用源实体减材的改变不会增加几何干涉；已有深度干涉的组合样本单独记录，不能视为已验证可达姿态。</li></ul><h2>永久局部改形</h2><p>{len(changes)} 类零件包含实际减材；其余保留原形状。精度恢复但实际改变量为零的 CAD 重建不计入改形数量。没有进行应力、疲劳或材料强度等效证明。</p><table><tr><th>编号</th><th>零件</th><th>去除体积 mm³</th><th>证据</th></tr>{ch}</table><h2>结果的边界</h2><p>上述阈值是几何筛查规则，不是熔丝或力学仿真。未进行实物打印、拆除、受力、热变形或寿命试验，因此不能保证绝不坍塌。保留原始项目设置后先做小样与胸架单件试印。</p><p>P033 头部件在一个组合姿态下与上臂垫圈的原有微小间隙因减材而增大；这对非配合件原本没有接触。原始标记与实测前后间隙均保留在报告中，并未豁免实际垫圈承托。</p><p><a href="manifest.json">完整盘位、参数与 SHA-256 清单</a> · <a href="零件与打印盘对照.csv">新旧编号及切片器内部名称</a></p>'''
+ write(D/'验证说明.html',page('O22-F4 验证说明','<main class="doc">'+nav+verification+'</main>'))
+ write(D/'先读我.txt','O22-F4 手工支撑鳍\n\n双击“打开3D与安装说明.cmd”启动本机预览；或运行 python start_preview.py。打开 index.html 查看蓝色本体、橙色鳍、黄色连接齿，并打开对应 3MF。\n打印与拆除.html 是操作步骤；assembly/tutorials/assembly-o22/index.html 是 26 步安装图解。\n使用各盘项目中的原设置，关闭自动支撑。不要重新朝向或分拆支撑后重排。\n先打印 S01、S02 小样，再试 F01 胸架。主套 186 个实例包含 185 个安装件和 1 个量规；额外小样 7 个。\n数字检查完成不等于实物成功保证，未做实物、受力或热变形测试。\n')
+ write(D/'start_preview.py','from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler\nfrom pathlib import Path\nimport os,webbrowser\nos.chdir(Path(__file__).parent)\nwebbrowser.open("http://127.0.0.1:8764/")\nThreadingHTTPServer(("127.0.0.1",8764),SimpleHTTPRequestHandler).serve_forever()\n')
+ write(D/'打开3D与安装说明.cmd','@echo off\ncd /d "%~dp0"\nif exist "..\\..\\..\\..\\..\\.venv\\Scripts\\python.exe" (\n  "..\\..\\..\\..\\..\\.venv\\Scripts\\python.exe" start_preview.py\n  exit /b\n)\nwhere py >nul 2>nul\nif %errorlevel%==0 (\n  py -3 start_preview.py\n) else (\n  python start_preview.py\n)\npause\n')
+ write(D/'verification/delivery_summary.json',json.dumps({'complete':c['complete'],'main_instances':c['main_instances'],'optional_instances':c['optional_instances'],'type_count':len(rows),'body_change_types':[x['id']for x in changes],'all_native_projects_hash_verified':True,'physical_print_tested':False,'force_or_thermal_simulated':False},indent=2))
+ print('DELIVERY_UI',D,'complete',c['complete'],'changed',len(changes),flush=True)
+ return D
+if __name__=='__main__':build('--preview'in sys.argv)

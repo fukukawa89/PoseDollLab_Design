@@ -1,0 +1,68 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "id": "rom_protocol",
+      "url": "https://stacks.cdc.gov/view/cdc/153157/cdc_153157_DS1.pdf",
+      "use": "Examination posture matters; no medical claim that every joint-limit combination is a normal posture."
+    },
+    {
+      "id": "neck_adl",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20051924/",
+      "use": "Everyday neck tasks studied separately from maximal physiological ROM; not used to discard the existing 35 degree neck tilt."
+    },
+    {
+      "id": "bearing_684",
+      "url": "https://www.nsk.com/content/dam/nsk/am/en_us/documents/bearings-americas/Bearing-and-Linear-Replacement-Guide.pdf",
+      "use": "684ZZ 4 x 9 x 4 mm; basic static radial rating 225 N. Rating applies to specified bearing, not arbitrary lookalikes."
+    },
+    {
+      "id": "bearing_mr126",
+      "url": "https://www.nsk.com/in-en/engineering/products/bearings/ball-bearings/deep-groove-ball-bearings/extra-small-ball-bearings-and-miniature-ball-bearings-metric-series/mr126zz-esm-md.html",
+      "use": "MR126ZZ 6 x 12 x 4 mm; static 292 N, dynamic 790 N."
+    },
+    {
+      "id": "screw_strength",
+      "url": "https://www.bossard.com/-/media/bossard-group/website/documents/technical-resources-old/stainless-steel-fasteners.pdf",
+      "use": "A2-70 minimum 0.2% proof stress 450 MPa; all load-carrying nuts and screws require a stated property class."
+    },
+    {
+      "id": "sheet_strength",
+      "url": "https://bssa.org.uk/bssa_articles/structural-design-of-stainless-steel/",
+      "use": "Cold rolled 304 minimum yield 230 MPa, elastic modulus 200 GPa; applied as a procurement specification, not an as-measured result."
+    },
+    {
+      "id": "spring_pin",
+      "url": "https://www.spirol.com/assets/files/sltp-slotted-spring-pin-design-guide-us.pdf",
+      "use": "Austenitic slotted spring pin minimum double shear: D1.5 1.0 kN, D2 2.0 kN, D3 4.5 kN. Recommended holes D1.5:1.50-1.56, D2:2.00-2.07, D3:3.00-3.10 mm. Installed envelope is modelled; free diameter is larger."
+    },
+    {
+      "id": "shaft_yield",
+      "url": "https://steelnavigator.ovako.com/steel-grades/42crmo4/",
+      "use": "Custom shafts: certified yield >=750 MPa. Lumbar flexion: certified 6115 / 42CrMnMo4-4 +QT, minimum 940 MPa retained after machining; source stock 25–60 mm. Not a rating for generic annealed rods."
+    },
+    {
+      "id": "retaining_compound",
+      "url": "https://next.henkel-adhesives.com/ca/en/products/industrial-adhesives/central-pdp.html/loctite-603/BP000000153475/variation/231099.html",
+      "use": "Steel retaining compound reference. The design uses a separately qualified 2 MPa shear allowable, not the advertised typical strength as a guaranteed joint rating."
+    },
+    {
+      "id": "magnetic_sensor",
+      "url": "https://www.ti.com/lit/ds/symlink/tmag5170.pdf",
+      "use": "Three-axis sensing, angle calculation and gain/offset compensation. Only ideal observability is validated; no populated board or measured magnetic accuracy is claimed."
+    }
+  ],
+  "design_assumptions_not_measurements": {
+    "minimum_friction_coefficient": 0.08,
+    "printed_long_term_allowable_MPa": 8,
+    "printed_elastic_modulus_MPa": 1500,
+    "cable_and_unmodelled_detail_mass_allowance": 1.25,
+    "static_hold_factor": 1.5,
+    "minimum_axial_handling_pull_N": 10,
+    "S1_pass": "DESIGN_ASSUMPTION_ONLY; H04 reported weak connection expressly excluded",
+    "shaft_min_yield_MPa": {
+      "normal": 750,
+      "lumbar_flex": 940
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "purpose": "Diagnosis only, not a production release. Failed supports may recur. Stop once first failure is documented.",
+  "single_experimental_factor": "B outer/inner wall command speeds are half of A. Geometry, orientations, filament, fan, temperatures, acceleration and non-wall speeds unchanged.",
+  "limits": "One observation per condition is not statistical proof; positions and layer timing differ from D01. No drying control is available.",
+  "source_sha256": "6bb2fe3b595a879a68478b4871d37b3430b194cbc1fc11b77406591af416e9be",
+  "project_sha256": "e8ccc5f7e923e966a29edd4ba5606121cf8d2bc8f904de1a07953a375ef79ef4",
+  "printer": "Bambu A1 mini, 0.4 mm",
+  "global_project_settings_identical": true,
+  "objects": [
+    {
+      "name": "R01-01 P033 A original 40-70",
+      "source_object": "D01-02 P033 head/C01",
+      "id": "4",
+      "delta_mm": [
+        -85.6676324,
+        4.0000024,
+        0.0
+      ],
+      "bounds_mm": [
+        8.0,
+        8.0,
+        0.0,
+        73.1942292,
+        59.3164596,
+        45.265152
+      ],
+      "outer_wall_speed_mm_s": 40,
+      "inner_wall_speed_mm_s": 70,
+      "maximum_geometric_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "name": "R01-02 P033 B walls 20-35",
+      "source_object": "D01-03 P033 head/C01 [可选小样]",
+      "id": "6",
+      "delta_mm": [
+        0.33236759999999776,
+        -53.316452999999996,
+        0.0
+      ],
+      "bounds_mm": [
+        94.0,
+        8.0,
+        0.0,
+        159.1942292,
+        59.3164596,
+        45.265152
+      ],
+      "outer_wall_speed_mm_s": 20,
+      "inner_wall_speed_mm_s": 35,
+      "maximum_geometric_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "name": "R01-03 X058 A original 40-70",
+      "source_object": "D01-04 X058 frame/upperarm_l",
+      "id": "8",
+      "delta_mm": [
+        4.000002700000003,
+        1.5370473000000118,
+        0.0
+      ],
+      "bounds_mm": [
+        8.0,
+        74.0,
+        0.0,
+        84.59681700000002,
+        141.9524766,
+        63.592762
+      ],
+      "outer_wall_speed_mm_s": 40,
+      "inner_wall_speed_mm_s": 70,
+      "maximum_geometric_error_mm": 2.842170943040401e-14
+    },
+    {
+      "name": "R01-04 X058 B walls 20-35",
+      "source_object": "D01-04 X058 frame/upperarm_l",
+      "id": "26",
+      "delta_mm": [
+        90.00000270000001,
+        1.5370473000000118,
+        0.0
+      ],
+      "bounds_mm": [
+        94.0,
+        74.0,
+        0.0,
+        170.59681700000002,
+        141.9524766,
+        63.592762
+      ],
+      "outer_wall_speed_mm_s": 20,
+      "inner_wall_speed_mm_s": 35,
+      "maximum_geometric_error_mm": 2.842170943040401e-14
+    }
+  ]
+}

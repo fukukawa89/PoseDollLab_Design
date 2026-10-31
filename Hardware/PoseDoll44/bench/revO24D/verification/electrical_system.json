@@ -1,0 +1,366 @@
+{
+  "status": "PASS_ELECTRICAL_BUDGET_CONDITIONAL",
+  "geometry_sha256": "fd64f061821a42f803e2131b0f0642147ab9cc8e65dc32cdb5e3476a0b7c9e8e",
+  "criteria": {
+    "native_carrier": true,
+    "native_sensor_boards": true,
+    "rail_upper": true,
+    "sensor_minimum": true,
+    "logic_high": true,
+    "settling": true,
+    "scan_rate": true,
+    "crc_known_answer": true,
+    "crc_single_bit_detection": true
+  },
+  "pcb_sha256": "96f435d0136a628aa4fd1940e86a4a2c7cbc43acb7d1a8678c8fe89d31ca8e07",
+  "power": {
+    "nominal_rail_V": 3.4511278195488724,
+    "regulated_DC_range_V": [
+      3.3701963152594776,
+      3.5322988188146036
+    ],
+    "allowed_ripple_peak_V": 0.05,
+    "upper_with_ripple_V": 3.5822988188146034,
+    "total_budget_current_A": 0.402,
+    "sensor_budget_each_mA": 10,
+    "maximum_copper_loop_drop_V": 0.27280912930968737,
+    "maximum_wire_loop_drop_V": 0.008754374999999998,
+    "sensor_min_supply_V": 3.03863281094979,
+    "logic_output_min_V": 2.8709322578151277,
+    "logic_input_required_V": 2.6867241141109526,
+    "copper_temperature_factor": 1.25,
+    "fuse_resistance_bound_ohm": 0.2,
+    "loads": [
+      {
+        "reference": "J13",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1649852362110769,
+        "ground_rise_V": 0.0995008764963076,
+        "loop_drop_V": 0.26448611270738454
+      },
+      {
+        "reference": "J15",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16479436478250548,
+        "ground_rise_V": 0.09941015579480604,
+        "loop_drop_V": 0.26420452057731153
+      },
+      {
+        "reference": "J17",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16471628206157032,
+        "ground_rise_V": 0.09700038808995019,
+        "loop_drop_V": 0.2617166701515205
+      },
+      {
+        "reference": "J14",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16380107774327035,
+        "ground_rise_V": 0.10796108836399157,
+        "loop_drop_V": 0.2717621661072619
+      },
+      {
+        "reference": "J16",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1639919491718418,
+        "ground_rise_V": 0.09214181666137222,
+        "loop_drop_V": 0.256133765833214
+      },
+      {
+        "reference": "J11",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16599086726165574,
+        "ground_rise_V": 0.10104864335943568,
+        "loop_drop_V": 0.26703951062109144
+      },
+      {
+        "reference": "J12",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16396424202898466,
+        "ground_rise_V": 0.10781301678487992,
+        "loop_drop_V": 0.2717772588138646
+      },
+      {
+        "reference": "J10",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1641551134575561,
+        "ground_rise_V": 0.10608865492357482,
+        "loop_drop_V": 0.2702437683811309
+      },
+      {
+        "reference": "J55",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14716874453846712,
+        "ground_rise_V": 0.10119738399563778,
+        "loop_drop_V": 0.2483661285341049
+      },
+      {
+        "reference": "J40",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16258090690038093,
+        "ground_rise_V": 0.09235726308994362,
+        "loop_drop_V": 0.25493816999032454
+      },
+      {
+        "reference": "J37",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1652580462759421,
+        "ground_rise_V": 0.10010590730706394,
+        "loop_drop_V": 0.265363953583006
+      },
+      {
+        "reference": "J43",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14046123802719507,
+        "ground_rise_V": 0.09995291755326748,
+        "loop_drop_V": 0.24041415558046253
+      },
+      {
+        "reference": "J27",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14369296716056387,
+        "ground_rise_V": 0.10592223267516201,
+        "loop_drop_V": 0.2496151998357259
+      },
+      {
+        "reference": "J30",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12853329537235111,
+        "ground_rise_V": 0.0644851713985926,
+        "loop_drop_V": 0.1930184667709437
+      },
+      {
+        "reference": "J28",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16420947118612753,
+        "ground_rise_V": 0.10859965812355983,
+        "loop_drop_V": 0.27280912930968737
+      },
+      {
+        "reference": "J26",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12870898328663682,
+        "ground_rise_V": 0.06476209756089946,
+        "loop_drop_V": 0.19347108084753628
+      },
+      {
+        "reference": "J49",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1618747609472834,
+        "ground_rise_V": 0.09804512501967855,
+        "loop_drop_V": 0.2599198859669619
+      },
+      {
+        "reference": "J33",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16581218913308443,
+        "ground_rise_V": 0.10066005016420668,
+        "loop_drop_V": 0.26647223929729114
+      },
+      {
+        "reference": "J51",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14699470673846712,
+        "ground_rise_V": 0.1010126697099235,
+        "loop_drop_V": 0.2480073764483906
+      },
+      {
+        "reference": "J32",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16402475690041324,
+        "ground_rise_V": 0.10844753359498839,
+        "loop_drop_V": 0.2724722904954016
+      },
+      {
+        "reference": "J38",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12760972394377967,
+        "ground_rise_V": 0.06353511824550175,
+        "loop_drop_V": 0.1911448421892814
+      },
+      {
+        "reference": "J42",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12687086680092252,
+        "ground_rise_V": 0.062495090626354347,
+        "loop_drop_V": 0.18936595742727685
+      },
+      {
+        "reference": "J35",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14234532374147885,
+        "ground_rise_V": 0.10388271861150586,
+        "loop_drop_V": 0.2462280423529847
+      },
+      {
+        "reference": "J48",
+        "current_A": 0.01,
+        "supply_drop_V": 0.15944076404314614,
+        "ground_rise_V": 0.08275155086839782,
+        "loop_drop_V": 0.24219231491154397
+      },
+      {
+        "reference": "J34",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12816386680092254,
+        "ground_rise_V": 0.06411574282716408,
+        "loop_drop_V": 0.1922796096280866
+      },
+      {
+        "reference": "J53",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16148910830442606,
+        "ground_rise_V": 0.09822983930539284,
+        "loop_drop_V": 0.2597189476098189
+      },
+      {
+        "reference": "J31",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1428082269771926,
+        "ground_rise_V": 0.1048673702091723,
+        "loop_drop_V": 0.2476755971863649
+      },
+      {
+        "reference": "J47",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1440261942384105,
+        "ground_rise_V": 0.10062361347499124,
+        "loop_drop_V": 0.24464980771340175
+      },
+      {
+        "reference": "J45",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1632766192329983,
+        "ground_rise_V": 0.09705038808995016,
+        "loop_drop_V": 0.26032700732294844
+      },
+      {
+        "reference": "J46",
+        "current_A": 0.01,
+        "supply_drop_V": 0.12668814742949394,
+        "ground_rise_V": 0.061584587117782974,
+        "loop_drop_V": 0.18827273454727692
+      },
+      {
+        "reference": "J52",
+        "current_A": 0.01,
+        "supply_drop_V": 0.15833207195740118,
+        "ground_rise_V": 0.08471152445002031,
+        "loop_drop_V": 0.24304359640742149
+      },
+      {
+        "reference": "J50",
+        "current_A": 0.01,
+        "supply_drop_V": 0.11719600580711659,
+        "ground_rise_V": 0.0564721652713598,
+        "loop_drop_V": 0.17366817107847637
+      },
+      {
+        "reference": "J36",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16365532832898466,
+        "ground_rise_V": 0.10809793641345121,
+        "loop_drop_V": 0.2717532647424359
+      },
+      {
+        "reference": "J44",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1611031926146207,
+        "ground_rise_V": 0.09224181666137218,
+        "loop_drop_V": 0.2533450092759929
+      },
+      {
+        "reference": "J29",
+        "current_A": 0.01,
+        "supply_drop_V": 0.16603285770443743,
+        "ground_rise_V": 0.10108402444328751,
+        "loop_drop_V": 0.26711688214772494
+      },
+      {
+        "reference": "J56",
+        "current_A": 0.01,
+        "supply_drop_V": 0.15851678624311547,
+        "ground_rise_V": 0.08490421884996455,
+        "loop_drop_V": 0.24342100509308
+      },
+      {
+        "reference": "J39",
+        "current_A": 0.01,
+        "supply_drop_V": 0.14149563802719411,
+        "ground_rise_V": 0.10207251861150385,
+        "loop_drop_V": 0.24356815663869796
+      },
+      {
+        "reference": "J54",
+        "current_A": 0.01,
+        "supply_drop_V": 0.1173194836128308,
+        "ground_rise_V": 0.05100389796239042,
+        "loop_drop_V": 0.16832338157522123
+      },
+      {
+        "reference": "U1",
+        "current_A": 0.008,
+        "supply_drop_V": 0.14366197754437338,
+        "ground_rise_V": 0.10560207989997657,
+        "loop_drop_V": 0.24926405744434993
+      },
+      {
+        "reference": "U2",
+        "current_A": 0.008,
+        "supply_drop_V": 0.1430485495130679,
+        "ground_rise_V": 0.09933534685509446,
+        "loop_drop_V": 0.24238389636816235
+      },
+      {
+        "reference": "U3",
+        "current_A": 0.002,
+        "supply_drop_V": 0.13858936986616188,
+        "ground_rise_V": 0.06336906954997376,
+        "loop_drop_V": 0.20195843941613564
+      },
+      {
+        "reference": "U4",
+        "current_A": 0.002,
+        "supply_drop_V": 0.1043606402638531,
+        "ground_rise_V": 0.06330985755216742,
+        "loop_drop_V": 0.1676704978160205
+      },
+      {
+        "reference": "U5",
+        "current_A": 0.002,
+        "supply_drop_V": 0.11739316095123653,
+        "ground_rise_V": 0.051966749918494044,
+        "loop_drop_V": 0.16935991086973057
+      }
+    ]
+  },
+  "timing": {
+    "clock_hz": 100000,
+    "bank_capacitance_pF": {
+      "A": 298.0,
+      "B": 903.0,
+      "C": 864.5
+    },
+    "assumed_driver_resistance_ohm": 50,
+    "source_series_ohm": 33,
+    "five_tau_and_extra_ns": 474.745,
+    "half_period_ns": 5000.0,
+    "frames_per_address": 4,
+    "addresses": 15,
+    "scan_cycle_ms": 19.35,
+    "target_frame_hz": 40,
+    "maximum_budget_frame_hz": 51.67958656330749
+  },
+  "CRC": {
+    "known_word": "0x0F000407",
+    "known_answer_pass": true,
+    "single_bit_negative_controls": 28,
+    "single_bit_detected": true
+  },
+  "sources": [
+    "https://www.diodes.com/datasheet/download/AP3429.pdf",
+    "https://www.ti.com/lit/ds/symlink/tmag5170.pdf",
+    "https://www.ti.com/lit/ds/symlink/sn74lvc244a.pdf"
+  ],
+  "scope": "Native ERC/DRC/connectivity plus extracted DC copper resistor network, explicit current/cable/capacitance bounds, conservative 100 kHz broadcast SPI budget. 10 mA per sensor, 50 mV ripple, 100 pF/m and 50 ohm effective driver resistance are design limits to verify, not measured values. MCU has three sampled MISO pins, host calibration, CRC/status rejection. Board thermal, signal ringing, magnetic EMC, power sequencing and physical calibration still require hardware tests. No production release."
+}

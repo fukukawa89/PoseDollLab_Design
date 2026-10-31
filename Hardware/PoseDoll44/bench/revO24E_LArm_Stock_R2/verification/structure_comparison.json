@@ -1,0 +1,128 @@
+{
+  "status": "PASS_COMPARATIVE_SCREEN",
+  "geometry_sha256": "9bf25e08e41c3faf6107d6e558f7b25f61aa82ec839a56e2c8c25f8fdcbc965e",
+  "assumptions": {
+    "E_MPa": 1500,
+    "poisson": 0.35,
+    "load_N_each_side": 1,
+    "clamp": "H local z > 40.5 mm at RU rotor",
+    "load_patch": "H y +/-8.4..10.6, abs(x,z)<4.5, two opposed inward forces",
+    "physical_tested": false
+  },
+  "rows": [
+    {
+      "revision": "R1",
+      "source_sha256": "aace76fbfb8865251920e23e001a543f0368c0cd73c46ca540365c64ce265f42",
+      "near_joint_bridge_area_mm2": 0.0,
+      "central_shaft_min_section_mm2": 45.01719226731228,
+      "solutions": [
+        {
+          "pitch_mm": 1.2,
+          "elements": 3244,
+          "nodes": 5120,
+          "closure_mm": 0.48653398779386614,
+          "max_displacement_mm": 0.32739595964656826,
+          "compliance_N_mm": 0.48653398779386614,
+          "free_residual_N": 2.9727515226664207e-09,
+          "reaction_force_N": [
+            5.828670879282072e-16,
+            -2.3927757691888374e-10,
+            2.6396279606544226e-10
+          ],
+          "iterations": 340,
+          "seconds": 0.37758827209472656
+        },
+        {
+          "pitch_mm": 0.9,
+          "elements": 8214,
+          "nodes": 11688,
+          "closure_mm": 0.5576976431784731,
+          "max_displacement_mm": 0.37025125445724905,
+          "compliance_N_mm": 0.5576976431784731,
+          "free_residual_N": 2.851510695213018e-09,
+          "reaction_force_N": [
+            6.863835055881395e-10,
+            9.315284654753953e-10,
+            -5.618052328904e-09
+          ],
+          "iterations": 1703,
+          "seconds": 3.8832528591156006
+        },
+        {
+          "pitch_mm": 0.6,
+          "elements": 28100,
+          "nodes": 35986,
+          "closure_mm": 0.5123268400152831,
+          "max_displacement_mm": 0.3429924173926934,
+          "compliance_N_mm": 0.512326840015283,
+          "free_residual_N": 9.130907913667635e-10,
+          "reaction_force_N": [
+            2.9362658138243347e-12,
+            -4.239042649886726e-10,
+            2.4447545168837514e-09
+          ],
+          "iterations": 1341,
+          "seconds": 14.165639877319336
+        }
+      ]
+    },
+    {
+      "revision": "R2",
+      "source_sha256": "9bf25e08e41c3faf6107d6e558f7b25f61aa82ec839a56e2c8c25f8fdcbc965e",
+      "near_joint_bridge_area_mm2": 97.97887702430597,
+      "central_shaft_min_section_mm2": 57.71789559746953,
+      "solutions": [
+        {
+          "pitch_mm": 1.2,
+          "elements": 5100,
+          "nodes": 7514,
+          "closure_mm": 0.00041758761137421755,
+          "max_displacement_mm": 0.00040266506222135315,
+          "compliance_N_mm": 0.00041758761137421755,
+          "free_residual_N": 2.9260536089248104e-09,
+          "reaction_force_N": [
+            -2.5874620371638124e-15,
+            3.2893285911170524e-09,
+            3.5591670096782606e-09
+          ],
+          "iterations": 474,
+          "seconds": 0.7889325618743896
+        },
+        {
+          "pitch_mm": 0.9,
+          "elements": 12390,
+          "nodes": 16762,
+          "closure_mm": 0.000536910925430782,
+          "max_displacement_mm": 0.00041374643012278883,
+          "compliance_N_mm": 0.000536910925430782,
+          "free_residual_N": 2.8353122230658963e-09,
+          "reaction_force_N": [
+            7.835794635708589e-10,
+            -1.1554727805386682e-09,
+            3.726581736372572e-09
+          ],
+          "iterations": 820,
+          "seconds": 3.545542001724243
+        },
+        {
+          "pitch_mm": 0.6,
+          "elements": 42408,
+          "nodes": 52404,
+          "closure_mm": 0.00023543641656569486,
+          "max_displacement_mm": 0.00020278717646850865,
+          "compliance_N_mm": 0.00023543641656569486,
+          "free_residual_N": 9.597937865225383e-10,
+          "reaction_force_N": [
+            -6.205163895325926e-15,
+            -2.6033917622863504e-15,
+            -6.936932006804662e-10
+          ],
+          "iterations": 823,
+          "seconds": 16.414902687072754
+        }
+      ]
+    }
+  ],
+  "R2_over_R1_closure": 0.0004595433972552983,
+  "scope": "Comparative homogeneous linear elastic voxel H8 model of P007 only. Staircase geometry and omitted steel contacts. Equal printed-side-load boundary conditions in both versions. Mesh-dependent screening values, not converged stress results. Does not infer actual spring force, FDM anisotropy, creep, fatigue, strength or full-arm qualification. Other parts receive geometric section/core/interface review, not FEA."
+}

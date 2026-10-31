@@ -1,0 +1,89 @@
+{
+  "status": "ALLOCATION_MODEL_NOT_ELECTRICAL_QUALIFICATION",
+  "node_3V3_load_budget_W": 6.0258,
+  "allocations_A": {
+    "six_MCU": 1.08,
+    "41_sensors": 0.615,
+    "six_CAN": 0.09,
+    "41_buffers": 0.041
+  },
+  "buck_efficiency_assumed": 0.85,
+  "options": [
+    {
+      "supply_V": 5,
+      "awg": 24,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.2284,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 1.6184014934227249,
+      "load_voltage_at_minus5pct_V": 4.38035709890225,
+      "cable_loss_W": 0.5982306231697078
+    },
+    {
+      "supply_V": 5,
+      "awg": 26,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.3278,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 1.6894250905078905,
+      "load_voltage_at_minus5pct_V": 4.196206455331513,
+      "cable_loss_W": 0.9355927093242432
+    },
+    {
+      "supply_V": 5,
+      "awg": 28,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.486,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 1.8381697569444078,
+      "load_voltage_at_minus5pct_V": 3.8566494981250177,
+      "cable_loss_W": 1.6421298748977005
+    },
+    {
+      "supply_V": 12,
+      "awg": 24,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.2284,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 0.6298045789706292,
+      "load_voltage_at_minus5pct_V": 11.256152634163108,
+      "cable_loss_W": 0.09059572967693766
+    },
+    {
+      "supply_V": 12,
+      "awg": 26,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.3278,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 0.6333934796080265,
+      "load_voltage_at_minus5pct_V": 11.192373617384488,
+      "cable_loss_W": 0.13150919694326602
+    },
+    {
+      "supply_V": 12,
+      "awg": 28,
+      "length_m": 1,
+      "resistance_loop_ohm": 0.486,
+      "connector_contact_allowance_ohm": 0.06,
+      "input_power_W": 7.089176470588236,
+      "current_A": 0.6392802249759892,
+      "load_voltage_at_minus5pct_V": 11.089309810661668,
+      "cable_loss_W": 0.19861809413804077
+    }
+  ],
+  "provisional_baseline": "5V / 24 AWG power pair; CAN pair separate; no generic USB connector on tether",
+  "NOT_RUN": [
+    "Peak/inrush/short-circuit and heat",
+    "Six internal protected branches",
+    "TVS clamp against regulator/TCAN limits",
+    "Connector temperature/bending life",
+    "USB backfeed test",
+    "Internal cable resistance"
+  ],
+  "legacy_12V_connection_allowed": false
+}

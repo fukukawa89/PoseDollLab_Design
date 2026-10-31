@@ -1,0 +1,11 @@
+from pathlib import Path
+p=Path(__file__).parent/'verify_revo22_f5_contacts298.py';s=p.read_text(encoding='utf-8-sig')
+s=s.replace('def envelope(p,region,margin=MARGIN):','def envelope(p,region,margin=MARGIN,axes=None):')
+s=s.replace('out=[];offsets=np.array(list(itertools.product([-margin,margin],repeat=3)))','out=[];offsets=np.array(list(itertools.product([-margin,margin],repeat=3)))\n if axes is not None:offsets=offsets@np.asarray(axes).T\n pad=np.max(abs(offsets),axis=0)')
+s=s.replace('box(bb[:3]-margin*2,bb[3:]+margin*2)','box(bb[:3]-pad*2,bb[3:]+pad*2)').replace('tri.min(0)-margin>bb[3:]','tri.min(0)-pad>bb[3:]').replace('tri.max(0)+margin<bb[:3]','tri.max(0)+pad<bb[:3]')
+s=s.replace('for c in material_components(rm)]);before_local=before^windows;after_local=after^windows','for c in material_components(changed_material)]);before_local=reference^windows;after_local=new^windows')
+s=s.replace("print('FIT426_BEGIN',pid,name,k,flush=True)","print('FIT434_BEGIN',pid,name,k,flush=True)")
+s=s.replace('moved=p.transform(relative[:3,:])\n    env=envelope(moved,rm)','moved=p.transform((T@relative)[:3,:])\n    env=envelope(moved,changed_material,axes=T[:3,:3])')
+s=s.replace("print('FIT426_ENV'","print('FIT434_ENV'").replace("print('FIT426_LOCAL'","print('FIT434_LOCAL'")
+s=s.replace('boolean_differences_clipped_to_their_source_material=True,scope=',"boolean_differences_clipped_to_their_source_material=True,contact_arithmetic_frame='Source print coordinates, with the original assembly-frame 0.05 mm cube transformed into that frame; avoids near-coincident zero-thickness shells after moving edit regions',scope=")
+p.write_text(s,encoding='utf-8')

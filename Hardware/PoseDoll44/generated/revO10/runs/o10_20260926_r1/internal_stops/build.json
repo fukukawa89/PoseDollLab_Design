@@ -1,0 +1,170 @@
+{
+  "candidate": "integral journal lugs and split annular stop pockets",
+  "source_sha256": "4a03bb6f9deef2dee8539ec038b477f52a98edacafca29369ab9efd7f9f0024f",
+  "generator_sha256": "3e866f24c98e067359424cbe1f0e7cc5f01664874523dd72e6e56c40a99509c2",
+  "mesh_weld_grid_mm": 1e-05,
+  "cases": [
+    {
+      "part": "C01",
+      "journal_axis": 0,
+      "journal_side": -1,
+      "stop_deg": [
+        -28,
+        28
+      ],
+      "lug_radius_mm": [
+        1.2,
+        3.05
+      ],
+      "lug_half_angle_deg": 40,
+      "lug_axial_mm": [
+        -8.45,
+        -6.05
+      ],
+      "pocket_axial_mm": [
+        -8.629999999999999,
+        -5.87
+      ],
+      "outer_boss_radius_mm": 4.15,
+      "pocket_radius_mm": 3.23
+    },
+    {
+      "part": "C01",
+      "journal_axis": 0,
+      "journal_side": 1,
+      "stop_deg": [
+        -28,
+        28
+      ],
+      "lug_radius_mm": [
+        1.2,
+        3.05
+      ],
+      "lug_half_angle_deg": 40,
+      "lug_axial_mm": [
+        6.05,
+        8.45
+      ],
+      "pocket_axial_mm": [
+        5.87,
+        8.629999999999999
+      ],
+      "outer_boss_radius_mm": 4.15,
+      "pocket_radius_mm": 3.23
+    },
+    {
+      "part": "C02",
+      "journal_axis": 1,
+      "journal_side": -1,
+      "stop_deg": [
+        -98,
+        98
+      ],
+      "lug_radius_mm": [
+        1.2,
+        3.05
+      ],
+      "lug_half_angle_deg": 40,
+      "lug_axial_mm": [
+        -8.45,
+        -6.05
+      ],
+      "pocket_axial_mm": [
+        -8.629999999999999,
+        -5.87
+      ],
+      "outer_boss_radius_mm": 4.15,
+      "pocket_radius_mm": 3.23
+    },
+    {
+      "part": "C02",
+      "journal_axis": 1,
+      "journal_side": 1,
+      "stop_deg": [
+        -98,
+        98
+      ],
+      "lug_radius_mm": [
+        1.2,
+        3.05
+      ],
+      "lug_half_angle_deg": 40,
+      "lug_axial_mm": [
+        6.05,
+        8.45
+      ],
+      "pocket_axial_mm": [
+        5.87,
+        8.629999999999999
+      ],
+      "outer_boss_radius_mm": 4.15,
+      "pocket_radius_mm": 3.23
+    }
+  ],
+  "parts": {
+    "C01": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 1906.274640935674,
+      "bounds_mm": [
+        -11.49317,
+        -11.5,
+        -27.5,
+        11.49317,
+        11.5,
+        2.25627
+      ],
+      "triangles": 22662
+    },
+    "C02": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 1799.3033005093841,
+      "bounds_mm": [
+        -11.5,
+        -11.49317,
+        -2.25627,
+        11.5,
+        11.49317,
+        27.5
+      ],
+      "triangles": 19522
+    },
+    "C14": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 473.58525028371184,
+      "bounds_mm": [
+        -9.1,
+        -9.1,
+        -4.15,
+        9.1,
+        9.1,
+        0.0
+      ],
+      "triangles": 7184
+    },
+    "C15": {
+      "status": "Error.NoError",
+      "solid_components": 1,
+      "volume_mm3": 473.58520729355075,
+      "bounds_mm": [
+        -9.1,
+        -9.1,
+        0.0,
+        9.1,
+        9.1,
+        4.15
+      ],
+      "triangles": 7184
+    }
+  },
+  "physical_tested": false,
+  "manufacturing_released": false,
+  "open_issues": [
+    "stop reaction and load sharing",
+    "weakened bearing/ring sections",
+    "assembly order",
+    "tolerance and elastic stop overtravel"
+  ]
+}

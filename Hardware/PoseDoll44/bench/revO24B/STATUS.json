@@ -1,0 +1,47 @@
+{
+  "revision": "O24B",
+  "date_local": "2026-10-22",
+  "stage": "SPHERICAL_WRIST_FEASIBILITY",
+  "manufacturing_release": false,
+  "decision": "Keep O24A; B is a spherical-wrist feasibility candidate pending physical sensing, holding and tolerance validation.",
+  "geometry_sha256": "47bae3b6249465c98834590952fa5a6c83d42ddce7f4410d6be1cf27e62778b5",
+  "reference_height_mm": 560,
+  "full_doll_height_measured": false,
+  "strict_full_doll_limit_mm": 600,
+  "future_full_doll_envelope_budget_mm": 580,
+  "parts": 113,
+  "new_parts_including_palm": 19,
+  "proximal_A_parts_retained": 94,
+  "mechanical_checks": {
+    "mesh_integrity": "PASS",
+    "motion_grid": "PASS",
+    "kinematics": "PASS",
+    "antiroll_negative_control": "PASS",
+    "capture_feasibility": "PASS",
+    "magnetic_feasibility": "PASS",
+    "blender_saved_file": "PASS",
+    "browser_review": "PASS",
+    "browser_fk_agreement": "PASS",
+    "retained_baseline": "PASS"
+  },
+  "markdown_links_checked": 29,
+  "magnetic_interference_status": "ANALYTIC_BUDGET_ONLY",
+  "physical_testing": "NOT RUN",
+  "PCB_routing": "NOT DONE",
+  "firmware_UE_integration": "NOT DONE",
+  "unresolved": [
+    "Whole-arm magnetic interference and calibration",
+    "Guide backlash and redundant-guide binding",
+    "Socket preload, friction creep and wear",
+    "Magnet/pin/cap/hand/forearm interface retention",
+    "PCB and flexible harness",
+    "Unchanged O24A shoulder singularity",
+    "Full doll exterior under 600 mm not yet modeled"
+  ],
+  "runtime_versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "manifold3d": "3.3.2",
+    "trimesh": "5.1.1"
+  }
+}

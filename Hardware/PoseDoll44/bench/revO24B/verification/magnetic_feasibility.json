@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "Analytic two-DOF observability feasibility only; NOT hardware accuracy, NOT finite-cylinder magnetic simulation or cross-talk validation.",
+  "model": "centered axial point dipole; B = K(3rr^T-I) R ez; R=Rx(deviation)Ry(flexion)",
+  "nominal_equatorial_field_mT": 3.5156249999999996,
+  "field_magnitude_range_mT": [
+    3.951287248083533,
+    7.031249999999999
+  ],
+  "ideal_roundtrip_max_error_deg": 2.842170943040401e-14,
+  "sensor_adc_quantization_lsb_mT": 0.01220703125,
+  "ideal_quantization_RMS_deg": [
+    0.04850421550415242,
+    0.08740476581848464
+  ],
+  "assumed_independent_field_noise_mT": 0.01,
+  "assumed_noise_RMS_deg": [
+    0.14199774019683234,
+    0.24187048140186823
+  ],
+  "full_3dof_60deg_spin_field_difference_mT": 0.0,
+  "does_not_measure_unconstrained_ball_roll": true,
+  "physical_sensor_test": "NOT RUN",
+  "unresolved": [
+    "Finite magnet geometry and offsets",
+    "Cross-talk from proximal O24A magnets",
+    "Ferromagnetic fasteners",
+    "Sensor gain, bias and temperature",
+    "Guide backlash allows unobserved extra rotation",
+    "PCB routing and calibration dataset"
+  ]
+}

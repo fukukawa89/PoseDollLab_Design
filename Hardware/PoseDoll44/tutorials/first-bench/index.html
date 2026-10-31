@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小样实验室 · PoseDoll 第一轮硬件测试</title>
+<meta name="description" content="认识碟簧和 PEEK 试片，用可暂停的动画学习压缩与摩擦测试，准备第一批小样。">
+<link rel="stylesheet" href="style.css">
+<script defer src="assets/cad-data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#parts" aria-label="PoseDoll 小样实验室首页"><span class="brand-icon">◎</span><span>POSEDOLL<small>小样实验室</small></span></a>
+  <div class="sidebar-caption">第一轮 · 从零认识测试</div>
+  <nav aria-label="学习章节">
+    <a href="#parts" data-nav="parts"><span>01</span>认识要买的零件</a>
+    <a href="#spring" data-nav="spring"><span>02</span>看懂碟簧测试</a>
+    <a href="#friction" data-nav="friction"><span>03</span>看懂摩擦测试</a>
+    <a href="#prepare" data-nav="prepare"><span>04</span>准备与送检</a>
+    <a href="#results" data-nav="results"><span>05</span>拿到结果以后</a>
+  </nav>
+  <div class="sidebar-bottom"><span class="status-dot"></span> 当前阶段：方案复核<p>O7 小样实验保留作备选，专用试片暂缓采购。</p><span class="revision">基于 Rev O7 · 2026.09</span></div>
+</aside>
+<main id="main" tabindex="-1">
+  <header class="topbar"><span>POSEDOLL / FIRST BENCH</span><span class="scope-badge">教学演示 · 尚无实测数据</span></header>
+  <aside class="review-notice" aria-label="研究复核与采购提示"><strong>新的核心改型和配合小样已准备。</strong><p>O8 已恢复论文的四件核心、生成局部改型并检查装配。首批先做打印配合小样；本页保留 O7 备选实验教学，PEEK 与碟簧专用试片暂缓采购。</p><a href="../tut-prototype/index.html">打开 O8 核心与配合动画 →</a></aside>
+  <section id="parts" class="view" aria-labelledby="parts-title">
+    <div class="heading"><div><p class="eyebrow">01 / 认识零件</p><h1 id="parts-title">认识 O7 方案的试验零件。</h1><p class="lede">以下演示 O7 备选方案使用的碟簧和摩擦试片。点击零件，转一转，看看它的形状和用途。</p></div></div>
+    <div class="start-strip"><span class="start-symbol">↗</span><div><strong>第一次做？先确认检测方能不能测。</strong><span>不用先买一整套仪器。准备页里有可以直接复制的询价文字。</span></div><a class="button small" href="#prepare">我的第一步 <span>→</span></a></div>
+    <div class="part-workspace">
+      <div class="part-selector" id="part-selector" role="group" aria-label="选择要认识的零件"></div>
+      <div class="model-panel">
+        <div class="model-top"><span class="mini-tag" id="model-origin">尺寸参数模型</span><span id="model-index">01 / 06</span></div>
+        <canvas id="part-canvas" aria-label="所选零件的三维示意，可拖动旋转；尺寸和用途见旁边文字" tabindex="0"></canvas>
+        <div class="model-caption" id="model-caption"></div>
+        <div class="model-toolbar"><div><button id="model-spin" aria-pressed="false" title="播放或暂停旋转">▷ 自动旋转</button><button id="model-topview">俯视</button><button id="model-sideview">侧视</button><button id="model-reset">重置视角</button></div><span>拖动旋转 · 滚轮缩放</span></div>
+      </div>
+      <article class="part-info" id="part-info" aria-live="polite"></article>
+    </div>
+    <div class="under-workspace"><span class="micro">模型用于认识外形；放大显示，颜色为示意。所有尺寸标注均为 mm，不能拿屏幕当尺子。</span><a class="text-link" href="#spring">接下来：它们怎么测？ →</a></div>
+    <div class="concept-row"><div><span class="concept-number">A</span><h3>碟簧负责「压住」</h3><p>像微微拱起的小圆碟。压下去，它会产生反力；我们要测出真实的力。</p></div><div><span class="concept-number">B</span><h3>摩擦片负责「停住」</h3><p>塑料环压在金属面上，转动时会有阻力。我们要同时看能否保持、是否难转。</p></div><div><span class="concept-number">C</span><h3>先验证，再做关节</h3><p>小样结果只用于选择材料和预紧范围。整个人偶、整关节和中央电路板暂不下单。</p></div></div>
+  </section>
+  <section id="spring" class="view" hidden aria-labelledby="spring-title">
+    <div class="heading"><div><p class="eyebrow">02 / 实验 A</p><h1 id="spring-title">压下去，究竟有多大力？</h1><p class="lede">测的是“压缩力—高度曲线”。先测单片，再测反向叠放的组合；仪器同时记录力和位置。</p></div><span class="role-tag">建议由弹簧厂家 / 检测方完成</span></div>
+    <div class="experiment-layout">
+      <div class="experiment-card">
+        <div class="scene-header"><div class="segmented" role="group" aria-label="碟簧组合"><button data-spring="B8" aria-pressed="true">B8 · 两片一对</button><button data-spring="A8" aria-pressed="false">A8 · 四片一组</button></div><span class="mini-tag">剖面示意</span></div>
+        <div class="diagram-box"><svg id="spring-svg" viewBox="0 0 760 460" role="img" aria-label="碟簧在带导向的压缩测力台架内放置、受压及回弹的动画"></svg></div>
+        <div class="playbar"><button class="play-button" id="spring-play" aria-label="播放碟簧测试动画">▶ 播放本步</button><input id="spring-progress" type="range" min="0" max="100" value="0" aria-label="碟簧动画进度"><span id="spring-percent">0%</span></div>
+        <p class="scene-note">锥度与厚度已夸大；进度条只控制动画，不代表真实压缩行程。夹具是原理示意，尚无生产图。</p>
+      </div>
+      <article class="instruction-panel"><ol id="spring-steps" class="step-list" aria-label="碟簧测试步骤"></ol><div id="spring-instruction" class="instruction" aria-live="polite"></div><div class="step-actions"><button id="spring-prev" class="button secondary">← 上一步</button><button id="spring-next" class="button">下一步 →</button></div></article>
+    </div>
+    <div class="explain-grid"><div class="explain-card"><p class="eyebrow">记住这个摆法</p><h3>相邻两片，朝向相反。</h3><p>这叫“对合串联”：同一股力穿过每一片，组合能压缩的行程相加。不要把两片同向套在一起，误当成这里的组合。</p><p id="spring-stack-note" class="emphasis"></p></div><div class="explain-card muted"><p class="eyebrow">仪器需要做什么</p><h3>力和位移，都要实际测量。</h3><p>检测方提供已校准的压缩测力装置、导向与限位、平行压板，以及适合小行程的位移测量。量程、分辨率和允许行程由检测方与厂家确认。</p><p class="micro">螺丝转了几圈、手感有多紧，都不能代替测力。使用台架放置样件，受压时不要用手指扶着碟簧。</p></div></div>
+  </section>
+  <section id="friction" class="view" hidden aria-labelledby="friction-title">
+    <div class="heading"><div><p class="eyebrow">03 / 实验 B</p><h1 id="friction-title">压住以后，能稳住也能转动吗？</h1><p class="lede">固定 PEEK 试片，让金属对偶件缓慢转动。这次只测一个接触面，先了解材料配对的表现。</p></div><span class="role-tag">建议由有摩擦测矩夹具的检测方完成</span></div>
+    <div class="experiment-layout">
+      <div class="experiment-card">
+        <div class="scene-header"><div class="segmented" role="group" aria-label="摩擦试片尺寸"><button data-friction="LP6" aria-pressed="true">LP6 · 大试片</button><button data-friction="M4" aria-pressed="false">M4 · 小试片</button></div><span class="mini-tag">原理示意</span></div>
+        <div class="diagram-box"><svg id="friction-svg" viewBox="0 0 760 460" role="img" aria-label="单面摩擦测试：外耳固定、法向加载、金属件转动与加载停留"></svg></div>
+        <div class="playbar"><button class="play-button" id="friction-play" aria-label="播放摩擦测试动画">▶ 播放本步</button><input id="friction-progress" type="range" min="0" max="100" value="0" aria-label="摩擦动画进度"><span id="friction-percent">0%</span></div>
+        <p class="scene-note">动画不计算实测扭矩或判定合格。实际夹具、材料牌号、表面与加载方法需检测方确认。</p>
+      </div>
+      <article class="instruction-panel"><ol id="friction-steps" class="step-list" aria-label="摩擦测试步骤"></ol><div id="friction-instruction" class="instruction" aria-live="polite"></div><div class="step-actions"><button id="friction-prev" class="button secondary">← 上一步</button><button id="friction-next" class="button">下一步 →</button></div></article>
+    </div>
+    <div class="explain-grid"><div class="explain-card"><p class="eyebrow">两个力，要分清</p><h3><span class="dot orange"></span>压紧力 N ≠ <span class="dot purple"></span>转动扭矩 N·m</h3><p>压紧力沿轴向把两面贴在一起。扭矩让金属件绕中心转动。“起动扭矩”是它刚开始转动时需要的扭矩。</p></div><div class="explain-card muted"><p class="eyebrow">每个预紧设置，都要重复</p><h3>顺时针 3 次 + 逆时针 3 次</h3><p>在数个实测法向力下重复，并进行 60 秒加载停留。夹具空载阻力要另测、记录和一致处理；不能把夹具的阻力算成材料效果。</p></div></div>
+  </section>
+  <section id="prepare" class="view" hidden aria-labelledby="prepare-title">
+    <div class="heading"><div><p class="eyebrow">04 / 从这里动手</p><h1 id="prepare-title">今天，先确认谁能帮你测。</h1><p class="lede">你负责确认方案、准备样件和保存资料。精密测量可以交给具备夹具与校准仪器的厂家或检测方。</p></div><button id="print-list" class="button secondary">打印准备清单</button></div>
+    <div class="route-strip"><div><b>1</b><span><strong>先询价与确认能力</strong><small>发规格、图纸和测试要求</small></span></div><span>→</span><div><b>2</b><span><strong>确认夹具后买小样</strong><small>标准碟簧 + 定制试片</small></span></div><span>→</span><div><b>3</b><span><strong>送检并收回原始记录</strong><small>再决定单关节怎么做</small></span></div></div>
+    <div class="prepare-layout">
+      <div><div class="section-line"><h2>首批小样清单</h2><span class="mini-tag">数量是试验起点，询价时确认</span></div><div id="shopping-list" class="shopping-list"></div><p class="micro" id="storage-status">勾选只记录准备进度，保存在当前浏览器；不代表下单或验收。</p><button id="copy-shopping" class="button secondary">复制整份采购与加工清单</button>
+      <details class="equipment-details"><summary>我自己要准备什么工具？</summary><p>先准备小零件分装盒、标签和拍照工具。若已有游标卡尺，可做内外径初检；0.3 / 0.4 mm 厚度、自由高和平面度应由检测方用合适仪器确认。</p><p>暂不需要购买整套压机、测力计或扭矩传感器。先请检测方列出夹具、有效量程、分辨率、校准记录和测量不确定度，再判断费用与能力是否合适。</p></details></div>
+      <div class="contact-card"><div class="section-line"><h2>直接把这段发给对方</h2><span class="mini-tag">由你发送</span></div><label for="brief-role">我要联系</label><select id="brief-role"><option value="spring">碟簧厂家 / 经销商</option><option value="shop">PEEK / 金属加工店</option><option value="lab">力学 / 摩擦检测方</option></select><textarea id="brief-text" rows="14" aria-label="可编辑的询价与检测说明" spellcheck="false"></textarea><button id="copy-brief" class="button">复制这段文字</button><p class="micro">可自行修改后复制。页面不会发送消息、询价或下单；价格、库存与测试能力尚未确认。</p></div>
+    </div>
+    <div class="download-panel"><div class="download-icon">↓</div><div><h3>送检资料包</h3><p>4 个试片 STEP、尺寸表、原始任务书、空白数据模板，以及给新手的交接说明。</p><span class="micro">STEP 用于确认样件；金属牌号、表面、平面度和装夹方式需确认后再加工。</span></div><a class="button" href="assets/bench-handoff.zip" download>下载 ZIP 资料包</a></div>
+    <details class="sources"><summary>选型来源与当前范围</summary><p>碟簧来源：<a href="https://www.raleigh-spring.cn/discspring/" target="_blank" rel="noopener noreferrer">锐尔立中国官网 · 碟形弹簧目录 ↗</a>。A8 / B8 是本指南的尺寸简称，下单时写完整系列与尺寸。网页核对日期：2026-09-25；实际供货、批次和性能须向厂家确认。</p><p>PEEK 为未填充牌号候选，可找中国加工店采购可追溯原料并加工。<a href="https://www.ensingerplastics.com/en-us/shapes/peek-tecapeek-natural" target="_blank" rel="noopener noreferrer">Ensinger 未填充 PEEK 原厂参考 ↗</a>用于识别材料，不指定唯一购买品牌，也不把其目录摩擦系数当成当前试片的实测值。</p><p>设计依据：<a href="../../bench/revO7/README.zh-CN.md">O7 小样台架任务书</a> · <a href="assets/provenance.json">页面模型与数据来源</a>。本页新增教学可视化，未改变已有数字验收结论。</p></details>
+  </section>
+  <section id="results" class="view" hidden aria-labelledby="results-title">
+    <div class="heading"><div><p class="eyebrow">05 / 收好这些，再判断下一步</p><h1 id="results-title">拿到曲线和原始记录，才算测过。</h1><p class="lede">让检测方交付原始仪器文件，并说明测试条件。只有“合格”两个字，无法用来改关节设计。</p></div></div>
+    <div class="result-layout"><div><h2>向检测方要回这 5 项</h2><ol class="delivery-list"><li><b>样件与材料身份</b><p>编号、实测尺寸、照片、材料批次；金属牌号、表面加工与温度。</p></li><li><b>仪器与装夹说明</b><p>校准编号、量程、分辨率、不确定度、夹具照片，以及空载阻力如何处理。</p></li><li><b>碟簧加载 / 卸载原始曲线</b><p>单片及组合的力（N）与高度 / 位移（mm）；保留组合编号、朝向、重复记录。</p></li><li><b>摩擦与停留记录</b><p>每个设置的实际法向力（N）、单面起动扭矩（N·m）、方向、加载停留扭矩、实际时长（s）和角度变化（°）。</p></li><li><b>可追溯的原始文件</b><p>仪器导出文件、测试日期与操作人。JSON 模板可由我们后续整理，不要求你先学会写代码。</p></li></ol><a class="button" href="assets/bench-handoff.zip" download>下载空白模板与送检包</a></div><div><div class="result-callout"><span class="eyebrow">测完先回答</span><h2>能保持住，<br>也能轻松调整吗？</h2><p>把实测弹簧曲线与材料阻力放在一起，找出可用的预紧范围。阻力过小会松动，过大则难以摆姿。</p><div class="next-sequence"><span>材料 / 弹簧小样</span><b>↓</b><span>单关节设计与测试</span><b>↓</b><span>单臂、线束与整机验证</span></div></div><details class="technical"><summary>给检测方看的暂定筛选数值</summary><div id="screen-values"></div><p>上述保持预算属于双面关节。这里只测单面，不能直接宣称关节达到该扭矩；两面等效推算还需要界面一致等条件。</p><p>暂定停留 60 s、漂移不超过 0.3°；每个方向至少 3 次。同一法向力设置的实测范围不得超过均值的 5%。20 N / 60 mm 的手感筛选线尚不是最终验收标准。</p><p>材料初筛通过，也不等于整关节合格、寿命合格或制造放行。</p></details></div></div>
+  </section>
+  <footer>POSEDOLL 小样实验室 <span>先理解，再动手。</span><a href="README.zh-CN.md">使用说明</a></footer>
+</main>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<dialog id="copy-dialog"><h2>复制文字</h2><p>浏览器未允许自动复制，请选中下方文字复制。</p><textarea id="copy-fallback" rows="12" aria-label="待复制文字"></textarea><button id="close-copy" class="button">完成</button></dialog>
+<noscript><div class="noscript">请启用 JavaScript 查看动画；也可以阅读 <a href="HANDOFF.zh-CN.md">文字版测试交接说明</a>。</div></noscript>
+</body>
+</html>
+
